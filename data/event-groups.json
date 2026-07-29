@@ -1,24 +1,29 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T06:22:17.149Z",
-  "groupCount": 231,
-  "duplicateGroupCount": 5,
-  "duplicateArticleCount": 5,
+  "generatedAt": "2026-07-29T08:05:16.429Z",
+  "groupCount": 218,
+  "duplicateGroupCount": 6,
+  "duplicateArticleCount": 6,
   "matches": [
+    {
+      "left": "discovery-TULrWMFL0-bB0LQGhVoHro3u",
+      "right": "discovery-kffOKHMF-4yp9Dzxeu9n3Kv7",
+      "score": 0.9512
+    },
     {
       "left": "discovery-HRo2cRAyZ-1pbKYJLhyKWq68",
       "right": "discovery-M_0PMBoJqfuyzJ_TMv-y6iZP",
-      "score": 1
+      "score": 0.9397
     },
     {
       "left": "discovery-zdrjyi3Q3Lrv25ge9-dKhe35",
       "right": "discovery-qp0h1QaVMBOMbOZvlvhqYbdQ",
-      "score": 1
+      "score": 0.95
     },
     {
       "left": "discovery-rptikGxOCrrg6MI6D0xxyqKm",
       "right": "discovery-JVpLqPcaa-kPJQ_MkDQQOCrV",
-      "score": 0.6091
+      "score": 0.6043
     },
     {
       "left": "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
@@ -32,6 +37,26 @@
     }
   ],
   "groups": [
+    {
+      "groupId": "event-S8rgFbGu5DJr-ja88a",
+      "category": "politics",
+      "representativeArticleId": "discovery-SnSExAqOxwFhPISj4hM65PJg",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-29T07:30:06.000Z",
+      "publishedTo": "2026-07-29T07:30:06.000Z",
+      "memberArticleIds": [
+        "discovery-SnSExAqOxwFhPISj4hM65PJg"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-SnSExAqOxwFhPISj4hM65PJg",
+          "sourceArabic": "الخلاصة نت",
+          "articleUrl": "https://www.khlaasa.net/1452877",
+          "publishedAt": "2026-07-29T07:30:06.000Z"
+        }
+      ]
+    },
     {
       "groupId": "event-2v656Tp3RLX2cH-xJP",
       "category": "international",
@@ -133,26 +158,6 @@
       ]
     },
     {
-      "groupId": "event-ZcmrLvgiX0Ounkhfhs",
-      "category": "security",
-      "representativeArticleId": "discovery-LVOTjQRR2F8MyOIHlxVbbm1j",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T19:21:02.000Z",
-      "publishedTo": "2026-07-28T19:21:02.000Z",
-      "memberArticleIds": [
-        "discovery-LVOTjQRR2F8MyOIHlxVbbm1j"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-LVOTjQRR2F8MyOIHlxVbbm1j",
-          "sourceArabic": "العربي الجديد",
-          "articleUrl": "https://www.alaraby.co.uk/politics/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D8%A8%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%AF%D9%88%D8%B1%D9%8A%D8%A9-%D9%84%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A-%D8%A8%D8%B9%D8%A8%D9%88%D8%A9-%D9%86%D8%A7%D8%B3%D9%81%D8%A9-%D9%81%D9%8A-%D8%AF%D9%8A%D8%B1-%D8%A7%D9%84%D8%B2%D9%88%D8%B1",
-          "publishedAt": "2026-07-28T19:21:02.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-7h-F8ZtyhZb3NuAuUO",
       "category": "economy",
       "representativeArticleId": "discovery-vRhUAeNPqD1Jhu6uyGxdxaEI",
@@ -213,66 +218,6 @@
       ]
     },
     {
-      "groupId": "event-6l4298K_z7okqV4bk4",
-      "category": "security",
-      "representativeArticleId": "discovery-5B2hadYWChT4CbQZPjRvoQ7g",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T18:30:02.000Z",
-      "publishedTo": "2026-07-28T18:30:02.000Z",
-      "memberArticleIds": [
-        "discovery-5B2hadYWChT4CbQZPjRvoQ7g"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-5B2hadYWChT4CbQZPjRvoQ7g",
-          "sourceArabic": "Euronews",
-          "articleUrl": "https://arabic.euronews.com/2026/07/28/lebanese-man-arrested-for-transferring-400000-stolen-from-his-father-to-fund-isis",
-          "publishedAt": "2026-07-28T18:30:02.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-LCAow0cR5V0FxCbGnB",
-      "category": "security",
-      "representativeArticleId": "discovery-iGQ6bvleCS5P2yNPBbadh4ww",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T18:00:23.000Z",
-      "publishedTo": "2026-07-28T18:00:23.000Z",
-      "memberArticleIds": [
-        "discovery-iGQ6bvleCS5P2yNPBbadh4ww"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-iGQ6bvleCS5P2yNPBbadh4ww",
-          "sourceArabic": "Euronews",
-          "articleUrl": "https://arabic.euronews.com/2026/07/28/syria-isis-aleppo-latakia-security-arrests-weapons",
-          "publishedAt": "2026-07-28T18:00:23.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-pbMHorLd8LLCae1gZ7",
-      "category": "security",
-      "representativeArticleId": "discovery-tVb6jX7TlexQ2NCxP413BN65",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T17:50:00.000Z",
-      "publishedTo": "2026-07-28T17:50:00.000Z",
-      "memberArticleIds": [
-        "discovery-tVb6jX7TlexQ2NCxP413BN65"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-tVb6jX7TlexQ2NCxP413BN65",
-          "sourceArabic": "الهيئة الوطنية للإعلام",
-          "articleUrl": "https://www.maspero.eg/arab-and-world/2026/07/28/975583/%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%82%D8%A8%D8%B6-%D8%B9%D9%84%D9%89-%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%8A%D9%86%D8%AA%D9%85%D9%88%D9%86-%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%AF%D8%A7%D8%B9%D8%B4-%D9%81%D9%8A-%D8%AD%D9%84%D8%A8-%D9%88%D8%B1%D9%8A%D9%81%D9%87%D8%A7",
-          "publishedAt": "2026-07-28T17:50:00.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-DXyNBk_1FyBLxjrloc",
       "category": "international",
       "representativeArticleId": "discovery-OgHhxwcX66MaMVrgwNL8zhfs",
@@ -309,6 +254,26 @@
           "sourceArabic": "شفق نيوز",
           "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AC%D8%AF%D8%AF-%D8%AF%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D9%84%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D9%85%D9%86%D8%B4-%D8%AA%D9%87%D8%A7",
           "publishedAt": "2026-07-28T17:21:17.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-YblvBmbTFej-5eK9Ta",
+      "category": "security",
+      "representativeArticleId": "discovery-0WQJRUCzbVHAE9ydDtZSGAg5",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-28T17:10:08.000Z",
+      "publishedTo": "2026-07-28T17:10:08.000Z",
+      "memberArticleIds": [
+        "discovery-0WQJRUCzbVHAE9ydDtZSGAg5"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-0WQJRUCzbVHAE9ydDtZSGAg5",
+          "sourceArabic": "DW.com",
+          "articleUrl": "https://www.dw.com/ar/%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D9%8A%D9%86%D8%A7%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D9%8A%D9%81%D8%B6%D8%AD-%D8%A7%D9%84%D9%81%D8%B4%D9%84-%D9%81%D9%8A-%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%B7%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/audio-76233671",
+          "publishedAt": "2026-07-28T17:10:08.000Z"
         }
       ]
     },
@@ -433,42 +398,22 @@
       ]
     },
     {
-      "groupId": "event-iN9nSd1EXYiNccNelN",
+      "groupId": "event-q4YNZhQaGl9l8IwYYa",
       "category": "politics",
-      "representativeArticleId": "discovery-HuH7Yor3pQN3aT04Vz_8QZTV",
+      "representativeArticleId": "discovery-LF8xMuI-Tx-NcOHyhWGg_bfp",
       "memberCount": 1,
       "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T13:54:21.000Z",
-      "publishedTo": "2026-07-28T13:54:21.000Z",
+      "publishedFrom": "2026-07-28T14:03:25.000Z",
+      "publishedTo": "2026-07-28T14:03:25.000Z",
       "memberArticleIds": [
-        "discovery-HuH7Yor3pQN3aT04Vz_8QZTV"
+        "discovery-LF8xMuI-Tx-NcOHyhWGg_bfp"
       ],
       "sources": [
         {
-          "articleId": "discovery-HuH7Yor3pQN3aT04Vz_8QZTV",
+          "articleId": "discovery-LF8xMuI-Tx-NcOHyhWGg_bfp",
           "sourceArabic": "شفق نيوز",
           "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B1%D8%B9%D9%89-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AF%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A",
-          "publishedAt": "2026-07-28T13:54:21.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-p_krQWwHYntJsaEAk2",
-      "category": "security",
-      "representativeArticleId": "discovery-PeN6U2DtqRwH9UpBTtC7yeEv",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T13:25:25.000Z",
-      "publishedTo": "2026-07-28T13:25:25.000Z",
-      "memberArticleIds": [
-        "discovery-PeN6U2DtqRwH9UpBTtC7yeEv"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-PeN6U2DtqRwH9UpBTtC7yeEv",
-          "sourceArabic": "mojahedin.org",
-          "articleUrl": "https://arabic.mojahedin.org/437008?amp\\=1",
-          "publishedAt": "2026-07-28T13:25:25.000Z"
+          "publishedAt": "2026-07-28T14:03:25.000Z"
         }
       ]
     },
@@ -489,26 +434,6 @@
           "sourceArabic": "ANF | Articles",
           "articleUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/anthakat-waghtyalat-wakhttaf-tqryr-yrsd-tdhwr-hryt-altbyr-fy-alraq-138377",
           "publishedAt": "2026-07-28T13:04:17.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-Nm39tjS9W61XPnyUSw",
-      "category": "security",
-      "representativeArticleId": "discovery-lyOnRjI7VJfR5jRXUWryOO24",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T12:48:30.000Z",
-      "publishedTo": "2026-07-28T12:48:30.000Z",
-      "memberArticleIds": [
-        "discovery-lyOnRjI7VJfR5jRXUWryOO24"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-lyOnRjI7VJfR5jRXUWryOO24",
-          "sourceArabic": "العربي الجديد",
-          "articleUrl": "https://www.alaraby.co.uk/politics/%D9%83%D9%8A%D9%8A%D9%81-%D8%AA%D9%86%D9%81%D9%8A-%D8%A7%D8%AF%D8%B9%D8%A7%D8%A1%D8%A7%D8%AA-%D9%88%D8%AC%D9%88%D8%AF-%D8%AE%D9%84%D8%A7%D9%8A%D8%A7-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82?amp",
-          "publishedAt": "2026-07-28T12:48:30.000Z"
         }
       ]
     },
@@ -633,26 +558,6 @@
       ]
     },
     {
-      "groupId": "event-iDfQLApCs3lXEZPLy5",
-      "category": "security",
-      "representativeArticleId": "discovery-AlWdy5UDArT_TJU5cQZuhCdz",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T09:48:39.000Z",
-      "publishedTo": "2026-07-28T09:48:39.000Z",
-      "memberArticleIds": [
-        "discovery-AlWdy5UDArT_TJU5cQZuhCdz"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-AlWdy5UDArT_TJU5cQZuhCdz",
-          "sourceArabic": "alwatannews.net",
-          "articleUrl": "https://alwatannews.net/arab/article/879536/%D9%84%D9%8A%D9%84%D8%A9-%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%86%D9%8A%D9%81%D8%A9-%D9%81%D9%8A-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D9%84%D9%8A%D8%B1%D8%A9",
-          "publishedAt": "2026-07-28T09:48:39.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-p6_bALo7lOtQIFkssK",
       "category": "international",
       "representativeArticleId": "discovery-WMnEnCBreO8dizktSAzZBRBP",
@@ -689,6 +594,26 @@
           "sourceArabic": "Kurdistan24",
           "articleUrl": "https://www.kurdistan24.net/ar/story/928744/%D8%AF-%D8%A3%D9%88%D9%85%D9%8A%D8%AF-%D8%B5%D8%A8%D8%A7%D8%AD-%D9%88%D9%83%DB%95%D9%85%D8%A7%D9%84-%D9%85%D8%AD%DB%95%D9%85%DB%95%D8%AF-%D9%84%D9%80-%D9%83%D9%88%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-24-%D8%A7%D9%86%D9%81%D8%B1%D8%A7%D8%AC%D8%A9-%D8%A8%D9%85%D9%84%D9%81%D9%8A-%D8%A7%D9%84%D9%83%D9%87%D8%B1%D8%A8%D8%A7%D8%A1-%D9%88%D8%A7%D9%84%D8%A8%D9%86%D8%B2%D9%8A%D9%86-%D9%88%D8%AA%D9%81%D8%A7%D9%87%D9%85%D8%A7%D8%AA-%D9%81%D9%8A%D8%AF%D8%B1%D8%A7%D9%84%D9%8A%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%85%D8%B9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
           "publishedAt": "2026-07-28T08:29:59.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-TL5oxXwP3cApYHt-ij",
+      "category": "security",
+      "representativeArticleId": "discovery-SATCUI29VQZLceRuGkpeq8KV",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-28T08:24:55.000Z",
+      "publishedTo": "2026-07-28T08:24:55.000Z",
+      "memberArticleIds": [
+        "discovery-SATCUI29VQZLceRuGkpeq8KV"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-SATCUI29VQZLceRuGkpeq8KV",
+          "sourceArabic": "المعلومة",
+          "articleUrl": "https://almaalomah.me/news/139586/security/%D8%A3%D8%B9%D8%AA%D9%82%D9%84-%D8%B3%D8%A7%D8%A8%D9%82%D8%A7-%D9%88%D8%A3%D8%B7%D9%84%D9%82-%D8%B3%D8%B1%D8%A7%D8%AD%D9%87-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%AD%D8%A9-%D8%A8%D9%80%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A-%D9%84%D8%AF%D8%A7%D8%B9%D8%B4-%D9%81%D9%8A-%D8%B5%D8%AD%D8%B1",
+          "publishedAt": "2026-07-28T08:24:55.000Z"
         }
       ]
     },
@@ -809,26 +734,6 @@
           "sourceArabic": "وكالة الصحافة المستقلة",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%AD%D8%B1%D9%83-%D9%84%D8%A7%D8%AD%D8%AA%D9%88/",
           "publishedAt": "2026-07-28T06:27:25.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-BBS5Wiye3-T_408iEC",
-      "category": "security",
-      "representativeArticleId": "discovery---AFyz9EcFw8MkF1Tr33zd_Z",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T04:31:06.000Z",
-      "publishedTo": "2026-07-28T04:31:06.000Z",
-      "memberArticleIds": [
-        "discovery---AFyz9EcFw8MkF1Tr33zd_Z"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery---AFyz9EcFw8MkF1Tr33zd_Z",
-          "sourceArabic": "ایران اینترنشنال",
-          "articleUrl": "https://www.iranintl.com/ar/202607280701",
-          "publishedAt": "2026-07-28T04:31:06.000Z"
         }
       ]
     },
@@ -973,6 +878,26 @@
       ]
     },
     {
+      "groupId": "event-Q0X5w-eGGG5FuaVxic",
+      "category": "international",
+      "representativeArticleId": "discovery-Zom3bpe4ym5l1XTlZ7XErKB4",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-27T19:48:50.000Z",
+      "publishedTo": "2026-07-27T19:48:50.000Z",
+      "memberArticleIds": [
+        "discovery-Zom3bpe4ym5l1XTlZ7XErKB4"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-Zom3bpe4ym5l1XTlZ7XErKB4",
+          "sourceArabic": "ترك برس",
+          "articleUrl": "https://www.turkpress.co/node/111323",
+          "publishedAt": "2026-07-27T19:48:50.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-tju7OWAtvHAbzqni22",
       "category": "international",
       "representativeArticleId": "discovery-GmwImNLDIEf1SYzHe3aziMtl",
@@ -989,26 +914,6 @@
           "sourceArabic": "بوابة الأهرام",
           "articleUrl": "https://gate.ahram.org.eg/News/5838384.aspx",
           "publishedAt": "2026-07-27T19:47:00.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-ADdVDtLCqwdCqqfJYi",
-      "category": "security",
-      "representativeArticleId": "discovery-X3kLiR4y1LsvNJCTiaeZmWiu",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T19:30:02.000Z",
-      "publishedTo": "2026-07-27T19:30:02.000Z",
-      "memberArticleIds": [
-        "discovery-X3kLiR4y1LsvNJCTiaeZmWiu"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-X3kLiR4y1LsvNJCTiaeZmWiu",
-          "sourceArabic": "Euronews",
-          "articleUrl": "https://arabic.euronews.com/2026/07/27/iran-khamenei-assassination-trump-threats-middle-east",
-          "publishedAt": "2026-07-27T19:30:02.000Z"
         }
       ]
     },
@@ -1093,26 +998,6 @@
       ]
     },
     {
-      "groupId": "event-JuEGvF8MOMXqq-3MN1",
-      "category": "security",
-      "representativeArticleId": "discovery-3_xuw6QsVu82pvuQMFSoA6QO",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T14:30:17.000Z",
-      "publishedTo": "2026-07-27T14:30:17.000Z",
-      "memberArticleIds": [
-        "discovery-3_xuw6QsVu82pvuQMFSoA6QO"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-3_xuw6QsVu82pvuQMFSoA6QO",
-          "sourceArabic": "ایران اینترنشنال",
-          "articleUrl": "https://www.iranintl.com/ar/202607272259",
-          "publishedAt": "2026-07-27T14:30:17.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-SQxPpUEcUPt6EvMldN",
       "category": "international",
       "representativeArticleId": "discovery-LkfSj0Ci1XZE9Pcmlmmz_j38",
@@ -1153,26 +1038,6 @@
       ]
     },
     {
-      "groupId": "event-aTF7rrlS1Yv2_0wvkL",
-      "category": "security",
-      "representativeArticleId": "discovery-FT71wVwkAAx1lhPd9SudSMLL",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T10:02:29.000Z",
-      "publishedTo": "2026-07-27T10:02:29.000Z",
-      "memberArticleIds": [
-        "discovery-FT71wVwkAAx1lhPd9SudSMLL"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-FT71wVwkAAx1lhPd9SudSMLL",
-          "sourceArabic": "ایران اینترنشنال",
-          "articleUrl": "https://www.iranintl.com/ar/202607278581",
-          "publishedAt": "2026-07-27T10:02:29.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-vdTTroMIdwIZmW_Swc",
       "category": "security",
       "representativeArticleId": "discovery-EvBUDc8gmwL1K1kVzrhQWSql",
@@ -1193,17 +1058,24 @@
       ]
     },
     {
-      "groupId": "event-irYZ8_6ELDa_Lv6sOP",
+      "groupId": "event-eY7HfVjkmtLddvfP_H",
       "category": "economy",
-      "representativeArticleId": "discovery-TULrWMFL0-bB0LQGhVoHro3u",
-      "memberCount": 1,
-      "duplicateCount": 0,
+      "representativeArticleId": "discovery-kffOKHMF-4yp9Dzxeu9n3Kv7",
+      "memberCount": 2,
+      "duplicateCount": 1,
       "publishedFrom": "2026-07-27T08:17:35.000Z",
       "publishedTo": "2026-07-27T08:17:35.000Z",
       "memberArticleIds": [
+        "discovery-kffOKHMF-4yp9Dzxeu9n3Kv7",
         "discovery-TULrWMFL0-bB0LQGhVoHro3u"
       ],
       "sources": [
+        {
+          "articleId": "discovery-kffOKHMF-4yp9Dzxeu9n3Kv7",
+          "sourceArabic": "شفقنا العراق",
+          "articleUrl": "https://iraq.shafaqna.com/AR/638956/",
+          "publishedAt": "2026-07-27T08:17:35.000Z"
+        },
         {
           "articleId": "discovery-TULrWMFL0-bB0LQGhVoHro3u",
           "sourceArabic": "شفقنا العراق",
@@ -1293,6 +1165,26 @@
       ]
     },
     {
+      "groupId": "event-GironeNUvspcpgQscF",
+      "category": "international",
+      "representativeArticleId": "discovery-hgRljDZ0W5JpQOdamp5ckVDs",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-26T19:54:45.000Z",
+      "publishedTo": "2026-07-26T19:54:45.000Z",
+      "memberArticleIds": [
+        "discovery-hgRljDZ0W5JpQOdamp5ckVDs"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-hgRljDZ0W5JpQOdamp5ckVDs",
+          "sourceArabic": "ترك برس",
+          "articleUrl": "https://www.turkpress.co/node/111300",
+          "publishedAt": "2026-07-26T19:54:45.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-bCXruQ6fBbPC7pSoyI",
       "category": "economy",
       "representativeArticleId": "discovery-zWK4EXZJo58IhDyRFBdkVLOw",
@@ -1309,26 +1201,6 @@
           "sourceArabic": "المسلة الحدث كما حدث",
           "articleUrl": "https://almasalah.com/archives/139294",
           "publishedAt": "2026-07-26T19:13:43.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-YblvBmbTFej-5eK9Ta",
-      "category": "security",
-      "representativeArticleId": "discovery-0WQJRUCzbVHAE9ydDtZSGAg5",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-26T19:01:25.000Z",
-      "publishedTo": "2026-07-26T19:01:25.000Z",
-      "memberArticleIds": [
-        "discovery-0WQJRUCzbVHAE9ydDtZSGAg5"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-0WQJRUCzbVHAE9ydDtZSGAg5",
-          "sourceArabic": "DW.com",
-          "articleUrl": "https://www.dw.com/ar/%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D9%8A%D9%86%D8%A7%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D9%8A%D9%81%D8%B6%D8%AD-%D8%A7%D9%84%D9%81%D8%B4%D9%84-%D9%81%D9%8A-%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%B7%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/audio-76233671",
-          "publishedAt": "2026-07-26T19:01:25.000Z"
         }
       ]
     },
@@ -1373,26 +1245,6 @@
       ]
     },
     {
-      "groupId": "event-Ir-fInD46YAoxEChzv",
-      "category": "security",
-      "representativeArticleId": "discovery-FseFLKcjV9tYdGSeXNqmUqFo",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-26T10:42:09.000Z",
-      "publishedTo": "2026-07-26T10:42:09.000Z",
-      "memberArticleIds": [
-        "discovery-FseFLKcjV9tYdGSeXNqmUqFo"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-FseFLKcjV9tYdGSeXNqmUqFo",
-          "sourceArabic": "دنيا الوطن",
-          "articleUrl": "https://www.alwatanvoice.com/arabic/news/2026/07/26/1553424.html",
-          "publishedAt": "2026-07-26T10:42:09.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-36vdJ7T4kJWp85ygBq",
       "category": "security",
       "representativeArticleId": "discovery-8T2MPmqdNi9JLxgzll2hrYYi",
@@ -1409,6 +1261,26 @@
           "sourceArabic": "middle-east-online.com",
           "articleUrl": "https://www.middle-east-online.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%88%D8%AD%D8%AF-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B3%D9%83%D8%B1%D9%8A-%D9%88%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A-%D8%AA%D8%AD%D8%AA-%D9%85%D8%B8%D9%84%D8%A9-%D9%88%D8%A7%D8%AD%D8%AF%D8%A9",
           "publishedAt": "2026-07-26T10:30:02.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-HuKCjys-LLtiwd5Awn",
+      "category": "economy",
+      "representativeArticleId": "discovery-yUTSPVfrT9B06lV89Mw3hutr",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-26T10:04:32.000Z",
+      "publishedTo": "2026-07-26T10:04:32.000Z",
+      "memberArticleIds": [
+        "discovery-yUTSPVfrT9B06lV89Mw3hutr"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-yUTSPVfrT9B06lV89Mw3hutr",
+          "sourceArabic": "ANF | Articles",
+          "articleUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/aslah-raqy-brayt-amyrkyt-hl-ynjh-tahyl-almsarf-fy-kbh-aldwlar-138288",
+          "publishedAt": "2026-07-26T10:04:32.000Z"
         }
       ]
     },
@@ -1547,22 +1419,22 @@
       ]
     },
     {
-      "groupId": "event-sFFA6CZNw8uVI5eZce",
-      "category": "security",
-      "representativeArticleId": "discovery-uOyw2g9_fS8yPdSPhtG5G8Kt",
+      "groupId": "event-pV3qlvXkKevzR_vEn4",
+      "category": "international",
+      "representativeArticleId": "discovery-geqBpKImUrJ5Ncf76yuvF8er",
       "memberCount": 1,
       "duplicateCount": 0,
-      "publishedFrom": "2026-07-26T04:00:00.000Z",
-      "publishedTo": "2026-07-26T04:00:00.000Z",
+      "publishedFrom": "2026-07-26T06:43:56.000Z",
+      "publishedTo": "2026-07-26T06:43:56.000Z",
       "memberArticleIds": [
-        "discovery-uOyw2g9_fS8yPdSPhtG5G8Kt"
+        "discovery-geqBpKImUrJ5Ncf76yuvF8er"
       ],
       "sources": [
         {
-          "articleId": "discovery-uOyw2g9_fS8yPdSPhtG5G8Kt",
-          "sourceArabic": "Human Rights Watch",
-          "articleUrl": "https://www.hrw.org/ar/news/2026/07/26/end-impunity-for-crimes-against-journalists-in-yemen",
-          "publishedAt": "2026-07-26T04:00:00.000Z"
+          "articleId": "discovery-geqBpKImUrJ5Ncf76yuvF8er",
+          "sourceArabic": "وكالة الصحافة المستقلة",
+          "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D9%84%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%B9-%D8%B4%D8%B1%D9%88%D8%B7%D8%A7-%D8%B5%D8%A7%D8%B1%D9%85%D8%A9-%D9%84/",
+          "publishedAt": "2026-07-26T06:43:56.000Z"
         }
       ]
     },
@@ -1967,46 +1839,6 @@
       ]
     },
     {
-      "groupId": "event-iC6DyFG6owSQz9CzWU",
-      "category": "security",
-      "representativeArticleId": "discovery-AZEPIS_mi1V1CtVHhUqXRl8I",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-24T16:03:47.000Z",
-      "publishedTo": "2026-07-24T16:03:47.000Z",
-      "memberArticleIds": [
-        "discovery-AZEPIS_mi1V1CtVHhUqXRl8I"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-AZEPIS_mi1V1CtVHhUqXRl8I",
-          "sourceArabic": "مجلة المجلة",
-          "articleUrl": "https://www.majalla.com/node/332185/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D8%AC%D9%86%D9%88%D8%A8-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A-%D8%B9%D9%82%D8%AF%D8%A9-%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9-%D9%84%D8%A7-%D9%8A%D8%AD%D9%84%D9%87%D8%A7-%D8%B7%D8%B1%D9%81-%D9%88%D8%A7%D8%AD%D8%AF",
-          "publishedAt": "2026-07-24T16:03:47.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-qRgVYAxPXGJxbyCnsi",
-      "category": "security",
-      "representativeArticleId": "discovery-A2TvbwhuG4Yy7u4WKvtPTqks",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-24T13:45:09.000Z",
-      "publishedTo": "2026-07-24T13:45:09.000Z",
-      "memberArticleIds": [
-        "discovery-A2TvbwhuG4Yy7u4WKvtPTqks"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-A2TvbwhuG4Yy7u4WKvtPTqks",
-          "sourceArabic": "برس بي",
-          "articleUrl": "https://arabic.pressbee.net/show10869990.html?title\\=%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A8%D8%A7%D9%83%D8%B3%D8%AA%D8%A7%D9%86%D9%8A-%D9%85%D9%82%D8%AA%D9%84-15-%D8%A8%D9%8A%D9%86%D9%87%D9%85-12-%D8%AC%D9%86%D8%AF%D9%8A%D8%A7-%D9%81%D9%8A-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%A7%D9%86%D8%AA%D8%AD%D8%A7%D8%B1%D9%8A-%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8",
-          "publishedAt": "2026-07-24T13:45:09.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-QaOQvYv0aF-dylBEni",
       "category": "security",
       "representativeArticleId": "discovery-1vuq7LaXCzc05c-RCHPa9UMn",
@@ -2023,26 +1855,6 @@
           "sourceArabic": "شفق نيوز",
           "articleUrl": "https://shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A8%D8%B9%D8%AF-%D9%85%D9%82%D8%AA%D9%84-%D9%88-%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B3%D8%B1%D8%A7-%D9%8A%D9%84%D9%8A%D9%8A%D9%86-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%88%D9%83%D8%A7%D8%AA%D8%B3-%D9%8A%D9%82%D8%B1%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%A8%D8%AF-%D8%A8%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9-%D8%A8-%D8%B1-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
           "publishedAt": "2026-07-24T12:11:25.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-U4LP1z7QIEAlQBMJcP",
-      "category": "security",
-      "representativeArticleId": "discovery-j46STIZBBlBYMTT-hNGJjj0c",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-24T12:08:11.000Z",
-      "publishedTo": "2026-07-24T12:08:11.000Z",
-      "memberArticleIds": [
-        "discovery-j46STIZBBlBYMTT-hNGJjj0c"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-j46STIZBBlBYMTT-hNGJjj0c",
-          "sourceArabic": "عين ليبيا",
-          "articleUrl": "https://www.eanlibya.com/%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%83-%D9%81%D9%8A-%D9%86%D8%A7%D8%A8%D9%84%D8%B3-%D8%A8%D9%86-%D8%BA%D9%81%D9%8A%D8%B1-%D9%8A%D8%AF%D8%B9%D9%88-%D9%84%D8%AA%D8%AF/",
-          "publishedAt": "2026-07-24T12:08:11.000Z"
         }
       ]
     },
@@ -2507,26 +2319,6 @@
       ]
     },
     {
-      "groupId": "event-l5E5zmmyxd-DevMxW_",
-      "category": "security",
-      "representativeArticleId": "discovery-y0jsn5tzNx8d88TZkm53FkYc",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-22T12:00:00.000Z",
-      "publishedTo": "2026-07-22T12:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-y0jsn5tzNx8d88TZkm53FkYc"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-y0jsn5tzNx8d88TZkm53FkYc",
-          "sourceArabic": "اليوم السابع",
-          "articleUrl": "https://www.youm7.com/story/2026/7/22/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D8%AB-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%B9%D9%84%D9%89-%D8%B1%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%83%D8%A7%D8%B1%D9%8A%D9%83%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%89-%D9%86%D8%A7%D8%AC%D9%89-%D8%A7%D9%84%D8%B9%D9%84%D9%89/7489426",
-          "publishedAt": "2026-07-22T12:00:00.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-drOrArXqhzyLan85cO",
       "category": "politics",
       "representativeArticleId": "discovery-OdlJcd3qaeY1hfeHkr8poFuR",
@@ -2607,26 +2399,6 @@
       ]
     },
     {
-      "groupId": "event-cFBFEEVq3mebH2v08A",
-      "category": "security",
-      "representativeArticleId": "discovery-Y3-kF5QwoNNtjFOKmS-cpW0K",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-22T07:00:00.000Z",
-      "publishedTo": "2026-07-22T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-Y3-kF5QwoNNtjFOKmS-cpW0K"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-Y3-kF5QwoNNtjFOKmS-cpW0K",
-          "sourceArabic": "تطبيق نبض",
-          "articleUrl": "https://nabdapp.com/t/175663779%3E",
-          "publishedAt": "2026-07-22T07:00:00.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-Kdw5JrYqutErhx5FXl",
       "category": "politics",
       "representativeArticleId": "discovery-RRUvfYTFwCkfcRxKd6DOzOQ1",
@@ -2643,6 +2415,26 @@
           "sourceArabic": "سكاي نيوز عربية",
           "articleUrl": "https://www.skynewsarabia.com/middle-east/1882160-%D8%A7%D9%84%D8%A8%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%AA%D9%8A%D8%A9-%D9%84%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D9%86%D9%81%D9%84%D8%AA-%D8%A8%D8%AF%D8%A3-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AA%D9%81%D9%83%D9%8A%D9%83",
           "publishedAt": "2026-07-22T06:19:00.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-JFL7ITDQXY0cxtUWwo",
+      "category": "economy",
+      "representativeArticleId": "discovery-gKJkh924XgWtgqUd3946ZM5N",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-22T02:32:11.000Z",
+      "publishedTo": "2026-07-22T02:32:11.000Z",
+      "memberArticleIds": [
+        "discovery-gKJkh924XgWtgqUd3946ZM5N"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-gKJkh924XgWtgqUd3946ZM5N",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
+          "articleUrl": "https://annabaa.org/arabic/authorsarticles/46824",
+          "publishedAt": "2026-07-22T02:32:11.000Z"
         }
       ]
     },
@@ -2683,26 +2475,6 @@
           "sourceArabic": "شفق نيوز",
           "articleUrl": "https://shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D9%84%D9%80-%D8%A7%D9%84%D8%B5%D8%B1%D8%A7%D8%B5%D9%8A%D8%B1-%D8%AA%D8%AE%D9%84-%D9%81-296-%D9%85%D8%B5%D8%A7%D8%A8%D8%A7-%D9%81%D9%8A-%D8%A7%D9%84%D9%87%D9%86%D8%AF",
           "publishedAt": "2026-07-21T16:15:40.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-fzM3FSgbC7KdUsi7Tl",
-      "category": "security",
-      "representativeArticleId": "discovery-Qj1rm5g8oKFuliiFtxmXn3Up",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-21T12:25:42.000Z",
-      "publishedTo": "2026-07-21T12:25:42.000Z",
-      "memberArticleIds": [
-        "discovery-Qj1rm5g8oKFuliiFtxmXn3Up"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-Qj1rm5g8oKFuliiFtxmXn3Up",
-          "sourceArabic": "العربي الجديد",
-          "articleUrl": "https://www.alaraby.co.uk/politics/%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D9%8A%D8%B9%D8%AA%D9%82%D9%84-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A7%D9%8B-%D8%A8%D8%B2%D8%B9%D9%85-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D8%A8%D9%86-%D8%BA%D9%81%D9%8A%D8%B1",
-          "publishedAt": "2026-07-21T12:25:42.000Z"
         }
       ]
     },
@@ -2823,6 +2595,26 @@
           "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46813",
           "publishedAt": "2026-07-21T03:13:28.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-AxPUcxxjAO3E25zXPl",
+      "category": "international",
+      "representativeArticleId": "discovery-o--kWa0v7ZZgcxX9z4KzW2jn",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-21T02:36:36.000Z",
+      "publishedTo": "2026-07-21T02:36:36.000Z",
+      "memberArticleIds": [
+        "discovery-o--kWa0v7ZZgcxX9z4KzW2jn"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-o--kWa0v7ZZgcxX9z4KzW2jn",
+          "sourceArabic": "الحرة",
+          "articleUrl": "https://alhurra.com/28290",
+          "publishedAt": "2026-07-21T02:36:36.000Z"
         }
       ]
     },
@@ -2967,42 +2759,22 @@
       ]
     },
     {
-      "groupId": "event-lQFXlCz8J9s1HZjxpw",
+      "groupId": "event-vOUbtGSokr_sydTA_M",
       "category": "security",
-      "representativeArticleId": "discovery-PfDmCheuRBx-2MQIxPGBh2_o",
+      "representativeArticleId": "discovery-Qj8Uj75cmtwj4BVNjrMluWE8",
       "memberCount": 1,
       "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T15:30:14.000Z",
-      "publishedTo": "2026-07-20T15:30:14.000Z",
+      "publishedFrom": "2026-07-20T15:08:01.000Z",
+      "publishedTo": "2026-07-20T15:08:01.000Z",
       "memberArticleIds": [
-        "discovery-PfDmCheuRBx-2MQIxPGBh2_o"
+        "discovery-Qj8Uj75cmtwj4BVNjrMluWE8"
       ],
       "sources": [
         {
-          "articleId": "discovery-PfDmCheuRBx-2MQIxPGBh2_o",
-          "sourceArabic": "ایران اینترنشنال",
-          "articleUrl": "https://www.iranintl.com/ar/202607206374",
-          "publishedAt": "2026-07-20T15:30:14.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-FQQXczCrU1SC8bEwHY",
-      "category": "security",
-      "representativeArticleId": "discovery-OYy08HHjRZnCqw9yk7WqSfQU",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T14:58:16.000Z",
-      "publishedTo": "2026-07-20T14:58:16.000Z",
-      "memberArticleIds": [
-        "discovery-OYy08HHjRZnCqw9yk7WqSfQU"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-OYy08HHjRZnCqw9yk7WqSfQU",
-          "sourceArabic": "ایران اینترنشنال",
-          "articleUrl": "https://www.iranintl.com/ar/202607200224",
-          "publishedAt": "2026-07-20T14:58:16.000Z"
+          "articleId": "discovery-Qj8Uj75cmtwj4BVNjrMluWE8",
+          "sourceArabic": "العين الإخبارية",
+          "articleUrl": "https://al-ain.com/article/isis-exploit-historic-us-iraq-exit",
+          "publishedAt": "2026-07-20T15:08:01.000Z"
         }
       ]
     },
@@ -3023,46 +2795,6 @@
           "sourceArabic": "مجلة المجلة",
           "articleUrl": "https://www.majalla.com/node/332115/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A8%D9%8A%D9%86-%D9%85%D8%B1%D8%A7%D8%B3%D9%85-%D8%A7%D9%84%D8%B1%D8%AD%D9%8A%D9%84-%D9%81%D9%8A-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D9%88%D9%85%D8%B5%D8%A7%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%AD%D9%84%D9%8A%D9%81-%D9%81%D9%8A-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86",
           "publishedAt": "2026-07-20T13:17:16.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-Zr1exVwimgV8hQF3jo",
-      "category": "security",
-      "representativeArticleId": "discovery-YioG5j3wU7uq5XQNmkrE8UEY",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T13:11:09.000Z",
-      "publishedTo": "2026-07-20T13:11:09.000Z",
-      "memberArticleIds": [
-        "discovery-YioG5j3wU7uq5XQNmkrE8UEY"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-YioG5j3wU7uq5XQNmkrE8UEY",
-          "sourceArabic": "ایران اینترنشنال",
-          "articleUrl": "https://www.iranintl.com/ar/202607207119",
-          "publishedAt": "2026-07-20T13:11:09.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-T9dCV892nwaabEBP7d",
-      "category": "security",
-      "representativeArticleId": "discovery-xgwvA1Zw_S-xX4WfUIDXvitH",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T12:50:11.000Z",
-      "publishedTo": "2026-07-20T12:50:11.000Z",
-      "memberArticleIds": [
-        "discovery-xgwvA1Zw_S-xX4WfUIDXvitH"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-xgwvA1Zw_S-xX4WfUIDXvitH",
-          "sourceArabic": "الجريدة العقارية",
-          "articleUrl": "https://aleqaria.com.eg/post/details/343028/%D9%85%D8%B5%D8%B1-%D8%AA%D8%AF%D9%8A%D9%86-51811",
-          "publishedAt": "2026-07-20T12:50:11.000Z"
         }
       ]
     },
@@ -3203,26 +2935,6 @@
           "sourceArabic": "العربي الجديد",
           "articleUrl": "https://www.alaraby.co.uk/economy/4-%D8%B3%D9%81%D9%86-%D9%81%D9%82%D8%B7-%D8%B9%D8%A8%D8%B1%D8%AA-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2-%D8%A7%D9%84%D8%A3%D8%AD%D8%AF",
           "publishedAt": "2026-07-20T07:00:00.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-LxlOjX3QU3lcJ0g4tf",
-      "category": "security",
-      "representativeArticleId": "discovery--fX7Hd8KCgwTOAJpS6ec5KV5",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T05:34:57.000Z",
-      "publishedTo": "2026-07-20T05:34:57.000Z",
-      "memberArticleIds": [
-        "discovery--fX7Hd8KCgwTOAJpS6ec5KV5"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery--fX7Hd8KCgwTOAJpS6ec5KV5",
-          "sourceArabic": "٢٦ سبتمبر نت",
-          "articleUrl": "https://26sep.net/index.php/global/131536-2026-07-20-05-34-57",
-          "publishedAt": "2026-07-20T05:34:57.000Z"
         }
       ]
     },
@@ -3587,26 +3299,6 @@
       ]
     },
     {
-      "groupId": "event-xKZZWY_TbjncoPrwOY",
-      "category": "security",
-      "representativeArticleId": "discovery-poV6iEaX9ZtYsWpr1fsobsIV",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-18T07:00:00.000Z",
-      "publishedTo": "2026-07-18T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-poV6iEaX9ZtYsWpr1fsobsIV"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-poV6iEaX9ZtYsWpr1fsobsIV",
-          "sourceArabic": "تطبيق نبض",
-          "articleUrl": "https://nabdapp.com/t/175479762%3E",
-          "publishedAt": "2026-07-18T07:00:00.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-nTftC0sdMBK7ugGDsa",
       "category": "security",
       "representativeArticleId": "discovery-ioRP5t__dCTHpanUppuuzyGT",
@@ -3687,6 +3379,26 @@
       ]
     },
     {
+      "groupId": "event-t0pgipQGUbtpye2Hat",
+      "category": "politics",
+      "representativeArticleId": "discovery-jilY6APU6qvHLfKQhGhhAX_N",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-18T07:00:00.000Z",
+      "publishedTo": "2026-07-18T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-jilY6APU6qvHLfKQhGhhAX_N"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-jilY6APU6qvHLfKQhGhhAX_N",
+          "sourceArabic": "العربي الجديد",
+          "articleUrl": "https://www.alaraby.co.uk/politics/%D8%AE%D8%A7%D8%B5-%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%84%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%AD%D8%B1%D9%91%D9%83-%D8%AD%D8%B3%D9%85-%D8%A7%D9%84%D9%88%D8%B2%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D8%A7%D8%BA%D8%B1%D8%A9-%D9%81%D9%8A-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
+          "publishedAt": "2026-07-18T07:00:00.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-4Q3GzknVDYSkmJIkNY",
       "category": "politics",
       "representativeArticleId": "discovery-IA7zfu4r-IHAT2ujjYYju6_P",
@@ -3703,26 +3415,6 @@
           "sourceArabic": "التلفزيون العربي",
           "articleUrl": "https://www.alaraby.com/news/%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A5%D9%84%D9%89-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%A5%D8%B3%D8%AA%D8%B1%D8%A7%D8%AA%D9%8A%D8%AC%D9%8A%D8%A9-%D8%A3%D9%85-%D8%A5%D8%B9%D8%A7%D8%AF%D8%A9-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
           "publishedAt": "2026-07-17T23:46:27.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-e7ppTvEgFXQz3ymkwR",
-      "category": "security",
-      "representativeArticleId": "discovery-HruZx6cCcdq9v7OZofp85p7y",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-17T20:38:26.000Z",
-      "publishedTo": "2026-07-17T20:38:26.000Z",
-      "memberArticleIds": [
-        "discovery-HruZx6cCcdq9v7OZofp85p7y"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-HruZx6cCcdq9v7OZofp85p7y",
-          "sourceArabic": "TRT عربي",
-          "articleUrl": "https://www.trtarabi.com/article/1504922f7182",
-          "publishedAt": "2026-07-17T20:38:26.000Z"
         }
       ]
     },
@@ -3847,6 +3539,26 @@
       ]
     },
     {
+      "groupId": "event-jCfjWDP2I3HBHTTTJE",
+      "category": "international",
+      "representativeArticleId": "discovery-vkHp3armvTYcapIwcLibg1TZ",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-17T07:00:00.000Z",
+      "publishedTo": "2026-07-17T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-vkHp3armvTYcapIwcLibg1TZ"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-vkHp3armvTYcapIwcLibg1TZ",
+          "sourceArabic": "Euronews",
+          "articleUrl": "https://arabic.euronews.com/2026/07/17/an-inexperienced-young-man-khamenei-adviser-attacks-iraqi-prime-minister-after-his-meet",
+          "publishedAt": "2026-07-17T07:00:00.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-cW8UnNM7ukjEjmO9h2",
       "category": "politics",
       "representativeArticleId": "discovery-vbvHzJpyfYK2DctRgWasLh0z",
@@ -3883,6 +3595,26 @@
           "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/27585",
           "publishedAt": "2026-07-17T00:07:05.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-055nXA69J5eTsZFo6T",
+      "category": "security",
+      "representativeArticleId": "discovery-agfwjpALbQUvs-z-CtalGwW1",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-16T18:50:05.000Z",
+      "publishedTo": "2026-07-16T18:50:05.000Z",
+      "memberArticleIds": [
+        "discovery-agfwjpALbQUvs-z-CtalGwW1"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-agfwjpALbQUvs-z-CtalGwW1",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://shafaq.com/ar/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D9%88%D8%AA%D8%AD%D9%84%D9%8A%D9%84%D8%A7%D8%AA/%D8%A8%D8%B9%D8%AF-%D8%B4%D9%87%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D9%87%D8%AF%D9%88-%D8%A7%D9%84%D9%85%D8%B3%D9%8A-%D8%B1%D8%A7%D8%AA-%D8%AA%D8%B9%D8%A8%D8%AB-%D8%A8-%D8%AC%D9%88%D8%A7-%D8%B1%D8%A8%D9%8A%D9%84-%D9%88%D8%A7%D9%84%D8%B1%D8%B3%D8%A7-%D9%84-%D8%AA%D8%B5%D9%84-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86",
+          "publishedAt": "2026-07-16T18:50:05.000Z"
         }
       ]
     },
@@ -4134,6 +3866,26 @@
       ]
     },
     {
+      "groupId": "event-xIy6R2Xc_MxUh4_SMs",
+      "category": "security",
+      "representativeArticleId": "discovery-cR-0P8PGATtrEkIbPJ834SQd",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-16T07:00:00.000Z",
+      "publishedTo": "2026-07-16T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-cR-0P8PGATtrEkIbPJ834SQd"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-cR-0P8PGATtrEkIbPJ834SQd",
+          "sourceArabic": "العين الإخبارية",
+          "articleUrl": "https://al-ain.com/article/saudi-national-shot-dead-saint-lucia",
+          "publishedAt": "2026-07-16T07:00:00.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-96s8jQPiqpAJCkGUCS",
       "category": "politics",
       "representativeArticleId": "discovery-0L7kqgmoUqjU9GYEyxwIxZVn",
@@ -4262,7 +4014,7 @@
     },
     {
       "groupId": "event-xfVOVlRb8Zo91AOQgv",
-      "category": "politics",
+      "category": "international",
       "representativeArticleId": "discovery-jrRJ_r1NT0tlCh0a1R4MLGtt",
       "memberCount": 1,
       "duplicateCount": 0,

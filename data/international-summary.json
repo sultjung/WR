@@ -1,15 +1,21 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T06:22:15.736Z",
-  "total": 62,
+  "generatedAt": "2026-07-29T08:05:15.016Z",
+  "total": 68,
   "typeCounts": {
-    "US_SECURITY": 48,
-    "TURKEY_RELATIONS": 6,
+    "US_SECURITY": 54,
+    "TURKEY_RELATIONS": 4,
     "ENERGY_ROUTE": 2,
-    "IRAN_RELATIONS": 4,
+    "IRAN_RELATIONS": 6,
     "SANCTIONS_FINANCE": 2
   },
   "excluded": [
+    {
+      "articleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
+      "titleArabic": "الزيدي: طريق التنمية مشروع إقليميٌّ يعيد تعريف مفهوم الربط الاقتصادي بالشرق الأوسط",
+      "articleUrl": "https://almasalah.com/archives/139350",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
     {
       "articleId": "discovery-HA88Ulm3ebNaupTIpkzW9cK9",
       "titleArabic": "أخبار المغرب العاجلة",
@@ -89,6 +95,12 @@
       "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
     },
     {
+      "articleId": "discovery-YzZZSuOztUObaRGrXe0Z4btQ",
+      "titleArabic": "خليل زاد لكوردستان 24: انسحاب القوات الامريكية دون دراسة يخلق فراغاً أمنياً لا يخدم العراق وإقليم كوردستان",
+      "articleUrl": "https://www.kurdistan24.net/ar/story/926545",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
       "articleId": "discovery-JXAR0Ulmu_UNFsuBGfA-YkYx",
       "titleArabic": "مسؤول أميركي ينفي لـ”الحرة” تقليص خطة إعمار غزة | الحرة",
       "articleUrl": "https://alhurra.com/27613",
@@ -104,12 +116,6 @@
       "articleId": "discovery-8A1z81w6WQgfea4fCYnkzVpW",
       "titleArabic": "هل يغير العراق موقفه من حزب الله اللبناني؟.. وثيقة مسربة للعقوبات تثير الجدل",
       "articleUrl": "https://al-ain.com/article/iraqi-regarding-hezbollah-sanctions",
-      "reason": "일반 국제·문화·스포츠 기사"
-    },
-    {
-      "articleId": "discovery-OJYofwPalTESm3TdtFJruaaM",
-      "titleArabic": "ترامب يستقبل رئيس الوزراء العراقي وسط ضغوط على بغداد للحد من نفوذ إيران.. ويصفه بـ\"البطل\"",
-      "articleUrl": "https://arabic.euronews.com/2026/07/15/hero-and-friend-zaidi-white-house-economic-partnership-disarming-factions",
       "reason": "일반 국제·문화·스포츠 기사"
     }
   ]
