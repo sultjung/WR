@@ -72,6 +72,12 @@ jobs:
       - name: Filter Iraq-linked international developments
         run: npm run collect:international
 
+      - name: Group duplicate reports into events
+        env:
+          EVENT_GROUP_MAX_HOURS: "48"
+          EVENT_GROUP_MIN_SCORE: "0.58"
+        run: npm run collect:events
+
       - name: Validate collected data
         run: npm run validate:data
 
@@ -84,6 +90,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git commit -m "Collect Iraqi Arabic news across all report categories"
+          git commit -m "Collect, classify, and group Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
