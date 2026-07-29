@@ -38,7 +38,21 @@ function normalizeUrl(url = "") {
 }
 
 function isBlockedHost(host = "") {
-  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /(^|\.)gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host) || /youtube\.com$/i.test(host) || /facebook\.com$/i.test(host) || /instagram\.com$/i.test(host) || /(?:^|\.)x\.com$/i.test(host) || /twitter\.com$/i.test(host);
+  return !host
+    || host === "news.google.com"
+    || /(^|\.)google\.[a-z.]+$/i.test(host)
+    || /(^|\.)gstatic\.com$/i.test(host)
+    || /googleusercontent\.com$/i.test(host)
+    || /youtube\.com$/i.test(host)
+    || /facebook\.com$/i.test(host)
+    || /instagram\.com$/i.test(host)
+    || /(?:^|\.)x\.com$/i.test(host)
+    || /twitter\.com$/i.test(host)
+    || /w3\.org$/i.test(host)
+    || /schema\.org$/i.test(host)
+    || /xmlsoft\.org$/i.test(host)
+    || /mozilla\.org$/i.test(host)
+    || /microsoft\.com$/i.test(host);
 }
 
 function isLikelyArticleUrl(url = "") {
@@ -49,10 +63,19 @@ function isLikelyArticleUrl(url = "") {
     if (isBlockedHost(host)) return false;
     if (!/^https?:$/.test(parsed.protocol)) return false;
     if (!pathName || pathName === "/") return false;
+    if (pathName.length < 5) return false;
     if (/\.(?:jpg|jpeg|png|gif|webp|svg|ico|css|js|pdf|zip|mp4|mp3)(?:$|[?#])/i.test(pathName)) return false;
-    if (/\/(?:search|tag|tags|category|categories|section|author|login|privacy|about|contact)(?:\/|$)/i.test(pathName)) return false;
+    if (/\/(?:search|tag|tags|category|categories|section|author|login|privacy|about|contact|feed|rss)(?:\/|$)/i.test(pathName)) return false;
+    if (/\/XML\/|\/namespace|\/schema\b/i.test(pathName)) return false;
     return true;
   } catch { return false; }
+}
+
+function hostMatchesSource(url = "", sourceHomepage = "") {
+  const host = hostnameOf(url);
+  const sourceHost = hostnameOf(sourceHomepage);
+  if (!host || !sourceHost || isBlockedHost(sourceHost)) return false;
+  return host === sourceHost || host.endsWith(`.${sourceHost}`) || sourceHost.endsWith(`.${host}`);
 }
 
 async function fetchPage(url) {
@@ -64,7 +87,7 @@ async function fetchPage(url) {
       signal: controller.signal,
       headers: {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
-        accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.7",
+        accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.7",
         "accept-language": "ar-IQ,ar;q=0.9,en;q=0.5"
       }
     });
@@ -82,9 +105,7 @@ function extractCandidates(html = "", baseUrl = "") {
     /<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["']/gi,
     /<meta[^>]+property=["']og:url["'][^>]+content=["']([^"']+)["']/gi,
     /<meta[^>]+content=["']([^"']+)["'][^>]+property=["']og:url["']/gi,
-    /<meta[^>]+http-equiv=["']refresh["'][^>]+content=["'][^"']*url=([^"']+)["']/gi,
-    /["'](https?:\\?\/\\?\/[^"'<>\s]+)["']/gi,
-    /<a[^>]+href=["'](https?:\/\/[^"']+)["']/gi
+    /<meta[^>]+http-equiv=["']refresh["'][^>]+content=["'][^"']*url=([^"']+)["']/gi
   ];
   for (const pattern of patterns) {
     for (const match of String(html).matchAll(pattern)) {
@@ -98,17 +119,16 @@ function extractCandidates(html = "", baseUrl = "") {
 }
 
 function chooseBestCandidate(candidates, sourceHomepage = "") {
-  const sourceHost = hostnameOf(sourceHomepage);
   const scored = candidates.map((url) => {
-    const host = hostnameOf(url);
     const pathName = new URL(url).pathname;
     let score = 0;
-    if (sourceHost && (host === sourceHost || host.endsWith(`.${sourceHost}`) || sourceHost.endsWith(`.${host}`))) score += 100;
-    if (/\d{4,}/.test(pathName)) score += 15;
-    if (/\/(news|article|story|details?|politics|economy|iraq)\//i.test(pathName)) score += 10;
-    score += Math.min(pathName.length, 80) / 20;
+    if (hostMatchesSource(url, sourceHomepage)) score += 100;
+    if (/\d{4,}/.test(pathName)) score += 20;
+    if (/\/(news|article|story|details?|politics|economy|iraq|local)\//i.test(pathName)) score += 15;
+    if (pathName.split("/").filter(Boolean).length >= 2) score += 10;
+    score += Math.min(pathName.length, 100) / 25;
     return { url, score };
-  }).sort((a, b) => b.score - a.score);
+  }).filter((item) => item.score >= 20).sort((a, b) => b.score - a.score);
   return scored[0]?.url || "";
 }
 
@@ -117,8 +137,7 @@ async function resolveOne(item) {
   if (!discoveryUrl) return { ...item, urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED" };
   try {
     const first = await fetchPage(discoveryUrl);
-    const finalHost = hostnameOf(first.finalUrl);
-    if (!isBlockedHost(finalHost) && isLikelyArticleUrl(first.finalUrl)) {
+    if (isLikelyArticleUrl(first.finalUrl) && (hostMatchesSource(first.finalUrl, item.sourceHomepage) || !hostnameOf(item.sourceHomepage))) {
       return { ...item, articleUrl: normalizeUrl(first.finalUrl), urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
     }
     const candidates = extractCandidates(first.html, first.finalUrl);
