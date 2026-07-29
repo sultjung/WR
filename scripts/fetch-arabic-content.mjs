@@ -49,8 +49,17 @@ function normalizeArabic(value = "") {
 }
 
 function containsExactBismayah(value = "") {
+  return /(?<![\u0600-\u06FF])بسمايه(?![\u0600-\u06FF])/.test(normalizeArabic(value));
+}
+
+function hasAny(value = "", terms = []) {
   const normalized = normalizeArabic(value);
-  return /(?<![\u0600-\u06FF])بسمايه(?![\u0600-\u06FF])/.test(normalized);
+  return terms.some((term) => normalized.includes(normalizeArabic(term)));
+}
+
+function hasAll(value = "", terms = []) {
+  const normalized = normalizeArabic(value);
+  return terms.every((term) => normalized.includes(normalizeArabic(term)));
 }
 
 function arabicRatio(value = "") {
@@ -67,7 +76,9 @@ function hostnameOf(url = "") {
 function normalizeUrl(url = "") {
   try {
     const parsed = new URL(url);
-    for (const key of [...parsed.searchParams.keys()]) if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) parsed.searchParams.delete(key);
+    for (const key of [...parsed.searchParams.keys()]) {
+      if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) parsed.searchParams.delete(key);
+    }
     parsed.hash = "";
     return parsed.toString();
   } catch { return ""; }
@@ -175,23 +186,85 @@ function extractTitle(html = "", fallback = "") {
   return extractMeta(html, "og:title") || extractMeta(html, "twitter:title") || stripTags(String(html).match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "") || fallback;
 }
 
+function politicalValidation(item = {}, text = "") {
+  const requiredTerms = Array.isArray(item.requiredTerms) ? item.requiredTerms : [];
+  const excludedTerms = Array.isArray(item.excludedTerms) ? item.excludedTerms : [];
+  const ceremonialTerms = [
+    "تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين",
+    "ذكرى تأسيس", "حفل تكريم", "زيارة مجاملة", "بحث العلاقات الثنائية دون تفاصيل"
+  ];
+  const iraqAnchors = [
+    "العراق", "العراقي", "بغداد", "الحكومة العراقية", "مجلس الوزراء",
+    "مجلس النواب", "رئيس مجلس الوزراء", "رئيس الوزراء", "الإطار التنسيقي",
+    "اللجنة المالية النيابية", "هيئة النزاهة"
+  ];
+  const substantiveSignals = [
+    "قرار", "قرارات", "توجيه", "توجيهات", "سياسة", "برنامج حكومي", "جلسة",
+    "اجتماع", "تصويت", "قانون", "مشروع قانون", "استجواب", "إقالة", "إعفاء",
+    "تعيين", "تشكيل الحكومة", "التشكيلة الوزارية", "الموازنة", "تخصيصات",
+    "تمويل", "مكافحة الفساد", "حصر السلاح", "منح الثقة", "إحالة إلى القضاء",
+    "اتفاق", "مذكرة تفاهم", "تنفيذ", "خطة", "إصلاح"
+  ];
+
+  if (hasAny(text, [...ceremonialTerms, ...excludedTerms])) {
+    return { ok: false, errorCode: "CEREMONIAL_POLITICS", note: "축하·조문·기념식 등 의례성 정치기사" };
+  }
+  if (!hasAny(text, iraqAnchors)) {
+    return { ok: false, errorCode: "NON_IRAQ_RELATED", note: "이라크 정치 주체 또는 기관 확인 불가" };
+  }
+  if (requiredTerms.length && !hasAll(text, requiredTerms)) {
+    return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "검색 키워드의 필수 정치 주체가 본문에서 확인되지 않음" };
+  }
+  if (!hasAny(text, substantiveSignals)) {
+    return { ok: false, errorCode: "LOW_INFORMATION_POLITICS", note: "정책·결정·회의·법률·인사 등 실질 내용 부족" };
+  }
+  return { ok: true, errorCode: null, note: "이라크 정치권의 실질 정책·결정 기사" };
+}
+
+function validateCategory(item = {}, text = "") {
+  if (item.category === "bismayah") {
+    return containsExactBismayah(text)
+      ? { ok: true, errorCode: null, note: "정확한 비스마야 표기 확인" }
+      : { ok: false, errorCode: "NON_IRAQ_RELATED", note: "정확한 비스마야 표기(بسماية/بسمايه) 미확인" };
+  }
+  if (item.category === "politics") return politicalValidation(item, text);
+  return { ok: true, errorCode: null, note: "카테고리 전용 검증 미적용" };
+}
+
 async function hydrate(item) {
   if (item.urlStatus !== "RESOLVED" || !item.articleUrl) return { ...item, contentStatus: "NOT_ATTEMPTED" };
   try {
     const page = await fetchPage(item.articleUrl);
     const originalTextArabic = extractBestText(page.html);
     const originalTitleArabic = extractTitle(page.html, item.originalTitleArabic || "");
-    const ratio = arabicRatio(`${originalTitleArabic}\n${originalTextArabic}`);
+    const combinedText = `${originalTitleArabic}\n${originalTextArabic}`;
+    const ratio = arabicRatio(combinedText);
     const canonicalUrl = extractCanonicalUrl(page.html, page.finalUrl || item.articleUrl);
+
     if (originalTextArabic.length < MIN_CONTENT_CHARS) {
       return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "CONTENT_EXTRACTION_FAILED", fetchedAt: new Date().toISOString() };
     }
     if (ratio < MIN_ARABIC_RATIO) {
       return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "NON_ARABIC_ARTICLE", fetchedAt: new Date().toISOString() };
     }
-    if (!containsExactBismayah(`${originalTitleArabic}\n${originalTextArabic}`)) {
-      return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "NON_IRAQ_RELATED", relevanceNote: "정확한 비스마야 표기(بسماية/بسمايه) 미확인", fetchedAt: new Date().toISOString() };
+
+    const categoryResult = validateCategory(item, combinedText);
+    if (!categoryResult.ok) {
+      return {
+        ...item,
+        articleUrl: normalizeUrl(page.finalUrl || item.articleUrl),
+        canonicalUrl,
+        originalTitleArabic,
+        originalTextArabic: "",
+        contentChars: originalTextArabic.length,
+        arabicRatio: ratio,
+        contentStatus: "FAILED",
+        errorCode: categoryResult.errorCode,
+        relevanceNote: categoryResult.note,
+        fetchedAt: new Date().toISOString()
+      };
     }
+
     return {
       ...item,
       articleUrl: normalizeUrl(page.finalUrl || item.articleUrl),
@@ -203,14 +276,27 @@ async function hydrate(item) {
       arabicRatio: ratio,
       contentStatus: "FULL_TEXT",
       errorCode: null,
+      relevanceNote: categoryResult.note,
       fetchedAt: new Date().toISOString(),
       translation: { status: "PENDING", titleKo: "", fullTextKo: "" },
-      analysis: { status: "PENDING", category: "bismayah", recommendation: "USER_REVIEW_REQUIRED", relevanceScore: null, recommendationReason: "" },
+      analysis: {
+        status: "PENDING",
+        category: item.category,
+        recommendation: "USER_REVIEW_REQUIRED",
+        relevanceScore: null,
+        recommendationReason: ""
+      },
       selection: { selected: false, reportSection: null, displayOrder: null, userNote: "" }
     };
   } catch (error) {
     const message = String(error.message || error);
-    const errorCode = /abort|timeout/i.test(message) ? "FETCH_TIMEOUT" : /HTTP 404|HTTP 410/.test(message) ? "ARTICLE_REMOVED" : /HTTP 401|HTTP 403|HTTP 429/.test(message) ? "ACCESS_BLOCKED" : "CONTENT_EXTRACTION_FAILED";
+    const errorCode = /abort|timeout/i.test(message)
+      ? "FETCH_TIMEOUT"
+      : /HTTP 404|HTTP 410/.test(message)
+        ? "ARTICLE_REMOVED"
+        : /HTTP 401|HTTP 403|HTTP 429/.test(message)
+          ? "ACCESS_BLOCKED"
+          : "CONTENT_EXTRACTION_FAILED";
     return { ...item, originalTextArabic: "", contentStatus: "FAILED", errorCode, contentError: message.slice(0, 300), fetchedAt: new Date().toISOString() };
   }
 }
@@ -253,11 +339,16 @@ for (const item of [...previous, ...successful]) {
   if (key) merged.set(key, item);
 }
 const articles = [...merged.values()].sort((a, b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0));
+const categoryCounts = articles.reduce((acc, item) => {
+  acc[item.category] = (acc[item.category] || 0) + 1;
+  return acc;
+}, {});
 const payload = {
   schemaVersion: "1.0",
   generatedAt: new Date().toISOString(),
   lookbackDays: RETENTION_DAYS,
   count: articles.length,
+  categoryCounts,
   collectionRun: {
     discoveredCount: input.count || (input.articles || []).length,
     resolvedCount: input.resolvedCount || 0,
@@ -272,4 +363,4 @@ const payload = {
   articles
 };
 await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`[content] fulltext=${successful.length}, retained=${articles.length}, failed=${payload.collectionRun.failedCount}`);
+console.log(`[content] completed: ${successful.length} new full-text articles; retained=${articles.length}`, categoryCounts);
