@@ -1,15 +1,21 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T08:05:15.016Z",
-  "total": 68,
+  "generatedAt": "2026-07-29T22:19:39.505Z",
+  "total": 74,
   "typeCounts": {
-    "US_SECURITY": 54,
-    "TURKEY_RELATIONS": 4,
-    "ENERGY_ROUTE": 2,
-    "IRAN_RELATIONS": 6,
+    "US_SECURITY": 61,
+    "TURKEY_RELATIONS": 6,
+    "IRAN_RELATIONS": 4,
+    "ENERGY_ROUTE": 1,
     "SANCTIONS_FINANCE": 2
   },
   "excluded": [
+    {
+      "articleId": "discovery-iHjkH--pBm7agn-otgvRkadz",
+      "titleArabic": "واشنطن تحذر رعاياها من هجمات لميليشيات في العراق وتدعوهم للحذر | مصراوي",
+      "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/29/3025003/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%AA%D8%AD%D8%B0%D8%B1-%D8%B1%D8%B9%D8%A7%D9%8A%D8%A7%D9%87%D8%A7-%D9%85%D9%86-%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%AA%D8%AA%D9%88%D9%82%D8%B9-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D8%AC%D9%88%D8%A7%D8%A1",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
     {
       "articleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
       "titleArabic": "الزيدي: طريق التنمية مشروع إقليميٌّ يعيد تعريف مفهوم الربط الاقتصادي بالشرق الأوسط",
@@ -59,6 +65,12 @@
       "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
     },
     {
+      "articleId": "discovery-mZ19gpqn6faqkqlwgtt7Wd9I",
+      "titleArabic": "إلى أين يتجه التصعيد بين الحوثيين والسعودية؟ - BBC News عربي",
+      "articleUrl": "https://www.bbc.com/arabic/articles/ce97nmrl2xro",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
       "articleId": "discovery-8g7f5MCvAQhVbXsP51XSrPCP",
       "titleArabic": "ماذا لو تحول \"باب المندب\" إلى \"هرمز\" جديد؟",
       "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D9%87%D9%84-%D9%8A%D8%AA%D8%AD%D9%88%D9%84-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D8%A8-%D8%A5%D9%84%D9%89-%D9%87%D8%B1%D9%85%D8%B2-%D8%AC%D8%AF%D9%8A%D8%AF",
@@ -83,21 +95,9 @@
       "reason": "일반 국제·문화·스포츠 기사"
     },
     {
-      "articleId": "discovery-fSUr3zRpWPdeJICdviE2LekZ",
-      "titleArabic": "خاص بـ”الحرة”: ثلاثة قيود تكبّل الجيش اللبناني في المنطقة التجريبية | الحرة",
-      "articleUrl": "https://alhurra.com/28436",
-      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
-    },
-    {
-      "articleId": "discovery-2WVJ1XC6jaKdYJpFyCfBNy4N",
-      "titleArabic": "تصعيد حكومي يمني في مواجهة الحوثيين وتحركات لحماية الملاحة",
-      "articleUrl": "https://www.alaraby.co.uk/politics/%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D9%8A%D9%85%D9%86%D9%8A-%D9%81%D9%8A-%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%8A%D9%86-%D9%88%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9",
-      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
-    },
-    {
-      "articleId": "discovery-YzZZSuOztUObaRGrXe0Z4btQ",
-      "titleArabic": "خليل زاد لكوردستان 24: انسحاب القوات الامريكية دون دراسة يخلق فراغاً أمنياً لا يخدم العراق وإقليم كوردستان",
-      "articleUrl": "https://www.kurdistan24.net/ar/story/926545",
+      "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+      "titleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
+      "articleUrl": "https://www.elbalad.news/7043972",
       "reason": "일반 국제·문화·스포츠 기사"
     },
     {
