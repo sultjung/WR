@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "normalization": {
+    "removeDiacritics": true,
+    "removeTatweel": true,
+    "normalizeAlef": true,
+    "substringMatching": false
+  },
+  "keywords": [
+    {"keywordId":"bismayah-001","category":"bismayah","arabicQuery":"\"مدينة بسماية الجديدة\"","requiredTerms":["بسماية"],"optionalTerms":["مدينة","مشروع"],"excludedTerms":["بسما","بسماه"],"priority":100,"description":"비스마야 신도시 직접 언급","enabled":true},
+    {"keywordId":"bismayah-002","category":"bismayah","arabicQuery":"\"شركة هانوا\" بسماية","requiredTerms":["هانوا","بسماية"],"optionalTerms":["مشروع","العراق"],"excludedTerms":[],"priority":100,"description":"한화·비스마야 직접 관련","enabled":true},
+    {"keywordId":"bismayah-003","category":"bismayah","arabicQuery":"\"الهيئة الوطنية للاستثمار\" بسماية","requiredTerms":["الهيئة الوطنية للاستثمار","بسماية"],"optionalTerms":["تمويل","عقود","استئناف"],"excludedTerms":[],"priority":100,"description":"국가투자위원회·비스마야 관련","enabled":true},
+    {"keywordId":"politics-001","category":"politics","arabicQuery":"\"قرارات مجلس الوزراء\" العراق","requiredTerms":["مجلس الوزراء"],"optionalTerms":["قرارات","توجيهات"],"excludedTerms":["رياضة","تهنئة"],"priority":90,"description":"이라크 내각회의 결과","enabled":true},
+    {"keywordId":"politics-002","category":"politics","arabicQuery":"\"الإطار التنسيقي\" اجتماع","requiredTerms":["الإطار التنسيقي"],"optionalTerms":["اجتماع","بيان","قادة"],"excludedTerms":["تهنئة","تعزية"],"priority":95,"description":"시아조정기구 회의·성명","enabled":true},
+    {"keywordId":"economy-001","category":"economy","arabicQuery":"\"وزارة الإعمار والإسكان\" مشاريع","requiredTerms":["وزارة الإعمار والإسكان"],"optionalTerms":["مشاريع","سكنية","مقاولين"],"excludedTerms":[],"priority":90,"description":"건설주택부 주요 정책·사업","enabled":true},
+    {"keywordId":"economy-002","category":"economy","arabicQuery":"\"مستحقات المقاولين\" العراق","requiredTerms":["مستحقات المقاولين"],"optionalTerms":["تمويل","موازنة","مشاريع"],"excludedTerms":[],"priority":90,"description":"시공사 미지급·계약 관련","enabled":true},
+    {"keywordId":"security-001","category":"security","arabicQuery":"هجوم مسلح العراق","requiredTerms":["العراق"],"optionalTerms":["هجوم مسلح","داعش","اشتباكات"],"excludedTerms":["فيلم","مسلسل"],"priority":95,"description":"무장공격 및 교전","enabled":true},
+    {"keywordId":"security-002","category":"security","arabicQuery":"عبوة ناسفة العراق","requiredTerms":["العراق"],"optionalTerms":["عبوة ناسفة","انفجار"],"excludedTerms":[],"priority":95,"description":"IED 사건","enabled":true},
+    {"keywordId":"international-001","category":"international","arabicQuery":"\"مضيق هرمز\" العراق","requiredTerms":["مضيق هرمز"],"optionalTerms":["العراق","صادرات النفط","الملاحة"],"excludedTerms":[],"priority":85,"description":"호르무즈와 이라크 영향","enabled":true},
+    {"keywordId":"international-002","category":"international","arabicQuery":"\"الحدود العراقية السورية\"","requiredTerms":["الحدود العراقية السورية"],"optionalTerms":["داعش","أمن","تسلل"],"excludedTerms":[],"priority":85,"description":"이라크-시리아 국경 정세","enabled":true}
+  ]
+}
