@@ -33,6 +33,18 @@ function hasExactBismayah(value = "") {
   return /(?<![\u0600-\u06FF])بسمايه(?![\u0600-\u06FF])/.test(normalizeArabic(value));
 }
 
+function hasAny(value = "", terms = []) {
+  const text = normalizeArabic(value);
+  return terms.some((term) => text.includes(normalizeArabic(term)));
+}
+
+function validPoliticalFullText(value = "") {
+  const iraqAnchors = ["العراق", "العراقي", "بغداد", "مجلس الوزراء", "مجلس النواب", "رئيس الوزراء", "الإطار التنسيقي", "هيئة النزاهة"];
+  const substantiveSignals = ["قرار", "قرارات", "توجيه", "سياسة", "جلسة", "اجتماع", "تصويت", "قانون", "استجواب", "إقالة", "إعفاء", "تعيين", "الموازنة", "تمويل", "مكافحة الفساد", "حصر السلاح", "تشكيل الحكومة", "خطة", "اتفاق"];
+  const ceremonial = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس"];
+  return hasAny(value, iraqAnchors) && hasAny(value, substantiveSignals) && !hasAny(value, ceremonial);
+}
+
 let errorCount = 0;
 for (const file of FILES) {
   const label = path.relative(ROOT, file);
@@ -44,6 +56,7 @@ for (const file of FILES) {
     errorCount += 1;
     continue;
   }
+
   if (payload.schemaVersion !== "1.0") {
     console.error(`[validate-data] ${label}: schemaVersion must be 1.0`);
     errorCount += 1;
@@ -53,6 +66,7 @@ for (const file of FILES) {
     errorCount += 1;
     continue;
   }
+
   const ids = new Set();
   for (const [index, article] of payload.articles.entries()) {
     if (!article.articleId) {
@@ -62,6 +76,11 @@ for (const file of FILES) {
       console.error(`[validate-data] ${label}[${index}]: duplicate articleId ${article.articleId}`);
       errorCount += 1;
     } else ids.add(article.articleId);
+
+    if (!article.category || !["bismayah", "politics", "economy", "security", "international"].includes(article.category)) {
+      console.error(`[validate-data] ${label}[${index}]: invalid category ${article.category}`);
+      errorCount += 1;
+    }
 
     if (article.articleUrl && isForbiddenArticleUrl(article.articleUrl)) {
       console.error(`[validate-data] ${label}[${index}]: forbidden articleUrl ${article.articleUrl}`);
@@ -78,12 +97,18 @@ for (const file of FILES) {
         console.error(`[validate-data] ${label}[${index}]: FULL_TEXT without sufficient Arabic body`);
         errorCount += 1;
       }
-      if (!hasExactBismayah(`${article.originalTitleArabic || ""}\n${article.originalTextArabic || ""}`)) {
-        console.error(`[validate-data] ${label}[${index}]: FULL_TEXT does not contain exact Bismayah term`);
-        errorCount += 1;
-      }
       if (Number(article.arabicRatio || 0) < 0.35) {
         console.error(`[validate-data] ${label}[${index}]: Arabic ratio below threshold`);
+        errorCount += 1;
+      }
+
+      const combined = `${article.originalTitleArabic || ""}\n${article.originalTextArabic || ""}`;
+      if (article.category === "bismayah" && !hasExactBismayah(combined)) {
+        console.error(`[validate-data] ${label}[${index}]: Bismayah article lacks exact Bismayah term`);
+        errorCount += 1;
+      }
+      if (article.category === "politics" && !validPoliticalFullText(combined)) {
+        console.error(`[validate-data] ${label}[${index}]: politics article lacks substantive Iraq political context`);
         errorCount += 1;
       }
     }
