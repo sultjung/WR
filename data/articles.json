@@ -1,14 +1,18 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T00:51:37.478Z",
+  "generatedAt": "2026-07-29T01:05:53.480Z",
   "lookbackDays": 30,
   "count": 0,
+  "categoryCounts": {},
   "collectionRun": {
-    "discoveredCount": 0,
-    "resolvedCount": 0,
+    "discoveredCount": 217,
+    "resolvedCount": 217,
     "fullTextCount": 0,
-    "failedCount": 0,
-    "failures": {}
+    "failedCount": 217,
+    "failures": {
+      "CONTENT_EXTRACTION_FAILED": 212,
+      "ACCESS_BLOCKED": 5
+    }
   },
   "articles": []
 }
