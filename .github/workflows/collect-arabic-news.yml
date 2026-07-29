@@ -16,7 +16,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 50
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
@@ -35,7 +35,7 @@ jobs:
 
       - name: Discover broad Arabic news candidates with Google News
         env:
-          COLLECT_CATEGORIES: "bismayah,politics,economy"
+          COLLECT_CATEGORIES: "bismayah,politics,economy,security"
           NEWS_DISCOVERY_DAYS: "14"
           MAX_PER_QUERY: "30"
           FETCH_TIMEOUT_MS: "15000"
@@ -66,6 +66,9 @@ jobs:
           ARTICLE_RETENTION_DAYS: "30"
         run: npm run collect:content
 
+      - name: Classify Iraq security incidents
+        run: npm run collect:security
+
       - name: Validate collected data
         run: npm run validate:data
 
@@ -78,6 +81,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git commit -m "Collect and recover Iraqi Arabic news"
+          git commit -m "Collect and classify Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
