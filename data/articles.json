@@ -1,17 +1,543 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T01:27:44.039Z",
+  "generatedAt": "2026-07-29T01:47:35.778Z",
   "lookbackDays": 30,
-  "count": 0,
-  "categoryCounts": {},
+  "count": 8,
+  "categoryCounts": {
+    "economy": 2,
+    "politics": 6
+  },
   "collectionRun": {
-    "discoveredCount": 250,
-    "resolvedCount": 0,
-    "fullTextCount": 0,
-    "failedCount": 250,
+    "discoveredCount": 246,
+    "resolvedCount": 8,
+    "fullTextCount": 8,
+    "failedCount": 238,
     "failures": {
-      "URL_RESOLUTION_FAILED": 250
+      "GOOGLE_NEWS_DECODE_FAILED": 238
     }
   },
-  "articles": []
+  "articles": [
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-vRhUAeNPqD1Jhu6uyGxdxaEI",
+      "keywordId": "economy-planning-001",
+      "category": "economy",
+      "priority": 94,
+      "queryArabic": "\"وزارة التخطيط العراقية\" المشاريع الاستراتيجية",
+      "requiredTerms": [
+        "وزارة التخطيط"
+      ],
+      "optionalTerms": [
+        "المشاريع الاستراتيجية",
+        "الخطة الاستثمارية",
+        "متابعة المشاريع",
+        "نسب الإنجاز"
+      ],
+      "excludedTerms": [
+        "احتفالية",
+        "ورشة تدريبية"
+      ],
+      "originalTitleArabic": "الزيدي وأردوغان يوقعان 3 مذكرات تفاهم صناعية وأمنية وشبابية - شفق نيوز | آخر الأخبار العاجلة في العراق وكوردستان والعالم",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-28T18:51:19.000Z",
+      "descriptionArabic": "الزيدي وأردوغان يوقعان 3 مذكرات تفاهم صناعية وأمنية وشبابية شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi8gNBVV95cUxOUzQ3czZaU040a0tEMzhHY1FLWklxcV9JWXpwMVNrdE5GaFNiYWgtZWxMQkJXQm1fcXlxNUQ2d2tJQVR3c1lvU0hUMGtUYjkxUER5Z0ZnWTExYWcxMlVnMkNvamVsWXdkYm1zZ0JiZFQxdFExcVEwblg0VHB5S2kwUHlhTFBXM0U0cS1ybHdSeEVWZ0xjY0RWZnQwb0s1NEJoNHNTWkdPMGJDLUo0NWs3STZNMjhEbmdraXdXYTNGSEhfU2M4SHIydlpIV1N3OE16R1M5ZU5WTnF1T3h1MGdscDFTOW5zNUJiUWx1OVBLVlZHRXJWVWZ2LXkwZ2tIdkxiZ3BQeDRwaTM4ZnpFY2h1c0ZqdGRwWDFvLXFLVWJWci10Z0F6RlNCMnNYT040dFZOMGl4TnBWeDRrTGJGVmhLTFFUT3JQODV6NDJad3AtbDFKMklBWGhYVEV2MC1wSU1rcllyTWVCTDJJdGZHcm1jTktOVzZmdk9ySUxwdjdYaDNDQUlUWk5udm1NTEpoQ1VWa2xGQW5wcExueEZMZy0xOWh4VVJuY0JuMzI1OVI4ZlVGaTc2N25wM0FKS0N6azVZRlptcUY0VzZIbjZYN1Z4eWRtdlRPOHZLQk14YnhEb0lzSzk5TExZY0hTazNXeWo1MVE?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%88-%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%8A%D9%88%D9%82%D8%B9%D8%A7%D9%86-3-%D9%85%D8%B0%D9%83%D8%B1%D8%A7%D8%AA-%D8%AA%D9%81%D8%A7%D9%87%D9%85-%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D9%88-%D9%85%D9%86%D9%8A%D8%A9-%D9%88%D8%B4%D8%A8%D8%A7%D8%A8%D9%8A%D8%A9",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.821Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.367Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:24.296Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%88-%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%8A%D9%88%D9%82%D8%B9%D8%A7%D9%86-3-%D9%85%D8%B0%D9%83%D8%B1%D8%A7%D8%AA-%D8%AA%D9%81%D8%A7%D9%87%D9%85-%D8%B5%D9%86%D8%A7%D8%B9%D9%8A%D8%A9-%D9%88-%D9%85%D9%86%D9%8A%D8%A9-%D9%88%D8%B4%D8%A8%D8%A7%D8%A8%D9%8A%D8%A9",
+      "originalTextArabic": "الأخبار العاجلة\n\n السعودية تؤكد رسمياً مشاركتها في قصف داخل العراق: سنرد على أي عدوان\n\n \"هجوم مفاجئ\".. إيران تطلق صواريخ باليستية نحو قاعدة أميركية في الأردن\n\n مجلس كركوك يفتح ملف مشروع \"خصخصة الكهرباء\": إخفاق وشبهات فساد\n\n خلاف على امرأة يتحول لمشاجرة مسلحة ويخلف قتيلاً وجريحاً شرقي بغداد\n\n الزيدي وأردوغان يوقعان 3 مذكرات تفاهم صناعية وأمنية وشبابية\n\n سیاسة\n\n العراق\n\n تركيا\n\n مذكرات تفاهم\n\n أردوغان\n\n التنمية\n\n صناعة\n\n الزيدي\n\n جانب من توقيع مذكرات التفاهم (مكتب الزيدي)\n\n 2026-07-28T18:29:53+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- أنقرة\n\n وقع رئيس مجلس الوزراء العراقي علي فالح الزيدي، والرئيس التركي رجب\nطيب أردوغان، مساء اليوم الثلاثاء، ثلاث مذكرات تفاهم بين البلدين تنوعت بين\nصناعية وأمنية وشبابية.\n\n وبحسب بيان لمكتب الزيدي ورد إلى وكالة شفق نيوز، فإن مذكرة التفاهم\nالأولى هي للتعاون في مجال الملكية الصناعية بين وزارة التخطيط العراقية، ووزارة\nالصناعة والتكنولوجيا التركية.\n\n وتضمنت مذكرة التفاهم الثانية، وفق البيان، التعاون في مجال التدريب\nالأكاديمي بين كلية الشرطة العراقية، ورئاسة أكاديمية الشرطة التركية، أما الثالثة\nفهي ملحق لمذكرة التفاهم الخاصة بالتعاون في مجالي الشباب والرياضة بين وزارتي\nالشباب والرياضة لكلا البلدين.\n\n وفي وقت سابق من اليوم، رعى الزيدي، اجتماع الطاولة المستديرة \nالعراقية-التركية، بمشاركة عدد من رجال الأعمال الأتراك، لبحث سبل تعزيز العلاقات\nالاقتصادية والتجارية بين البلدين وتوسيع آفاق التعاون الاستثماري.\n\n ووصل الزيدي، في وقت سابق من اليوم الثلاثاء، إلى تركيا في زيارة\nرسمية على رأس وفد حكومي رفيع، وتعليقاً على الزيارة قال في تدوينة على منصة\n\"إكس\"، تابعتها وكالة شفق نيوز: \"نرتبط مع تركيا بجوار تاريخي\nوجغرافي وحضاري، ومصالح مشتركة ومتنوعة\".\n\n وأضاف \"ستحضر خلال زيارتنا ملفات الاستثمار والمياه وطريق\nالتنمية، وجهود تعزيز الاستقرار في المنطقة، بجانب بحث عدد من الملفات الاقتصادية\nوالأمنية، وبما يسهم في تحقيق المنفعة المتبادلة لشعبينا\".\n\n وكشف المحلل السياسي التركي جواد غوك ، لوكالة شفق نيوز، أن مشروع طريق\nالتنمية تصدّر مباحثات رئيس الوزراء العراقي علي فالح الزيدي خلال زيارته إلى\nأنقرة، مؤكدة أن الأخيرة أبدت رغبتها في أن تفضي الزيارة إلى نتائج عملية في ملفات\nالمياه والأمن والطاقة.\n\n وتتضمن الزيارة وفق مصدر حكومي، مباحثات واتفاقيات تعاون في المجالات\nالأمنية والاقتصادية والاستثمارية، فضلاً عن ملفات النفط والطاقة وزيادة التبادل\nالتجاري، إلى جانب مناقشة عدد من القضايا الإقليمية والدولية.\n\n وكان الزيدي قد زار الولايات المتحدة في 14 تموز/ يوليو الجاري، قبل\nأن يجري زيارة رسمية إلى إيران في 24 من الشهر نفسه، في إطار تحركات دبلوماسية\nإقليمية ودولية يشهدها العراق خلال الفترة الأخيرة. \n\n أخبار ذات صلة \n\n سیاسة\n\n تعرّف على الاتفاقيات ومذكرات التفاهم التي وقعها العراق مع تركيا بحضور أردوغان\n\n تقارير-وتحليلات\n\n دبلوماسية تركيا مع الأعداء تضع العراق كاختبار إقليمي لعلاقة أردوغان وبايدن\n\n سیاسة\n\n تركيا تهنئ بتكليف الزيدي: نأمل أن يكون \"وسيلة خير\" للعراق\n\n سیاسة\n\n أردوغان يدعو رئيس الوزراء المكلف لزيارة أنقرة قريباً\n\n اقتصـاد\n\n خاص.. مباحثات عراقية في أنقرة لزيادة تصدير النفط عبر جيهان\n\n سیاسة\n\n أنقرة: نسعى لرفع التجارة مع بغداد لـ30 مليار دولار وإطلاق مشاريع استراتيجية",
+      "sourceHost": "shafaq.com",
+      "contentChars": 2950,
+      "arabicRatio": 0.9922,
+      "relevanceNote": "비스마야 사업환경과 연관 가능한 이라크 경제·건설·투자 기사",
+      "fetchedAt": "2026-07-29T01:47:35.299Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-yUZUnzG72bbfln4bfrGfgKtK",
+      "keywordId": "politics-government-formation-001",
+      "category": "politics",
+      "priority": 95,
+      "queryArabic": "\"تشكيل الحكومة\" العراق",
+      "requiredTerms": [
+        "تشكيل الحكومة"
+      ],
+      "optionalTerms": [
+        "التشكيلة الوزارية",
+        "الحقائب الوزارية",
+        "منح الثقة"
+      ],
+      "excludedTerms": [
+        "حكومة محلية"
+      ],
+      "originalTitleArabic": "موقف محرج للزيدي بعد رفض وزير النقل التوقيع على اتفاقية مع تركيا (فيديو) - شفق نيوز | آخر الأخبار العاجلة في العراق وكوردستان والعالم",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-28T18:44:35.000Z",
+      "descriptionArabic": "موقف محرج للزيدي بعد رفض وزير النقل التوقيع على اتفاقية مع تركيا (فيديو) شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwRBVV95cUxQWDRER2RJNVNqV3VJeU15R1R3cnY0U3hIZFBKMXNkRHZma1hHa21mTENueWg3VXZlUmV0cHJYQkc0ZkxIc0gzLW1vNEJ4WVhOQUdaX3g1X2ZuS2JrODJaZEZBSGRKZ0lTUjdoWXlwdTF4TllJU3ZZeTczVTZOZ1M4dUVXaWh3Zlp6dVVucEdJUjh1YnprTEFsVTl6aW9zbFdXdWVCanNoX0ZVbHFCRUhBdmN1RjZlS1ZDOXFZYWNhVG1ZVVNIck9SdE41ZUgyUnlPYnppeDZwanBNYnYwc2NsaGlYcnA1SGs5SjVJZFJIb3U1Sk5mWEpMWm5HM1Q0YUtuSUgza1YyMkxGVHU4dnVMSXUzODRkZ0Q1NjB5a3lYU0N4RGU0SVhXZ1JtQ1hZVmYxU2dlbFNhWFJsYXBKbmJsdUQzQi16bVhkT3hwZFlORFhLWHRyVUlKeUhmUHhwUzJOYzlDOG44ZUdpUENuMHYyTTFKZ0hqcExXeVU0SlJVOGQxUGxUamg4cDRMek1vc0pGSlMwajlWTlBVZlNFeXpBSWd6OUNqYjRtTUl3UDJMZlZMdG5kWkY2WTcyTlBESlJ6VUZZUzdZNGIyRE1ncjN3SW1vdnA4OE9jOXN3LWZmQXA5X1BGQ0NUX2lxN1hjbVZHYVgxNVdTejA5c2V6S3VjMUhtSVBYekNmMlI0UUtHeXo0UHA4TEpkam91NXM3cC1zMUNtUHlzV0twcjktTnR3eWhuMUlxQjNMMFBSRGtsTWdYaDg?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D9%85%D9%88%D9%82%D9%81-%D9%85%D8%AD%D8%B1%D8%AC-%D9%84%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%B1%D9%81%D8%B6-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%81%D9%8A%D8%AF%D9%8A%D9%88",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.284Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.375Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:24.643Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D9%85%D9%88%D9%82%D9%81-%D9%85%D8%AD%D8%B1%D8%AC-%D9%84%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%B1%D9%81%D8%B6-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%81%D9%8A%D8%AF%D9%8A%D9%88",
+      "originalTextArabic": "الأخبار العاجلة\n\n السعودية تؤكد رسمياً مشاركتها في قصف داخل العراق: سنرد على أي عدوان\n\n \"هجوم مفاجئ\".. إيران تطلق صواريخ باليستية نحو قاعدة أميركية في الأردن\n\n مجلس كركوك يفتح ملف مشروع \"خصخصة الكهرباء\": إخفاق وشبهات فساد\n\n خلاف على امرأة يتحول لمشاجرة مسلحة ويخلف قتيلاً وجريحاً شرقي بغداد\n\n موقف محرج للزيدي بعد رفض وزير النقل التوقيع على اتفاقية مع تركيا (فيديو)\n\n سیاسة\n\n تركيا\n\n breaking\n\n الحكومة العراقية\n\n طريق التنمية\n\n 2026-07-28T18:40:01+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- أنقرة \n\n شهدت مراسم توقيع\nالاتفاقيات الخاصة بمشروع طريق التنمية بين العراق وتركيا، موقفاً محرجاً تعرض له رئيس\nمجلس الوزراء علي فالح الزيدي، مساء اليوم الثلاثاء، بعد رفض وزير النقل العراقي،\nوهب الحسني، التوقيع على اتفاقية مشروع طريق التنمية. \n\n وأظهر مقطع فيديو من\nمراسم التوقيع، اطلعت عليه وكالة شفق نيوز، الزيدي وهو يخاطب وزير النقل من على\nالمنصة بنبرة بدت غاضبة قليلاً، قائلاً: \"ليش ما وقعت على الاتفاقية؟\"،\nوذلك بحضور الرئيس التركي رجب طيب أردوغان، خلال المؤتمر الصحفي المشترك عقب\nالمباحثات بين الجانبين. \n\n هذا واتفق الزيدي، وأردوغان،\nمساء اليوم، على البدء بتنفيذ مشروع \"طريق التنمية الإستراتيجي\"،\nومواصلة اجتماعات اللجنة الدائمة المشتركة بين البلدين المعنية بملف المياه بشكل\nمنتظم. \n\n وفي وقت سابق من اليوم، كشف المحلل السياسي\nالتركي جكوك أوغلو، لوكالة شفق نيوز، أن مشروع طريق التنمية تصدّر مباحثات رئيس\nالوزراء العراقي علي فالح الزيدي خلال زيارته إلى أنقرة، مؤكدة أن الأخيرة أبدت\nرغبتها في أن تفضي الزيارة إلى نتائج عملية في ملفات المياه والأمن والطاقة. \n\n وتتضمن الزيارة وفق مصدر حكومي، مباحثات\nواتفاقيات تعاون في المجالات الأمنية والاقتصادية والاستثمارية، فضلاً عن ملفات\nالنفط والطاقة وزيادة التبادل التجاري، إلى جانب مناقشة عدد من القضايا الإقليمية\nوالدولية. \n\n وكان الزيدي قد زار الولايات المتحدة في 14\nتموز/ يوليو الجاري، قبل أن يجري زيارة رسمية إلى إيران في 24 من الشهر نفسه، في\nإطار تحركات دبلوماسية إقليمية ودولية يشهدها العراق خلال الفترة الأخيرة. \n\n فيديو 1\n\n أخبار ذات صلة \n\n سیاسة\n\n مطالبة لبغداد بموقف ازاء الاعتداء على سائحين كورد: معاملة تركيا للعراقيين غير لائقة\n\n تقارير-وتحليلات\n\n تقرير اميركي: انهيار اتفاقية سنجار قد يجلب كارثة جديدة للعراق \n\n تقارير-وتحليلات\n\n تركيا تستهدف العماليين بـ\"عمليات جراحية\" وعينها على سنجار بعد تشكيل الحكومة العراقية\n\n كوردســتانيات\n\n لحل أزمة الهجمات على كوردستان .. ملا بختيار يدعو لعقد لقاءات ثنائية مع إيران وتركيا: مصالحهم لدينا \n\n سیاسة\n\n العراق يرفع حالة الجهوزية والاستجابة السريعة للكوارث الطبيعية ويرسل مساعدات لتركيا وسوريا\n\n سیاسة\n\n الحكومة العراقية تعلن جملة قرارات \"دولارية\" ودعماً مالياً لسوريا وتركيا",
+      "sourceHost": "shafaq.com",
+      "contentChars": 2495,
+      "arabicRatio": 0.9873,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-07-29T01:47:35.287Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-FJaic8m4dfcSmA0FEQwlHubO",
+      "keywordId": "politics-cabinet-002",
+      "category": "politics",
+      "priority": 97,
+      "queryArabic": "\"جلسة مجلس الوزراء\" العراق",
+      "requiredTerms": [
+        "مجلس الوزراء"
+      ],
+      "optionalTerms": [
+        "جلسة",
+        "اجتماع اعتيادي",
+        "حزمة قرارات"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية"
+      ],
+      "originalTitleArabic": "السعودية تجدد إدانتها لاستهداف \"ميليشيات\" في العراق لمنشآتها - شفق نيوز | آخر الأخبار العاجلة في العراق وكوردستان والعالم",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-28T17:21:17.000Z",
+      "descriptionArabic": "السعودية تجدد إدانتها لاستهداف \"ميليشيات\" في العراق لمنشآتها شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMivwRBVV95cUxOTzNJYWwzZDRmc2FkZnJhU0hjeDJ4OTAzdDFUREcxa0Y4RC1EQVNza25GaUhhTm5fbThzazVWN05kSEhCV2xfcVRHMXFFVVllMzljbWQ0SWNJS2JHUVRpOEVuSDRRd2dQX1VGQ1ExOWRTSklpb1FtU3F0MjhDYmcyejNDaTJTWlMtYmlZNDFrbk5aUVdHLTI1NlZxZkRIejU5a2tKSVVKekppeTI4TGJPa2V5eldTcTdCRjN6b2NiRWZ4OHZaek9FTk16aV9STEl4dTJMVTBvMnRaWEc1akNjaDNkdGdaV3VyVUY4b0YtdUhNa0FtVWR3X0FzeWMxWGFmVHJyTUVnZU5Mck9KSThZT1VtZEVGMlpxR21tblpRamZfa1JtNExZV0VnNlNzQWxzbzJBMU10bnAzVmFDOWx1VGVzODNGTmxtcXdNNDNXTk14S2NTbS1uQkxPaU1pVEhHc25vcGp2M1NhOVQ0bS11d3d3V0xfSUdZbloycFBTU19aZEQyd3FQcW1zT1RDMEM1dFFGbzRYVlBHYlZEdUJIRTRtOEMxVWxjdXhIWldab3FwQXRCRnA5cHd2Y2ExZ3VISThBNnkwR2hoYVVxVXpaX3BObmpUbzhwMzltamJZVWFjeGJmVExCWS0xUTBsdmtLSDNxUThSVGpraWdCcGU4WWxORVhGb1VzNVN5dWlydkV6c0VZc0FENmhIaWhsTnA5dXVaT0gxem1GTTJkTVYxWG1lTWRPMzBBTHN6VFJ5cw?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AC%D8%AF%D8%AF-%D8%AF%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D9%84%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D9%85%D9%86%D8%B4-%D8%AA%D9%87%D8%A7",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.551Z",
+      "urlRecoveryMethod": "source-sitemap",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.383Z",
+      "urlResolutionMethod": "source-sitemap",
+      "resolvedAt": "2026-07-29T01:47:24.589Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AC%D8%AF%D8%AF-%D8%AF%D8%A7%D9%86%D8%AA%D9%87%D8%A7-%D9%84%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D9%85%D9%86%D8%B4-%D8%AA%D9%87%D8%A7",
+      "originalTextArabic": "الأخبار العاجلة\n\n السعودية تؤكد رسمياً مشاركتها في قصف داخل العراق: سنرد على أي عدوان\n\n \"هجوم مفاجئ\".. إيران تطلق صواريخ باليستية نحو قاعدة أميركية في الأردن\n\n مجلس كركوك يفتح ملف مشروع \"خصخصة الكهرباء\": إخفاق وشبهات فساد\n\n خلاف على امرأة يتحول لمشاجرة مسلحة ويخلف قتيلاً وجريحاً شرقي بغداد\n\n السعودية تجدد إدانتها لاستهداف \"ميليشيات\" في العراق لمنشآتها\n\n المنطقة والعالم\n\n العراق\n\n السعودية\n\n النفط\n\n الحوثيون\n\n إيران\n\n ميليشيات\n\n فصائل\n\n الزيدي\n\n من جلسة مجلس الوزراء السعودي\n\n 2026-07-28T17:16:41+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- الرياض\n\n جدد مجلس الوزراء السعودي، مساء الثلاثاء، إدانته باستهداف\n\"ميليشيات تابعة لإيران في العراق واليمن\"، منشآت نفطية في منطقتي\nالرياض والشرقية بالمملكة، وعلى السفن التجارية في البحر الأحمر، مطالباً الحكومة\nالعراقية بضرورة اتخاذ كل ما يلزم لـ\"ضمان منع استخدام أراضيها منطلقاً\nللعدوان\".\n\n وأكد المجلس في بيان تابعته وكالة شفق نيوز، أن \"السعودية لن تتهاون في حماية أمنها ومصالحها ومقدراتها الوطنية، وفي الرد الحازم\nعلى أي أعمال عدائية؛ وفق أحكام القانون الدولي الإنساني وقواعده العرفية وبما\nيتوافق مع مبدأ التناسب\". \n\n وكانت وزارة الدفاع السعودية ، قد أعلنت أمس الاثنين، اعتراض وتدمير\nعدد من الطائرات المسيّرة التي قالت إنها انطلقت من الأراضي العراقية، وحاولت\nاستهداف منشآت بترولية في المنطقتين الشرقية والرياض.\n\n وعلى إثر ذلك، توالت الإدانات الخليجية والعربية، لمحاولة الاستهداف، فيما نفت \" المقاومة الإسلامية في العراق\"، أمس\nالاثنين، مسؤوليتها عن القصف، متوعدة بردٍ\n\"قاسٍ\" في حال أقدمت السعودية على أي فعل.\n\n بدوره، وجّه القائد العام للقوات المسلحة، علي فالح الزيدي ، أمس\nالاثنين، الجهات الأمنية المختصة بفتح تحقيق بشأن ما ورد في بيان وزارة الدفاع\nالسعودية.\n\n وتأتي هذه التطورات تزامناً مع استعداد رئيس مجلس الوزراء العراقي علي\nالزيدي لإجراء زيارة إلى السعودية الخميس المقبل، تتضمن مباحثات ثنائية وتوقيع\nمذكرات تفاهم في عدد من القطاعات، إلى جانب بحث التنسيق الأمني بين البلدين\nوتطورات الأوضاع الإقليمية، وفقاً لما أخبر به مصدر حكومي مطلع وكالة شفق نيوز.\n\n أخبار ذات صلة \n\n سیاسة\n\n محطة: عبد المهدي طرح الوساطة على السعودية لإيقاف حرب اليمن\n\n اقتصـاد\n\n الكشف عن حيلة إيران لتهريب النفط من موانئ العراق\n\n اقتصـاد\n\n العراق والسعودية يعبران عن موقفهما ازاء تحسن اوضاع النفط\n\n تقارير-وتحليلات\n\n تقرير أمريكي يحذر: قوى \"اللادولة\" قد تحول العراق إلى منصة لهجمات اقليمية\n\n سیاسة\n\n حسين من السعودية: لن نسمح باستخدام أراضينا أو أجوائنا للاعتداء على الخليج\n\n سیاسة\n\n ترمب: إيران عبء كبير على العراق سيتم التخلص منه والزيدي سيبقى بمنصبه لوقت طويل",
+      "sourceHost": "shafaq.com",
+      "contentChars": 2411,
+      "arabicRatio": 0.9934,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-07-29T01:47:35.479Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-LF8xMuI-Tx-NcOHyhWGg_bfp",
+      "keywordId": "politics-pm-001",
+      "category": "politics",
+      "priority": 95,
+      "queryArabic": "\"رئيس مجلس الوزراء العراقي\" توجيهات",
+      "requiredTerms": [
+        "رئيس مجلس الوزراء"
+      ],
+      "optionalTerms": [
+        "توجيهات",
+        "قرار",
+        "سياسة",
+        "اجتماع"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "استقبال المهنئين"
+      ],
+      "originalTitleArabic": "الزيدي يرعى اجتماع الطاولة المستديرة العراقية-التركية لتعزيز التعاون الاقتصادي - شفق نيوز | آخر الأخبار العاجلة في العراق وكوردستان والعالم",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-28T14:03:25.000Z",
+      "descriptionArabic": "الزيدي يرعى اجتماع الطاولة المستديرة العراقية-التركية لتعزيز التعاون الاقتصادي شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMirAVBVV95cUxNMkoycVM3dm40MGZSVVNsaTgzY2NnbS1VREVEMm1vcTZ5bkk5TVQ1MVRucko4ZGZyTHBEWS1RYW5mODRrOENZMjVuU0s5alRZRWZjMTUxaG0wWnlETm1oQW1tNFBmYTlwbXBORWhtSk9hdDFTVlhudTczZnJiSDVESTlSR0dLZk5COHJRQlhJRkZYWkVrcjhwYjZZV0pkVzFnUXJIUGVpbXR2QjFIZld6MDNjUGthLTZKWWt2N0Q1MG9YMTVmZU5NaHY4ak5ZOFRqcXhwQXBPT3I1NUV3djFMbk04Vm9EcjV6WXpmcU5OWjdGb09XcDhKNmlzc2E5ZTFWM1lQR0tDM0tlN0E1THBRcmZpcjQ4N25NY0xDdkFfUjdTV2pJcXBMS2VvelYtMmdBeThBNXViT3FvT2l4TDdremZQR0dVQzZOUk9kbWVWTkkwVUUtMmtWc3dfWDIzNVk1NWZFOW0xZ1M1a19GYmNlTTg1SlR0bkYxNjNJdElJZ2czLWhMT0FYeGEzVG94QjJiYXFVd0VfMnl6SnVPNFpoZTlDaFo4NTZ1eWZiRndSTU1vWk9qSk4xNlgwV3RlMVZCOTQ3OG9MYjFWc09EM2w0QW1nNmdPME5icFNqM0NIOHRNeHpkZERycUprYUhtSXlCQmVaYko4MUo1MEdZS1pKa0RvY1NWYlV3bjczN3ZMS1ZXU3BNY0ZPbnY0SkVUYVJINWNwbTRqcF9CcWJrdkN0dHRaaXlyOWF6N1V1UDREZU9HNzhxWVdLamR6cEJUbk9kSV9JT0ZjbTR4bm1rQ0tlRGg2bzM5OUNmMks3SHFHaEJ4bHBUZWlFUjZHd0s3UHJ1R0QybUZFQ1RZRUplc1E0MS1UWWI4NUtHUlJwSlhkbk9nc2FjcTcyaVpfcHg?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B1%D8%B9%D9%89-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AF%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.262Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.391Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:24.848Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B1%D8%B9%D9%89-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AF%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A",
+      "originalTextArabic": "الأخبار العاجلة\n\n السعودية تؤكد رسمياً مشاركتها في قصف داخل العراق: سنرد على أي عدوان\n\n \"هجوم مفاجئ\".. إيران تطلق صواريخ باليستية نحو قاعدة أميركية في الأردن\n\n مجلس كركوك يفتح ملف مشروع \"خصخصة الكهرباء\": إخفاق وشبهات فساد\n\n خلاف على امرأة يتحول لمشاجرة مسلحة ويخلف قتيلاً وجريحاً شرقي بغداد\n\n الزيدي يرعى اجتماع الطاولة المستديرة العراقية-التركية لتعزيز التعاون الاقتصادي\n\n طاقة وأعمال\n\n 2026-07-28T13:51:35+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- أنقرة\n رعى رئيس مجلس الوزراء العراقي علي فالح الزيدي، يوم الثلاثاء، اجتماع الطاولة المستديرة العراقية-التركية، بمشاركة عدد من رجال الأعمال الأتراك، لبحث سبل تعزيز العلاقات الاقتصادية والتجارية بين البلدين وتوسيع آفاق التعاون الاستثماري.\n وذكر المكتب الإعلامي لرئيس الوزراء، في بيان ورد لوكالة شفق نيوز، أن الاجتماع تناول أهمية تنمية العلاقات الاقتصادية والتجارية بين العراق وتركيا، والعمل على تطويرها بما يحقق المنفعة المتبادلة للبلدين.\n وأضاف أن الاجتماع استعرض الآليات والتسهيلات التي تبنتها الحكومة العراقية لرفع مستويات التعاون وتنمية البيئة الاستثمارية والاقتصادية، في ضوء توجيهات رئيس الوزراء الخاصة بالانفتاح الاقتصادي وتسهيل الإجراءات أمام حركة التجارة البينية مع تركيا.\n ووصل الزيدي، في وقت سابق من اليوم، إلى العاصمة التركية أنقرة على رأس وفد حكومي رفيع في زيارة رسمية تتضمن مباحثات مع الرئيس التركي رجب طيب أردوغان وكبار المسؤولين الأتراك، لبحث تعزيز التعاون في مجالات الاقتصاد والمياه والأمن والاستثمار، إلى جانب مناقشة ملفات النفط والطاقة، وزيادة التبادل التجاري، ومتابعة تنفيذ الاتفاقات ومذكرات التفاهم الثنائية، فضلاً عن بحث عدد من القضايا الإقليمية والدولية، وفق مصادر رسمية خاصة ب وكالة شفق نيوز .",
+      "sourceHost": "shafaq.com",
+      "contentChars": 1596,
+      "arabicRatio": 0.98,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-07-29T01:47:35.416Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-XUBHiHo5SiakLaOEws61cpTD",
+      "keywordId": "economy-finance-001",
+      "category": "economy",
+      "priority": 95,
+      "queryArabic": "\"وزارة المالية العراقية\" تمويل المشاريع",
+      "requiredTerms": [
+        "وزارة المالية"
+      ],
+      "optionalTerms": [
+        "تمويل المشاريع",
+        "إطلاق التخصيصات",
+        "مستحقات",
+        "الإنفاق الاستثماري"
+      ],
+      "excludedTerms": [
+        "رواتب المتقاعدين",
+        "بطاقة تموينية"
+      ],
+      "originalTitleArabic": "بدءاً من الحشد والأجهزة الأمنية.. المالية العراقية تباشر بدفع رواتب الموظفين تدريجياً - شفق نيوز | آخر الأخبار العاجلة في العراق وكوردستان والعالم",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-28T11:43:31.000Z",
+      "descriptionArabic": "بدءاً من الحشد والأجهزة الأمنية.. المالية العراقية تباشر بدفع رواتب الموظفين تدريجياً شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMingVBVV95cUxOMHRFdFQwYVNxRjNqNl9PRDB2YnFlQ3BiWmJkeGRqZTBVZ2xaX2pZWkVBZEhfR2FlR1BJOXhQQ3dsQ1V0Y3drMUp0Z1BtbXhxSHBRSERyQjhzbkYtbHBiOENpWEJqc1R4YS1jSXRSMDFQNGZucWRuNlZjR0lwTEktX2d3YlRpMGx4MDg1OXNaZWRoYlZ6T2w0Q3c5U2NHLTJaNDJ3SS1vajZmUnVPckZrNktzVk94M0hiUVhCLW12M1o1M19uYXNITW9ZMFpQRHlUenRaNGctR3lYMVE1cDhCckFTR1d4UEZLVXBYM0g1OFE4TTRlMnJOaEhtb1pZamg0cWJDTmMxWHFQbm9GSGR1b0R5Zkg5aXg4RnBOY21KQnY0OHRzR1FMMWl2T05aLW9aTjVfNjdDRHlES2lmQ1VNU0duTnJvc3NoQktLbzBRY3UzOVA2N01BWXdVcTNCOEY5Z3BmMnR4UFktVkxsQ0VwMEdNSFU2R2ZYUFQzR3NxeHotSDJYSno3TDNudlFQbG13aGlPelNsU0REaVRrVEVETmJxbXBXOXRZLUdHcU1UZUpGYy1qU0VwXzVZaDAtR1R2SFFtaTh1QlBGcVhGNFlxdG1xdktJX1Y3UkpGR1lsM2xtdDIwakZGTDhVZXFFT3BRa05ZZ09kSll6MG9kZXF1ZDlMNGFudzhsODUxRUxqQXJjZTdUc09lUXI5M2RvQ0RmS2l2bWZsak5lQVc2SEtibTlqN0hHR3oyV3JHZU0xV3ItN0g5RnJtLTBMM1ozRjV4YTNrcWJSLWxsSFVwMktPLVgzSHI5UWJLdlE5Z0sxQjF0Y1k2Tmtoa2Y2SVVZQi1wNWlyaURHT2RzdTZpUE9Yc1RJQjREdlYzNTFmSHBB?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A8%D8%AF-%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D9%88%D8%A7%D9%84-%D8%AC%D9%87%D8%B2%D8%A9-%D8%A7%D9%84-%D9%85%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A8%D8%AF%D9%81%D8%B9-%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81%D9%8A%D9%86-%D8%AA%D8%AF%D8%B1%D9%8A%D8%AC%D9%8A%D8%A7",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.770Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.398Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:24.922Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A8%D8%AF-%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D9%88%D8%A7%D9%84-%D8%AC%D9%87%D8%B2%D8%A9-%D8%A7%D9%84-%D9%85%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D8%A8%D8%A7%D8%B4%D8%B1-%D8%A8%D8%AF%D9%81%D8%B9-%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81%D9%8A%D9%86-%D8%AA%D8%AF%D8%B1%D9%8A%D8%AC%D9%8A%D8%A7",
+      "originalTextArabic": "الأخبار العاجلة\n\n السعودية تؤكد رسمياً مشاركتها في قصف داخل العراق: سنرد على أي عدوان\n\n \"هجوم مفاجئ\".. إيران تطلق صواريخ باليستية نحو قاعدة أميركية في الأردن\n\n مجلس كركوك يفتح ملف مشروع \"خصخصة الكهرباء\": إخفاق وشبهات فساد\n\n خلاف على امرأة يتحول لمشاجرة مسلحة ويخلف قتيلاً وجريحاً شرقي بغداد\n\n بدءاً من الحشد والأجهزة الأمنية.. المالية العراقية تباشر بدفع رواتب الموظفين تدريجياً\n\n طاقة وأعمال\n\n العراق\n\n breaking\n\n وزارة المالية\n\n روابت الموظفين\n\n مواطن عراقي يعد رزمة من الدينار فئة 25 الفاً (أرشيف)\n\n 2026-07-28T11:42:08+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز - بغداد\n كشف مصدر في وزارة المالية العراقية، اليوم الثلاثاء، أن الوزارة باشرت بعملية إطلاق رواتب الموظفين والعاملين في القطاع العام لشهر تموز الجاري بشكل تدريجي، بدءاً من الأجهزة الأمنية والحشد الشعبي.\n وأوضح المصدر لوكالة شفق نيوز، أنه عقب الانتهاء من صرف رواتب العسكريين، سيتم البدء بصرف رواتب الموظفين المدنيين في بقية الوزارات والمؤسسات.\n وأضاف أن مصرف الرافدين شرع بإطلاق رواتب منتسبي الحشد الشعبي، على أن يتم خلال الساعات القادمة إطلاق رواتب المنتسبين في وزارتي الداخلية والدفاع والأجهزة الأمنية الأخرى.\n بالتزامن مع ذلك، أكدت وزارة المالية في بيان مقتضب ورد لوكالة شفق نيوز، أن دائرة المحاسبة باشرت بتمويل رواتب موظفي الدولة لشهر تموز الجاري اعتباراً من اليوم الثلاثاء.\n وتأتي هذه التطورات بعد أيام من أزمة سيولة ونقص في الإيرادات العامة أدت إلى تأخر صرف الرواتب في العديد من المؤسسات الحكومية، رغم إعلان الوزارة في 22 من الشهر الجاري إطلاق التمويل سابقاً، وسط ضغوط مالية نجمت عن تراجع الصادرات النفطية وتداعيات التوترات الإقليمية في المنطقة.\n\n أخبار ذات صلة \n\n اقتصـاد\n\n وثيقة .. المالية العراقية تصدر تعميما اوقفت به الصرف المالي والتعيينات والعلاوات\n\n اقتصـاد\n\n المالية توضح حقيقة إيقاف تمويل رواتب فئات وتصرف مكافآت المحالين للتقاعد \n\n اقتصـاد\n\n كتاب للمالية العراقية يُدخل قرار فرض الضرائب على السكائر والخمور حيز التنفيذ\n\n اقتصـاد\n\n البنك المركزي العراقي يخصم حوالات الخزينة لتمويل وزارة المالية \n\n اقتصـاد\n\n المالية تصدر قراراً لصالح الموظفين الحاصلين على الشهادات الدراسية أثناء الخدمة\n\n سیاسة\n\n وزارة المالية العراقية: سعر صرف الدولار مقابل الدينار ثابت ولا يمكن تغييره",
+      "sourceHost": "shafaq.com",
+      "contentChars": 2081,
+      "arabicRatio": 0.9789,
+      "relevanceNote": "비스마야 사업환경과 연관 가능한 이라크 경제·건설·투자 기사",
+      "fetchedAt": "2026-07-29T01:47:35.778Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-glZefID4hsNrb7dhtfouZvXg",
+      "keywordId": "politics-government-formation-001",
+      "category": "politics",
+      "priority": 95,
+      "queryArabic": "\"تشكيل الحكومة\" العراق",
+      "requiredTerms": [
+        "تشكيل الحكومة"
+      ],
+      "optionalTerms": [
+        "التشكيلة الوزارية",
+        "الحقائب الوزارية",
+        "منح الثقة"
+      ],
+      "excludedTerms": [
+        "حكومة محلية"
+      ],
+      "originalTitleArabic": "العراق في معركة شد الحبل بين واشنطن وطهران.. هل انتهى النفوذ الإيراني؟",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHomepage": "https://www.aljazeera.net",
+      "publishedAt": "2026-07-28T08:13:47.000Z",
+      "descriptionArabic": "العراق في معركة شد الحبل بين واشنطن وطهران.. هل انتهى النفوذ الإيراني؟ الجزيرة نت",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPczFxWjVDVnhpczRyaTNXUGpUTGZuN19RMlNRVHN2OXgwS0NJUUFaT0J5c0N2c0syYWNHSHdicTA1SEJkam5Pd0hiRFlKazRVRXFHWkRERkJyM1pCYlhxMVYtREpOeWFyR19ENm1vV0VPcFJrUldXZTd1bE1MTXozdTZWaTdFaUFJaXoxaHpxekdZYkdBMW9aLVN0ZDgzcy1pbDFjeTFmbVVJQ0NrNkh1eG1Td3NyZlBBamFON0RsQ0dqdE1BZXRQTDRMNzRSWlRDYjJzdWVXN3gwUE5NMVRIbkM2b1R6UnExSHFWZG5wOEsybnVMSFFYbzRlbG13ZGZyOFlfZnRYTldac2R0SVpBckxNSVF3TmdwcHNqX2o4S29TZUR5SndSd2dNSXlNREtNdmlfbnNCMS1NRzliY3lUc3B1cHJBeG9H0gHOAkFVX3lxTE1zdDM1dk1xZDNPYkU3VkN0UlRRLWpoNk1EU09qWWNYNUpvSjlnRDVWdV8yVzJmNVJfNDNSeDJsTjVEd3ZkZWJxRkZQSmZvVUtudFUwRDc3MXlucXFFUE9HMEZyWV84RGxDOUt1NU9OdHB3S1cxcGZGWGp1dmRaV01FZ250Q3J2MjQyVVhJQ2tqMnd5TDI0N3hKcVBfUVlDWkd5b244eTgyNFZhemRqVzl2ZWZ2SVlIcUJscnJtclFOckQ4OVFaTjlCNXJ1b1VMR1p5Q0Y4cVdDR090ZWRhVnp0UDZFS2dQNUI3VUl2c0owSV9fNUpMUDhta0pMcUJDLS1YRHFwZ3l5ZHVWMDUwOURBMWg2MTZnZFEwS0J3djhnRkVaOGJTd1JhNEw5RURndi1WYXB0UFlPeVpNSWZKaGg3TU5jRmhDZkF1VnM5VHc?oc=5",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/28/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%81%D9%8A-%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%B4%D8%AF-%D8%A7%D9%84%D8%AD%D8%A8%D9%84-%D8%A8%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.283Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "aljazeera-iraq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.411Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:25.131Z",
+      "canonicalUrl": "https://www.aljazeera.net/politics/2026/7/28/%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82-%d9%81%d9%8a-%d9%85%d8%b9%d8%b1%d9%83%d8%a9-%d8%b4%d8%af-%d8%a7%d9%84%d8%ad%d8%a8%d9%84-%d8%a8%d9%8a%d9%86-%d9%88%d8%a7%d8%b4%d9%86%d8%b7%d9%86",
+      "originalTextArabic": "سياسة | دراسات | العراق \n\n العراق في معركة شد الحبل بين واشنطن وطهران.. هل انتهى النفوذ الإيراني؟\n استمع استمع (19 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n رئيس الوزراء العراقي علي الزيدي والرئيس الإيراني مسعود بيزشكيان في طهران (رويترز) \n Published On 28/7/2026 28/7/2026 \n | آخر تحديث: 12:43 (توقيت مكة) آخر تحديث: 12:43 (توقيت مكة) \n\n تتناول دراسة \"العراق في لعبة صراع القوة والنفوذ بين إيران والولايات المتحدة\"، للباحث العراقي إياد العنبر، محاولات رئيس الوزراء العراقي علي الزيدي الموازنة في علاقات العراق مع الولايات المتحدة وإيران، وتجنب الاستقطاب الحاد الذي تفرضه الحرب الراهنة في المنطقة، وما تواجهه هذه المحاولات من تحديات داخلية وخارجية.\n وتنطلق الدراسة من أن الصراع الأمريكي-الإيراني على العراق ليس جديدًا، وإنما دخل مرحلة مختلفة بعد عام 2003، عندما أسقطت القوة العسكرية الأمريكية نظام صدام حسين، بالتزامن مع صعود نفوذ سياسي إيراني أخذ يترك أثره بصورة واضحة في تشكيل النظام السياسي العراقي.\n اقرأ أيضا \n list of 2 items list 1 of 2 سوريا تعود إلى الإقليم.. ولبنان بوابة الدور الجديد \n list 2 of 2 البنك الأفريقي للتنمية: النينيو قد تكبد أفريقيا خسائر تصل إلى 20 مليار دولار \n end of list \n وترى الدراسة أن الولايات المتحدة أسهمت في فتح المجال أمام تمدد النفوذ الإيراني، لأنها لم تمتلك بعد إسقاط نظام صدام حسين مشروعًا واضحًا لمرحلة ما بعد 2003، بينما تعاملت إيران مع تغيير النظام بوصفه فرصة لإعادة بناء مجال أمنها القومي وتوسيع نفوذها.\n وتذهب الدراسة إلى أن طهران عملت على إبقاء العراق دولة هشة يحكم نظامها السياسي عدد من مراكز القوة التي يمكن التأثير في قراراتها، في حين أسهم الفاعلون الرسميون وغير الرسميين في العراق في استمرار غموض العلاقة مع الولايات المتحدة والتماهي مع المشروع الإيراني.\n غير أن هذا النموذج، بحسب الدراسة، بدأ يتعرض لتحولات عميقة، ولاسيما بعد \"طوفان الأقصى\" في 7 أكتوبر/تشرين الأول 2023 وما تبعه من تغيرات إقليمية قلصت مساحة نفوذ \"محور المقاومة\" الذي قادته إيران على مدى عشرين عامًا.\n وتضع الدراسة سقوط نظام بشار الأسد في سوريا ضمن أبرز مظاهر هذا التراجع، لكنها تعيد بداية انحسار بعض أشكال التدخل الإيراني المباشر في العراق إلى اغتيال قاسم سليماني وأبو مهدي المهندس مطلع عام 2020، عندما بدأ حضور الحرس الثوري في التفاصيل المباشرة لتشكيل الحكومات واختيار كبار المسؤولين يتراجع مقارنة بما كان عليه سابقًا.\n رئيس الوزراء العراقي علي الزيدي (يسار) والرئيس الإيراني مسعود بيزشكيان يجتمعان في طهران (رويترز) تغير قواعد اللعبة بين إيران وأمريكا \n تؤكد الدراسة أن إيران ما زالت تملك مفاتيح متعددة للنفوذ داخل العراق، ولا تحصرها في المجال السياسي أو العسكري، بل تمتد إلى المجال الاجتماعي والرمزي.\n إعلان \n\n وتقرأ في إصرار إيران على تشييع المرشد الأعلى الراحل، علي خامنئي، في النجف وكربلاء محاولة لتكريس رمزية الحضور الإيراني اجتماعيًا وسياسيًا، لا دينيًا فقط، خصوصًا أن تشييع المرجعيات المتوفاة خارج العراق في المدينتين ليس قاعدة ملزمة أو ممارسة عامة، بما يمنح اختيار المكان دلالة سياسية تتجاوز الطقس الديني.\n وترى الدراسة أن العراق بالنسبة إلى إيران ليس مجرد منطقة نفوذ، وإنما مرتكز أساسي في تصورها لأمنها القومي؛ ولذلك يصعب عليها التخلي عن حضورها فيه حتى بعد التغيرات التي أصابت خريطة القوة في المنطقة.\n فإيران التي فقدت جانبًا من توازن الردع الذي بنت عليه إستراتيجيتها خلال العقدين الماضيين تسعى إلى الحفاظ على ما تبقى من مناطق نفوذها في العراق ولبنان واليمن، حتى مع تغير خطابها الدبلوماسي وابتعاده عن النبرة التي كانت تؤكد \"وحدة الساحات\" وأن القرار يصنع في إيران ويعلن في عواصم \"محور المقاومة\".\n وتستدل الدراسة على استمرار هذا التوجه برسالة مجتبى خامنئي بعد انتهاء مراسم تشييع والده، التي أعادت التأكيد على ضرورة الانتقام، وأن \"أحرارًا من أنحاء العالم\" سيؤدون جزءًا من مهمة الانتقام من قتلة المرشد الراحل وبقية القتلى. وبذلك ترى الدراسة أن تراجع القدرة الإيرانية لا يعني التخلي عن أدوات النفوذ أو عن التصور الذي يمنح الساحات الخارجية وظيفة في الأمن الإيراني.\n لكن قواعد التنافس الأمريكي-الإيراني في العراق تغيرت أيضًا من الجانب الأمريكي، ولاسيما مع عودة دونالد ترمب إلى البيت الأبيض.\n فخلال حكومة محمد شياع السوداني، كانت السفارة الأمريكية في بغداد تؤدي الدور الأبرز في إدارة العلاقة، وكانت السفيرة إلينا رومانويسكي تتحرك ضمن سياسة تتعامل مع القوى الفاعلة بوصفها واقعًا سياسيًا، حتى عندما كانت واشنطن تعد بعضها أذرعًا للنفوذ الإيراني. وترى الدراسة أن هذه السياسة سعت إلى التعامل مع الأطراف الفاعلة بعيدًا عن هيمنة المركز الإيراني، وإحراج القوى التي ترفع شعار العداء لأمريكا من خلال التعامل السياسي معها بدل استبعادها.\n ومع ولاية ترمب الثانية، تغير هذا النهج وأصبحت السياسة الأمريكية أكثر مباشرة؛ إذ صدرت مواقف واضحة من وزير الخارجية والقائم بأعمال السفارة في بغداد ضد إقرار قانون الحشد الشعبي، وضد مشاركة الفصائل المسلحة المرتبطة بإيران في الحكومة، ثم عُين مبعوث خاص للرئيس الأمريكي في العراق، وصولًا إلى رفض ترمب تكليف نوري المالكي بتشكيل الحكومة بعد انتخابات 2025. وبذلك انتقلت واشنطن، وفق الدراسة، من إدارة التوازنات العراقية والتعامل معها بوصفها واقعًا إلى محاولة التأثير المباشر في شكل السلطة وحدود مشاركة القوى المرتبطة بإيران فيها.\n تضع الدراسة تكليف علي الزيدي بتشكيل الحكومة في قلب المرحلة الجديدة من الصراع على النفوذ.\n فعلى خلاف رفض ترمب تكليف نوري المالكي، بادر الرئيس الأمريكي بعد يومين من تكليف الزيدي إلى تهنئته، متمنيًا له النجاح في تشكيل حكومة \"خالية من الإرهاب\"، ووصف التكليف بأنه بداية فصل جديد في العلاقات العراقية-الأمريكية يقوم على الازدهار والاستقرار والنجاح، ودعاه إلى زيارة واشنطن بعد تشكيل حكومته.\n إعلان \n\n وترى الدراسة أن الزيدي، القادم من مجال الأعمال والاقتصاد إلى السياسة، استطاع تمرير حكومته عبر موازنة دقيقة بين الضغوط الأمريكية ومطالب القوى الداخلية، فاستجاب للرفض الأمريكي لمشاركة عناوين الفصائل المسلحة ذات التمثيل السياسي في الإطار التنسيقي داخل التشكيلة الحكومية، وفي الوقت نفسه نجح في منع هذه الفصائل من تعطيل تشكيل الحكومة، من خلال إبقاء احتمال مشاركتها في المرحلة الثانية المتعلقة باستكمال الوزارات الشاغرة.\n وتعتبر الدراسة تشكيل حكومة الزيدي من أهم المؤشرات على انسحاب إيران من أحد الملفات التي كانت تتدخل فيها بصورة مباشرة، وهو تشكيل الحكومة العراقية.\n فقد تحولت بعض الفصائل المسلحة ذات التمثيل السياسي إلى أذرع سياسية لإيران بعد أن حصلت على حضور معتبر في البرلمان وحكومة السوداني وانتخابات 2025، وبدأ بعضها يناور بقبول نزع السلاح مقابل الحفاظ على موقعه السياسي، لكن طهران لم تتدخل هذه المرة لفرض مشاركتها في الحكومة أو ضمان حصتها من الوزارات.\n وتقرأ الدراسة زيارة توم باراك، مبعوث الرئيس الأمريكي الخاص إلى العراق وسوريا، للزيدي في منتصف يونيو/حزيران باعتبارها رسالة إسناد أمريكية للحكومة الجديدة.\n وتركزت المباحثات على مستقبل الشراكة بين بغداد وواشنطن، وحصر السلاح بيد الدولة، والخطط العراقية لنزع السلاح وحل الجماعات والتشكيلات المسلحة العاملة خارج سلطة الدولة، إلى جانب استثمارات الشركات الأمريكية في النفط والكهرباء. وهي الملفات نفسها التي حضرت في لقاء الزيدي وترمب في البيت الأبيض منتصف يوليو/تموز.\n وعشية الزيارة، حدد الزيدي في مقال نشرته \"واشنطن بوست\" بعنوان \"لماذا أتوجه إلى واشنطن؟\" هدفه بنقل العلاقة بين البلدين \"من إدارة الأزمات إلى خلق الفرص\".\n وتلفت الدراسة إلى دلالة اختيار واشنطن أول محطة خارجية له، خلافًا لرؤساء حكومات سابقين كانت طهران أو دول الجوار تتقدم محطاتهم الخارجية، بما يعكس تغيرًا في ترتيب الأولويات السياسية للحكومة الجديدة.\n دونالد ترمب (يمين) يتحدث خلال اجتماع مع رئيس الوزراء العراقي علي الزيدي (يسار) بالبيت الأبيض (وكالة الصور الأوروبية) من واشنطن إلى طهران \n غير أن الدراسة لا ترى في التقارب مع واشنطن انتقالًا عراقيًا بسيطًا من محور إلى آخر، بل تعتبر تحركات الزيدي تجسيدًا لتعقيدات الجغرافيا والمصالح التي تحكم علاقة العراق بالقوتين.\n وتختصر هذه المفارقة في مشهد حضوره مراسم تشييع علي خامنئي، الذي قتل في القصف الأمريكي والإسرائيلي على إيران في 28 فبراير/شباط 2026، ثم ذهابه بعد أيام إلى البيت الأبيض ومصافحته ترمب بحرارة، قبل أن يعود إلى بغداد ويتوجه إلى طهران.\n وبالنسبة إلى الدراسة، لا تكشف هذه الحركة بين واشنطن وطهران حتى الآن عن إستراتيجية عراقية مكتملة لإدارة العلاقة مع الطرفين.\n فالحكومة مطالبة بالتعامل مع منظومة أمنية هجينة تتنازعها الخلافات الداخلية وتفتح المجال للتدخلات الخارجية، بينما أصبح الجانب الإيراني نفسه أكثر تعقيدًا بعد الحرب، في ظل ما تراه الدراسة انقسامًا في إدارة السياسة الخارجية بين الحرس الثوري والممثلين الرسميين للنظام.\n وتتمثل المهمة التي يواجهها الزيدي في محاولة إقناع واشنطن وطهران بأن العراق ينبغي أن يكون نقطة التقاء للمصالح لا ساحة للصراع، لكن تحقيق ذلك يصطدم بتعدد الأحزاب والجهات التي تنازع الدولة قرارها الخارجي.\n وتربط الدراسة هذه الظاهرة بملامح الدولة الفاشلة التي يرفض الزيدي أن ينتهي إليها العراق.\n وفي المقابل، تظهر المواقف الأمريكية والإيرانية تباينًا كبيرًا. فترمب وصف العلاقة مع العراق بأنها انتقلت من وضع \"ليس جيدًا\" إلى وضع \"ممتاز للغاية\"، وتحدث عن علاقة طويلة الأمد.\n إعلان \n\n وعلى الجانب الإيراني، تداولت وسائل التواصل رسالة منسوبة إلى علي أكبر ولايتي تنتقد زيارة الزيدي للولايات المتحدة وتصفها بأنها جاءت في غير وقتها وأضرت بـ\"جهاد الشعب العراقي\".\n وعلى الرغم من أن الدراسة تشير صراحة إلى عدم التأكد من صحة الرسالة، فإنها ترى أن مضمونها يعبر عن اتجاه موجود في النظرة الإيرانية إلى علاقة بغداد بواشنطن، ولاسيما مع اختيار الزيدي واشنطن قبل طهران.\n الحياد الموهوم \n تذهب الدراسة إلى أن الحكومات العراقية المتعاقبة لم تنجح في تفكيك التعقيد الذي يحكم العلاقة مع أمريكا وإيران، ولا في إخراج العراق من الاستقطابات الأيديولوجية للصراعات الإقليمية. ولهذا يصبح التحدي أمام الزيدي أكبر من مجرد الحفاظ على علاقات جيدة مع الطرفين.\n وترى الدراسة أن رسالته الأولى إلى صناع القرار الأمريكيين ينبغي أن تتمثل في ضرورة عدم التعامل مع العراق باعتباره خط مواجهة مع إيران، والتخلي عن الاعتقاد بأن حكومة عراقية مقربة من واشنطن تستطيع أداء هذه الوظيفة. وبدلًا من ذلك، ترى أن دعم الاستقرار والاقتصاد العراقيين يحقق مصالح البلدين، ويمنح الحكومة قدرة أكبر على إعادة هندسة علاقتها مع طهران بعد الحرب الأمريكية-الإيرانية. ويمكن أن يبدأ ذلك، وفق الدراسة، بحصر التعامل العراقي مع إيران في القنوات الدبلوماسية الرسمية، قبل الانتقال إلى ملف سلاح أذرعها في الداخل.\n وفي المقابل، تحذر الدراسة من الرهان على أن تراجع \"محور المقاومة\" سيؤدي تلقائيًا إلى انكفاء إيران داخل حدودها وتخليها عن إستراتيجيتها الإقليمية، بما يسمح للعراق بفك ارتباطه بها بسهولة. فطهران، بحسب الدراسة، لن تتقبل خسارة نفوذها في العراق، وقد تضحي ببعض الفصائل المسلحة كما خسرت نفوذها في سوريا، لكنها قد تقبل تقليص النفوذ لا إنهاءه، بشرط الحفاظ على منافذها الاقتصادية في العراق.\n أما العلاقة مع الولايات المتحدة، فتحتاج هي الأخرى إلى إعادة تعريف؛ لأن صيغة \"الأصدقاء-الأعداء\" لم تعد مقبولة لدى إدارة ترمب. والتحول إلى شراكة إستراتيجية يتطلب إجراءات تتعلق بالسلاح الذي يهدد الوجود والمصالح الأمريكية، وبكيفية التعامل مع النفوذ الإيراني وأدواته. وتلخص الدراسة المعادلة الأمريكية بأن العراق يستطيع أن يكون صديقًا لطهران وشريكًا إستراتيجيًا لواشنطن، لكنه لا يستطيع أن يكون شريكًا إستراتيجيًا مع طهران وواشنطن في الوقت نفسه.\n غير أن المشكلة تتجاوز إرادة الحكومة إلى القوى السياسية العراقية التي تربط مواقفها من الولايات المتحدة بتطور العلاقة بين واشنطن وطهران، وتتماهى مع التوتر أو التهدئة بينهما ومع التطورات الإقليمية. وتزداد المشكلة تعقيدًا عندما تنظر طهران إلى العراق بوصفه الساحة الأكثر قدرة على حمل رسائلها إلى الولايات المتحدة، سواء كانت رسائل تهدئة أو تصعيد.\n رئيس البرلمان الإيراني محمد باقر قاليباف يلتقي رئيس الوزراء العراقي علي الزيدي (رويترز) عقدة السلاح وشبكات النفوذ \n تضع الدراسة السلاح خارج الدولة في قلب المعضلة التي تواجه حكومة الزيدي. فإدارة التنافس بين إيران وأمريكا لا تتحدد بقرارات الحكومة وحدها، وإنما بشبكة النفوذ الإيراني داخل القوى السياسية والجماعات المسلحة، في مقابل قدرة الولايات المتحدة على الضغط على حكومة بغداد والتأثير في خياراتها.\n وتوضح الدراسة أن واشنطن تتعامل مع الملفات التي تعدها ضرورية لفصل مناطق النفوذ العراقي عن طهران من خلال الضغط المباشر، لكن إنهاء النفوذ الإيراني لا يمكن أن يتم بقرار تنفيذي أو مرسوم؛ لأنه يقوم على شبكة متداخلة من المصالح والعلاقات والقوى تتجاوز العلاقات الرسمية بين الدولتين. فإذا كانت أذرع النفوذ السياسي والعسكري واضحة نسبيًا، فإن الشبكات الاقتصادية الخلفية أكثر تعقيدًا، ولاسيما ما يتعلق بما تصفه الدراسة بمافيات تهريب الدولار والنفط، وهي شبكات لا يمكن إعادة رسم العلاقة العراقية-الإيرانية من دون مواجهتها.\n وتتوقع الدراسة أن تدخل إيران بعد الحرب مرحلة جديدة في صياغة علاقتها بمحيطها، لكنها تستبعد أن تقبل بفك ارتباط العراق بمنظورها للأمن القومي؛ فالتاريخ والجغرافيا، في قراءة الدراسة، يجعلان ذلك غير ممكن. وقد تقبل طهران بتراجع نفوذها السياسي مقابل الحفاظ على الارتباط الاقتصادي الذي تراه الدراسة ضروريًا لها لتجنب الانهيار، بينما تبقى العقدة الأكبر في القوى المسلحة التي تمثل نفوذها داخل العراق.\n إعلان \n\n وتزداد هذه المسألة تعقيدًا بعد اغتيال علي خامنئي وعدم وضوح الوزن السياسي لخليفته مجتبى خامنئي في صناعة القرار الإيراني، مع توقع استمرار تأثير الحرس الثوري. ومن هذه الزاوية، ترجح الدراسة أن يستمر النظر الإيراني إلى العراق بوصفه \"ساحة\" ضمن إستراتيجية \"محور المقاومة\" و\"وحدة الساحات\"، وهو ما يجعل مستقبل الفصائل المسلحة المرتبطة بإيران في مواجهة مباشرة مع مشروع حكومة الزيدي لحصر السلاح.\n ولا تقف المشكلة عند وجود هذه الفصائل، وإنما عند قدرتها على المبادرة بعيدًا عن قرار الحكومة؛ إذ تشير الدراسة إلى إطلاق الصواريخ والمسيرات من وقت إلى آخر باتجاه القنصلية الأمريكية في أربيل ودول الخليج، باعتبار ذلك تعبيرًا عن استمرار وجود قوى تستطيع التدخل في قرار الحرب والسلم وإرسال رسائل سياسية وأمنية من الأراضي العراقية من دون أن تكون الحكومة صاحبة القرار الوحيد.\n ولهذا ترى الدراسة أن تحويل العراق إلى نقطة تقاطع للمصالح بدلًا من ساحة للصراع يحتاج أولًا إلى ترتيب البيت السياسي العراقي من الداخل، ثم تفعيل الاقتصاد ليصبح أساسًا لشراكات بين الأطراف المتنافسة بدل الهيمنة. فالموازنة بين واشنطن وطهران لا يمكن أن تنجح ما دامت جهات وأحزاب وزعامات متعددة تصادر جانبًا من القرار الخارجي للدولة، وما دام السلاح غير الرسمي قادرًا على فتح جبهات أو استهداف مصالح ودول خارجية.\n استقبال الزيدي في طهران (رويترز) \"العراق أولًا\"…من الشعار إلى السياسة \n تخلص الدراسة إلى أن التحولات الراهنة تتيح للعراق فرصة أكبر من السابق لتحويل شعار \"العراق أولًا\" من خطاب يردد في اللقاءات والمحافل إلى سياسة فعلية تحكم علاقاته الخارجية. لكن الاستفادة من هذه الفرصة تظل مرهونة بقدرة الحكومة على بناء سياسة تنطلق من مصلحة العراق، وبقدرة القوى السياسية على التعايش مع واقعه بعيدًا عن استقطابات الخارج.\n وفي الوقت نفسه، تطالب الدراسة القوى الإقليمية بإدراك أن إقصاء العراق أو إبقاءه دولة فاشلة لا يحمي مصالحها، بل قد يحوله إلى ساحة تهدد هذه المصالح. كما ترى أن بغداد ينبغي أن تتجاوز سياسة ردود الأفعال التي تكشف غياب رؤية إستراتيجية ممتدة، وأن تبني علاقاتها الإقليمية على أساس الشراكة والتكامل، مستفيدة من المقومات التي يمتلكها العراق، ولاسيما الاقتصادية، لتوفير أوراق تساعده أيضًا على معالجة مشكلات المياه والأمن مع دول الجوار.\n وفي النهاية، تعيد الدراسة المشكلة إلى القرار العراقي نفسه. فالقوى العربية الإقليمية، بحسب الباحث، تريد رؤية عراق مختلف عن الماضي القريب، لكن السؤال الذي لم يُحسم بعد هو ما الذي تريده القوى الحاكمة في العراق: هل تريد دولة فاعلة تتفاعل مع محيطها الإقليمي والدولي انطلاقًا من مصالحها، أم تريد استمرار العراق ساحة تتنافس فيها القوى الإقليمية وتستعرض نفوذها؟\n وترى الدراسة أن الإجابة عن هذا السؤال ينبغي أن تصبح البوصلة التي تحدد السياسة الخارجية لحكومة علي الزيدي. فالتحدي ليس في اختيار واشنطن بدل طهران أو طهران بدل واشنطن، وإنما في استعادة الدولة العراقية القدرة على تحديد مصالحها وقرارها الخارجي، بما يسمح لها بإدارة علاقتها بالقوتين من موقع الدولة، لا من موقع الساحة التي يتصارع الآخرون عليها.\n الدراسة كاملة (اضغط هنا) \n\n المصدر: الجزيرة",
+      "sourceHost": "aljazeera.net",
+      "contentChars": 14567,
+      "arabicRatio": 1.0037,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-07-29T01:47:35.451Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-k5_E9K_YLapncrG1kp4X2nl_",
+      "keywordId": "politics-cabinet-001",
+      "category": "politics",
+      "priority": 98,
+      "queryArabic": "\"قرارات مجلس الوزراء\" العراق",
+      "requiredTerms": [
+        "مجلس الوزراء"
+      ],
+      "optionalTerms": [
+        "قرارات",
+        "توجيهات",
+        "جلسة"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية"
+      ],
+      "originalTitleArabic": "صحف اليوم تهتم  بقرار  مجلس الوزراء تفعيل الاتفاق الإطاري المائي مع تركيا  والدعوة لمناهضة العنف ضد المراة",
+      "sourceArabic": "الوكالة الوطنية العراقية للأنباء| نينا",
+      "sourceHomepage": "https://ninanews.com",
+      "publishedAt": "2026-07-26T06:52:52.000Z",
+      "descriptionArabic": "صحف اليوم تهتم بقرار مجلس الوزراء تفعيل الاتفاق الإطاري المائي مع تركيا والدعوة لمناهضة العنف ضد المراة الوكالة الوطنية العراقية للأنباء| نينا",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBjLWtMZXk3RFl1YUJDUDJSRGtVTnMtN1pYLUJmdkZJUFJ4czgtTFF2ZmhMSHNiQXFHLUJhZkRoY2hoMGRvTmxDR1NjWjhtNEh5YzdmQ3pvV2h4WG1Qal91TkZ3MA?oc=5",
+      "articleUrl": "https://ninanews.com/website/News/Details?Key=1307406",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.476Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "nina",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.448Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:28.029Z",
+      "canonicalUrl": "https://ninanews.com/website/News/Details?Key=1307406",
+      "originalTextArabic": "بغداد / نينا / اهتمت الصحف الصادرة اليوم الأحد السادس والعشرون من تموز بقرار مجلس الوزراء على تفعيل الاتفاق الإطاري المائي مع تركيا والدعوة الى مناهضة العنف ضد المرأة . \n\nوذكرت صحيفة / الصباح / التي تصدر عن شبكة الاعلام العراقي ان مجلس الوزراء صوت، من بين قرارات عدة اتخذها في جلسته الاعتيادية، أمس السبت، على تفعيل الاتفاق الإطاري العراقي التركي بشأن المياه ودخول آلية تمويل المشاريع الخاصة بهذا الاتفاق حيز التنفيذ ابتداء من الأول من شهر أيلول المقبل.\n\nونقلت الصحيفة عن المكتب الإعلامي لرئيس مجلس الوزراء، أنَّ رئيس المجلس علي فالح الزيدي، رأس مساء أمس السبت، الجلسة الاعتيادية الثانية عشرة لمجلس الوزراء، والتي جرت فيها مناقشة مجمل الأوضاع في البلاد، واستعراض الموضوعات المدرجة في جدول الأعمال واتخاذ التوجيهات والقرارات اللازمة بشأنها.\n\nوقالت الصحيفة :\" بمناسبة إحياء أربعينية الإمام الحسين (عليه السلام)، ومن أجل انسيابية عملية التفويج العكسي للزائرين، قرّر مجلس الوزراء تعطيل الدوام الرسمي ليومي الاثنين والثلاثاء الموافقين (3 - 4 آب 2026).\"\n\nوأضافت :\" لتنويع مسارات ومنافذ تصدير النفط الخام، تمت الموافقة على تخويل الرئيس التنفيذي لشركة نفط البصرة صلاحية التوقيع على مذكرة تفاهم بين وزارة النفط ووزارة الطاقة السورية بشأن إنشاء مشروع خط أنابيب يربط إنتاج النفط العراقي بأسواق التصدير العالمية عبر البحر الأبيض المتوسط، كما جرى تخويل وزير النفط صلاحية توقيع مذكرة تفاهم مع ائتلاف شركات (CONOCOPHILLIPS ، TI CAPITAL، NOVATERR) بشأن المباشرة بالمناقشات المتعلقة بتقييم إمكانيات الاستكشاف والتطوير في حقل عكاز/ غرب العراق والمناطق المحيطة به.\n\nواوضحت الصحيفة انه ومن أجل تطوير البنى التحتية النفطية ورفع معدلات الإنتاج، صوّت المجلس على تولي وزارة النفط إعلان مشروع القيارة المتكامل للمنافسة، بحسب تنفيذ العقود العامة.\n\nوفي إطار دعم الحكومة للقطاع التربوي والتعليمي، صوّت المجلس على معالجة موضوع مخصصات الطلبة الموهوبين المبتعثين على وفق نظام البعثات والزمالات والمساعدات المالية (3 لسنة 2018)، وإضافة فقرة إلى قرار مجلس الوزراء (24803 لسنة 2024) تحدد مقدار المخصصات خلال الابتعاث، على أن يجري التنسيق مع وزارة التعليم العالي والبحث العلمي لتقديم مقترح بشأن تحديد أجور الدراسة مع مراعاة بلد الدراسة. \n\nوفي موضوع آخر، ذكرت صحيفة / الزوراء / التي تصدر عن نقابة الصحفيين العراقيين ان الرئاسات الاربع دعت الى ضرورة دعم المرأة العراقية وتمكينها ومناهضة العنف ضدها ومراعاة تمثيلها في الكابينة الحكومية.\n\nونقلت الصحيفة عن رئيس الجمهورية نزار آميدي قوله في كلمة له، خلال المؤتمر الثامن عشر لليوم الإسلامي لمناهضة العنف ضد المرأة، الذي عقده في بغداد تيار الحكمة الوطني: إنه “لا أمن ولا استقرار في المنطقة من دون أمن واستقرار العراق”، مشيرا الى ان “قوة العراق في وحدته وتقديم مصالحه الوطنية فوق كل اعتبار”.\n\nوأكمل، أن “مسؤوليتنا في السلطات العمل على استقرار البلد وتقديم مصالح للعراق في ظل التطورات الإقليمية، ونعمل في رئاسة الجمهورية على مساندة الحكومة للقضاء على العنف”، مبيناً أن “اللحظة التاريخية تتطلب منا التكاتف جميعا في وحدة مصالح البلاد”.\n\nوتابع بالقول اننا “ندعم الجهد الحكومي والقانوني الصارم للقضاء على الفساد واستعادة المال العام”، داعياً “الكتل السياسية إلى مراعاة تمثيل المرأة في استكمال الكابينة الوزارية”. \n\nمن جانبه، أعلن رئيس مجلس الوزراء علي فالح الزيدي، عن المضي في العمل على إعادة تشكيل المجلس الأعلى للمرأة وتفعيله برؤية جديدة.\n\nوقال الزيدي في كلمة له، خلال المؤتمر الثامن عشر لليوم الإسلامي لمناهضة العنف ضد المرأة، إن “المرأة نالت في برنامجنا الحكومي الرعاية والتقدير، إيماناً بأهميتِها في التنمية الشاملة، كما أسهمت المرأة العراقية في مواجهة التحديات والظروف التي عانى منها العراقيون جميعاً، وهم يقارعون عصابات داعش التي ارتكبت صوراً قاسية من العنف ضد النساء العراقيات”.\n\nوأضاف أن “التحديات تمثل حافزاً لتوفير البيئة الآمنة التي تمنع الاعتداء على المرأة والتقليل من شأنها عبر الإجراءات الرادعة والتشريعات، وأن أهم عنصر لرعاية حقوق المرأة هو العمل على تطوير إمكاناتِها العلمية والمعرفية وتوليها المواقع القيادية”.\n\nوأوضح الزيدي: “اليوم نفتخر بحضور المرأة في جميع سُلطات الدولة الدستورية، ويجب حماية النساء من التعرض للاعتداء والابتزاز عبر ثقافة احترام المرأة وعدم السماح بانتهاك حقوقها، وهي مسؤولية يشترك فيها المجتمع والحكومة والدولة”.\n\nوأكد رئيس مجلس الوزراء، “المُضي بالعمل على إعادة تشكيل المجلس الأعلى للمرأة وتفعيله برؤيةٍ جديدة تُحقق الهدف المنشود، ليكون المظلة القانونية والتنفيذية لكل ما يسهم في ارتقاء واقع المرأة العراقية”.\n\nصحيفة صوت القلم المستقلة نقلت عن الرئاسات الأربع رئيس الجمهورية نزار آميدي، ورئيس الوزراء علي فالح الزيدي ورئيس مجلس النواب هيبت الحلبوسي ورئيس مجلس القضاء الأعلى فائق زيدان، تاكيدها خلال المؤتمر الثامن عشر لليوم الإسلامي لمناهضة العنف ضد المرأة، على حماية واحترام المرأة وعدم السماح بانتهاك حقوقها ومراعاة تمثيلها في الكابينة الوزارية، فيما أكد السيد عمار الحكيم أن مناهضة العنف ضد المرأة مشروع يجرى العمل على تعزيزه في جميع مؤسسات الدولة .\n\nوقال رئيس الجمهورية في كلمة له، خلال المؤتمر : إن \"لا أمن ولا استقرار في المنطقة من دون أمن واستقرار العراق\"، مشيرا الى ان \"قوة العراق في وحدته وتقديم مصالحه الوطنية فوق كل اعتبار\".\n\nوأكمل، أن \"مسؤوليتنا في السلطات العمل على استقرار البلد وتقديم مصالح للعراق في ظل التطورات الإقليمية، ونعمل في رئاسة الجمهورية على مساندة الحكومة للقضاء على العنف\"، مبيناً أن \"اللحظة التاريخية تتطلب منا التكاتف جميعا في وحدة مصالح البلاد\".\n\nولفت الى انه \"ندعم الجهد الحكومي والقانوني الصارم للقضاء على الفساد واستعادة المال العام\"، داعياً \"الكتل السياسية إلى مراعاة تمثيل المرأة في استكمال الكابينة الوزارية\".\n\nمن جانبه أعلن رئيس مجلس الوزراء علي فالح الزيدي، عن المضي في العمل على إعادة تشكيل المجلس الأعلى للمرأة وتفعيله برؤية جديدة.\n\nوقال الزيدي في كلمة له، خلال المؤتمر الثامن عشر لليوم الإسلامي لمناهضة العنف ضد المرأة، الذي عقده في العاصمة بغداد تيار الحكمة الوطني : إن\"المرأة نالت في برنامجنا الحكومي الرعاية والتقدير، إيماناً بأهميتِها في التنمية الشاملة، كما أسهمت المرأة العراقية في مواجهة التحديات والظروف التي عانى منها العراقيون جميعاً، وهم يقارعون عصابات داعش التي ارتكبت صوراً قاسية من العنف ضد النساء العراقيات\".\n\nوأضاف أن \"التحديات تمثل حافزاً لتوفير البيئة الآمنة التي تمنع الاعتداء على المرأة والتقليل من شأنها عبر الإجراءات الرادعة والتشريعات، وأن أهم عنصر لرعاية حقوق المرأة هو العمل على تطوير إمكاناتِها العلمية والمعرفية وتوليها المواقع القيادية\".\n\nوأوضح الزيدي: \"اليوم نفتخر بحضور المرأة في جميع سُلطات الدولة الدستورية، ويجب حماية النساء من التعرض للاعتداء والابتزاز عبر ثقافة احترام المرأة وعدم السماح بانتهاك حقوقها، وهي مسؤولية يشترك فيها المجتمع والحكومة والدولة\".\n\nواستذكر الزيدي في كلمته، صاحب المبادرة الأولى سماحة السيد عبد العزيز الحكيم (رحمهُ الله)، كما عبر عن شكره لرئيس تيار الحكمة الوطني السيد عمار الحكيم والقائمين على المؤتمر، على استدامة هذه الفعالية السنوية\".\n\nوأكد رئيس مجلس الوزراء، \"المُضي بالعمل على إعادة تشكيل المجلس الأعلى للمرأة وتفعيله برؤيةٍ جديدة تُحقق الهدف المنشود، ليكون المظلة القانونية والتنفيذية لكل ما يسهم في ارتقاء واقع المرأة العراقية\".\n\nبدوره أكد رئيس مجلس النواب هيبت الحلبوسي، أن البرلمان يواصل أداء مسؤوليته التشريعية والرقابية من خلال مراجعة وتطوير التشريعات ذات الصلة، وتعزيز الضمانات القانونية التي تحمي المرأة والأسرة، ومتابعة تنفيذ القوانين والسياسات الحكومية، بما ينسجم مع الدستور ويحافظ على قيم المجتمع العراقي وثوابته\n\nوقال الحلبوسي في كلمة له خلال المؤتمر : إن \"مسؤولية مجلس النواب تحتم عليه تشريع القوانين التي تحمي المرأة وتمنحها حقوقها\"، مشيرا الى أن حماية المرأة تعد قضية وطنية ترتبط بمستقبل الأجيال\".\n\nوبين أن \"المرأة العراقية أثبتت حضورها في مختلف مراحل بناء الدولة، وتحمَّلت أعباءً كبيرة خلال سنوات الحروب والإرهاب والنزوح، وظلَّت تؤدِّي دورها في الحفاظ على الأسرة وتماسك المجتمع\".\n\nمن جانبه أكد رئيس مجلس القضاء الأعلى، القاضي فائق زيدان، أن العنف ضد المرأة بمختلف أشكاله يمثل انتهاكاً لكرامة الإنسان وسيادة القانون.\n\nوقال القاضي زيدان خلال كلمته في المؤتمر : أن \"الإسلام أولى المرأة مكانة متميزة، وجعل العلاقة بين الرجل والمرأة قائمة على المودة والرحمة\"، معتبراً أن \"هذه المبادئ تمثل الأساس لبناء مجتمع متماسك تسوده قيم الاحترام\".\n\nوأشار إلى أن \"مجلس القضاء الأعلى اتخذ خطوات عملية لتعزيز الحماية القانونية للمرأة، من بينها إنشاء محاكم مختصة بقضايا العنف الأسري، وتوجيه المحاكم بالإسراع في حسم هذه القضايا، والتنسيق مع الجهات المختصة لضمان توفير الحماية للمجنى عليهن\".\n\nوأوضح أن \"المجلس يواصل اعتماد الإجراءات الكفيلة بتمكين المرأة وتعزيز دورها في مختلف المجالات\"، لافتاً إلى \"تأسيس شبكة القاضيات العربيات واتخاذ بغداد مقراً دائماً لها، بما يعكس مكانة العراق في دعم العمل القضائي العربي، وإيماناً بالدور الريادي الذي تؤديه المرأة العراقية والعربية في ترسيخ مبادئ العدالة وسيادة القانون\".\n\nوجدد رئيس مجلس القاضاء التأكيد على أن \"مواجهة العنف ضد المرأة مسؤولية وطنية مشتركة تتطلب تضافر جهود جميع مؤسسات الدولة والمجتمع، للقضاء على جميع أشكال العنف ضد النساء والفتيات، وتمكينهن من الإسهام الفاعل في المجتمع\"، مبينا أن \"العنف ضد المرأة بمختلف أشكاله يمثل انتهاكاً لكرامة الإنسان وسيادة القانون\".\n\nرئيس تحالف قوى الدولة السيد عمار الحكيم، أكد أن مناهضة العنف ضد المرأة مشروع يجرى العمل على تعزيزه في جميع مؤسسات الدولة .\n\nوقال السيد الحكيم خلال كلمة له في المؤتمر: إن \"مشروع مناهضة العنف ضد المرأة يتم تعزيزه في جميع مؤسسات الدولة العراقية\"، مشيراً الى أن \"العنف ضد المرأة لا يقتصر على الاعتداء الجسدي بل يمتد ليشمل اشكالاً أخرى أكثر تأثيراً كالعنف النفسي والتهميش والاقصاء\".\n\nوأوضح السيد الحكيم أن \"مناهضة أشكال العنف ضد المرأة لا بد أن يأخذ بنظر الاعتبار أولويات عدة يأتي في مقدمتها تطبيق قانون الإيزيديات والمشمولين بالقانون، فضلاً عن دراسة شمول الفئات الأخرى التي تعرضت الى الانتقام ضمن القانون وتطوير قانون حماية المرأة من الابتزاز الإلكتروني، بالإضافة الى تطبيق مبادرة الأسرة الوطنية على نطاق واسع من أجل تحقيق الأهداف المرجوة منها\".\n\n صحيفة الزمان – طبعة العراق تناولت موضوع الايرادات غير النفطية وقالت ان التقارير كشفت ، عن ارتفاع مساهمة الإيرادات غير النفطية في إجمالي الإيرادات المالية للعراق إلى أعلى مستوى لها خلال شهري أيار وحزيران الماضيين. \n\nونقلت الصحيفة عن مرصد إيكو عراق قوله، في بيان أمس:\" إن (مساهمة الإيرادات غير النفطية ارتفعت إلى 16 بالمئة من إجمالي الإيرادات المالية للعراق، وهي أعلى نسبة تسجل حتى الآن).\n\n وأضاف المرصد إن (هذه هي المرة الأولى التي ترتفع فيها نسبة الإيرادات غير النفطية إلى 16 بالمئة خلال شهري أيار وحزيران، بعد إن كانت لا تتجاوز خمسة بالمئة لسنوات)، مبيناً أنها (ارتفعت للمرة الأولى إلى نحو عشرة بالمئة في عهد حكومة مصطفى الكاظمي، واستقرت عند هذا المستوى خلال حكومة محمد شياع السوداني، قبل إن تسجل حالياً أعلى مستوى لها). \n\nولفت إلى إن (الإيرادات غير النفطية تتوزع بين الضرائب السلعية ورسوم الإنتاج، والرسوم، والضرائب على الدخول والثروات، والإيرادات التحويلية، إلى جانب إيرادات أخرى)، مبيناً إن (إيرادات كردستان، تمثل نحو 5.5 بالمئة من إجمالي الإيرادات غير النفطية، عبر الأموال التي يسلمها الإقليم إلى الحكومة الاتحادية)./انتهى \n\n ليصلك المزيد من الأخبار اشترك بقناتنا على التليغرام",
+      "sourceHost": "ninanews.com",
+      "contentChars": 10183,
+      "arabicRatio": 1.0115,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-07-29T01:47:35.669Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-AndlPyhf-eecb9se4PwcaWJw",
+      "keywordId": "politics-pm-002",
+      "category": "politics",
+      "priority": 94,
+      "queryArabic": "\"المكتب الإعلامي لرئيس الوزراء\" العراق",
+      "requiredTerms": [
+        "رئيس الوزراء"
+      ],
+      "optionalTerms": [
+        "المكتب الإعلامي",
+        "بيان",
+        "توجيه"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية"
+      ],
+      "originalTitleArabic": "ما الذي يحمله الزيدي إلى طهران؟ مصادر تكشف عن رسالة من ترمب",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHomepage": "https://www.aljazeera.net",
+      "publishedAt": "2026-07-23T12:08:42.000Z",
+      "descriptionArabic": "ما الذي يحمله الزيدي إلى طهران؟ مصادر تكشف عن رسالة من ترمب الجزيرة نت",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNX1R3eXZTQW5nbHhfY0hLcmtQNVltb3FHeDlzbEZDVjV4cFlNUk9YRmFzZzJsY1ZNRkFDc081NS03Wm9PLVRJcVBVZDlaYnJwSTA0c1JtVng2dHZWZmNsbzdoSDlaNkwxUVhuT0Vkb0Z3NVJDT2R2RjhRQ3VLR3lVRVdyVlRxM3V1UF91b3p2dWhXTkJLdG9kUEFnMzJmVkc2OU5MUDUtTURLUl9ya0pRWVJlaG9wdEN0UjNwdUtzcWQ4WkZROFRSRmIxMzJoT0JxaGI3aTF2QXJVM1NGallCQnJSOFdpeFl2MHZiaVNZZUE5cUVMb2xpR096c25HcTM4aVZtR20yVW5icDE5S2FwMFFrZHBmSGR3VkN4ZVZfYXRTQ1p5QXJJdDRjelIwVy1LV29pNmlGRUVsREFJRi1zYzI4YmRBTXlDQWlZWGQyb0_SAdYCQVVfeXFMT2JwRjNtdUx4a0F2M0lrWkhYWXR5UU1ueFI3aExiZU5TQVY3QmE0QnBUZUdHSEFBeDJaTmJrdno2OWR1bkhKMERWX0wwUTZ0aHpzOWhIX21oa3VKS1BiaW90WF9tZXE0NlZHX3F5RTZYbVNoVERvS0wzcFdYUjU2WmJaakFWM3FYaHdldE42TjhISXFtM2h6WG1tUWNHOXh2SktuSzZVWHlKLVpoUm0wTERCdG42Um9nTVFoMC1OdTIzUVBSLUR2dDV4bXJaakpUWlZCUEl1RS1xdXdkU3JEUzRVaWZwZ0pmNmlrQ2lOVXhWc2JxQUVONENwaFhNTjU0SGV1ZTZLTEZjdkc3azVZVTJ1dzFLblctVmMyU3ZVWjRsLVMzREVHSXVReVk0U0wyQVZFeVNkN1BXT2ZkUkNIeWR0czlnZVVzRmF3YmE4RnNaNk9SY05B?oc=5",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/23/%D9%85%D8%A7-%D8%A7%D9%84%D8%B0%D9%8A-%D9%8A%D8%AD%D9%85%D9%84%D9%87-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A5%D9%84%D9%89-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.608Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "aljazeera-iraq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T01:47:23.488Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T01:47:30.530Z",
+      "canonicalUrl": "https://www.aljazeera.net/politics/2026/7/23/%d9%85%d8%a7-%d8%a7%d9%84%d8%b0%d9%8a-%d9%8a%d8%ad%d9%85%d9%84%d9%87-%d8%a7%d9%84%d8%b2%d9%8a%d8%af%d9%8a-%d8%a5%d9%84%d9%89-%d8%b7%d9%87%d8%b1%d8%a7%d9%86-%d9%85%d8%b5%d8%a7%d8%af%d8%b1",
+      "originalTextArabic": "مراسلو الجزيرة \n سياسة | العراق \n\n ما الذي يحمله الزيدي إلى طهران؟ مصادر تكشف عن رسالة من ترمب\n استمع استمع (7 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n الرئيس الإيراني مسعود بزشكيان (يمين) يستقبل رئيس الوزراء العراقي علي فالح الزيدي في طهران (رويترز) \n\n أميمة مجيد \n\n Published On 23/7/2026 23/7/2026 \n | آخر تحديث: 14:53 (توقيت مكة) آخر تحديث: 14:53 (توقيت مكة) \n\n بغداد- وصل رئيس الوزراء العراقي علي فالح الزيدي إلى طهران، اليوم الخميس، والتقى الرئيس الإيراني مسعود بزشكيان، في أول تحرك له نحو إيران بعد أيام من زيارته الرسمية إلى  الولايات المتحدة ، والتي أثارت انتقادات داخل الأوساط الإيرانية.\n وأفاد المكتب الإعلامي لرئيس الوزراء العراقي بأن الزيدي وصل إلى إيران في زيارة تستمر يومين، على رأس وفد وزاري رفيع، وعقد لقاء ثنائيا مع بزشكيان لبحث تعزيز التعاون بين البلدين الجارين، إضافة إلى قضايا إقليمية.\n وتأتي زيارة الزيدي إلى طهران في ظل تصاعد التوتر الإقليمي، واستمرار تداعيات الحرب، ومساعي بغداد للحفاظ على سياسة التوازن بين  واشنطن  وطهران، في وقت تشير فيه مصادر سياسية إلى أن الزيارة تتجاوز إطارها المعلن، وتحمل رسائل سياسية وأمنية واقتصادية متبادلة بين الجانبين.\n وفي وقت سابق تقل المكتب الإعلامي للزيدي عن المتحدث باسم الحكومة حيدر العبودي أنه سيتم استعراض مسار العلاقات الثنائية وبحث التطورات الإقليمية والقضايا الدولية، إلى جانب تعزيز التعاون في مجالات التجارة والطاقة والنقل والزراعة والبيئة والتغيرات المناخية، بما يخدم مصالح البلدين.\n وأضاف العبودي أن الزيارة تأتي في إطار حرص الحكومة العراقية على ترسيخ مبدأ حسن الجوار وتعزيز التعاون على أساس المصالح المشتركة والاحترام المتبادل، وبما ينسجم مع سياسة  العراق  القائمة على التوازن والانفتاح البناء في علاقاته الإقليمية والدولية.\n رئيس الوزراء العراقي علي فالح الزيدي يصل إلى طهران ويتلقي الرئيس الإيراني مسعود بزشكيان (الفرنسية) رسائل غير معلنة \n وكشف مصدر حكومي مطلع للجزيرة نت أن زيارة رئيس الوزراء العراقي إلى طهران تحمل أبعادا تتجاوز ما أُعلن عنها رسميا، مشيرا إلى أنها تتضمن سلسلة رسائل سياسية واقتصادية موجهة إلى القيادة الإيرانية.\n إعلان \n\n وقال المصدر إن الرسالة الأولى تتمثل في \"إبداء حسن النية\"، والتأكيد لطهران أن الزيارة الأخيرة إلى واشنطن لا تستهدف الإضرار بإيران أو تأتي على حساب العلاقة معها، بل إن العراق ما يزال حريصا على الحفاظ على علاقاته مع إيران الجارة واحترامها، رغم انفتاحه على الولايات المتحدة.\n أما الرسالة الثانية -بحسب المصدر- فتحمل مضمونا من واشنطن مفادها أن \"الإدارة الأمريكية لا تسعى إلى إسقاط النظام الإيراني، وأن التصريحات المتشددة الصادرة من المسؤولين الأمريكيين تأتي في سياق الحرب الدائرة والضغوط السياسية والإعلامية\".\n وأشار إلى أن رئيس الوزراء يتطلع إلى الدفع نحو ترتيبات إقليمية جديدة وصفها بأنها تشبه \"اتفاق جنتلمان\" (التزام غير رسمي) بين الأطراف المتنازعة، انطلاقا من قناعته بأن المنطقة وصلت إلى مرحلة تستدعي وقف التصعيد وإنهاء المواجهات.\n ولفت المصدر إلى أن رئيس الوزراء سيبلغ المسؤولين الإيرانيين بأن استمرار إغلاق مضيق هرمز وما يترتب عليه من تقييد صادرات النفط العراقية سيؤدي إلى تفاقم الأوضاع الاقتصادية والأمنية داخل العراق، محذرا من أن ذلك قد يفضي إلى اضطرابات داخلية ويمنح مبررات لاستمرار الوجود العسكري الأمريكي في العراق، وهو ما لا يصب في مصلحة إيران، وفق تعبيره.\n وتتسق هذه المعلومات مع ما كشفته مصادر مطلعة للجزيرة نت في 14 يوليو/تموز، خلال زيارة الزيدي إلى الولايات المتحدة، بأن واشنطن تبدي رغبة في التوصل إلى تسوية للصراع مع طهران برعاية وضمانات من عدد من الدول المؤثرة، من بينها العراق، في مؤشر على سعي بغداد للعب دور الوسيط في تهدئة التوترات الإقليمية.\n الرئيس الأمريكي دونالد ترامب في استقبال رئيس الوزراء العراقي علي الزيدي بالبيت الأبيض (رويترز) لا مكان للفصائل \n من ناحيته، يشير الباحث في الشأن السياسي غالب الدعمي في حديث للجزيرة نت إلى أن زيارة رئيس الوزراء إلى إيران تأتي في توقيت بالغ الحساسية، في ظل حالة التوازن الصعبة التي يعيشها العراق بين الولايات المتحدة وإيران.\n وأوضح وفقا لمعلوماته الخاصة، أن أبرز أهداف الزيارة يتمثل في إبلاغ طهران بضرورة وقف دعم الفصائل المرتبطة بمبدأ \"وحدة الساحات\"، تمهيدا لدمجها ضمن القوات الأمنية وتسليم أسلحتها، لافتا إلى أن هذا المبدأ انحسر بعد خروج سوريا ولبنان منه وبات يقتصر على العراق واليمن .\n وأضاف الدعمي أن رئيس الوزراء سيناقش أيضا ملف أمن الملاحة في مضيق هرمز، بعد تعرض ناقلات أجنبية تحمل النفط العراقي لاعتداءات، إلى جانب بحث التزام العراق بعدم السماح باستخدام أراضيه أو القوات الأمريكية الموجودة فيه لتنفيذ هجمات ضد إيران، وهو مطلب يُتوقع أن تطرحه طهران خلال المباحثات. كما سيتم بحث ملفات الديون، وتعزيز العلاقات الاقتصادية والأمنية والاجتماعية، وضبط الحدود بين البلدين.\n ورجح أن يحمل رئيس الوزراء رسالة شفوية من واشنطن، في إطار دعم أمريكي لدور وساطة عراقية بين الولايات المتحدة وإيران، بما قد يجعل بغداد عاصمة رابعة لاستضافة الحوار بين الطرفين بعد الدوحة ومسقط وإسلام أباد.\n ويرى الدعمي أن العراق يسعى إلى ترسيخ موقعه كوسيط إقليمي يجمع طرفي النزاع، إلا أن أولويته الأساسية تبقى إقناع إيران بالتخلي عن دعم مبدأ \"وحدة الساحات\"، لما يمثله من تهديد بإقحام العراق في أي مواجهة محتملة، بالتوازي مع معالجة تداعيات التوتر في مضيق هرمز، فيما ستتمسك طهران بمطلبها القاضي بعدم استخدام الأراضي العراقية منطلقا لأي هجمات تستهدفها.\n الزيدي (يمين) مع السفير الإيراني في العراق محمد كاظم الصادق بعد عودته من واشنطن (المكتب الإعلامي للزيدي) وتعكس زيارة الزيدي إلى طهران محاولة توظيف توازن العلاقات العراقية الخارجية، فبغداد تحاول تثبيت نفسها كقناة اتصال موثوقة بين الخصمين، مستفيدة من موقعها الجغرافي وتشابك مصالحها الأمنية والاقتصادية مع الطرفين.\n إعلان \n\n غير أن نجاح هذا المسار، وفق الدعمي، يبقى مرهونا بقدرة العراق على إقناع إيران بأن انفتاحه على واشنطن لا يأتي على حسابها، وبقدرته في الوقت نفسه على إقناع الولايات المتحدة بأن الحفاظ على العلاقة مع طهران يمثل ضرورة لحماية الاستقرار العراقي، لا خروجاً عن الشراكة الإستراتيجية مع واشنطن.\n وبذلك تتحول زيارة طهران إلى اختبار عملي لسياسة التوازن الإيجابي التي ترفعها بغداد في واحدة من أكثر مراحل المنطقة خطورة.\n\n المصدر: الجزيرة",
+      "sourceHost": "aljazeera.net",
+      "contentChars": 5615,
+      "arabicRatio": 0.9954,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-07-29T01:47:35.501Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      }
+    }
+  ]
 }

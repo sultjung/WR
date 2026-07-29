@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T01:27:34.179Z",
+  "generatedAt": "2026-07-29T01:47:14.982Z",
   "lookbackDays": 14,
   "categories": [
     "bismayah",
@@ -8,9 +8,9 @@
     "economy"
   ],
   "queryCount": 27,
-  "count": 250,
+  "count": 246,
   "categoryCounts": {
-    "politics": 202,
+    "politics": 198,
     "economy": 48
   },
   "articles": [
@@ -47,7 +47,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -82,7 +82,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.074Z"
+      "discoveredAt": "2026-07-29T01:47:14.821Z"
     },
     {
       "schemaVersion": "1.0",
@@ -116,7 +116,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.734Z"
+      "discoveredAt": "2026-07-29T01:47:13.550Z"
     },
     {
       "schemaVersion": "1.0",
@@ -150,7 +150,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.734Z"
+      "discoveredAt": "2026-07-29T01:47:13.550Z"
     },
     {
       "schemaVersion": "1.0",
@@ -183,7 +183,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -219,7 +219,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -254,7 +254,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.074Z"
+      "discoveredAt": "2026-07-29T01:47:14.821Z"
     },
     {
       "schemaVersion": "1.0",
@@ -288,7 +288,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.475Z"
     },
     {
       "schemaVersion": "1.0",
@@ -321,7 +321,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -355,7 +355,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.735Z"
+      "discoveredAt": "2026-07-29T01:47:13.551Z"
     },
     {
       "schemaVersion": "1.0",
@@ -389,7 +389,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -423,7 +423,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.735Z"
+      "discoveredAt": "2026-07-29T01:47:13.551Z"
     },
     {
       "schemaVersion": "1.0",
@@ -457,7 +457,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.732Z"
+      "discoveredAt": "2026-07-29T01:47:13.549Z"
     },
     {
       "schemaVersion": "1.0",
@@ -491,7 +491,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.734Z"
+      "discoveredAt": "2026-07-29T01:47:13.550Z"
     },
     {
       "schemaVersion": "1.0",
@@ -525,7 +525,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.734Z"
+      "discoveredAt": "2026-07-29T01:47:13.550Z"
     },
     {
       "schemaVersion": "1.0",
@@ -561,42 +561,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.456Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-E9odhm4iXLW7ynm5ytTIblc8",
-      "keywordId": "politics-cf-002",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "\"الإطار التنسيقي\" الحكومة العراقية",
-      "requiredTerms": [
-        "الإطار التنسيقي"
-      ],
-      "optionalTerms": [
-        "الحكومة",
-        "رئيس الوزراء",
-        "تشكيل الحكومة",
-        "الوزارات"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية"
-      ],
-      "originalTitleArabic": "تقرير بريطاني: الزيدي يحكم بـ\"عضلات مستعارة\" والقضاء وترمب سرّ قوته",
-      "sourceArabic": "شفق نيوز",
-      "sourceHomepage": "https://shafaq.com",
-      "publishedAt": "2026-07-28T15:05:09.000Z",
-      "descriptionArabic": "تقرير بريطاني: الزيدي يحكم بـ\"عضلات مستعارة\" والقضاء وترمب سرّ قوته شفق نيوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMioARBVV95cUxOdlN1c3N5Rm9WOTYzNnhwTC0zYkhwR2c0U3VKcDdhbG1pdjg3TjYtR0lJUHhUU1E5S1FHOFkzRC1JTmZSeGo1MWxJS3lMRDRwdDZPYVkzT0N5WTZwbGdwOTdOcG1ydVVPNEVGaE9ZN241NDAzeW9CUDVmdXhONHN0RmYtX2xfOXg4eHh5T3FYX0Zwd2pVYnlmV0djNExJSHZVdnFqeGlTUF9kS3lqLVNRZE1DQ3Mxc0lIOVFMRTVTMHc5bmhMcm51UG9Ka3BFZWV1c3RBN3FrMTAzNXY4VzJXazRUcXRDbTk1Z1d5MURES0hNMXV2Q2JwdGlTbklMOVlVTjZWbXhXYU1BQW5TNHdaTF9PdmNFY1M4UHIzVVVGSm5LSHd4YmJlcTZ2ZnROSHJyTUFnSkxranhYNGQ5ZlJrZGl3cS1fVnh6UEFWWDRMWEdxeXFnNFdXVVBsWXo5SWdod0VJVzRZU2Z2clpMZ2FEbS1kMkY4eEwxT2M0VC1IR2liSm5aUWVPdHVhYmNaUHpWV2tGN0FUQUd4SlZMWGZEaTJUUzhLSk9mOGY3VUg0QmV4S2tvS2JFMl9xWkw3aEprWlFYYVBEc3NqQ0pBQjhmb2l1OXR0ai1HLVdfcTJFaVFJSkxURllkbklnZmNTWXB6MnNtSExYQmVoZmNsNWl1b1BFOUNKQkRhYmxKTlNjMC11eTRybXRyc2tKc1FoZkll?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.082Z"
+      "discoveredAt": "2026-07-29T01:47:13.261Z"
     },
     {
       "schemaVersion": "1.0",
@@ -632,7 +597,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.457Z"
+      "discoveredAt": "2026-07-29T01:47:13.262Z"
     },
     {
       "schemaVersion": "1.0",
@@ -668,7 +633,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -704,7 +669,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -739,7 +704,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.947Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -774,7 +739,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.080Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -810,7 +775,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.387Z"
+      "discoveredAt": "2026-07-29T01:47:14.122Z"
     },
     {
       "schemaVersion": "1.0",
@@ -845,7 +810,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -878,7 +843,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -914,11 +879,11 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-Z7oaWanajHqAG7js2pN_mL8r",
+      "articleId": "discovery-hbjKrxFdw3rHYVXbPmcIshsO",
       "keywordId": "politics-cabinet-001",
       "category": "politics",
       "priority": 98,
@@ -940,7 +905,7 @@
       "sourceHomepage": "https://www.kurdistan24.net",
       "publishedAt": "2026-07-28T08:29:59.000Z",
       "descriptionArabic": "د. أوميد صباح وكەمال محەمەد لـ \"كوردستان 24\": انفراجة بملفي الكهرباء والبنزين.. وتفاهمات فيدرالية جديدة مع بغداد Kurdistan24",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1oMUVxMl9YSWNFQWQ4cURpODRDRmJjcG5ITUs1MEFNN0V0UlZWdG42RWtJSzlfMkN1Nm44akIwNVpaaXc3QzVXNWRRNXJXWUlVdGVmaGhB?oc=5",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMirwZBVV95cUxPcEF0Zklkd0hPZXhDaENJdHVyRzlpazNpeU5QV01uc2RlRUEtekZmZzlpUkoxVzh1MF96dWFCMlZiYnBuWEJVQng3M1pfYWhFRlJKb1RoM1U0WVRPMlgtLXdIeFdTRjh1Rm5Wek5KZjVvU0c1dGtUUEhJa2VSSnN1S01XNlV1U0o5OE5jekFxZmhrdHRUYmRodGJ0Q1YzRGtLV0p2Uk9IeC1kcTBncFJKem1pUDJlcFFjS1FvczY2cnNqdXJxQXRmZWJMd1VHSGhiWnZyelMyemxaQ0lxWU1iSjVzLW1FUUZhN1RQa0RUendBM01UOExUVEVVa3lIcHplbFJoUHROTVV6cnhIa2kzRi1tY3VsZ203T0J2eDk4OFB5akthdHh2c3Babk9aTUg1S2NLcTRfcTU2WmJYUjVzTEZnekNZbE5MOEk4NlFJSktRY1FsVmUxOG9EMlZoeThhcE1fYmU1eU14WEFEX2d6dlNxS1V0UmlQN1FlUkFFU3dSRUVYU1RkOENtY1U2R3hJbU1fMEZMeE55Q2FYME9QY0VkcUptVWxyYlF4WEsycTk5ZnFoN2RoZTFzZlRKLVlzOU5qS2RGYVJoQ3YtQjJBYWhWb2steWFSNm4yTngyRDdxWVFCTTVBejg0anU2ODV6QXc5LTlKcW5BcHZYSGI3UndvdUJ5cmVLS1kxRGxaeml2aExEVGpIR1NPMjVPUmk5eVdHRHVjTkx4SEU3UWxILWlFcGhkVFJ3cENiU2VEd0FpQkE3ZGlpbFpoUzluOXZIby0tNS1rZmQtVDY0N0JUbDM2VUIwUTNuWGgwSHpzS2tTYUk4VTdiWHhUVEtoR2ZHdkJSNXJlRy1BRXRodnpfaXM4amZVOThoT2JrTFQ4aFBQeUlxZkFleU5TSFpKQ2p0aVZzeVd0RVVqUkJXOHNKRVF5eS04VzFRRWtBU2dFRjJUc0hIUjFTVlFGMnBwdWNBLVNZM0FEV2Y5MlEwcUNHSnZFeTdVeVhXa3BDeERmbE9iaGVvcjBMc0tmUk9YT3A3TGpIeVIyMVozeW5nUWJCbEtoblVoX2J2eTBORXRlUQ?oc=5",
       "articleUrl": "",
       "discoveryMethod": "google-news-rss",
       "language": "ar",
@@ -948,7 +913,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -981,7 +946,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1017,7 +982,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1053,7 +1018,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1089,7 +1054,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1125,7 +1090,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1161,7 +1126,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1197,7 +1162,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1231,7 +1196,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.914Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1263,7 +1228,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1299,7 +1264,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.871Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1330,7 +1295,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1361,7 +1326,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1392,7 +1357,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1423,7 +1388,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1447,10 +1412,10 @@
         "استقبال المهنئين"
       ],
       "originalTitleArabic": "Farsnews | المقاومة العراقية: الاتهامات السعودية تبرير للعجز أمام اليمن، وأي فعل سعودي أحمق يجابه برد مندم",
-      "sourceArabic": "خبرگزاری فارس",
+      "sourceArabic": "Fars News Agency",
       "sourceHomepage": "https://farsnews.ir",
       "publishedAt": "2026-07-27T23:29:46.000Z",
-      "descriptionArabic": "Farsnews | المقاومة العراقية: الاتهامات السعودية تبرير للعجز أمام اليمن، وأي فعل سعودي أحمق يجابه برد مندم خبرگزاری فارس",
+      "descriptionArabic": "Farsnews | المقاومة العراقية: الاتهامات السعودية تبرير للعجز أمام اليمن، وأي فعل سعودي أحمق يجابه برد مندم Fars News Agency",
       "discoveryUrl": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBWR1dtNjB5cHhHeWlZLWF0cWUtVW03RWJMQm5aM200dmUtS0lpRUpEQXYtSURZQmlPQklkZGswSkIyRGgwa2FKX1FVZ0lxNU1OU3hzaVVoOHpTZ2lVWnV3YUNzUEZ2eDg?oc=5",
       "articleUrl": "",
       "discoveryMethod": "google-news-rss",
@@ -1459,43 +1424,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.457Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-1s3nCRYTMqocVPxzhK6Zh4Ck",
-      "keywordId": "politics-cf-001",
-      "category": "politics",
-      "priority": 98,
-      "queryArabic": "\"الإطار التنسيقي\" اجتماع",
-      "requiredTerms": [
-        "الإطار التنسيقي"
-      ],
-      "optionalTerms": [
-        "اجتماع",
-        "بيان",
-        "قادة",
-        "الحكومة"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية",
-        "ذكرى تأسيس"
-      ],
-      "originalTitleArabic": "الاطار التنسيقي يؤكد رفضه لاستخدام اراضي الدول في الاعتداء على الدول الأخرى",
-      "sourceArabic": "هذا اليوم",
-      "sourceHomepage": "https://hathalyoum.net",
-      "publishedAt": "2026-07-27T22:39:07.000Z",
-      "descriptionArabic": "الاطار التنسيقي يؤكد رفضه لاستخدام اراضي الدول في الاعتداء على الدول الأخرى هذا اليوم",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1TaXFkTVpVS19fSmNRY2pUUjNnTXJlZl9lSWVPSlpkQWhvZTZ4alBPQXRaYUZjT1hlVVE4ZWdtRmRtVTVnRm1jaDRpR0NKTjhP0gFKQVVfeXFMUFZqanlWOFBTWUFmZlY3OUNLYktvTjNqU3ZiZ3dQaGFKMm4tY3VwUk1jTWdjTnI1dlVqNXg5Y0hBZlRKVUdsN3lwVkE?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.262Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1530,7 +1459,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1565,7 +1494,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1601,7 +1530,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1637,7 +1566,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1672,7 +1601,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1708,7 +1637,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1743,7 +1672,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1779,7 +1708,43 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-j-wNgTHAtXHucDf7lSBaJr3a",
+      "keywordId": "politics-cf-001",
+      "category": "politics",
+      "priority": 98,
+      "queryArabic": "\"الإطار التنسيقي\" اجتماع",
+      "requiredTerms": [
+        "الإطار التنسيقي"
+      ],
+      "optionalTerms": [
+        "اجتماع",
+        "بيان",
+        "قادة",
+        "الحكومة"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "ذكرى تأسيس"
+      ],
+      "originalTitleArabic": "الإطار التنسيقي يثمن الجولات الخارجية التي تجريها الحكومة ودورها في تعزيز العلاقات على مختلف الأصعدة",
+      "sourceArabic": "هذا اليوم",
+      "sourceHomepage": "https://hathalyoum.net",
+      "publishedAt": "2026-07-27T21:00:06.000Z",
+      "descriptionArabic": "الإطار التنسيقي يثمن الجولات الخارجية التي تجريها الحكومة ودورها في تعزيز العلاقات على مختلف الأصعدة هذا اليوم",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9LOF9Pam80S1dzMzJxcFl4by0xZFBfZDhMbTFEUGRzTkVGVFBEb3RXY2hYMDZrYnk5ekpsQ20xVkxlUkdYSHg1VmRrNW1acVBi0gFKQVVfeXFMUER3eXpRUGt2T1paT1NqcGFLUXVRdUJESzFSb19qcjFoWlBORkpZZ0MwaERJSmlFUUFWc1Bka2E4SWR0TGZaRTdHTEE?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1815,7 +1780,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1851,7 +1816,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1887,7 +1852,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1923,7 +1888,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.457Z"
+      "discoveredAt": "2026-07-29T01:47:13.262Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1959,7 +1924,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.457Z"
+      "discoveredAt": "2026-07-29T01:47:13.262Z"
     },
     {
       "schemaVersion": "1.0",
@@ -1995,7 +1960,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.457Z"
+      "discoveredAt": "2026-07-29T01:47:13.261Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2030,7 +1995,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.032Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2061,7 +2026,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2096,7 +2061,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2131,7 +2096,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.948Z"
+      "discoveredAt": "2026-07-29T01:47:14.771Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2165,7 +2130,39 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.776Z"
+      "discoveredAt": "2026-07-29T01:47:13.474Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-KHmwfNlH_usEVIVP1zG9niXj",
+      "keywordId": "economy-projects-001",
+      "category": "economy",
+      "priority": 95,
+      "queryArabic": "\"المشاريع المتلكئة\" العراق",
+      "requiredTerms": [
+        "المشاريع المتلكئة"
+      ],
+      "optionalTerms": [
+        "استئناف",
+        "تمويل",
+        "نسب الإنجاز",
+        "مقاولين"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "رحلة الدولار من “مانهاتن” إلى “الرشيد”: قراءة في خفايا التبعية النقدية ومستقبل “العراق 2”",
+      "sourceArabic": "المعلومة",
+      "sourceHomepage": "https://almaalomah.me",
+      "publishedAt": "2026-07-27T12:55:45.000Z",
+      "descriptionArabic": "رحلة الدولار من “مانهاتن” إلى “الرشيد”: قراءة في خفايا التبعية النقدية ومستقبل “العراق 2” المعلومة",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxQSk8zWEotS1Y2ZjVfTzRPTkZvM1ZlWDRUMURHWkZYZlNsbTlKbkJOclhwU3lZUFJ0bTRJbmVzak54bXhVR3V3THQ4MGhqQ1BaYjBOVEhCaUpoWHdxNk9qbHFYeDBUYW15WkszVjF4SnZqcEl6cUVZLXpZc0NCd1dnOFFRckZqQVpyMlZvUTBlblk4Z0NFSHJwYS11WXBNU04wRE9aelJkU29YdlVEdldNbUNMaWEtMzg5QlJ5VmlJa2gydEc2dG00MDE4UEp6dC0wTHZMM3RLbmpQd0xDODRYdzVXaENrMkN0cklwdFFxalJGbllkb2VTb3hvenVCN1gzQWMtS2psTTBpNFdHYnpHdnRwSWg5SjRDMDZ6YWNjNlJMRWpKMHEzb1NBWDhCb0NwVjhTdkVNeUg2N0pQS0lhU2RRWk0wbXVzNlNEd1NsTFdxV2lOclJnTVhxOC1ET053dmxiVjhyQUpQQzlPZmlIYUthVjROM28tekgycTJ4LUdPMG9tMDBjeFVMUmRCUWNFNFNBbE5pWDJtQm5oLWQ4dV9saGptWUo0WkpuSEZtQXNrVDlRMTl3UkhxTUdYa2tRMGxXRU13TUE1M3A4Q1hib3RNVW5FYmVEZkZ2aE9nd0EwNDQ5eFE?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.398Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2199,7 +2196,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.475Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2234,7 +2231,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.080Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2268,7 +2265,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2300,7 +2297,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.398Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2331,7 +2328,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2363,7 +2360,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.397Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2397,7 +2394,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.177Z"
+      "discoveredAt": "2026-07-29T01:47:14.914Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2430,7 +2427,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2463,7 +2460,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2496,7 +2493,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2532,7 +2529,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2564,7 +2561,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.709Z"
+      "discoveredAt": "2026-07-29T01:47:14.538Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2596,7 +2593,41 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-3jxZeK_bkmFYpk170FMNnzHu",
+      "keywordId": "politics-cabinet-001",
+      "category": "politics",
+      "priority": 98,
+      "queryArabic": "\"قرارات مجلس الوزراء\" العراق",
+      "requiredTerms": [
+        "مجلس الوزراء"
+      ],
+      "optionalTerms": [
+        "قرارات",
+        "توجيهات",
+        "جلسة"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية"
+      ],
+      "originalTitleArabic": "تعرف على أبرز الاختصاصات الجديدة لـ\"منصة هيا\" لإدارة الدخول إلى قطر والإقامات المميزة",
+      "sourceArabic": "جريدة الشرق",
+      "sourceHomepage": "https://al-sharq.com",
+      "publishedAt": "2026-07-26T16:54:00.000Z",
+      "descriptionArabic": "تعرف على أبرز الاختصاصات الجديدة لـ\"منصة هيا\" لإدارة الدخول إلى قطر والإقامات المميزة جريدة الشرق",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMimgVBVV95cUxPWko2NGVzbFlva3FHTUpWMkRhMU5xVFdqaVlwY1NvUmVmVGQzbm16eExkY2Y2OUFyX2NlWk1hMXlEdnFoaFNnTDFZd2hEajk3R09uTHExZzBxaGRlZVZERzJxRUVGUTB5eTRwSnVtTEcwbVU1eTZPcFR4WTNVVEVaSWQ2Q3M3TWZPcnFkeVQ1eVhoQ01TUjFvMUticUdYMU9HRmw2RkYtU1FsUUdSNTgxTUdtbUMyLTl3MWlQV0pFTFdGa016UjFoSlJuaE5oS3gzdDZBUjdLeU1ZU2RNNW9SZC1SMUltUjZlYklsdXZwaFc5dzJzN1RFSml5MldGNXRDSzZZeEljUFVFZTI0anFSSlZ3QmxUYXdNWW9sZDNCUnhjSlhDSHVveEtaQWtqblU1b2x2MHpVdVFxVF9LRHh0WmZsckFONmwzUm1IbUJIY2FiZGlQNUN4LXpQMGFkVlA0QTZzWXVoYVZpUVZEQlotdWdDYTY1dlJNRllibmZlbXZkU0ZyYVI5Mk5VM2g4c3VkajF4MzdmSk5IUjlQb0JfLS1tQmN6NF9WbU5paWEzdzlIazA5dFVJQ1RtU2dHNi00S2JGVjRMbDdJYVZsSUZhVXQtVEFVNlhlc0FJQ2RKRHk5bTY1eGlKaTBxcTUzMU5QWVhpSmtCbmc4RGVaaDFWQUc3amVWUy1Vektidzc2dUtwM1l3Y2VHLTZEbEdIUVMwU3d2LUgxbmIwbGFCc1hoNHRNV0NjeHNpa04xWWpyN1BqZUZrSEJJTndYd1JIU2RPOWhnMlpZOFR0QURGekZJODlIdm01aE02eWhOZEZQS3IxaUZUMG55WDBoekZOeG1fQzFzSm1IS3gzZ0t6eHNuZjN3aXNFS3F2Mnc?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2630,7 +2661,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2662,7 +2693,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.875Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2693,7 +2724,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2729,7 +2760,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2763,7 +2794,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.475Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2795,7 +2826,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2827,7 +2858,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.147Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2859,7 +2890,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.398Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2891,7 +2922,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.147Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2927,7 +2958,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2963,7 +2994,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -2995,25 +3026,27 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.397Z"
     },
     {
       "schemaVersion": "1.0",
       "articleId": "discovery-GU_dLxnEGLSaXNkl5L79LV0C",
-      "keywordId": "politics-government-formation-001",
+      "keywordId": "politics-cf-002",
       "category": "politics",
-      "priority": 95,
-      "queryArabic": "\"تشكيل الحكومة\" العراق",
+      "priority": 96,
+      "queryArabic": "\"الإطار التنسيقي\" الحكومة العراقية",
       "requiredTerms": [
-        "تشكيل الحكومة"
+        "الإطار التنسيقي"
       ],
       "optionalTerms": [
-        "التشكيلة الوزارية",
-        "الحقائب الوزارية",
-        "منح الثقة"
+        "الحكومة",
+        "رئيس الوزراء",
+        "تشكيل الحكومة",
+        "الوزارات"
       ],
       "excludedTerms": [
-        "حكومة محلية"
+        "تهنئة",
+        "تعزية"
       ],
       "originalTitleArabic": "تمرد في العصائب وتنازلات مرحلية.. المركز العربي يفحص تحديات الزيدي بين نفود إيران وضغط أميركا",
       "sourceArabic": "الترا العراق",
@@ -3028,7 +3061,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3064,7 +3097,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3098,7 +3131,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.776Z"
+      "discoveredAt": "2026-07-29T01:47:13.474Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3131,7 +3164,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3164,7 +3197,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3198,7 +3231,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.735Z"
+      "discoveredAt": "2026-07-29T01:47:13.551Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3230,7 +3263,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.709Z"
+      "discoveredAt": "2026-07-29T01:47:14.538Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3264,41 +3297,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-iZPcnA5hmy4HAMVzpS-puI5J",
-      "keywordId": "politics-cabinet-002",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "\"جلسة مجلس الوزراء\" العراق",
-      "requiredTerms": [
-        "مجلس الوزراء"
-      ],
-      "optionalTerms": [
-        "جلسة",
-        "اجتماع اعتيادي",
-        "حزمة قرارات"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية"
-      ],
-      "originalTitleArabic": "مجلس الوزراء الاتحادي يصدر جملة من القرارات الجديدة ‌",
-      "sourceArabic": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
-      "sourceHomepage": "https://www.pukmedia.com",
-      "publishedAt": "2026-07-26T06:48:00.000Z",
-      "descriptionArabic": "مجلس الوزراء الاتحادي يصدر جملة من القرارات الجديدة ‌ PUKmedia یەکێتیی نیشتمانیی کوردستان",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE0xWlVQNkVWQjhtSmFSTExGTFB3cl9adlc1bG9wSWI4aXZPQ0h5RHhEWHZHWmFqNmRiTG5NWjdTSlFMbF9rRE9pV0pXOEc4NXpoaXp2aA?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.732Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3332,7 +3331,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.914Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3368,7 +3367,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3402,7 +3401,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.735Z"
+      "discoveredAt": "2026-07-29T01:47:13.551Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3436,7 +3435,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3470,7 +3469,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.475Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3504,7 +3503,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.474Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3540,7 +3539,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3575,7 +3574,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.851Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3609,7 +3608,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.735Z"
+      "discoveredAt": "2026-07-29T01:47:13.551Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3643,7 +3642,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3678,7 +3677,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3714,7 +3713,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3746,7 +3745,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.101Z"
+      "discoveredAt": "2026-07-29T01:47:13.837Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3782,7 +3781,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3816,7 +3815,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.913Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3848,7 +3847,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.398Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3883,7 +3882,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3917,7 +3916,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.914Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3953,7 +3952,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -3988,7 +3987,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.074Z"
+      "discoveredAt": "2026-07-29T01:47:14.821Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4021,41 +4020,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-R6Kr6ZnpsTfmanwYXv4cPmdI",
-      "keywordId": "politics-pm-002",
-      "category": "politics",
-      "priority": 94,
-      "queryArabic": "\"المكتب الإعلامي لرئيس الوزراء\" العراق",
-      "requiredTerms": [
-        "رئيس الوزراء"
-      ],
-      "optionalTerms": [
-        "المكتب الإعلامي",
-        "بيان",
-        "توجيه"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية"
-      ],
-      "originalTitleArabic": "العراق ينفى تقرير نيويورك تايمز حول نقل مقترح أمريكى لوقف إطلاق النار إلى إيران",
-      "sourceArabic": "اليوم السابع",
-      "sourceHomepage": "https://www.youm7.com",
-      "publishedAt": "2026-07-24T10:18:00.000Z",
-      "descriptionArabic": "العراق ينفى تقرير نيويورك تايمز حول نقل مقترح أمريكى لوقف إطلاق النار إلى إيران اليوم السابع",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi5gNBVV95cUxPNUQ2WVpzSExPY3ljY29zQVNidVVCaWtXMm5xdHI4WDNXTjJPTzExcjFCQUVXSWFFQndaRjFqLTU4cHYzNnRiU0t5bG50Z1lzdjBaYzBheTVoQ0ZoaEpqQVg4OVVGT21fSU9hbERudWoyY19WM0V4TFEyelFzSW9MUmFrSnZKNUlkZ1RJTzk1QnFlU29iWUpiQ2o3dTczSHhJSy01akhVT1ZUazUzV0plb0FqaXZWTkxadWNxUFQ5YVpyNkpvZ2Vzcm1vOGhiWHJLQk9lN3VLRGNTalZCOE5uR096Ykw3emI3NDNILW1NSUowSjd2Wi0weVJ4Z2pOaGZQaTlZSVRGMm1WV3liODVDRVI1TjhvZXhHek9xODctVktWRXNwM1dFQUpMMnRpeXNqRVRzS1ExSFZzblhNVlBzU2JIT3pFdWVGYWpSN0xyTjZIQTVwUVg1Nkd0aFBsZGhjbG1kNURtTkJHc2RFM3RRUDBnVW9mcThnb09qOUdMZzhNaHJVZFNmODhSa3N3SzRLMjU0YlAtZFNiYkg0eEh4OXhfVklwdWNyTzZlTTFlR0JBbEkyODBCeTBQenVzV2ZTLW80SkV3RU91ZjZuaHNJdVktSTZabEdWMmlYSC1aX0JGM2VYcFHSAeADQVVfeXFMTWlsUWpWR0hHZjRZb3VTUjcyRDdFa3FBUEpXMEJiblM5YjBXZ2hEcWNpNXhGUy10VjNfdHFHcWI4NjZTelVxTG1ZMnVKbVY2VjlLVTkxUXlrS3JLbmdkZ0JVZDZ4WmRHbGd5MkFRRmI3cU93TDVzakVzNFRUcVFMd3dNYndDYzg3bmJTTm5iQWRTWDAzMjhDSkg3WmdyOEM4cXJMOXRjSFBoSjZRakJtNXpVVk93U2w5M3NQZlJacnpPVjduampwNVhGdHpmNVFoOWFUWmFLNXVsS1Ruc3V5dHZ3S2hNcTQyWXh2VWNiM2ZOQ1JZZ1MxS0dVRC14X3IwZUZtSjMwc2lGVkJOQ1VPcFNXcFNzRE82WXZGcWxteldteTNZU1k2djBHeG5PSzdzWEU0cUt5bVQweUc4Y3FCdHhfTko0ZDAyd1M5QmlHa29ObGw0QmVMdV93QVZXM3ZsTGJ0MDdPN09CREl0eUp0SzVGdmdjakZ2VExNdEtwTmI3RDItVml4d0tQSkN3eXUtNXFNUm5ib3Bld0R5aUFaQURDM0hJRk9OZjd0RndWMlQ1TUhsQlR3bTh4RUFGME9JbWlmUi1mcXhBRWt5bmE2ZXlmcjVNTkJ4SmdELTBBalBw?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.854Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4091,7 +4056,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4122,7 +4087,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4157,7 +4122,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4188,7 +4153,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4219,7 +4184,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4250,7 +4215,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4283,7 +4248,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4317,7 +4282,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:13.477Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4352,42 +4317,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-YSkvXYvgU83rtJ3HhtM0zC6T",
-      "keywordId": "politics-cf-002",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "\"الإطار التنسيقي\" الحكومة العراقية",
-      "requiredTerms": [
-        "الإطار التنسيقي"
-      ],
-      "optionalTerms": [
-        "الحكومة",
-        "رئيس الوزراء",
-        "تشكيل الحكومة",
-        "الوزارات"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية"
-      ],
-      "originalTitleArabic": "تحدّيات حكومة علي الزيدي",
-      "sourceArabic": "العربي الجديد",
-      "sourceHomepage": "https://www.alaraby.co.uk",
-      "publishedAt": "2026-07-23T13:19:00.000Z",
-      "descriptionArabic": "تحدّيات حكومة علي الزيدي العربي الجديد",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPTkxFc0o3OGl2N1FNMjlodW1MWlFMTU9penJ0STNuVnJ2aWo0RlN5RDk1Z0dxdndQY0E4T0xQMGNNa2RPOXRyTV9wZHAwT0ZDOHNrLUxWVHpjcEVNclFtZlcwUHltNTdSSHA4T2lRWkJ2LUdHa0w5eGRqMlNpVjNPZjZJMnBZVnhTbnNNSFVaWU15Sjlwa1Y5U2VKcjYtMjg5ang4elVOSXQtNWNGRnAzRV80aVVWRGVncWJjRm8zT2g0dDJyYUg3dVVBNzFoQy1FRjE4SUpCQUdIRGgzZUZvam9jeV9YZDdtV1dmTkdhMjN2Vlp5aUHSAfsBQVVfeXFMT3FVSWZyeElGOXRYTlRvdXoteW0wUnI3SDUtdE4zU2pHTnZsZW5OclhrZWNrcWZTSHQtaGRVN281aTROZy14LVNxN2RZckx1b3RocklOT1dvRFJ5NGJuekJQV01CTG41R3I3V29TS2VRZEJfV1JHWW5ERFJWZGV1VEp1MGtsT0hLLTllbVh0TDRNM1FXUnZxRHAwWWFhS21LVURoZUpBN1Y3LWZJR1hJVW50dVFCcllZY2RnWWlnaGhRY0I2bjJ3WnhyYkd0OHRJelJSQ0lNZHMxZWRPaW01U3FRTHdQZWIzOUFiNGVxSXoxa1VMYmVhWXpwYWc?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4421,7 +4351,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.853Z"
+      "discoveredAt": "2026-07-29T01:47:13.608Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4453,7 +4383,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.709Z"
+      "discoveredAt": "2026-07-29T01:47:14.538Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4485,7 +4415,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.147Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4521,7 +4451,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4553,7 +4483,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.398Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4589,7 +4519,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4625,7 +4555,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4660,7 +4590,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.082Z"
+      "discoveredAt": "2026-07-29T01:47:13.851Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4693,7 +4623,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4724,7 +4654,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.350Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4760,7 +4690,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4794,43 +4724,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.734Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-J1JfCDm9Wch-fJjFHe-iftUf",
-      "keywordId": "politics-cf-001",
-      "category": "politics",
-      "priority": 98,
-      "queryArabic": "\"الإطار التنسيقي\" اجتماع",
-      "requiredTerms": [
-        "الإطار التنسيقي"
-      ],
-      "optionalTerms": [
-        "اجتماع",
-        "بيان",
-        "قادة",
-        "الحكومة"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية",
-        "ذكرى تأسيس"
-      ],
-      "originalTitleArabic": "العراق: هدر بأكثر من 23 مليار دولار وتجاوز على نصف مليون عقار عائد للدولة",
-      "sourceArabic": "القدس العربي",
-      "sourceHomepage": "https://www.alquds.co.uk",
-      "publishedAt": "2026-07-22T16:36:44.000Z",
-      "descriptionArabic": "العراق: هدر بأكثر من 23 مليار دولار وتجاوز على نصف مليون عقار عائد للدولة القدس العربي",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQOGY2TzZjZmU1aDExakFMaEJwdFJrZkxJUHpyT3YxaGltOTJ3VFY4c3JuUk15MFhjZWFJeHg2bTI3TzYzeVVhZllkTVBraWVxRzdWSUhhR3hHUVNWc0ZDT1RRaHlvWTlXcGFVYkVBQjY3bFlURlFoZkRaQnctb0pIR0xCWW1Fc3NfbTA2b2xSVW9kZlZBeHpWN3hJSlBhSlR3czZEdzF4WUxEc1I3RU9fbk9JNURqLVQzc1BIUHU3ci1iUlh2UThrSS1YQ1RVVU9zbTJRU1R1TGp4Zkw5Z1l4OWpBWUVHcUs0STFIdDRtdnNtQ0VmNVY5RVNScE84ekxCb1RjNG9IMVhTeW56Z2w1NW9sU21HSzV0N3RVcDZQZzZ1QkFSY19XaWRoMFJiOGZUVzFlVU94V2FRdHJWcWdkVG45TQ?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.550Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4861,7 +4755,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.350Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4894,7 +4788,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4925,7 +4819,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4960,7 +4854,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -4991,7 +4885,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5027,7 +4921,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5063,7 +4957,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5099,7 +4993,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5130,7 +5024,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5166,7 +5060,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5202,7 +5096,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.387Z"
+      "discoveredAt": "2026-07-29T01:47:14.122Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5238,7 +5132,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5272,7 +5166,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:13.477Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5303,39 +5197,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-gKJkh924XgWtgqUd3946ZM5N",
-      "keywordId": "economy-projects-001",
-      "category": "economy",
-      "priority": 95,
-      "queryArabic": "\"المشاريع المتلكئة\" العراق",
-      "requiredTerms": [
-        "المشاريع المتلكئة"
-      ],
-      "optionalTerms": [
-        "استئناف",
-        "تمويل",
-        "نسب الإنجاز",
-        "مقاولين"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "زيارة واشنطن فرصةٌ لتحويل الشراكة إلى تنمية",
-      "sourceArabic": "شبكة النبأ المعلوماتية",
-      "sourceHomepage": "https://annabaa.org",
-      "publishedAt": "2026-07-22T02:32:11.000Z",
-      "descriptionArabic": "زيارة واشنطن فرصةٌ لتحويل الشراكة إلى تنمية شبكة النبأ المعلوماتية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE96Y2dKUVNqeWhTdVFGT0VIeGFWQVdDQzY5cUc5OW53MWNKa3k0Vy1JMjhPa3JmeXdvLUJqa0dadFJadURVNy1HM2NCZXhtMlRjaTJpZEc2VV9iZVNQ?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5371,41 +5233,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-CdElDuQqQAGY7xFiQs2g5XSU",
-      "keywordId": "politics-cabinet-002",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "\"جلسة مجلس الوزراء\" العراق",
-      "requiredTerms": [
-        "مجلس الوزراء"
-      ],
-      "optionalTerms": [
-        "جلسة",
-        "اجتماع اعتيادي",
-        "حزمة قرارات"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية"
-      ],
-      "originalTitleArabic": "جملة قرارات.. الحكومة العراقية تقيل رئيس مجلس الخدمة وتتوعد المسؤولين الفاسدين",
-      "sourceArabic": "rudawarabia.net",
-      "sourceHomepage": "http://www.rudawarabia.net",
-      "publishedAt": "2026-07-21T20:24:09.000Z",
-      "descriptionArabic": "جملة قرارات.. الحكومة العراقية تقيل رئيس مجلس الخدمة وتتوعد المسؤولين الفاسدين rudawarabia.net",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UajEtVlVBcC13WllBdWR3SjVQeUhFTEp0RkhOb2E1WWVPaFFzSDItSlRtREtfNnRPVjFKQW9jbVE2bzd1OXcxRi1fMlNUb1JGMkdHM1oyNkpzbk9XVTk1WTliTVV0ZGxf?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.735Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5439,7 +5267,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.776Z"
+      "discoveredAt": "2026-07-29T01:47:13.474Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5473,7 +5301,43 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.475Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-80ka9tUOro9KgVrzf5FZvPPH",
+      "keywordId": "politics-cf-001",
+      "category": "politics",
+      "priority": 98,
+      "queryArabic": "\"الإطار التنسيقي\" اجتماع",
+      "requiredTerms": [
+        "الإطار التنسيقي"
+      ],
+      "optionalTerms": [
+        "اجتماع",
+        "بيان",
+        "قادة",
+        "الحكومة"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "ذكرى تأسيس"
+      ],
+      "originalTitleArabic": "الاطار التنسيقي يدعم نتائج زيارة الزيدي الى واشنطن",
+      "sourceArabic": "Azzaman",
+      "sourceHomepage": "https://www.azzaman.com",
+      "publishedAt": "2026-07-21T20:04:47.000Z",
+      "descriptionArabic": "الاطار التنسيقي يدعم نتائج زيارة الزيدي الى واشنطن Azzaman",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQSHp1YnhtX0oycGF5VVhIanh4SmpWaFQtbk1sS3ljcHd0NGlNeFBKYmJGVjltTWRiNjZYTFVjT3I5VllPdUtlVTFIcnlPazlDbW1XVDZIUW5yN2gyWmYydV9DTjFKY1V6VF9BazVDNHo3a3pXcEFOYmJjQ3c1aXY0Z2JqVzZpb21NV0NWWDlBUTZQNDJfQWE3WmFseTBYUm9CNS12STBsU3BGTWdkSmhoSGp6eVRlU0kySy1aVkt2NlVEXzVwSmluSHpuNzRFdWM0b0tQU080c0EzeFN4VG8tLUplcTEtYkxNTlJQcnJ4eUZvU1Z5WDdrc0dXMmtFU0FCM1R5TEdEb2NTd2ZhVEF1cEF0UUhlZHljRks4cHl0N3BGeWU5WERickIxa1AteXI4QVBxZ2ljNjJDUG80MFRBaFlMV0M?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5506,7 +5370,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5540,7 +5404,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.734Z"
+      "discoveredAt": "2026-07-29T01:47:13.550Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5576,7 +5440,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.871Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5612,7 +5476,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.616Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5648,7 +5512,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5681,7 +5545,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5717,7 +5581,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5748,7 +5612,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5779,7 +5643,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5815,7 +5679,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5851,7 +5715,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.871Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5887,7 +5751,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.871Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5919,40 +5783,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.611Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-E6gWzkMgQgUtujAdCMcIOVy_",
-      "keywordId": "politics-government-formation-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "\"تشكيل الحكومة\" العراق",
-      "requiredTerms": [
-        "تشكيل الحكومة"
-      ],
-      "optionalTerms": [
-        "التشكيلة الوزارية",
-        "الحقائب الوزارية",
-        "منح الثقة"
-      ],
-      "excludedTerms": [
-        "حكومة محلية"
-      ],
-      "originalTitleArabic": "الحكومة العراقية بين تحديين.. المصالح الوطنية والضغوط الأميركية",
-      "sourceArabic": "شبكة النبأ المعلوماتية",
-      "sourceHomepage": "https://annabaa.org",
-      "publishedAt": "2026-07-21T03:13:28.000Z",
-      "descriptionArabic": "الحكومة العراقية بين تحديين.. المصالح الوطنية والضغوط الأميركية شبكة النبأ المعلوماتية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5ORTNkc3BGTU8xZE9zVHpzRHZSUnQwMGx1dTVyTEUzd2tuQWNHYkEyTEtMa1RvSFRoeHBJQU4zYmlScU9HSjVhMWlVbzRVNWJFWGdvejZaWTk4TXFu?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.326Z"
     },
     {
       "schemaVersion": "1.0",
@@ -5985,7 +5816,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6020,7 +5851,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.815Z"
+      "discoveredAt": "2026-07-29T01:47:14.566Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6051,7 +5882,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6087,7 +5918,42 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-UI74dW5r8yAZKqjKA_aE-ANz",
+      "keywordId": "politics-cf-002",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "\"الإطار التنسيقي\" الحكومة العراقية",
+      "requiredTerms": [
+        "الإطار التنسيقي"
+      ],
+      "optionalTerms": [
+        "الحكومة",
+        "رئيس الوزراء",
+        "تشكيل الحكومة",
+        "الوزارات"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية"
+      ],
+      "originalTitleArabic": "الإطار التنسيقي يدعم نتائج زيارة الزيدي لأمريكا ويؤكد: لن نوفر غطاء سياسيا للمتورطين في الفساد",
+      "sourceArabic": "PUKmedia یەکێتیی نیشتمانیی کوردستان",
+      "sourceHomepage": "https://www.pukmedia.com",
+      "publishedAt": "2026-07-20T20:56:59.000Z",
+      "descriptionArabic": "الإطار التنسيقي يدعم نتائج زيارة الزيدي لأمريكا ويؤكد: لن نوفر غطاء سياسيا للمتورطين في الفساد PUKmedia یەکێتیی نیشتمانیی کوردستان",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE95RTZJNVN4RXZsT1I5WE5JazBuSTV5VmwweHd6WDdvN1VKb2dWMi1sZ0xQRVE1TElrWnNMNUIzamdZNmR1RTRsYjgxSUNxUjVQUXQ4eA?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6123,7 +5989,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6156,7 +6022,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6188,7 +6054,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6221,7 +6087,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6254,41 +6120,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-PDxe4-Qr1S_JQGBuxW350f9m",
-      "keywordId": "politics-cabinet-001",
-      "category": "politics",
-      "priority": 98,
-      "queryArabic": "\"قرارات مجلس الوزراء\" العراق",
-      "requiredTerms": [
-        "مجلس الوزراء"
-      ],
-      "optionalTerms": [
-        "قرارات",
-        "توجيهات",
-        "جلسة"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية"
-      ],
-      "originalTitleArabic": "أمانة بغداد: إزالة فندق الذهب الأسود ضرورة لحماية الأرواح والحفاظ على هويته التراثية",
-      "sourceArabic": "تايتل نيوز",
-      "sourceHomepage": "https://title.news",
-      "publishedAt": "2026-07-20T12:20:47.000Z",
-      "descriptionArabic": "أمانة بغداد: إزالة فندق الذهب الأسود ضرورة لحماية الأرواح والحفاظ على هويته التراثية تايتل نيوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiREFVX3lxTE44QmpoLXZNbjBVd0ZTWlZ3dHBWZVJ6aktYNmR0ZW55RmY3OUh5TUpUd3VtSTNfYndBcFo2YTJ0UFo1Wnd2?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6320,7 +6152,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6356,7 +6188,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6392,7 +6224,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6425,7 +6257,43 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-VC0VlxcaA5pfYm9J7lKH4LO-",
+      "keywordId": "politics-cf-001",
+      "category": "politics",
+      "priority": 98,
+      "queryArabic": "\"الإطار التنسيقي\" اجتماع",
+      "requiredTerms": [
+        "الإطار التنسيقي"
+      ],
+      "optionalTerms": [
+        "اجتماع",
+        "بيان",
+        "قادة",
+        "الحكومة"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "ذكرى تأسيس"
+      ],
+      "originalTitleArabic": "وداعا للاجتماعات الكبرى.. الإطار التنسيقي على مشارف \"هيكلة\" قاسية والقيادة تقتصر على 7 فقط",
+      "sourceArabic": "تطبيق نبض",
+      "sourceHomepage": "https://nabdapp.com",
+      "publishedAt": "2026-07-20T07:00:00.000Z",
+      "descriptionArabic": "وداعا للاجتماعات الكبرى.. الإطار التنسيقي على مشارف \"هيكلة\" قاسية والقيادة تقتصر على 7 فقط تطبيق نبض",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1reW9nR3lPTDJ0NTUzNnVGRzNwYmtMaGFueS1CNG5Kb042M0RKU05aT1RRVzVZNVJ5WlBGWldIZEJNenhpQXc?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6457,7 +6325,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.148Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6493,7 +6361,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6529,7 +6397,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6564,7 +6432,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.080Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6599,7 +6467,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.032Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6631,7 +6499,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.147Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6667,7 +6535,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6702,7 +6570,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6734,7 +6602,40 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.147Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-zV_V51aKju7AQaOYN3S64tEp",
+      "keywordId": "politics-government-formation-001",
+      "category": "politics",
+      "priority": 95,
+      "queryArabic": "\"تشكيل الحكومة\" العراق",
+      "requiredTerms": [
+        "تشكيل الحكومة"
+      ],
+      "optionalTerms": [
+        "التشكيلة الوزارية",
+        "الحقائب الوزارية",
+        "منح الثقة"
+      ],
+      "excludedTerms": [
+        "حكومة محلية"
+      ],
+      "originalTitleArabic": "بغداد تعتزم إرسال وفد تفاوضي لتركيا لحسم ملف المياه وبحث تداعيات تراجع مناسيب دجلة والفرات",
+      "sourceArabic": "Kurdistan24",
+      "sourceHomepage": "https://www.kurdistan24.net",
+      "publishedAt": "2026-07-19T07:27:16.000Z",
+      "descriptionArabic": "بغداد تعتزم إرسال وفد تفاوضي لتركيا لحسم ملف المياه وبحث تداعيات تراجع مناسيب دجلة والفرات Kurdistan24",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBwMjVmUDVQRU1KaFJmTnZUUzNWaWdYUmVBYXRaV2cwZEV5azNuYTNxQmMzUVBQWWE4aDI0V3hYc0VmNFlmM1lnVTZlMy1uWElVekVyRUln?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6770,7 +6671,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6806,7 +6707,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6840,7 +6741,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.913Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6876,7 +6777,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.615Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6909,7 +6810,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -6945,11 +6846,11 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.871Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-jilY6APU6qvHLfKQhGhhAX_N",
+      "articleId": "discovery-OHIC_mlu3eETndywLqEVWQuC",
       "keywordId": "politics-cf-002",
       "category": "politics",
       "priority": 96,
@@ -6972,7 +6873,7 @@
       "sourceHomepage": "https://www.alaraby.co.uk",
       "publishedAt": "2026-07-18T07:00:00.000Z",
       "descriptionArabic": "خاص| زيارة الزيدي لواشنطن تحرّك حسم الوزارات الشاغرة في حكومة العراق العربي الجديد",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMioARBVV95cUxPU2kzdXB6dldZLVdXTmoyOWdXa0JDcF85dzlQaHljUGRTNDktbHBTamgwckFMcmlEOWRodjh0UUNJSlp3QWdDc2d5WEVkN2otdlQwV09XbXktM0RxV1c5cEk5LVAzT0tia3p4UVE5eHEtcG5EbGpndHoyQzdvR1lkRHB4WkJNTGZnb0VLaWVwdGUzcHMwa2ZEd3lTX0JsMkVJY0VxWEZnaFh5ODc4NFNZekduTFhkbVJ4SkNZXzU4dGNBOTZ5MjNTNUFRbmpuckZJOXQyQ211Z3NmeEN5dDJvWS1WX1hnTVJWNVZnU3dKY0dGWGFyc3RuT01LUWx4R3ZaYXI1RlFvY2tvelRFQnV5VkRtN2RySHpiQ3d0dURrMFdweEpNdmRIUHhXZmRaMzgteV9ReWx3VTRBcDhzdXBCVk1WSUZUMkQ0bWVjd1ZNZEdId2FRd3NUcGs2UzZmQm14VUFmanRVMk95U0MxZE1pU2Eya29SUTdEY1RVbkNGenRhMnZLb3c3ZWlWejhKSGNlVm1FbXRqQVBtaFNTN1I4b0V1QzIxWDRnNzdCYUUyRF9ZSl8yVFJwQk94Mi1jd2wwTko0dW92SjQ2RU5qWHZQaVV0TGN0bF90VTdsM2U5VnpOV2l6TXJZeEFmV3JqNGdTUEdub0dUUzNrczRVc0d4dGMtZTFTRU1CdXJPdllOMm5KV0ZyVkZXWnBlNFZiUDJB?oc=5",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMioARBVV95cUxPU2kzdXB6dldZLVdXTmoyOWdXa0JDcF85dzlQaHljUGRTNDktbHBTamgwckFMcmlEOWRodjh0UUNJSlp3QWdDc2d5WEVkN2otdlQwV09XbXktM0RxV1c5cEk5LVAzT0tia3p4UVE5eHEtcG5EbGpndHoyQzdvR1lkRHB4WkJNTGZnb0VLaWVwdGUzcHMwa2ZEd3lTX0JsMkVJY0VxWEZnaFh5ODc4NFNZekduTFhkbVJ4SkNZXzU4dGNBOTZ5MjNTNUFRbmpuckZJOXQyQ211Z3NmeEN5dDJvWS1WX1hnTVJWNVZnU3dKY0dGWGFyc3RuT01LUWx4R3ZaYXI1RlFvY2tvelRFQnV5VkRtN2RySHpiQ3d0dURrMFdweEpNdmRIUHhXZmRaMzgteV9ReWx3VTRBcDhzdXBCVk1WSUZUMkQ0bWVjd1ZNZEdId2FRd3NUcGs2UzZmQm14VUFmanRVMk95U0MxZE1pU2Eya29SUTdEY1RVbkNGenRhMnZLb3c3ZWlWejhKSGNlVm1FbXRqQVBtaFNTN1I4b0V1QzIxWDRnNzdCYUUyRF9ZSl8yVFJwQk94Mi1jd2wwTko0dW92SjQ2RU5qWHZQaVV0TGN0bF90VTdsM2U5VnpOV2l6TXJZeEFmV3JqNGdTUEdub0dUUzNrczRVc0d4dGMtZTFTRU1CdXJPdllOMm5KV0ZyVkZXWnBlNFZiUDJB0gGmBEFVX3lxTE9sY0g5REtyRlFlWXhxdTlCNzVOTXVHUzN6aC1SN2s1bGY2eEZIUDhfZ3lOWFh6MVBvSkpZNFRWRVVZNXBZYzAtT1lhRmtoQi0zYVJtRFpQNk5LRmtIWjg4UG1pNUlmWFlPUm1ERHhMVlVkbjkwRl8xUjNIUW9oY1dyZG1QUGhtYTY5SmU5QkVlc0VNdnZXVmhaMURCZ2lJSHpLTVVTNXZpc3RCU2E1Z09hM21ObDAtWE5MazdGanRNQzl0Q1RzTlRTNjRwQUF1S0NEQkR0WXFybm91WlNFdnJURW96dzNwRFQzbW13MHhubGRZSjlqZ1dWMUNRb21lb1Exai1lTXVZVnk1dGhhTzUyZ1dsdTdQSklhU0pDUTkwUmh1SWdhTHpkSXUwbDN4bWZ4dTNGbDhIQ1RGbEg1ODF5b3UxaEQwbXh6NHBCaG1kUXFGVURFYzJTX1NDaWxXcUtXeTdYR1BxU2duT3VqS3ZxbW1FZEt2LU9wRzFTZlVZSThacFM3bG40Ukh5TTZnWEd2TTBKMmhPR1R4NElQR0kzVnNZd1d5dEZaUEFPNnFFRS1YOFFveXdJWHhxQmxqM0doSkpYeU8xeFV0ODhBbkpzTmR6QVBZVjMxZkxDRU9VYXdQSVp1U2xzaEluNXBJOEJkQk8ycDFidENfd1JNM2o2Wi04T2swdC1zM0UwbDVBUTlJUHVFenZUYTVFdHlTbkVLbmhOdnc?oc=5",
       "articleUrl": "",
       "discoveryMethod": "google-news-rss",
       "language": "ar",
@@ -6980,7 +6881,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.850Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7013,7 +6914,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.493Z"
+      "discoveredAt": "2026-07-29T01:47:14.283Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7047,7 +6948,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.854Z"
+      "discoveredAt": "2026-07-29T01:47:13.609Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7081,7 +6982,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.913Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7115,7 +7016,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.176Z"
+      "discoveredAt": "2026-07-29T01:47:14.913Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7148,7 +7049,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7183,7 +7084,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.081Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7217,7 +7118,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.777Z"
+      "discoveredAt": "2026-07-29T01:47:13.475Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7250,7 +7151,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.494Z"
+      "discoveredAt": "2026-07-29T01:47:14.284Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7284,43 +7185,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-nMstDIPUS9CYmra7QkP_NhqF",
-      "keywordId": "politics-cf-001",
-      "category": "politics",
-      "priority": 98,
-      "queryArabic": "\"الإطار التنسيقي\" اجتماع",
-      "requiredTerms": [
-        "الإطار التنسيقي"
-      ],
-      "optionalTerms": [
-        "اجتماع",
-        "بيان",
-        "قادة",
-        "الحكومة"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية",
-        "ذكرى تأسيس"
-      ],
-      "originalTitleArabic": "لمح لـ\"رفضها\".. ائتلاف السوداني: اتفاقات الزيدي مع واشنطن ستعرض على \"الإطار\" والبرلمان",
-      "sourceArabic": "شفق نيوز",
-      "sourceHomepage": "https://shafaq.com",
-      "publishedAt": "2026-07-17T07:00:00.000Z",
-      "descriptionArabic": "لمح لـ\"رفضها\".. ائتلاف السوداني: اتفاقات الزيدي مع واشنطن ستعرض على \"الإطار\" والبرلمان شفق نيوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMihgVBVV95cUxQVk1xbUYtTFQ5VHdVNDNrT0RVWHpGOVBsWXI4U1ZSWURpOW1aZzVDZS00cHJYNTB1WTFNT1JnQTlLR0o4UmxLYmF2Z1NGbjQ5OF9QOUhLSVFOcDNTYnk1T3BTTnJJTlFuNXBkZFp6R29aRThta3djYnZoRlFseExBVGxjbFk2Ym9OdUFWak1URlg2SHpneHJyTnVfOFFyajA0NUQwLWFsRHNpV3JEOTVob0NxTHM3eE9VZWc4cURLWnU1OUM0b2Uxb29jQm1MQ2tsQWdrdjhhWTlvRF9kMG9sVDZLcjk2ajQwU1FDeU9kMVJvTHA1bFhSbVJqVnJXczdCdHNhVG9iOUNXVlkxZjdJbmwxRDlCRjdLWFhLV2VTc0h5REhsWUN4bk92SFFKUi1xbkR0XzdIQnRYTTZpUlNuYkFFZzNoajlNRGM5MzBta21lVllDSFRrT0ExVkRCUHNSSlljbFpmeWZNX0hycU5fQU40cDN0Q0Nra295WDZaMDQyVFI1NWZXTW5aZVEwZ1IxeDRjMzNOUFN6WXNDVWR1WE5LQWhaS3NRelp4RWV3dTRKNHJkZEFlSGFkQzdMOFBrd0xVdXN1bFUwOThuZmdBYUlyRXg4dzN0WXZEcm1pUWRUUW8yNmVfUTVOM1lIZmpjWldTSi1WNFJ0SHVzV1lsX1NSWTRWLVdSMGlrSFhiM3IwOEVCZGlZV05CMzFTTlhmWHhiUHByUzlkaEtrWjRMcnl0dDBrNC1oZ1NyZEpidjRVOFpnSkZncHJIUGNpdUZvbXc0QjBvZDVMX3RndEZGWnhhXzkwRHJmS3ZpYjVYNEhNejdOSVlHS2VzZHd1VnB0dTc1NjJB?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.873Z"
+      "discoveredAt": "2026-07-29T01:47:13.476Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7351,7 +7216,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.590Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7387,7 +7252,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7421,7 +7286,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.778Z"
+      "discoveredAt": "2026-07-29T01:47:13.477Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7456,7 +7321,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7492,7 +7357,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7523,7 +7388,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7559,7 +7424,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.389Z"
+      "discoveredAt": "2026-07-29T01:47:14.124Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7595,7 +7460,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7630,7 +7495,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.080Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7666,7 +7531,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.456Z"
+      "discoveredAt": "2026-07-29T01:47:13.261Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7698,11 +7563,11 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.657Z"
+      "discoveredAt": "2026-07-29T01:47:14.398Z"
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-RIpc8vH7K3t2lPdFKKbcLuZq",
+      "articleId": "discovery-ahtn45ZAgxbIlvPcnqwKEelq",
       "keywordId": "politics-parliament-001",
       "category": "politics",
       "priority": 94,
@@ -7720,12 +7585,12 @@
         "تهنئة",
         "تعزية"
       ],
-      "originalTitleArabic": "دايكو: أكثر من 100 مليون دولار حجم استثماراتنا في العراق دون تمويل مصرفي",
-      "sourceArabic": "هذا اليوم",
-      "sourceHomepage": "https://hathalyoum.net",
+      "originalTitleArabic": "دايكو العالمية توضح موقفها بشأن مشروعها الاستثماري في العراق",
+      "sourceArabic": "وكالة بغداد اليوم الاخبارية",
+      "sourceHomepage": "https://baghdadtoday.news",
       "publishedAt": "2026-07-16T07:00:00.000Z",
-      "descriptionArabic": "دايكو: أكثر من 100 مليون دولار حجم استثماراتنا في العراق دون تمويل مصرفي هذا اليوم",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9kcW5val9DMUtVeEpVd3dJQ21mWjZlNDctRjVPQnVIczJlZkQyc0RISUVmZlZYWGpUaTJfalI0ZEFVMXp2NmQtN0x3b2NsN1dJ0gFKQVVfeXFMUE50Yjg5VFBNWnI5NDVTTjl5QTJqZWpyS2JKNDdTclBfcjhCTFVZb1RPTkFuZ0JKZHp2bEhfS0hnSzNSWXc3Sk9fV0E?oc=5",
+      "descriptionArabic": "دايكو العالمية توضح موقفها بشأن مشروعها الاستثماري في العراق وكالة بغداد اليوم الاخبارية",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1WNXZnem5ianNHajRMNkh6NWVZQWJHOVJPSmtUdHpJX2o2aXBUdjA3TWd3UEVLR3YycjVxa3dKZlo4bXplNEVNOU1HZlhyYTg?oc=5",
       "articleUrl": "",
       "discoveryMethod": "google-news-rss",
       "language": "ar",
@@ -7733,7 +7598,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.031Z"
+      "discoveredAt": "2026-07-29T01:47:13.776Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7769,7 +7634,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.387Z"
+      "discoveredAt": "2026-07-29T01:47:14.122Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7805,7 +7670,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.387Z"
+      "discoveredAt": "2026-07-29T01:47:14.122Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7836,7 +7701,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7872,7 +7737,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:32.872Z"
+      "discoveredAt": "2026-07-29T01:47:13.614Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7905,7 +7770,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.823Z"
+      "discoveredAt": "2026-07-29T01:47:14.552Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7940,7 +7805,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.948Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -7971,7 +7836,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8007,7 +7872,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.393Z"
+      "discoveredAt": "2026-07-29T01:47:14.108Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8039,7 +7904,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.147Z"
+      "discoveredAt": "2026-07-29T01:47:13.874Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8074,7 +7939,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.948Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8105,7 +7970,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8140,7 +8005,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.948Z"
+      "discoveredAt": "2026-07-29T01:47:14.771Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8175,7 +8040,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.080Z"
+      "discoveredAt": "2026-07-29T01:47:13.849Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8207,7 +8072,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.709Z"
+      "discoveredAt": "2026-07-29T01:47:14.538Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8242,7 +8107,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.947Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8277,7 +8142,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.947Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8312,7 +8177,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.947Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8347,7 +8212,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.948Z"
+      "discoveredAt": "2026-07-29T01:47:14.770Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8379,7 +8244,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:34.026Z"
+      "discoveredAt": "2026-07-29T01:47:14.806Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8410,38 +8275,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-KHDIR6TUlE-SONdwOlKwr6OM",
-      "keywordId": "politics-security-policy-001",
-      "category": "politics",
-      "priority": 94,
-      "queryArabic": "\"حصر السلاح بيد الدولة\" العراق",
-      "requiredTerms": [
-        "حصر السلاح بيد الدولة"
-      ],
-      "optionalTerms": [
-        "الحشد الشعبي",
-        "الأمن القومي",
-        "الفصائل"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "من العسكرة إلى التنمية.. العراق يفتح صفحة جديدة مع واشنطن!",
-      "sourceArabic": "DW.com",
-      "sourceHomepage": "https://www.dw.com",
-      "publishedAt": "2026-07-15T07:00:00.000Z",
-      "descriptionArabic": "من العسكرة إلى التنمية.. العراق يفتح صفحة جديدة مع واشنطن! DW.com",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMixANBVV95cUxNNEo0TEpBVnB2X1p4a0FXaGlDTy05RVhIMEc0SmxaUTJaMDVDVm54eTVybVlHZzQ1SmdRMktBMTVvUDhsRHI0TTh4OGU0SEt3X3dlLVc0alJneUZEaUozWUtfWUtZRW1MTS1NM1dhMEdIYmI5ejhRZGVmazVWTVZrZEJ3a1FNWEQyYlRidmhBTEh3TjZnREpJbVJYZEFYcmo1ZjhUaUYzRDg4RlpDdlJLQVhZQlJIQTM4dGJRMGFzb2Iyek5aMjJ2WXgzNkZEeF9udEx4VmM4VTdtZ29QZzBIXy1aME80YjdYa0ZxUTc2elljM2s2cFduRWNUQnZHLUtCMkJ3aHM5akpBcXNKelZHclRxOUVOVmVmSXpwYXc1b3NTeDhzU2lWemNXX2ZGVVJUOGxUVHhzUTJ6WjJxTm5tUmQxRDhrMFZiZC1yQWpFVlZNRzZZQWdSSkZ3ekJvTFNvZnhjYUdCUnQ5a3hkd2t0QWRvb1gzLWRjTzhaYm1uM2xUdGhoQWZWbTZyRTJnLU1JQjdvb1I1cVU0ZHNUcC1vbGV2ZHN4NzQxUE8xalVndGFmMmtsbFhUSmJhSDZ1SUlLaXhYbNIBxANBVV95cUxPY21FaXZxeTdKQ0lzVllNSGhyX2twcUdBUWs5MzlFWlNfOVRGaVBQTnRRRWljc2JQeTg5bkw2cXB0TW1fNnJTMnFtT1N6MnU3b01jMHdrSW5PWjhuOFpvUWVyQVZaVW90ek5haXZlNkxxNTRWRTl5ZzlPUUpGZHdLOE01TGRpOTd3Y3dpWDZkUzBNWWo3bkFNZnBlUDJCMXFqUGJKZlRmM0gyR3MzTWo2bjdBdFJMeDg1V0p2Um9xdHR1eFBNOXFuZTl2bC1NSkVXR3FjNldzSDJsN1ZLWFdmUEhuVWYwMlV2S3JKRXVCdHJFR1JOb1VZQmtlTWhRblBqeHN6NVNUbWFxX1dUUEJmVXo0OU9XbjdlNTFFSTNNSFEtUWxyMmpzMDNFanZhN0lZMFNpRmZWUGwxQ0FKM3ZzMnFlQ0ZhaTZHbTFRaFozSndpbnFjNDhvd0U2VG1tMEVURzRlSDJwSmtNV0JCYWNsOFZmcG9id2R6SkZ3ZEJ1bk03TDYyZXBLRVo0R0hTREFPUHJDNWIySXpZaDYxLWhDVjcxSGFCOXJ2MlZmUWs1anZDcjVwT2xnLWZQMzc1S0tocUtjMw?oc=5",
-      "articleUrl": "",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "PENDING",
-      "contentStatus": "PENDING",
-      "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.591Z"
+      "discoveredAt": "2026-07-29T01:47:14.348Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8472,7 +8306,38 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.592Z"
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-KHDIR6TUlE-SONdwOlKwr6OM",
+      "keywordId": "politics-security-policy-001",
+      "category": "politics",
+      "priority": 94,
+      "queryArabic": "\"حصر السلاح بيد الدولة\" العراق",
+      "requiredTerms": [
+        "حصر السلاح بيد الدولة"
+      ],
+      "optionalTerms": [
+        "الحشد الشعبي",
+        "الأمن القومي",
+        "الفصائل"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "من العسكرة إلى التنمية.. العراق يفتح صفحة جديدة مع واشنطن!",
+      "sourceArabic": "DW.com",
+      "sourceHomepage": "https://www.dw.com",
+      "publishedAt": "2026-07-15T07:00:00.000Z",
+      "descriptionArabic": "من العسكرة إلى التنمية.. العراق يفتح صفحة جديدة مع واشنطن! DW.com",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMixANBVV95cUxNNEo0TEpBVnB2X1p4a0FXaGlDTy05RVhIMEc0SmxaUTJaMDVDVm54eTVybVlHZzQ1SmdRMktBMTVvUDhsRHI0TTh4OGU0SEt3X3dlLVc0alJneUZEaUozWUtfWUtZRW1MTS1NM1dhMEdIYmI5ejhRZGVmazVWTVZrZEJ3a1FNWEQyYlRidmhBTEh3TjZnREpJbVJYZEFYcmo1ZjhUaUYzRDg4RlpDdlJLQVhZQlJIQTM4dGJRMGFzb2Iyek5aMjJ2WXgzNkZEeF9udEx4VmM4VTdtZ29QZzBIXy1aME80YjdYa0ZxUTc2elljM2s2cFduRWNUQnZHLUtCMkJ3aHM5akpBcXNKelZHclRxOUVOVmVmSXpwYXc1b3NTeDhzU2lWemNXX2ZGVVJUOGxUVHhzUTJ6WjJxTm5tUmQxRDhrMFZiZC1yQWpFVlZNRzZZQWdSSkZ3ekJvTFNvZnhjYUdCUnQ5a3hkd2t0QWRvb1gzLWRjTzhaYm1uM2xUdGhoQWZWbTZyRTJnLU1JQjdvb1I1cVU0ZHNUcC1vbGV2ZHN4NzQxUE8xalVndGFmMmtsbFhUSmJhSDZ1SUlLaXhYbNIBxANBVV95cUxPY21FaXZxeTdKQ0lzVllNSGhyX2twcUdBUWs5MzlFWlNfOVRGaVBQTnRRRWljc2JQeTg5bkw2cXB0TW1fNnJTMnFtT1N6MnU3b01jMHdrSW5PWjhuOFpvUWVyQVZaVW90ek5haXZlNkxxNTRWRTl5ZzlPUUpGZHdLOE01TGRpOTd3Y3dpWDZkUzBNWWo3bkFNZnBlUDJCMXFqUGJKZlRmM0gyR3MzTWo2bjdBdFJMeDg1V0p2Um9xdHR1eFBNOXFuZTl2bC1NSkVXR3FjNldzSDJsN1ZLWFdmUEhuVWYwMlV2S3JKRXVCdHJFR1JOb1VZQmtlTWhRblBqeHN6NVNUbWFxX1dUUEJmVXo0OU9XbjdlNTFFSTNNSFEtUWxyMmpzMDNFanZhN0lZMFNpRmZWUGwxQ0FKM3ZzMnFlQ0ZhaTZHbTFRaFozSndpbnFjNDhvd0U2VG1tMEVURzRlSDJwSmtNV0JCYWNsOFZmcG9id2R6SkZ3ZEJ1bk03TDYyZXBLRVo0R0hTREFPUHJDNWIySXpZaDYxLWhDVjcxSGFCOXJ2MlZmUWs1anZDcjVwT2xnLWZQMzc1S0tocUtjMw?oc=5",
+      "articleUrl": "",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "PENDING",
+      "contentStatus": "PENDING",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T01:47:14.349Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8504,7 +8369,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.101Z"
+      "discoveredAt": "2026-07-29T01:47:13.837Z"
     },
     {
       "schemaVersion": "1.0",
@@ -8540,7 +8405,7 @@
       "urlStatus": "PENDING",
       "contentStatus": "PENDING",
       "errorCode": null,
-      "discoveredAt": "2026-07-29T01:27:33.388Z"
+      "discoveredAt": "2026-07-29T01:47:14.123Z"
     }
   ],
   "debug": [
@@ -8572,7 +8437,7 @@
       "keywordId": "politics-pm-002",
       "category": "politics",
       "ok": true,
-      "count": 3
+      "count": 2
     },
     {
       "keywordId": "politics-cabinet-001",
@@ -8584,7 +8449,7 @@
       "keywordId": "politics-cabinet-002",
       "category": "politics",
       "ok": true,
-      "count": 14
+      "count": 12
     },
     {
       "keywordId": "politics-cf-001",
@@ -8602,7 +8467,7 @@
       "keywordId": "politics-parliament-001",
       "category": "politics",
       "ok": true,
-      "count": 9
+      "count": 10
     },
     {
       "keywordId": "politics-parliament-002",
