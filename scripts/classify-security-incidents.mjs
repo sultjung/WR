@@ -27,10 +27,22 @@ function firstMatched(text = "", terms = []) {
 }
 
 const IRAQ_ANCHORS = [
-  "العراق", "العراقي", "بغداد", "نينوى", "الأنبار", "كركوك", "ديالى",
-  "صلاح الدين", "بابل", "كربلاء", "النجف", "البصرة", "ميسان", "ذي قار",
-  "واسط", "المثنى", "الديوانية", "أربيل", "السليمانية", "دهوك",
-  "القوات الأمنية العراقية", "وزارة الداخلية العراقية", "جهاز مكافحة الإرهاب"
+  "العراق", "العراقي", "بغداد", "نينوى", "الموصل", "الأنبار", "الرمادي", "الفلوجة",
+  "كركوك", "ديالى", "بعقوبة", "صلاح الدين", "تكريت", "سامراء", "بابل", "الحلة",
+  "كربلاء", "النجف", "البصرة", "ميسان", "العمارة", "ذي قار", "الناصرية",
+  "واسط", "الكوت", "المثنى", "السماوة", "الديوانية", "أربيل", "السليمانية", "دهوك",
+  "القوات الأمنية العراقية", "وزارة الداخلية العراقية", "جهاز مكافحة الإرهاب العراقي",
+  "الحشد الشعبي", "قيادة العمليات المشتركة", "الشرطة الاتحادية العراقية"
+];
+
+const FOREIGN_LOCATION_ANCHORS = [
+  "سوريا", "السوري", "الأمن السوري", "دير الزور", "دمشق", "حلب", "حمص", "الحسكة", "الرقة", "إدلب",
+  "لبنان", "اللبناني", "بيروت", "طرابلس لبنان", "صيدا", "البقاع",
+  "الأردن", "الأردني", "عمان", "الزرقاء", "إربد",
+  "تركيا", "التركي", "أنقرة", "إسطنبول",
+  "إيران", "الإيراني", "طهران",
+  "فلسطين", "غزة", "الضفة الغربية", "إسرائيل", "الإسرائيلي",
+  "السعودية", "اليمن", "مصر", "ليبيا", "السودان", "تونس", "الجزائر", "المغرب"
 ];
 
 const INCIDENT_RULES = [
@@ -103,24 +115,44 @@ function extractNumbers(text = "") {
 }
 
 function validateSecurityArticle(article) {
-  const text = `${article.originalTitleArabic || ""}\n${article.originalTextArabic || ""}`;
-  if (!hasAny(text, IRAQ_ANCHORS)) {
-    return { ok: false, reason: "이라크 장소·기관·치안 주체가 확인되지 않음" };
+  const title = String(article.originalTitleArabic || "");
+  const body = String(article.originalTextArabic || "");
+  const lead = body.slice(0, 2200);
+  const primaryText = `${title}\n${lead}`;
+  const fullText = `${title}\n${body}`;
+
+  const iraqSignal = firstMatched(primaryText, IRAQ_ANCHORS);
+  const foreignSignal = firstMatched(primaryText, FOREIGN_LOCATION_ANCHORS);
+  const foreignInTitle = firstMatched(title, FOREIGN_LOCATION_ANCHORS);
+  const iraqInTitle = firstMatched(title, IRAQ_ANCHORS);
+
+  if (foreignInTitle && !iraqInTitle) {
+    return { ok: false, reason: `해외 치안사건 제외: ${foreignInTitle}` };
   }
-  if (hasAny(text, NON_INCIDENT_SIGNALS)) {
+  if (foreignSignal && !iraqSignal) {
+    return { ok: false, reason: `기사 도입부의 사건 발생지가 이라크가 아님: ${foreignSignal}` };
+  }
+  if (!iraqSignal) {
+    return { ok: false, reason: "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음" };
+  }
+  if (hasAny(primaryText, NON_INCIDENT_SIGNALS)) {
     return { ok: false, reason: "실제 치안사건이 아닌 문화·역사·훈련성 콘텐츠" };
   }
-  const incident = classifyIncident(text, article.incidentType || "");
+
+  const incident = classifyIncident(primaryText, article.incidentType || "");
   if (!incident) {
-    return { ok: false, reason: "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음" };
+    return { ok: false, reason: "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음" };
   }
+
   return {
     ok: true,
     incident: {
       ...incident,
-      locationSignal: firstMatched(text, IRAQ_ANCHORS),
-      factSignals: extractNumbers(text),
-      classificationMethod: "RULE_BASED_ARABIC_FULL_TEXT"
+      locationSignal: iraqSignal,
+      factSignals: extractNumbers(primaryText),
+      classificationMethod: "RULE_BASED_ARABIC_TITLE_AND_LEAD",
+      foreignLocationSignal: foreignSignal || null,
+      fullTextIraqMention: hasAny(fullText, IRAQ_ANCHORS)
     }
   };
 }
