@@ -1,0 +1,13 @@
+{
+  "name": "iraq-weekly-report",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Arabic-source intelligence and weekly reporting support for the Bismayah project",
+  "scripts": {
+    "validate": "node scripts/validate-config.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
