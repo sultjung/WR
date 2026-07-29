@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-29T03:32:43.423Z",
+  "total": 0,
+  "typeCounts": {},
+  "reportTable": {
+    "total": 0,
+    "armedAttack": 0,
+    "ied": 0,
+    "assassination": 0,
+    "protest": 0,
+    "shooting": 0,
+    "suicideBombing": 0,
+    "otherSecurity": 0
+  },
+  "excluded": [
+    {
+      "articleId": "discovery-gOgSjX25ADdyE4cgbdVrf4uH",
+      "titleArabic": "سوريا.. عمليات أمنية تستهدف \"سرايا الجواد\" و\"تنظيم الدولة\"",
+      "articleUrl": "https://www.aljazeera.net/news/2026/7/28/%d8%b3%d9%88%d8%b1%d9%8a%d8%a7-%d8%b9%d9%85%d9%84%d9%8a%d8%a7%d8%aa-%d8%a3%d9%85%d9%86%d9%8a%d8%a9-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%b3%d8%b1%d8%a7%d9%8a%d8%a7",
+      "reason": "이라크 장소·기관·치안 주체가 확인되지 않음"
+    },
+    {
+      "articleId": "discovery-glZefID4hsNrb7dhtfouZvXg",
+      "titleArabic": "العراق في معركة شد الحبل بين واشنطن وطهران.. هل انتهى النفوذ الإيراني؟",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/28/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%81%D9%8A-%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%B4%D8%AF-%D8%A7%D9%84%D8%AD%D8%A8%D9%84-%D8%A8%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86",
+      "reason": "실제 치안사건이 아닌 문화·역사·훈련성 콘텐츠"
+    },
+    {
+      "articleId": "discovery-QYQ1lYzFP3LC3mGwswCISQSO",
+      "titleArabic": "\"هجوم ضد متنزهين أبرياء\".. كيف أعادت حسابات إسرائيلية صياغة رواية حادثة تل؟",
+      "articleUrl": "https://www.aljazeera.net/news/2026/7/27/%d9%87%d8%ac%d9%88%d9%85-%d8%b6%d8%af-%d9%85%d8%aa%d9%86%d8%b2%d9%87%d9%8a%d9%86-%d8%a3%d8%a8%d8%b1%d9%8a%d8%a7%d8%a1-%d9%83%d9%8a%d9%81-%d8%a3%d8%b9%d8%a7%d8%af%d8%aa",
+      "reason": "이라크 장소·기관·치안 주체가 확인되지 않음"
+    }
+  ]
+}
