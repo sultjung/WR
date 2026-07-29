@@ -10,6 +10,12 @@ const LOOKBACK_DAYS = Number(process.env.NEWS_DISCOVERY_DAYS || 14);
 const MAX_PER_QUERY = Number(process.env.MAX_PER_QUERY || 30);
 const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 15000);
 const CONCURRENCY = Number(process.env.DISCOVERY_CONCURRENCY || 3);
+const ENABLED_CATEGORIES = new Set(
+  String(process.env.COLLECT_CATEGORIES || "bismayah,politics")
+    .split(",")
+    .map((value) => value.trim())
+    .filter(Boolean)
+);
 
 function decodeHtml(value = "") {
   return String(value)
@@ -26,7 +32,12 @@ function decodeHtml(value = "") {
 }
 
 function stripTags(value = "") {
-  return decodeHtml(String(value).replace(/<script[\s\S]*?<\/script>/gi, " ").replace(/<style[\s\S]*?<\/style>/gi, " ").replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
+  return decodeHtml(String(value)
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]+>/g, " "))
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function extractTag(xml = "", tag = "") {
@@ -42,6 +53,31 @@ function normalizeTitle(value = "") {
   return stripTags(value).replace(/\s+/g, " ").trim();
 }
 
+function normalizeArabic(value = "") {
+  return String(value)
+    .replace(/[\u064B-\u065F\u0670]/g, "")
+    .replace(/\u0640/g, "")
+    .replace(/[إأآٱ]/g, "ا")
+    .replace(/ى/g, "ي")
+    .replace(/ة/g, "ه")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function hasTerm(text = "", term = "") {
+  const haystack = normalizeArabic(text);
+  const needle = normalizeArabic(term);
+  if (!needle) return false;
+  return haystack.includes(needle);
+}
+
+function looksCeremonial(item = {}, keyword = {}) {
+  const text = `${item.originalTitleArabic || ""}\n${item.descriptionArabic || ""}`;
+  const ceremonial = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس"];
+  const excluded = [...ceremonial, ...(keyword.excludedTerms || [])];
+  return excluded.some((term) => hasTerm(text, term));
+}
+
 function googleNewsRssUrl(query) {
   const params = new URLSearchParams({ q: `${query} when:${LOOKBACK_DAYS}d`, hl: "ar", gl: "IQ", ceid: "IQ:ar" });
   return `https://news.google.com/rss/search?${params.toString()}`;
@@ -55,7 +91,7 @@ async function fetchText(url) {
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/1.0)",
+        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/1.1)",
         accept: "application/rss+xml,application/xml,text/xml,text/html;q=0.8,*/*;q=0.5",
         "accept-language": "ar-IQ,ar;q=0.9"
       }
@@ -78,7 +114,9 @@ function parseItems(xml, keyword) {
     const sourceMatch = block.match(/<source(?:\s+url=["']([^"']+)["'])?[^>]*>([\s\S]*?)<\/source>/i);
     const sourceHomepage = sourceMatch?.[1] ? decodeHtml(sourceMatch[1]) : "";
     const sourceArabic = sourceMatch?.[2] ? stripTags(sourceMatch[2]) : (rawTitle.split(" - ").pop() || "");
-    const title = sourceArabic ? rawTitle.replace(new RegExp(`\\s+-\\s+${sourceArabic.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`), "").trim() : rawTitle;
+    const title = sourceArabic
+      ? rawTitle.replace(new RegExp(`\\s+-\\s+${sourceArabic.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`), "").trim()
+      : rawTitle;
     const publishedAt = pubDate && !Number.isNaN(new Date(pubDate).getTime()) ? new Date(pubDate).toISOString() : "";
     const discoveryUrl = link || guid;
     return {
@@ -88,6 +126,9 @@ function parseItems(xml, keyword) {
       category: keyword.category,
       priority: keyword.priority,
       queryArabic: keyword.arabicQuery,
+      requiredTerms: keyword.requiredTerms || [],
+      optionalTerms: keyword.optionalTerms || [],
+      excludedTerms: keyword.excludedTerms || [],
       originalTitleArabic: title,
       sourceArabic,
       sourceHomepage,
@@ -103,7 +144,7 @@ function parseItems(xml, keyword) {
       errorCode: null,
       discoveredAt: new Date().toISOString()
     };
-  }).filter((item) => item.originalTitleArabic && item.discoveryUrl);
+  }).filter((item) => item.originalTitleArabic && item.discoveryUrl && !looksCeremonial(item, keyword));
 }
 
 async function mapLimit(items, limit, worker) {
@@ -120,36 +161,48 @@ async function mapLimit(items, limit, worker) {
 }
 
 const config = JSON.parse(await fs.readFile(KEYWORDS_FILE, "utf8"));
-const keywords = (config.keywords || []).filter((item) => item.enabled && item.category === "bismayah");
-if (!keywords.length) throw new Error("No enabled Bismayah keywords found in config/arabic-keywords.json");
+const keywords = (config.keywords || []).filter((item) => item.enabled && ENABLED_CATEGORIES.has(item.category));
+if (!keywords.length) throw new Error(`No enabled keywords found for categories: ${[...ENABLED_CATEGORIES].join(", ")}`);
 
 const results = await mapLimit(keywords, CONCURRENCY, async (keyword) => {
   try {
     const xml = await fetchText(googleNewsRssUrl(keyword.arabicQuery));
     const articles = parseItems(xml, keyword);
-    console.log(`[discover] ${keyword.keywordId}: ${articles.length}`);
-    return { keywordId: keyword.keywordId, ok: true, count: articles.length, articles };
+    console.log(`[discover:${keyword.category}] ${keyword.keywordId}: ${articles.length}`);
+    return { keywordId: keyword.keywordId, category: keyword.category, ok: true, count: articles.length, articles };
   } catch (error) {
-    console.warn(`[discover] ${keyword.keywordId}: ${error.message || error}`);
-    return { keywordId: keyword.keywordId, ok: false, count: 0, error: String(error.message || error), articles: [] };
+    console.warn(`[discover:${keyword.category}] ${keyword.keywordId}: ${error.message || error}`);
+    return { keywordId: keyword.keywordId, category: keyword.category, ok: false, count: 0, error: String(error.message || error), articles: [] };
   }
 });
 
 const deduped = new Map();
 for (const article of results.flatMap((result) => result.articles)) {
   const key = article.discoveryUrl || `${article.originalTitleArabic}|${article.sourceArabic}|${article.publishedAt}`;
-  if (!deduped.has(key)) deduped.set(key, article);
+  const previous = deduped.get(key);
+  if (!previous || Number(article.priority || 0) > Number(previous.priority || 0)) deduped.set(key, article);
 }
+
+const articles = [...deduped.values()].sort((a, b) =>
+  new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0) || Number(b.priority || 0) - Number(a.priority || 0)
+);
+
+const categoryCounts = articles.reduce((acc, article) => {
+  acc[article.category] = (acc[article.category] || 0) + 1;
+  return acc;
+}, {});
 
 const payload = {
   schemaVersion: "1.0",
   generatedAt: new Date().toISOString(),
   lookbackDays: LOOKBACK_DAYS,
+  categories: [...ENABLED_CATEGORIES],
   queryCount: keywords.length,
-  count: deduped.size,
-  articles: [...deduped.values()].sort((a, b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0)),
-  debug: results.map(({ articles, ...rest }) => rest)
+  count: articles.length,
+  categoryCounts,
+  articles,
+  debug: results.map(({ articles: omitted, ...rest }) => rest)
 };
 
 await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`[discover] completed: ${payload.count} unique articles`);
+console.log(`[discover] completed: ${payload.count} unique articles`, categoryCounts);
