@@ -31,7 +31,7 @@ jobs:
           node-version: "22"
 
       - name: Validate configuration
-        run: npm run validate
+        run: npm run validate:config
 
       - name: Discover Bismayah politics and economy Arabic articles
         env:
@@ -58,7 +58,7 @@ jobs:
         run: npm run collect:content
 
       - name: Validate collected data
-        run: npm run validate
+        run: npm run validate:data
 
       - name: Commit collected data
         run: |
