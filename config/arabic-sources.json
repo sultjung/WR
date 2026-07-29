@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [
+    {"sourceId":"pm-office","arabicName":"المكتب الإعلامي لرئيس مجلس الوزراء","baseUrl":"https://pmo.iq","country":"IQ","sourceType":"government_official","reliabilityLevel":"A","enabled":true,"notes":"총리실 공식 발표"},
+    {"sourceId":"cabinet-secretariat","arabicName":"الأمانة العامة لمجلس الوزراء","baseUrl":"https://cabinet.iq","country":"IQ","sourceType":"government_official","reliabilityLevel":"A","enabled":true,"notes":"내각 및 정부 결정"},
+    {"sourceId":"parliament","arabicName":"مجلس النواب العراقي","baseUrl":"https://iq.parliament.iq","country":"IQ","sourceType":"government_official","reliabilityLevel":"A","enabled":true,"notes":"의회 공식 자료"},
+    {"sourceId":"ina","arabicName":"وكالة الأنباء العراقية","baseUrl":"https://ina.iq","country":"IQ","sourceType":"official_news","reliabilityLevel":"A","enabled":true,"notes":"이라크 국영 통신"},
+    {"sourceId":"alsumaria","arabicName":"السومرية نيوز","baseUrl":"https://www.alsumaria.tv","country":"IQ","sourceType":"iraqi_private_media","reliabilityLevel":"B","enabled":true,"notes":"이라크 주요 민영언론"},
+    {"sourceId":"shafaq","arabicName":"شفق نيوز","baseUrl":"https://shafaq.com","country":"IQ","sourceType":"iraqi_private_media","reliabilityLevel":"B","enabled":true,"notes":"이라크·쿠르드 지역 뉴스"},
+    {"sourceId":"baghdad-today","arabicName":"بغداد اليوم","baseUrl":"https://baghdadtoday.news","country":"IQ","sourceType":"iraqi_private_media","reliabilityLevel":"B","enabled":true,"notes":"이라크 현지 뉴스"},
+    {"sourceId":"rudaw-ar","arabicName":"رووداو عربي","baseUrl":"https://www.rudawarabia.net","country":"IQ","sourceType":"kurdish_media","reliabilityLevel":"B","enabled":true,"notes":"쿠르드 지역 동향"},
+    {"sourceId":"aljazeera-ar","arabicName":"الجزيرة","baseUrl":"https://www.aljazeera.net","country":"QA","sourceType":"pan_arab_media","reliabilityLevel":"B","enabled":true,"notes":"역내 국제정세 보완"},
+    {"sourceId":"alarabiya","arabicName":"العربية","baseUrl":"https://www.alarabiya.net","country":"SA","sourceType":"pan_arab_media","reliabilityLevel":"B","enabled":true,"notes":"역내 국제정세 보완"}
+  ]
+}
