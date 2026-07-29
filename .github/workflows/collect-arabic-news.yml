@@ -1,0 +1,73 @@
+name: Collect Arabic News
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "20 21 * * *" # 06:20 KST
+    - cron: "30 3 * * *"  # 12:30 KST
+
+permissions:
+  contents: write
+
+concurrency:
+  group: collect-arabic-news
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Validate configuration
+        run: npm run validate
+
+      - name: Discover Bismayah Arabic articles
+        env:
+          NEWS_DISCOVERY_DAYS: "14"
+          MAX_PER_QUERY: "30"
+          FETCH_TIMEOUT_MS: "15000"
+          DISCOVERY_CONCURRENCY: "3"
+        run: npm run collect:discover
+
+      - name: Resolve publisher article URLs
+        env:
+          URL_RESOLVE_TIMEOUT_MS: "15000"
+          URL_RESOLVE_CONCURRENCY: "4"
+        run: npm run collect:resolve
+
+      - name: Fetch and validate Arabic full text
+        env:
+          CONTENT_FETCH_TIMEOUT_MS: "18000"
+          CONTENT_FETCH_CONCURRENCY: "3"
+          MIN_ARABIC_CONTENT_CHARS: "300"
+          MIN_ARABIC_RATIO: "0.35"
+          ARTICLE_RETENTION_DAYS: "30"
+        run: npm run collect:content
+
+      - name: Validate collected data
+        run: npm run validate
+
+      - name: Commit collected data
+        run: |
+          if git diff --quiet -- data/*.json; then
+            echo "No collected data changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git commit -m "Collect Bismayah Arabic news"
+          git pull --rebase origin main
+          git push origin main
