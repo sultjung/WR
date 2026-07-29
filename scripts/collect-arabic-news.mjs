@@ -11,7 +11,7 @@ const MAX_PER_QUERY = Number(process.env.MAX_PER_QUERY || 30);
 const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 15000);
 const CONCURRENCY = Number(process.env.DISCOVERY_CONCURRENCY || 3);
 const ENABLED_CATEGORIES = new Set(
-  String(process.env.COLLECT_CATEGORIES || "bismayah,politics")
+  String(process.env.COLLECT_CATEGORIES || "bismayah,politics,economy")
     .split(",")
     .map((value) => value.trim())
     .filter(Boolean)
@@ -73,9 +73,14 @@ function hasTerm(text = "", term = "") {
 
 function looksCeremonial(item = {}, keyword = {}) {
   const text = `${item.originalTitleArabic || ""}\n${item.descriptionArabic || ""}`;
-  const ceremonial = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس"];
+  const ceremonial = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس", "حفل تكريم"];
   const excluded = [...ceremonial, ...(keyword.excludedTerms || [])];
   return excluded.some((term) => hasTerm(text, term));
+}
+
+function isSocialSource(sourceHomepage = "", sourceArabic = "") {
+  const value = `${sourceHomepage} ${sourceArabic}`.toLowerCase();
+  return /facebook\.com|instagram\.com|youtube\.com|twitter\.com|(^|\s)x\.com|tiktok\.com/.test(value);
 }
 
 function googleNewsRssUrl(query) {
@@ -91,7 +96,7 @@ async function fetchText(url) {
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/1.1)",
+        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/1.2)",
         accept: "application/rss+xml,application/xml,text/xml,text/html;q=0.8,*/*;q=0.5",
         "accept-language": "ar-IQ,ar;q=0.9"
       }
@@ -144,7 +149,7 @@ function parseItems(xml, keyword) {
       errorCode: null,
       discoveredAt: new Date().toISOString()
     };
-  }).filter((item) => item.originalTitleArabic && item.discoveryUrl && !looksCeremonial(item, keyword));
+  }).filter((item) => item.originalTitleArabic && item.discoveryUrl && !isSocialSource(item.sourceHomepage, item.sourceArabic) && !looksCeremonial(item, keyword));
 }
 
 async function mapLimit(items, limit, worker) {
