@@ -15,7 +15,19 @@ function hostnameOf(url = "") {
 
 function isForbiddenArticleUrl(url = "") {
   const host = hostnameOf(url);
-  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host);
+  return !host
+    || host === "news.google.com"
+    || /(^|\.)google\.[a-z.]+$/i.test(host)
+    || /gstatic\.com$/i.test(host)
+    || /googleusercontent\.com$/i.test(host)
+    || /facebook\.com$/i.test(host)
+    || /instagram\.com$/i.test(host)
+    || /youtube\.com$/i.test(host)
+    || /twitter\.com$/i.test(host)
+    || /(?:^|\.)x\.com$/i.test(host)
+    || /w3\.org$/i.test(host)
+    || /schema\.org$/i.test(host)
+    || /xmlsoft\.org$/i.test(host);
 }
 
 function normalizeArabic(value = "") {
@@ -43,6 +55,13 @@ function validPoliticalFullText(value = "") {
   const substantiveSignals = ["قرار", "قرارات", "توجيه", "سياسة", "جلسة", "اجتماع", "تصويت", "قانون", "استجواب", "إقالة", "إعفاء", "تعيين", "الموازنة", "تمويل", "مكافحة الفساد", "حصر السلاح", "تشكيل الحكومة", "خطة", "اتفاق"];
   const ceremonial = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس"];
   return hasAny(value, iraqAnchors) && hasAny(value, substantiveSignals) && !hasAny(value, ceremonial);
+}
+
+function validEconomyFullText(value = "") {
+  const iraqAnchors = ["العراق", "العراقي", "بغداد", "وزارة الإعمار", "وزارة المالية", "وزارة التخطيط", "الهيئة الوطنية للاستثمار", "البنك المركزي العراقي", "مجلس الوزراء"];
+  const businessSignals = ["مشروع", "مشاريع", "سكني", "وحدات سكنية", "مدن جديدة", "بنى تحتية", "مقاول", "مقاولين", "مستحقات", "تمويل", "تخصيصات", "الموازنة", "الإنفاق الاستثماري", "عقد", "عقود", "استثمار", "مستثمر", "قانون الاستثمار", "إعفاءات جمركية", "مواد البناء", "استئناف", "المشاريع المتلكئة", "نسب الإنجاز", "تحويلات خارجية", "امتثال مصرفي", "مصارف"];
+  const lowValue = ["أسعار الخضروات", "أسعار الفواكه", "مهرجان تسوق", "رواتب المتقاعدين", "البطاقة التموينية"];
+  return hasAny(value, iraqAnchors) && hasAny(value, businessSignals) && !hasAny(value, lowValue);
 }
 
 let errorCount = 0;
@@ -109,6 +128,10 @@ for (const file of FILES) {
       }
       if (article.category === "politics" && !validPoliticalFullText(combined)) {
         console.error(`[validate-data] ${label}[${index}]: politics article lacks substantive Iraq political context`);
+        errorCount += 1;
+      }
+      if (article.category === "economy" && !validEconomyFullText(combined)) {
+        console.error(`[validate-data] ${label}[${index}]: economy article lacks construction, investment or government-finance context`);
         errorCount += 1;
       }
     }
