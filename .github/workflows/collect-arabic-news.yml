@@ -16,7 +16,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 50
 
     steps:
       - name: Checkout repository
@@ -33,7 +33,7 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
-      - name: Discover Bismayah politics and economy Arabic articles
+      - name: Discover broad Arabic news candidates with Google News
         env:
           COLLECT_CATEGORIES: "bismayah,politics,economy"
           NEWS_DISCOVERY_DAYS: "14"
@@ -42,7 +42,16 @@ jobs:
           DISCOVERY_CONCURRENCY: "4"
         run: npm run collect:discover
 
-      - name: Resolve publisher article URLs
+      - name: Recover publisher URLs from Iraqi source indexes
+        env:
+          SOURCE_INDEX_TIMEOUT_MS: "15000"
+          SOURCE_INDEX_CONCURRENCY: "3"
+          MAX_SOURCE_INDEX_ENDPOINTS: "6"
+          MAX_SOURCE_INDEX_ITEMS: "1200"
+          MIN_TITLE_SIMILARITY: "0.54"
+        run: npm run collect:recover
+
+      - name: Verify recovered and fallback article URLs
         env:
           URL_RESOLVE_TIMEOUT_MS: "15000"
           URL_RESOLVE_CONCURRENCY: "4"
@@ -69,6 +78,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git commit -m "Collect Bismayah politics and economy Arabic news"
+          git commit -m "Collect and recover Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
