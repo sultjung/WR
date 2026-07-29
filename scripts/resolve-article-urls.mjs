@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { decodeGoogleNewsUrl } from "./decode-google-news-url.mjs";
 
 const ROOT = process.cwd();
 const RECOVERED_FILE = path.join(ROOT, "data", "recovered-articles.json");
@@ -27,7 +28,7 @@ function normalizeUrl(url = "") {
 }
 
 function isBlockedHost(host = "") {
-  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host) || /youtube\.com$/i.test(host) || /facebook\.com$/i.test(host) || /instagram\.com$/i.test(host) || /(?:^|\.)x\.com$/i.test(host) || /twitter\.com$/i.test(host) || /w3\.org$/i.test(host) || /schema\.org$/i.test(host) || /xmlsoft\.org$/i.test(host);
+  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host) || /youtube\.com$/i.test(host) || /facebook\.com$/i.test(host) || /instagram\.com$/i.test(host) || /(?:^|\.)x\.com$/i.test(host) || /twitter\.com$/i.test(host) || /w3\.org$/i.test(host) || /schema\.org$/i.test(host) || /xmlsoft\.org$/i.test(host) || /nabd\.com$/i.test(host) || /hathalyoum\.net$/i.test(host);
 }
 
 function isLikelyArticleUrl(url = "") {
@@ -93,30 +94,79 @@ function chooseBestCandidate(candidates) {
   }).filter((item) => item.score >= 20).sort((a, b) => b.score - a.score)[0]?.url || "";
 }
 
+async function verifyPublisherUrl(item, candidateUrl, resolutionMethod) {
+  const page = await fetchPage(candidateUrl);
+  const finalUrl = normalizeUrl(page.finalUrl || candidateUrl);
+  if (!isLikelyArticleUrl(finalUrl)) throw new Error("INVALID_ARTICLE_PAGE");
+  return {
+    ...item,
+    articleUrl: finalUrl,
+    urlStatus: "RESOLVED",
+    urlResolutionMethod: resolutionMethod,
+    errorCode: null,
+    resolvedAt: new Date().toISOString()
+  };
+}
+
 async function resolveOne(item) {
   if (item.urlStatus === "RECOVERED" && isLikelyArticleUrl(item.articleUrl)) {
     try {
-      const page = await fetchPage(item.articleUrl);
-      const finalUrl = normalizeUrl(page.finalUrl || item.articleUrl);
-      if (!isLikelyArticleUrl(finalUrl)) throw new Error("INVALID_ARTICLE_PAGE");
-      return { ...item, articleUrl: finalUrl, urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
+      return await verifyPublisherUrl(item, item.articleUrl, item.urlRecoveryMethod || "SOURCE_INDEX_TITLE_MATCH");
     } catch (error) {
-      return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: /HTTP 401|HTTP 403|HTTP 429/.test(String(error.message || error)) ? "ACCESS_BLOCKED" : "URL_RESOLUTION_FAILED", resolutionError: String(error.message || error).slice(0, 300), resolvedAt: new Date().toISOString() };
+      // Continue to Google News decoding instead of failing immediately.
     }
   }
 
   const discoveryUrl = String(item.discoveryUrl || "").trim();
   if (!discoveryUrl) return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED" };
+
+  let googleDecodeError = "";
+  if (hostnameOf(discoveryUrl) === "news.google.com") {
+    try {
+      const decodedUrl = normalizeUrl(await decodeGoogleNewsUrl(discoveryUrl, { timeoutMs: FETCH_TIMEOUT_MS }));
+      if (isLikelyArticleUrl(decodedUrl)) {
+        return await verifyPublisherUrl(item, decodedUrl, "GOOGLE_NEWS_BATCHEXECUTE");
+      }
+      googleDecodeError = "GOOGLE_DECODE_RETURNED_NON_ARTICLE_URL";
+    } catch (error) {
+      googleDecodeError = String(error.message || error).slice(0, 300);
+    }
+  }
+
   try {
     const first = await fetchPage(discoveryUrl);
-    if (isLikelyArticleUrl(first.finalUrl)) return { ...item, articleUrl: normalizeUrl(first.finalUrl), urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
+    if (isLikelyArticleUrl(first.finalUrl)) return await verifyPublisherUrl(item, first.finalUrl, "HTTP_REDIRECT");
     const articleUrl = chooseBestCandidate(extractCandidates(first.html, first.finalUrl));
-    if (!articleUrl) return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED", resolvedAt: new Date().toISOString() };
-    return { ...item, articleUrl, urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
+    if (!articleUrl) {
+      return {
+        ...item,
+        articleUrl: "",
+        urlStatus: "FAILED",
+        errorCode: googleDecodeError ? "GOOGLE_NEWS_DECODE_FAILED" : "URL_RESOLUTION_FAILED",
+        resolutionError: googleDecodeError || undefined,
+        resolvedAt: new Date().toISOString()
+      };
+    }
+    return await verifyPublisherUrl(item, articleUrl, "PAGE_METADATA");
   } catch (error) {
     const message = String(error.message || error);
-    const errorCode = /abort|timeout/i.test(message) ? "FETCH_TIMEOUT" : /HTTP 404|HTTP 410/.test(message) ? "ARTICLE_REMOVED" : /HTTP 401|HTTP 403|HTTP 429/.test(message) ? "ACCESS_BLOCKED" : "URL_RESOLUTION_FAILED";
-    return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode, resolutionError: message.slice(0, 300), resolvedAt: new Date().toISOString() };
+    const errorCode = /abort|timeout/i.test(message)
+      ? "FETCH_TIMEOUT"
+      : /HTTP 404|HTTP 410/.test(message)
+        ? "ARTICLE_REMOVED"
+        : /HTTP 401|HTTP 403|HTTP 429/.test(message)
+          ? "ACCESS_BLOCKED"
+          : googleDecodeError
+            ? "GOOGLE_NEWS_DECODE_FAILED"
+            : "URL_RESOLUTION_FAILED";
+    return {
+      ...item,
+      articleUrl: "",
+      urlStatus: "FAILED",
+      errorCode,
+      resolutionError: `${googleDecodeError ? `${googleDecodeError}; ` : ""}${message}`.slice(0, 300),
+      resolvedAt: new Date().toISOString()
+    };
   }
 }
 
@@ -141,6 +191,11 @@ async function loadInput() {
 const input = await loadInput();
 const articles = await mapLimit(input.articles || [], CONCURRENCY, resolveOne);
 const resolvedCount = articles.filter((item) => item.urlStatus === "RESOLVED" && item.articleUrl).length;
+const resolutionMethods = articles.reduce((acc, item) => {
+  const key = item.urlResolutionMethod || item.errorCode || "UNKNOWN";
+  acc[key] = (acc[key] || 0) + 1;
+  return acc;
+}, {});
 const payload = {
   schemaVersion: "1.0",
   generatedAt: new Date().toISOString(),
@@ -149,7 +204,8 @@ const payload = {
   recoveredInputCount: input.recoveredCount || 0,
   resolvedCount,
   failedCount: articles.length - resolvedCount,
+  resolutionMethods,
   articles
 };
 await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`[resolve] recoveredInput=${payload.recoveredInputCount}, resolved=${resolvedCount}, failed=${payload.failedCount}, total=${articles.length}`);
+console.log(`[resolve] recoveredInput=${payload.recoveredInputCount}, resolved=${resolvedCount}, failed=${payload.failedCount}, total=${articles.length}`, resolutionMethods);
