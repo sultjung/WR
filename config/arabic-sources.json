@@ -1,15 +1,34 @@
 {
-  "schemaVersion": "1.0",
+  "schemaVersion": "1.1",
+  "policy": {
+    "language": "ar",
+    "googleDiscoveryEnabled": true,
+    "directSourceRecoveryEnabled": true,
+    "aggregatorsMayBeDiscoverySources": true,
+    "aggregatorsMayNotBeCanonicalPublishers": true
+  },
   "sources": [
-    {"sourceId":"pm-office","arabicName":"المكتب الإعلامي لرئيس مجلس الوزراء","baseUrl":"https://pmo.iq","country":"IQ","sourceType":"government_official","reliabilityLevel":"A","enabled":true,"notes":"총리실 공식 발표"},
-    {"sourceId":"cabinet-secretariat","arabicName":"الأمانة العامة لمجلس الوزراء","baseUrl":"https://cabinet.iq","country":"IQ","sourceType":"government_official","reliabilityLevel":"A","enabled":true,"notes":"내각 및 정부 결정"},
-    {"sourceId":"parliament","arabicName":"مجلس النواب العراقي","baseUrl":"https://iq.parliament.iq","country":"IQ","sourceType":"government_official","reliabilityLevel":"A","enabled":true,"notes":"의회 공식 자료"},
-    {"sourceId":"ina","arabicName":"وكالة الأنباء العراقية","baseUrl":"https://ina.iq","country":"IQ","sourceType":"official_news","reliabilityLevel":"A","enabled":true,"notes":"이라크 국영 통신"},
-    {"sourceId":"alsumaria","arabicName":"السومرية نيوز","baseUrl":"https://www.alsumaria.tv","country":"IQ","sourceType":"iraqi_private_media","reliabilityLevel":"B","enabled":true,"notes":"이라크 주요 민영언론"},
-    {"sourceId":"shafaq","arabicName":"شفق نيوز","baseUrl":"https://shafaq.com","country":"IQ","sourceType":"iraqi_private_media","reliabilityLevel":"B","enabled":true,"notes":"이라크·쿠르드 지역 뉴스"},
-    {"sourceId":"baghdad-today","arabicName":"بغداد اليوم","baseUrl":"https://baghdadtoday.news","country":"IQ","sourceType":"iraqi_private_media","reliabilityLevel":"B","enabled":true,"notes":"이라크 현지 뉴스"},
-    {"sourceId":"rudaw-ar","arabicName":"رووداو عربي","baseUrl":"https://www.rudawarabia.net","country":"IQ","sourceType":"kurdish_media","reliabilityLevel":"B","enabled":true,"notes":"쿠르드 지역 동향"},
-    {"sourceId":"aljazeera-ar","arabicName":"الجزيرة","baseUrl":"https://www.aljazeera.net","country":"QA","sourceType":"pan_arab_media","reliabilityLevel":"B","enabled":true,"notes":"역내 국제정세 보완"},
-    {"sourceId":"alarabiya","arabicName":"العربية","baseUrl":"https://www.alarabiya.net","country":"SA","sourceType":"pan_arab_media","reliabilityLevel":"B","enabled":true,"notes":"역내 국제정세 보완"}
+    {"sourceId":"pm-office","displayName":"Iraqi Prime Minister Office","arabicName":"المكتب الإعلامي لرئيس مجلس الوزراء","baseUrl":"https://pmo.iq","hostAliases":["pmo.iq"],"country":"IQ","sourceType":"government_official","reliabilityLevel":"A","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/feed","/rss"]},
+    {"sourceId":"cabinet-secretariat","displayName":"Iraqi Cabinet Secretariat","arabicName":"الأمانة العامة لمجلس الوزراء","baseUrl":"https://cabinet.iq","hostAliases":["cabinet.iq"],"country":"IQ","sourceType":"government_official","reliabilityLevel":"A","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/rss","/feed"]},
+    {"sourceId":"parliament","displayName":"Iraqi Parliament","arabicName":"مجلس النواب العراقي","baseUrl":"https://iq.parliament.iq","hostAliases":["iq.parliament.iq","parliament.iq"],"country":"IQ","sourceType":"government_official","reliabilityLevel":"A","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/feed","/rss"]},
+    {"sourceId":"ina","displayName":"Iraqi News Agency","arabicName":"وكالة الأنباء العراقية","baseUrl":"https://ina.iq","hostAliases":["ina.iq"],"country":"IQ","sourceType":"official_news","reliabilityLevel":"A","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/rss"]},
+
+    {"sourceId":"alrabiaa","displayName":"Al-Rabiaa TV","arabicName":"الرابعة","baseUrl":"https://alrabiaa.tv/","hostAliases":["alrabiaa.tv"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/feed","/rss"]},
+    {"sourceId":"alsumaria","displayName":"Al-Sumaria TV","arabicName":"السومرية نيوز","baseUrl":"https://www.alsumaria.tv/","hostAliases":["alsumaria.tv"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/rss"]},
+    {"sourceId":"today-agency","displayName":"Today Agency","arabicName":"وكالة اليوم","baseUrl":"https://today-agency.net/","hostAliases":["today-agency.net"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/feed","/rss"]},
+    {"sourceId":"miliq","displayName":"Mil Iraq","arabicName":"ميل العراق","baseUrl":"https://miliq.news/","hostAliases":["miliq.news"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/feed","/rss"]},
+    {"sourceId":"nina","displayName":"National Iraq News Agency","arabicName":"الوكالة الوطنية العراقية للأنباء","baseUrl":"https://ninanews.com/website/","hostAliases":["ninanews.com"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/website/sitemap.xml","/rss"]},
+    {"sourceId":"aljazeera-iraq","displayName":"Al-Jazeera Iraq","arabicName":"الجزيرة - العراق","baseUrl":"https://www.aljazeera.net/where/mideast/arab/iraq/","hostAliases":["aljazeera.net"],"country":"QA","sourceType":"pan_arab_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/rss"]},
+    {"sourceId":"alawla","displayName":"Al-Awla TV","arabicName":"الأولى","baseUrl":"https://alawla.tv/","hostAliases":["alawla.tv"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/feed","/rss"]},
+    {"sourceId":"alsabaah","displayName":"Al-Sabaah","arabicName":"الصباح","baseUrl":"https://alsabaah.iq/","hostAliases":["alsabaah.iq"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/feed","/rss"]},
+    {"sourceId":"shafaq","displayName":"Shafaq","arabicName":"شفق نيوز","baseUrl":"https://www.shafaq.com/ar","hostAliases":["shafaq.com"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/ar/rss"]},
+    {"sourceId":"dijlah","displayName":"Dijlah TV","arabicName":"دجلة","baseUrl":"https://dijlah.tv/","hostAliases":["dijlah.tv"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/feed","/rss"]},
+    {"sourceId":"rudaw-ar","displayName":"Rudaw Arabic","arabicName":"رووداو عربي","baseUrl":"https://www.rudawarabia.net/arabic","hostAliases":["rudawarabia.net"],"country":"IQ","sourceType":"kurdish_media","reliabilityLevel":"B","collectionMode":"publisher","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/sitemap_index.xml","/arabic/rss"]},
+
+    {"sourceId":"nabd","displayName":"Nabd","arabicName":"نبض","baseUrl":"https://nabd.com/","hostAliases":["nabd.com"],"country":"MULTI","sourceType":"aggregator","reliabilityLevel":"C","collectionMode":"discovery_only","enabled":true,"arabicEnabled":true,"indexHints":[]},
+    {"sourceId":"hathalyoum","displayName":"Hath Alyaoum","arabicName":"هذا اليوم","baseUrl":"https://hathalyoum.net/","hostAliases":["hathalyoum.net"],"country":"IQ","sourceType":"aggregator","reliabilityLevel":"C","collectionMode":"discovery_only","enabled":true,"arabicEnabled":true,"indexHints":["/sitemap.xml","/rss"]},
+
+    {"sourceId":"imn-en","displayName":"IMN English","arabicName":"شبكة الإعلام العراقي","baseUrl":"https://imn.iq/en","hostAliases":["imn.iq"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"disabled_language","enabled":false,"arabicEnabled":false,"indexHints":[],"notes":"사용자 제공 주소가 영어 경로이므로 아랍어 전용 수집에서 제외"},
+    {"sourceId":"iraqinews-en","displayName":"Iraqi News","arabicName":"Iraqi News","baseUrl":"https://www.iraqinews.com/iraq/","hostAliases":["iraqinews.com"],"country":"IQ","sourceType":"iraqi_media","reliabilityLevel":"B","collectionMode":"disabled_language","enabled":false,"arabicEnabled":false,"indexHints":[],"notes":"영어 기사 중심이므로 아랍어 전용 수집에서 제외"}
   ]
 }
