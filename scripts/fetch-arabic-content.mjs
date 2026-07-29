@@ -189,36 +189,27 @@ function extractTitle(html = "", fallback = "") {
 function politicalValidation(item = {}, text = "") {
   const requiredTerms = Array.isArray(item.requiredTerms) ? item.requiredTerms : [];
   const excludedTerms = Array.isArray(item.excludedTerms) ? item.excludedTerms : [];
-  const ceremonialTerms = [
-    "تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين",
-    "ذكرى تأسيس", "حفل تكريم", "زيارة مجاملة", "بحث العلاقات الثنائية دون تفاصيل"
-  ];
-  const iraqAnchors = [
-    "العراق", "العراقي", "بغداد", "الحكومة العراقية", "مجلس الوزراء",
-    "مجلس النواب", "رئيس مجلس الوزراء", "رئيس الوزراء", "الإطار التنسيقي",
-    "اللجنة المالية النيابية", "هيئة النزاهة"
-  ];
-  const substantiveSignals = [
-    "قرار", "قرارات", "توجيه", "توجيهات", "سياسة", "برنامج حكومي", "جلسة",
-    "اجتماع", "تصويت", "قانون", "مشروع قانون", "استجواب", "إقالة", "إعفاء",
-    "تعيين", "تشكيل الحكومة", "التشكيلة الوزارية", "الموازنة", "تخصيصات",
-    "تمويل", "مكافحة الفساد", "حصر السلاح", "منح الثقة", "إحالة إلى القضاء",
-    "اتفاق", "مذكرة تفاهم", "تنفيذ", "خطة", "إصلاح"
-  ];
-
-  if (hasAny(text, [...ceremonialTerms, ...excludedTerms])) {
-    return { ok: false, errorCode: "CEREMONIAL_POLITICS", note: "축하·조문·기념식 등 의례성 정치기사" };
-  }
-  if (!hasAny(text, iraqAnchors)) {
-    return { ok: false, errorCode: "NON_IRAQ_RELATED", note: "이라크 정치 주체 또는 기관 확인 불가" };
-  }
-  if (requiredTerms.length && !hasAll(text, requiredTerms)) {
-    return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "검색 키워드의 필수 정치 주체가 본문에서 확인되지 않음" };
-  }
-  if (!hasAny(text, substantiveSignals)) {
-    return { ok: false, errorCode: "LOW_INFORMATION_POLITICS", note: "정책·결정·회의·법률·인사 등 실질 내용 부족" };
-  }
+  const ceremonialTerms = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس", "حفل تكريم", "زيارة مجاملة"];
+  const iraqAnchors = ["العراق", "العراقي", "بغداد", "الحكومة العراقية", "مجلس الوزراء", "مجلس النواب", "رئيس مجلس الوزراء", "رئيس الوزراء", "الإطار التنسيقي", "اللجنة المالية النيابية", "هيئة النزاهة"];
+  const substantiveSignals = ["قرار", "قرارات", "توجيه", "توجيهات", "سياسة", "برنامج حكومي", "جلسة", "اجتماع", "تصويت", "قانون", "مشروع قانون", "استجواب", "إقالة", "إعفاء", "تعيين", "تشكيل الحكومة", "التشكيلة الوزارية", "الموازنة", "تخصيصات", "تمويل", "مكافحة الفساد", "حصر السلاح", "منح الثقة", "إحالة إلى القضاء", "اتفاق", "مذكرة تفاهم", "تنفيذ", "خطة", "إصلاح"];
+  if (hasAny(text, [...ceremonialTerms, ...excludedTerms])) return { ok: false, errorCode: "CEREMONIAL_POLITICS", note: "축하·조문·기념식 등 의례성 정치기사" };
+  if (!hasAny(text, iraqAnchors)) return { ok: false, errorCode: "NON_IRAQ_RELATED", note: "이라크 정치 주체 또는 기관 확인 불가" };
+  if (requiredTerms.length && !hasAll(text, requiredTerms)) return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "검색 키워드의 필수 정치 주체가 본문에서 확인되지 않음" };
+  if (!hasAny(text, substantiveSignals)) return { ok: false, errorCode: "LOW_INFORMATION_POLITICS", note: "정책·결정·회의·법률·인사 등 실질 내용 부족" };
   return { ok: true, errorCode: null, note: "이라크 정치권의 실질 정책·결정 기사" };
+}
+
+function economyValidation(item = {}, text = "") {
+  const requiredTerms = Array.isArray(item.requiredTerms) ? item.requiredTerms : [];
+  const excludedTerms = Array.isArray(item.excludedTerms) ? item.excludedTerms : [];
+  const iraqAnchors = ["العراق", "العراقي", "بغداد", "وزارة الإعمار", "وزارة المالية", "وزارة التخطيط", "الهيئة الوطنية للاستثمار", "البنك المركزي العراقي", "مجلس الوزراء"];
+  const businessSignals = ["مشروع", "مشاريع", "سكني", "وحدات سكنية", "مدن جديدة", "بنى تحتية", "مقاول", "مقاولين", "مستحقات", "تمويل", "تخصيصات", "الموازنة", "الإنفاق الاستثماري", "عقد", "عقود", "استثمار", "مستثمر", "قانون الاستثمار", "إعفاءات جمركية", "مواد البناء", "استئناف", "المشاريع المتلكئة", "نسب الإنجاز", "تحويلات خارجية", "امتثال مصرفي", "مصارف"];
+  const lowValueSignals = ["أسعار الخضروات", "أسعار الفواكه", "الأسواق المحلية", "مهرجان تسوق", "معرض تجاري صغير", "رواتب المتقاعدين", "البطاقة التموينية"];
+  if (hasAny(text, [...excludedTerms, ...lowValueSignals])) return { ok: false, errorCode: "LOW_RELEVANCE_ECONOMY", note: "비스마야 사업과 직접 연결되지 않는 생활·소비경제 기사" };
+  if (!hasAny(text, iraqAnchors)) return { ok: false, errorCode: "NON_IRAQ_RELATED", note: "이라크 정부·기관·사업 연결점 확인 불가" };
+  if (requiredTerms.length && !hasAll(text, requiredTerms)) return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "검색 키워드의 필수 경제·건설 주체가 본문에서 확인되지 않음" };
+  if (!hasAny(text, businessSignals)) return { ok: false, errorCode: "LOW_INFORMATION_ECONOMY", note: "건설·투자·정부재정·금융 관련 실질 내용 부족" };
+  return { ok: true, errorCode: null, note: "비스마야 사업환경과 연관 가능한 이라크 경제·건설·투자 기사" };
 }
 
 function validateCategory(item = {}, text = "") {
@@ -228,6 +219,7 @@ function validateCategory(item = {}, text = "") {
       : { ok: false, errorCode: "NON_IRAQ_RELATED", note: "정확한 비스마야 표기(بسماية/بسمايه) 미확인" };
   }
   if (item.category === "politics") return politicalValidation(item, text);
+  if (item.category === "economy") return economyValidation(item, text);
   return { ok: true, errorCode: null, note: "카테고리 전용 검증 미적용" };
 }
 
@@ -250,19 +242,7 @@ async function hydrate(item) {
 
     const categoryResult = validateCategory(item, combinedText);
     if (!categoryResult.ok) {
-      return {
-        ...item,
-        articleUrl: normalizeUrl(page.finalUrl || item.articleUrl),
-        canonicalUrl,
-        originalTitleArabic,
-        originalTextArabic: "",
-        contentChars: originalTextArabic.length,
-        arabicRatio: ratio,
-        contentStatus: "FAILED",
-        errorCode: categoryResult.errorCode,
-        relevanceNote: categoryResult.note,
-        fetchedAt: new Date().toISOString()
-      };
+      return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: categoryResult.errorCode, relevanceNote: categoryResult.note, fetchedAt: new Date().toISOString() };
     }
 
     return {
@@ -279,24 +259,12 @@ async function hydrate(item) {
       relevanceNote: categoryResult.note,
       fetchedAt: new Date().toISOString(),
       translation: { status: "PENDING", titleKo: "", fullTextKo: "" },
-      analysis: {
-        status: "PENDING",
-        category: item.category,
-        recommendation: "USER_REVIEW_REQUIRED",
-        relevanceScore: null,
-        recommendationReason: ""
-      },
+      analysis: { status: "PENDING", category: item.category, recommendation: "USER_REVIEW_REQUIRED", relevanceScore: null, recommendationReason: "" },
       selection: { selected: false, reportSection: null, displayOrder: null, userNote: "" }
     };
   } catch (error) {
     const message = String(error.message || error);
-    const errorCode = /abort|timeout/i.test(message)
-      ? "FETCH_TIMEOUT"
-      : /HTTP 404|HTTP 410/.test(message)
-        ? "ARTICLE_REMOVED"
-        : /HTTP 401|HTTP 403|HTTP 429/.test(message)
-          ? "ACCESS_BLOCKED"
-          : "CONTENT_EXTRACTION_FAILED";
+    const errorCode = /abort|timeout/i.test(message) ? "FETCH_TIMEOUT" : /HTTP 404|HTTP 410/.test(message) ? "ARTICLE_REMOVED" : /HTTP 401|HTTP 403|HTTP 429/.test(message) ? "ACCESS_BLOCKED" : "CONTENT_EXTRACTION_FAILED";
     return { ...item, originalTextArabic: "", contentStatus: "FAILED", errorCode, contentError: message.slice(0, 300), fetchedAt: new Date().toISOString() };
   }
 }
