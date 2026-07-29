@@ -1,0 +1,11 @@
+{
+  "schemaVersion": "1.0",
+  "rules": [
+    {"id":"exclude-non-arabic","type":"language","description":"본문 주 언어가 아랍어가 아닌 기사 제외","enabled":true},
+    {"id":"exclude-non-iraq","type":"relevance","description":"이라크 또는 비스마야와 직접 연결되지 않는 기사 제외","enabled":true},
+    {"id":"exclude-sports-entertainment","type":"topic","terms":["رياضة","كرة القدم","مباراة","فنان","مسلسل","أبراج"],"description":"스포츠·연예·생활 기사 제외","enabled":true},
+    {"id":"exclude-general-crime","type":"topic","terms":["سرقة","مخدرات","خلاف عائلي","حادث مروري"],"description":"사업·정세와 무관한 일반 범죄·사고 제외","enabled":true},
+    {"id":"exclude-ceremonial-politics","type":"topic","terms":["تهنئة","تعزية","استقبال بروتوكولي"],"description":"축하·조문 등 의례성 정치기사 제외","enabled":true},
+    {"id":"exclude-bismayah-partial-match","type":"exact_match","terms":["بسما","بسماه"],"description":"비스마야 오탐을 유발하는 불완전 문자열 제외","enabled":true}
+  ]
+}
