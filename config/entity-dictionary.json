@@ -1,0 +1,14 @@
+{
+  "schemaVersion": "1.0",
+  "entities": [
+    {"arabic":"بسماية","korean":"비스마야","type":"place_project"},
+    {"arabic":"مدينة بسماية الجديدة","korean":"비스마야 신도시","type":"project"},
+    {"arabic":"شركة هانوا","korean":"한화","type":"company"},
+    {"arabic":"الهيئة الوطنية للاستثمار","korean":"국가투자위원회","type":"government_agency"},
+    {"arabic":"الإطار التنسيقي","korean":"시아조정기구","type":"political_coalition"},
+    {"arabic":"الحشد الشعبي","korean":"인민동원군","type":"security_organization"},
+    {"arabic":"وزارة الإعمار والإسكان والبلديات العامة","korean":"건설주택부","type":"ministry"},
+    {"arabic":"مجلس الوزراء","korean":"내각","type":"government_body"},
+    {"arabic":"مجلس النواب العراقي","korean":"이라크 의회","type":"government_body"}
+  ]
+}
