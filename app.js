@@ -74,6 +74,11 @@
   function categoryLabel(category){
     return {bismayah:"비스마야",politics:"정치권 동향",economy:"경제·건설",security:"테러·치안",international:"국제사회"}[category]||"미분류";
   }
+  function categoryBadgeClass(category){
+    return ["bismayah","politics","economy","security","international"].includes(category)
+      ? `category-${category}`
+      : "category-unknown";
+  }
   function relatedSourcesHtml(article){
     const group=state.groups.get(article.eventGroup?.groupId);
     const sources=(group?.sources||[]).filter((item)=>item.articleUrl);
@@ -106,7 +111,7 @@
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         <p class="arabic-title" lang="ar">${escapeHtml(arTitle(article))}</p>
         <p class="preview">${escapeHtml(preview(article))}</p>
-        <div class="badges"><span class="badge orange">${escapeHtml(categoryLabel(category))}</span><span class="badge">${escapeHtml(recommendation)}</span>${duplicateCount?`<span class="badge">중복 묶음</span>`:""}</div>
+        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span><span class="badge">${escapeHtml(recommendation)}</span>${duplicateCount?`<span class="badge">중복 묶음</span>`:""}</div>
         <p class="preview"><strong>추천 사유</strong> ${escapeHtml(reason)}</p>
         <div class="card-actions">
           ${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">대표 아랍어 원문</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}
