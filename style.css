@@ -10,6 +10,25 @@
   --success:#18794e;
   --danger:#b42318;
   --shadow:0 12px 32px rgba(26,31,38,.08);
+
+  --cat-bismayah-bg:#fff1e7;
+  --cat-bismayah-text:#d85f13;
+  --cat-bismayah-border:#ffd2b3;
+  --cat-politics-bg:#edf3f8;
+  --cat-politics-text:#315675;
+  --cat-politics-border:#ccdae6;
+  --cat-economy-bg:#f7f1e7;
+  --cat-economy-text:#875b2d;
+  --cat-economy-border:#e7d5b8;
+  --cat-security-bg:#fbeeee;
+  --cat-security-text:#a83f46;
+  --cat-security-border:#efc9cc;
+  --cat-international-bg:#edf6fa;
+  --cat-international-text:#2d6b86;
+  --cat-international-border:#cbe2ec;
+  --cat-unknown-bg:#f1f3f5;
+  --cat-unknown-text:#4b5563;
+  --cat-unknown-border:#e1e5e9;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--background);color:var(--ink);font-family:"Noto Sans KR","Malgun Gothic",Arial,sans-serif;line-height:1.55}
@@ -49,8 +68,14 @@ h1{margin:0;font-size:32px;letter-spacing:-.04em}
 .arabic-title{margin:0;color:#565d67;font-size:15px;direction:rtl;text-align:left}
 .preview{margin:15px 0;color:#343a42;white-space:pre-line}
 .badges{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
-.badge{display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border-radius:999px;background:#f1f3f5;color:#4b5563;font-size:12px;font-weight:700}
+.badge{display:inline-flex;align-items:center;min-height:28px;padding:4px 9px;border-radius:999px;background:#f1f3f5;color:#4b5563;font-size:12px;font-weight:700;border:1px solid transparent}
 .badge.orange{background:var(--orange-soft);color:var(--orange-dark)}
+.badge.category-bismayah{background:var(--cat-bismayah-bg);color:var(--cat-bismayah-text);border-color:var(--cat-bismayah-border)}
+.badge.category-politics{background:var(--cat-politics-bg);color:var(--cat-politics-text);border-color:var(--cat-politics-border)}
+.badge.category-economy{background:var(--cat-economy-bg);color:var(--cat-economy-text);border-color:var(--cat-economy-border)}
+.badge.category-security{background:var(--cat-security-bg);color:var(--cat-security-text);border-color:var(--cat-security-border)}
+.badge.category-international{background:var(--cat-international-bg);color:var(--cat-international-text);border-color:var(--cat-international-border)}
+.badge.category-unknown{background:var(--cat-unknown-bg);color:var(--cat-unknown-text);border-color:var(--cat-unknown-border)}
 .card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .card-actions a,.card-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 13px;border-radius:8px;border:1px solid #d1d5db;background:#fff;color:#343a40;text-decoration:none;font-weight:700;font-size:13px}
 .card-actions .primary{background:var(--orange);border-color:var(--orange);color:white}
