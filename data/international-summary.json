@@ -1,9 +1,122 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T05:28:15.843Z",
-  "total": 5,
+  "generatedAt": "2026-07-29T06:17:31.302Z",
+  "total": 61,
   "typeCounts": {
-    "US_SECURITY": 5
+    "US_SECURITY": 47,
+    "TURKEY_RELATIONS": 6,
+    "ENERGY_ROUTE": 2,
+    "IRAN_RELATIONS": 4,
+    "SANCTIONS_FINANCE": 2
   },
-  "excluded": []
+  "excluded": [
+    {
+      "articleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
+      "titleArabic": "الزيدي: طريق التنمية مشروع إقليميٌّ يعيد تعريف مفهوم الربط الاقتصادي بالشرق الأوسط",
+      "articleUrl": "https://almasalah.com/archives/139350",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
+      "articleId": "discovery-HA88Ulm3ebNaupTIpkzW9cK9",
+      "titleArabic": "أخبار المغرب العاجلة",
+      "articleUrl": "https://inews.ma/news/8541009",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-CRjOtyymhMcEwN8fkl6X4A_t",
+      "titleArabic": "مهمة جديدة لأسطول «أتلانتا» الأوروبي ترفع منسوب التوتر مع روسيا",
+      "articleUrl": "https://www.alquds.co.uk/%D9%85%D9%87%D9%85%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D8%A3%D8%B3%D8%B7%D9%88%D9%84-%D8%A3%D8%AA%D9%84%D8%A7%D9%86%D8%AA%D8%A7-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A/",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-wv2JdbT5bPyeKNlD4HI7yOEQ",
+      "titleArabic": "الحوثيون يستهدفون منشآت نفط سعودية.. لماذا الآن؟ | الحرة",
+      "articleUrl": "https://alhurra.com/29373",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-a-VsU_PThv6iI98o4vE-b8Zj",
+      "titleArabic": "إيرادات صادرات النفط السعودي في مايو 2026 تصعد 19.5% - الطاقة",
+      "articleUrl": "https://attaqa.net/2026/07/26/%D8%A5%D9%8A%D8%B1%D8%A7%D8%AF%D8%A7%D8%AA-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%81%D9%8A-%D9%85%D8%A7%D9%8A%D9%88-2026/",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-Qrxp5Cb43Js_fWVQaFpp3zAu",
+      "titleArabic": "كيف تنهي دول الخليج احتكار إيران لمضيق هرمز؟ | مصراوي",
+      "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/25/3023144/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%B9%D9%89-%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%85%D9%86-%D9%88%D8%B1%D9%82%D8%A9-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2-",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
+      "articleId": "discovery-Jkc5vJ8lDpoeR3759p-ycu_D",
+      "titleArabic": "4.17 دولارات مقابل 88 سنتا.. فوارق كلفة شحن النفط إلى آسيا وأوروبا",
+      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/24/4-17-%D8%AF%D9%88%D9%84%D8%A7%D8%B1%D8%A7%D8%AA-%D9%85%D9%82%D8%A7%D8%A8%D9%84-88-%D8%B3%D9%86%D8%AA-%D9%81%D9%88%D8%A7%D8%B1%D9%82-%D9%83%D9%84%D9%81%D8%A9-%D8%B4%D8%AD%D9%86",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-VWcfrGrQJjRhqmIne9pdFz7t",
+      "titleArabic": "أسعار النفط تتجاوز 100 دولار مع اتساع المخاطر في البحر الأحمر",
+      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%AA%D8%AA%D8%AC%D8%A7%D9%88%D8%B2-100-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D8%B9-%D8%A7%D8%AA%D8%B3%D8%A7%D8%B9",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-8g7f5MCvAQhVbXsP51XSrPCP",
+      "titleArabic": "ماذا لو تحول \"باب المندب\" إلى \"هرمز\" جديد؟",
+      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D9%87%D9%84-%D9%8A%D8%AA%D8%AD%D9%88%D9%84-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D8%A8-%D8%A5%D9%84%D9%89-%D9%87%D8%B1%D9%85%D8%B2-%D8%AC%D8%AF%D9%8A%D8%AF",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-gDW-IbX-DHn4ufEHLINQ13iW",
+      "titleArabic": "كيف اقتطع التصعيد الأخير في هرمز ثلثي صادرات النفط؟",
+      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D9%83%D9%8A%D9%81-%D8%A7%D9%82%D8%AA%D8%B7%D8%B9-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1-%D9%81%D9%8A-%D9%87%D8%B1%D9%85%D8%B2-%D8%AB%D9%84%D8%AB%D9%8A",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-8bGgNw-VhWxkaafRNPhaJsCM",
+      "titleArabic": "حصار موانئ السعودية... ما خيارات الرياض لحماية صادراتها النفطية؟",
+      "articleUrl": "https://www.alaraby.co.uk/economy/%D8%AD%D8%B5%D8%A7%D8%B1-%D9%85%D9%88%D8%A7%D9%86%D8%A6-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%85%D8%A7-%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D9%86%D9%81%D8%B7%D9%8A%D8%A9",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-QFD5CoScvuSixtIVE_DiX20L",
+      "titleArabic": "هل يمكن لقناة السويس أن تساعد آسيا على التغلب على أزمة النفط؟",
+      "articleUrl": "https://www.vietnam.vn/ar/kenh-dao-suez-co-the-giup-chau-a-vuot-qua-khung-hoang-dau-mo",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
+      "articleId": "discovery-fSUr3zRpWPdeJICdviE2LekZ",
+      "titleArabic": "خاص بـ”الحرة”: ثلاثة قيود تكبّل الجيش اللبناني في المنطقة التجريبية | الحرة",
+      "articleUrl": "https://alhurra.com/28436",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-JXAR0Ulmu_UNFsuBGfA-YkYx",
+      "titleArabic": "مسؤول أميركي ينفي لـ”الحرة” تقليص خطة إعمار غزة | الحرة",
+      "articleUrl": "https://alhurra.com/27613",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-5JaDCDg9f4AUaKedw32vfRk9",
+      "titleArabic": "\"الأمن القومي\" الإيراني يطالب الإعلام بعدم نشر أضرار البنية التحتية جراء الهجمات الأميركية",
+      "articleUrl": "https://www.iranintl.com/ar/202607172947",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-8PHtlcVXICrwisG4S6F1Hv91",
+      "titleArabic": "قراصنة صوماليون يسيطرون على سفينة في خليج عدن | MEO",
+      "articleUrl": "https://www.middle-east-online.com/%D9%82%D8%B1%D8%A7%D8%B5%D9%86%D8%A9-%D8%B5%D9%88%D9%85%D8%A7%D9%84%D9%8A%D9%88%D9%86-%D9%8A%D8%B3%D9%8A%D8%B7%D8%B1%D9%88%D9%86-%D8%B9%D9%84%D9%89-%D8%B3%D9%81%D9%8A%D9%86%D8%A9-%D9%81%D9%8A-%D8%AE%D9%84%D9%8A%D8%AC-%D8%B9%D8%AF%D9%86",
+      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
+    },
+    {
+      "articleId": "discovery-8A1z81w6WQgfea4fCYnkzVpW",
+      "titleArabic": "هل يغير العراق موقفه من حزب الله اللبناني؟.. وثيقة مسربة للعقوبات تثير الجدل",
+      "articleUrl": "https://al-ain.com/article/iraqi-regarding-hezbollah-sanctions",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
+      "articleId": "discovery-OJYofwPalTESm3TdtFJruaaM",
+      "titleArabic": "ترامب يستقبل رئيس الوزراء العراقي وسط ضغوط على بغداد للحد من نفوذ إيران.. ويصفه بـ\"البطل\"",
+      "articleUrl": "https://arabic.euronews.com/2026/07/15/hero-and-friend-zaidi-white-house-economic-partnership-disarming-factions",
+      "reason": "일반 국제·문화·스포츠 기사"
+    }
+  ]
 }
