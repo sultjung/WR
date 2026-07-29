@@ -1,26 +1,32 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-29T06:17:31.097Z",
-  "total": 47,
+  "generatedAt": "2026-07-29T06:22:15.462Z",
+  "total": 55,
   "typeCounts": {
-    "ASSASSINATION": 21,
-    "IED": 4,
+    "ASSASSINATION": 23,
+    "IED": 5,
+    "OTHER_SECURITY": 12,
     "PROTEST": 6,
     "ARMED_ATTACK": 3,
-    "OTHER_SECURITY": 9,
-    "SUICIDE_BOMBING": 4
+    "SUICIDE_BOMBING": 6
   },
   "reportTable": {
-    "total": 47,
+    "total": 55,
     "armedAttack": 3,
-    "ied": 4,
-    "assassination": 21,
+    "ied": 5,
+    "assassination": 23,
     "protest": 6,
     "shooting": 0,
-    "suicideBombing": 4,
-    "otherSecurity": 9
+    "suicideBombing": 6,
+    "otherSecurity": 12
   },
   "excluded": [
+    {
+      "articleId": "discovery-VVwX824EHNG1_HKcAe7t-gxB",
+      "titleArabic": "أول تعليق من \"الحشد الشعبي\" بعد ضربات السعودية على العراق",
+      "articleUrl": "https://arabi21.com/story/1778110/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%82-%D9%85%D9%86-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%B6%D8%B1%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
+      "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
+    },
     {
       "articleId": "discovery-LzxyQZAjHOW5oY0cMIUoLdAp",
       "titleArabic": "الدفاع السعودية: نفذنا ضربات نوعية ضد مُسلحين بالعراق بالتعاون مع الجيش الأمريكي",
@@ -34,6 +40,12 @@
       "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
     },
     {
+      "articleId": "discovery-cTPxkVf4PgbCb9Z1_f_wlv7F",
+      "titleArabic": "وكالة تسنيم تحرّض على اغتيال ميلانيا ترامب بنشر معلومات عنها",
+      "articleUrl": "https://www.alaraby.co.uk/politics/%D9%88%D9%83%D8%A7%D9%84%D8%A9-%D8%AA%D8%B3%D9%86%D9%8A%D9%85-%D8%AA%D8%AD%D8%B1%D9%91%D8%B6-%D8%B9%D9%84%D9%89-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D9%85%D9%8A%D9%84%D8%A7%D9%86%D9%8A%D8%A7-%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%A8%D9%86%D8%B4%D8%B1-%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A7%D8%AA-%D8%B9%D9%86%D9%87%D8%A7",
+      "reason": "이라크 장소·기관·치안 주체가 확인되지 않음"
+    },
+    {
       "articleId": "discovery-K_J_MoKuB-FNdUesN6Nin1MF",
       "titleArabic": "الأمن الداخلي السوري يوجه ضربة لخلايا «داعش» في حلب وريفها",
       "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5301010-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D8%A7%D8%AE%D9%84%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A-%D9%8A%D9%88%D8%AC%D9%87-%D8%B6%D8%B1%D8%A8%D8%A9-%D9%84%D8%AE%D9%84%D8%A7%D9%8A%D8%A7-%D8%AF%D8%A7%D8%B9%D8%B4-%D9%81%D9%8A-%D8%AD%D9%84%D8%A8-%D9%88%D8%B1%D9%8A%D9%81%D9%87%D8%A7",
@@ -44,12 +56,6 @@
       "titleArabic": "سوريا.. عمليات أمنية تستهدف \"سرايا الجواد\" و\"تنظيم الدولة\"",
       "articleUrl": "https://www.aljazeera.net/news/2026/7/28/%d8%b3%d9%88%d8%b1%d9%8a%d8%a7-%d8%b9%d9%85%d9%84%d9%8a%d8%a7%d8%aa-%d8%a3%d9%85%d9%86%d9%8a%d8%a9-%d8%aa%d8%b3%d8%aa%d9%87%d8%af%d9%81-%d8%b3%d8%b1%d8%a7%d9%8a%d8%a7",
       "reason": "이라크 장소·기관·치안 주체가 확인되지 않음"
-    },
-    {
-      "articleId": "discovery-lyOnRjI7VJfR5jRXUWryOO24",
-      "titleArabic": "كييف تنفي ادعاءات وجود \"خلايا أوكرانية\" في العراق",
-      "articleUrl": "https://www.alaraby.co.uk/politics/%D9%83%D9%8A%D9%8A%D9%81-%D8%AA%D9%86%D9%81%D9%8A-%D8%A7%D8%AF%D8%B9%D8%A7%D8%A1%D8%A7%D8%AA-%D9%88%D8%AC%D9%88%D8%AF-%D8%AE%D9%84%D8%A7%D9%8A%D8%A7-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82?amp",
-      "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
     },
     {
       "articleId": "discovery-LBEorG-J3w-2R69iOhw2PMsj",
@@ -106,15 +112,15 @@
       "reason": "이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
-      "articleId": "discovery-994OJGUsIGcT7EjUooS8vE-j",
-      "titleArabic": "التلفزيون الإيراني: بحرية الحرس الثوري أطلقت طلقات تحذيرية وأوقفت ست سفن في مضيق هرمز",
-      "articleUrl": "https://www.iranintl.com/ar/202607273217",
+      "articleId": "discovery-zbS9UWAzAvWOsZ4gvxJsyYL5",
+      "titleArabic": "الأخبار الرئيسية | البوابة",
+      "articleUrl": "https://www.albawaba.com/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9?quicktabs_accordionar\\=0\\&page\\=7016",
       "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
     },
     {
-      "articleId": "discovery-1rmgBR-Wc3iR6P_DVCm012uw",
-      "titleArabic": "الشرطة الألمانية تقتل المشتبه به في هجوم على مسيرة للمثليين",
-      "articleUrl": "https://almasalah.com/archives/139310",
+      "articleId": "discovery-994OJGUsIGcT7EjUooS8vE-j",
+      "titleArabic": "التلفزيون الإيراني: بحرية الحرس الثوري أطلقت طلقات تحذيرية وأوقفت ست سفن في مضيق هرمز",
+      "articleUrl": "https://www.iranintl.com/ar/202607273217",
       "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
     },
     {
@@ -241,12 +247,6 @@
       "articleId": "discovery-IMYjemFyIJuZVov3g1AO-PmN",
       "titleArabic": "وكالة \"تسنيم\": سماع دوي عدة انفجارات في محيط مدينة كنارك",
       "articleUrl": "https://www.iranintl.com/ar/202607235613",
-      "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
-    },
-    {
-      "articleId": "discovery-g0R-oeK-eDFqDM0UWgJkF9t8",
-      "titleArabic": "الأخبار الرئيسية | البوابة",
-      "articleUrl": "https://www.albawaba.com/ar/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9?quicktabs_accordionar\\=0\\&page\\=7169",
       "reason": "공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
     },
     {
