@@ -18,6 +18,10 @@
   const translationStatus=(article)=>String(article.translation?.translationStatus||article.translation?.status||article.translationStatus||"PENDING").toLowerCase();
   const contentReady=(article)=>Boolean(article.article?.originalTextArabic||article.originalTextArabic)&&Boolean(articleUrl(article));
   const publishedAt=(article)=>article.article?.publishedAt||article.publishedAt||"";
+  const publishedTime=(article)=>{
+    const value=new Date(publishedAt(article)).getTime();
+    return Number.isFinite(value)?value:null;
+  };
   const sourceName=(article)=>article.source?.arabicName||article.sourceArabic||"출처 미확인";
   const koTitle=(article)=>article.translation?.titleKo||article.titleKo||"번역 대기";
   const arTitle=(article)=>article.article?.originalTitleArabic||article.originalTitleArabic||"";
@@ -33,10 +37,19 @@
     for(const [category,id] of Object.entries(CATEGORY_IDS)) $(id).textContent=items.filter((item)=>categoryOf(item)===category).length;
     $("countSelected").textContent=state.selected.size;
   }
+  function compareByDate(a,b,order){
+    const aTime=publishedTime(a);
+    const bTime=publishedTime(b);
+    if(aTime===null&&bTime===null) return arTitle(a).localeCompare(arTitle(b),"ar");
+    if(aTime===null) return 1;
+    if(bTime===null) return -1;
+    return order==="oldest"?aTime-bTime:bTime-aTime;
+  }
   function filteredArticles(){
     const period=$("periodFilter").value;
     const sourceFilter=$("sourceFilter").value;
     const translationFilter=$("translationFilter").value;
+    const sortOrder=$("sortOrder").value;
     const query=$("searchInput").value.trim().toLowerCase();
     const cutoff=new Date();
     if(period!=="all") cutoff.setDate(cutoff.getDate()-Number(period));
@@ -56,7 +69,7 @@
         if(!text.includes(query)) return false;
       }
       return true;
-    }).sort((a,b)=>new Date(publishedAt(b)||0)-new Date(publishedAt(a)||0));
+    }).sort((a,b)=>compareByDate(a,b,sortOrder));
   }
   function categoryLabel(category){
     return {bismayah:"비스마야",politics:"정치권 동향",economy:"경제·건설",security:"테러·치안",international:"국제사회"}[category]||"미분류";
@@ -130,10 +143,11 @@
     document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));
     apply();
   }));
-  ["periodFilter","sourceFilter","translationFilter"].forEach((id)=>$(id).addEventListener("change",apply));
+  ["periodFilter","sortOrder","sourceFilter","translationFilter"].forEach((id)=>$(id).addEventListener("change",apply));
   $("searchInput").addEventListener("input",apply);
   $("resetFilters").addEventListener("click",()=>{
     $("periodFilter").value="14";
+    $("sortOrder").value="newest";
     $("sourceFilter").value="all";
     $("translationFilter").value="all";
     $("searchInput").value="";
