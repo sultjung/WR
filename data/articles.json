@@ -1,6 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": null,
+  "generatedAt": "2026-07-29T00:51:37.478Z",
   "lookbackDays": 30,
+  "count": 0,
+  "collectionRun": {
+    "discoveredCount": 0,
+    "resolvedCount": 0,
+    "fullTextCount": 0,
+    "failedCount": 0,
+    "failures": {}
+  },
   "articles": []
 }
