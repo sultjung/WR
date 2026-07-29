@@ -1,6 +1,6 @@
 {
   "name": "iraq-weekly-report",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "type": "module",
   "description": "Arabic-source intelligence and weekly reporting support for the Bismayah project",
@@ -13,7 +13,8 @@
     "collect:resolve": "node scripts/resolve-article-urls.mjs",
     "collect:content": "node scripts/fetch-arabic-content.mjs",
     "collect:security": "node scripts/classify-security-incidents.mjs",
-    "collect": "npm run validate:config && npm run collect:discover && npm run collect:recover && npm run collect:resolve && npm run collect:content && npm run collect:security && npm run validate:data"
+    "collect:international": "node scripts/filter-international-news.mjs",
+    "collect": "npm run validate:config && npm run collect:discover && npm run collect:recover && npm run collect:resolve && npm run collect:content && npm run collect:security && npm run collect:international && npm run validate:data"
   },
   "engines": {
     "node": ">=22"
