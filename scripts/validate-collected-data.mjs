@@ -5,6 +5,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const FILES = [
   path.join(ROOT, "data", "discovered-articles.json"),
+  path.join(ROOT, "data", "recovered-articles.json"),
   path.join(ROOT, "data", "resolved-articles.json"),
   path.join(ROOT, "data", "articles.json")
 ];
@@ -27,18 +28,13 @@ function isForbiddenArticleUrl(url = "") {
     || /(?:^|\.)x\.com$/i.test(host)
     || /w3\.org$/i.test(host)
     || /schema\.org$/i.test(host)
-    || /xmlsoft\.org$/i.test(host);
+    || /xmlsoft\.org$/i.test(host)
+    || /nabd\.com$/i.test(host)
+    || /hathalyoum\.net$/i.test(host);
 }
 
 function normalizeArabic(value = "") {
-  return String(value)
-    .replace(/[\u064B-\u065F\u0670]/g, "")
-    .replace(/\u0640/g, "")
-    .replace(/[إأآٱ]/g, "ا")
-    .replace(/ى/g, "ي")
-    .replace(/ة/g, "ه")
-    .replace(/\s+/g, " ")
-    .trim();
+  return String(value).replace(/[\u064B-\u065F\u0670]/g, "").replace(/\u0640/g, "").replace(/[إأآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/\s+/g, " ").trim();
 }
 
 function hasExactBismayah(value = "") {
@@ -68,9 +64,8 @@ let errorCount = 0;
 for (const file of FILES) {
   const label = path.relative(ROOT, file);
   let payload;
-  try {
-    payload = JSON.parse(await fs.readFile(file, "utf8"));
-  } catch (error) {
+  try { payload = JSON.parse(await fs.readFile(file, "utf8")); }
+  catch (error) {
     console.error(`[validate-data] ${label}: invalid or missing JSON - ${error.message}`);
     errorCount += 1;
     continue;
@@ -106,8 +101,8 @@ for (const file of FILES) {
       errorCount += 1;
     }
 
-    if (article.urlStatus === "RESOLVED" && !article.articleUrl) {
-      console.error(`[validate-data] ${label}[${index}]: RESOLVED without articleUrl`);
+    if (["RECOVERED", "RESOLVED"].includes(article.urlStatus) && !article.articleUrl) {
+      console.error(`[validate-data] ${label}[${index}]: ${article.urlStatus} without articleUrl`);
       errorCount += 1;
     }
 
@@ -120,7 +115,6 @@ for (const file of FILES) {
         console.error(`[validate-data] ${label}[${index}]: Arabic ratio below threshold`);
         errorCount += 1;
       }
-
       const combined = `${article.originalTitleArabic || ""}\n${article.originalTextArabic || ""}`;
       if (article.category === "bismayah" && !hasExactBismayah(combined)) {
         console.error(`[validate-data] ${label}[${index}]: Bismayah article lacks exact Bismayah term`);
