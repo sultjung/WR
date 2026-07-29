@@ -3,23 +3,14 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const INPUT_FILE = path.join(ROOT, "data", "discovered-articles.json");
+const RECOVERED_FILE = path.join(ROOT, "data", "recovered-articles.json");
+const FALLBACK_FILE = path.join(ROOT, "data", "discovered-articles.json");
 const OUTPUT_FILE = path.join(ROOT, "data", "resolved-articles.json");
 const FETCH_TIMEOUT_MS = Number(process.env.URL_RESOLVE_TIMEOUT_MS || 15000);
 const CONCURRENCY = Number(process.env.URL_RESOLVE_CONCURRENCY || 4);
 
 function decodeHtml(value = "") {
-  return String(value)
-    .replace(/&amp;/g, "&")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&apos;/g, "'")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/\\u0026/g, "&")
-    .replace(/\\u003d/g, "=")
-    .replace(/\\u002f/g, "/")
-    .replace(/\\\//g, "/")
-    .trim();
+  return String(value).replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\\u0026/g, "&").replace(/\\u003d/g, "=").replace(/\\u002f/g, "/").replace(/\\\//g, "/").trim();
 }
 
 function hostnameOf(url = "") {
@@ -29,53 +20,27 @@ function hostnameOf(url = "") {
 function normalizeUrl(url = "") {
   try {
     const parsed = new URL(url);
-    for (const key of [...parsed.searchParams.keys()]) {
-      if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) parsed.searchParams.delete(key);
-    }
+    for (const key of [...parsed.searchParams.keys()]) if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) parsed.searchParams.delete(key);
     parsed.hash = "";
     return parsed.toString();
   } catch { return ""; }
 }
 
 function isBlockedHost(host = "") {
-  return !host
-    || host === "news.google.com"
-    || /(^|\.)google\.[a-z.]+$/i.test(host)
-    || /(^|\.)gstatic\.com$/i.test(host)
-    || /googleusercontent\.com$/i.test(host)
-    || /youtube\.com$/i.test(host)
-    || /facebook\.com$/i.test(host)
-    || /instagram\.com$/i.test(host)
-    || /(?:^|\.)x\.com$/i.test(host)
-    || /twitter\.com$/i.test(host)
-    || /w3\.org$/i.test(host)
-    || /schema\.org$/i.test(host)
-    || /xmlsoft\.org$/i.test(host)
-    || /mozilla\.org$/i.test(host)
-    || /microsoft\.com$/i.test(host);
+  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host) || /youtube\.com$/i.test(host) || /facebook\.com$/i.test(host) || /instagram\.com$/i.test(host) || /(?:^|\.)x\.com$/i.test(host) || /twitter\.com$/i.test(host) || /w3\.org$/i.test(host) || /schema\.org$/i.test(host) || /xmlsoft\.org$/i.test(host);
 }
 
 function isLikelyArticleUrl(url = "") {
   try {
     const parsed = new URL(url);
     const host = hostnameOf(url);
-    const pathName = decodeURIComponent(parsed.pathname || "").toLowerCase();
-    if (isBlockedHost(host)) return false;
-    if (!/^https?:$/.test(parsed.protocol)) return false;
-    if (!pathName || pathName === "/") return false;
-    if (pathName.length < 5) return false;
-    if (/\.(?:jpg|jpeg|png|gif|webp|svg|ico|css|js|pdf|zip|mp4|mp3)(?:$|[?#])/i.test(pathName)) return false;
-    if (/\/(?:search|tag|tags|category|categories|section|author|login|privacy|about|contact|feed|rss)(?:\/|$)/i.test(pathName)) return false;
-    if (/\/XML\/|\/namespace|\/schema\b/i.test(pathName)) return false;
+    const p = decodeURIComponent(parsed.pathname || "");
+    if (isBlockedHost(host) || !/^https?:$/.test(parsed.protocol) || !p || p === "/" || p.length < 5) return false;
+    if (/\.(?:jpg|jpeg|png|gif|webp|svg|ico|css|js|pdf|zip|mp4|mp3)(?:$|[?#])/i.test(p)) return false;
+    if (/\/(?:search|tag|tags|category|categories|section|author|login|privacy|about|contact|feed|rss)(?:\/|$)/i.test(p)) return false;
+    if (/\/XML\/|\/namespace|\/schema\b/i.test(p)) return false;
     return true;
   } catch { return false; }
-}
-
-function hostMatchesSource(url = "", sourceHomepage = "") {
-  const host = hostnameOf(url);
-  const sourceHost = hostnameOf(sourceHomepage);
-  if (!host || !sourceHost || isBlockedHost(sourceHost)) return false;
-  return host === sourceHost || host.endsWith(`.${sourceHost}`) || sourceHost.endsWith(`.${host}`);
 }
 
 async function fetchPage(url) {
@@ -93,9 +58,7 @@ async function fetchPage(url) {
     });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return { html: await response.text(), finalUrl: response.url || url };
-  } finally {
-    clearTimeout(timer);
-  }
+  } finally { clearTimeout(timer); }
 }
 
 function extractCandidates(html = "", baseUrl = "") {
@@ -118,33 +81,37 @@ function extractCandidates(html = "", baseUrl = "") {
   return [...new Set(candidates)];
 }
 
-function chooseBestCandidate(candidates, sourceHomepage = "") {
-  const scored = candidates.map((url) => {
-    const pathName = new URL(url).pathname;
+function chooseBestCandidate(candidates) {
+  return candidates.map((url) => {
+    const p = new URL(url).pathname;
     let score = 0;
-    if (hostMatchesSource(url, sourceHomepage)) score += 100;
-    if (/\d{4,}/.test(pathName)) score += 20;
-    if (/\/(news|article|story|details?|politics|economy|iraq|local)\//i.test(pathName)) score += 15;
-    if (pathName.split("/").filter(Boolean).length >= 2) score += 10;
-    score += Math.min(pathName.length, 100) / 25;
+    if (/\d{4,}/.test(p)) score += 20;
+    if (/\/(news|article|story|details?|politics|economy|iraq|local)\//i.test(p)) score += 15;
+    if (p.split("/").filter(Boolean).length >= 2) score += 10;
+    score += Math.min(p.length, 100) / 25;
     return { url, score };
-  }).filter((item) => item.score >= 20).sort((a, b) => b.score - a.score);
-  return scored[0]?.url || "";
+  }).filter((item) => item.score >= 20).sort((a, b) => b.score - a.score)[0]?.url || "";
 }
 
 async function resolveOne(item) {
+  if (item.urlStatus === "RECOVERED" && isLikelyArticleUrl(item.articleUrl)) {
+    try {
+      const page = await fetchPage(item.articleUrl);
+      const finalUrl = normalizeUrl(page.finalUrl || item.articleUrl);
+      if (!isLikelyArticleUrl(finalUrl)) throw new Error("INVALID_ARTICLE_PAGE");
+      return { ...item, articleUrl: finalUrl, urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
+    } catch (error) {
+      return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: /HTTP 401|HTTP 403|HTTP 429/.test(String(error.message || error)) ? "ACCESS_BLOCKED" : "URL_RESOLUTION_FAILED", resolutionError: String(error.message || error).slice(0, 300), resolvedAt: new Date().toISOString() };
+    }
+  }
+
   const discoveryUrl = String(item.discoveryUrl || "").trim();
-  if (!discoveryUrl) return { ...item, urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED" };
+  if (!discoveryUrl) return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED" };
   try {
     const first = await fetchPage(discoveryUrl);
-    if (isLikelyArticleUrl(first.finalUrl) && (hostMatchesSource(first.finalUrl, item.sourceHomepage) || !hostnameOf(item.sourceHomepage))) {
-      return { ...item, articleUrl: normalizeUrl(first.finalUrl), urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
-    }
-    const candidates = extractCandidates(first.html, first.finalUrl);
-    const articleUrl = chooseBestCandidate(candidates, item.sourceHomepage || "");
-    if (!articleUrl) {
-      return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED", resolvedAt: new Date().toISOString() };
-    }
+    if (isLikelyArticleUrl(first.finalUrl)) return { ...item, articleUrl: normalizeUrl(first.finalUrl), urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
+    const articleUrl = chooseBestCandidate(extractCandidates(first.html, first.finalUrl));
+    if (!articleUrl) return { ...item, articleUrl: "", urlStatus: "FAILED", errorCode: "URL_RESOLUTION_FAILED", resolvedAt: new Date().toISOString() };
     return { ...item, articleUrl, urlStatus: "RESOLVED", errorCode: null, resolvedAt: new Date().toISOString() };
   } catch (error) {
     const message = String(error.message || error);
@@ -162,11 +129,16 @@ async function mapLimit(items, limit, worker) {
       output[index] = await worker(items[index], index);
     }
   }
-  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
+  await Promise.all(Array.from({ length: Math.min(limit, Math.max(1, items.length)) }, run));
   return output;
 }
 
-const input = JSON.parse(await fs.readFile(INPUT_FILE, "utf8"));
+async function loadInput() {
+  try { return JSON.parse(await fs.readFile(RECOVERED_FILE, "utf8")); }
+  catch { return JSON.parse(await fs.readFile(FALLBACK_FILE, "utf8")); }
+}
+
+const input = await loadInput();
 const articles = await mapLimit(input.articles || [], CONCURRENCY, resolveOne);
 const resolvedCount = articles.filter((item) => item.urlStatus === "RESOLVED" && item.articleUrl).length;
 const payload = {
@@ -174,9 +146,10 @@ const payload = {
   generatedAt: new Date().toISOString(),
   lookbackDays: input.lookbackDays || 14,
   count: articles.length,
+  recoveredInputCount: input.recoveredCount || 0,
   resolvedCount,
   failedCount: articles.length - resolvedCount,
   articles
 };
 await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`[resolve] resolved=${resolvedCount}, failed=${payload.failedCount}, total=${articles.length}`);
+console.log(`[resolve] recoveredInput=${payload.recoveredInputCount}, resolved=${resolvedCount}, failed=${payload.failedCount}, total=${articles.length}`);
