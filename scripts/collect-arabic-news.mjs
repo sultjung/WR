@@ -17,6 +17,42 @@ const ENABLED_CATEGORIES = new Set(
     .filter(Boolean)
 );
 
+const BISMAYAH_KEYWORDS = [
+  {
+    keywordId: "bismayah-nic-001",
+    category: "bismayah",
+    arabicQuery: '"الهيئة الوطنية للاستثمار"',
+    requiredTerms: ["الهيئة الوطنية للاستثمار"],
+    optionalTerms: ["رئيس", "مشروع", "استثمار", "بسماية"],
+    excludedTerms: ["تهنئة", "تعزية", "احتفالية"],
+    priority: 100,
+    description: "NIC 직접 관련 뉴스",
+    enabled: true
+  },
+  {
+    keywordId: "bismayah-direct-001",
+    category: "bismayah",
+    arabicQuery: "بسماية OR بسمايه",
+    requiredTerms: [],
+    optionalTerms: ["بسماية", "بسمايه", "مجمع بسماية", "مدينة بسماية"],
+    excludedTerms: ["بسما", "بسماه"],
+    priority: 100,
+    description: "비스마야 직접 언급 뉴스",
+    enabled: true
+  },
+  {
+    keywordId: "bismayah-hanwha-iraq-001",
+    category: "bismayah",
+    arabicQuery: '("شركة هانوا" OR هانوا) العراق',
+    requiredTerms: ["العراق"],
+    optionalTerms: ["شركة هانوا", "هانوا", "بسماية", "مشروع"],
+    excludedTerms: [],
+    priority: 100,
+    description: "한화와 이라크 직접 관련 뉴스",
+    enabled: true
+  }
+];
+
 function decodeHtml(value = "") {
   return String(value)
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
@@ -96,7 +132,7 @@ async function fetchText(url) {
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/2.0)",
+        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/2.1)",
         accept: "application/rss+xml,application/xml,text/xml,text/html;q=0.8,*/*;q=0.5",
         "accept-language": "ar-IQ,ar;q=0.9"
       }
@@ -166,7 +202,9 @@ async function mapLimit(items, limit, worker) {
 }
 
 const config = JSON.parse(await fs.readFile(KEYWORDS_FILE, "utf8"));
-const keywords = (config.keywords || []).filter((item) => item.enabled && ENABLED_CATEGORIES.has(item.category));
+const configuredKeywords = (config.keywords || []).filter((item) => item.enabled && item.category !== "bismayah");
+const keywordPool = [...BISMAYAH_KEYWORDS, ...configuredKeywords];
+const keywords = keywordPool.filter((item) => item.enabled && ENABLED_CATEGORIES.has(item.category));
 if (!keywords.length) throw new Error(`No enabled keywords found for categories: ${[...ENABLED_CATEGORIES].join(", ")}`);
 
 const results = await mapLimit(keywords, CONCURRENCY, async (keyword) => {
@@ -198,7 +236,7 @@ const categoryCounts = articles.reduce((acc, article) => {
 }, {});
 
 const payload = {
-  schemaVersion: "2.0",
+  schemaVersion: "2.1",
   generatedAt: new Date().toISOString(),
   lookbackDays: LOOKBACK_DAYS,
   categories: [...ENABLED_CATEGORIES],
