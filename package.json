@@ -1,6 +1,6 @@
 {
   "name": "iraq-weekly-report",
-  "version": "1.7.6",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "description": "Arabic-source intelligence and weekly reporting support for the Bismayah project",
@@ -15,15 +15,11 @@
     "collect:content": "node scripts/fetch-arabic-content.mjs",
     "collect:title-fix": "node scripts/fix-generic-article-titles.mjs",
     "collect:incremental-preserve": "node scripts/preserve-processed-articles.mjs",
-    "collect:foreign-local": "node scripts/filter-foreign-local-incidents.mjs",
-    "collect:international": "node scripts/filter-international-news.mjs",
-    "collect:politics": "node scripts/filter-politics-news.mjs",
-    "collect:security": "node scripts/classify-security-incidents.mjs",
-    "collect:category-finalize": "node scripts/finalize-category-routing.mjs",
+    "collect:strict-gate": "node scripts/strict-category-gate.mjs",
     "collect:events": "node scripts/group-duplicate-events.mjs",
     "collect:importance-prepare": "node scripts/prepare-importance-scoring.mjs",
     "collect:importance": "node scripts/score-article-importance.mjs",
-    "collect": "npm run validate:config && npm run collect:discover && npm run collect:recover && npm run collect:resolve && npm run collect:incremental-prepare && npm run collect:content && npm run collect:title-fix && npm run collect:incremental-preserve && npm run collect:foreign-local && npm run collect:international && npm run collect:politics && npm run collect:security && npm run collect:category-finalize && npm run collect:events && npm run collect:importance-prepare && npm run collect:importance && npm run collect:category-finalize && npm run validate:data"
+    "collect": "npm run validate:config && npm run collect:discover && npm run collect:recover && npm run collect:resolve && npm run collect:incremental-prepare && npm run collect:content && npm run collect:title-fix && npm run collect:incremental-preserve && npm run collect:strict-gate && npm run collect:events && npm run collect:importance-prepare && npm run collect:importance && npm run collect:strict-gate && npm run validate:data"
   },
   "engines": {
     "node": ">=22"
