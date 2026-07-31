@@ -11,7 +11,7 @@ const MAX_PER_QUERY = Number(process.env.MAX_PER_QUERY || 30);
 const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 15000);
 const CONCURRENCY = Number(process.env.DISCOVERY_CONCURRENCY || 3);
 const ENABLED_CATEGORIES = new Set(
-  String(process.env.COLLECT_CATEGORIES || "bismayah,politics,economy")
+  String(process.env.COLLECT_CATEGORIES || "bismayah,politics,economy,security,international")
     .split(",")
     .map((value) => value.trim())
     .filter(Boolean)
@@ -96,7 +96,7 @@ async function fetchText(url) {
       redirect: "follow",
       signal: controller.signal,
       headers: {
-        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/1.2)",
+        "user-agent": "Mozilla/5.0 (compatible; WR-Arabic-News-Collector/2.0)",
         accept: "application/rss+xml,application/xml,text/xml,text/html;q=0.8,*/*;q=0.5",
         "accept-language": "ar-IQ,ar;q=0.9"
       }
@@ -198,7 +198,7 @@ const categoryCounts = articles.reduce((acc, article) => {
 }, {});
 
 const payload = {
-  schemaVersion: "1.0",
+  schemaVersion: "2.0",
   generatedAt: new Date().toISOString(),
   lookbackDays: LOOKBACK_DAYS,
   categories: [...ENABLED_CATEGORIES],
