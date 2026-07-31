@@ -73,10 +73,18 @@ const SECURITY_SIGNALS = [
 
 const REGIONAL_HIGH_IMPACT = [
   "الحرب بين إيران وإسرائيل", "الحرب الإيرانية الإسرائيلية", "إيران وإسرائيل",
-  "الولايات المتحدة وإيران", "مضيق هرمز", "إغلاق مضيق هرمز", "حرية الملاحة",
-  "أمن الملاحة", "ناقلات النفط", "أسعار النفط", "توتر إقليمي", "تصعيد إقليمي",
+  "الولايات المتحدة وإيران", "الحرب مع إيران", "هجوم على إيران", "ضربة على إيران",
+  "مضيق هرمز", "إغلاق مضيق هرمز", "حرية الملاحة", "أمن الملاحة",
+  "ناقلات النفط", "أسعار النفط", "سوق النفط", "توتر إقليمي", "تصعيد إقليمي",
   "إغلاق الأجواء", "تعليق الرحلات", "أمن الطاقة", "الخليج", "سلطنة عمان",
-  "وساطة عمان", "سوريا", "مخيم الهول", "الحدود السورية"
+  "وساطة عمان", "سياسة عمان", "سوريا", "مخيم الهول", "الحدود السورية",
+  "البحر الأحمر", "باب المندب", "طرق الشحن", "سلاسل الإمداد", "العقوبات الأميركية"
+];
+
+const CROSS_BORDER_IMPACT = [
+  "ملاحة", "شحن", "ناقلات", "نفط", "غاز", "طاقة", "طيران", "أجواء",
+  "رحلات", "حدود", "مياه", "تجارة إقليمية", "عقوبات", "قوات أميركية",
+  "تحالف دولي", "تصعيد", "حرب", "وساطة", "مفاوضات نووية"
 ];
 
 const IRAQ_IMPACT = [
@@ -93,6 +101,11 @@ const PURE_FOREIGN_DOMESTIC = [
   "الحكومة الكويتية", "الحكومة القطرية", "الحكومة البحرينية"
 ];
 
+const PURE_DOMESTIC_ACTIONS = [
+  "تعيين", "إقالة", "إنشاء مشروع محلي", "افتتاح مشروع محلي", "موازنة محلية",
+  "انتخابات محلية", "تعديل وزاري", "قرارات حكومية داخلية"
+];
+
 function routeInternationalArticle(article) {
   const title = getTitle(article);
   const body = getBody(article);
@@ -102,6 +115,9 @@ function routeInternationalArticle(article) {
   const economy = hasAny(text, ECONOMY_SIGNALS);
   const politics = hasAny(text, POLITICS_SIGNALS);
   const security = hasAny(text, SECURITY_SIGNALS);
+  const regionalHighImpact = hasAny(text, REGIONAL_HIGH_IMPACT);
+  const crossBorderImpact = hasAny(text, CROSS_BORDER_IMPACT);
+  const explicitIraqImpact = hasAny(text, IRAQ_IMPACT);
 
   if (textHasIraq) {
     if (economy) {
@@ -115,15 +131,42 @@ function routeInternationalArticle(article) {
     }
   }
 
-  if (hasAny(text, PURE_FOREIGN_DOMESTIC) && !textHasIraq && !hasAny(text, IRAQ_IMPACT)) {
+  const pureForeignDomestic = hasAny(text, PURE_FOREIGN_DOMESTIC)
+    && hasAny(text, PURE_DOMESTIC_ACTIONS)
+    && !textHasIraq
+    && !explicitIraqImpact
+    && !regionalHighImpact
+    && !crossBorderImpact;
+
+  if (pureForeignDomestic) {
     return { action: "exclude", reason: "이라크 연계가 없는 순수 해외 국내 정치·경제 기사" };
   }
 
-  if (hasAny(text, REGIONAL_HIGH_IMPACT) && (textHasIraq || hasAny(text, IRAQ_IMPACT))) {
-    return { action: "retain", reason: "주변국·국제정세가 이라크 안보·물류·에너지에 미치는 영향이 명확" };
+  if (regionalHighImpact) {
+    return {
+      action: "retain",
+      confidence: explicitIraqImpact || textHasIraq ? "HIGH" : "MEDIUM",
+      reason: explicitIraqImpact || textHasIraq
+        ? "주변국·국제정세가 이라크 안보·물류·에너지에 미치는 영향이 명확"
+        : "전쟁·호르무즈·영공·원유·해운 등 이라크 파급 가능성이 큰 고영향 국제정세"
+    };
   }
 
-  return { action: "exclude", reason: "이라크 직접 주체도 아니고 이라크에 대한 간접 영향 근거도 부족" };
+  if (crossBorderImpact) {
+    return {
+      action: "retain",
+      confidence: explicitIraqImpact || textHasIraq ? "HIGH" : "REVIEW",
+      reason: explicitIraqImpact || textHasIraq
+        ? "국경·에너지·해운·항공·제재 등 이라크 연계 국제이슈"
+        : "국경·에너지·해운·항공·제재 관련 국제정세로 검토 가치가 있어 유지"
+    };
+  }
+
+  return {
+    action: "retain",
+    confidence: "REVIEW",
+    reason: "국제사회 후보 기사로 유지하며 AI 평가 단계에서 최종 관련성을 검토"
+  };
 }
 
 const payload = JSON.parse(await fs.readFile(ARTICLES_FILE, "utf8"));
@@ -168,6 +211,7 @@ for (const article of articles) {
     ...article,
     internationalContext: {
       type: "REGIONAL_INDIRECT_IMPACT",
+      confidence: result.confidence || "REVIEW",
       classificationMethod: "REGIONAL_IMPACT_RULES"
     },
     relevanceNote: result.reason
@@ -195,7 +239,7 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "2.0",
+  schemaVersion: "2.1",
   generatedAt: new Date().toISOString(),
   reclassified,
   excluded
