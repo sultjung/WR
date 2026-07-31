@@ -51,7 +51,7 @@ function setCategory(article = {}, category, reason) {
     from: getCategory(article),
     to: category,
     reason,
-    method: "FINAL_CATEGORY_ROUTING_V1"
+    method: "FINAL_CATEGORY_ROUTING_V2"
   };
   return next;
 }
@@ -111,6 +111,14 @@ const SECURITY_INCIDENT = [
   "طائرة مسيرة", "طائرات مسيرة", "مسيّرة", "مسيّرات", "تفجير انتحاري", "حزام ناسف",
   "داعش", "ارهابي", "ارهابيين", "خلية ارهابية", "عملية امنية", "اعتقال", "احباط هجوم"
 ];
+const BAGHDAD_PROTEST = [
+  "تظاهرة", "تظاهرات", "مظاهرة", "مظاهرات", "احتجاج", "احتجاجات", "محتجون", "متظاهرون",
+  "اعتصام", "اعتصامات", "قطع الطريق", "اغلاق الطريق", "اغلاق شوارع", "ساحة التحرير"
+];
+const BAGHDAD_LOCATIONS = [
+  "بغداد", "وسط بغداد", "ساحة التحرير", "المنطقة الخضراء", "جسر الجمهورية", "جسر السنك",
+  "شارع الرشيد", "ساحة الطيران", "باب الشرقي", "الكرادة", "الجادرية", "الاعظمية", "الكاظمية"
+];
 const OFFICIAL_RESPONSE = [
   "يدين", "ادان", "استنكر", "يرفض", "بيان", "اجتماع طارئ", "موقف", "بحث",
   "مجلس الامن", "المحكمة الدولية", "انتهاك السيادة", "دعا", "طالب", "حذر"
@@ -155,6 +163,7 @@ function classify(article) {
   const bismayahStrong = hasAny(titleLead, BISMAYAH_STRONG);
   const nicRelevant = hasAny(titleLead, NIC_SIGNALS);
   const securityIncident = hasAny(titleLead, SECURITY_INCIDENT);
+  const baghdadProtest = hasAny(titleLead, BAGHDAD_PROTEST) && hasAny(titleLead, BAGHDAD_LOCATIONS);
   const officialResponse = hasAny(titleLead, OFFICIAL_RESPONSE) && hasAny(titleLead, IRAQ_OFFICIAL);
   const economyScore = countAny(titleLead, ECONOMY);
   const economyCore = economyScore >= 2 || (economyScore >= 1 && hasAny(titleLead, ECONOMY_ACTIONS));
@@ -173,6 +182,11 @@ function classify(article) {
   // 비스마야·한화 직접 언급 및 NIC 핵심 인사는 다른 모든 카테고리보다 우선한다.
   if (bismayahStrong || nicRelevant) {
     return { action: "category", category: "bismayah", reason: "비스마야·한화·국가투자위원회 직접 관련" };
+  }
+
+  // 바그다드에서 실제로 발생한 시위·집회·도로통제는 현장 치안 영향이 있으므로 치안으로 분류한다.
+  if (baghdadProtest) {
+    return { action: "category", category: "security", reason: "바그다드 내 시위·집회·도로통제 등 현장 치안 상황" };
   }
 
   // 공격 자체가 아니라 정부·정당의 성명·회의·외교대응이 핵심이면 정치권이다.
@@ -250,7 +264,7 @@ const output = {
 
 await fs.writeFile(ARTICLES_FILE, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.0",
+  schemaVersion: "2.0",
   generatedAt: output.generatedAt,
   before: articles.length,
   retained: retained.length,
