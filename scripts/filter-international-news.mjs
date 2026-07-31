@@ -22,100 +22,161 @@ function hasAny(text = "", terms = []) {
   return terms.some((term) => normalized.includes(normalizeArabic(term)));
 }
 
-const IRAQ_ANCHORS = [
-  "العراق", "العراقي", "بغداد", "الحكومة العراقية", "الأجواء العراقية",
-  "الحدود العراقية السورية", "صادرات النفط العراقية", "المصارف العراقية"
-];
-
-const IMPACT_SIGNALS = [
-  "انسحاب القوات", "القوات الأميركية", "التحالف الدولي", "عقوبات",
-  "مصارف عراقية", "تحويلات الدولار", "الخزانة الأميركية", "طريق التنمية",
-  "المياه", "النفط عبر جيهان", "الحدود العراقية السورية", "مخيم الهول",
-  "مضيق هرمز", "صادرات النفط", "الملاحة", "ناقلات النفط", "إغلاق الأجواء",
-  "تعليق الرحلات", "صواريخ", "طائرات مسيرة", "توتر إقليمي", "أمن الطاقة",
-  "النفوذ الإيراني", "الفصائل المسلحة", "التبادل التجاري", "اتفاقية أمنية"
-];
-
-const GENERIC_GLOBAL_SIGNALS = [
-  "بطولة", "مباراة", "مسلسل", "فيلم", "مهرجان", "سياحة", "طقس",
-  "مشاهير", "كرة القدم", "الانتخابات الأميركية دون صلة بالعراق"
-];
-
-const TYPE_RULES = [
-  { type: "US_SECURITY", terms: ["الولايات المتحدة", "واشنطن", "القوات الأميركية", "التحالف الدولي"] },
-  { type: "IRAN_RELATIONS", terms: ["إيران", "طهران", "النفوذ الإيراني", "الفصائل المسلحة"] },
-  { type: "TURKEY_RELATIONS", terms: ["تركيا", "أنقرة", "طريق التنمية", "النفط عبر جيهان", "المياه"] },
-  { type: "SYRIA_BORDER", terms: ["الحدود العراقية السورية", "مخيم الهول", "سوريا", "تسلل"] },
-  { type: "ENERGY_ROUTE", terms: ["مضيق هرمز", "صادرات النفط", "ناقلات النفط", "الملاحة"] },
-  { type: "AIRSPACE", terms: ["الأجواء العراقية", "تعليق الرحلات", "إغلاق الأجواء", "صواريخ", "طائرات مسيرة"] },
-  { type: "SANCTIONS_FINANCE", terms: ["عقوبات أميركية", "مصارف عراقية", "تحويلات الدولار", "الخزانة الأميركية"] },
-  { type: "GULF_SECURITY", terms: ["الخليج", "توتر إقليمي", "أمن الملاحة", "أمن الطاقة"] }
-];
-
-function classifyType(text = "", fallback = "") {
-  for (const rule of TYPE_RULES) {
-    if (hasAny(text, rule.terms)) return rule.type;
-  }
-  return fallback || "OTHER_IRAQ_LINKED";
+function getCategory(article = {}) {
+  return article.analysis?.category || article.category || "";
 }
 
-function validateInternational(article) {
-  const text = `${article.originalTitleArabic || ""}\n${article.originalTextArabic || ""}`;
-  if (!hasAny(text, IRAQ_ANCHORS)) {
-    return { ok: false, reason: "이라크가 기사의 핵심 주체·영향 대상이 아님" };
+function getTitle(article = {}) {
+  return article.article?.originalTitleArabic || article.originalTitleArabic || article.titleArabic || "";
+}
+
+function getBody(article = {}) {
+  return article.article?.originalTextArabic || article.originalTextArabic || article.fullTextArabic || "";
+}
+
+function setCategory(article = {}, category = "") {
+  const next = { ...article, category };
+  if (article.analysis && typeof article.analysis === "object") {
+    next.analysis = { ...article.analysis, category };
   }
-  if (hasAny(text, GENERIC_GLOBAL_SIGNALS)) {
-    return { ok: false, reason: "일반 국제·문화·스포츠 기사" };
-  }
-  if (!hasAny(text, IMPACT_SIGNALS)) {
-    return { ok: false, reason: "이라크 안보·물류·에너지·금융에 대한 직접 영향 근거 부족" };
-  }
-  const type = classifyType(text, article.internationalType || "");
-  return {
-    ok: true,
-    international: {
-      type,
-      classificationMethod: "RULE_BASED_ARABIC_FULL_TEXT"
+  return next;
+}
+
+const IRAQ_CORE = [
+  "العراق", "العراقي", "العراقية", "بغداد", "الحكومة العراقية",
+  "مجلس الوزراء العراقي", "رئيس الوزراء العراقي", "رئاسة الوزراء العراقية",
+  "مجلس النواب العراقي", "البرلمان العراقي", "وزارة المالية العراقية",
+  "وزارة التخطيط العراقية", "البنك المركزي العراقي", "المصارف العراقية",
+  "الحشد الشعبي", "القوات العراقية", "الأجواء العراقية", "الحدود العراقية"
+];
+
+const ECONOMY_SIGNALS = [
+  "مصرف", "مصارف", "البنك المركزي", "الفيدرالي الأميركي", "الخزانة الأميركية",
+  "عقوبات", "رفع العقوبات", "تحويلات الدولار", "امتثال مصرفي", "تمويل",
+  "استثمار", "تجارة", "تبادل تجاري", "مشروع", "مشاريع", "طريق التنمية",
+  "شراكة استراتيجية", "شراكة اقتصادية", "طاقة", "نفط", "غاز", "جيهان",
+  "مياه", "إعمار", "بنى تحتية", "نقل", "ممر تجاري", "تنمية"
+];
+
+const POLITICS_SIGNALS = [
+  "يدين", "أدان", "إدانة", "يرفض", "استنكر", "احتجاج", "موقف رسمي",
+  "بيان الحكومة", "بيان الخارجية", "وزارة الخارجية", "استدعى السفير",
+  "علاقات دبلوماسية", "مباحثات سياسية", "زيارة رسمية", "اتفاق سياسي",
+  "مجلس الوزراء", "رئيس الوزراء", "البرلمان", "قرار حكومي", "سيادة العراق"
+];
+
+const SECURITY_SIGNALS = [
+  "هجوم", "ضربة", "قصف", "غارة", "انفجار", "اغتيال", "اشتباك", "اعتقال",
+  "إرهاب", "داعش", "ضحايا", "قتلى", "جرحى", "عملية أمنية", "طائرات مسيرة",
+  "صواريخ", "اختراق أمني", "الحدود", "تسلل"
+];
+
+const REGIONAL_HIGH_IMPACT = [
+  "الحرب بين إيران وإسرائيل", "الحرب الإيرانية الإسرائيلية", "إيران وإسرائيل",
+  "الولايات المتحدة وإيران", "مضيق هرمز", "إغلاق مضيق هرمز", "حرية الملاحة",
+  "أمن الملاحة", "ناقلات النفط", "أسعار النفط", "توتر إقليمي", "تصعيد إقليمي",
+  "إغلاق الأجواء", "تعليق الرحلات", "أمن الطاقة", "الخليج", "سلطنة عمان",
+  "وساطة عمان", "سوريا", "مخيم الهول", "الحدود السورية"
+];
+
+const IRAQ_IMPACT = [
+  "تأثير على العراق", "ينعكس على العراق", "يهدد العراق", "يمس العراق",
+  "الأجواء العراقية", "الاقتصاد العراقي", "صادرات النفط العراقية",
+  "الملاحة العراقية", "الحدود العراقية", "أمن العراق", "السوق العراقية",
+  "الرحلات إلى العراق", "العلاقات مع العراق"
+];
+
+const PURE_FOREIGN_DOMESTIC = [
+  "حكومة مصر", "مجلس الوزراء المصري", "الرئيس المصري", "القاهرة",
+  "الحكومة الأردنية", "مجلس الوزراء الأردني", "الحكومة السعودية",
+  "مجلس الوزراء السعودي", "الحكومة الإماراتية", "مجلس الوزراء الإماراتي",
+  "الحكومة الكويتية", "الحكومة القطرية", "الحكومة البحرينية"
+];
+
+function routeInternationalArticle(article) {
+  const title = getTitle(article);
+  const body = getBody(article);
+  const text = `${title}\n${body.slice(0, 5000)}`;
+  const titleHasIraq = hasAny(title, IRAQ_CORE);
+  const textHasIraq = hasAny(text, IRAQ_CORE);
+  const economy = hasAny(text, ECONOMY_SIGNALS);
+  const politics = hasAny(text, POLITICS_SIGNALS);
+  const security = hasAny(text, SECURITY_SIGNALS);
+
+  if (textHasIraq) {
+    if (economy) {
+      return { action: "reclassify", category: "economy", reason: "이라크가 핵심 주체이며 금융·교역·투자·에너지·개발 내용이 중심" };
     }
-  };
+    if (politics || (titleHasIraq && hasAny(title, ["يدين", "أدان", "إدانة", "يرفض", "استنكر"]))) {
+      return { action: "reclassify", category: "politics", reason: "이라크 정부·기관의 공식 입장 또는 외교·정책 행위가 중심" };
+    }
+    if (security) {
+      return { action: "reclassify", category: "security", reason: "이라크 내 공격·치안·군사 사건이 중심" };
+    }
+  }
+
+  if (hasAny(text, PURE_FOREIGN_DOMESTIC) && !textHasIraq && !hasAny(text, IRAQ_IMPACT)) {
+    return { action: "exclude", reason: "이라크 연계가 없는 순수 해외 국내 정치·경제 기사" };
+  }
+
+  if (hasAny(text, REGIONAL_HIGH_IMPACT) && (textHasIraq || hasAny(text, IRAQ_IMPACT))) {
+    return { action: "retain", reason: "주변국·국제정세가 이라크 안보·물류·에너지에 미치는 영향이 명확" };
+  }
+
+  return { action: "exclude", reason: "이라크 직접 주체도 아니고 이라크에 대한 간접 영향 근거도 부족" };
 }
 
 const payload = JSON.parse(await fs.readFile(ARTICLES_FILE, "utf8"));
 const articles = Array.isArray(payload.articles) ? payload.articles : [];
 const retained = [];
 const excluded = [];
+const reclassified = [];
 
 for (const article of articles) {
-  if (article.category !== "international") {
+  if (getCategory(article) !== "international") {
     retained.push(article);
     continue;
   }
-  const result = validateInternational(article);
-  if (!result.ok) {
+
+  const result = routeInternationalArticle(article);
+  if (result.action === "exclude") {
     excluded.push({
-      articleId: article.articleId,
-      titleArabic: article.originalTitleArabic,
-      articleUrl: article.articleUrl,
+      articleId: article.articleId || article.article?.articleId || null,
+      titleArabic: getTitle(article),
+      articleUrl: article.articleUrl || article.article?.articleUrl || "",
       reason: result.reason
     });
     continue;
   }
+
+  if (result.action === "reclassify") {
+    const updated = setCategory(article, result.category);
+    retained.push({
+      ...updated,
+      categoryRouting: {
+        from: "international",
+        to: result.category,
+        reason: result.reason,
+        method: "IRAQ_FIRST_RULES"
+      }
+    });
+    reclassified.push({ titleArabic: getTitle(article), to: result.category, reason: result.reason });
+    continue;
+  }
+
   retained.push({
     ...article,
-    internationalContext: result.international,
-    relevanceNote: `이라크 직접 연계 국제정세: ${result.international.type}`
+    internationalContext: {
+      type: "REGIONAL_INDIRECT_IMPACT",
+      classificationMethod: "REGIONAL_IMPACT_RULES"
+    },
+    relevanceNote: result.reason
   });
 }
 
-const internationalArticles = retained.filter((item) => item.category === "international");
-const typeCounts = internationalArticles.reduce((acc, item) => {
-  const key = item.internationalContext?.type || "UNCLASSIFIED";
-  acc[key] = (acc[key] || 0) + 1;
-  return acc;
-}, {});
-
 const categoryCounts = retained.reduce((acc, item) => {
-  acc[item.category] = (acc[item.category] || 0) + 1;
+  const category = getCategory(item);
+  acc[category] = (acc[category] || 0) + 1;
   return acc;
 }, {});
 
@@ -125,20 +186,19 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
   count: retained.length,
   categoryCounts,
   internationalRun: {
-    inputCount: articles.filter((item) => item.category === "international").length,
-    retainedCount: internationalArticles.length,
-    excludedCount: excluded.length,
-    typeCounts
+    inputCount: articles.filter((item) => getCategory(item) === "international").length,
+    retainedInternationalCount: retained.filter((item) => getCategory(item) === "international").length,
+    reclassifiedCount: reclassified.length,
+    excludedCount: excluded.length
   },
   articles: retained
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.0",
+  schemaVersion: "2.0",
   generatedAt: new Date().toISOString(),
-  total: internationalArticles.length,
-  typeCounts,
+  reclassified,
   excluded
 }, null, 2)}\n`, "utf8");
 
-console.log(`[international] retained=${internationalArticles.length}, excluded=${excluded.length}`, typeCounts);
+console.log(`[international-router] reclassified=${reclassified.length}, retained=${retained.filter((item) => getCategory(item) === "international").length}, excluded=${excluded.length}`);
