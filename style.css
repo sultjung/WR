@@ -76,6 +76,14 @@ h1{margin:0;font-size:32px;letter-spacing:-.04em}
 .badge.category-security{background:var(--cat-security-bg);color:var(--cat-security-text);border-color:var(--cat-security-border)}
 .badge.category-international{background:var(--cat-international-bg);color:var(--cat-international-text);border-color:var(--cat-international-border)}
 .badge.category-unknown{background:var(--cat-unknown-bg);color:var(--cat-unknown-text);border-color:var(--cat-unknown-border)}
+.badge.importance-score{background:#20242a;color:#fff;border-color:#20242a;font-variant-numeric:tabular-nums}
+.badge.importance-urgent{background:#7f1d1d;color:#fff;border-color:#7f1d1d}
+.badge.importance-important{background:#fff0ed;color:#b42318;border-color:#f4b9b2}
+.badge.importance-notable{background:#fff7e6;color:#9a6700;border-color:#efd28d}
+.badge.importance-reference{background:#eef6ff;color:#245b8a;border-color:#c9def1}
+.badge.importance-general{background:#f1f3f5;color:#4b5563;border-color:#d8dde3}
+.badge.importance-low{background:#fafafa;color:#8a919b;border-color:#e5e7eb}
+.badge.importance-pending{background:#f7f7f8;color:#6b7280;border-color:#dfe2e6}
 .card-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .card-actions a,.card-actions button{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 13px;border-radius:8px;border:1px solid #d1d5db;background:#fff;color:#343a40;text-decoration:none;font-weight:700;font-size:13px}
 .card-actions .primary{background:var(--orange);border-color:var(--orange);color:white}
