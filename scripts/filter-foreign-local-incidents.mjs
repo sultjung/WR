@@ -43,9 +43,17 @@ const SITE_BOILERPLATE = [
 
 const IRAQ_DIRECT = [
   "الحكومة العراقية", "رئيس الوزراء العراقي", "مجلس الوزراء العراقي", "مجلس النواب العراقي",
-  "وزارة الخارجية العراقية", "وزارة الداخلية العراقية", "القوات العراقية", "الحشد الشعبي",
-  "المليشيات العراقية", "الميليشيات العراقية", "الفصائل العراقية", "بغداد", "داخل العراق",
-  "الحدود العراقية", "الأجواء العراقية", "الهيئة الوطنية للاستثمار", "بسماية", "شركة هانوا"
+  "وزارة الخارجية العراقية", "وزارة الداخلية العراقية", "القوات العراقية", "الجيش العراقي",
+  "الحشد الشعبي", "المليشيات العراقية", "الميليشيات العراقية", "الفصائل العراقية",
+  "بغداد", "داخل العراق", "الحدود العراقية", "الحدود العراقية السورية",
+  "الأجواء العراقية", "الهيئة الوطنية للاستثمار", "بسماية", "شركة هانوا"
+];
+
+const SYRIA_SIGNALS = [
+  "سوريا", "السورية", "السوري", "دمشق", "ريف دمشق", "حلب", "ريف حلب",
+  "حمص", "ريف حمص", "حماة", "ريف حماة", "إدلب", "ريف إدلب", "دير الزور",
+  "الحسكة", "الرقة", "اللاذقية", "طرطوس", "درعا", "السويداء", "القنيطرة",
+  "الجيش السوري", "الحكومة السورية", "الشرطة السورية", "قوات الأمن السورية"
 ];
 
 const EXCLUDED_LOCAL_COUNTRIES = [
@@ -58,12 +66,20 @@ const EXCLUDED_LOCAL_COUNTRIES = [
 ];
 
 const LOCAL_INCIDENT_SIGNALS = [
-  "تفجير انتحاري", "انفجار", "هجوم مسلح", "إطلاق نار", "مقتل", "قتلى", "جريح", "جرحى",
-  "الشرطة", "قوات الأمن", "اعتقال", "إرهابي", "إرهاب", "اشتباكات", "عبوة ناسفة"
+  "تفجير انتحاري", "انفجار", "انفجار لغم", "لغم", "هجوم مسلح", "إطلاق نار",
+  "مقتل", "قتلى", "جريح", "جرحى", "الشرطة", "قوات الأمن", "اعتقال",
+  "إرهابي", "إرهاب", "اشتباكات", "عبوة ناسفة", "حادث", "ضحايا"
+];
+
+const SYRIA_DOMESTIC_SIGNALS = [
+  ...LOCAL_INCIDENT_SIGNALS,
+  "انتخابات", "تعيين", "إقالة", "قرار حكومي", "مجلس الوزراء السوري",
+  "احتجاجات", "مظاهرات", "أزمة معيشية", "أسعار", "مدارس", "مستشفى",
+  "خدمات", "طقس", "زراعة", "حريق", "جريمة"
 ];
 
 const REGIONAL_OR_GLOBAL_LINK = [
-  "العراق", "إيران", "تركيا", "سوريا", "الأردن", "السعودية", "الكويت", "الخليج",
+  "العراق", "إيران", "تركيا", "الأردن", "السعودية", "الكويت", "الخليج",
   "مضيق هرمز", "البحر الأحمر", "باب المندب", "الولايات المتحدة", "إسرائيل", "الأمم المتحدة",
   "العقوبات", "أسعار النفط", "أمن الطاقة", "طرق الشحن", "الملاحة الدولية"
 ];
@@ -79,11 +95,25 @@ function evaluate(article) {
   const title = cleanTitle(rawTitle);
   const lead = getBody(article).slice(0, 2200);
   const primary = `${title}\n${lead}`;
+  const titleAndOpening = `${title}\n${lead.slice(0, 900)}`;
+
+  const iraqDirect = hasAny(primary, IRAQ_DIRECT);
+  const syriaFocused = hasAny(titleAndOpening, SYRIA_SIGNALS);
+  const syriaDomestic = hasAny(primary, SYRIA_DOMESTIC_SIGNALS);
+
+  // 사용 방침: 시리아가 실제 사건 발생지·핵심 주체인 국내 기사는 모두 제외한다.
+  // 단, 이라크 정부·군·국경 등 이라크가 직접 주체인 경우만 유지한다.
+  if (syriaFocused && syriaDomestic && !iraqDirect) {
+    return {
+      exclude: true,
+      reason: "이라크 직접 연계가 없는 시리아 국내 기사",
+      cleanedTitle: title
+    };
+  }
 
   const foreignCountry = EXCLUDED_LOCAL_COUNTRIES.find((term) => hasAny(title, [term]))
     || EXCLUDED_LOCAL_COUNTRIES.find((term) => hasAny(lead.slice(0, 800), [term]));
   const localIncident = hasAny(primary, LOCAL_INCIDENT_SIGNALS);
-  const iraqDirect = hasAny(primary, IRAQ_DIRECT);
   const regionalOrGlobal = hasAny(primary, REGIONAL_OR_GLOBAL_LINK);
 
   if (foreignCountry && localIncident && !iraqDirect && !regionalOrGlobal) {
@@ -129,7 +159,7 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
   count: retained.length,
   categoryCounts,
   foreignLocalIncidentFilter: {
-    method: "FOREIGN_LOCAL_INCIDENT_EXCLUSION_V1",
+    method: "FOREIGN_LOCAL_INCIDENT_EXCLUSION_V2_SYRIA",
     inputCount: articles.length,
     excludedCount: excluded.length
   },
@@ -137,9 +167,9 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.0",
+  schemaVersion: "2.0",
   generatedAt: new Date().toISOString(),
   excluded
 }, null, 2)}\n`, "utf8");
 
-console.log(`[foreign-local-filter] retained=${retained.length}, excluded=${excluded.length}`);
+console.log(`[foreign-local-filter] retained=${retained.length}, excluded=${excluded.length}, method=V2_SYRIA`);
