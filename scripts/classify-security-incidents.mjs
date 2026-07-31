@@ -20,42 +20,65 @@ function hasAny(text = "", terms = []) {
   const normalized = normalizeArabic(text);
   return terms.some((term) => normalized.includes(normalizeArabic(term)));
 }
-function firstMatched(text = "", terms = []) { return terms.find((term) => hasAny(text, [term])) || ""; }
+function firstMatched(text = "", terms = []) {
+  return terms.find((term) => hasAny(text, [term])) || "";
+}
 function getCategory(article = {}) { return article.analysis?.category || article.category || ""; }
 function getTitle(article = {}) { return article.article?.originalTitleArabic || article.originalTitleArabic || ""; }
 function getBody(article = {}) { return article.article?.originalTextArabic || article.originalTextArabic || ""; }
 function getUrl(article = {}) { return article.article?.articleUrl || article.articleUrl || ""; }
 
-const IRAQ_ANCHORS = [
-  "العراق", "العراقي", "العراقية", "بغداد", "نينوى", "الموصل", "الأنبار", "كركوك",
-  "ديالى", "صلاح الدين", "البصرة", "أربيل", "السليمانية", "الحشد الشعبي",
+const SITE_BOILERPLATE = [
+  "آخر الأخبار العاجلة في العراق وكوردستان والعالم",
+  "اخبار العراق وكوردستان والعالم",
+  "أخبار العراق وكوردستان والعالم",
+  "شفق نيوز"
+];
+
+const IRAQ_LOCATIONS = [
+  "العراق", "داخل العراق", "بغداد", "بسماية", "المدائن", "النهروان", "مطار بغداد",
+  "نينوى", "الموصل", "الأنبار", "الرمادي", "الفلوجة", "كركوك", "ديالى", "بعقوبة",
+  "صلاح الدين", "تكريت", "سامراء", "بابل", "الحلة", "كربلاء", "النجف", "البصرة",
+  "ميسان", "العمارة", "ذي قار", "الناصرية", "واسط", "الكوت", "المثنى", "السماوة",
+  "القادسية", "الديوانية", "أربيل", "السليمانية", "دهوك", "حلبجة"
+];
+
+const IRAQ_SECURITY_AUTHORITIES = [
   "القوات الأمنية العراقية", "وزارة الداخلية العراقية", "جهاز مكافحة الإرهاب العراقي",
-  "قيادة العمليات المشتركة", "الشرطة الاتحادية العراقية"
+  "قيادة العمليات المشتركة", "الشرطة الاتحادية العراقية", "الجيش العراقي",
+  "الشرطة العراقية", "الحشد الشعبي", "الأمن الوطني العراقي", "الاستخبارات العراقية"
 ];
-const IRAQI_ARMED_ACTORS = [
-  "المليشيات العراقية", "الميليشيات العراقية", "الفصائل العراقية", "فصائل عراقية",
-  "الحشد الشعبي", "المقاومة الإسلامية في العراق", "كتائب حزب الله", "النجباء",
-  "عصائب أهل الحق", "جماعات عراقية مسلحة"
+
+const FOREIGN_LOCATIONS = [
+  "سوريا", "السوري", "درعا", "حماة", "ريف حماة", "ريف درعا", "دمشق", "حلب", "حمص",
+  "إدلب", "دير الزور", "الحسكة", "الرقة", "اللاذقية", "طرطوس", "السويداء",
+  "لبنان", "الأردن", "تركيا", "إيران", "فلسطين", "غزة", "إسرائيل", "السعودية",
+  "الإمارات", "الكويت", "البحرين", "قطر", "اليمن", "مصر", "ليبيا", "السودان",
+  "باكستان", "أفغانستان", "الهند", "الصومال", "نيجيريا"
 ];
-const FOREIGN_LOCATION_ANCHORS = [
-  "سوريا", "لبنان", "الأردن", "تركيا", "إيران", "فلسطين", "غزة", "إسرائيل",
-  "السعودية", "الخليج", "الإمارات", "الكويت", "البحرين", "قطر", "اليمن",
-  "البحر الأحمر", "باب المندب", "مصر", "ليبيا", "السودان", "تونس", "الجزائر", "المغرب"
-];
+
 const ATTACK_SIGNALS = [
   "هجوم", "هجمات", "هجوم مسلح", "هجوم إرهابي", "ضربة", "ضربات", "قصف", "غارة",
-  "انفجار", "تفجير", "اغتيال", "اشتباك", "إطلاق نار", "استهداف", "صاروخ", "صواريخ",
-  "طائرة مسيرة", "طائرات مسيرة", "مسيّرات", "عبوة ناسفة", "داعش", "خلية إرهابية"
+  "انفجار", "تفجير", "مخلفات حربية", "لغم", "ألغام", "اغتيال", "اشتباك", "إطلاق نار",
+  "استهداف", "صاروخ", "صواريخ", "طائرة مسيرة", "طائرات مسيرة", "مسيّرات",
+  "عبوة ناسفة", "داعش", "خلية إرهابية", "عملية أمنية", "اعتقال إرهابي"
 ];
+
 const NON_INCIDENT_SIGNALS = [
   "فيلم", "مسلسل", "لعبة", "وثائقي", "ذكرى تاريخية", "تحليل تاريخي",
   "إطلاق نار احتفالي", "تدريب عسكري", "وقفة تضامنية سلمية"
 ];
 
+function cleanText(value = "") {
+  let cleaned = String(value);
+  for (const phrase of SITE_BOILERPLATE) cleaned = cleaned.replaceAll(phrase, " ");
+  return cleaned.replace(/\s+/g, " ").trim();
+}
+
 function incidentType(text = "") {
   const rules = [
     ["SUICIDE_BOMBING", "자살폭탄테러", ["تفجير انتحاري", "هجوم انتحاري", "حزام ناسف"]],
-    ["IED", "IED", ["عبوة ناسفة", "انفجار عبوة", "تفكيك عبوة"]],
+    ["IED_MINE", "IED·지뢰", ["عبوة ناسفة", "انفجار عبوة", "لغم", "ألغام", "مخلفات حربية"]],
     ["ASSASSINATION", "암살", ["اغتيال", "محاولة اغتيال"]],
     ["MISSILE_DRONE_ATTACK", "미사일·드론 공격", ["طائرة مسيرة", "طائرات مسيرة", "مسيّرات", "صاروخ", "صواريخ"]],
     ["ARMED_ATTACK", "무장세력공격", ["هجوم", "هجمات", "هجوم مسلح", "ضربة", "قصف", "غارة", "استهداف"]],
@@ -70,34 +93,43 @@ function incidentType(text = "") {
 }
 
 function validateSecurityArticle(article) {
-  const title = getTitle(article);
-  const body = getBody(article);
-  const primaryText = `${title}\n${body.slice(0, 3500)}`;
-  const iraqSignal = firstMatched(primaryText, IRAQ_ANCHORS);
-  const iraqiActor = firstMatched(primaryText, IRAQI_ARMED_ACTORS);
-  const foreignSignal = firstMatched(primaryText, FOREIGN_LOCATION_ANCHORS);
+  const title = cleanText(getTitle(article));
+  const lead = cleanText(getBody(article).slice(0, 3500));
+  const primaryText = `${title}\n${lead}`;
 
-  if (hasAny(primaryText, NON_INCIDENT_SIGNALS)) return { ok: false, reason: "실제 치안사건이 아닌 문화·역사·훈련성 콘텐츠" };
-  if (!hasAny(primaryText, ATTACK_SIGNALS)) return { ok: false, reason: "공격·폭발·미사일·드론·무장행동 신호가 확인되지 않음" };
+  const iraqLocation = firstMatched(primaryText, IRAQ_LOCATIONS);
+  const iraqAuthority = firstMatched(primaryText, IRAQ_SECURITY_AUTHORITIES);
+  const foreignLocation = firstMatched(primaryText, FOREIGN_LOCATIONS);
 
-  // Iraqi armed groups attacking abroad are retained as Iraqi security developments.
-  if (!iraqSignal && !iraqiActor) {
-    return { ok: false, reason: foreignSignal ? `이라크 주체가 없는 해외 치안사건: ${foreignSignal}` : "이라크 장소·기관·무장주체 확인 불가" };
+  if (hasAny(primaryText, NON_INCIDENT_SIGNALS)) {
+    return { ok: false, reason: "실제 치안사건이 아닌 문화·역사·훈련성 콘텐츠" };
+  }
+  if (!hasAny(primaryText, ATTACK_SIGNALS)) {
+    return { ok: false, reason: "공격·폭발·테러·치안 사건 신호가 확인되지 않음" };
+  }
+
+  // 해외 발생지가 확인되면, 제목·도입부에 이라크 발생지가 명확하지 않은 한 제외한다.
+  if (foreignLocation && !iraqLocation) {
+    return { ok: false, reason: `이라크 밖에서 발생한 치안사건 제외: ${foreignLocation}` };
+  }
+
+  // 테러·치안에는 이라크 발생지 또는 이라크 치안기관이 실제 사건 주체로 확인된 기사만 허용한다.
+  if (!iraqLocation && !iraqAuthority) {
+    return { ok: false, reason: "사건 발생지가 이라크로 확인되지 않음" };
   }
 
   const incident = incidentType(primaryText);
-  if (!incident) return { ok: false, reason: "구체적인 치안사건 유형을 확인할 수 없음" };
+  if (!incident) {
+    return { ok: false, reason: "구체적인 치안사건 유형을 확인할 수 없음" };
+  }
 
   return {
     ok: true,
     incident: {
       ...incident,
-      locationSignal: iraqSignal || null,
-      iraqiArmedActor: iraqiActor || null,
-      foreignTargetSignal: foreignSignal || null,
-      classificationMethod: iraqiActor && foreignSignal
-        ? "IRAQI_ACTOR_CROSS_BORDER_SECURITY"
-        : "IRAQ_SECURITY_TITLE_AND_LEAD"
+      locationSignal: iraqLocation || null,
+      authoritySignal: iraqAuthority || null,
+      classificationMethod: "IRAQ_OCCURRENCE_ONLY_V3"
     }
   };
 }
@@ -112,12 +144,23 @@ for (const article of articles) {
     retained.push(article);
     continue;
   }
+
   const result = validateSecurityArticle(article);
   if (!result.ok) {
-    excluded.push({ articleId: article.articleId || article.article?.articleId || null, titleArabic: getTitle(article), articleUrl: getUrl(article), reason: result.reason });
+    excluded.push({
+      articleId: article.articleId || article.article?.articleId || null,
+      titleArabic: getTitle(article),
+      articleUrl: getUrl(article),
+      reason: result.reason
+    });
     continue;
   }
-  retained.push({ ...article, securityIncident: result.incident, relevanceNote: `이라크 안보사건 확인: ${result.incident.labelKo}` });
+
+  retained.push({
+    ...article,
+    securityIncident: result.incident,
+    relevanceNote: `이라크 발생 안보사건 확인: ${result.incident.labelKo}`
+  });
 }
 
 const securityArticles = retained.filter((item) => getCategory(item) === "security");
@@ -142,16 +185,17 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
     retainedCount: securityArticles.length,
     excludedCount: excluded.length,
     typeCounts,
-    method: "IRAQI_ACTOR_SECURITY_V2"
+    method: "IRAQ_OCCURRENCE_ONLY_V3"
   },
   articles: retained
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "2.0",
+  schemaVersion: "3.0",
   generatedAt: new Date().toISOString(),
   total: securityArticles.length,
   typeCounts,
   excluded
 }, null, 2)}\n`, "utf8");
-console.log(`[security] retained=${securityArticles.length}, excluded=${excluded.length}`, typeCounts);
+
+console.log(`[security] retained=${securityArticles.length}, excluded=${excluded.length}, method=IRAQ_OCCURRENCE_ONLY_V3`, typeCounts);
