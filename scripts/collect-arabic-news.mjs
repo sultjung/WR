@@ -236,7 +236,7 @@ const categoryCounts = articles.reduce((acc, article) => {
 }, {});
 
 const payload = {
-  schemaVersion: "2.1",
+  schemaVersion: "1.0",
   generatedAt: new Date().toISOString(),
   lookbackDays: LOOKBACK_DAYS,
   categories: [...ENABLED_CATEGORIES],
