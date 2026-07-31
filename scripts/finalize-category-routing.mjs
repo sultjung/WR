@@ -17,22 +17,19 @@ function normalizeArabic(value = "") {
     .replace(/\s+/g, " ")
     .trim();
 }
-
 function hasAny(text = "", terms = []) {
-  const normalized = normalizeArabic(text);
-  return terms.some((term) => normalized.includes(normalizeArabic(term)));
+  const value = normalizeArabic(text);
+  return terms.some((term) => value.includes(normalizeArabic(term)));
 }
-
 function countAny(text = "", terms = []) {
-  const normalized = normalizeArabic(text);
-  return terms.reduce((sum, term) => sum + (normalized.includes(normalizeArabic(term)) ? 1 : 0), 0);
+  const value = normalizeArabic(text);
+  return terms.reduce((sum, term) => sum + (value.includes(normalizeArabic(term)) ? 1 : 0), 0);
 }
-
 function getTitle(article = {}) {
-  return article.article?.originalTitleArabic || article.originalTitleArabic || article.titleArabic || "";
+  return article.article?.originalTitleArabic || article.originalTitleArabic || article.titleArabic || article.translation?.titleArabic || "";
 }
 function getBody(article = {}) {
-  return article.article?.originalTextArabic || article.originalTextArabic || article.fullTextArabic || "";
+  return article.article?.originalTextArabic || article.originalTextArabic || article.fullTextArabic || article.descriptionArabic || "";
 }
 function getUrl(article = {}) {
   return article.article?.articleUrl || article.articleUrl || article.canonicalUrl || "";
@@ -40,179 +37,162 @@ function getUrl(article = {}) {
 function getCategory(article = {}) {
   return article.analysis?.category || article.category || "";
 }
-function setCategory(article = {}, category, reason) {
-  const next = { ...article, category };
-  next.analysis = {
-    ...(article.analysis && typeof article.analysis === "object" ? article.analysis : {}),
-    category
+function setCategory(article = {}, category, reason, locked = false) {
+  const previous = getCategory(article);
+  return {
+    ...article,
+    category,
+    analysis: {
+      ...(article.analysis && typeof article.analysis === "object" ? article.analysis : {}),
+      category
+    },
+    categoryRouting: {
+      ...(article.categoryRouting && typeof article.categoryRouting === "object" ? article.categoryRouting : {}),
+      from: previous,
+      to: category,
+      reason,
+      locked,
+      method: "FINAL_CATEGORY_ROUTING_V3"
+    }
   };
-  next.categoryRouting = {
-    ...(article.categoryRouting && typeof article.categoryRouting === "object" ? article.categoryRouting : {}),
-    from: getCategory(article),
-    to: category,
-    reason,
-    method: "FINAL_CATEGORY_ROUTING_V2"
-  };
-  return next;
 }
-
-// 기사 하단의 관련기사·메뉴 문구가 분류에 끼어들지 않도록 제목과 도입부만 사용한다.
 function getLead(article = {}) {
-  const body = getBody(article)
+  return getBody(article)
     .replace(/اقرأ ايضا[\s\S]*$/i, " ")
     .replace(/مواضيع ذات صله[\s\S]*$/i, " ")
     .replace(/قد يهمك[\s\S]*$/i, " ")
     .replace(/تابع ايضا[\s\S]*$/i, " ")
     .replace(/إعلان[\s\S]*$/i, " ")
-    .replace(/share-nodes[\s\S]*$/i, " ");
-  return body.slice(0, 1800);
+    .replace(/share-nodes[\s\S]*$/i, " ")
+    .slice(0, 1400);
 }
 
-const IRAQ = [
-  "العراق", "العراقي", "العراقية", "بغداد", "البصرة", "الموصل", "كركوك", "الانبار",
-  "اربيل", "السليمانية", "كربلاء", "النجف", "ديالى", "صلاح الدين", "نينوى", "ذي قار",
-  "ميسان", "واسط", "بابل", "الديوانية", "المثنى", "دهوك"
+const IRAQ_LOCATIONS = [
+  "العراق", "بغداد", "البصرة", "الموصل", "كركوك", "الانبار", "اربيل", "السليمانية",
+  "كربلاء", "النجف", "ديالى", "صلاح الدين", "نينوى", "ذي قار", "ميسان", "واسط",
+  "بابل", "الديوانية", "المثنى", "دهوك", "سامراء", "الفلوجة", "الرمادي"
 ];
 const IRAQ_OFFICIAL = [
-  "رئيس الوزراء", "رئيس مجلس الوزراء", "مجلس الوزراء", "مجلس النواب", "البرلمان",
-  "رئاسة الجمهورية", "وزارة الخارجية", "وزارة المالية", "وزارة التخطيط", "وزارة النفط",
-  "البنك المركزي العراقي", "الحكومة العراقية", "القضاء العراقي", "المحكمة الاتحادية",
-  "الاطار التنسيقي", "هيئة النزاهة", "الهيئة الوطنية للاستثمار"
+  "الحكومة العراقية", "رئيس الوزراء العراقي", "رئيس مجلس الوزراء", "مجلس الوزراء العراقي",
+  "مجلس النواب العراقي", "البرلمان العراقي", "وزارة الخارجية العراقية", "وزارة الداخلية العراقية",
+  "وزارة الدفاع العراقية", "القوات العراقية", "الشرطة العراقية", "القضاء العراقي",
+  "المحكمة الاتحادية", "الاطار التنسيقي", "هيئة النزاهة"
 ];
-const BISMAYAH_STRONG = [
+const BISMAYAH = [
   "بسماية", "بسمايه", "مدينة بسماية", "مدينة بسمايه", "مشروع بسماية", "مشروع بسمايه",
   "مدينة بسماية الجديدة", "هانوا", "شركة هانوا", "hanwha", "bismayah"
 ];
-const NIC_SIGNALS = [
+const NIC = [
   "الهيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "رئيس الهيئة الوطنية للاستثمار",
-  "رئيسا للهيئة الوطنية للاستثمار", "عادل الياسري", "حيدر مكية"
+  "رئيسا للهيئة الوطنية للاستثمار", "رئيس هيئة الاستثمار", "عادل الياسري", "عادل داخل الياسري",
+  "حيدر مكية", "هيئة الاستثمار العراقية"
 ];
-const ECONOMY = [
-  "استثمار", "استثمارات", "مشروع", "مشاريع", "اعمار", "بنى تحتية", "اسكان", "سكني",
-  "مدينة سكنية", "عقد", "عقود", "تمويل", "قرض", "موازنة", "ميزانية", "عجز", "مصرف",
-  "مصارف", "البنك المركزي", "دولار", "تجارة", "تصدير", "استيراد", "نفط", "غاز",
-  "طاقة", "كهرباء", "مطار", "مطارات", "طريق التنمية", "سكك حديد", "ميناء", "جمارك",
-  "تعرفة", "شركة", "شركات", "قطاع خاص", "فرص العمل", "اقتصاد"
+const FOREIGN_TITLE_LOCATIONS = [
+  "سوريا", "درعا", "حماة", "حمص", "حلب", "دمشق", "ادلب", "دير الزور", "اللاذقية",
+  "لبنان", "بيروت", "غزة", "فلسطين", "اسرائيل", "ايران", "طهران", "ايرانشهر",
+  "اليمن", "صنعاء", "السعودية", "مصر", "القاهرة", "الاردن", "الكويت", "قطر",
+  "الامارات", "دبي", "البحرين", "تركيا", "باكستان", "كشمير", "افغانستان", "الهند",
+  "كينيا", "الصومال", "كولومبيا", "المغرب", "تونس", "الجزائر", "السودان"
 ];
-const ECONOMY_ACTIONS = [
-  "وقع", "توقيع", "ابرم", "اتفاق", "اطلق", "افتتح", "تنفيذ", "تطوير", "تمويل",
-  "استثمار", "انشاء", "استكمال", "تخصيص", "رفع العقوبات", "متطلبات الفيدرالي"
-];
-const POLITICS = [
-  "اجتماع", "اجتمع", "التقى", "مباحثات", "زيارة رسمية", "بيان", "ادان", "يدين",
-  "استنكر", "يرفض", "موقف", "قرار", "قرارات", "صوت", "تصويت", "جلسة البرلمان",
-  "مجلس الوزراء", "مجلس النواب", "رئيس الوزراء", "رئيس الجمهورية", "وزير", "تعيين",
-  "تكليف", "اقالة", "استقالة", "انتخابات", "كتلة", "تحالف", "الاطار التنسيقي",
-  "السيادة", "مجلس الامن", "المحكمة الدولية", "علاقات دبلوماسية"
-];
-const SECURITY_INCIDENT = [
+const SECURITY = [
   "انفجار", "عبوة ناسفة", "عبوة متفجرة", "لغم", "هجوم مسلح", "اطلاق نار", "اغتيال",
   "قتل", "مقتل", "اصابة", "اشتباك", "قصف", "غارة", "ضربة جوية", "صاروخ", "صواريخ",
   "طائرة مسيرة", "طائرات مسيرة", "مسيّرة", "مسيّرات", "تفجير انتحاري", "حزام ناسف",
-  "داعش", "ارهابي", "ارهابيين", "خلية ارهابية", "عملية امنية", "اعتقال", "احباط هجوم"
+  "داعش", "ارهابي", "خلية ارهابية", "عملية امنية", "احباط هجوم"
 ];
-const BAGHDAD_PROTEST = [
-  "تظاهرة", "تظاهرات", "مظاهرة", "مظاهرات", "احتجاج", "احتجاجات", "محتجون", "متظاهرون",
-  "اعتصام", "اعتصامات", "قطع الطريق", "اغلاق الطريق", "اغلاق شوارع", "ساحة التحرير"
+const PROTEST = [
+  "تظاهرة", "تظاهرات", "احتجاج", "احتجاجات", "متظاهرون", "محتجون", "اعتصام",
+  "قطع الطريق", "اغلاق الطريق", "ساحة التحرير", "المنطقة الخضراء"
 ];
-const BAGHDAD_LOCATIONS = [
-  "بغداد", "وسط بغداد", "ساحة التحرير", "المنطقة الخضراء", "جسر الجمهورية", "جسر السنك",
-  "شارع الرشيد", "ساحة الطيران", "باب الشرقي", "الكرادة", "الجادرية", "الاعظمية", "الكاظمية"
+const BAGHDAD = [
+  "بغداد", "ساحة التحرير", "المنطقة الخضراء", "جسر الجمهورية", "الكرادة", "الجادرية",
+  "الكاظمية", "الاعظمية", "المنصور", "مدينة الصدر", "الباب الشرقي"
 ];
-const OFFICIAL_RESPONSE = [
-  "يدين", "ادان", "استنكر", "يرفض", "بيان", "اجتماع طارئ", "موقف", "بحث",
-  "مجلس الامن", "المحكمة الدولية", "انتهاك السيادة", "دعا", "طالب", "حذر"
+const ECONOMY = [
+  "استثمار", "استثمارات", "مشروع", "مشاريع", "اعمار", "بنى تحتية", "اسكان", "سكني",
+  "عقد", "عقود", "تمويل", "قرض", "موازنة", "ميزانية", "عجز", "مصرف", "مصارف",
+  "البنك المركزي", "دولار", "تجارة", "تصدير", "استيراد", "نفط", "غاز", "طاقة",
+  "كهرباء", "مطار", "مطارات", "طريق التنمية", "سكك حديد", "ميناء", "جمارك",
+  "شركة", "شركات", "قطاع خاص", "اقتصاد"
+];
+const ECON_ACTION = [
+  "وقع", "توقيع", "ابرم", "اتفاق", "اطلق", "افتتح", "تنفيذ", "تطوير", "تمويل",
+  "استثمار", "انشاء", "استكمال", "تخصيص", "رفع العقوبات"
+];
+const POLITICS = [
+  "اجتماع", "اجتمع", "التقى", "مباحثات", "زيارة رسمية", "بيان", "ادان", "يدين",
+  "استنكر", "يرفض", "موقف", "قرار", "تصويت", "جلسة البرلمان", "مجلس الوزراء",
+  "مجلس النواب", "رئيس الوزراء", "رئيس الجمهورية", "وزير", "تعيين", "تكليف", "اقالة",
+  "استقالة", "انتخابات", "كتلة", "تحالف", "الاطار التنسيقي", "السيادة", "مجلس الامن"
 ];
 const INTERNATIONAL = [
-  "ايران", "اسرائيل", "الولايات المتحدة", "واشنطن", "السعودية", "الخليج", "لبنان",
-  "سوريا", "اليمن", "الحوثي", "البحر الاحمر", "باب المندب", "مضيق هرمز", "الامم المتحدة",
-  "العقوبات الاميركية", "الحرب الاقليمية", "التصعيد الاقليمي", "الملاحة الدولية"
-];
-const FOREIGN_LOCATIONS = [
-  "سوريا", "درعا", "حمص", "حلب", "دمشق", "لبنان", "بيروت", "غزة", "فلسطين", "اسرائيل",
-  "ايران", "طهران", "ايرانشهر", "اليمن", "صنعاء", "السعودية", "مصر", "القاهرة", "الاردن",
-  "عمان", "الكويت", "قطر", "الامارات", "دبي", "البحرين", "تركيا", "باكستان", "كشمير",
-  "كينيا", "الصومال", "كولومبيا", "المغرب", "تونس", "الجزائر", "السودان"
+  "ايران", "اسرائيل", "الولايات المتحدة", "واشنطن", "السعودية", "الخليج", "الحوثي",
+  "البحر الاحمر", "باب المندب", "مضيق هرمز", "الامم المتحدة", "الحرب الاقليمية",
+  "التصعيد الاقليمي", "الملاحة الدولية"
 ];
 const NOISE = [
-  "كرة القدم", "مباراة", "الدوري", "لاعب", "ريال مدريد", "برشلونة", "نتائج المباريات",
-  "مسلسل", "فنان", "ممثلة", "اغنية", "ابراج", "حظك اليوم", "وصفة", "طبخ", "موضة",
-  "اهم عناوين", "اخر الاخبار", "اخبار عاجلة", "ملخص الاخبار", "نشرة الاخبار"
-];
-const LOCAL_INCIDENT = [
-  "انفجار", "قتل", "مقتل", "اصابة", "اطلاق نار", "هجوم", "اغتيال", "حادث", "اشتباك",
-  "عبوة", "لغم", "اعتقال", "سرقة", "سطو"
+  "كرة القدم", "مباراة", "الدوري", "لاعب", "ريال مدريد", "برشلونة", "مسلسل", "فنان",
+  "ممثلة", "اغنية", "ابراج", "حظك اليوم", "وصفة", "طبخ", "موضة", "اهم عناوين",
+  "ملخص الاخبار", "نشرة الاخبار"
 ];
 
 function classify(article) {
   const title = getTitle(article);
   const lead = getLead(article);
-  const titleLead = `${title}\n${lead}`;
-  const titleNorm = normalizeArabic(title);
+  const text = `${title}\n${lead}`;
+  const current = getCategory(article);
 
-  if (!titleNorm || titleNorm.length < 10) {
+  if (!normalizeArabic(title) || normalizeArabic(title).length < 10) {
     return { action: "exclude", reason: "제목 정보 부족" };
   }
-
   if (hasAny(title, NOISE)) {
-    return { action: "exclude", reason: "스포츠·연예·생활정보 또는 뉴스목록형 제목" };
+    return { action: "exclude", reason: "스포츠·연예·생활정보 또는 뉴스목록형 기사" };
   }
 
-  const iraqInTitle = hasAny(title, IRAQ);
-  const iraqCore = iraqInTitle || hasAny(titleLead, IRAQ_OFFICIAL) || countAny(titleLead, IRAQ) >= 2;
-  const bismayahStrong = hasAny(titleLead, BISMAYAH_STRONG);
-  const nicRelevant = hasAny(titleLead, NIC_SIGNALS);
-  const securityIncident = hasAny(titleLead, SECURITY_INCIDENT);
-  const baghdadProtest = hasAny(titleLead, BAGHDAD_PROTEST) && hasAny(titleLead, BAGHDAD_LOCATIONS);
-  const officialResponse = hasAny(titleLead, OFFICIAL_RESPONSE) && hasAny(titleLead, IRAQ_OFFICIAL);
-  const economyScore = countAny(titleLead, ECONOMY);
-  const economyCore = economyScore >= 2 || (economyScore >= 1 && hasAny(titleLead, ECONOMY_ACTIONS));
-  const politicsCore = hasAny(titleLead, POLITICS) && (iraqCore || hasAny(titleLead, IRAQ_OFFICIAL));
-  const internationalCore = hasAny(titleLead, INTERNATIONAL);
-  const foreignLocalIncident = hasAny(titleLead, FOREIGN_LOCATIONS)
-    && hasAny(titleLead, LOCAL_INCIDENT)
-    && !iraqInTitle
-    && !hasAny(titleLead, IRAQ_OFFICIAL)
-    && countAny(titleLead, IRAQ) === 0;
-
-  if (foreignLocalIncident) {
-    return { action: "exclude", reason: "이라크와 무관한 해외 현지 사건" };
+  // 제목에 해외 발생지가 명시된 현지 사건은 사이트 소개문구에 العراق가 있어도 무조건 제외한다.
+  const foreignIncidentInTitle = hasAny(title, FOREIGN_TITLE_LOCATIONS) && hasAny(title, SECURITY);
+  const explicitIraqConnectionInTitle = hasAny(title, IRAQ_LOCATIONS) || hasAny(title, IRAQ_OFFICIAL);
+  if (foreignIncidentInTitle && !explicitIraqConnectionInTitle) {
+    return { action: "exclude", reason: "제목상 이라크 밖에서 발생한 테러·치안 사건" };
   }
 
-  // 비스마야·한화 직접 언급 및 NIC 핵심 인사는 다른 모든 카테고리보다 우선한다.
-  if (bismayahStrong || nicRelevant) {
-    return { action: "category", category: "bismayah", reason: "비스마야·한화·국가투자위원회 직접 관련" };
+  // 기존 수집 키워드·카테고리까지 포함해 NIC/Bismayah 기사를 가장 먼저 잠근다.
+  const nicOrBismayah = hasAny(text, [...BISMAYAH, ...NIC])
+    || current === "bismayah"
+    || String(article.keywordId || "").includes("bismayah")
+    || String(article.keywordId || "").includes("nic");
+  if (nicOrBismayah) {
+    return { action: "category", category: "bismayah", reason: "비스마야·한화·NIC 직접 관련", locked: true };
   }
 
-  // 바그다드에서 실제로 발생한 시위·집회·도로통제는 현장 치안 영향이 있으므로 치안으로 분류한다.
+  const iraqInTitle = hasAny(title, IRAQ_LOCATIONS) || hasAny(title, IRAQ_OFFICIAL);
+  const iraqInLead = hasAny(lead, IRAQ_OFFICIAL) || countAny(lead, IRAQ_LOCATIONS) >= 2;
+  const iraqCore = iraqInTitle || iraqInLead;
+  const baghdadProtest = hasAny(text, PROTEST) && hasAny(text, BAGHDAD);
+  const economyScore = countAny(text, ECONOMY);
+  const economyCore = economyScore >= 2 || (economyScore >= 1 && hasAny(text, ECON_ACTION));
+  const politicalAction = hasAny(text, POLITICS) && (iraqCore || hasAny(text, IRAQ_OFFICIAL));
+  const actualSecurity = hasAny(title, SECURITY) || (hasAny(lead.slice(0, 700), SECURITY) && iraqCore);
+
   if (baghdadProtest) {
-    return { action: "category", category: "security", reason: "바그다드 내 시위·집회·도로통제 등 현장 치안 상황" };
+    return { action: "category", category: "security", reason: "바그다드에서 실제 발생한 시위·집회·도로통제" };
   }
-
-  // 공격 자체가 아니라 정부·정당의 성명·회의·외교대응이 핵심이면 정치권이다.
-  if (officialResponse || politicsCore) {
+  if (politicalAction && !hasAny(title, SECURITY)) {
     return { action: "category", category: "politics", reason: "이라크 정부·의회·정당의 결정·회의·공식 대응" };
   }
-
-  // 경제·건설 신호는 위기·제재·공격 단어가 섞여도 경제 중심성이 강하면 우선한다.
   if (iraqCore && economyCore) {
     return { action: "category", category: "economy", reason: "이라크 투자·건설·금융·예산·에너지 중심" };
   }
-
-  // 테러·치안은 이라크가 사건 발생지 또는 직접 당사자이며 실제 사건 동사가 있을 때만 허용한다.
-  if (iraqCore && securityIncident) {
-    return { action: "category", category: "security", reason: "이라크 내 실제 공격·폭발·암살·치안 사건" };
+  if (iraqCore && actualSecurity) {
+    return { action: "category", category: "security", reason: "이라크 내 실제 테러·폭발·암살·치안 사건" };
   }
-
   if (iraqCore) {
     return { action: "category", category: "politics", reason: "이라크 국가기관·정치권이 핵심 주체" };
   }
-
-  if (internationalCore) {
-    return { action: "category", category: "international", reason: "이라크가 핵심 주체가 아닌 주변국·국제 정세" };
+  if (hasAny(text, INTERNATIONAL)) {
+    return { action: "category", category: "international", reason: "이라크가 핵심 주체가 아닌 주요 국제정세" };
   }
-
-  return { action: "exclude", reason: "이라크·비스마야·회사·주요 국제정세 연계 부족" };
+  return { action: "exclude", reason: "이라크·비스마야·NIC·주요 국제정세 연계 부족" };
 }
 
 const payload = JSON.parse(await fs.readFile(ARTICLES_FILE, "utf8"));
@@ -233,9 +213,8 @@ for (const article of articles) {
     });
     continue;
   }
-
   const previous = getCategory(article);
-  const next = setCategory(article, result.category, result.reason);
+  const next = setCategory(article, result.category, result.reason, Boolean(result.locked));
   retained.push(next);
   if (previous !== result.category) {
     changed.push({
@@ -253,27 +232,12 @@ const categoryCounts = retained.reduce((counts, article) => {
   counts[category] = (counts[category] || 0) + 1;
   return counts;
 }, {});
-
-const output = {
-  ...payload,
-  generatedAt: new Date().toISOString(),
-  count: retained.length,
-  categoryCounts,
-  articles: retained
-};
-
+const generatedAt = new Date().toISOString();
+const output = { ...payload, generatedAt, count: retained.length, categoryCounts, articles: retained };
 await fs.writeFile(ARTICLES_FILE, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "2.0",
-  generatedAt: output.generatedAt,
-  before: articles.length,
-  retained: retained.length,
-  excludedCount: excluded.length,
-  changedCount: changed.length,
-  categoryCounts,
-  changed,
-  excluded
+  schemaVersion: "3.0", generatedAt, before: articles.length, retained: retained.length,
+  excludedCount: excluded.length, changedCount: changed.length, categoryCounts, changed, excluded
 }, null, 2)}\n`, "utf8");
-
-console.log(`[category-finalize] before=${articles.length} retained=${retained.length} excluded=${excluded.length} changed=${changed.length}`);
-console.log(`[category-finalize] counts=${JSON.stringify(categoryCounts)}`);
+console.log(`[category-finalize-v3] before=${articles.length} retained=${retained.length} excluded=${excluded.length} changed=${changed.length}`);
+console.log(`[category-finalize-v3] counts=${JSON.stringify(categoryCounts)}`);
