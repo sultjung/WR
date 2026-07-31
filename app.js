@@ -24,19 +24,23 @@
   const arTitle=(article)=>article.article?.originalTitleArabic||article.originalTitleArabic||"";
   const preview=(article)=>article.translation?.previewKo||article.translation?.fullTextKo||article.previewKo||"한국어 번역이 아직 생성되지 않았습니다.";
   const importanceOf=(article)=>{
-    const stored=article.importance||article.analysis?.importance;
-    const score=Number(stored?.score??article.analysis?.importanceScore);
-    if(!Number.isFinite(score)) return {score:null,levelKo:"평가 대기",level:"PENDING"};
-    const normalized=Math.max(0,Math.min(100,Math.round(score)));
-    const levelKo=stored?.levelKo||(normalized>=90?"긴급":normalized>=80?"중요":normalized>=70?"주목":normalized>=60?"참고":normalized>=40?"일반":"낮음");
-    const level=stored?.level||(normalized>=90?"URGENT":normalized>=80?"IMPORTANT":normalized>=70?"NOTABLE":normalized>=60?"REFERENCE":normalized>=40?"GENERAL":"LOW");
-    return {score:normalized,levelKo,level};
+    const stored=article.importance||article.analysis?.importance||article.article?.importance;
+    const score=Number(stored?.score??stored?.finalScore??stored?.ruleScore??article.analysis?.importanceScore??article.importanceScore);
+    if(!Number.isFinite(score)) return {score:null};
+    return {score:Math.max(0,Math.min(100,Math.round(score)))};
   };
   const representatives=()=>state.articles.filter((article)=>article.eventGroup?.isRepresentative!==false);
   const toInputDate=(date)=>{const year=date.getFullYear();const month=String(date.getMonth()+1).padStart(2,"0");const day=String(date.getDate()).padStart(2,"0");return `${year}-${month}-${day}`;};
   const defaultDateRange=()=>{const end=new Date();const start=new Date(end);start.setDate(start.getDate()-13);return {start:toInputDate(start),end:toInputDate(end)};};
   const dateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"날짜 미확인":new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(date);};
   function setDefaultDateRange(){const range=defaultDateRange();$("startDate").value=range.start;$("endDate").value=range.end;}
+  function importanceMatches(score,filter){
+    if(filter==="all") return true;
+    if(filter==="pending") return score===null;
+    if(score===null) return false;
+    const [min,max]=filter.split("-").map(Number);
+    return score>=min&&score<=max;
+  }
   function updateCounts(){
     const items=filteredArticles(false);
     $("countAll").textContent=items.length;
@@ -65,6 +69,7 @@
     const endTime=endValue?new Date(`${endValue}T23:59:59.999`).getTime():null;
     const sourceFilter=$("sourceFilter").value;
     const translationFilter=$("translationFilter").value;
+    const importanceFilter=$("importanceFilter").value;
     const sortOrder=$("sortOrder").value;
     const query=$("searchInput").value.trim().toLowerCase();
     return representatives().filter((article)=>{
@@ -77,6 +82,7 @@
       if(sourceFilter==="ready"&&!contentReady(article)) return false;
       if(sourceFilter==="failed"&&contentReady(article)) return false;
       if(translationFilter!=="all"&&translationStatus(article)!==translationFilter) return false;
+      if(!importanceMatches(importanceOf(article).score,importanceFilter)) return false;
       if(query){
         const group=state.groups.get(article.eventGroup?.groupId);
         const groupSources=(group?.sources||[]).map((item)=>item.sourceArabic).join(" ");
@@ -88,7 +94,6 @@
   }
   function categoryLabel(category){return {bismayah:"비스마야",politics:"정치권 동향",economy:"경제·건설",security:"테러·치안",international:"국제사회"}[category]||"미분류";}
   function categoryBadgeClass(category){return ["bismayah","politics","economy","security","international"].includes(category)?`category-${category}`:"category-unknown";}
-  function importanceBadgeClass(level){return `importance-${String(level||"PENDING").toLowerCase()}`;}
   function relatedSourcesHtml(article){
     const group=state.groups.get(article.eventGroup?.groupId);
     const sources=(group?.sources||[]).filter((item)=>item.articleUrl);
@@ -104,7 +109,7 @@
     list.innerHTML=items.map((article)=>{
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article);
       const duplicateCount=Number(article.eventGroup?.duplicateCount||0);
-      const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}</span><span class="badge ${escapeHtml(importanceBadgeClass(importance.level))}">${escapeHtml(importance.levelKo)}</span>`;
+      const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}점</span>`;
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button">${selected?"선택됨":"보고서 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
@@ -130,11 +135,12 @@
     apply();
   }
   document.querySelectorAll(".summary-card").forEach((button)=>button.addEventListener("click",()=>{state.filter=button.dataset.filter;document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));apply();}));
-  ["startDate","endDate","sortOrder","sourceFilter","translationFilter"].forEach((id)=>$(id).addEventListener("change",apply));
+  ["startDate","endDate","sortOrder","importanceFilter","sourceFilter","translationFilter"].forEach((id)=>$(id).addEventListener("change",apply));
   $("searchInput").addEventListener("input",apply);
   $("resetFilters").addEventListener("click",()=>{
     setDefaultDateRange();
     $("sortOrder").value="importance-desc";
+    $("importanceFilter").value="all";
     $("sourceFilter").value="all";
     $("translationFilter").value="all";
     $("searchInput").value="";
