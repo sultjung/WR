@@ -34,17 +34,17 @@
     </section>
 
     <section class="toolbar" aria-label="기사 필터">
-      <label>보고기간
-        <select id="periodFilter">
-          <option value="7">최근 7일</option>
-          <option value="14" selected>최근 14일</option>
-          <option value="30">최근 30일</option>
-          <option value="all">전체</option>
-        </select>
+      <label>시작일
+        <input id="startDate" type="date">
+      </label>
+      <label>종료일
+        <input id="endDate" type="date">
       </label>
       <label>정렬
         <select id="sortOrder">
-          <option value="newest" selected>최신순</option>
+          <option value="importance-desc" selected>중요도 높은순</option>
+          <option value="importance-asc">중요도 낮은순</option>
+          <option value="newest">최신순</option>
           <option value="oldest">오래된순</option>
         </select>
       </label>
