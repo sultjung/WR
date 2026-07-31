@@ -1,0 +1,7 @@
+.badge.importance-score{font-variant-numeric:tabular-nums;font-size:13px;font-weight:900}
+.badge.importance-score.importance-tier-low{background:#fff7f0;color:#a64b0b;border-color:#ffd8bd}
+.badge.importance-score.importance-tier-40{background:#ffeadb;color:#a84608;border-color:#ffc499}
+.badge.importance-score.importance-tier-60{background:#ffd3b5;color:#963b04;border-color:#f8a66d}
+.badge.importance-score.importance-tier-70{background:#f9a768;color:#6f2a00;border-color:#ed8740}
+.badge.importance-score.importance-tier-80{background:#f37321;color:#fff;border-color:#d85f13}
+.badge.importance-score.importance-tier-90{background:#c94f08;color:#fff;border-color:#a83e00;box-shadow:0 0 0 2px rgba(243,115,33,.12)}
