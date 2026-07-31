@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T01:30:02.490Z",
-  "groupCount": 285,
+  "generatedAt": "2026-07-31T01:45:28.998Z",
+  "groupCount": 294,
   "duplicateGroupCount": 10,
   "duplicateArticleCount": 11,
   "matches": [
@@ -67,6 +67,26 @@
     }
   ],
   "groups": [
+    {
+      "groupId": "event-2iO3maWiNXtnZtqN0A",
+      "category": "politics",
+      "representativeArticleId": "discovery-IIhKV4kgZChxentrT9kjHt7G",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-31T01:00:03.000Z",
+      "publishedTo": "2026-07-31T01:00:03.000Z",
+      "memberArticleIds": [
+        "discovery-IIhKV4kgZChxentrT9kjHt7G"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-IIhKV4kgZChxentrT9kjHt7G",
+          "sourceArabic": "Elnashra",
+          "articleUrl": "https://www.elnashra.com/news/show/1793168/%D8%AE%D8%B7%D8%A9-%D9%86%D8%B2%D8%B9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A3%D9%81%D8%B6%D9%84-%D9%84%D8%A8%D9%86%D8%A7%D9%86!",
+          "publishedAt": "2026-07-31T01:00:03.000Z"
+        }
+      ]
+    },
     {
       "groupId": "event-PiLQE-M8JvtrDWffR-",
       "category": "politics",
@@ -169,7 +189,7 @@
     },
     {
       "groupId": "event-7aoTj3iMmK9dXrevDI",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-QLhfQcK5Zdgr77upXnWtizHB",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -189,7 +209,7 @@
     },
     {
       "groupId": "event-GZF3ZHOefeSLsjP0Uj",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-BtuaJa0Frlbgw0IBCn1n7JAE",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -249,7 +269,7 @@
     },
     {
       "groupId": "event-jdv25sRxhWdZnLzevS",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-E5X1pdEqdqtgVE2MrE95xW0i",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -536,7 +556,7 @@
     },
     {
       "groupId": "event-ZzZvJK5OCITO5xlHoI",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-z0twn--tryZ1iM4nh1UjqKPT",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -676,7 +696,7 @@
     },
     {
       "groupId": "event-KK3G8D-QbyfSnEAiUY",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-ar09VwNwW-Zf6OUxOSKQTrG0",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -736,7 +756,7 @@
     },
     {
       "groupId": "event-8q0z2xP1t8D5NtkX-L",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-8RZzJA17inUXteIGJF9Zj1eg",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -811,6 +831,26 @@
           "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/politics/2026/7/29/%D9%85%D9%86-%D9%8A%D8%B7%D9%84%D9%82-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A",
           "publishedAt": "2026-07-29T13:02:32.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-uumu1UiGm9M6TC7lsB",
+      "category": "economy",
+      "representativeArticleId": "discovery-iHjkH--pBm7agn-otgvRkadz",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-29T11:23:49.000Z",
+      "publishedTo": "2026-07-29T11:23:49.000Z",
+      "memberArticleIds": [
+        "discovery-iHjkH--pBm7agn-otgvRkadz"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-iHjkH--pBm7agn-otgvRkadz",
+          "sourceArabic": "Masrawy",
+          "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/29/3025003/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%AA%D8%AD%D8%B0%D8%B1-%D8%B1%D8%B9%D8%A7%D9%8A%D8%A7%D9%87%D8%A7-%D9%85%D9%86-%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%AA%D8%AA%D9%88%D9%82%D8%B9-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D8%AC%D9%88%D8%A7%D8%A1",
+          "publishedAt": "2026-07-29T11:23:49.000Z"
         }
       ]
     },
@@ -943,7 +983,7 @@
     },
     {
       "groupId": "event-CdX5-2IlHTh6tIHO3f",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-6SeDHKlOxeZgFpY_XeHp0-km",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1023,7 +1063,7 @@
     },
     {
       "groupId": "event-2v656Tp3RLX2cH-xJP",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-HmPn06g1NyPChY7oe3I9kygN",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1043,7 +1083,7 @@
     },
     {
       "groupId": "event-Ht6w_kM9dHKFmH0BBN",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-dYOoNkhD4Q1ghYGTi2wfGQqC",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1063,7 +1103,7 @@
     },
     {
       "groupId": "event-W97tsLhwV9UgksZ510",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-GY5Yu2eqFB_RNb5hlXRaVRu5",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1103,7 +1143,7 @@
     },
     {
       "groupId": "event-1HcyzxmmrSAs1m3dhN",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-XiKtVN_-metD7lIjjrHqltUR",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1183,7 +1223,7 @@
     },
     {
       "groupId": "event-DXyNBk_1FyBLxjrloc",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-OgHhxwcX66MaMVrgwNL8zhfs",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1243,7 +1283,7 @@
     },
     {
       "groupId": "event-zEr6_MRyCHuBoJ-bXQ",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Vh2Ndc-S-nHvl5ck-H6RlKJk",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1263,7 +1303,7 @@
     },
     {
       "groupId": "event-zWSbyQ-wO0grJjV_iL",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Pr2JtL2T6XdIkm65QspisuvM",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1283,7 +1323,7 @@
     },
     {
       "groupId": "event-pee8BXseCEnx0t5ZKg",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery--lyyn57sgiQC3JjUZmBO8ySq",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1323,7 +1363,7 @@
     },
     {
       "groupId": "event-jmP_04bjXyM7NSHnEA",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Hjb5Jdwm8NkiS5SIgqH-kAve",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1543,7 +1583,7 @@
     },
     {
       "groupId": "event-Vj9-a8DbT9VWG482g_",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1583,7 +1623,7 @@
     },
     {
       "groupId": "event-p6_bALo7lOtQIFkssK",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-WMnEnCBreO8dizktSAzZBRBP",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1682,6 +1722,26 @@
       ]
     },
     {
+      "groupId": "event-UoR1OqfSFNB0lVtOfC",
+      "category": "economy",
+      "representativeArticleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-28T07:38:22.000Z",
+      "publishedTo": "2026-07-28T07:38:22.000Z",
+      "memberArticleIds": [
+        "discovery-32IAj5kF6AaybzC9ecnzqGPs"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
+          "sourceArabic": "المسلة الحدث كما حدث",
+          "articleUrl": "https://almasalah.com/archives/139350",
+          "publishedAt": "2026-07-28T07:38:22.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-PREnDBwO_boN_75YxT",
       "category": "politics",
       "representativeArticleId": "discovery-BmVmXT__CqykRQJI_cBrJBpb",
@@ -1703,7 +1763,7 @@
     },
     {
       "groupId": "event-vsNSSfnH3TFU0a_kIf",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-C7scpG2xw75p4Wx43k7TjEIR",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1755,7 +1815,7 @@
       "sources": [
         {
           "articleId": "discovery-tBAU7Ki9pYYF4_kiXVQxFi3y",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%AD%D8%B1%D9%83-%D9%84%D8%A7%D8%AD%D8%AA%D9%88/",
           "publishedAt": "2026-07-28T06:27:25.000Z"
         }
@@ -1842,7 +1902,7 @@
       "sources": [
         {
           "articleId": "discovery-l6VSwY-0zRImU2Im3ooDs-Ns",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D9%8A%D8%B3%D8%A7%D9%86%D8%AF-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%81%D9%8A-%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A5%D8%B5%D9%84%D8%A7%D8%AD-%D9%88/",
           "publishedAt": "2026-07-27T21:30:36.000Z"
         }
@@ -1870,7 +1930,7 @@
     },
     {
       "groupId": "event-rc4wyP4THpiRsyhgWM",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-u4WNUV2A-Rb1ys_2IxVHfTnV",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1910,7 +1970,7 @@
     },
     {
       "groupId": "event-UHV1mKokftIJXlzNzL",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-IB-ann-wJHOpAtjAtRKKEbtW",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1930,7 +1990,7 @@
     },
     {
       "groupId": "event-Q0X5w-eGGG5FuaVxic",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Zom3bpe4ym5l1XTlZ7XErKB4",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1950,7 +2010,7 @@
     },
     {
       "groupId": "event-tju7OWAtvHAbzqni22",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-GmwImNLDIEf1SYzHe3aziMtl",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -1970,7 +2030,7 @@
     },
     {
       "groupId": "event-9VysXL1-Z4kIvODD8p",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-9Iv9EShki6y0M_MRrfOwPCsn",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2009,6 +2069,26 @@
       ]
     },
     {
+      "groupId": "event-MglZg2qocGjNIeTPEc",
+      "category": "politics",
+      "representativeArticleId": "discovery-wpbDXoFeb5sLgrJiTyTUBews",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-27T18:42:00.000Z",
+      "publishedTo": "2026-07-27T18:42:00.000Z",
+      "memberArticleIds": [
+        "discovery-wpbDXoFeb5sLgrJiTyTUBews"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-wpbDXoFeb5sLgrJiTyTUBews",
+          "sourceArabic": "تطبيق نبض",
+          "articleUrl": "https://nabdapp.com/t/175887928",
+          "publishedAt": "2026-07-27T18:42:00.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-NBMgRpofts3b7N4-2A",
       "category": "politics",
       "representativeArticleId": "discovery-jph_A4UpKrsAE6IfjW2-vG3U",
@@ -2030,7 +2110,7 @@
     },
     {
       "groupId": "event-ST9f578thshmehnTP_",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-MBlRbafH1GqJvVvDBCZkV_Pm",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2070,7 +2150,7 @@
     },
     {
       "groupId": "event-KQRmRWVuhel5Lu5DEo",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-AxPmeLMD9VmustrKnd4tHOMr",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2090,7 +2170,7 @@
     },
     {
       "groupId": "event-SQxPpUEcUPt6EvMldN",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-LkfSj0Ci1XZE9Pcmlmmz_j38",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2209,7 +2289,7 @@
       "sources": [
         {
           "articleId": "discovery-QAh18d0BJ22OLLtD3Y3pFBCx",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D9%8A%D9%81%D8%AA%D8%AD-%D9%85%D9%84%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D9%84%D9%83%D8%A6%D8%A9-%D9%81/",
           "publishedAt": "2026-07-27T07:00:14.000Z"
         }
@@ -2237,7 +2317,7 @@
     },
     {
       "groupId": "event-GironeNUvspcpgQscF",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-hgRljDZ0W5JpQOdamp5ckVDs",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2538,7 +2618,7 @@
     },
     {
       "groupId": "event-pV3qlvXkKevzR_vEn4",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-geqBpKImUrJ5Ncf76yuvF8er",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2550,7 +2630,7 @@
       "sources": [
         {
           "articleId": "discovery-geqBpKImUrJ5Ncf76yuvF8er",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D9%84%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%B9-%D8%B4%D8%B1%D9%88%D8%B7%D8%A7-%D8%B5%D8%A7%D8%B1%D9%85%D8%A9-%D9%84/",
           "publishedAt": "2026-07-26T06:43:56.000Z"
         }
@@ -2678,7 +2758,7 @@
     },
     {
       "groupId": "event-tGQy4rOGXjHFZMZpcX",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-f10qcwKCPiInBPKoaWF7OxFa",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2738,7 +2818,7 @@
     },
     {
       "groupId": "event-CoIDoaO9sOP1hcvwFK",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-en0zZ3tWtWnXx_rWBZ-OxPob",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2753,6 +2833,26 @@
           "sourceArabic": "middle-east-online.com",
           "articleUrl": "https://middle-east-online.com/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%A8%D8%AD%D8%AB%D8%A7%D9%86-%D8%B9%D9%86-%D8%B5%D9%8A%D8%BA%D8%A9-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%84%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1-%D9%86%D9%81%D8%B7-%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86",
           "publishedAt": "2026-07-25T19:09:56.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-N0SzadpgY4PvhVHIfl",
+      "category": "economy",
+      "representativeArticleId": "discovery-Qrxp5Cb43Js_fWVQaFpp3zAu",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-25T18:40:06.000Z",
+      "publishedTo": "2026-07-25T18:40:06.000Z",
+      "memberArticleIds": [
+        "discovery-Qrxp5Cb43Js_fWVQaFpp3zAu"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-Qrxp5Cb43Js_fWVQaFpp3zAu",
+          "sourceArabic": "Masrawy",
+          "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/25/3023144/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%B9%D9%89-%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%85%D9%86-%D9%88%D8%B1%D9%82%D8%A9-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2-",
+          "publishedAt": "2026-07-25T18:40:06.000Z"
         }
       ]
     },
@@ -2818,7 +2918,7 @@
     },
     {
       "groupId": "event-mIp2tN21CaV_bda9GX",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-raycBoddQLVsqlOffXzz46Sh",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2830,7 +2930,7 @@
       "sources": [
         {
           "articleId": "discovery-raycBoddQLVsqlOffXzz46Sh",
-          "sourceArabic": "اليوم السابع",
+          "sourceArabic": "youm7.com",
           "articleUrl": "https://www.youm7.com/story/2026/7/25/%D9%87%D9%84-%D9%86%D8%AD%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D9%85%D8%B9-%D8%AD%D8%B1%D8%A8-%D9%84%D8%A7-%D9%8A%D9%85%D9%83%D9%86-%D9%88%D9%82%D9%81%D9%87%D8%A7/7492554",
           "publishedAt": "2026-07-25T12:40:00.000Z"
         }
@@ -2858,7 +2958,7 @@
     },
     {
       "groupId": "event-APN8X3kNRhhRoUuLov",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-wpr621Wjj9K7YEo0RGdzcoZe",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2918,7 +3018,7 @@
     },
     {
       "groupId": "event-2T9epQHo4x9N-Gh5J0",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-vlxvbyHxqxKTTlSfQGK_wZsq",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -2978,7 +3078,7 @@
     },
     {
       "groupId": "event-M1pjKeaTM7HLiXMx8j",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-YI-s-j4K9XAvTxTT5Zf4KZMB",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3010,7 +3110,7 @@
       "sources": [
         {
           "articleId": "discovery-kuimmYy-bzbY9tb3QBDHjBkc",
-          "sourceArabic": "عكاظ",
+          "sourceArabic": "okaz.com.sa",
           "articleUrl": "https://www.okaz.com.sa/local/saudi-arabia/2258439",
           "publishedAt": "2026-07-24T16:14:00.000Z"
         }
@@ -3098,7 +3198,7 @@
     },
     {
       "groupId": "event-MfukY88_UyoYFsfGfU",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-3u4oZJRpyTH56C0VovxknAS-",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3118,7 +3218,7 @@
     },
     {
       "groupId": "event-LVweUHklcab5Fko2iX",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-1I4LWElIB7DkCPRT-WlLoGXO",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3138,7 +3238,7 @@
     },
     {
       "groupId": "event-qgn9KBrojH2ot2yczn",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-5kJuDsvrSYe1P7YlyPSci_9b",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3198,7 +3298,7 @@
     },
     {
       "groupId": "event-kLB16vQQ4beqWq0up-",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-J8RlsHy6OuIvpuwc58FPrhsG",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3377,8 +3477,28 @@
       ]
     },
     {
+      "groupId": "event-IZH05d1CXB2r95YLtN",
+      "category": "economy",
+      "representativeArticleId": "discovery-QFD5CoScvuSixtIVE_DiX20L",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-23T01:37:03.000Z",
+      "publishedTo": "2026-07-23T01:37:03.000Z",
+      "memberArticleIds": [
+        "discovery-QFD5CoScvuSixtIVE_DiX20L"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-QFD5CoScvuSixtIVE_DiX20L",
+          "sourceArabic": "vietnam.vn",
+          "articleUrl": "https://www.vietnam.vn/ar/kenh-dao-suez-co-the-giup-chau-a-vuot-qua-khung-hoang-dau-mo",
+          "publishedAt": "2026-07-23T01:37:03.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-sMitmD2o-8c0Xww0VN",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Pl5fOU8xOAb7dtlAAr-2Ep9D",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3393,26 +3513,6 @@
           "sourceArabic": "التلفزيون العربي",
           "articleUrl": "https://www.alaraby.com/news/%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-40-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
           "publishedAt": "2026-07-22T19:25:09.000Z"
-        }
-      ]
-    },
-    {
-      "groupId": "event-ZMxssR7Wv1iyVw1CyI",
-      "category": "international",
-      "representativeArticleId": "discovery-Q-IENYNHpY8e2JUuZVEeA0XO",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-22T18:36:33.000Z",
-      "publishedTo": "2026-07-22T18:36:33.000Z",
-      "memberArticleIds": [
-        "discovery-Q-IENYNHpY8e2JUuZVEeA0XO"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-Q-IENYNHpY8e2JUuZVEeA0XO",
-          "sourceArabic": "الحرة",
-          "articleUrl": "https://alhurra.com/28452",
-          "publishedAt": "2026-07-22T18:36:33.000Z"
         }
       ]
     },
@@ -3650,7 +3750,7 @@
       "sources": [
         {
           "articleId": "discovery-a5StnUp8hVQhf6Q6BnFO6mWb",
-          "sourceArabic": "اليوم السابع",
+          "sourceArabic": "youm7.com",
           "articleUrl": "https://www.youm7.com/story/2026/7/22/%D8%A7%D9%84%D8%B9%D8%AB%D9%88%D8%B1-%D8%B9%D9%84%D9%89-60-%D9%83%D9%8A%D9%84%D9%88-%D8%B0%D9%87%D8%A8-%D9%85%D8%AF%D9%81%D9%88%D9%86%D8%A9-%D9%81%D9%89-%D8%AC%D8%B1%D8%A7%D8%AC-%D9%85%D9%86%D8%B2%D9%84-%D8%A3%D8%AD%D8%AF/7489309",
           "publishedAt": "2026-07-22T07:00:00.000Z"
         }
@@ -3672,6 +3772,26 @@
           "articleId": "discovery-RRUvfYTFwCkfcRxKd6DOzOQ1",
           "sourceArabic": "سكاي نيوز عربية",
           "articleUrl": "https://www.skynewsarabia.com/middle-east/1882160-%D8%A7%D9%84%D8%A8%D9%86%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%AA%D9%8A%D8%A9-%D9%84%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D9%86%D9%81%D9%84%D8%AA-%D8%A8%D8%AF%D8%A3-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AA%D9%81%D9%83%D9%8A%D9%83",
+          "publishedAt": "2026-07-22T07:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-jbg7VDwektka7OBz3j",
+      "category": "economy",
+      "representativeArticleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-22T07:00:00.000Z",
+      "publishedTo": "2026-07-22T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-TxZF7SfBN3s90AtQijX1suJD"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
+          "sourceArabic": "العين الإخبارية",
+          "articleUrl": "https://al-ain.com/article/iraq-iran-war-factional-weapons-red-lines",
           "publishedAt": "2026-07-22T07:00:00.000Z"
         }
       ]
@@ -3758,7 +3878,7 @@
     },
     {
       "groupId": "event-5jbqOu7MweQmoSnjy0",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-mEABSmA911QPOWtzJYyjk8h5",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -3898,7 +4018,7 @@
     },
     {
       "groupId": "event-AxPUcxxjAO3E25zXPl",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-o--kWa0v7ZZgcxX9z4KzW2jn",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4058,7 +4178,7 @@
     },
     {
       "groupId": "event-BuukM8ORTe4TEodNyQ",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4118,7 +4238,7 @@
     },
     {
       "groupId": "event-4STk_3_1sY7oDqobXP",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-ATDYLRq3f6wsIK9CMSbpoMC6",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4258,7 +4378,7 @@
     },
     {
       "groupId": "event-SrvlsGxj7mZlS7mqRz",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-D8DzD3NjTyhRM0jR_htkI_0P",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4298,7 +4418,7 @@
     },
     {
       "groupId": "event-vsgE2VBmNZ6wqlC3bY",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-kPWnXAPE80u8TKW478uBjJXo",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4338,7 +4458,7 @@
     },
     {
       "groupId": "event-WxMYvttvj7HbgDJzj9",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-andCjGWzSBqGcGMTmPoeueSQ",
       "memberCount": 2,
       "duplicateCount": 1,
@@ -4385,7 +4505,7 @@
     },
     {
       "groupId": "event-zFskJ-qqn1HhxCNFFB",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-4pLRtFIpeWocSsATc_gktuf0",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4485,7 +4605,7 @@
     },
     {
       "groupId": "event-OG-mwEI6AIns0O9Ve7",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-6l2GFK3Xkzp0RFRZK3WrELzy",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4505,7 +4625,7 @@
     },
     {
       "groupId": "event-2fAnYv2s78x6jvmdIZ",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-y3iIaXJEcpWw7HlEywKijf7z",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4564,6 +4684,46 @@
       ]
     },
     {
+      "groupId": "event-8kd_0wiHuf0AMLgLRS",
+      "category": "economy",
+      "representativeArticleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-19T07:00:00.000Z",
+      "publishedTo": "2026-07-19T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+          "sourceArabic": "صدى البلد",
+          "articleUrl": "https://www.elbalad.news/7043972",
+          "publishedAt": "2026-07-19T07:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-dMt0ssxAx7mx9AvDKz",
+      "category": "economy",
+      "representativeArticleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-19T07:00:00.000Z",
+      "publishedTo": "2026-07-19T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-KF_9R_-WTgJv9ym601_WJSDq"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+          "sourceArabic": "سانا",
+          "articleUrl": "https://sana.sy/economy/2531474/",
+          "publishedAt": "2026-07-19T07:00:00.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-kxgCy1FFgDJYeFBuy1",
       "category": "economy",
       "representativeArticleId": "discovery-QmAeNnscJKXEdQBjNyePNP89",
@@ -4585,7 +4745,7 @@
     },
     {
       "groupId": "event-tDcP5R66caxNh7bMRZ",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-MHY6CxYod9Fo1VBqZqfOCQhI",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4625,7 +4785,7 @@
     },
     {
       "groupId": "event-tt27PXeJOkxypgiQd2",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-2xbXK3SRuqLxxbT0WgfL6JCj",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4685,7 +4845,7 @@
     },
     {
       "groupId": "event-s7ANh9cFQxEzVYPbkM",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-YxetvQXMhwl_X8nHRWhTQB_X",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4705,7 +4865,7 @@
     },
     {
       "groupId": "event-HnbpnQavV9R8-sc0vQ",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-DtTyvzdilSi96pqGYVPvKNDM",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4765,7 +4925,7 @@
     },
     {
       "groupId": "event-1tXe7Io0MHvW5Fek7m",
-      "category": "international",
+      "category": "politics",
       "representativeArticleId": "discovery-YzZZSuOztUObaRGrXe0Z4btQ",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4804,6 +4964,26 @@
       ]
     },
     {
+      "groupId": "event-LuFy_IfBfnvvFpEF2k",
+      "category": "economy",
+      "representativeArticleId": "discovery-JXAR0Ulmu_UNFsuBGfA-YkYx",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-17T16:36:05.000Z",
+      "publishedTo": "2026-07-17T16:36:05.000Z",
+      "memberArticleIds": [
+        "discovery-JXAR0Ulmu_UNFsuBGfA-YkYx"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-JXAR0Ulmu_UNFsuBGfA-YkYx",
+          "sourceArabic": "الحرة",
+          "articleUrl": "https://alhurra.com/27613",
+          "publishedAt": "2026-07-17T16:36:05.000Z"
+        }
+      ]
+    },
+    {
       "groupId": "event-u0Xey8zIq6inQ9xqaD",
       "category": "politics",
       "representativeArticleId": "discovery-nMstDIPUS9CYmra7QkP_NhqF",
@@ -4825,7 +5005,7 @@
     },
     {
       "groupId": "event--y3V8xoAj_EDweIFpu",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-e6Sq-uFMFxkJM3B1MLOIsuzO",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4845,7 +5025,7 @@
     },
     {
       "groupId": "event-e_frT88Da0lD5MD1wE",
-      "category": "international",
+      "category": "politics",
       "representativeArticleId": "discovery-q-24dR9fOm7xNgXs2sGDZjQZ",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4885,7 +5065,7 @@
     },
     {
       "groupId": "event-8EiMTTz-qBLVktR_bn",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Tc6QZwZORkim8Cnc6ad7EW9r",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4905,7 +5085,7 @@
     },
     {
       "groupId": "event-Ni6vLa8VwiIhVkRJyx",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-VDrkVdvIDIQSsW_YIagGE_cs",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4925,7 +5105,7 @@
     },
     {
       "groupId": "event-jCfjWDP2I3HBHTTTJE",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-vkHp3armvTYcapIwcLibg1TZ",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -4945,7 +5125,7 @@
     },
     {
       "groupId": "event-h_woAo7Q_l8xUPCTQP",
-      "category": "international",
+      "category": "politics",
       "representativeArticleId": "discovery-5fYIAPp06XrRuGmd8go-xRLP",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5005,7 +5185,7 @@
     },
     {
       "groupId": "event-hxQBzPwxhYgijjUqDk",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-Bpzconjqe_TpWqaRFzPXZdni",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5092,7 +5272,7 @@
     },
     {
       "groupId": "event-hg9gsP60olbk4OP3fm",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-z9IIpISNQ78BppD3wjFcmvdu",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5112,7 +5292,7 @@
     },
     {
       "groupId": "event-C5Bt4-rzc6gDUvh79u",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-QirCF1qQ3qe4IEW4j65jmOU3",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5132,7 +5312,7 @@
     },
     {
       "groupId": "event-4ScWo__vX8RdFR0kX2",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-pSAP9Y47r6QydNtIAfy_WKtB",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5352,7 +5532,7 @@
     },
     {
       "groupId": "event-asmDgAwvYzjO1mtyVs",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-SmIuflqXXzcZMV6dGuSkJC6a",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5392,7 +5572,7 @@
     },
     {
       "groupId": "event--XwY_xHsyC5U7qrYEr",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-1qAa5eu4PMMb9m358HGT3c-J",
       "memberCount": 2,
       "duplicateCount": 1,
@@ -5419,7 +5599,7 @@
     },
     {
       "groupId": "event-xfVOVlRb8Zo91AOQgv",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-jrRJ_r1NT0tlCh0a1R4MLGtt",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5479,7 +5659,7 @@
     },
     {
       "groupId": "event-QIvg4ew51C65so52LH",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-bvDpzBqMQrNxtQMuNDDwrmlK",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5499,7 +5679,7 @@
     },
     {
       "groupId": "event-_hD1oin1xwXivKvdTp",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-d5pmRx1bRDT8kjO__j5cDBnW",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5519,7 +5699,7 @@
     },
     {
       "groupId": "event-uAbZo_V4MYXgPV6lDP",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-hU9t35ZdL6VWxzgSltVp4fQ7",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5559,7 +5739,7 @@
     },
     {
       "groupId": "event-CzzrXJYfhpEtnPdMnI",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-57AcO0MIYQB47FnCRN7MCoj-",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5599,7 +5779,7 @@
     },
     {
       "groupId": "event-cpFWxyqNP8goRVSyIt",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-KHDIR6TUlE-SONdwOlKwr6OM",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5619,7 +5799,7 @@
     },
     {
       "groupId": "event-pzdcYWphuTnC39fmWj",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-njM17hxHd0fb5xGazE1DoB4g",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5639,7 +5819,7 @@
     },
     {
       "groupId": "event-9L9vwFsD56AQmsg--o",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-F3wHeFXqgrfDtMk0aNs0V9X2",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5659,7 +5839,7 @@
     },
     {
       "groupId": "event-UDxEJVITfDNU0vnask",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-28EaKBln4sKSK0s6UJCYRLj8",
       "memberCount": 1,
       "duplicateCount": 0,
@@ -5826,7 +6006,7 @@
     },
     {
       "groupId": "event-zb51w1nI4UJbF-dnr5",
-      "category": "international",
+      "category": "economy",
       "representativeArticleId": "discovery-ycAnNSH2AaiPXhCwo6UoRJsT",
       "memberCount": 1,
       "duplicateCount": 0,
