@@ -66,17 +66,32 @@ jobs:
           ARTICLE_RETENTION_DAYS: "30"
         run: npm run collect:content
 
-      - name: Classify Iraqi security incidents
-        run: npm run collect:security
-
-      - name: Filter Iraq-linked international developments
-        run: npm run collect:international
+      - name: Apply strict Iraq category gate
+        run: npm run collect:strict-gate
 
       - name: Group duplicate reports into events
         env:
           EVENT_GROUP_MAX_HOURS: "48"
           EVENT_GROUP_MIN_SCORE: "0.58"
         run: npm run collect:events
+
+      - name: Normalize fields for importance scoring
+        run: npm run collect:importance-prepare
+
+      - name: Calculate category rule scores
+        run: npm run collect:importance
+
+      - name: Reapply final category gate
+        run: npm run collect:strict-gate
+
+      - name: Evaluate Bismayah business importance
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          IMPORTANCE_AI_ENABLED: "true"
+          IMPORTANCE_MODEL: "gpt-5.4-mini"
+          IMPORTANCE_AI_BATCH_SIZE: "8"
+          IMPORTANCE_AI_MAX_ARTICLES: "40"
+        run: npm run collect:importance-business
 
       - name: Validate collected data
         run: npm run validate:data
@@ -90,6 +105,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git commit -m "Collect, classify, and group Iraqi Arabic news"
+          git commit -m "Collect, classify, and score Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
