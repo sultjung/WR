@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T04:21:18.536Z",
-  "groupCount": 313,
+  "generatedAt": "2026-07-31T04:36:44.295Z",
+  "groupCount": 314,
   "duplicateGroupCount": 10,
   "duplicateArticleCount": 11,
   "matches": [
@@ -18,7 +18,7 @@
     {
       "left": "discovery-3ZDhvrAaKptmfPZimpRSQnio",
       "right": "discovery-uwvDfJ6ZwfupbOHIrq_COSW8",
-      "score": 0.7848
+      "score": 0.7857
     },
     {
       "left": "discovery-TULrWMFL0-bB0LQGhVoHro3u",
@@ -481,7 +481,7 @@
       "sources": [
         {
           "articleId": "discovery-s_LdAHMR3C0bNdHrFECfENNN",
-          "sourceArabic": "شبكة 964",
+          "sourceArabic": "964media.com",
           "articleUrl": "https://964media.com/703281/",
           "publishedAt": "2026-07-30T05:55:13.000Z"
         }
@@ -501,7 +501,7 @@
       "sources": [
         {
           "articleId": "discovery-ymXJYJwcSeF5ku4gYlp6hDAa",
-          "sourceArabic": "اسلام تايمز",
+          "sourceArabic": "islamtimes.com",
           "articleUrl": "https://www.islamtimes.com/ar/news/1295989/%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%8A%D8%AF%D9%8A%D9%86-%D8%A7%D9%84%D8%B9%D8%AF%D9%88%D8%A7%D9%86-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D8%A7%D9%84%D8%B0%D9%8A-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9",
           "publishedAt": "2026-07-30T05:39:29.000Z"
         }
@@ -568,7 +568,7 @@
       "sources": [
         {
           "articleId": "discovery-mAIG5-7OT1iszEz3Hc0cFKWF",
-          "sourceArabic": "aliraqnews.com",
+          "sourceArabic": "شبكة اخبار العراق",
           "articleUrl": "https://aliraqnews.com/%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D9%85%D9%88%D9%82%D9%81%D9%87-%D9%85%D9%86-%D8%A7%D9%84%D8%B6%D8%B1%D8%A8%D8%A7%D8%AA/",
           "publishedAt": "2026-07-29T22:16:48.000Z"
         }
@@ -588,7 +588,7 @@
       "sources": [
         {
           "articleId": "discovery-NkiboJlLZvpH6FOAWPuxcytT",
-          "sourceArabic": "aliraqnews.com",
+          "sourceArabic": "شبكة اخبار العراق",
           "articleUrl": "https://aliraqnews.com/%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%85%D8%AA%D8%B3%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%8A%D8%B9%D9%82%D8%AF-%D8%A7%D8%AC%D8%AA/",
           "publishedAt": "2026-07-29T22:06:11.000Z"
         }
@@ -668,7 +668,7 @@
       "sources": [
         {
           "articleId": "discovery-KMFQLbYAowxWhSO0Zh6Eoa_x",
-          "sourceArabic": "شبكة 964",
+          "sourceArabic": "964media.com",
           "articleUrl": "https://964media.com/703191/",
           "publishedAt": "2026-07-29T18:12:37.000Z"
         }
@@ -688,7 +688,7 @@
       "sources": [
         {
           "articleId": "discovery-52o0VQLudQYL_p9tRT2qBe0D",
-          "sourceArabic": "masrawy.com",
+          "sourceArabic": "Masrawy",
           "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/29/3025221/%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AC%D8%A7%D9%87%D8%B2%D9%88%D9%86-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D8%AC%D9%85%D9%8A%D8%B9-%D8%AA%D9%88%D8%AC%D9%8A%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A3%D9%8A-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA",
           "publishedAt": "2026-07-29T18:12:04.000Z"
         }
@@ -748,7 +748,7 @@
       "sources": [
         {
           "articleId": "discovery-cGMpBjNU-ikqwOASpjmxw1Iw",
-          "sourceArabic": "al-ain.com",
+          "sourceArabic": "العين الإخبارية",
           "articleUrl": "https://al-ain.com/article/iraq-weapons-factions-strikes-militias",
           "publishedAt": "2026-07-29T17:52:02.000Z"
         }
@@ -848,7 +848,7 @@
       "sources": [
         {
           "articleId": "discovery-8RZzJA17inUXteIGJF9Zj1eg",
-          "sourceArabic": "arabic.cnn.com",
+          "sourceArabic": "CNN Arabic",
           "articleUrl": "https://arabic.cnn.com/middle-east/article/2026/07/29/iraq-issues-statement-condemning-saudi-american-strike-on-popular-mobilization-forces",
           "publishedAt": "2026-07-29T14:44:33.000Z"
         }
@@ -928,7 +928,7 @@
       "sources": [
         {
           "articleId": "discovery-iHjkH--pBm7agn-otgvRkadz",
-          "sourceArabic": "masrawy.com",
+          "sourceArabic": "Masrawy",
           "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/29/3025003/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%AA%D8%AD%D8%B0%D8%B1-%D8%B1%D8%B9%D8%A7%D9%8A%D8%A7%D9%87%D8%A7-%D9%85%D9%86-%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%AA%D8%AA%D9%88%D9%82%D8%B9-%D8%A5%D8%BA%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D8%AC%D9%88%D8%A7%D8%A1",
           "publishedAt": "2026-07-29T11:23:49.000Z"
         }
@@ -1135,7 +1135,7 @@
       "sources": [
         {
           "articleId": "discovery-DiChAWi9qJphQuA9toMa6CcG",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46067",
           "publishedAt": "2026-07-29T03:41:38.000Z"
         }
@@ -1222,21 +1222,21 @@
       ]
     },
     {
-      "groupId": "event-1HcyzxmmrSAs1m3dhN",
+      "groupId": "event-jItgfy2Z_jtHc5Bmaw",
       "category": "economy",
-      "representativeArticleId": "discovery-XiKtVN_-metD7lIjjrHqltUR",
+      "representativeArticleId": "discovery-d2NSMpuriZN9NTG-JMAKIYlX",
       "memberCount": 1,
       "duplicateCount": 0,
       "publishedFrom": "2026-07-28T19:24:45.000Z",
       "publishedTo": "2026-07-28T19:24:45.000Z",
       "memberArticleIds": [
-        "discovery-XiKtVN_-metD7lIjjrHqltUR"
+        "discovery-d2NSMpuriZN9NTG-JMAKIYlX"
       ],
       "sources": [
         {
-          "articleId": "discovery-XiKtVN_-metD7lIjjrHqltUR",
+          "articleId": "discovery-d2NSMpuriZN9NTG-JMAKIYlX",
           "sourceArabic": "التلفزيون العربي",
-          "articleUrl": "https://www.alaraby.com/news/%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D8%B9%D9%84%D9%86%D9%88%D9%86-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%86%D8%A7%D9%82%D9%84%D8%A9-%D9%86%D9%81%D8%B7-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%AA%D8%B9%D8%AA%D8%B1%D8%B6-%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA?amp",
+          "articleUrl": "https://www.alaraby.com/news/%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D9%88%D9%86-%D9%8A%D8%B9%D9%84%D9%86%D9%88%D9%86-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D9%86%D8%A7%D9%82%D9%84%D8%A9-%D9%86%D9%81%D8%B7-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%AA%D8%B9%D8%AA%D8%B1%D8%B6-%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA",
           "publishedAt": "2026-07-28T19:24:45.000Z"
         }
       ]
@@ -1475,7 +1475,7 @@
       "sources": [
         {
           "articleId": "discovery-Hjb5Jdwm8NkiS5SIgqH-kAve",
-          "sourceArabic": "الشرق الأوسط",
+          "sourceArabic": "aawsat.com",
           "articleUrl": "https://aawsat.com/%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%82%D8%B6%D8%A7%D9%8A%D8%A7/5300964-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%A8%D8%B7-%D8%B3%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D8%B9%D9%84%D9%89-%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D9%87%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AD%D9%84%D9%8A%D9%81-%D9%84%D8%A7-%D9%82%D8%A7%D8%A6%D8%AF",
           "publishedAt": "2026-07-28T15:32:19.000Z"
         }
@@ -1695,7 +1695,7 @@
       "sources": [
         {
           "articleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
-          "sourceArabic": "attaqa.net",
+          "sourceArabic": "الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
           "articleUrl": "https://attaqa.net/2026/07/28/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B3%D8%AC%D9%84-526-%D8%A3%D9%84%D9%81-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%8A/",
           "publishedAt": "2026-07-28T10:32:50.000Z"
         }
@@ -1835,7 +1835,7 @@
       "sources": [
         {
           "articleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
-          "sourceArabic": "المسلة الحدث كما حدث",
+          "sourceArabic": "almasalah.com",
           "articleUrl": "https://almasalah.com/archives/139350",
           "publishedAt": "2026-07-28T07:38:22.000Z"
         }
@@ -1935,7 +1935,7 @@
       "sources": [
         {
           "articleId": "discovery-tBAU7Ki9pYYF4_kiXVQxFi3y",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D9%88%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%AD%D8%B1%D9%83-%D9%84%D8%A7%D8%AD%D8%AA%D9%88/",
           "publishedAt": "2026-07-28T06:27:25.000Z"
         }
@@ -1955,7 +1955,7 @@
       "sources": [
         {
           "articleId": "discovery-6edgcpu7XNkJQaVAIcJRtBCx",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46046",
           "publishedAt": "2026-07-28T05:00:08.000Z"
         }
@@ -1976,13 +1976,13 @@
       "sources": [
         {
           "articleId": "discovery-uwvDfJ6ZwfupbOHIrq_COSW8",
-          "sourceArabic": "masrawy.com",
+          "sourceArabic": "Masrawy",
           "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/28/3024315/%D8%A8%D8%B9%D8%AF-%D9%86%D9%82%D8%A7%D8%B4%D8%A7%D8%AA-%D8%B7%D9%88%D9%8A%D9%84%D8%A9-%D9%88%D9%85%D8%B9%D9%82%D8%AF%D8%A9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D9%88%D8%A7%D9%81%D9%82-%D8%B9%D9%84%D9%89-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A8%D9%8A%D8%AF-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
           "publishedAt": "2026-07-28T00:58:32.000Z"
         },
         {
           "articleId": "discovery-3ZDhvrAaKptmfPZimpRSQnio",
-          "sourceArabic": "elbalad.news",
+          "sourceArabic": "صدى البلد",
           "articleUrl": "https://www.elbalad.news/7053684",
           "publishedAt": "2026-07-28T03:38:00.000Z"
         }
@@ -2022,7 +2022,7 @@
       "sources": [
         {
           "articleId": "discovery-l6VSwY-0zRImU2Im3ooDs-Ns",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D9%8A%D8%B3%D8%A7%D9%86%D8%AF-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%81%D9%8A-%D9%85%D8%B9%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A5%D8%B5%D9%84%D8%A7%D8%AD-%D9%88/",
           "publishedAt": "2026-07-27T21:30:36.000Z"
         }
@@ -2142,7 +2142,7 @@
       "sources": [
         {
           "articleId": "discovery-GmwImNLDIEf1SYzHe3aziMtl",
-          "sourceArabic": "gate.ahram.org.eg",
+          "sourceArabic": "بوابة الأهرام",
           "articleUrl": "https://gate.ahram.org.eg/News/5838384.aspx",
           "publishedAt": "2026-07-27T19:47:00.000Z"
         }
@@ -2429,7 +2429,7 @@
       "sources": [
         {
           "articleId": "discovery-QAh18d0BJ22OLLtD3Y3pFBCx",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D9%8A%D9%81%D8%AA%D8%AD-%D9%85%D9%84%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D9%84%D9%83%D8%A6%D8%A9-%D9%81/",
           "publishedAt": "2026-07-27T07:00:14.000Z"
         }
@@ -2449,7 +2449,7 @@
       "sources": [
         {
           "articleId": "discovery-fGUx9iw8eWsQ-ctHSRXZ5s8Y",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46274",
           "publishedAt": "2026-07-27T02:55:35.000Z"
         }
@@ -2529,7 +2529,7 @@
       "sources": [
         {
           "articleId": "discovery-wv2JdbT5bPyeKNlD4HI7yOEQ",
-          "sourceArabic": "alhurra.com",
+          "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/29373",
           "publishedAt": "2026-07-26T16:06:21.000Z"
         }
@@ -2790,7 +2790,7 @@
       "sources": [
         {
           "articleId": "discovery-k5_E9K_YLapncrG1kp4X2nl_",
-          "sourceArabic": "الوكالة الوطنية العراقية للأنباء| نينا",
+          "sourceArabic": "ninanews.com",
           "articleUrl": "https://ninanews.com/website/News/Details?Key=1307406",
           "publishedAt": "2026-07-26T06:52:52.000Z"
         }
@@ -2810,7 +2810,7 @@
       "sources": [
         {
           "articleId": "discovery-geqBpKImUrJ5Ncf76yuvF8er",
-          "sourceArabic": "وكالة الصحافة المستقلة",
+          "sourceArabic": "mustaqila.com",
           "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%82%D9%84%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%B9-%D8%B4%D8%B1%D9%88%D8%B7%D8%A7-%D8%B5%D8%A7%D8%B1%D9%85%D8%A9-%D9%84/",
           "publishedAt": "2026-07-26T06:43:56.000Z"
         }
@@ -3030,7 +3030,7 @@
       "sources": [
         {
           "articleId": "discovery-Qrxp5Cb43Js_fWVQaFpp3zAu",
-          "sourceArabic": "masrawy.com",
+          "sourceArabic": "Masrawy",
           "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/25/3023144/%D9%83%D9%8A%D9%81-%D8%AA%D8%B3%D8%B9%D9%89-%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D9%84%D8%AA%D8%AC%D8%B1%D9%8A%D8%AF-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%85%D9%86-%D9%88%D8%B1%D9%82%D8%A9-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2-",
           "publishedAt": "2026-07-25T18:40:06.000Z"
         }
@@ -3110,7 +3110,7 @@
       "sources": [
         {
           "articleId": "discovery-raycBoddQLVsqlOffXzz46Sh",
-          "sourceArabic": "youm7.com",
+          "sourceArabic": "اليوم السابع",
           "articleUrl": "https://www.youm7.com/story/2026/7/25/%D9%87%D9%84-%D9%86%D8%AD%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D9%85%D8%B9-%D8%AD%D8%B1%D8%A8-%D9%84%D8%A7-%D9%8A%D9%85%D9%83%D9%86-%D9%88%D9%82%D9%81%D9%87%D8%A7/7492554",
           "publishedAt": "2026-07-25T12:40:00.000Z"
         }
@@ -3133,6 +3133,26 @@
           "sourceArabic": "verify-sy.com",
           "articleUrl": "https://www.verify-sy.com/ar/topic/SecurityIncidents/newsroom/death-of-three-sanitation-work",
           "publishedAt": "2026-07-25T12:39:00.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event-5H04K7gLVH9j4XPP7h",
+      "category": "politics",
+      "representativeArticleId": "discovery-ckUqy3QrHOx6SL4fXKB6GQ-l",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-25T12:31:36.000Z",
+      "publishedTo": "2026-07-25T12:31:36.000Z",
+      "memberArticleIds": [
+        "discovery-ckUqy3QrHOx6SL4fXKB6GQ-l"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-ckUqy3QrHOx6SL4fXKB6GQ-l",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A8%D8%AD%D8%A7%D8%AC%D8%A9-%D9%84%D9%80-100-%D9%84%D9%81-%D8%B9%D9%86%D8%B5%D8%B1-%D9%88%D9%86%D8%B3%D8%B9%D9%89-%D9%84%D8%AA%D8%AE%D8%B5%D9%8A%D8%B5-30-%D9%84%D9%81-%D8%AF%D8%B1%D8%AC%D8%A9-%D8%A8%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D8%AA%D9%82%D8%A8%D8%A9",
+          "publishedAt": "2026-07-25T12:31:36.000Z"
         }
       ]
     },
@@ -3190,7 +3210,7 @@
       "sources": [
         {
           "articleId": "discovery-QlNwQzp5d4dJbVXdV65D8P3a",
-          "sourceArabic": "المسلة الحدث كما حدث",
+          "sourceArabic": "almasalah.com",
           "articleUrl": "https://almasalah.com/archives/139178",
           "publishedAt": "2026-07-24T22:17:34.000Z"
         }
@@ -3210,7 +3230,7 @@
       "sources": [
         {
           "articleId": "discovery-vlxvbyHxqxKTTlSfQGK_wZsq",
-          "sourceArabic": "alhurra.com",
+          "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/29173",
           "publishedAt": "2026-07-24T20:19:12.000Z"
         }
@@ -3330,7 +3350,7 @@
       "sources": [
         {
           "articleId": "discovery-kuimmYy-bzbY9tb3QBDHjBkc",
-          "sourceArabic": "okaz.com.sa",
+          "sourceArabic": "عكاظ",
           "articleUrl": "https://www.okaz.com.sa/local/saudi-arabia/2258439",
           "publishedAt": "2026-07-24T16:14:00.000Z"
         }
@@ -3370,7 +3390,7 @@
       "sources": [
         {
           "articleId": "discovery-Ny3dtH8pEzbrHoG1BKjl4PGF",
-          "sourceArabic": "الشرق الأوسط",
+          "sourceArabic": "aawsat.com",
           "articleUrl": "https://aawsat.com/%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%82%D8%B6%D8%A7%D9%8A%D8%A7/5299640-%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%AF-%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%AD%D8%B2%D8%A7%D8%A8",
           "publishedAt": "2026-07-24T11:59:28.000Z"
         }
@@ -3402,8 +3422,8 @@
       "representativeArticleId": "discovery-iYyFls2dOpsNd3XhbsoTA1cp",
       "memberCount": 1,
       "duplicateCount": 0,
-      "publishedFrom": "2026-07-23T21:39:45.000Z",
-      "publishedTo": "2026-07-23T21:39:45.000Z",
+      "publishedFrom": "2026-07-23T21:45:00.000Z",
+      "publishedTo": "2026-07-23T21:45:00.000Z",
       "memberArticleIds": [
         "discovery-iYyFls2dOpsNd3XhbsoTA1cp"
       ],
@@ -3412,7 +3432,7 @@
           "articleId": "discovery-iYyFls2dOpsNd3XhbsoTA1cp",
           "sourceArabic": "شفق نيوز",
           "articleUrl": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%B3%D8%A7%D9%87%D9%85-%D8%A8%D9%86%D9%82%D9%84-%D8%A7%D9%84%D9%85%D9%86%D9%81%D8%B0%D9%8A%D9%86-%D9%81%D9%8A-%D8%A8%D8%A7%D8%A8%D9%84-%D8%A7%D9%84%D8%B3%D8%AC%D9%86-%D8%A7%D9%84%D9%85%D8%B4%D8%AF%D8%AF-6-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D9%84%D9%85%D8%AF%D8%A7%D9%86-%D8%A8%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D8%BA%D8%AA%D9%8A%D8%A7%D9%84-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%B7-%D8%B6%D8%B1%D8%BA%D8%A7%D9%85-%D9%85%D8%A7%D8%AC%D8%AF",
-          "publishedAt": "2026-07-23T21:39:45.000Z"
+          "publishedAt": "2026-07-23T21:45:00.000Z"
         }
       ]
     },
@@ -3430,7 +3450,7 @@
       "sources": [
         {
           "articleId": "discovery-3u4oZJRpyTH56C0VovxknAS-",
-          "sourceArabic": "alhurra.com",
+          "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/28953",
           "publishedAt": "2026-07-23T21:02:25.000Z"
         }
@@ -3550,7 +3570,7 @@
       "sources": [
         {
           "articleId": "discovery-mZ19gpqn6faqkqlwgtt7Wd9I",
-          "sourceArabic": "bbc.com",
+          "sourceArabic": "BBC",
           "articleUrl": "https://www.bbc.com/arabic/articles/ce97nmrl2xro",
           "publishedAt": "2026-07-23T15:37:37.000Z"
         }
@@ -3750,7 +3770,7 @@
       "sources": [
         {
           "articleId": "discovery-JEC_ZULpucXnPt9y8jYxjtki",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46837",
           "publishedAt": "2026-07-23T04:04:52.000Z"
         }
@@ -3770,7 +3790,7 @@
       "sources": [
         {
           "articleId": "discovery-d_-6Yz38P_XXti7QOCqNC-kM",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/reports/46250",
           "publishedAt": "2026-07-23T03:23:39.000Z"
         }
@@ -3830,7 +3850,7 @@
       "sources": [
         {
           "articleId": "discovery-Q-IENYNHpY8e2JUuZVEeA0XO",
-          "sourceArabic": "alhurra.com",
+          "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/28452",
           "publishedAt": "2026-07-22T18:36:33.000Z"
         }
@@ -4050,7 +4070,7 @@
       "sources": [
         {
           "articleId": "discovery-KbcnKRVxk_QazulSSFRFcrsr",
-          "sourceArabic": "الشرق الأوسط",
+          "sourceArabic": "aawsat.com",
           "articleUrl": "https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5298982-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%81%D8%B6-%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D9%81%D9%8A-%D8%B9%D9%88%D8%A7%D8%B5%D9%85-%D8%A3%D8%AE%D8%B1%D9%89",
           "publishedAt": "2026-07-22T07:00:00.000Z"
         }
@@ -4070,7 +4090,7 @@
       "sources": [
         {
           "articleId": "discovery-a5StnUp8hVQhf6Q6BnFO6mWb",
-          "sourceArabic": "youm7.com",
+          "sourceArabic": "اليوم السابع",
           "articleUrl": "https://www.youm7.com/story/2026/7/22/%D8%A7%D9%84%D8%B9%D8%AB%D9%88%D8%B1-%D8%B9%D9%84%D9%89-60-%D9%83%D9%8A%D9%84%D9%88-%D8%B0%D9%87%D8%A8-%D9%85%D8%AF%D9%81%D9%88%D9%86%D8%A9-%D9%81%D9%89-%D8%AC%D8%B1%D8%A7%D8%AC-%D9%85%D9%86%D8%B2%D9%84-%D8%A3%D8%AD%D8%AF/7489309",
           "publishedAt": "2026-07-22T07:00:00.000Z"
         }
@@ -4110,7 +4130,7 @@
       "sources": [
         {
           "articleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
-          "sourceArabic": "al-ain.com",
+          "sourceArabic": "العين الإخبارية",
           "articleUrl": "https://al-ain.com/article/iraq-iran-war-factional-weapons-red-lines",
           "publishedAt": "2026-07-22T07:00:00.000Z"
         }
@@ -4210,7 +4230,7 @@
       "sources": [
         {
           "articleId": "discovery-mEABSmA911QPOWtzJYyjk8h5",
-          "sourceArabic": "المسلة الحدث كما حدث",
+          "sourceArabic": "almasalah.com",
           "articleUrl": "https://almasalah.com/archives/138981",
           "publishedAt": "2026-07-21T09:26:42.000Z"
         }
@@ -4230,7 +4250,7 @@
       "sources": [
         {
           "articleId": "discovery-Jt45UpimjJxXHz8uFyUnR39p",
-          "sourceArabic": "الشرق الأوسط",
+          "sourceArabic": "aawsat.com",
           "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5298625-%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D8%AA%D9%84%D8%A7%D8%AD%D9%82-%D9%88%D8%B2%D9%8A%D8%B1%D8%A7%D9%8B-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A7%D9%8B-%D9%88%D8%AA%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85",
           "publishedAt": "2026-07-21T07:00:00.000Z"
         }
@@ -4270,7 +4290,7 @@
       "sources": [
         {
           "articleId": "discovery-XyURBiEdM0owQN9cUe6yBOqB",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46811",
           "publishedAt": "2026-07-21T07:00:00.000Z"
         }
@@ -4350,7 +4370,7 @@
       "sources": [
         {
           "articleId": "discovery-o--kWa0v7ZZgcxX9z4KzW2jn",
-          "sourceArabic": "alhurra.com",
+          "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/28290",
           "publishedAt": "2026-07-21T02:36:36.000Z"
         }
@@ -4590,7 +4610,7 @@
       "sources": [
         {
           "articleId": "discovery-ATDYLRq3f6wsIK9CMSbpoMC6",
-          "sourceArabic": "اسلام تايمز",
+          "sourceArabic": "islamtimes.com",
           "articleUrl": "https://www.islamtimes.com/ar/article/1293751/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D8%A7%D9%84%D8%B0%D9%8A-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7",
           "publishedAt": "2026-07-20T07:00:00.000Z"
         }
@@ -4610,7 +4630,7 @@
       "sources": [
         {
           "articleId": "discovery-Qj8Uj75cmtwj4BVNjrMluWE8",
-          "sourceArabic": "al-ain.com",
+          "sourceArabic": "العين الإخبارية",
           "articleUrl": "https://al-ain.com/article/isis-exploit-historic-us-iraq-exit",
           "publishedAt": "2026-07-20T07:00:00.000Z"
         }
@@ -4670,7 +4690,7 @@
       "sources": [
         {
           "articleId": "discovery-udIVOzOS_u2myTf9EP6FYftI",
-          "sourceArabic": "elbalad.news",
+          "sourceArabic": "صدى البلد",
           "articleUrl": "https://www.elbalad.news/7044304",
           "publishedAt": "2026-07-20T07:00:00.000Z"
         }
@@ -4770,7 +4790,7 @@
       "sources": [
         {
           "articleId": "discovery-kPWnXAPE80u8TKW478uBjJXo",
-          "sourceArabic": "annabaa.org",
+          "sourceArabic": "شبكة النبأ المعلوماتية",
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46161",
           "publishedAt": "2026-07-20T00:51:17.000Z"
         }
@@ -4811,7 +4831,7 @@
       "sources": [
         {
           "articleId": "discovery-andCjGWzSBqGcGMTmPoeueSQ",
-          "sourceArabic": "الشرق الأوسط",
+          "sourceArabic": "aawsat.com",
           "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5297679-%D8%B5%D8%B1%D8%A7%D8%B9-%D9%87%D8%B1%D9%85%D8%B2-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9",
           "publishedAt": "2026-07-19T07:00:00.000Z"
         },
@@ -5037,7 +5057,7 @@
       "sources": [
         {
           "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-          "sourceArabic": "elbalad.news",
+          "sourceArabic": "صدى البلد",
           "articleUrl": "https://www.elbalad.news/7043972",
           "publishedAt": "2026-07-19T07:00:00.000Z"
         }
@@ -5317,7 +5337,7 @@
       "sources": [
         {
           "articleId": "discovery-JXAR0Ulmu_UNFsuBGfA-YkYx",
-          "sourceArabic": "alhurra.com",
+          "sourceArabic": "الحرة",
           "articleUrl": "https://alhurra.com/27613",
           "publishedAt": "2026-07-17T16:36:05.000Z"
         }
@@ -5357,7 +5377,7 @@
       "sources": [
         {
           "articleId": "discovery-e6Sq-uFMFxkJM3B1MLOIsuzO",
-          "sourceArabic": "الشرق الأوسط",
+          "sourceArabic": "aawsat.com",
           "articleUrl": "https://aawsat.com/%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82/%D8%AD%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9/5297230-%D9%87%D9%84-%D8%AA%D9%83%D8%B3%D8%B1-%D9%85%D9%82%D8%A7%D9%85%D8%B1%D8%A9-%D8%A7%D9%84%D9%88%D9%82%D8%AA-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D8%AD%D8%B5%D8%A7%D8%B1-%D8%AA%D8%B1%D9%85%D8%A8%D8%9F",
           "publishedAt": "2026-07-17T07:00:00.000Z"
         }
@@ -5477,7 +5497,7 @@
       "sources": [
         {
           "articleId": "discovery-5fYIAPp06XrRuGmd8go-xRLP",
-          "sourceArabic": "alsumaria.tv",
+          "sourceArabic": "Alsumaria",
           "articleUrl": "https://www.alsumaria.tv/news/alsumariaspecial/570484/%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%84%D9%80-%D8%A7%D9%84%D8%B3%D9%88%D9%85%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%85%D8%B3%D8%AA%D8%B9%D8%AF%D8%A9-%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA-%D8%A8%D8%B9%D8%AF-%D8%A7",
           "publishedAt": "2026-07-17T07:00:00.000Z"
         }

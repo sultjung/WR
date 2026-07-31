@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T04:21:15.625Z",
+  "generatedAt": "2026-07-31T04:36:41.489Z",
   "total": 45,
   "typeCounts": {
     "SUICIDE_BOMBING": 10,
@@ -23,6 +23,12 @@
   },
   "excluded": [
     {
+      "articleId": "discovery-XYA4lchV2KH6QzFB2qNKwllO",
+      "titleArabic": "إصابة فلسطيني برصاص الجيش الإسرائيلي شمالي الضفة الغربية",
+      "articleUrl": "https://www.alquds.co.uk/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-28/",
+      "reason": "해외 치안사건 제외: فلسطين"
+    },
+    {
       "articleId": "discovery-FX7r-gbs4h-T7ltiJbc33u_b",
       "titleArabic": "سحلوه واعتدوا عليه.. سطو مسلح على لاعب غاني من ملثمون (فيديو) - 365Scores",
       "articleUrl": "https://www.365scores.com/ar/news/magazine/%D8%B3%D8%AD%D9%84%D9%88%D9%87-%D9%88%D8%A7%D8%B9%D8%AA%D8%AF%D9%88%D8%A7-%D8%B9%D9%84%D9%8A%D9%87-%D8%B3%D8%B7%D9%88-%D9%85%D8%B3%D9%84%D8%AD-%D8%B9%D9%84%D9%89-%D9%84%D8%A7%D8%B9%D8%A8-%D8%BA/",
@@ -39,12 +45,6 @@
       "titleArabic": "من الإدانة إلى القرار السيادي.. هل يحسم العراق ملف الوجود العسكري الأمريكي؟",
       "articleUrl": "https://almaalomah.me/news/139787/report/%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D8%AF%D8%A7%D9%86%D8%A9-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%AF%D9%8A-%D9%87%D9%84-%D9%8A%D8%AD%D8%B3%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D9%84%D9%81-%D8%A7%D9%84%D9%88%D8%AC%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B3",
       "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
-    },
-    {
-      "articleId": "discovery-UM194yzMNXQJl-1VfBcV53aa",
-      "titleArabic": "نتنياهو: لا أستطيع التنبؤ بموعد سقوط النظام الإيراني لكنه سيحدث في نهاية المطاف",
-      "articleUrl": "https://www.iranintl.com/ar/202607304436",
-      "reason": "해외 치안사건 제외: إيران"
     },
     {
       "articleId": "discovery-SkOBpviE9uD56iNv7VuN4l7k",
@@ -83,6 +83,12 @@
       "reason": "해외 치안사건 제외: سوريا"
     },
     {
+      "articleId": "discovery-ynRE53TxW7aYC8Q94fEhdpa1",
+      "titleArabic": "تفكيك خلية لـداعش في ريف دير الزور.. مقتل قيادي واعتقال قائدها واثنين آخرين - اسلام تايمز",
+      "articleUrl": "https://www.islamtimes.com/ar/news/1295918/%D8%AA%D9%81%D9%83%D9%8A%D9%83-%D8%AE%D9%84%D9%8A%D8%A9-%D9%84-%D8%AF%D8%A7%D8%B9%D8%B4-%D9%81%D9%8A-%D8%B1%D9%8A%D9%81-%D8%AF%D9%8A%D8%B1-%D8%A7%D9%84%D8%B2%D9%88%D8%B1-%D9%85%D9%82%D8%AA%D9%84-%D9%82%D9%8A%D8%A7%D8%AF%D9%8A-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-%D9%82%D8%A7%D8%A6%D8%AF%D9%87%D8%A7-%D9%88%D8%A7%D8%AB%D9%86%D9%8A%D9%86-%D8%A2%D8%AE%D8%B1%D9%8A%D9%86",
+      "reason": "해외 치안사건 제외: دير الزور"
+    },
+    {
       "articleId": "discovery-4pMdiy_WvZ1fMaWVVoa1uZGI",
       "titleArabic": "مقتل شخص في إطلاق نار في مخيّم عين الحلوة في جنوب لبنان",
       "articleUrl": "https://www.alquds.co.uk/%D9%85%D9%82%D8%AA%D9%84-%D8%B4%D8%AE%D8%B5-%D9%81%D9%8A-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%AE%D9%8A%D9%91%D9%85-%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%AD%D9%84%D9%88/",
@@ -99,12 +105,6 @@
       "titleArabic": "الرئاسة العراقية: الاعتداء على مقرات الحشد الشعبي انتهاك صارخ للسيادة - قناة العالم الاخبارية",
       "articleUrl": "https://www.alalam.ir/news/7567613/%D8%A7%D9%84%D8%B1%D8%A6%D8%A7%D8%B3%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%B9%D9%84%D9%89-%D9%85%D9%82%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D8%A7%D9%86%D8%AA%D9%87%D8%A7%D9%83-%D8%B5%D8%A7%D8%B1%D8%AE-%D9%84%D9%84%D8%B3%D9%8A",
       "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
-    },
-    {
-      "articleId": "discovery-ddndPDoWTuZehOqZIdioaKxQ",
-      "titleArabic": "الداخلية السورية: القبض على عناصر من تنظيم \"داعش\" الإرهابي خلال عملية أمنية في حلب وريفها",
-      "articleUrl": "https://ninanews.com/website/",
-      "reason": "해외 치안사건 제외: السوري"
     },
     {
       "articleId": "discovery-6SsTEf7qzWswxaOZ0Nvl2oIr",
@@ -149,16 +149,16 @@
       "reason": "해외 치안사건 제외: السوري"
     },
     {
-      "articleId": "discovery-gfKfkThA3mUdlsuOTTQ-rB7G",
-      "titleArabic": "تفاصيل مقتل مواطن سعودي بالرصاص داخل سيارته في جزيرة سانت لوسيا",
-      "articleUrl": "https://al-marsd.com/public/article/260323/%d8%aa%d9%81%d8%a7%d8%b5%d9%8a%d9%84-%d9%85%d9%82%d8%aa%d9%84-%d9%85%d9%88%d8%a7%d8%b7%d9%86-%d8%b3%d8%b9%d9%88%d8%af%d9%8a-%d8%a8%d8%a7%d9%84%d8%b1%d8%b5%d8%a7%d8%b5-%d8%af%d8%a7%d8%ae%d9%84-%d8%b3%d9%8a%d8%a7%d8%b1%d8%aa%d9%87-%d9%81%d9%8a-%d8%ac%d8%b2%d9%8a%d8%b1%d8%a9-%d8%b3%d8%a7%d9%86%d8%aa-%d9%84%d9%88%d8%b3%d9%8a%d8%a7",
-      "reason": "기사 도입부의 사건 발생지가 이라크가 아님: مصر"
-    },
-    {
       "articleId": "discovery-wQZzZcX38ESIVr2iD79QelXl",
       "titleArabic": "سوريا.. القبض على عناصر داعش وضبط أسلحة في حلب",
       "articleUrl": "https://ar.yenisafak.com/world/4128191",
       "reason": "해외 치안사건 제외: سوريا"
+    },
+    {
+      "articleId": "discovery-QlBLmg1BB1LxhLg2mSWQMLY3",
+      "titleArabic": "إصابة فلسطينيين برصاص الاحتلال الإسرائيلي وسط قطاع غزة - صحيفة سويفت نيوز",
+      "articleUrl": "https://swiftnewz.com/archives/732638",
+      "reason": "해외 치안사건 제외: فلسطين"
     },
     {
       "articleId": "discovery-q5gOifhRSRfSGq4GZOauSjci",
@@ -167,10 +167,10 @@
       "reason": "해외 치안사건 제외: إيران"
     },
     {
-      "articleId": "discovery-AlWdy5UDArT_TJU5cQZuhCdz",
-      "titleArabic": "ليلة ثانية من الاحتجاجات العنيفة في لبنان بسبب انهيار الليرة - الوطن",
-      "articleUrl": "https://alwatannews.net/arab/article/879536/%D9%84%D9%8A%D9%84%D8%A9-%D8%AB%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D9%86%D9%8A%D9%81%D8%A9-%D9%81%D9%8A-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A7%D9%86%D9%87%D9%8A%D8%A7%D8%B1-%D8%A7%D9%84%D9%84%D9%8A%D8%B1%D8%A9",
-      "reason": "해외 치안사건 제외: لبنان"
+      "articleId": "discovery-xbfy_BmqofrlLUh6DXi7C7K4",
+      "titleArabic": "سوريا تقفز 36 مرتبة في مؤشر حرية الصحافة 2026 | تأكد",
+      "articleUrl": "https://www.verify-sy.com/ar/topic/regional-global/newsroom/syria-jumps-36-places-in-the-p",
+      "reason": "해외 치안사건 제외: سوريا"
     },
     {
       "articleId": "discovery-glZefID4hsNrb7dhtfouZvXg",
@@ -183,6 +183,12 @@
       "titleArabic": "كيف تعمل خلايا \"داعش\" الكامنة في سوريا؟",
       "articleUrl": "https://www.majalla.com/node/332258/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D9%83%D9%8A%D9%81-%D8%AA%D8%B9%D9%85%D9%84-%D8%AE%D9%84%D8%A7%D9%8A%D8%A7-%D8%AF%D8%A7%D8%B9%D8%B4-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%86%D8%A9-%D9%81%D9%8A-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7%D8%9F",
       "reason": "해외 치안사건 제외: سوريا"
+    },
+    {
+      "articleId": "discovery-Pfx6W1Aj-GSNpZ9uFwHxwVLL",
+      "titleArabic": "الجيش الإسرائيلي يصيب فلسطينيا بالرصاص و6 بالاختناق جنوبي الضفة",
+      "articleUrl": "https://www.alquds.co.uk/%D8%A7%D9%84%D8%AC%D9%8A%D8%B4-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D9%8A%D8%B5%D9%8A%D8%A8-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D8%A7-%D8%A8%D8%A7%D9%84%D8%B1%D8%B5-5/",
+      "reason": "해외 치안사건 제외: فلسطين"
     },
     {
       "articleId": "discovery-X3kLiR4y1LsvNJCTiaeZmWiu",
@@ -227,16 +233,40 @@
       "reason": "기사 도입부의 사건 발생지가 이라크가 아님: غزة"
     },
     {
+      "articleId": "discovery-994OJGUsIGcT7EjUooS8vE-j",
+      "titleArabic": "التلفزيون الإيراني: بحرية الحرس الثوري أطلقت طلقات تحذيرية وأوقفت ست سفن في مضيق هرمز",
+      "articleUrl": "https://www.iranintl.com/ar/202607273217",
+      "reason": "해외 치안사건 제외: إيران"
+    },
+    {
       "articleId": "discovery-FLDpDONB8gfkh6cW57aLHxFd",
       "titleArabic": "هجوم برلين يرفع التأهب الأمني حول فعاليات «مجتمع الميم» في أوروبا",
       "articleUrl": "https://www.alquds.co.uk/%D9%87%D8%AC%D9%88%D9%85-%D8%A8%D8%B1%D9%84%D9%8A%D9%86-%D9%8A%D8%B1%D9%81%D8%B9-%D8%A7%D9%84%D8%AA%D8%A3%D9%87%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D9%86%D9%8A-%D8%AD%D9%88%D9%84-%D9%81%D8%B9%D8%A7%D9%84/",
       "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
+      "articleId": "discovery-mkPEueJ0O9FpxZ1udMpXaiKp",
+      "titleArabic": "نفذه &laquo;داعشي مُرحل من لبنان&raquo;.. خيوط جديدة في هجوم برلين",
+      "articleUrl": "https://al-ain.com/video/germany-attacks/",
+      "reason": "해외 치안사건 제외: لبنان"
+    },
+    {
       "articleId": "discovery-ngyFAq-SAVCW7YPqbachqDdd",
       "titleArabic": "هجوم برلين يعيد شبح الإرهاب إلى ألمانيا.. مطاردة مشتبه به والشرطة تراجع أمن الفعاليات الكبرى",
       "articleUrl": "https://www.alquds.co.uk/%D9%87%D8%AC%D9%88%D9%85-%D8%A8%D8%B1%D9%84%D9%8A%D9%86-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B4%D8%A8%D8%AD-%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8-%D8%A5%D9%84%D9%89-%D8%A3%D9%84%D9%85%D8%A7%D9%86%D9%8A/",
       "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
+    },
+    {
+      "articleId": "discovery-gZLndM56fj69lOI4eY1u0q_j",
+      "titleArabic": "حماس تعقيباً على إحراق مسجدين بالضفة: اعتداء فاشي يتطلب النفير العام",
+      "articleUrl": "https://26sep.net/index.php/global/131889-2trl",
+      "reason": "기사 도입부의 사건 발생지가 이라크가 아님: إيران"
+    },
+    {
+      "articleId": "discovery-InIBxybrpYwGjgNRkvw2NEu7",
+      "titleArabic": "وزير الدفاع الأميركي السابق: ترامب على وشك تصعيد الهجمات ضد إيران",
+      "articleUrl": "https://www.iranintl.com/ar/202607265320",
+      "reason": "해외 치안사건 제외: إيران"
     },
     {
       "articleId": "discovery-uOyw2g9_fS8yPdSPhtG5G8Kt",
@@ -305,6 +335,12 @@
       "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
+      "articleId": "discovery-3hBxvZRws7Su-VietmFtTBKO",
+      "titleArabic": "العراق ينفي تقرير نيويورك تايمز بشأن الوساطة بين إيران وأمريكا",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/24/%D9%86%D9%82%D9%84%D9%87-%D8%B1%D8%A6%D9%8A%D8%B3-%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D8%B1%D9%81%D8%B6",
+      "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
+    },
+    {
       "articleId": "discovery--F8WQNKZz3o_zLRenT8Qdtrs",
       "titleArabic": "مقتل وإصابة 36 شخصاً بينهم عناصر شرطة في تفجير انتحاري شمال غربي باكستان - أخبار الشیعة - ShiaWaves Arabic",
       "articleUrl": "https://shiawaves.com/arabic/news/196300-%D9%85%D9%82%D8%AA%D9%84-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-36-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D8%A8%D9%8A%D9%86%D9%87%D9%85-%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D8%B4%D8%B1%D8%B7%D8%A9-%D9%81%D9%8A/",
@@ -317,16 +353,16 @@
       "reason": "해외 치안사건 제외: فلسطين"
     },
     {
-      "articleId": "discovery-UCcEQ8X1evO07Ptht02Es9EB",
-      "titleArabic": "المستشار العسكري للمرشد الإيراني: ردنا على استهداف بنيتنا التحتية سيكون تصاعديًا وشديدًا",
-      "articleUrl": "https://www.iranintl.com/ar/202607231910",
-      "reason": "해외 치안사건 제외: إيران"
+      "articleId": "discovery-S6pd43hyOai11GN-dje-zojA",
+      "titleArabic": "استشهاد 4 فلسطينيين في هجوم للاحتلال على بلدة تل بنابلس",
+      "articleUrl": "https://ar.yenisafak.com/world/4127870",
+      "reason": "해외 치안사건 제외: فلسطين"
     },
     {
-      "articleId": "discovery-IMYjemFyIJuZVov3g1AO-PmN",
-      "titleArabic": "وكالة \"تسنيم\": سماع دوي عدة انفجارات في محيط مدينة كنارك",
-      "articleUrl": "https://www.iranintl.com/ar/202607235613",
-      "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
+      "articleId": "discovery-oEFYrjX0RTe7gaStAXaQwOu5",
+      "titleArabic": "إطلاق نار على حافلات مشجعين أرجنتينيين في أوروغواي",
+      "articleUrl": "https://www.aljazeera.net/sport/2026/7/23/%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%86%D8%A7%D8%B1-%D9%85%D8%B4%D8%AC%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D8%B1%D8%AC%D9%86%D8%AA%D9%8A%D9%86%D9%8A",
+      "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
       "articleId": "discovery-0ptqusTMeF9WOzyRIC5PfXYf",
@@ -335,10 +371,10 @@
       "reason": "기사 도입부의 사건 발생지가 이라크가 아님: إيران"
     },
     {
-      "articleId": "discovery-OOYioARpnFjmZ96qZWpgf_NP",
-      "titleArabic": "الجيش الإسرائيلي: لم تسقط أي صواريخ أو شظايا داخل إسرائيل خلال الهجوم الإيراني على الأردن",
-      "articleUrl": "https://www.iranintl.com/ar/202607223531",
-      "reason": "해외 치안사건 제외: الأردن"
+      "articleId": "discovery-gQnrqWp8G7iR4K_k9x01jwLv",
+      "titleArabic": "أول تعليق من المملكة بعد تفجير عبوة ناسفة استهدفت مقهى في دمشق بسوريا",
+      "articleUrl": "https://al-marsd.com/article/259325/%D9%84%D8%AF%D9%8A%D9%86%D8%A7-%D9%85%D9%84%D8%A7%D8%AD%D8%B8%D8%A7%D8%AA-%D9%86%D8%AD%D8%AA%D8%A7%D8%AC-%D8%A5%D8%B2%D8%A7%D9%84%D8%AA%D9%87%D8%A7-%D8%A7%D9%84%D8%A8%D8%B1%D9%87%D8%A7%D9%86/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%82-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A8%D8%B9%D8%AF-%D8%AA%D9%81%D8%AC%D9%8A%D8%B1-%D8%B9%D8%A8%D9%88%D8%A9-%D9%86%D8%A7%D8%B3%D9%81%D8%A9-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D9%81%D8%AA-%D9%85%D9%82%D9%87%D9%89-%D9%81%D9%8A-%D8%AF%D9%85%D8%B4%D9%82-%D8%A8%D8%B3%D9%88%D8%B1%D9%8A%D8%A7",
+      "reason": "해외 치안사건 제외: سوريا"
     },
     {
       "articleId": "discovery-aYAfIXrOwpWEL5b3Wb8XxTLB",
@@ -359,22 +395,10 @@
       "reason": "해외 치안사건 제외: فلسطين"
     },
     {
-      "articleId": "discovery-94nSl0wyc2M09q-yIKFNzzv3",
-      "titleArabic": "سماع دوي عدة انفجارات في \"أربيل\" بالعراق",
-      "articleUrl": "https://www.iranintl.com/ar/202607213704",
-      "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
-    },
-    {
-      "articleId": "discovery-MRR9JtOx1Q37lCrOgDlLFDj4",
-      "titleArabic": "إخلاء محكمة الثورة في \"أصفهان\" بإيران إثر تحليق طائرة مسيّرة فوق المنطقة",
-      "articleUrl": "https://www.iranintl.com/ar/202607210720",
-      "reason": "해외 치안사건 제외: إيران"
-    },
-    {
-      "articleId": "discovery-3TcCfWesxF5-N_lb6BaOsBO2",
-      "titleArabic": "الحكم بالإعدام على شخصين في إيران بتهمة مساعدة متظاهرين مصابين",
-      "articleUrl": "https://www.iranintl.com/ar/202607218752",
-      "reason": "해외 치안사건 제외: إيران"
+      "articleId": "discovery-3EaM7XZBHYz1VcOQMlHxt17R",
+      "titleArabic": "إصابة طفل وشاب برصاص الاحتلال الإسرائيلي في قرية جملة بريف درعا",
+      "articleUrl": "https://www.aljazeera.net/news/2026/7/21/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B7%D9%81%D9%84-%D9%88%D8%B4%D8%A7%D8%A8-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84",
+      "reason": "해외 치안사건 제외: إسرائيل"
     },
     {
       "articleId": "discovery-6L92RGFKgOlwtxC89hvgtXOl",
@@ -413,18 +437,6 @@
       "reason": "해외 치안사건 제외: إيران"
     },
     {
-      "articleId": "discovery-kKi1soVdbo9UgJ05cmB0HLQL",
-      "titleArabic": "ترامب: نتنياهو يخوض حربًا ضد إيران ولن يُعتقل  بأي شكل أثناء وجوده في الولايات المتحدة",
-      "articleUrl": "https://www.iranintl.com/ar/202607207383",
-      "reason": "해외 치안사건 제외: إيران"
-    },
-    {
-      "articleId": "discovery-BtBs3f7dwlkNV29DJrDA5tNm",
-      "titleArabic": "\"سنتكوم\": تغير مسار 7 سفن تجارية وتعطيل سفينة عن العمل بعد استئناف حصار إيران",
-      "articleUrl": "https://www.iranintl.com/ar/202607200736",
-      "reason": "해외 치안사건 제외: إيران"
-    },
-    {
       "articleId": "discovery-RSW7QTBFj3g-AeURqPjwPijs",
       "titleArabic": "مقتل جندي أميركي في العراق",
       "articleUrl": "https://www.emaratalyoum.com/politics/news/2026-07-19-1.2066717",
@@ -437,16 +449,22 @@
       "reason": "해외 치안사건 제외: لبنان"
     },
     {
+      "articleId": "discovery-bA3C67yCGUj5KT81C5aAaod1",
+      "titleArabic": "استشهاد فتى فلسطيني بعد أسبوع من إصابته في هجوم لمستوطنين",
+      "articleUrl": "https://www.alquds.co.uk/%D8%A7%D8%B3%D8%AA%D8%B4%D9%87%D8%A7%D8%AF-%D9%81%D8%AA%D9%89-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D9%85%D9%86-%D8%A5%D8%B5%D8%A7%D8%A8%D8%AA/",
+      "reason": "해외 치안사건 제외: فلسطين"
+    },
+    {
       "articleId": "discovery-JDRJfea9d5sCxXpyd-U2D7AR",
       "titleArabic": "إسرائيل تتهم حزب الله بزرع عبوة ناسفة قتلت جندي لبناني",
       "articleUrl": "https://www.skynewsarabia.com/middle-east/1881558-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AA%D8%AA%D9%87%D9%85-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-%D8%A8%D8%B2%D8%B1%D8%B9-%D8%B9%D8%A8%D9%88%D8%A9-%D9%86%D8%A7%D8%B3%D9%81%D8%A9-%D9%82%D8%AA%D9%84%D8%AA-%D8%AC%D9%86%D8%AF%D9%8A-%D9%84%D8%A8%D9%86%D8%A7%D9%86%D9%8A",
       "reason": "해외 치안사건 제외: لبنان"
     },
     {
-      "articleId": "discovery-GsNYS9ZxIY5FWE3LxIBNE209",
-      "titleArabic": "يخت السفير الأمريكي يشعل احتجاجات واشتباكات في البندقية",
-      "articleUrl": "https://www.alkhaleej.ae/2026-07-18/%D8%B9%D8%B1%D8%A8-%D9%88%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D9%8A%D8%AE%D8%AA-%D8%A7%D9%84%D8%B3%D9%81%D9%8A%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%8A%D8%B4%D8%B9%D9%84-%D8%A7%D8%AD%D8%AA%D8%AC%D8%A7%D8%AC%D8%A7%D8%AA-%D9%88%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%83%D8%A7%D8%AA-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D9%86%D8%AF%D9%82%D9%8A%D8%A9",
-      "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
+      "articleId": "discovery-6Qv2xWhxaEul7axnTcTAP6WE",
+      "titleArabic": "الخارجية تدين الهجوم الإيراني على إقليم كردستان العراق",
+      "articleUrl": "https://nn.najah.edu/news/Palestine/2026/07/18/563601/",
+      "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
     },
     {
       "articleId": "discovery-HruZx6cCcdq9v7OZofp85p7y",
