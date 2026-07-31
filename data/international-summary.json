@@ -1,22 +1,16 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-30T22:31:35.806Z",
-  "total": 81,
+  "generatedAt": "2026-07-31T00:54:30.079Z",
+  "total": 80,
   "typeCounts": {
     "US_SECURITY": 67,
-    "IRAN_RELATIONS": 6,
+    "IRAN_RELATIONS": 5,
     "TURKEY_RELATIONS": 4,
     "SYRIA_BORDER": 1,
     "ENERGY_ROUTE": 1,
     "SANCTIONS_FINANCE": 2
   },
   "excluded": [
-    {
-      "articleId": "discovery-nLH9cDG244BoH7o5h29WldFv",
-      "titleArabic": "نائب إيراني: واشنطن وحلفاؤها يسعون إلى إضعاف محور المقاومة قبل استهداف إيران - ميدل ايست نيوز بالعربي",
-      "articleUrl": "https://mdeast.news/ar/2026/07/30/%D9%86%D8%A7%D8%A6%D8%A8-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D9%88%D8%AD%D9%84%D9%81%D8%A7%D8%A4%D9%87%D8%A7-%D9%8A%D8%B3%D8%B9%D9%88%D9%86-%D8%A5%D9%84%D9%89/",
-      "reason": "이라크 안보·물류·에너지·금융에 대한 직접 영향 근거 부족"
-    },
     {
       "articleId": "discovery-iHjkH--pBm7agn-otgvRkadz",
       "titleArabic": "واشنطن تحذر رعاياها من هجمات لميليشيات في العراق وتدعوهم للحذر | مصراوي",
@@ -57,12 +51,6 @@
       "articleId": "discovery-wv2JdbT5bPyeKNlD4HI7yOEQ",
       "titleArabic": "الحوثيون يستهدفون منشآت نفط سعودية.. لماذا الآن؟ | الحرة",
       "articleUrl": "https://alhurra.com/29373",
-      "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
-    },
-    {
-      "articleId": "discovery-a-VsU_PThv6iI98o4vE-b8Zj",
-      "titleArabic": "إيرادات صادرات النفط السعودي في مايو 2026 تصعد 19.5% - الطاقة",
-      "articleUrl": "https://attaqa.net/2026/07/26/%D8%A5%D9%8A%D8%B1%D8%A7%D8%AF%D8%A7%D8%AA-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%81%D9%8A-%D9%85%D8%A7%D9%8A%D9%88-2026/",
       "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
     },
     {
@@ -108,9 +96,21 @@
       "reason": "이라크가 기사의 핵심 주체·영향 대상이 아님"
     },
     {
+      "articleId": "discovery-QFD5CoScvuSixtIVE_DiX20L",
+      "titleArabic": "هل يمكن لقناة السويس أن تساعد آسيا على التغلب على أزمة النفط؟",
+      "articleUrl": "https://www.vietnam.vn/ar/kenh-dao-suez-co-the-giup-chau-a-vuot-qua-khung-hoang-dau-mo",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
       "articleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
       "titleArabic": "سلاح الفصائل وخطوط واشنطن الحمراء.. حقيبة مثقلة ترافق الزيدي إلى إيران (خاص)",
       "articleUrl": "https://al-ain.com/article/iraq-iran-war-factional-weapons-red-lines",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
+      "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+      "titleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
+      "articleUrl": "https://sana.sy/economy/2531474/",
       "reason": "일반 국제·문화·스포츠 기사"
     },
     {
