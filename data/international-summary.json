@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T00:54:30.079Z",
+  "generatedAt": "2026-07-31T01:30:00.819Z",
   "total": 80,
   "typeCounts": {
     "US_SECURITY": 67,
@@ -22,12 +22,6 @@
       "titleArabic": "كييف تنفي تصريحات مستشار الأمن القومي العراقي",
       "articleUrl": "https://www.alquds.co.uk/%D9%83%D9%8A%D9%8A%D9%81-%D8%AA%D9%86%D9%81%D9%8A-%D8%AA%D8%B5%D8%B1%D9%8A%D8%AD%D8%A7%D8%AA-%D9%85%D8%B3%D8%AA%D8%B4%D8%A7%D8%B1-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D9%82%D9%88%D9%85%D9%8A/",
       "reason": "이라크 안보·물류·에너지·금융에 대한 직접 영향 근거 부족"
-    },
-    {
-      "articleId": "discovery-32IAj5kF6AaybzC9ecnzqGPs",
-      "titleArabic": "الزيدي: طريق التنمية مشروع إقليميٌّ يعيد تعريف مفهوم الربط الاقتصادي بالشرق الأوسط",
-      "articleUrl": "https://almasalah.com/archives/139350",
-      "reason": "일반 국제·문화·스포츠 기사"
     },
     {
       "articleId": "discovery-HA88Ulm3ebNaupTIpkzW9cK9",
@@ -108,15 +102,15 @@
       "reason": "일반 국제·문화·스포츠 기사"
     },
     {
-      "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
-      "titleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
-      "articleUrl": "https://sana.sy/economy/2531474/",
-      "reason": "일반 국제·문화·스포츠 기사"
-    },
-    {
       "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
       "titleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
       "articleUrl": "https://www.elbalad.news/7043972",
+      "reason": "일반 국제·문화·스포츠 기사"
+    },
+    {
+      "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+      "titleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
+      "articleUrl": "https://sana.sy/economy/2531474/",
       "reason": "일반 국제·문화·스포츠 기사"
     },
     {

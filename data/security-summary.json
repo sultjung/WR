@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T00:54:29.795Z",
+  "generatedAt": "2026-07-31T01:30:00.577Z",
   "total": 45,
   "typeCounts": {
     "SUICIDE_BOMBING": 10,
@@ -89,12 +89,6 @@
       "reason": "해외 치안사건 제외: دير الزور"
     },
     {
-      "articleId": "discovery-7Cf3Mg0wl6a4jaPvYz94A3EH",
-      "titleArabic": "من اختطف الصحفية شيلي كيتلسون في بغداد؟",
-      "articleUrl": "https://www.dw.com/ar/%D9%85%D9%86-%D8%A7%D8%AE%D8%AA%D8%B7%D9%81-%D8%A7%D9%84%D8%B5%D8%AD%D9%81%D9%8A%D8%A9-%D8%B4%D9%8A%D9%84%D9%8A-%D9%83%D9%8A%D8%AA%D9%84%D8%B3%D9%88%D9%86-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF/audio-76645994",
-      "reason": "실제 치안사건이 아닌 문화·역사·훈련성 콘텐츠"
-    },
-    {
       "articleId": "discovery-4pMdiy_WvZ1fMaWVVoa1uZGI",
       "titleArabic": "مقتل شخص في إطلاق نار في مخيّم عين الحلوة في جنوب لبنان",
       "articleUrl": "https://www.alquds.co.uk/%D9%85%D9%82%D8%AA%D9%84-%D8%B4%D8%AE%D8%B5-%D9%81%D9%8A-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D9%85%D8%AE%D9%8A%D9%91%D9%85-%D8%B9%D9%8A%D9%86-%D8%A7%D9%84%D8%AD%D9%84%D9%88/",
@@ -125,12 +119,6 @@
       "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
-      "articleId": "discovery-LzxyQZAjHOW5oY0cMIUoLdAp",
-      "titleArabic": "الدفاع السعودية: نفذنا ضربات نوعية ضد مُسلحين بالعراق بالتعاون مع الجيش الأمريكي",
-      "articleUrl": "https://www.elbalad.news/7054822",
-      "reason": "기사 제목·도입부에서 공격·폭발·암살·시위·총격·대테러 작전 신호가 확인되지 않음"
-    },
-    {
       "articleId": "discovery-5B2hadYWChT4CbQZPjRvoQ7g",
       "titleArabic": "توقيف لبناني حوّل 400 ألف دولار مسروقة من والده لتمويل تنظيم داعش",
       "articleUrl": "https://arabic.euronews.com/2026/07/28/lebanese-man-arrested-for-transferring-400000-stolen-from-his-father-to-fund-isis",
@@ -153,12 +141,6 @@
       "titleArabic": "تفاصيل مقتل مواطن سعودي بالرصاص داخل سيارته في جزيرة سانت لوسيا",
       "articleUrl": "https://al-marsd.com/public/article/260323/%d8%aa%d9%81%d8%a7%d8%b5%d9%8a%d9%84-%d9%85%d9%82%d8%aa%d9%84-%d9%85%d9%88%d8%a7%d8%b7%d9%86-%d8%b3%d8%b9%d9%88%d8%af%d9%8a-%d8%a8%d8%a7%d9%84%d8%b1%d8%b5%d8%a7%d8%b5-%d8%af%d8%a7%d8%ae%d9%84-%d8%b3%d9%8a%d8%a7%d8%b1%d8%aa%d9%87-%d9%81%d9%8a-%d8%ac%d8%b2%d9%8a%d8%b1%d8%a9-%d8%b3%d8%a7%d9%86%d8%aa-%d9%84%d9%88%d8%b3%d9%8a%d8%a7",
       "reason": "기사 도입부의 사건 발생지가 이라크가 아님: مصر"
-    },
-    {
-      "articleId": "discovery-wQZzZcX38ESIVr2iD79QelXl",
-      "titleArabic": "سوريا.. القبض على عناصر داعش وضبط أسلحة في حلب",
-      "articleUrl": "https://ar.yenisafak.com/world/4128191",
-      "reason": "해외 치안사건 제외: سوريا"
     },
     {
       "articleId": "discovery-q5gOifhRSRfSGq4GZOauSjci",
@@ -203,12 +185,6 @@
       "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
-      "articleId": "discovery-c7iCcOOuEfKPDqQXs5V-jOqt",
-      "titleArabic": "مشروع مركز الملك سلمان للإغاثة “مسام” ينزع (1,367) لغمًا من مختلف الأراضي اليمنية في أسبوع - صحيفة سويفت نيوز",
-      "articleUrl": "https://swiftnewz.com/archives/732266",
-      "reason": "해외 치안사건 제외: اليمن"
-    },
-    {
       "articleId": "discovery-3_xuw6QsVu82pvuQMFSoA6QO",
       "titleArabic": "قائد بـ \"الحشد الشعبي\": مسلحون عراقيون موجودون في إيران تحسبًا لهجوم بري أميركي محتمل",
       "articleUrl": "https://www.iranintl.com/ar/202607272259",
@@ -251,12 +227,6 @@
       "reason": "제목·기사 도입부에서 이라크 장소·기관·치안 주체가 확인되지 않음"
     },
     {
-      "articleId": "discovery-gZLndM56fj69lOI4eY1u0q_j",
-      "titleArabic": "حماس تعقيباً على إحراق مسجدين بالضفة: اعتداء فاشي يتطلب النفير العام",
-      "articleUrl": "https://26sep.net/index.php/global/131889-2trl",
-      "reason": "기사 도입부의 사건 발생지가 이라크가 아님: إيران"
-    },
-    {
       "articleId": "discovery-uOyw2g9_fS8yPdSPhtG5G8Kt",
       "titleArabic": "الجرائم ضد الصحفيين في اليمن ينبغي ألا تبقى بلا عقاب",
       "articleUrl": "https://www.hrw.org/ar/news/2026/07/26/end-impunity-for-crimes-against-journalists-in-yemen",
@@ -285,12 +255,6 @@
       "titleArabic": "\"قبل أن تجف الدماء\".. كيف زيّفت شخصيات إسرائيلية رواية ما حدث في تل؟",
       "articleUrl": "https://arabi21.com/story/1777314/%D9%82%D8%A8%D9%84-%D8%A3%D9%86-%D8%AA%D8%AC%D9%81-%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D8%A1-%D9%83%D9%8A%D9%81-%D8%B2%D9%8A%D9%81%D8%AA-%D8%B4%D8%AE%D8%B5%D9%8A%D8%A7%D8%AA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%B1%D9%88%D8%A7%D9%8A%D8%A9-%D9%85%D8%A7-%D8%AD%D8%AF%D8%AB-%D9%81%D9%8A-%D8%AA%D9%84",
       "reason": "해외 치안사건 제외: إسرائيل"
-    },
-    {
-      "articleId": "discovery-fc9KItjoKJ0EVcL-Xh9skEoN",
-      "titleArabic": "رئيس مجلس القيادة الرئاسي اليمني: الحوثيون يضحون بمصالح اليمنيين خدمةً لأجندة طهران",
-      "articleUrl": "https://www.iranintl.com/ar/202607255360",
-      "reason": "해외 치안사건 제외: طهران"
     },
     {
       "articleId": "discovery-tvTI1ryu7TKWjEHwjjGFzSCn",
@@ -335,9 +299,9 @@
       "reason": "기사 도입부의 사건 발생지가 이라크가 아님: مصر"
     },
     {
-      "articleId": "discovery-S6pd43hyOai11GN-dje-zojA",
-      "titleArabic": "استشهاد 4 فلسطينيين في هجوم للاحتلال على بلدة تل بنابلس",
-      "articleUrl": "https://ar.yenisafak.com/world/4127870",
+      "articleId": "discovery-CUDI3FtHbetHzG8LeKh47kNh",
+      "titleArabic": "استشهاد 4 فلسطينيين ومقتل مستوطن في إطلاق نار جنوب غرب نابلس",
+      "articleUrl": "https://factjo.com/news/145354",
       "reason": "해외 치안사건 제외: فلسطين"
     },
     {
@@ -383,12 +347,6 @@
       "reason": "해외 치안사건 제외: فلسطين"
     },
     {
-      "articleId": "discovery-Y3-kF5QwoNNtjFOKmS-cpW0K",
-      "titleArabic": "هنا لبنان / الجيش الإسرائيلي: عبوة ناسفة انفجرت قرب سيارتَي إسعاف للصليب الأحمر في ميفدون والتحقيقات ترجّح أن حزب الله زرعها",
-      "articleUrl": "https://nabdapp.com/t/175663779%3E",
-      "reason": "해외 치안사건 제외: لبنان"
-    },
-    {
       "articleId": "discovery-y0jsn5tzNx8d88TZkm53FkYc",
       "titleArabic": "تفاصيل الحادث.. إطلاق النار على رسام الكاريكاتير الفلسطينى ناجى العلى - اليوم السابع",
       "articleUrl": "https://www.youm7.com/story/2026/7/22/%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%AD%D8%A7%D8%AF%D8%AB-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D8%A7%D8%B1-%D8%B9%D9%84%D9%89-%D8%B1%D8%B3%D8%A7%D9%85-%D8%A7%D9%84%D9%83%D8%A7%D8%B1%D9%8A%D9%83%D8%A7%D8%AA%D9%8A%D8%B1-%D8%A7%D9%84%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%89-%D9%86%D8%A7%D8%AC%D9%89-%D8%A7%D9%84%D8%B9%D9%84%D9%89/7489426",
@@ -429,12 +387,6 @@
       "titleArabic": "مقتل إمام جمعة أهل السُّنة في \"ميرجاوه\" بإيران إثر إطلاق نار من \"مسلحين مجهولين\"",
       "articleUrl": "https://www.iranintl.com/ar/202607200813",
       "reason": "해외 치안사건 제외: إيران"
-    },
-    {
-      "articleId": "discovery-RBFciFz5VD_KvXAC1DbRVaWf",
-      "titleArabic": "«مسام» ينزع 1,786 لغماً من أراضي اليمن في 7 أيام",
-      "articleUrl": "https://www.okaz.com.sa/local/na/2257821",
-      "reason": "해외 치안사건 제외: اليمن"
     },
     {
       "articleId": "discovery-Ytk0Dk6dIKl7Th2GgMdymFrK",

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T00:54:32.120Z",
+  "generatedAt": "2026-07-31T01:30:02.490Z",
   "groupCount": 285,
   "duplicateGroupCount": 10,
   "duplicateArticleCount": 11,
@@ -18,7 +18,7 @@
     {
       "left": "discovery-3ZDhvrAaKptmfPZimpRSQnio",
       "right": "discovery-uwvDfJ6ZwfupbOHIrq_COSW8",
-      "score": 0.8465
+      "score": 0.8462
     },
     {
       "left": "discovery-TULrWMFL0-bB0LQGhVoHro3u",
@@ -161,7 +161,7 @@
       "sources": [
         {
           "articleId": "discovery-MgWJbBrafv3wzmpYvAlvRMN1",
-          "sourceArabic": "ar.shafaqna.com",
+          "sourceArabic": "شفقنا العربي",
           "articleUrl": "https://ar.shafaqna.com/AR/584256/",
           "publishedAt": "2026-07-30T15:19:49.000Z"
         }
@@ -181,7 +181,7 @@
       "sources": [
         {
           "articleId": "discovery-QLhfQcK5Zdgr77upXnWtizHB",
-          "sourceArabic": "ar.shafaqna.com",
+          "sourceArabic": "شفقنا العربي",
           "articleUrl": "https://ar.shafaqna.com/AR/584249/",
           "publishedAt": "2026-07-30T14:06:44.000Z"
         }
@@ -201,7 +201,7 @@
       "sources": [
         {
           "articleId": "discovery-BtuaJa0Frlbgw0IBCn1n7JAE",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/30/%d8%a3%d8%b2%d9%85%d8%a9-%d9%85%d8%b6%d9%8a%d9%82-%d9%87%d8%b1%d9%85%d8%b2-%d8%aa%d9%87%d8%b2-%d8%a3%d8%b3%d9%88%d8%a7%d9%82-%d8%a7%d9%84%d8%b7%d8%a7%d9%82%d8%a9",
           "publishedAt": "2026-07-30T13:26:48.000Z"
         }
@@ -228,22 +228,22 @@
       ]
     },
     {
-      "groupId": "event-uy4QTkon34VD3Ythbk",
+      "groupId": "event-_cCWUcJ6VR31gZ-QW5",
       "category": "politics",
-      "representativeArticleId": "discovery-XO1eAjhV3tcUoRZJguZwJtcm",
+      "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
       "memberCount": 1,
       "duplicateCount": 0,
-      "publishedFrom": "2026-07-30T12:03:10.000Z",
-      "publishedTo": "2026-07-30T12:03:10.000Z",
+      "publishedFrom": "2026-07-30T12:11:55.000Z",
+      "publishedTo": "2026-07-30T12:11:55.000Z",
       "memberArticleIds": [
-        "discovery-XO1eAjhV3tcUoRZJguZwJtcm"
+        "discovery-Nrla4itn8xE_k9yMnpm1-SOs"
       ],
       "sources": [
         {
-          "articleId": "discovery-XO1eAjhV3tcUoRZJguZwJtcm",
-          "sourceArabic": "aljazeera.net",
-          "articleUrl": "https://www.aljazeera.net/amp/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
-          "publishedAt": "2026-07-30T12:03:10.000Z"
+          "articleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+          "sourceArabic": "الجزيرة نت",
+          "articleUrl": "https://www.aljazeera.net/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
+          "publishedAt": "2026-07-30T12:11:55.000Z"
         }
       ]
     },
@@ -588,7 +588,7 @@
       "sources": [
         {
           "articleId": "discovery-52o0VQLudQYL_p9tRT2qBe0D",
-          "sourceArabic": "masrawy.com",
+          "sourceArabic": "Masrawy",
           "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/29/3025221/%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AC%D8%A7%D9%87%D8%B2%D9%88%D9%86-%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D8%AC%D9%85%D9%8A%D8%B9-%D8%AA%D9%88%D8%AC%D9%8A%D9%87%D8%A7%D8%AA-%D8%A7%D9%84%D9%82%D8%A7%D8%A6%D8%AF-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A3%D9%8A-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA",
           "publishedAt": "2026-07-29T18:12:04.000Z"
         }
@@ -608,7 +608,7 @@
       "sources": [
         {
           "articleId": "discovery-XCm_qpxRJf8UjvpmY5MqG7GY",
-          "sourceArabic": "independentarabia.com",
+          "sourceArabic": "اندبندنت عربية",
           "articleUrl": "https://www.independentarabia.com/node/654500/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1/%D9%88%D8%B2%D9%8A%D8%B1-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%B1%D9%81%D8%B6-%D8%AA%D9%88%D9%82%D9%8A%D8%B9-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%81%D9%8A-%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%A8%D8%AD%D8%B6%D9%88%D8%B1-%D8%A3%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%88%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D9%88%D8%A8%D8%AE%D9%87",
           "publishedAt": "2026-07-29T17:56:26.000Z"
         }
@@ -628,7 +628,7 @@
       "sources": [
         {
           "articleId": "discovery-fluGPt5Ty-xfj0RkQvibfW_L",
-          "sourceArabic": "ar.shafaqna.com",
+          "sourceArabic": "شفقنا العربي",
           "articleUrl": "https://ar.shafaqna.com/AR/584171/",
           "publishedAt": "2026-07-29T17:54:20.000Z"
         }
@@ -808,7 +808,7 @@
       "sources": [
         {
           "articleId": "discovery-sHPYaTZfPrYqP3JsP6M9_R0x",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/politics/2026/7/29/%D9%85%D9%86-%D9%8A%D8%B7%D9%84%D9%82-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A",
           "publishedAt": "2026-07-29T13:02:32.000Z"
         }
@@ -1075,8 +1075,8 @@
       "sources": [
         {
           "articleId": "discovery-GY5Yu2eqFB_RNb5hlXRaVRu5",
-          "sourceArabic": "aljazeera.net",
-          "articleUrl": "https://www.aljazeera.net/news/2026/7/28/%d8%a3%d8%b1%d8%af%d9%88%d8%ba%d8%a7%d9%86-%d9%8a%d8%b3%d8%aa%d9%82%d8%a8%d9%84-%d8%b1%d8%a6%d9%8a%d8%b3-%d8%a7%d9%84%d9%88%d8%b2%d8%b1%d8%a7%d8%a1-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a",
+          "sourceArabic": "الجزيرة نت",
+          "articleUrl": "https://www.aljazeera.net/news/2026/7/28/%D8%A3%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%8A%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A",
           "publishedAt": "2026-07-28T20:37:57.000Z"
         }
       ]
@@ -1335,7 +1335,7 @@
       "sources": [
         {
           "articleId": "discovery-Hjb5Jdwm8NkiS5SIgqH-kAve",
-          "sourceArabic": "aawsat.com",
+          "sourceArabic": "الشرق الأوسط",
           "articleUrl": "https://aawsat.com/%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%82%D8%B6%D8%A7%D9%8A%D8%A7/5300964-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AA%D8%B6%D8%A8%D8%B7-%D8%B3%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D8%B9%D9%84%D9%89-%D8%AA%D9%88%D9%82%D9%8A%D8%AA%D9%87%D8%A7-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%AD%D9%84%D9%8A%D9%81-%D9%84%D8%A7-%D9%82%D8%A7%D8%A6%D8%AF",
           "publishedAt": "2026-07-28T15:32:19.000Z"
         }
@@ -1796,7 +1796,7 @@
       "sources": [
         {
           "articleId": "discovery-uwvDfJ6ZwfupbOHIrq_COSW8",
-          "sourceArabic": "masrawy.com",
+          "sourceArabic": "Masrawy",
           "articleUrl": "https://www.masrawy.com/news/news_publicaffairs/details/2026/7/28/3024315/%D8%A8%D8%B9%D8%AF-%D9%86%D9%82%D8%A7%D8%B4%D8%A7%D8%AA-%D8%B7%D9%88%D9%8A%D9%84%D8%A9-%D9%88%D9%85%D8%B9%D9%82%D8%AF%D8%A9-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%AA%D9%88%D8%A7%D9%81%D9%82-%D8%B9%D9%84%D9%89-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A8%D9%8A%D8%AF-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
           "publishedAt": "2026-07-28T00:58:32.000Z"
         },
@@ -1882,7 +1882,7 @@
       "sources": [
         {
           "articleId": "discovery-u4WNUV2A-Rb1ys_2IxVHfTnV",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/news/2026/7/27/%D9%85%D9%84%D9%81%D8%A7%D8%AA-%D8%B3%D8%A7%D8%AE%D9%86%D8%A9-%D9%85%D8%A7-%D8%A3%D8%A8%D8%B1%D8%B2-%D9%85%D8%A7-%D8%B3%D9%8A%D8%A8%D8%AD%D8%AB%D9%87-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A",
           "publishedAt": "2026-07-27T20:54:03.000Z"
         }
@@ -2870,7 +2870,7 @@
       "sources": [
         {
           "articleId": "discovery-wpr621Wjj9K7YEo0RGdzcoZe",
-          "sourceArabic": "independentarabia.com",
+          "sourceArabic": "اندبندنت عربية",
           "articleUrl": "https://www.independentarabia.com/node/654199/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/%D8%A7%D9%84%D8%A8%D8%AA%D8%B1%D9%88%D9%84-%D9%88%D8%A7%D9%84%D8%BA%D8%A7%D8%B2/%D8%A3%D9%88%D8%A8%D9%83-%D9%85%D9%86%D8%AA%D8%AC%D9%88-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%B5%D9%85%D8%A7%D9%85-%D8%A3%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A-%D8%B9%D9%84%D9%89-%D8%B1%D8%BA%D9%85-%D8%B9%D9%88%D8%A7%D8%B5%D9%81-%D8%A7%D9%84%D8%AA%D9%88%D8%AA%D8%B1",
           "publishedAt": "2026-07-25T12:24:54.000Z"
         }
@@ -3010,7 +3010,7 @@
       "sources": [
         {
           "articleId": "discovery-kuimmYy-bzbY9tb3QBDHjBkc",
-          "sourceArabic": "okaz.com.sa",
+          "sourceArabic": "عكاظ",
           "articleUrl": "https://www.okaz.com.sa/local/saudi-arabia/2258439",
           "publishedAt": "2026-07-24T16:14:00.000Z"
         }
@@ -3050,7 +3050,7 @@
       "sources": [
         {
           "articleId": "discovery-Ny3dtH8pEzbrHoG1BKjl4PGF",
-          "sourceArabic": "aawsat.com",
+          "sourceArabic": "الشرق الأوسط",
           "articleUrl": "https://aawsat.com/%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82/%D8%AA%D8%AD%D9%82%D9%8A%D9%82%D8%A7%D8%AA-%D9%88%D9%82%D8%B6%D8%A7%D9%8A%D8%A7/5299640-%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A7%D9%84%D8%A3%D8%B3%D9%88%D8%AF-%D8%AE%D9%88%D8%A7%D8%B1%D8%B2%D9%85%D9%8A%D8%A9-%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D8%AD%D8%B2%D8%A7%D8%A8",
           "publishedAt": "2026-07-24T11:59:28.000Z"
         }
@@ -3150,7 +3150,7 @@
       "sources": [
         {
           "articleId": "discovery-5kJuDsvrSYe1P7YlyPSci_9b",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%AA%D8%B3%D8%AA%D9%88%D8%B1%D8%AF-%D8%B2%D9%8A%D8%AA-%D8%A7%D9%84%D9%88%D9%82%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%B9%D8%A8%D8%B1",
           "publishedAt": "2026-07-23T20:49:16.000Z"
         }
@@ -3210,7 +3210,7 @@
       "sources": [
         {
           "articleId": "discovery-J8RlsHy6OuIvpuwc58FPrhsG",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/encyclopedia/2026/7/23/%D9%85%D8%B5%D8%B7%D9%84%D8%AD-%D8%B1%D8%B9%D8%A7%D9%8A%D8%A9-%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8-%D8%B9%D8%B5%D8%A7-%D8%A7%D9%84%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89",
           "publishedAt": "2026-07-23T15:15:48.000Z"
         }
@@ -3290,7 +3290,7 @@
       "sources": [
         {
           "articleId": "discovery-AndlPyhf-eecb9se4PwcaWJw",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/politics/2026/7/23/%D9%85%D8%A7-%D8%A7%D9%84%D8%B0%D9%8A-%D9%8A%D8%AD%D9%85%D9%84%D9%87-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A5%D9%84%D9%89-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1",
           "publishedAt": "2026-07-23T12:08:42.000Z"
         }
@@ -3490,7 +3490,7 @@
       "sources": [
         {
           "articleId": "discovery-KbcnKRVxk_QazulSSFRFcrsr",
-          "sourceArabic": "aawsat.com",
+          "sourceArabic": "الشرق الأوسط",
           "articleUrl": "https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5298982-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B1%D9%81%D8%B6-%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D9%81%D9%8A-%D8%B9%D9%88%D8%A7%D8%B5%D9%85-%D8%A3%D8%AE%D8%B1%D9%89",
           "publishedAt": "2026-07-22T14:03:30.000Z"
         }
@@ -3790,7 +3790,7 @@
       "sources": [
         {
           "articleId": "discovery-Jt45UpimjJxXHz8uFyUnR39p",
-          "sourceArabic": "aawsat.com",
+          "sourceArabic": "الشرق الأوسط",
           "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5298625-%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D8%AA%D9%84%D8%A7%D8%AD%D9%82-%D9%88%D8%B2%D9%8A%D8%B1%D8%A7%D9%8B-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A7%D9%8B-%D9%88%D8%AA%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85",
           "publishedAt": "2026-07-21T07:00:00.000Z"
         }
@@ -4057,26 +4057,6 @@
       ]
     },
     {
-      "groupId": "event--6jlIV4xa_6xzhCaOn",
-      "category": "politics",
-      "representativeArticleId": "discovery-gzNqlcw-m5d-80QJEvwlKqN5",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T12:12:15.000Z",
-      "publishedTo": "2026-07-20T12:12:15.000Z",
-      "memberArticleIds": [
-        "discovery-gzNqlcw-m5d-80QJEvwlKqN5"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-gzNqlcw-m5d-80QJEvwlKqN5",
-          "sourceArabic": "شفق نيوز",
-          "articleUrl": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A8%D8%AF%D9%84%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AA%D8%AC%D9%87-%D9%84-%D9%82%D8%B1%D8%A7%D8%B1-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%B6",
-          "publishedAt": "2026-07-20T12:12:15.000Z"
-        }
-      ]
-    },
-    {
       "groupId": "event-BuukM8ORTe4TEodNyQ",
       "category": "international",
       "representativeArticleId": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
@@ -4113,6 +4093,26 @@
           "sourceArabic": "شفق نيوز",
           "articleUrl": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A7%D9%84%D9%86%D8%B2%D8%A7%D9%87%D8%A9-%D8%AA%D8%B6%D8%A8%D8%B7-%D9%85%D8%B3-%D9%88%D9%84%D8%A7-%D8%A8%D8%AF%D9%8A%D9%88%D8%A7%D9%86-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%AF%D9%8A%D8%A7%D9%84%D9%89-%D8%AA%D8%B3%D8%A8-%D8%A8-%D8%A8%D8%AE%D8%B7-%D8%A7%D9%84%D8%AC%D8%B3%D9%8A%D9%85",
           "publishedAt": "2026-07-20T07:22:15.000Z"
+        }
+      ]
+    },
+    {
+      "groupId": "event--6jlIV4xa_6xzhCaOn",
+      "category": "politics",
+      "representativeArticleId": "discovery-gzNqlcw-m5d-80QJEvwlKqN5",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-20T07:00:00.000Z",
+      "publishedTo": "2026-07-20T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-gzNqlcw-m5d-80QJEvwlKqN5"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-gzNqlcw-m5d-80QJEvwlKqN5",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A8%D8%AF%D9%84%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AA%D8%AC%D9%87-%D9%84-%D9%82%D8%B1%D8%A7%D8%B1-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%B6",
+          "publishedAt": "2026-07-20T07:00:00.000Z"
         }
       ]
     },
@@ -4230,7 +4230,7 @@
       "sources": [
         {
           "articleId": "discovery-Ry_klyEwHMeLHn5g47okOx-h",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/news/2026/7/20/%D8%B4%D9%87%D9%8A%D8%AF%D8%A7%D9%86-%D9%88%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%81%D9%8A-%D9%87%D8%AC%D9%88%D9%85-%D9%85%D8%B3%D9%84%D8%AD-%D9%84%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%8A%D9%86",
           "publishedAt": "2026-07-20T07:00:00.000Z"
         }
@@ -4351,7 +4351,7 @@
       "sources": [
         {
           "articleId": "discovery-andCjGWzSBqGcGMTmPoeueSQ",
-          "sourceArabic": "aawsat.com",
+          "sourceArabic": "الشرق الأوسط",
           "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5297679-%D8%B5%D8%B1%D8%A7%D8%B9-%D9%87%D8%B1%D9%85%D8%B2-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9",
           "publishedAt": "2026-07-19T07:00:00.000Z"
         },
@@ -4517,7 +4517,7 @@
       "sources": [
         {
           "articleId": "discovery-y3iIaXJEcpWw7HlEywKijf7z",
-          "sourceArabic": "independentarabia.com",
+          "sourceArabic": "اندبندنت عربية",
           "articleUrl": "https://www.independentarabia.com/node/653755/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1/%D8%B7%D8%B1%D9%82-%D8%A5%D9%85%D8%AF%D8%A7%D8%AF-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-%D8%AA%D8%AA%D8%B9%D8%AB%D8%B1-%D8%A8%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D9%88%D8%A7%D9%84%D9%88%D9%83%D9%84%D8%A7%D8%A1-%D9%81%D9%8A-%D9%85%D8%A3%D8%B2%D9%82",
           "publishedAt": "2026-07-19T07:00:00.000Z"
         }
@@ -4697,7 +4697,7 @@
       "sources": [
         {
           "articleId": "discovery-YxetvQXMhwl_X8nHRWhTQB_X",
-          "sourceArabic": "aljazeera.net",
+          "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/politics/2026/7/18/%D9%87%D9%84-%D9%8A%D9%86%D8%AC%D8%AD-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%81%D9%8A-%D8%AD%D8%B3%D9%85-%D9%85%D9%84%D9%81-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D9%82%D8%A8%D9%84-30",
           "publishedAt": "2026-07-18T07:00:00.000Z"
         }
@@ -4837,7 +4837,7 @@
       "sources": [
         {
           "articleId": "discovery-e6Sq-uFMFxkJM3B1MLOIsuzO",
-          "sourceArabic": "aawsat.com",
+          "sourceArabic": "الشرق الأوسط",
           "articleUrl": "https://aawsat.com/%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D9%82/%D8%AD%D8%B5%D8%A7%D8%AF-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9/5297230-%D9%87%D9%84-%D8%AA%D9%83%D8%B3%D8%B1-%D9%85%D9%82%D8%A7%D9%85%D8%B1%D8%A9-%D8%A7%D9%84%D9%88%D9%82%D8%AA-%D8%A7%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D8%AD%D8%B5%D8%A7%D8%B1-%D8%AA%D8%B1%D9%85%D8%A8%D8%9F",
           "publishedAt": "2026-07-17T07:00:00.000Z"
         }
