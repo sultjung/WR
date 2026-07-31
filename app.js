@@ -26,6 +26,15 @@
   const koTitle=(article)=>article.translation?.titleKo||article.titleKo||"번역 대기";
   const arTitle=(article)=>article.article?.originalTitleArabic||article.originalTitleArabic||"";
   const preview=(article)=>article.translation?.previewKo||article.translation?.fullTextKo||article.previewKo||"한국어 번역이 아직 생성되지 않았습니다.";
+  const importanceOf=(article)=>{
+    const stored=article.importance||article.analysis?.importance;
+    const score=Number(stored?.score??article.analysis?.importanceScore);
+    if(!Number.isFinite(score)) return {score:null,levelKo:"평가 대기",level:"PENDING"};
+    const normalized=Math.max(0,Math.min(100,Math.round(score)));
+    const levelKo=stored?.levelKo||(normalized>=90?"긴급":normalized>=80?"중요":normalized>=70?"주목":normalized>=60?"참고":normalized>=40?"일반":"낮음");
+    const level=stored?.level||(normalized>=90?"URGENT":normalized>=80?"IMPORTANT":normalized>=70?"NOTABLE":normalized>=60?"REFERENCE":normalized>=40?"GENERAL":"LOW");
+    return {score:normalized,levelKo,level};
+  };
   const representatives=()=>state.articles.filter((article)=>article.eventGroup?.isRepresentative!==false);
   const dateLabel=(value)=>{
     const date=new Date(value);
@@ -79,6 +88,9 @@
       ? `category-${category}`
       : "category-unknown";
   }
+  function importanceBadgeClass(level){
+    return `importance-${String(level||"PENDING").toLowerCase()}`;
+  }
   function relatedSourcesHtml(article){
     const group=state.groups.get(article.eventGroup?.groupId);
     const sources=(group?.sources||[]).filter((item)=>item.articleUrl);
@@ -100,9 +112,11 @@
       const selected=state.selected.has(key);
       const url=articleUrl(article);
       const category=categoryOf(article);
-      const recommendation=article.analysis?.recommendation||"검토 대기";
-      const reason=article.analysis?.recommendationReason||"분석 결과가 아직 없습니다.";
+      const importance=importanceOf(article);
       const duplicateCount=Number(article.eventGroup?.duplicateCount||0);
+      const scoreBadge=importance.score===null
+        ? `<span class="badge importance-pending">중요도 평가 대기</span>`
+        : `<span class="badge importance-score">중요도 ${importance.score}</span><span class="badge ${escapeHtml(importanceBadgeClass(importance.level))}">${escapeHtml(importance.levelKo)}</span>`;
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top">
           <div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div>
@@ -111,8 +125,7 @@
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         <p class="arabic-title" lang="ar">${escapeHtml(arTitle(article))}</p>
         <p class="preview">${escapeHtml(preview(article))}</p>
-        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span><span class="badge">${escapeHtml(recommendation)}</span>${duplicateCount?`<span class="badge">중복 묶음</span>`:""}</div>
-        <p class="preview"><strong>추천 사유</strong> ${escapeHtml(reason)}</p>
+        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${duplicateCount?`<span class="badge">중복 묶음</span>`:""}</div>
         <div class="card-actions">
           ${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">대표 아랍어 원문</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}
           <button data-action="translation" type="button" disabled>전체 번역 보기</button>
