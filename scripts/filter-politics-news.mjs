@@ -22,6 +22,22 @@ function firstMatched(text = "", terms = []) {
   return terms.find((term) => normalized.includes(normalizeArabic(term))) || "";
 }
 
+function categoryOf(article = {}) {
+  return String(article.analysis?.category || article.category || "").toLowerCase();
+}
+
+function titleOf(article = {}) {
+  return String(article.article?.originalTitleArabic || article.originalTitleArabic || "");
+}
+
+function bodyOf(article = {}) {
+  return String(article.article?.originalTextArabic || article.originalTextArabic || "");
+}
+
+function urlOf(article = {}) {
+  return String(article.article?.articleUrl || article.articleUrl || "");
+}
+
 const EXPLICIT_IRAQ_ANCHORS = [
   "العراق", "العراقي", "العراقية", "بغداد",
   "الحكومة العراقية", "مجلس الوزراء العراقي", "رئاسة الوزراء العراقية",
@@ -36,7 +52,7 @@ const EXPLICIT_IRAQ_ANCHORS = [
 const FOREIGN_STATE_ANCHORS = [
   "مصر", "المصري", "المصرية", "القاهرة", "حكومة مصر", "مجلس الوزراء المصري",
   "الأردن", "الأردني", "الأردنية", "عمان", "الحكومة الأردنية",
-  "السعودية", "السعودي", "السعودية", "الرياض", "الحكومة السعودية",
+  "السعودية", "السعودي", "الرياض", "الحكومة السعودية",
   "الإمارات", "الإماراتي", "الإماراتية", "أبوظبي", "دبي", "الحكومة الإماراتية",
   "الكويت", "الكويتي", "الكويتية", "الحكومة الكويتية",
   "قطر", "القطري", "القطرية", "الدوحة",
@@ -49,7 +65,7 @@ const FOREIGN_STATE_ANCHORS = [
   "فلسطين", "غزة", "إسرائيل", "الإسرائيلي", "الإسرائيلية",
   "اليمن", "اليمني", "صنعاء", "الحكومة اليمنية",
   "ليبيا", "الليبي", "طرابلس ليبيا", "الحكومة الليبية",
-  "السودان", "السوداني", "الخرطوم", "الحكومة السودانية",
+  "السودان", "الخرطوم", "الحكومة السودانية",
   "تونس", "التونسي", "الجزائر", "الجزائري", "المغرب", "المغربي"
 ];
 
@@ -59,8 +75,8 @@ const GENERIC_POLITICAL_TERMS = [
 ];
 
 function validatePoliticsArticle(article = {}) {
-  const title = String(article.originalTitleArabic || "");
-  const body = String(article.originalTextArabic || "");
+  const title = titleOf(article);
+  const body = bodyOf(article);
   const lead = body.slice(0, 2200);
   const primaryText = `${title}\n${lead}`;
 
@@ -97,12 +113,12 @@ function validatePoliticsArticle(article = {}) {
 }
 
 const payload = JSON.parse(await fs.readFile(ARTICLES_FILE, "utf8"));
-const articles = Array.isArray(payload.articles) ? payload.articles : [];
+const articles = Array.isArray(payload) ? payload : (Array.isArray(payload.articles) ? payload.articles : []);
 const retained = [];
 const excluded = [];
 
 for (const article of articles) {
-  if (article.category !== "politics") {
+  if (categoryOf(article) !== "politics") {
     retained.push(article);
     continue;
   }
@@ -110,9 +126,9 @@ for (const article of articles) {
   const result = validatePoliticsArticle(article);
   if (!result.ok) {
     excluded.push({
-      articleId: article.articleId,
-      titleArabic: article.originalTitleArabic,
-      articleUrl: article.articleUrl,
+      articleId: article.articleId || article.id || null,
+      titleArabic: titleOf(article),
+      articleUrl: urlOf(article),
       reason: result.reason,
       foreignSignal: result.foreignSignal || null
     });
@@ -130,28 +146,36 @@ for (const article of articles) {
 }
 
 const categoryCounts = retained.reduce((acc, article) => {
-  acc[article.category] = (acc[article.category] || 0) + 1;
+  const category = categoryOf(article) || "unknown";
+  acc[category] = (acc[category] || 0) + 1;
   return acc;
 }, {});
 
-await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
-  ...payload,
-  generatedAt: new Date().toISOString(),
-  count: retained.length,
-  categoryCounts,
-  politicsFilterRun: {
-    inputCount: articles.filter((item) => item.category === "politics").length,
-    retainedCount: retained.filter((item) => item.category === "politics").length,
-    excludedCount: excluded.length
-  },
-  articles: retained
-}, null, 2)}\n`, "utf8");
+const politicsInputCount = articles.filter((item) => categoryOf(item) === "politics").length;
+const politicsRetainedCount = retained.filter((item) => categoryOf(item) === "politics").length;
+const output = Array.isArray(payload)
+  ? retained
+  : {
+      ...payload,
+      generatedAt: new Date().toISOString(),
+      count: retained.length,
+      categoryCounts,
+      politicsFilterRun: {
+        inputCount: politicsInputCount,
+        retainedCount: politicsRetainedCount,
+        excludedCount: excluded.length
+      },
+      articles: retained
+    };
 
+await fs.writeFile(ARTICLES_FILE, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.0",
+  schemaVersion: "1.1",
   generatedAt: new Date().toISOString(),
+  inputCount: politicsInputCount,
+  retainedCount: politicsRetainedCount,
   excludedCount: excluded.length,
   excluded
 }, null, 2)}\n`, "utf8");
 
-console.log(`[politics-filter] retained=${retained.filter((item) => item.category === "politics").length}, excluded=${excluded.length}`);
+console.log(`[politics-filter] input=${politicsInputCount}, retained=${politicsRetainedCount}, excluded=${excluded.length}`);
