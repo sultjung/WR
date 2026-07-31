@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "generatedAt": "2026-07-31T07:36:27.071Z",
+  "before": 245,
+  "retained": 245,
+  "excludedCount": 0,
+  "categoryCounts": {
+    "politics": 90,
+    "bismayah": 1,
+    "international": 47,
+    "security": 78,
+    "economy": 29
+  },
+  "excluded": []
+}
