@@ -38,7 +38,7 @@
   const dateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"날짜 미확인":new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(date);};
   function setDefaultDateRange(){const range=defaultDateRange();$("startDate").value=range.start;$("endDate").value=range.end;}
   function updateCounts(){
-    const items=representatives();
+    const items=filteredArticles(false);
     $("countAll").textContent=items.length;
     for(const [category,id] of Object.entries(CATEGORY_IDS)) $(id).textContent=items.filter((item)=>categoryOf(item)===category).length;
     $("countSelected").textContent=state.selected.size;
@@ -58,7 +58,7 @@
     if(bTime===null) return -1;
     return order==="oldest"?aTime-bTime:bTime-aTime;
   }
-  function filteredArticles(){
+  function filteredArticles(applySummaryFilter=true){
     const startValue=$("startDate").value;
     const endValue=$("endDate").value;
     const startTime=startValue?new Date(`${startValue}T00:00:00`).getTime():null;
@@ -72,8 +72,8 @@
       const time=publishedTime(article);
       if(time!==null&&startTime!==null&&time<startTime) return false;
       if(time!==null&&endTime!==null&&time>endTime) return false;
-      if(state.filter==="selected"&&!state.selected.has(key)) return false;
-      if(!["all","selected"].includes(state.filter)&&categoryOf(article)!==state.filter) return false;
+      if(applySummaryFilter&&state.filter==="selected"&&!state.selected.has(key)) return false;
+      if(applySummaryFilter&&!["all","selected"].includes(state.filter)&&categoryOf(article)!==state.filter) return false;
       if(sourceFilter==="ready"&&!contentReady(article)) return false;
       if(sourceFilter==="failed"&&contentReady(article)) return false;
       if(translationFilter!=="all"&&translationStatus(article)!==translationFilter) return false;
