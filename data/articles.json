@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-07-31T08:16:03.930Z",
+  "generatedAt": "2026-07-31T08:18:04.808Z",
   "lookbackDays": 30,
   "count": 245,
   "categoryCounts": {
@@ -104,7 +104,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -212,7 +212,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -317,7 +317,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -425,7 +425,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 28,
           "businessImpact": 0,
@@ -535,7 +535,7 @@
         "levelKo": "긴급",
         "reportStatus": "IMMEDIATE_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "relevance": 50,
           "projectImpact": 5,
@@ -642,7 +642,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 8,
           "countryImportance": 15,
@@ -748,7 +748,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -853,7 +853,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -957,7 +957,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -1063,7 +1063,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 5,
@@ -1171,7 +1171,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -1278,7 +1278,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 9,
@@ -1386,7 +1386,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -1491,7 +1491,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -1599,7 +1599,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -1706,7 +1706,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -1814,7 +1814,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -1922,7 +1922,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -2029,7 +2029,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -2137,7 +2137,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -2245,7 +2245,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -2353,7 +2353,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -2461,7 +2461,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -2568,7 +2568,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 21,
@@ -2671,7 +2671,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 28,
           "location": 15,
@@ -2774,7 +2774,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -2885,7 +2885,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -2989,7 +2989,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 19,
           "countryImportance": 15,
@@ -3092,7 +3092,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 28,
           "businessImpact": 0,
@@ -3199,7 +3199,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 27,
           "countryImportance": 15,
@@ -3306,7 +3306,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 15,
@@ -3413,7 +3413,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 8,
           "location": 15,
@@ -3518,7 +3518,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -3626,7 +3626,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -3729,7 +3729,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 33,
           "location": 15,
@@ -3835,7 +3835,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 8,
           "location": 15,
@@ -3950,7 +3950,7 @@
         "levelKo": "중요",
         "reportStatus": "PRIORITY_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 33,
           "location": 25,
@@ -4066,7 +4066,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 25,
@@ -4174,7 +4174,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -4278,7 +4278,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -4385,7 +4385,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 8,
           "countryImportance": 10,
@@ -4493,7 +4493,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -4597,7 +4597,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -4702,7 +4702,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -4809,7 +4809,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 15,
@@ -4917,7 +4917,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -5029,7 +5029,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 28,
           "location": 25,
@@ -5133,7 +5133,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 10,
@@ -5240,7 +5240,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 13,
@@ -5346,7 +5346,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -5451,7 +5451,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -5559,7 +5559,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 17,
@@ -5665,7 +5665,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -5777,7 +5777,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -5883,7 +5883,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -6000,7 +6000,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -6118,7 +6118,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -6222,7 +6222,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -6339,7 +6339,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -6446,7 +6446,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -6551,7 +6551,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -6655,7 +6655,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 19,
           "countryImportance": 15,
@@ -6762,7 +6762,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -6868,7 +6868,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -6983,7 +6983,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 33,
           "location": 15,
@@ -7099,7 +7099,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -7207,7 +7207,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 11,
           "nationalImportance": 5,
@@ -7315,7 +7315,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -7423,7 +7423,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 19,
           "countryImportance": 5,
@@ -7531,7 +7531,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -7635,7 +7635,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 17,
@@ -7740,7 +7740,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -7843,7 +7843,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -7949,7 +7949,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -8052,7 +8052,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -8160,7 +8160,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -8268,7 +8268,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -8376,7 +8376,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -8484,7 +8484,7 @@
         "levelKo": "중요",
         "reportStatus": "PRIORITY_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 15,
@@ -8591,7 +8591,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 19,
           "countryImportance": 15,
@@ -8699,7 +8699,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -8807,7 +8807,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 27,
           "countryImportance": 15,
@@ -8914,7 +8914,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -9018,7 +9018,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 10,
@@ -9122,7 +9122,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 10,
@@ -9226,7 +9226,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 13,
@@ -9337,7 +9337,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 33,
           "location": 15,
@@ -9449,7 +9449,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -9552,7 +9552,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 17,
@@ -9656,7 +9656,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 5,
@@ -9761,7 +9761,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -9872,7 +9872,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -9985,7 +9985,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 0,
           "nationalImportance": 13,
@@ -10089,7 +10089,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 3,
           "countryImportance": 15,
@@ -10192,7 +10192,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -10298,7 +10298,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 13,
@@ -10406,7 +10406,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -10513,7 +10513,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 10,
           "location": 25,
@@ -10618,7 +10618,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -10724,7 +10724,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 5,
@@ -10832,7 +10832,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -10938,7 +10938,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -11053,7 +11053,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 9,
@@ -11158,7 +11158,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -11270,7 +11270,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -11382,7 +11382,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 25,
@@ -11486,7 +11486,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 16,
           "nationalImportance": 9,
@@ -11592,7 +11592,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -11707,7 +11707,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 15,
@@ -11813,7 +11813,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -11929,7 +11929,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -12033,7 +12033,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 21,
@@ -12139,7 +12139,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -12246,7 +12246,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -12354,7 +12354,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 10,
@@ -12458,7 +12458,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 27,
           "countryImportance": 15,
@@ -12561,7 +12561,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 20,
           "location": 0,
@@ -12667,7 +12667,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 21,
@@ -12773,7 +12773,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 9,
@@ -12877,7 +12877,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -12992,7 +12992,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -13100,7 +13100,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -13208,7 +13208,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -13314,7 +13314,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 9,
@@ -13426,7 +13426,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 25,
@@ -13530,7 +13530,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 27,
           "countryImportance": 15,
@@ -13637,7 +13637,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -13748,7 +13748,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -13856,7 +13856,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 3,
           "countryImportance": 15,
@@ -13962,7 +13962,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -14065,7 +14065,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -14169,7 +14169,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -14277,7 +14277,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 16,
           "countryImportance": 15,
@@ -14385,7 +14385,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 13,
@@ -14488,7 +14488,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -14596,7 +14596,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 0,
           "countryImportance": 10,
@@ -14711,7 +14711,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 25,
@@ -14819,7 +14819,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 3,
           "countryImportance": 15,
@@ -14926,7 +14926,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -15030,7 +15030,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -15138,7 +15138,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 3,
           "countryImportance": 15,
@@ -15246,7 +15246,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -15354,7 +15354,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -15459,7 +15459,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -15564,7 +15564,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -15668,7 +15668,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -15772,7 +15772,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 27,
           "countryImportance": 15,
@@ -15880,7 +15880,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -15987,7 +15987,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -16095,7 +16095,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -16198,7 +16198,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -16306,7 +16306,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -16414,7 +16414,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -16521,7 +16521,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 25,
@@ -16629,7 +16629,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 34,
           "businessImpact": 0,
@@ -16732,7 +16732,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -16840,7 +16840,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -16943,7 +16943,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -17050,7 +17050,7 @@
         "levelKo": "중요",
         "reportStatus": "PRIORITY_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 15,
@@ -17153,7 +17153,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -17259,7 +17259,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -17365,7 +17365,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -17472,7 +17472,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 25,
@@ -17580,7 +17580,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 15,
           "nationalImportance": 13,
@@ -17696,7 +17696,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -17803,7 +17803,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -17908,7 +17908,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -18016,7 +18016,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -18124,7 +18124,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -18227,7 +18227,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 9,
@@ -18343,7 +18343,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 25,
@@ -18449,7 +18449,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 25,
@@ -18553,7 +18553,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 10,
           "location": 25,
@@ -18661,7 +18661,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -18769,7 +18769,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 28,
           "businessImpact": 0,
@@ -18873,7 +18873,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -18981,7 +18981,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -19088,7 +19088,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 28,
           "location": 25,
@@ -19193,7 +19193,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -19301,7 +19301,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 28,
           "businessImpact": 0,
@@ -19408,7 +19408,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 28,
           "location": 15,
@@ -19516,7 +19516,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 19,
           "countryImportance": 15,
@@ -19631,7 +19631,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 33,
           "location": 15,
@@ -19735,7 +19735,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 0,
@@ -19839,7 +19839,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -19955,7 +19955,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 10,
           "location": 25,
@@ -20063,7 +20063,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 15,
@@ -20171,7 +20171,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -20275,7 +20275,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 28,
           "businessImpact": 0,
@@ -20383,7 +20383,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -20489,7 +20489,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 13,
@@ -20597,7 +20597,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 19,
           "countryImportance": 15,
@@ -20701,7 +20701,7 @@
         "levelKo": "중요",
         "reportStatus": "PRIORITY_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 35,
           "countryImportance": 15,
@@ -20809,7 +20809,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -20913,7 +20913,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -21017,7 +21017,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 8,
           "countryImportance": 15,
@@ -21125,7 +21125,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -21231,7 +21231,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 25,
@@ -21336,7 +21336,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 5,
           "businessImpact": 0,
@@ -21444,7 +21444,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -21559,7 +21559,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 35,
           "location": 15,
@@ -21666,7 +21666,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 27,
           "countryImportance": 15,
@@ -21773,7 +21773,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -21892,7 +21892,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -21998,7 +21998,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 9,
@@ -22114,7 +22114,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -22222,7 +22222,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 20,
           "businessImpact": 0,
@@ -22330,7 +22330,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 8,
           "countryImportance": 15,
@@ -22445,7 +22445,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -22560,7 +22560,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 25,
@@ -22668,7 +22668,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 3,
           "countryImportance": 15,
@@ -22781,7 +22781,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 3,
           "countryImportance": 15,
@@ -22889,7 +22889,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -23001,7 +23001,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -23117,7 +23117,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -23229,7 +23229,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -23337,7 +23337,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "iraqLink": 11,
           "countryImportance": 15,
@@ -23449,7 +23449,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 8,
           "location": 25,
@@ -23564,7 +23564,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -23672,7 +23672,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -23783,7 +23783,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 0,
           "location": 25,
@@ -23899,7 +23899,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -24014,7 +24014,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -24133,7 +24133,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -24252,7 +24252,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 10,
           "location": 15,
@@ -24367,7 +24367,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -24475,7 +24475,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 5,
@@ -24586,7 +24586,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 4,
           "nationalImportance": 0,
@@ -24702,7 +24702,7 @@
         "levelKo": "주목",
         "reportStatus": "REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 28,
           "location": 25,
@@ -24814,7 +24814,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -24926,7 +24926,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 25,
@@ -25041,7 +25041,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -25156,7 +25156,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 25,
@@ -25275,7 +25275,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 25,
@@ -25383,7 +25383,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 8,
           "nationalImportance": 17,
@@ -25499,7 +25499,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "nationalImportance": 40,
           "businessImpact": 0,
@@ -25618,7 +25618,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 15,
@@ -25737,7 +25737,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 25,
@@ -25856,7 +25856,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 5,
           "location": 15,
@@ -25971,7 +25971,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 10,
           "location": 25,
@@ -26086,7 +26086,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 18,
           "location": 15,
@@ -26198,7 +26198,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 15,
           "location": 25,
@@ -26309,7 +26309,7 @@
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 13,
           "location": 15,
@@ -26425,7 +26425,7 @@
         "levelKo": "참고",
         "reportStatus": "OPTIONAL_REVIEW",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "terrorDirectness": 23,
           "location": 25,
@@ -26536,7 +26536,7 @@
         "levelKo": "일반",
         "reportStatus": "REFERENCE_ONLY",
         "scoringMethod": "BUSINESS_FLOOR_RULES_V3",
-        "scoredAt": "2026-07-31T08:16:03.930Z",
+        "scoredAt": "2026-07-31T08:18:04.808Z",
         "breakdown": {
           "constructionInvestment": 12,
           "nationalImportance": 21,
