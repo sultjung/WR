@@ -3,7 +3,7 @@ import crypto from "node:crypto";
 const TERMS = {
   bismayah: ["بسماية", "مدينة بسماية الجديدة", "مشروع بسماية", "bismayah", "비스마야", "비스마야 신도시"],
   hanwha: ["شركة هانوا", "هانوا", "hanwha", "한화", "한화건설", "한화 건설"],
-  nic: ["الهيئة الوطنية للاستثمار", "هيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "هيئة الاستثمار", "national investment commission", "nic", "국가투자위원회", "이라크 국가투자위원회"],
+  nic: ["الهيئة الوطنية للاستثمار", "هيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "national investment commission", "국가투자위원회", "이라크 국가투자위원회"],
   nicChair: ["رئيس الهيئة الوطنية للاستثمار", "رئيس هيئة الاستثمار الوطنية", "رئاسة الهيئة الوطنية للاستثمار", "chairman of the national investment commission", "national investment commission chairman", "nic chairman", "nic chair", "국가투자위원회 의장", "국가투자위원장", "nic 의장", "nic 위원장"],
   chairHeadline: ["رئيس", "رئاسة", "chairman", "chair", "head", "의장", "위원장"],
   personnel: ["تعيين", "تكليف", "إقالة", "إعفاء", "استبدال", "استقالة", "appointed", "appointment", "named", "dismissed", "removed", "replacement", "resigned", "임명", "선임", "해임", "면직", "교체", "사임"],
@@ -62,7 +62,7 @@ export function businessFloorFor(article = {}) {
   const headline = headlineOf(article);
   const bismayah = hasAny(text, TERMS.bismayah);
   const hanwha = hasAny(text, TERMS.hanwha);
-  const nic = hasAny(text, TERMS.nic);
+  const nic = hasAny(text, TERMS.nic) || /(^|[^a-z])nic([^a-z]|$)/i.test(text);
   const nicChair = hasAny(text, TERMS.nicChair) || (nic && hasAny(headline, TERMS.chairHeadline));
   const personnel = hasAny(text, TERMS.personnel);
   const governmentDecision = hasAny(text, TERMS.government) && hasAny(text, TERMS.decision);
