@@ -93,13 +93,25 @@ jobs:
       - name: Reapply final category gate
         run: npm run collect:strict-gate
 
-      - name: Evaluate Bismayah business importance
+      - name: Verify OpenAI API secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY secret is unavailable to this workflow. Confirm it is stored under Settings > Secrets and variables > Actions > Secrets and is granted to this repository."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available to the workflow."
+
+      - name: Evaluate Bismayah business importance with AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           IMPORTANCE_AI_ENABLED: "true"
-          IMPORTANCE_MODEL: "gpt-5.4-mini"
-          IMPORTANCE_AI_BATCH_SIZE: "8"
-          IMPORTANCE_AI_MAX_ARTICLES: "40"
+          IMPORTANCE_AI_REQUIRED: "true"
+          IMPORTANCE_MODEL: ${{ vars.IMPORTANCE_MODEL || 'gpt-5-mini' }}
+          IMPORTANCE_AI_BATCH_SIZE: "6"
+          IMPORTANCE_AI_MAX_ARTICLES: "80"
+          IMPORTANCE_AI_TIMEOUT_MS: "60000"
         run: npm run collect:importance-business
 
       - name: Validate collected data
