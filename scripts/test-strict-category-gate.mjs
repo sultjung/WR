@@ -30,11 +30,39 @@ const articles = [
     originalTextArabic: "تواجه منشآت النفط السعودية في ينبع تهديداً متزايداً من المسيرات الحوثية، وذُكر الحشد الشعبي ضمن مقارنة إقليمية عابرة. " + padding + " وورد اسم العراق في نهاية التقرير."
   },
   {
+    articleId: "saudi-oil-international",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "رهان ينبع تحت التهديد... المسيرات الحوثية تستهدف نفط السعودية",
+    originalTextArabic: "تواجه منشآت النفط السعودية في ينبع تهديداً من المسيرات الحوثية وقد يؤثر الهجوم في أسعار النفط العالمية وطرق تصدير النفط عبر البحر الأحمر. " + padding
+  },
+  {
     articleId: "saudi-cabinet-incidental-iraq",
     category: "politics",
     contentStatus: "FULL_TEXT",
     originalTitleArabic: "سياسي / سمو ولي العهد يرأس جلسة مجلس الوزراء في جدة",
     originalTextArabic: "ترأس ولي العهد السعودي جلسة مجلس الوزراء في جدة وبحث المجلس شؤون المملكة، مع إشارة عابرة إلى الحكومة العراقية. " + padding + " كما أشار البيان إلى العراق ضمن أخبار خارجية متعددة."
+  },
+  {
+    articleId: "coordination-framework-zaidi-saudi",
+    category: "politics",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "هجمات السعودية وأميركا تهدد استقرار المنطقة.. مخرجات اجتماع الإطار بحضور الزيدي",
+    originalTextArabic: "ناقش اجتماع للإطار التنسيقي بحضور علي الزيدي التطورات الإقليمية وموقف الحكومة العراقية. " + padding
+  },
+  {
+    articleId: "zaidi-turkey",
+    category: "politics",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "موقف محرج للزيدي.. وزير النقل يكشف تفاصيل الاجتماع مع تركيا",
+    originalTextArabic: "كشف وزير النقل تفاصيل اجتماع حكومي ومباحثات مع تركيا بحضور مكتب الزيدي. " + padding
+  },
+  {
+    articleId: "zaidi-iran",
+    category: "politics",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "الزيدي في إيران اليوم لبحث الملفات العالقة بين البلدين",
+    originalTextArabic: "يجري علي الزيدي زيارة رسمية ومباحثات حكومية في طهران بصفته رئيس الوزراء العراقي. " + padding
   },
   {
     articleId: "iraq-oman-trade",
@@ -115,6 +143,9 @@ try {
 
   for (const id of [
     "iraq-gaza-bridge",
+    "coordination-framework-zaidi-saudi",
+    "zaidi-turkey",
+    "zaidi-iran",
     "iraq-oman-trade",
     "hormuz-market",
     "iraq-pmf-security",
@@ -126,6 +157,7 @@ try {
   }
   for (const id of [
     "saudi-oil-incidental-iraq",
+    "saudi-oil-international",
     "saudi-cabinet-incidental-iraq",
     "bab-mandab-saudi-only",
     "gaza-reconstruction-incidental-iraq"
@@ -133,8 +165,8 @@ try {
     assert.ok(excluded.has(id), `${id} should be excluded`);
   }
 
-  assert.equal(summary.method, "STRICT_CATEGORY_GATE_V2");
-  console.log("[test:strict-gate] Iraqi primary events retained; foreign-primary incidental mentions excluded");
+  assert.equal(summary.method, "STRICT_CATEGORY_GATE_V3");
+  console.log("[test:strict-gate] Iraqi primary actors retained; foreign-primary incidental stories excluded");
 } finally {
   await fs.rm(tempDir, { recursive: true, force: true });
 }
