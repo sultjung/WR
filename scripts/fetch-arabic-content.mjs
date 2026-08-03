@@ -14,14 +14,17 @@ const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 30);
 function decodeHtml(value = "") {
   return String(value)
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&apos;/g, "'")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&lrm;|&rlm;/gi, " ")
+    .replace(/&#8206;|&#8207;|&#x200e;|&#x200f;/gi, " ")
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, " ");
 }
 
 function stripTags(value = "") {
@@ -44,8 +47,10 @@ function normalizeArabic(value = "") {
     .replace(/[إأآٱ]/g, "ا")
     .replace(/ى/g, "ي")
     .replace(/ة/g, "ه")
+    .replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, " ")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim()
+    .toLowerCase();
 }
 
 function containsExactBismayah(value = "") {
@@ -60,6 +65,10 @@ function hasAny(value = "", terms = []) {
 function hasAll(value = "", terms = []) {
   const normalized = normalizeArabic(value);
   return terms.every((term) => normalized.includes(normalizeArabic(term)));
+}
+
+function hasNicAcronym(value = "") {
+  return /(?:^|[^a-z0-9])nic(?:[^a-z0-9]|$)/i.test(String(value));
 }
 
 function arabicRatio(value = "") {
@@ -130,19 +139,36 @@ function walkJson(value, output = []) {
   return output;
 }
 
-function extractJsonLdCandidates(html = "") {
-  const candidates = [];
+function extractJsonLdNodes(html = "") {
+  const nodes = [];
   for (const match of String(html).matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
       const parsed = JSON.parse(decodeHtml(match[1]).trim());
-      for (const node of walkJson(parsed)) {
-        for (const key of ["articleBody", "text", "description"]) {
-          if (typeof node?.[key] === "string") candidates.push(node[key]);
-        }
-      }
+      walkJson(parsed, nodes);
     } catch {}
   }
+  return nodes;
+}
+
+function extractJsonLdCandidates(html = "") {
+  const candidates = [];
+  for (const node of extractJsonLdNodes(html)) {
+    for (const key of ["articleBody", "text", "description"]) {
+      if (typeof node?.[key] === "string") candidates.push(node[key]);
+    }
+  }
   return candidates;
+}
+
+function extractJsonLdHeadline(html = "") {
+  for (const node of extractJsonLdNodes(html)) {
+    const type = Array.isArray(node?.["@type"]) ? node["@type"].join(" ") : String(node?.["@type"] || "");
+    if (type && !/(?:NewsArticle|Article|ReportageNewsArticle)/i.test(type)) continue;
+    for (const key of ["headline", "name"]) {
+      if (typeof node?.[key] === "string" && stripTags(node[key])) return stripTags(node[key]);
+    }
+  }
+  return "";
 }
 
 function extractSelectorCandidates(html = "") {
@@ -160,6 +186,8 @@ function extractSelectorCandidates(html = "") {
 
 function cleanArticleText(value = "") {
   return stripTags(value)
+    .replace(/شفق نيوز\s*\|\s*آخر الأخبار العاجلة في العراق وكوردستان والعالم/gi, " ")
+    .replace(/آخر الأخبار العاجلة في العراق وكوردستان والعالم/gi, " ")
     .replace(/حقوق النشر[^\n]*|جميع الحقوق محفوظة[^\n]*|اشترك في النشرة[^\n]*|تابعنا على[^\n]*/gi, " ")
     .replace(/[ \t]+/g, " ")
     .replace(/\n\s*\n+/g, "\n\n")
@@ -182,8 +210,64 @@ function extractCanonicalUrl(html = "", fallback = "") {
   return normalizeUrl(link || og || fallback);
 }
 
-function extractTitle(html = "", fallback = "") {
-  return extractMeta(html, "og:title") || extractMeta(html, "twitter:title") || stripTags(String(html).match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "") || fallback;
+function cleanArticleTitle(title = "", articleUrl = "") {
+  const host = hostnameOf(articleUrl);
+  let value = stripTags(title)
+    .replace(/&(?:lrm|rlm);/gi, " ")
+    .replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  if (host === "shafaq.com" || host.endsWith(".shafaq.com")) {
+    value = value
+      .replace(/\s*(?:[-–—|]\s*)?شفق نيوز(?:\s*\|[\s\S]*)?$/i, "")
+      .replace(/\s*\|\s*آخر الأخبار العاجلة في العراق وكوردستان والعالم[\s\S]*$/i, "")
+      .trim();
+  }
+
+  value = value
+    .replace(/\s*(?:[-–—|]\s*)?(?:آخر الأخبار العاجلة|آخر الأخبار|الأخبار العاجلة)\s+في\s+العراق(?:\s+وكوردستان)?(?:\s+والعالم)?\s*$/i, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+  return value;
+}
+
+function extractH1Title(html = "") {
+  return stripTags(String(html).match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "");
+}
+
+function extractTitle(html = "", fallback = "", articleUrl = "") {
+  const candidates = [
+    extractJsonLdHeadline(html),
+    extractH1Title(html),
+    extractMeta(html, "og:title"),
+    extractMeta(html, "twitter:title"),
+    fallback
+  ];
+  return candidates.map((title) => cleanArticleTitle(title, articleUrl)).find(Boolean) || "";
+}
+
+const BISMAYAH_TERMS = ["bismayah", "bismaya", "bncp"];
+const NIC_TERMS = [
+  "الهيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "رئيس الهيئة الوطنية للاستثمار",
+  "national investment commission", "iraq national investment commission",
+  "عادل الياسري", "عادل داخل الياسري", "حيدر مكية"
+];
+const HANWHA_TERMS = ["شركة هانوا", "هانوا", "hanwha", "한화"];
+const IRAQ_TERMS = [
+  "العراق", "العراقي", "العراقية", "بغداد", "البصرة", "الموصل", "كركوك", "الانبار", "الأنبار",
+  "اربيل", "أربيل", "السليمانية", "كربلاء", "النجف", "ديالى", "صلاح الدين", "نينوى", "ذي قار",
+  "ميسان", "واسط", "بابل", "الديوانية", "المثنى", "دهوك", "كردستان العراق", "iraq", "iraqi"
+];
+
+function bismayahValidation(text = "") {
+  const directBismayah = containsExactBismayah(text) || hasAny(text, BISMAYAH_TERMS);
+  const directNic = hasAny(text, NIC_TERMS) || hasNicAcronym(text);
+  const hanwhaIraq = hasAny(text, HANWHA_TERMS) && hasAny(text, IRAQ_TERMS);
+  return directBismayah || directNic || hanwhaIraq
+    ? { ok: true, errorCode: null, note: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련" }
+    : { ok: false, errorCode: "NON_IRAQ_RELATED", note: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 근거 미확인" };
 }
 
 function politicalValidation(item = {}, text = "") {
@@ -212,46 +296,101 @@ function economyValidation(item = {}, text = "") {
   return { ok: true, errorCode: null, note: "비스마야 사업환경과 연관 가능한 이라크 경제·건설·투자 기사" };
 }
 
-function validateCategory(item = {}, text = "") {
-  if (item.category === "bismayah") {
-    return containsExactBismayah(text)
-      ? { ok: true, errorCode: null, note: "정확한 비스마야 표기 확인" }
-      : { ok: false, errorCode: "NON_IRAQ_RELATED", note: "정확한 비스마야 표기(بسماية/بسمايه) 미확인" };
+function securityValidation(item = {}, title = "", body = "", articleUrl = "") {
+  const requiredTerms = Array.isArray(item.requiredTerms) ? item.requiredTerms : [];
+  const excludedTerms = Array.isArray(item.excludedTerms) ? item.excludedTerms : [];
+  const lead = String(body).slice(0, 2200);
+  const evidence = `${title}\n${lead}`;
+  const foreignPlaces = [
+    "الهند", "باكستان", "سوريا", "لبنان", "فلسطين", "غزة", "ايران", "إيران", "اليمن", "السعودية",
+    "مصر", "الاردن", "الأردن", "الكويت", "قطر", "الامارات", "الإمارات", "البحرين", "تركيا",
+    "افغانستان", "أفغانستان", "كينيا", "الصومال", "المغرب", "تونس", "الجزائر", "السودان", "كولومبيا"
+  ];
+  const iraqAnchors = [
+    ...IRAQ_TERMS,
+    "الحكومة العراقية", "القوات العراقية", "الجيش العراقي", "الشرطة العراقية", "جهاز الامن الوطني",
+    "جهاز الأمن الوطني", "الحشد الشعبي", "وزارة الداخلية العراقية", "قيادة العمليات المشتركة"
+  ];
+  const securitySignals = [
+    "انفجار", "تفجير", "عبوة ناسفة", "لغم", "هجوم", "هجوم مسلح", "اطلاق نار", "إطلاق نار", "اغتيال",
+    "اشتباك", "قصف", "غارة", "صاروخ", "صواريخ", "طائرة مسيرة", "مسيّرات", "داعش", "ارهاب", "إرهاب",
+    "عملية امنية", "عملية أمنية", "اعتقال", "احباط هجوم", "إحباط هجوم", "مقتل", "اصابة", "إصابة",
+    "تظاهرة", "تظاهرات", "احتجاج", "احتجاجات", "اعتصام", "قطع الطريق", "اغلاق الطريق", "إغلاق الطريق"
+  ];
+  const foreignLocationInTitle = hasAny(title, foreignPlaces);
+  const iraqInTitle = hasAny(title, iraqAnchors);
+  const iraqInLead = hasAny(lead, iraqAnchors);
+  const isShafaqWorldSection = (() => {
+    if (hostnameOf(articleUrl) !== "shafaq.com") return false;
+    try { return decodeURIComponent(new URL(articleUrl).pathname).includes("المنطقة-والعالم"); } catch { return false; }
+  })();
+
+  if (hasAny(evidence, excludedTerms)) return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "제외 키워드가 확인된 치안기사" };
+  if (foreignLocationInTitle && !iraqInTitle && !iraqInLead) {
+    return { ok: false, errorCode: "FOREIGN_SECURITY_EVENT", note: "이라크와 무관한 해외 치안·시위 사건" };
   }
+  if (isShafaqWorldSection && !iraqInTitle && !iraqInLead) {
+    return { ok: false, errorCode: "FOREIGN_SECURITY_EVENT", note: "Shafaq 지역·세계 섹션의 비이라크 치안기사" };
+  }
+  if (!iraqInTitle && !iraqInLead) return { ok: false, errorCode: "NON_IRAQ_RELATED", note: "이라크 지역·기관·치안 주체 확인 불가" };
+  if (requiredTerms.length && !hasAll(evidence, requiredTerms)) return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "검색 키워드의 필수 치안 주체가 본문에서 확인되지 않음" };
+  if (!hasAny(evidence, securitySignals)) return { ok: false, errorCode: "LOW_INFORMATION_SECURITY", note: "테러·치안·시위 관련 실질 사건 신호 부족" };
+  return { ok: true, errorCode: null, note: "이라크 내 테러·치안·시위 사건" };
+}
+
+function validateCategory(item = {}, title = "", body = "", articleUrl = "") {
+  const text = `${title}\n${body}`;
+  if (item.category === "bismayah") return bismayahValidation(text);
   if (item.category === "politics") return politicalValidation(item, text);
   if (item.category === "economy") return economyValidation(item, text);
+  if (item.category === "security") return securityValidation(item, title, body, articleUrl);
   return { ok: true, errorCode: null, note: "카테고리 전용 검증 미적용" };
+}
+
+function sanitizeStoredArticle(item = {}) {
+  const articleUrl = item.canonicalUrl || item.articleUrl || "";
+  const title = cleanArticleTitle(item.originalTitleArabic || "", articleUrl);
+  const body = cleanArticleText(item.originalTextArabic || "");
+  const validation = validateCategory(item, title, body, articleUrl);
+  if (!validation.ok) return null;
+  return {
+    ...item,
+    originalTitleArabic: title,
+    originalTextArabic: body,
+    relevanceNote: validation.note || item.relevanceNote
+  };
 }
 
 async function hydrate(item) {
   if (item.urlStatus !== "RESOLVED" || !item.articleUrl) return { ...item, contentStatus: "NOT_ATTEMPTED" };
   try {
     const page = await fetchPage(item.articleUrl);
+    const articleUrl = normalizeUrl(page.finalUrl || item.articleUrl);
     const originalTextArabic = extractBestText(page.html);
-    const originalTitleArabic = extractTitle(page.html, item.originalTitleArabic || "");
+    const originalTitleArabic = extractTitle(page.html, item.originalTitleArabic || "", articleUrl);
     const combinedText = `${originalTitleArabic}\n${originalTextArabic}`;
     const ratio = arabicRatio(combinedText);
-    const canonicalUrl = extractCanonicalUrl(page.html, page.finalUrl || item.articleUrl);
+    const canonicalUrl = extractCanonicalUrl(page.html, articleUrl);
 
     if (originalTextArabic.length < MIN_CONTENT_CHARS) {
-      return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "CONTENT_EXTRACTION_FAILED", fetchedAt: new Date().toISOString() };
+      return { ...item, articleUrl, canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "CONTENT_EXTRACTION_FAILED", fetchedAt: new Date().toISOString() };
     }
     if (ratio < MIN_ARABIC_RATIO) {
-      return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "NON_ARABIC_ARTICLE", fetchedAt: new Date().toISOString() };
+      return { ...item, articleUrl, canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "NON_ARABIC_ARTICLE", fetchedAt: new Date().toISOString() };
     }
 
-    const categoryResult = validateCategory(item, combinedText);
+    const categoryResult = validateCategory(item, originalTitleArabic, originalTextArabic, canonicalUrl || articleUrl);
     if (!categoryResult.ok) {
-      return { ...item, articleUrl: normalizeUrl(page.finalUrl || item.articleUrl), canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: categoryResult.errorCode, relevanceNote: categoryResult.note, fetchedAt: new Date().toISOString() };
+      return { ...item, articleUrl, canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: categoryResult.errorCode, relevanceNote: categoryResult.note, fetchedAt: new Date().toISOString() };
     }
 
     return {
       ...item,
-      articleUrl: normalizeUrl(page.finalUrl || item.articleUrl),
+      articleUrl,
       canonicalUrl,
       originalTitleArabic,
       originalTextArabic,
-      sourceHost: hostnameOf(page.finalUrl || item.articleUrl),
+      sourceHost: hostnameOf(articleUrl),
       contentChars: originalTextArabic.length,
       arabicRatio: ratio,
       contentStatus: "FULL_TEXT",
@@ -300,7 +439,13 @@ const previous = await loadPrevious();
 const cutoff = new Date();
 cutoff.setUTCDate(cutoff.getUTCDate() - RETENTION_DAYS);
 const merged = new Map();
-for (const item of [...previous, ...successful]) {
+let removedStoredCount = 0;
+for (const rawItem of [...previous, ...successful]) {
+  const item = sanitizeStoredArticle(rawItem);
+  if (!item) {
+    removedStoredCount += 1;
+    continue;
+  }
   const published = new Date(item.publishedAt || 0);
   if (!Number.isNaN(published.getTime()) && published < cutoff) continue;
   const key = articleKey(item);
@@ -322,6 +467,7 @@ const payload = {
     resolvedCount: input.resolvedCount || 0,
     fullTextCount: successful.length,
     failedCount: hydrated.length - successful.length,
+    removedStoredCount,
     failures: hydrated.filter((item) => item.contentStatus !== "FULL_TEXT").reduce((acc, item) => {
       const key = item.errorCode || "UNKNOWN";
       acc[key] = (acc[key] || 0) + 1;
@@ -331,4 +477,4 @@ const payload = {
   articles
 };
 await fs.writeFile(OUTPUT_FILE, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`[content] completed: ${successful.length} new full-text articles; retained=${articles.length}`, categoryCounts);
+console.log(`[content] completed: ${successful.length} new full-text articles; retained=${articles.length}; removedStored=${removedStoredCount}`, categoryCounts);
