@@ -15,6 +15,45 @@ const STOP_WORDS = new Set([
   "جديد","اخبار","أخبار","عاجل","بشأن","حول","ضمن","جراء","لدى","بين","العام","الماضي","الحالي"
 ]);
 
+const CANONICAL_ENTITY_ALIASES = new Map([
+  ["ORG_NIC", [
+    "الهيئه الوطنيه للاستثمار",
+    "هيئه الاستثمار الوطنيه",
+    "رئاسه الهيئه الوطنيه للاستثمار",
+    "هيئه الاستثمار"
+  ]],
+  ["PERSON_ADIL_AL_YASIRI", [
+    "عادل داخل الياسري",
+    "عادل الياسري",
+    "عادل داخل"
+  ]],
+  ["PERSON_HAIDER_MAKKIYA", [
+    "حيدر مكيه",
+    "حيدر مكيّا",
+    "حيدر مكية"
+  ]]
+]);
+
+const ACTION_ALIASES = new Map([
+  ["PERSONNEL_APPOINTMENT", [
+    "تكليف",
+    "تعيين",
+    "تسميه",
+    "تولي المنصب",
+    "تسلم مهام",
+    "تسيير اعمال",
+    "رئيسا للهيئه",
+    "رئاسه الهيئه"
+  ]],
+  ["PERSONNEL_REMOVAL", [
+    "اعفاء",
+    "اقاله",
+    "انهاء تكليف",
+    "انهاء مهام",
+    "سحب يد"
+  ]]
+]);
+
 function normalizeArabic(value = "") {
   return String(value)
     .replace(/[\u064B-\u065F\u0670]/g, "")
@@ -29,20 +68,39 @@ function normalizeArabic(value = "") {
     .toLowerCase();
 }
 
+function canonicalToken(value = "") {
+  let token = String(value);
+  if (token.length >= 5 && /^[وف]/.test(token)) token = token.slice(1);
+
+  for (const prefix of ["بال", "كال", "فال", "وال"]) {
+    if (token.startsWith(prefix) && token.length > prefix.length + 2) {
+      token = `ال${token.slice(prefix.length)}`;
+      break;
+    }
+  }
+
+  if (token.startsWith("لل") && token.length > 4) token = `ال${token.slice(2)}`;
+  if (token.startsWith("ال") && token.length > 4) token = token.slice(2);
+  return token;
+}
+
 function tokens(value = "", maxChars = 0) {
   const input = maxChars > 0 ? String(value).slice(0, maxChars) : String(value);
   return [...new Set(
     normalizeArabic(input)
       .split(" ")
+      .map(canonicalToken)
       .filter((token) => token.length >= 3 && !STOP_WORDS.has(token))
   )];
 }
 
-function intersectionCount(a = [], b = []) {
+function intersection(a = [], b = []) {
   const A = new Set(a);
-  let common = 0;
-  for (const value of new Set(b)) if (A.has(value)) common += 1;
-  return common;
+  return [...new Set(b)].filter((value) => A.has(value));
+}
+
+function intersectionCount(a = [], b = []) {
+  return intersection(a, b).length;
 }
 
 function jaccard(a = [], b = []) {
@@ -62,15 +120,32 @@ function numbers(text = "") {
   return [...new Set(String(text).match(/\b\d+(?:[.,]\d+)?\b/g) || [])];
 }
 
+function aliasSignals(text = "", aliasMap = new Map()) {
+  const normalized = normalizeArabic(text);
+  const output = [];
+  for (const [signal, aliases] of aliasMap.entries()) {
+    if (aliases.some((alias) => normalized.includes(normalizeArabic(alias)))) output.push(signal);
+  }
+  return output;
+}
+
 function entitySignals(text = "") {
   const normalized = normalizeArabic(text);
+  const canonical = aliasSignals(normalized, CANONICAL_ENTITY_ALIASES);
   const terms = [
-    "رئيس الوزراء","مجلس الوزراء","مجلس النواب","الاطار التنسيقي","هيئه النزاهه","الهيئه الوطنيه للاستثمار",
+    "رئيس الوزراء","مجلس الوزراء","مجلس النواب","الاطار التنسيقي","هيئه النزاهه",
     "وزاره الاعمار","وزاره الماليه","وزاره التخطيط","البنك المركزي العراقي","داعش","الولايات المتحده",
     "ايران","تركيا","سوريا","بغداد","البصره","نينوي","الانبار","كركوك","ديالي","صلاح الدين",
     "مضيق هرمز","طريق التنميه","بسمايه","هانوا","محمد شياع السوداني","علي الزيدي","نوري المالكي"
   ];
-  return terms.filter((term) => normalized.includes(term));
+  const literal = terms
+    .filter((term) => normalized.includes(normalizeArabic(term)))
+    .map((term) => `TERM:${normalizeArabic(term)}`);
+  return [...new Set([...canonical, ...literal])];
+}
+
+function actionSignals(title = "") {
+  return aliasSignals(title, ACTION_ALIASES);
 }
 
 function dateHours(a, b) {
@@ -87,13 +162,40 @@ function sameOrContainedTitle(a = "", b = "") {
   return A === B || A.includes(B) || B.includes(A);
 }
 
+function highConfidencePersonnelMatch(a, b, aEntities, bEntities) {
+  const sharedPeople = intersection(
+    aEntities.filter((value) => value.startsWith("PERSON_")),
+    bEntities.filter((value) => value.startsWith("PERSON_"))
+  );
+  const sharedOrganizations = intersection(
+    aEntities.filter((value) => value.startsWith("ORG_")),
+    bEntities.filter((value) => value.startsWith("ORG_"))
+  );
+  const sharedActions = intersection(
+    actionSignals(a.originalTitleArabic),
+    actionSignals(b.originalTitleArabic)
+  );
+
+  if (!sharedPeople.length || !sharedOrganizations.length || !sharedActions.length) return null;
+  return {
+    score: 0.96,
+    reason: "SAME_PERSON_ORGANIZATION_PERSONNEL_ACTION",
+    sharedSignals: [...sharedPeople, ...sharedOrganizations, ...sharedActions]
+  };
+}
+
 function eventScore(a, b) {
-  if ((a.category || "") !== (b.category || "")) return 0;
-  if (dateHours(a.publishedAt, b.publishedAt) > MAX_HOURS) return 0;
+  if ((a.category || "") !== (b.category || "")) {
+    return { score: 0, reason: "CATEGORY_MISMATCH", sharedSignals: [] };
+  }
+  if (dateHours(a.publishedAt, b.publishedAt) > MAX_HOURS) {
+    return { score: 0, reason: "TIME_WINDOW_EXCEEDED", sharedSignals: [] };
+  }
 
   const aTitle = tokens(a.originalTitleArabic);
   const bTitle = tokens(b.originalTitleArabic);
-  const commonTitle = intersectionCount(aTitle, bTitle);
+  const commonTitleTokens = intersection(aTitle, bTitle);
+  const commonTitle = commonTitleTokens.length;
   const titleJaccard = jaccard(aTitle, bTitle);
   const titleOverlap = overlapCoefficient(aTitle, bTitle);
 
@@ -103,13 +205,18 @@ function eventScore(a, b) {
 
   const aEntities = entitySignals(`${a.originalTitleArabic || ""}\n${a.originalTextArabic || ""}`);
   const bEntities = entitySignals(`${b.originalTitleArabic || ""}\n${b.originalTextArabic || ""}`);
+  const sharedEntities = intersection(aEntities, bEntities);
   const entityScore = jaccard(aEntities, bEntities);
-  const commonEntities = intersectionCount(aEntities, bEntities);
+  const commonEntities = sharedEntities.length;
+
+  const personnelMatch = highConfidencePersonnelMatch(a, b, aEntities, bEntities);
+  if (personnelMatch) return personnelMatch;
 
   const aNumbers = numbers(`${a.originalTitleArabic || ""}\n${String(a.originalTextArabic || "").slice(0, 1400)}`);
   const bNumbers = numbers(`${b.originalTitleArabic || ""}\n${String(b.originalTextArabic || "").slice(0, 1400)}`);
+  const sharedNumbers = intersection(aNumbers, bNumbers);
   const numberScore = jaccard(aNumbers, bNumbers);
-  const commonNumbers = intersectionCount(aNumbers, bNumbers);
+  const commonNumbers = sharedNumbers.length;
 
   const exactish = sameOrContainedTitle(a.originalTitleArabic, b.originalTitleArabic);
   const strongTitle = commonTitle >= 3 && titleOverlap >= 0.67;
@@ -117,15 +224,16 @@ function eventScore(a, b) {
     && titleOverlap >= 0.45
     && (commonEntities > 0 || commonNumbers > 0 || leadJaccard >= 0.16);
 
-  if (!exactish && !strongTitle && !supportedTitle) return 0;
+  if (!exactish && !strongTitle && !supportedTitle) {
+    return { score: 0, reason: "INSUFFICIENT_EVENT_EVIDENCE", sharedSignals: [] };
+  }
 
   const incidentBonus = a.securityIncident?.type
     && a.securityIncident?.type === b.securityIncident?.type
     ? 0.08
     : 0;
   const exactBonus = exactish ? 0.14 : 0;
-
-  return Math.min(
+  const score = Math.min(
     1,
     titleJaccard * 0.29
       + titleOverlap * 0.29
@@ -135,6 +243,16 @@ function eventScore(a, b) {
       + incidentBonus
       + exactBonus
   );
+
+  return {
+    score,
+    reason: "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+    sharedSignals: [
+      ...commonTitleTokens.map((value) => `TITLE:${value}`),
+      ...sharedEntities,
+      ...sharedNumbers.map((value) => `NUMBER:${value}`)
+    ].slice(0, 12)
+  };
 }
 
 function sourceRank(article) {
@@ -172,13 +290,15 @@ const matches = [];
 
 for (let i = 0; i < articles.length; i += 1) {
   for (let j = i + 1; j < articles.length; j += 1) {
-    const score = eventScore(articles[i], articles[j]);
-    if (score >= MIN_SCORE) {
+    const match = eventScore(articles[i], articles[j]);
+    if (match.score >= MIN_SCORE) {
       union(i, j);
       matches.push({
         left: articles[i].articleId,
         right: articles[j].articleId,
-        score: Number(score.toFixed(4))
+        score: Number(match.score.toFixed(4)),
+        reason: match.reason,
+        sharedSignals: match.sharedSignals
       });
     }
   }
@@ -247,13 +367,13 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
     duplicateArticleCount,
     maxHours: MAX_HOURS,
     minScore: MIN_SCORE,
-    method: "ARABIC_TITLE_LEAD_ENTITY_NUMERIC_V2"
+    method: "ARABIC_CANONICAL_ENTITY_ACTION_V3"
   },
   articles: annotated
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(GROUPS_FILE, `${JSON.stringify({
-  schemaVersion: "1.0",
+  schemaVersion: "1.1",
   generatedAt: new Date().toISOString(),
   groupCount: groups.length,
   duplicateGroupCount: duplicateGroups.length,
