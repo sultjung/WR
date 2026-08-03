@@ -124,10 +124,17 @@ const INTERNATIONAL_ROUTE_CONTEXT = [
   "الخليج", "مضيق", "البحر الاحمر", "باب المندب", "قناة السويس", "الملاحة"
 ];
 const FOREIGN_PLACES = [
-  "سوريا", "درعا", "حماة", "حمص", "حلب", "دمشق", "لبنان", "بيروت", "فلسطين", "غزة",
-  "ايران", "طهران", "اليمن", "صنعاء", "السعودية", "مصر", "القاهرة", "الاردن", "الكويت",
-  "قطر", "الامارات", "دبي", "البحرين", "تركيا", "باكستان", "كشمير", "افغانستان", "كينيا",
+  "سوريا", "السوري", "السورية", "درعا", "حماة", "حمص", "حلب", "دمشق",
+  "لبنان", "اللبناني", "اللبنانية", "بيروت", "فلسطين", "الفلسطيني", "الفلسطينية", "غزة",
+  "ايران", "الايراني", "الايرانية", "طهران", "اليمن", "اليمني", "اليمنية", "صنعاء",
+  "السعودية", "السعودي", "جدة", "الرياض", "ينبع", "مصر", "المصري", "المصرية", "القاهرة",
+  "الاردن", "الاردني", "الاردنية", "الكويت", "الكويتي", "الكويتية", "قطر", "القطري", "القطرية",
+  "الامارات", "الاماراتي", "الاماراتية", "دبي", "البحرين", "البحريني", "البحرينية",
+  "تركيا", "التركي", "التركية", "باكستان", "كشمير", "افغانستان", "كينيا",
   "الصومال", "كولومبيا", "المغرب", "تونس", "الجزائر", "السودان", "الهند"
+];
+const FOREIGN_TITLE_IRAQ_EXCEPTIONS = [
+  "جسر غزة"
 ];
 const NOISE = [
   "كرة القدم", "مباراة", "الدوري", "لاعب", "ريال مدريد", "برشلونة", "مسلسل", "فنان",
@@ -148,16 +155,20 @@ function iraqRelevance(title, lead) {
   const openingHasInstitution = hasStrongIraqInstitution(opening);
   const openingHasIraq = hasAny(opening, IRAQ_CORE);
   const foreignPrimaryTitle = hasAny(title, FOREIGN_PLACES) && !titleHasIraq;
-  const primary = titleHasIraq
-    || openingHasInstitution
-    || (!foreignPrimaryTitle && openingHasIraq);
+  const foreignTitleIraqException = foreignPrimaryTitle
+    && hasAny(title, FOREIGN_TITLE_IRAQ_EXCEPTIONS)
+    && openingHasInstitution;
+  const primary = foreignPrimaryTitle
+    ? foreignTitleIraqException
+    : (titleHasIraq || openingHasInstitution || openingHasIraq);
 
   return {
     primary,
     titleHasIraq,
     openingHasInstitution,
     openingHasIraq,
-    foreignPrimaryTitle
+    foreignPrimaryTitle,
+    foreignTitleIraqException
   };
 }
 
