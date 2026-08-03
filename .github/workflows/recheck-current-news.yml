@@ -2,17 +2,8 @@ name: Recheck Current News Relevance
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/recheck-current-news.yml
-      - scripts/strict-category-gate.mjs
-      - scripts/test-strict-category-gate.mjs
-      - scripts/restore-relevance-candidates.mjs
-      - scripts/group-duplicate-events.mjs
-      - scripts/test-group-duplicate-events.mjs
-      - package.json
+  schedule:
+    - cron: "30 5 * * *" # temporary audit run at 14:30 KST
 
 permissions:
   contents: write
