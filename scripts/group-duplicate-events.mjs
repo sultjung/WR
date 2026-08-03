@@ -4,10 +4,16 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 
 const ROOT = process.cwd();
-const ARTICLES_FILE = path.join(ROOT, "data", "articles.json");
-const GROUPS_FILE = path.join(ROOT, "data", "event-groups.json");
+const ARTICLES_FILE = path.resolve(
+  process.env.EVENT_GROUP_ARTICLES_FILE || path.join(ROOT, "data", "articles.json")
+);
+const GROUPS_FILE = path.resolve(
+  process.env.EVENT_GROUP_GROUPS_FILE || path.join(ROOT, "data", "event-groups.json")
+);
 const MAX_HOURS = Number(process.env.EVENT_GROUP_MAX_HOURS || 72);
 const MIN_SCORE = Number(process.env.EVENT_GROUP_MIN_SCORE || 0.5);
+const BILATERAL_ANCHOR_MAX_HOURS = Number(process.env.EVENT_GROUP_BILATERAL_ANCHOR_HOURS || 18);
+const BILATERAL_BURST_MAX_HOURS = Number(process.env.EVENT_GROUP_BILATERAL_BURST_HOURS || 0.25);
 
 const STOP_WORDS = new Set([
   "في","من","على","الى","إلى","عن","مع","بعد","قبل","خلال","هذا","هذه","ذلك","التي","الذي","وهو","وهي",
@@ -48,6 +54,67 @@ const ACTION_ALIASES = new Map([
     "إنهاء تكليف",
     "إنهاء مهام",
     "سحب يد"
+  ]]
+]);
+
+const BILATERAL_EVENT_ALIASES = new Map([
+  ["COUNTRY_EGYPT", [
+    "مصر",
+    "المصري",
+    "المصرية"
+  ]],
+  ["COUNTRY_IRAQ", [
+    "العراق",
+    "العراقي",
+    "العراقية"
+  ]],
+  ["ORG_NIC", [
+    "الهيئة الوطنية للاستثمار",
+    "هيئة الاستثمار الوطنية",
+    "رئاسة الهيئة الوطنية للاستثمار",
+    "هيئة الاستثمار"
+  ]],
+  ["ORG_EGYPT_COMMERCIAL_REP", [
+    "التمثيل التجاري المصري",
+    "مكتب التمثيل التجاري المصري",
+    "التمثيل التجاري في بغداد",
+    "التمثيل التجاري"
+  ]],
+  ["TOPIC_INVESTMENT", [
+    "الاستثمار",
+    "الاستثماري",
+    "الاستثمارية",
+    "الاستثمارات",
+    "المستثمر",
+    "المستثمرين",
+    "المستثمرون"
+  ]],
+  ["TOPIC_COOPERATION", [
+    "التعاون",
+    "المشترك",
+    "المشتركة",
+    "الشراكة"
+  ]],
+  ["EVENT_DISCUSSION", [
+    "مباحثات",
+    "بحث",
+    "يبحث",
+    "تبحث",
+    "تبحثان",
+    "مناقشات",
+    "ناقش",
+    "اجتماع",
+    "لقاء"
+  ]],
+  ["ANCHOR_INVESTOR_MOBILITY", [
+    "حركة المستثمرين",
+    "تسهيل حركة المستثمرين",
+    "تيسير حركة المستثمرين"
+  ]],
+  ["ANCHOR_BUSINESS_EXCHANGE", [
+    "الزيارات المتبادلة",
+    "مجتمعي الأعمال",
+    "مجتمع الأعمال"
   ]]
 ]);
 
@@ -119,16 +186,20 @@ function numbers(text = "") {
 }
 
 function aliasSignals(text = "", aliasMap = new Map()) {
-  const normalized = canonicalPhrase(text);
+  const normalized = ` ${canonicalPhrase(text)} `;
   const output = [];
   for (const [signal, aliases] of aliasMap.entries()) {
-    if (aliases.some((alias) => normalized.includes(canonicalPhrase(alias)))) output.push(signal);
+    const matched = aliases.some((alias) => {
+      const canonicalAlias = canonicalPhrase(alias);
+      return canonicalAlias && normalized.includes(` ${canonicalAlias} `);
+    });
+    if (matched) output.push(signal);
   }
   return output;
 }
 
 function entitySignals(text = "") {
-  const normalized = canonicalPhrase(text);
+  const normalized = ` ${canonicalPhrase(text)} `;
   const canonical = aliasSignals(text, CANONICAL_ENTITY_ALIASES);
   const terms = [
     "رئيس الوزراء","مجلس الوزراء","مجلس النواب","الاطار التنسيقي","هيئة النزاهة",
@@ -137,13 +208,20 @@ function entitySignals(text = "") {
     "مضيق هرمز","طريق التنمية","بسماية","هانوا","محمد شياع السوداني","علي الزيدي","نوري المالكي"
   ];
   const literal = terms
-    .filter((term) => normalized.includes(canonicalPhrase(term)))
+    .filter((term) => {
+      const canonicalTerm = canonicalPhrase(term);
+      return canonicalTerm && normalized.includes(` ${canonicalTerm} `);
+    })
     .map((term) => `TERM:${canonicalPhrase(term)}`);
   return [...new Set([...canonical, ...literal])];
 }
 
 function actionSignals(title = "") {
   return aliasSignals(title, ACTION_ALIASES);
+}
+
+function bilateralEventSignals(text = "") {
+  return aliasSignals(text, BILATERAL_EVENT_ALIASES);
 }
 
 function dateHours(a, b) {
@@ -179,6 +257,46 @@ function highConfidencePersonnelMatch(aEntities, bEntities, aActions, bActions) 
   };
 }
 
+function highConfidenceBilateralInvestmentMatch(a, b, aSignals, bSignals) {
+  const required = [
+    "COUNTRY_EGYPT",
+    "COUNTRY_IRAQ",
+    "TOPIC_INVESTMENT",
+    "TOPIC_COOPERATION"
+  ];
+  if (!required.every((signal) => aSignals.includes(signal) && bSignals.includes(signal))) return null;
+
+  const hours = dateHours(a.publishedAt, b.publishedAt);
+  const shared = intersection(aSignals, bSignals);
+  const anchorSignals = new Set([
+    "ORG_NIC",
+    "ORG_EGYPT_COMMERCIAL_REP",
+    "ANCHOR_INVESTOR_MOBILITY",
+    "ANCHOR_BUSINESS_EXCHANGE"
+  ]);
+  const sharedAnchors = shared.filter((signal) => anchorSignals.has(signal));
+  const bothDescribeTalks = aSignals.includes("EVENT_DISCUSSION")
+    && bSignals.includes("EVENT_DISCUSSION");
+
+  if (sharedAnchors.length && hours <= BILATERAL_ANCHOR_MAX_HOURS) {
+    return {
+      score: 0.93,
+      reason: "SAME_BILATERAL_INVESTMENT_MEETING",
+      sharedSignals: [...required, ...sharedAnchors, ...(bothDescribeTalks ? ["EVENT_DISCUSSION"] : [])]
+    };
+  }
+
+  if (bothDescribeTalks && hours <= BILATERAL_BURST_MAX_HOURS) {
+    return {
+      score: 0.88,
+      reason: "SAME_BILATERAL_INVESTMENT_NEWS_BURST",
+      sharedSignals: [...required, "EVENT_DISCUSSION"]
+    };
+  }
+
+  return null;
+}
+
 function eventScore(a, b) {
   if ((a.category || "") !== (b.category || "")) {
     return { score: 0, reason: "CATEGORY_MISMATCH", sharedSignals: [] };
@@ -193,12 +311,14 @@ function eventScore(a, b) {
   const titleJaccard = jaccard(aTitle, bTitle);
   const titleOverlap = overlapCoefficient(aTitle, bTitle);
 
-  const aLead = tokens(`${a.originalTitleArabic || ""}\n${a.originalTextArabic || ""}`, 1400);
-  const bLead = tokens(`${b.originalTitleArabic || ""}\n${b.originalTextArabic || ""}`, 1400);
+  const aLeadText = `${a.originalTitleArabic || ""}\n${a.originalTextArabic || ""}`;
+  const bLeadText = `${b.originalTitleArabic || ""}\n${b.originalTextArabic || ""}`;
+  const aLead = tokens(aLeadText, 1400);
+  const bLead = tokens(bLeadText, 1400);
   const leadJaccard = jaccard(aLead, bLead);
 
-  const aEntities = entitySignals(`${a.originalTitleArabic || ""}\n${a.originalTextArabic || ""}`);
-  const bEntities = entitySignals(`${b.originalTitleArabic || ""}\n${b.originalTextArabic || ""}`);
+  const aEntities = entitySignals(aLeadText);
+  const bEntities = entitySignals(bLeadText);
   const sharedEntities = intersection(aEntities, bEntities);
   const entityScore = jaccard(aEntities, bEntities);
 
@@ -210,6 +330,16 @@ function eventScore(a, b) {
 
   const personnelMatch = highConfidencePersonnelMatch(aEntities, bEntities, aActions, bActions);
   if (personnelMatch) return personnelMatch;
+
+  const aBilateralSignals = bilateralEventSignals(aLeadText);
+  const bBilateralSignals = bilateralEventSignals(bLeadText);
+  const bilateralMatch = highConfidenceBilateralInvestmentMatch(
+    a,
+    b,
+    aBilateralSignals,
+    bBilateralSignals
+  );
+  if (bilateralMatch) return bilateralMatch;
 
   const aNumbers = numbers(`${a.originalTitleArabic || ""}\n${String(a.originalTextArabic || "").slice(0, 1400)}`);
   const bNumbers = numbers(`${b.originalTitleArabic || ""}\n${String(b.originalTextArabic || "").slice(0, 1400)}`);
@@ -365,13 +495,13 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
     duplicateArticleCount,
     maxHours: MAX_HOURS,
     minScore: MIN_SCORE,
-    method: "ARABIC_CANONICAL_ENTITY_ACTION_V3"
+    method: "ARABIC_CANONICAL_BILATERAL_EVENT_V4"
   },
   articles: annotated
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(GROUPS_FILE, `${JSON.stringify({
-  schemaVersion: "1.1",
+  schemaVersion: "1.2",
   generatedAt: new Date().toISOString(),
   groupCount: groups.length,
   duplicateGroupCount: duplicateGroups.length,
