@@ -15,19 +15,24 @@ const GENERIC_TITLE_PATTERNS = [
   /الرئيسية/i,
   /بوابة الأخبار/i,
   /موقع إخباري/i,
-  /صحيفة إلكترونية/i
+  /صحيفة إلكترونية/i,
+  /^untitled$/i,
+  /^no title$/i
 ];
 
 function decodeHtml(value = "") {
   return String(value)
-    .replace(/&nbsp;/g, " ")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;|&apos;/g, "'")
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
+    .replace(/&nbsp;/gi, " ")
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&amp;/gi, "&")
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&lrm;|&rlm;/gi, " ")
+    .replace(/&#8206;|&#8207;|&#x200e;|&#x200f;/gi, " ")
     .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
-    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/[\u200E\u200F\u202A-\u202E\u2066-\u2069]/g, " ");
 }
 
 function stripTags(value = "") {
@@ -36,10 +41,29 @@ function stripTags(value = "") {
     .trim();
 }
 
-function isGenericTitle(title = "") {
+function looksLikeEmail(value = "") {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/i.test(stripTags(value));
+}
+
+function looksLikeUrl(value = "") {
+  const text = stripTags(value);
+  return /^(?:https?:\/\/|www\.)\S+$/i.test(text);
+}
+
+function hasArabic(value = "") {
+  return /[\u0600-\u06FF]/.test(String(value));
+}
+
+function isUsableTitle(title = "") {
   const value = stripTags(title);
-  if (!value || value.length < 12) return true;
-  return GENERIC_TITLE_PATTERNS.some((pattern) => pattern.test(value));
+  if (!value || value.length < 12 || value.length > 320) return false;
+  if (looksLikeEmail(value) || looksLikeUrl(value)) return false;
+  if (!hasArabic(value)) return false;
+  return !GENERIC_TITLE_PATTERNS.some((pattern) => pattern.test(value));
+}
+
+function isGenericTitle(title = "") {
+  return !isUsableTitle(title);
 }
 
 function extractMeta(html = "", key = "") {
@@ -68,15 +92,22 @@ function walkJson(value, output = []) {
   return output;
 }
 
+function articleTypes(node = {}) {
+  const raw = Array.isArray(node?.["@type"]) ? node["@type"] : [node?.["@type"]];
+  return raw.map((value) => String(value || "").trim()).filter(Boolean);
+}
+
 function extractJsonLdHeadline(html = "") {
   for (const match of String(html).matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {
     try {
       const parsed = JSON.parse(decodeHtml(match[1]).trim());
       for (const node of walkJson(parsed)) {
-        for (const key of ["headline", "name"]) {
-          const candidate = typeof node?.[key] === "string" ? stripTags(node[key]) : "";
-          if (candidate && !isGenericTitle(candidate)) return candidate;
-        }
+        const isArticle = articleTypes(node).some((type) =>
+          /^(?:NewsArticle|Article|ReportageNewsArticle)$/i.test(type)
+        );
+        if (!isArticle) continue;
+        const candidate = typeof node?.headline === "string" ? stripTags(node.headline) : "";
+        if (isUsableTitle(candidate)) return candidate;
       }
     } catch {}
   }
@@ -86,7 +117,7 @@ function extractJsonLdHeadline(html = "") {
 function extractH1Candidates(html = "") {
   return [...String(html).matchAll(/<h1\b[^>]*>([\s\S]*?)<\/h1>/gi)]
     .map((match) => stripTags(match[1]))
-    .filter((title) => title && !isGenericTitle(title))
+    .filter(isUsableTitle)
     .sort((a, b) => b.length - a.length);
 }
 
@@ -140,11 +171,11 @@ async function repair(article) {
     const html = await fetchHtml(url);
     const jsonLd = extractJsonLdHeadline(html);
     const h1 = extractH1Candidates(html)[0] || "";
-    const twitter = extractMeta(html, "twitter:title");
     const og = extractMeta(html, "og:title");
-    const candidate = [jsonLd, h1, twitter, og]
+    const twitter = extractMeta(html, "twitter:title");
+    const candidate = [jsonLd, h1, og, twitter]
       .map(stripTags)
-      .find((title) => title && !isGenericTitle(title));
+      .find(isUsableTitle);
 
     if (!candidate || candidate === currentTitle) return { article, changed: false };
     return {
@@ -153,7 +184,13 @@ async function repair(article) {
         titleCorrection: {
           previousTitleArabic: currentTitle,
           correctedTitleArabic: candidate,
-          method: jsonLd === candidate ? "JSON_LD_HEADLINE" : h1 === candidate ? "ARTICLE_H1" : twitter === candidate ? "TWITTER_TITLE" : "OG_TITLE_FALLBACK",
+          method: jsonLd === candidate
+            ? "JSON_LD_HEADLINE"
+            : h1 === candidate
+              ? "ARTICLE_H1"
+              : og === candidate
+                ? "OG_TITLE"
+                : "TWITTER_TITLE",
           correctedAt: new Date().toISOString()
         }
       },
@@ -173,7 +210,7 @@ async function mapLimit(items, limit, worker) {
       output[index] = await worker(items[index]);
     }
   }
-  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
+  await Promise.all(Array.from({ length: Math.min(limit, Math.max(1, items.length)) }, run));
   return output;
 }
 
