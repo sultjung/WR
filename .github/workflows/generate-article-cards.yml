@@ -1,0 +1,79 @@
+name: Generate Facts-First Article Cards
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_articles:
+        description: Maximum uncached representative articles to process
+        required: false
+        default: "120"
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/generate-article-cards.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: article-card-generation
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Verify OpenAI API secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY is not available."
+            exit 1
+          fi
+
+      - name: Test facts-first card architecture
+        run: npm test
+
+      - name: Generate structured facts and Korean cards
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CARD_AI_REQUIRED: "true"
+          CARD_FACT_MODEL: ${{ vars.CARD_FACT_MODEL || 'gpt-4.1-mini' }}
+          CARD_KO_MODEL: ${{ vars.CARD_KO_MODEL || 'gpt-4.1-mini' }}
+          CARD_MODEL_FALLBACKS: "gpt-4o-mini"
+          CARD_AI_BATCH_SIZE: "3"
+          CARD_AI_MAX_ARTICLES: ${{ inputs.max_articles || '120' }}
+          CARD_SOURCE_MAX_CHARS: "16000"
+          CARD_AI_TIMEOUT_MS: "90000"
+        run: npm run collect:cards
+
+      - name: Validate article cards
+        run: npm run validate:data
+
+      - name: Commit generated cards
+        run: |
+          if git diff --quiet -- data/articles.json; then
+            echo "No article-card changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          git commit -m "Generate facts-first Korean article cards"
+          git pull --rebase origin main
+          git push origin main
