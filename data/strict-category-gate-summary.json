@@ -1,18 +1,191 @@
 {
   "schemaVersion": "1.2",
-  "generatedAt": "2026-08-03T22:23:52.185Z",
-  "before": 361,
-  "retained": 361,
-  "excludedCount": 0,
+  "generatedAt": "2026-08-03T22:46:59.822Z",
+  "before": 381,
+  "retained": 360,
+  "excludedCount": 21,
   "primaryLeadChars": 700,
   "method": "STRICT_CATEGORY_GATE_V3",
   "categoryCounts": {
-    "international": 98,
-    "politics": 146,
-    "security": 82,
     "economy": 28,
-    "bismayah": 7
+    "security": 80,
+    "international": 98,
+    "bismayah": 7,
+    "politics": 147
   },
-  "excludedReasonCounts": {},
-  "excluded": []
+  "excludedReasonCounts": {
+    "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사": 18,
+    "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침": 2,
+    "security 카테고리이나 제목·본문 도입부에 이라크 직접 연관 없음": 1
+  },
+  "excluded": [
+    {
+      "articleId": "discovery-ba4hoSz9KOEWqCfUKACCAKaP",
+      "titleArabic": "36 عامًا على غزو الكويت.. كيف تبدلت الأمور وتغيرت معادلة الحماية؟ | التلفزيون العربي",
+      "articleUrl": "https://www.alaraby.com/news/36-%D8%B9%D8%A7%D9%85%D9%8B%D8%A7-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D9%83%D9%8A%D9%81-%D8%AA%D8%A8%D8%AF%D9%84%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%B1-%D9%88%D8%AA%D8%BA%D9%8A%D8%B1%D8%AA-%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9-%D8%A7%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9?amp",
+      "category": "international",
+      "keywordId": "international-us-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-KRCzC4cCmWQHxgtc8oieDT-e",
+      "titleArabic": "\"أوبك بلاس\" يرفع حصص الإنتاج لشهر أيلول بمقدار 188 ألف برميل يوميا",
+      "articleUrl": "https://www.arab48.com/amp/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%AF%D9%88%D9%84%D9%8A%D8%A9/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D9%8A%D8%A9/2026/08/02/-%D8%A3%D9%88%D8%A8%D9%83-%D8%A8%D9%84%D8%A7%D8%B3-%D9%8A%D8%AA%D8%AC%D9%87-%D9%84%D8%B2%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D9%88%D9%85%D8%AD%D8%A7%D8%AF%D8%AB%D8%A7%D8%AA-%D8%B5%D8%B9%D8%A8%D8%A9-%D8%AA%D9%84%D9%88%D8%AD-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D8%AD%D8%B5%D8%B5",
+      "category": "international",
+      "keywordId": "international-hormuz-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-GxQD0a5tKrKNY-2U13MALZkO",
+      "titleArabic": "آخر أخبار الأردن المحلية ومستجدات العالم العربي والدولي - رؤيا الإخباري",
+      "articleUrl": "https://royanews.tv/news/390575/%D8%AF%D9%88%D9%84-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%AA%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A8%D9%85%D8%B3%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A8%D8%AF%D9%8A%D9%84%D8%A9-%D9%84%D8%AA%D9%81%D8%A7%D8%AF%D9%8A-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2",
+      "category": "international",
+      "keywordId": "international-hormuz-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-N8c9_ZOFJFt6ZQETRNnwug_5",
+      "titleArabic": "التحالف البحري الذي تقوده السعودية: ما هو، ومن هي الدول المشاركة؟",
+      "articleUrl": "https://www.bbc.com/arabic/articles/c1m1pgknzpro",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-OVxudmWHvW_hhLwz23qH22wU",
+      "titleArabic": "سياسي / سمو ولي العهد يرأس جلسة مجلس الوزراء في جدة",
+      "articleUrl": "https://www.spa.gov.sa/N2643266",
+      "category": "politics",
+      "keywordId": "politics-cabinet-002",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-HmPn06g1NyPChY7oe3I9kygN",
+      "titleArabic": "رهان ينبع تحت التهديد... المسيرات الحوثية تستهدف نفط السعودية",
+      "articleUrl": "https://www.alaraby.co.uk/economy/%D8%B1%D9%87%D8%A7%D9%86-%D9%8A%D9%86%D8%A8%D8%B9-%D8%AA%D8%AD%D8%AA-%D8%A7%D9%84%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A%D8%A9-%D8%AA%D8%B3%D8%AA%D9%87%D8%AF%D9%81-%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9?amp",
+      "category": "international",
+      "keywordId": "international-hormuz-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-7K_o-KH_NFjScvNhYghVMQZc",
+      "titleArabic": "السعودية تؤكد عدم تهاونها في حماية أمنها ومصالحها ومقدراتها الوطنية",
+      "articleUrl": "https://sarmad.com/337480/",
+      "category": "politics",
+      "keywordId": "politics-cabinet-002",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-Zom3bpe4ym5l1XTlZ7XErKB4",
+      "titleArabic": "الخطر الأكبر على الولايات المتحدة في حرب إيران: اتساع نطاق المهمة",
+      "articleUrl": "https://www.turkpress.co/node/111323",
+      "category": "international",
+      "keywordId": "international-us-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-EvBUDc8gmwL1K1kVzrhQWSql",
+      "titleArabic": "استنفار في الفلبين: انفجار عبوة ناسفة قرب وزارة العدل وتفكيك أخرى بمحيط مجلس الشيوخ. - اسلام تايمز",
+      "articleUrl": "https://www.islamtimes.com/ar/news/1295348/%D8%A7%D8%B3%D8%AA%D9%86%D9%81%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D9%81%D9%84%D8%A8%D9%8A%D9%86-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%B9%D8%A8%D9%88%D8%A9-%D9%86%D8%A7%D8%B3%D9%81%D8%A9-%D9%82%D8%B1%D8%A8-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF%D9%84-%D9%88%D8%AA%D9%81%D9%83%D9%8A%D9%83-%D8%A3%D8%AE%D8%B1%D9%89-%D8%A8%D9%85%D8%AD%D9%8A%D8%B7-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B4%D9%8A%D9%88%D8%AE",
+      "category": "security",
+      "keywordId": "security-ied-001",
+      "reason": "security 카테고리이나 제목·본문 도입부에 이라크 직접 연관 없음"
+    },
+    {
+      "articleId": "discovery-hgRljDZ0W5JpQOdamp5ckVDs",
+      "titleArabic": "هل يمكن للولايات المتحدة أن تنسحب من حرب إيران؟",
+      "articleUrl": "https://www.turkpress.co/node/111300",
+      "category": "international",
+      "keywordId": "international-us-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-wv2JdbT5bPyeKNlD4HI7yOEQ",
+      "titleArabic": "الحوثيون يستهدفون منشآت نفط سعودية.. لماذا الآن؟ | الحرة",
+      "articleUrl": "https://alhurra.com/29373",
+      "category": "international",
+      "keywordId": "international-hormuz-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-wpr621Wjj9K7YEo0RGdzcoZe",
+      "titleArabic": "\"أوبك\": منتجو الخليج صمام أمان الطاقة العالمي على رغم عواصف التوتر",
+      "articleUrl": "https://www.independentarabia.com/node/654199/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/%D8%A7%D9%84%D8%A8%D8%AA%D8%B1%D9%88%D9%84-%D9%88%D8%A7%D9%84%D8%BA%D8%A7%D8%B2/%D8%A3%D9%88%D8%A8%D9%83-%D9%85%D9%86%D8%AA%D8%AC%D9%88-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC-%D8%B5%D9%85%D8%A7%D9%85-%D8%A3%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A-%D8%B9%D9%84%D9%89-%D8%B1%D8%BA%D9%85-%D8%B9%D9%88%D8%A7%D8%B5%D9%81-%D8%A7%D9%84%D8%AA%D9%88%D8%AA%D8%B1",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-H0TA4Owq_xpL3HpIboUpqvjo",
+      "titleArabic": "لماذا تُعد جزيرة خارك حيوية لإيران والاقتصاد العالمي؟",
+      "articleUrl": "https://www.vietnam.vn/ar/tai-sao-dao-kharg-lai-mang-y-nghia-song-con-doi-voi-iran-va-nen-kinh-te-toan-cau",
+      "category": "international",
+      "keywordId": "international-hormuz-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-8TaXGjSSiQ2Fkp3cX_0Hfdgx",
+      "titleArabic": "\"لا إغلاق لمضيق باب المندب\".. الحوثيون: حظر الملاحة البحرية يستهدف السعودية فقط",
+      "articleUrl": "https://arabic.euronews.com/2026/07/24/no-closure-of-bab-el-mandeb-houthis-the-naval-blockade-targets-saudi-arabia-only",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-3u4oZJRpyTH56C0VovxknAS-",
+      "titleArabic": "هجمات حوثية في البحر الأحمر.. “إيران تنقل التوتر إلى باب المندب” | الحرة",
+      "articleUrl": "https://alhurra.com/28953",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-mZ19gpqn6faqkqlwgtt7Wd9I",
+      "titleArabic": "إلى أين يتجه التصعيد بين الحوثيين والسعودية؟ - BBC News عربي",
+      "articleUrl": "https://www.bbc.com/arabic/articles/ce97nmrl2xro",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-Q-IENYNHpY8e2JUuZVEeA0XO",
+      "titleArabic": "الحوثيون يغلقون باب المندب على السعودية.. وقناة السويس تحت الضغط",
+      "articleUrl": "https://alhurra.com/28452",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-P0z18tt8i0iBrJF5CCItsXGU",
+      "titleArabic": "يُزيد المتمردون الحوثيون من حدة التوتر في الشرق الأوسط.",
+      "articleUrl": "https://www.vietnam.vn/ar/houthi-them-dau-vao-chao-lua-trung-dong",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-ATDYLRq3f6wsIK9CMSbpoMC6",
+      "titleArabic": "إيران في عين واشنطن… صراع النفوذ الذي يعيد رسم خريطة الشرق الأوسط - اسلام تايمز",
+      "articleUrl": "https://www.islamtimes.com/ar/article/1293751/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D8%A7%D9%84%D8%B0%D9%8A-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7",
+      "category": "international",
+      "keywordId": "international-iran-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-5JaDCDg9f4AUaKedw32vfRk9",
+      "titleArabic": "\"الأمن القومي\" الإيراني يطالب الإعلام بعدم نشر أضرار البنية التحتية جراء الهجمات الأميركية",
+      "articleUrl": "https://www.iranintl.com/ar/202607172947",
+      "category": "international",
+      "keywordId": "international-iran-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-8PHtlcVXICrwisG4S6F1Hv91",
+      "titleArabic": "قراصنة صوماليون يسيطرون على سفينة في خليج عدن | MEO",
+      "articleUrl": "https://www.middle-east-online.com/%D9%82%D8%B1%D8%A7%D8%B5%D9%86%D8%A9-%D8%B5%D9%88%D9%85%D8%A7%D9%84%D9%8A%D9%88%D9%86-%D9%8A%D8%B3%D9%8A%D8%B7%D8%B1%D9%88%D9%86-%D8%B9%D9%84%D9%89-%D8%B3%D9%81%D9%8A%D9%86%D8%A9-%D9%81%D9%8A-%D8%AE%D9%84%D9%8A%D8%AC-%D8%B9%D8%AF%D9%86",
+      "category": "international",
+      "keywordId": "international-gulf-001",
+      "reason": "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사"
+    }
+  ]
 }

@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T22:46:43.673Z",
+  "generatedAt": "2026-08-03T22:47:15.832Z",
   "lookbackDays": 30,
-  "count": 361,
+  "count": 360,
   "categoryCounts": {
-    "international": 98,
-    "politics": 146,
-    "security": 82,
     "economy": 28,
-    "bismayah": 7
+    "security": 80,
+    "international": 98,
+    "bismayah": 7,
+    "politics": 147
   },
   "collectionRun": {
     "discoveredCount": 442,
@@ -1832,121 +1832,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-FkiLRGdS3FzPg5i1S00tKrOC",
-      "keywordId": "security-armed-001",
-      "category": "security",
-      "priority": 98,
-      "queryArabic": "(هجوم مسلح OR هجوم إرهابي OR اعتداء مسلح) العراق",
-      "requiredTerms": [],
-      "optionalTerms": [
-        "هجوم مسلح",
-        "هجوم إرهابي",
-        "اعتداء مسلح",
-        "داعش",
-        "القوات الأمنية"
-      ],
-      "excludedTerms": [
-        "فيلم",
-        "مسلسل",
-        "لعبة"
-      ],
-      "originalTitleArabic": "هجوم مسلح في شمال غربي نيجيريا يسفر عن مقتولين ومخطوفين",
-      "sourceArabic": "صوت الإمارات",
-      "sourceHomepage": "https://www.voiceofemirates.com",
-      "publishedAt": "2026-08-02T20:49:46.000Z",
-      "descriptionArabic": "هجوم مسلح في شمال غربي نيجيريا يسفر عن مقتولين ومخطوفين صوت الإمارات",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi6AJBVV95cUxOeFlsbkdsSXFPeG9sS3Y5ZjZiWEZlSEVRRXMtc1lnVE5ST1VLNXRPVXRDdHVSbWs3blVybE0yV0E1c3pqd0lhc1hCVUFKdWwwb2tsaXhySDlMV3BVcXFQRGg3U3BkaWV2UGpDSnFJdmlzd29kUHJEbWRBVm9keWE5WXRVWjcyTnp3SXE0dk9vNk1zN0MySkowRnNkamc1b29Ma0ZHOUhFZGRMdDgwRkRWUzliNm1qcm1ING1lVm9mdFFCVFFwRWJnTElZWkdxRElPS3BMYlNkd1BfT2xBV21LN0Rxc3EwTF9JSEFyajZtVFV3R2ZXNmRiSkxOeVB2WDNLTWdXaGFqb3F1Vl9vc2ZXSWpIcHdPNmdHbl9OdzNnX3hfTHhncDd3eFEzbzNQOWpLMzR1NHRDN2Y5NlF3MXhKWnpScmlFYkFsbVFOaldLTE55LTM0VDBNNmYtWWxtWlN3RmxxczBaOGE?oc=5",
-      "articleUrl": "https://www.voiceofemirates.com/news/2026/08/03/%D9%87%D8%AC%D9%88%D9%85-%D9%85%D8%B3%D9%84%D8%AD-%D9%81%D9%8A-%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8%D9%8A-%D9%86%D9%8A%D8%AC%D9%8A%D8%B1%D9%8A%D8%A7-%D9%8A%D8%B3%D9%81%D8%B1-%D8%B9%D9%86-%D9%85/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T22:19:22.104Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T22:19:44.148Z",
-      "canonicalUrl": "https://www.voiceofemirates.com/news/2026/08/03/%d9%87%d8%ac%d9%88%d9%85-%d9%85%d8%b3%d9%84%d8%ad-%d9%81%d9%8a-%d8%b4%d9%85%d8%a7%d9%84-%d8%ba%d8%b1%d8%a8%d9%8a-%d9%86%d9%8a%d8%ac%d9%8a%d8%b1%d9%8a%d8%a7-%d9%8a%d8%b3%d9%81%d8%b1-%d8%b9%d9%86-%d9%85/",
-      "originalTextArabic": "الأخبار العالم \n\n هجوم مسلح في شمال غربي نيجيريا يسفر عن مقتولين ومخطوفين\n كيف يعكس الهجوم تصاعد تهديد الجماعات المسلحة في شمال غربي نيجيريا؟\n\nآخر تحديث: 3 أغسطس، 2026 12:49 ص \n محمد يسري بواسطة محمد يسري \n News Editor \n\n محمد يسري، محرر في وكالة أنباء صوت الإمارات، مكتب القاهرة، وهو صحفي وباحث في التراث الإسلامي والجماعات المتطرفة\n\n - News Editor \n\n منذ 1 يوم \n\n شارك \n\n زمن القراءة بالدقائق: 2\n\n جوم مسلح في شمال غربي نيجيريا (صورة / وكالات) \n\n مشاركة \n\n أبرز النقاط \n\n تفاصيل اقتحام قرية لاجينج واستمرار القتل لعدة ساعات \n نهب الماشية وتحقيقات أمنية موسعة بولاية سوكوتو \n تصاعد أعمال العنف وتحديات حماية المدنيين بالمنطقة \n\n أبوجا، نيجيريا – أعلنت السلطات النيجيرية حصيلة اعتداء إرهابي جديد اليوم. وتسبب هجوم مسلح في شمال غربي نيجيريا بمقتل اثني عشر شخصاً. واختطف المهاجمون عدداً من النساء والأطفال بقرية لاجينج بولاية سوكوتو. وتتابع المؤسسات الأمنية والفرق الإغاثية التطورات الصادرة عن أبوجا باهتمام. ويسهم التمشيط العسكري السريع في ملاحقة العصابات المسلحة بالمنطقة. وتكثف الشرطة النيجيرية جهودها لجمع الأدلة الجنائية بانتظام. وتترقب العواصم العالمية نتائج التحقيقات الرسمية لكشف المتورطين بالاعتداء. وتعمل الحكومة النيجيرية على تعزيز الحراسات الأمنية بالقرى النائية. وتصر السلطات المحلية على تحرير المخطوفين وإنقاذ النساء والأطفال. وتستمر الفرق الأمنية بملاحقة المهاجمين بداخل الغابات المجاورة فوراً. وتسعى الدولة للحد من عمليات النهب واختطاف المواطنين. وتركز التوجيهات القيادية على فرض الأمن بكافة الولايات الشمالية. وتواصل الوسائل الإعلامية نقل التحديثات الصادرة عن شرطة سوكوتو. وتدعم البيانات الميدانية فرضية تزايد المخاطر على القرى الزراعية.\n\n تفاصيل اقتحام قرية لاجينج واستمرار القتل لعدة ساعات\n اقتحم المسلحون قرية لاجينج في وقت متأخر من الليل. واستمرت عمليات القتل وإحراق المنازل حتى ساعات الفجر الأولى. وتسبب المهاجمون في مقتل عائلة كاملة حرقاً بداخل منزلهم. وتواصل الفرق الطبية تقديم العلاج العاجل للمصابين جراء الاعتداء.\n نهب الماشية وتحقيقات أمنية موسعة بولاية سوكوتو\n استولى المهاجمون على أعداد كبيرة من الماشية قبل انسحابهم. وأكد المتحدث باسم الشرطة أحمد روفاي بدء تحقيقات رسمية موسعة. وتستهدف الإجراءات الأمنية تحديد هويات عناصر العصابة المسلحة فوراً.\n\n تصاعد أعمال العنف وتحديات حماية المدنيين بالمنطقة\n يأتي الحادث بعد مقتل أربعة وعشرين مزارعاً بهجوم سابق. وتواجه الحكومة ضغوطاً متزايدة لتأمين القرى والحد من الجرائم.\n\n الوسوم: صوت الإمارات نيجيريا هجوم مسلح \n\n المصادر: صوت الإمارات \n\n شارك هذا الخبر \n\n Facebook \n\n Whatsapp \n\n Whatsapp \n\n LinkedIn \n\n Telegram \n\n Threads \n\n Email \n\n Copy Link \n\n Print \n\n الخبر السابق \n\n إسرائيل تبدي مخاوفها للواشنطن من خطة نزع سلاح حماس \n\n الخبر التالي \n\n مفاوضات إيران وعُمان بشأن مضيق هرمز في مراحلها النهائية \n\n اختيار المحرر \n\nجونزالو جارسيا يودع ريال مدريد: سأغادر بقلب ممتلئ بالامتنان \n مدريد، إسبانيا - وجه الإسباني جونزالو جارسيا رسالة وداع مؤثرة إلى جماهير ريال مدريد، بعد انتهاء مشواره مع النادي الملكي&hellip;\n\n بواسطة \n أحمد خيري \n\n زمن القراءة بالدقائق: 2\n\nوزير خارجية قطر يؤكد دعم الدوحة لجهود التهدئة بالمنطقة كيف تعزز قطر مساعي السلام والاستقرار في المنطقة؟\n\n زمن القراءة بالدقائق: 2\n\nزيلينسكي يقيل سفيرة أوكرانيا لدى الولايات المتحدة بشكل مفاجئ ما دلالات القرار في ظل مساعي كييف لتعزيز دعمها العسكري؟\n\n زمن القراءة بالدقائق: 2\n\n الأكثر شيوعا \n\nمجلس السلام يضغط على إسرائيل لوقف هجماتها في غزة \n هل تنجح الضغوط الدولية في خفض التصعيد ودفع خارطة الطريق&hellip;\n\n منذ 3 ساعات \n\nاستهداف سفينة شحن تركية بالمسيرات في البحر الأسود ما تداعيات استهداف سفن الشحن على&hellip;\n\n منذ 3 ساعات \n\nهجوم بمسيرات يوقف مصفاة روسية عن معالجة النفط في فولجوجراد كيف يؤثر استهداف منشآت الطاقة على&hellip;\n\n منذ 4 ساعات \n\nترامب: المحادثات مع إيران الفرصة الأخيرة لطهران لحل الأزمة هل تمثل تصريحات ترامب تحولًا جديدًا&hellip;\n\n منذ 4 ساعات \n\nالإدارة الأمريكية تنفي وجود مفاوضات جديدة مع إيران بعد تصريحات ترامب هل تكشف التصريحات عن تباين داخل&hellip;\n\n منذ 4 ساعات \n\n قد يهمك أيضاً \n\n الأخبار العالم \n\nترامب يعلن سيطرة البحرية الأمريكية على مضيق هرمز بالكامل واشنطن، الولايات المتحدة - أعلن الرئيس الأمريكي دونالد ترامب تصريحات عسكرية حاسمة اليوم. وتؤكد البيانات فرض سيطرة البحرية الأمريكية على&hellip;\n\n زمن القراءة بالدقائق: 2\n\n الأخبار العالم \n\nالجيش الأمريكي أعلن تحويل مسار 44 سفينة تجارية واعتلاء سفينتين واشنطن، الولايات المتحدة - أعلن الجيش الأمريكي أرقاماً وتشغيلية جديدة اليوم. وتؤكد البيانات الرسمية تحويل مسار 44 سفينة تجارية بداخل&hellip;\n\n زمن القراءة بالدقائق: 2\n\n الأخبار العالم \n\nالقيادة الوسطى تفرض الحصار البحري الأمريكي على إيران بصرامة واشنطن، الولايات المتحدة - أعلنت القيادة الوسطى الأمريكية بيانات عسكرية جديدة اليوم. وتكشف التفاصيل استمرار فرض الحصار البحري الأمريكي على&hellip;\n\n زمن القراءة بالدقائق: 2\n\n الأخبار العالم \n\nترامب يتهم إيران بالمراوغة ويؤكد لا اتفاق إلا بالاستسلام واشنطن، الولايات المتحدة - أعلن الرئيس الأمريكي دونالد ترامب تصريحات حادة اليوم. وتتضمن البيانات اتهامات رسمية تؤكد أن ترامب يتهم&hellip;\n\n زمن القراءة بالدقائق: 2",
-      "sourceHost": "voiceofemirates.com",
-      "contentChars": 4722,
-      "arabicRatio": 0.9616,
-      "relevanceNote": "이라크 내 테러·치안·시위 사건",
-      "fetchedAt": "2026-08-03T22:22:34.507Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "29dcd703619c543a8cda1238fb245eb660c0e42099413f9407f14ec40d5930a9",
-      "previousContentHash": "968f4952d3d07b6b3da9e110f87199f7a5f74b360732316b22d085a937071f89",
-      "contentCheckedAt": "2026-08-03T22:22:34.507Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "security",
-        "to": "security",
-        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V3"
-      },
-      "eventGroup": {
-        "groupId": "event-SUu1k32IVCv_Wxs146",
-        "representativeArticleId": "discovery-FkiLRGdS3FzPg5i1S00tKrOC",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 27,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T22:46:43.673Z",
-        "breakdown": {
-          "terrorDirectness": 18,
-          "location": 0,
-          "incidentScale": 3,
-          "siteSafety": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "cd37a93b0f95265cfc38",
-        "ruleScore": 27,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -11191,6 +11076,123 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+      "keywordId": "politics-security-policy-001",
+      "category": "politics",
+      "priority": 94,
+      "queryArabic": "\"حصر السلاح بيد الدولة\" العراق",
+      "requiredTerms": [
+        "حصر السلاح بيد الدولة"
+      ],
+      "optionalTerms": [
+        "الحشد الشعبي",
+        "الأمن القومي",
+        "الفصائل"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHomepage": "https://www.aljazeera.net",
+      "publishedAt": "2026-07-30T12:11:55.000Z",
+      "descriptionArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟ الجزيرة نت",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQejZJeU1zWGlhalc5VjZkRWt0VjNJSEhMeEw4VEhrMy0yem9LbWVwUnF1T2d2TGFaUmkxNXBnTm84aEFKaGk3SmtSM0pSRlFBUEZkT0FTTTBoNE5rYnM3MUFacWJPU2x1dk9KUUs4dlhqaG5QTnQyNnpKLWNwOWRtMkZDWVhuWXZtUlpqYnBLcGJSRGxnbi1NRU1pRWhpU2x4Y2RhWFVCcjhvYXdaTXJLZlJUemZiZGotdmFtaHJzMW5QQ3B2VlJqVDZ1V2Nfckl0d0dRY1pmbUUyUUp6LVZlS0hmRlFXNUQ0ZjNUYkpkVi1UX0tUVlAwQzdZTDMzcjZ3dkh3TlJOaXlhWVdSSzNLYzNUdEdzem5kME4tY2E0cWdpTDFNcGFFV2x1OXJUX3NLSGJZZVVRSkhUeXM0dHM5U3BqbFViUENOSUdzUExhOWQ5d2xMeDZ0cjBDWlVPUdIB4wJBVV95cUxPU1V2SWk1VFU4RTFtakNkZFpJcmtoczFvQlVFLS1rV2ZPb1dDYVhOWVhkMXRMcUlDUEFNbHBxZWtvdVk3YWhIZlRyS3hjOFlOREJvZFlvRk84X3B3bEFUSjkyMjgwZDdzcTRLRUJQb2NBVmVXY3BXYU5fSFFOYUpMSkt3V2JGQTh4MkpnRzlRQldaNS1JTG16bkUtcUxOTzBVN08xQkZ3OXB3WXM3bG54SzBYZXl3TUgtaXFoWk1Cb3I4ODJJbGFMREJERXpMNlNpc0dndWtBejNTVDdqUW5XSDFXazgxWEgwODZ3Q3dHQmZHa0Z0TUdDaWZnNmhuSk1OODZlTjBQNTFlYjc2N21OaEpzTzJTRDdaZzJvRU9IcVpoVElPX19Ybmt2cmlqMnU2NnNmYVU5ZWxsVmVUNW45QnY5UUNCVi1pMHZRZVQtWWNwTlZxQzlscGljZTVyTFVvSHFr?oc=5",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:36:05.253Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "aljazeera-iraq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-08-03T04:36:13.518Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-08-03T04:37:01.318Z",
+      "canonicalUrl": "https://www.aljazeera.net/politics/2026/7/30/%d8%a7%d9%84%d9%81%d8%b5%d8%a7%d8%a6%d9%84-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a%d8%a9-%d8%ae%d8%b1%d8%a7%d8%a6%d8%b7-%d8%a7%d9%84%d9%86%d9%81%d9%88%d8%b0-%d9%88%d9%85%d8%b9%d8%b6%d9%84%d8%a9",
+      "originalTextArabic": "مراسلو الجزيرة \n سياسة | العراق \n\n خريطة الفصائل.. من يرفض حصر السلاح في العراق؟\n استمع استمع (9 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n أعضاء من حركة النجباء خلال احتجاج تضامني سابق مع غزة في بغداد (رويترز) \n\n أميمة مجيد \n\n Published On 30/7/2026 30/7/2026 \n | آخر تحديث: 18:52 (توقيت مكة) آخر تحديث: 18:52 (توقيت مكة) \n\n بغداد- مع اقتراب الموعد الذي حددته الحكومة العراقية للمضي في مشروع حصر السلاح بيد الدولة بعد 30 سبتمبر/أيلول المقبل، وهو ذاته موعد خروج قوات التحالف الدولي من البلاد، برزت انقسامات واضحة داخل الفصائل المسلحة المنضوية في ما يعرف بـ\" المقاومة الإسلامية في العراق \".\n ففي حين أبدت بعض الفصائل استعدادا للتجاوب مع الإجراءات الحكومية، أعلنت أخرى رفضها الصريح أو ربطت أي نقاش بشأن سلاحها بمستقبل الوجود العسكري الأمريكي والتطورات الإقليمية، ولا سيما الحرب الدائرة بين إيران وإسرائيل والولايات المتحدة.\n وتعد هذه الفصائل جزءا من تشكيلات الحشد الشعبي من الناحية القانونية، إلا أنها تمتلك في الوقت نفسه هياكل عسكرية مستقلة، وترسانات خاصة، وشبكات نفوذ تتجاوز الإطار العسكري إلى السياسي والاقتصادي.\n\n كتائب حزب الله \n تتصدر كتائب حزب الله قائمة الفصائل الأكثر نفوذا وتسليحا داخل العراق ، وتمثل رأس الحربة في خرائط محور المقاومة العراقية، ومن أكثر التشكيلات ارتباطا ب الحرس الثوري الإيراني، كما لعبت دورا محوريا في العمليات العسكرية ضد تنظيم الدولة الإسلامية ، قبل أن تتحول لاحقا إلى أحد أبرز أطراف المواجهة مع القوات الأمريكية.\n الكتائب التي يقودها أحمد الحميداوي، تقدر مراكز أبحاث أمنية عدد مقاتليها بما يتراوح بين 10 آلاف و15 ألف عنصر، إلى جانب قوات احتياط وشبكات لوجستية واستخبارية.\n وتضم ترسانتها صواريخ قصيرة ومتوسطة المدى، وطائرات مسيرة هجومية واستطلاعية، ومنظومات صاروخية ومدفعية، فضلا عن أسلحة مضادة للدروع وأجهزة اتصال واستخبارات، ما يجعلها من أكثر الفصائل امتلاكا للقدرات العسكرية النوعية.\n وتنتشر الكتائب في بغداد وجرف الصخر والأنبار وصلاح الدين وديالى ونينوى، إضافة إلى مناطق قريبة من الحدود العراقية السورية، حيث تحتفظ بمواقع لوجستية ومخازن تسليح.\n إعلان \n\n ورغم عدم مشاركتها المباشرة في الانتخابات، فإنها تتمتع بنفوذ سياسي عبر علاقاتها مع قوى الإطار التنسيقي ومنصب رئاسة الأركان في هيئة الحشد الشعبي، كما تدعم حركة \"حقوق\" البرلمانية بزعامة حسين مؤنس الذي كان ينتمي إلى جسدها.\n وفيما يتعلق بحصر السلاح، تتمسك الكتائب بموقفها الرافض لتسليم أسلحتها، معتبرة أن استمرار الوجود العسكري الأمريكي يبرر بقاء \"المقاومة\", كما تربط مستقبل سلاحها بالتطورات الإقليمية.\n أكرم الكعبي زعيم حركة النجباء (الجزيرة) حركة النجباء \n تعد حركة النجباء ثاني أكبر الفصائل الرافضة لحصر السلاح، تأسست عام 2013، يتزعمها أكرم الكعبي، شاركت في القتال داخل العراق وسوريا، وتعتبر من أكثر الفصائل قربا من إيران.\n وتشير التقديرات إلى أن عدد مقاتليها يتراوح بين 8 آلاف و10 آلاف عنصر، موزعين على تشكيلات قتالية متعددة. وتمتلك الحركة صواريخ متنوعة، وطائرات مسيرة، ومدفعية ميدانية، وآليات مدرعة، إلى جانب أسلحة خفيفة ومتوسطة وثقيلة.\n وينتشر مقاتلوها في بغداد والنجف وكربلاء وبابل وديالى وصلاح الدين ونينوى، فضلا عن وجودها على امتداد الشريط الحدودي مع سوريا، وتعد لاعبا مؤثرا داخل محور الفصائل المسلحة، كما تحتفظ بعلاقات وثيقة مع الحرس الثوري الإيراني و حزب الله اللبناني و جماعة الحوثي في اليمن.\n وتعلن الحركة بشكل صريح رفضها تسليم السلاح، إذ يؤكد قادتها أن \"سلاح المقاومة خط أحمر\"، ويرون أن بقاءه مرتبط باستمرار القواعد الأمريكية داخل العراق، كما يعلنون انخراطهم في \"محور المقاومة\" و\"وحدة الساحات\"، واستعدادهم للمشاركة في إسناد إيران إذا اتسعت الحرب في المنطقة، وهذا ما أكده عضو المكتب السياسي للحركة حيدر اللامي للجزيرة نت.\n تشييع مقاتل من كتائب \"سيد الشهداء\" في البصرة (رويترز) كتائب \"سيد الشهداء\" \n تأسست كتائب \"سيد الشهداء\" عام 2013، يتزعمها هاشم فنيان رحيم السراجي المعروف بـ\"أبي ولاء الولائي\"، وانخرطت منذ ذلك الحين في المعارك ضد تنظيم الدولة الإسلامية، كما شاركت في القتال داخل الأراضي السورية.\n وتقدر أعداد عناصرها بين 3 آلاف و5 آلاف مقاتل، وتضم ترسانتها راجمات صواريخ و طائرات مسيرة ومدفعية ميدانية وأسلحة متوسطة وثقيلة، بينما ينتشر عناصرها في بغداد والأنبار وديالى وصلاح الدين، إضافة إلى مواقع قريبة من الحدود العراقية السورية.\n وعلى المستوى السياسي، لا تمتلك الكتائب ثقلا مماثلا للفصائل الكبرى، إلا أنها تحافظ على حضور مؤثر داخل هيئة الحشد الشعبي والإطار التنسيقي، ولم تعلن الكتائب موافقتها على مشروع حصر السلاح، بل ربطت مستقبل هذا الملف بتطورات الصراع الإقليمي، معتبرة أن الظروف الأمنية الحالية ما تزال تبرر استمرار \"المقاومة\".\n\n \"أصحاب الكهف\" \n يعد \"أصحاب الكهف\" من أكثر التشكيلات المسلحة غموضا في العراق، إذ لا يملك هيكلا تنظيميا معلنا، ولا يعرف على وجه الدقة حجم قواته أو قيادته، فيما يرجح مراقبون أن يكون واجهة عملياتية أو إعلامية لفصائل أكبر.\n ظهرت المجموعة لأول مرة في أغسطس/آب 2019، بعد شن إسرائيل هجمات على مجاميع عراقية، ولكن ازداد نشاطها بعد اغتيال الجنرال الإيراني قاسم سليماني ونائب رئيس هيئة الحشد الشعبي أبو مهدي المهندس في مطار بغداد في يناير/كانون الثاني 2020.\n إعلان \n\n وكانت قد عرضت مكافأة تصل إلى 50 ألف دولار أمريكي للعراقيين الذين يمكنهم تقديم معلومات تتعلق بأنشطة المستثمرين والاقتصاديين من الولايات المتحدة والسعودية والإمارات والمملكة المتحدة، كما هددت لاحقا مواطنين سويديين وفرنسيين.\n أدانت الجماعة إعادة فتح منفذ عرعر الحدودي بين العراق والسعودية، مؤكدة التزامها بما أسمته \"رفض المشروع السعودي في العراق\"، وفي 19 أغسطس/آب 2024، أعلنت الجماعة إعادة تشكيلها تحت اسم \"كتائب صرخة القدس\"، قائلة إن \"أهدافها لا تقتصر على حدود اتفاقية سايكس بيكو التي فرضها المستعمرون\"، على حد وصفها.\n ولا تتوفر تقديرات دقيقة عن عدد عناصرها، غير أن معظم المراقبين يشيرون إلى أن الفصيل يضم مئات المقاتلين، وأنه يمتلك طائرات مسيرة وصواريخ قصيرة المدى وأسلحة خفيفة ومتوسطة، بينما يرتبط اسمه بعدد من الهجمات التي استهدفت مصالح أمريكية في العراق والمنطقة.\n ولا يعلن الفصيل مناطق انتشاره، ويواصل إصدار بيانات تؤكد استمرار العمل المسلح ضد القوات الأمريكية، رافضا أي حديث عن إنهاء نشاطه العسكري.\n أعضاء كتائب حزب الله في موكب حداد (الفرنسية) معضلة السلاح \n وتشير التقديرات إلى أن الفصائل التي تتحفظ أو ترفض تسليم سلاحها تمتلك عشرات آلاف المقاتلين، إضافة إلى ترسانة متنوعة من الأسلحة الثقيلة والخفيفة والطائرات المسيرة، وهو ما يجعل مشروع حصر السلاح بيد الدولة واحدا من أعقد الملفات التي تواجه الحكومة العراقية.\n وتكتسب هذه المعضلة بعدا آخر، إذ تنظر غالبية هذه الفصائل إلى سلاحها بوصفه جزءا من منظومة \"محور المقاومة\" في المنطقة، وليس مجرد قوة محلية، وهو ما يربط مستقبل هذا الملف بمآلات الصراع الإقليمي أكثر من ارتباطه بالتفاهمات السياسية داخل العراق.\n في المقابل، تشدد الحكومة على أن حصر السلاح بيد الدولة يمثل التزاما دستوريا وأحد أبرز بنود برنامجها، مؤكدة عزمها المضي في تنفيذ هذا المسار بعد انتهاء مهمة التحالف الدولي، وسط تساؤلات بشأن قدرة بغداد على الوصول إلى تسوية مع الفصائل، أو الانتقال إلى خيارات أكثر حسما إذا تعثرت الحلول السياسية.\n\n المصدر: الجزيرة",
+      "sourceHost": "aljazeera.net",
+      "contentChars": 6433,
+      "arabicRatio": 0.9942,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T04:39:27.181Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "importance": {
+        "score": 36,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 40,
+          "businessImpact": 0,
+          "politicalImpact": 9,
+          "reportValue": 10,
+          "sourceReliability": 8
+        },
+        "reportPriority": "REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "이라크 무장 세력 및 무기 집중 보유 문제 및 정부 정책 관련 기사로, 비스마야 사업과 직접적 연결은 없으나 무장 세력의 정치경제적 영향력이 사업 환경에 일부 영향을 줄 가능성이 있어 간접적인 중요도로 평가됨.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "d87b9f409d4fba76d4b9",
+        "ruleScore": 67,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 20,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "이라크 무장 세력 및 무기 집중 보유 문제 및 정부 정책 관련 기사로, 비스마야 사업과 직접적 연결은 없으나 무장 세력의 정치경제적 영향력이 사업 환경에 일부 영향을 줄 가능성이 있어 간접적인 중요도로 평가됨.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 7,
+          "contractPaymentImpact": 3,
+          "responseUrgency": 3,
+          "sourceReliability": 2
+        }
+      },
+      "eventGroup": {
+        "groupId": "event-GiJoyPSsmUNWRTszf9",
+        "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+        "isRepresentative": true,
+        "memberCount": 2,
+        "duplicateCount": 1
+      },
+      "contentHash": "15354242f653e75f06758dd2b34ab3ece4627bd021d2866c06cf738952dd9316",
+      "contentCheckedAt": "2026-08-03T04:39:27.181Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V3"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
       "keywordId": "politics-security-policy-001",
       "category": "politics",
@@ -11282,11 +11284,11 @@
         "aiBreakdown": null
       },
       "eventGroup": {
-        "groupId": "event-mG0BGtEIdFQNS4F7k2",
-        "representativeArticleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
+        "groupId": "event-GiJoyPSsmUNWRTszf9",
+        "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+        "isRepresentative": false,
+        "memberCount": 2,
+        "duplicateCount": 1
       },
       "contentHash": "15354242f653e75f06758dd2b34ab3ece4627bd021d2866c06cf738952dd9316",
       "contentCheckedAt": "2026-08-03T22:22:59.447Z",
@@ -22192,121 +22194,6 @@
       "contentCheckedAt": "2026-08-03T01:39:26.411Z",
       "contentChanged": false,
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-6L3Am6PhQft-Fkh-Vh-y2Ox5",
-      "keywordId": "security-armed-001",
-      "category": "security",
-      "priority": 98,
-      "queryArabic": "(هجوم مسلح OR هجوم إرهابي OR اعتداء مسلح) العراق",
-      "requiredTerms": [],
-      "optionalTerms": [
-        "هجوم مسلح",
-        "هجوم إرهابي",
-        "اعتداء مسلح",
-        "داعش",
-        "القوات الأمنية"
-      ],
-      "excludedTerms": [
-        "فيلم",
-        "مسلسل",
-        "لعبة"
-      ],
-      "originalTitleArabic": "مقتل 30 شخصاً في هجوم مسلح بقرية شمال غربي نيجيريا",
-      "sourceArabic": "صوت الإمارات",
-      "sourceHomepage": "https://www.voiceofemirates.com",
-      "publishedAt": "2026-07-27T15:45:06.000Z",
-      "descriptionArabic": "مقتل 30 شخصاً في هجوم مسلح بقرية شمال غربي نيجيريا صوت الإمارات",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi4wJBVV95cUxOTmhrRjNnOFpjczJzYnIwY1hnaG40VmNrcUVXZ19nRXdaSGlsUVRtSmROSFJsbDNQY05WdzVPQ0ZIczdWSmJDZGhldGgyVGRBLXFnMTVUM0NmMEVsaEJrdVhWcHdLMno3S1Y4S184MlNXRkI3QjBDbXBTazg1NGZTcDdoNWE1LThwblBDOERPTVYzNWl6eGNORm9kcmVEYXl2Z2lUY0s5cTBKQ2FqaXNyVXNkNVN3SlhwRjJ5V2VtMXZfaDN6bnFYTm5EUXozeS1jNWtBalVVWkZmbEV5ejB3TFQ5VkxVQnRETHMzekkweFMzaVB4WldHTlY2RmFyVlp5c0NWaXpzb1dzdkgwN3czX3NwY0hjZ2ZMQU03c2RJNjNrRDFUN2RUWUFhYzhnVHJlalkxR3J6ajdwWnJDYUpZeV80ZUt3N0U4N19QamdBZExKTmp0YjZscGR2SHpkWUF4Nm5N?oc=5",
-      "articleUrl": "https://www.voiceofemirates.com/news/2026/07/27/%D9%85%D9%82%D8%AA%D9%84-30-%D8%B4%D8%AE%D8%B5%D8%A7%D9%8B-%D9%81%D9%8A-%D9%87%D8%AC%D9%88%D9%85-%D9%85%D8%B3%D9%84%D8%AD-%D8%A8%D9%82%D8%B1%D9%8A%D8%A9-%D8%B4%D9%85%D8%A7%D9%84-%D8%BA%D8%B1%D8%A8/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T22:19:22.105Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T22:21:39.597Z",
-      "canonicalUrl": "https://www.voiceofemirates.com/news/2026/07/27/%d9%85%d9%82%d8%aa%d9%84-30-%d8%b4%d8%ae%d8%b5%d8%a7%d9%8b-%d9%81%d9%8a-%d9%87%d8%ac%d9%88%d9%85-%d9%85%d8%b3%d9%84%d8%ad-%d8%a8%d9%82%d8%b1%d9%8a%d8%a9-%d8%b4%d9%85%d8%a7%d9%84-%d8%ba%d8%b1%d8%a8/",
-      "originalTextArabic": "الأخبار \n\n مقتل 30 شخصاً في هجوم مسلح بقرية شمال غربي نيجيريا\n كيف وقع الهجوم الذي أودى بحياة عشرات المدنيين في ولاية كادونا؟\n\nآخر تحديث: 27 يوليو، 2026 7:45 م \n محمد يسري بواسطة محمد يسري \n News Editor \n\n محمد يسري، محرر في وكالة أنباء صوت الإمارات، مكتب القاهرة، وهو صحفي وباحث في التراث الإسلامي والجماعات المتطرفة\n\n - News Editor \n\n منذ 1 أسبوع \n\n شارك \n\n زمن القراءة بالدقائق: 2\n\n هجوم مسلح في نيجيريا (صورة / وكالات) \n\n مشاركة \n\n أبرز النقاط \n\n تفاصيل الهجوم الفجري الدامي وإحراق المنازل السكنية \n تصاعد أعمال العنف والتحديات الأمنية في ولاية كادونا \n جهود السلطات لمواجهة العصابات الإجرامية وتعزيز الأمن \n\n أبوجا، نيجيريا – وقع هجوم مسلح دامٍ في ولاية كادونا. وقُتل ثلاثون شخصاً على الأقل في هذا الهجوم الإجرامي. واستهدف المسلحون إحدى القرى الواقعة شمال غربي نيجيريا. وأكد مصدران من سكان القرية وقوع هذه المجزرة المروعة. وتأتي الحادثة في أحدث موجة عنف تشهدها المنطقة محلياً. ونقلت وكالة رويترز تفاصيل هذه المأساة الإنسانية المؤلمة. وتواجه السلطات النيجيرية تحديات أمنية بالغة التعقيد والصعوبة. وتتابع الأجهزة الرسمية تطورات الوضع الأمني بحذر شديد.\n\n تفاصيل الهجوم الفجري الدامي وإحراق المنازل السكنية\n كشف دوجون رانا، معاون رئيس القرية، تفاصيل الهجوم المروع. اقتحم مسلحون القرية في وقت مبكر من الصباح. وأطلق المهاجمون النار بشكل عشوائي على السكان الأبرياء. وأقدم المجرمون على إحراق عدد كبير من المنازل السكنية. وأسفر الهجوم عن مقتل ثلاث0 شخصاً على الأقل فوراً. وتضمن عدد الضحايا ثمانية أطفال أبرياء سقطوا بالحادث. وأدى الاعتداء الهمجي إلى إصابة أربعة أشخاص آخرين بجروح. وتخلف هذه الأعمال الإجرامية دماراً هائلاً بالبنية التحتية البسيطة.\n تصاعد أعمال العنف والتحديات الأمنية في ولاية كادونا\n تعتبر ولاية كادونا من أكثر المناطق تضرراً بالعنف. وتننفذ عصابات إجرامية وجماعات مسلحة هجمات متكررة بالمنطقة. وتستهدف هذه الجماعات القرى والتجمعات السكانية النائية بصورة مستمرة. وتخلف هذه الاعتداءات عشرات القتلى والجرحى الأبرياء دائماً. وتواجه الحكومة النيجيرية تحديات أمنية متواصلة بشمال غرب البلاد. وتتكرر هجمات الخطف والقتل بشكل يهدد استقرار المجتمع.\n\n جهود السلطات لمواجهة العصابات الإجرامية وتعزيز الأمن\n تعكس هذه الهجمات استمرار التدهور الأمني بأجزاء واسعة. وتتصاعد أنشطة العصابات الإجرامية المسلحة في البلاد بوضوح. بينما تواصل السلطات النيجيرية جهودها الحثيثة لتعزيز الأمن. وتهدف الإجراءات الحكومية للحد من الاعتداءات التي تستهدف المدنيين. وتحاول الأجهزة الأمنية تفكيك هذه الشبكات الإجرامية الخطيرة. وتظل حماية المواطنين الأبرياء أولوية قصوى للدولة.\n\n الوسوم: صوت الإمارات نيجيريا هجوم مسلح \n\n المصادر: صوت الإمارات \n\n شارك هذا الخبر \n\n Facebook \n\n Whatsapp \n\n Whatsapp \n\n LinkedIn \n\n Telegram \n\n Threads \n\n Email \n\n Copy Link \n\n Print \n\n الخبر السابق \n\n مباحثات نتنياهو وترامب في واشنطن: إيران تتصدر جدول الأعمال \n\n الخبر التالي \n\n تقارير: جفارديول يمدد عقده مع مانشستر سيتي حتى 2031 \n\n اختيار المحرر \n\nجونزالو جارسيا يودع ريال مدريد: سأغادر بقلب ممتلئ بالامتنان \n مدريد، إسبانيا - وجه الإسباني جونزالو جارسيا رسالة وداع مؤثرة إلى جماهير ريال مدريد، بعد انتهاء مشواره مع النادي الملكي&hellip;\n\n بواسطة \n أحمد خيري \n\n زمن القراءة بالدقائق: 2\n\nوزير خارجية قطر يؤكد دعم الدوحة لجهود التهدئة بالمنطقة كيف تعزز قطر مساعي السلام والاستقرار في المنطقة؟\n\n زمن القراءة بالدقائق: 2\n\nزيلينسكي يقيل سفيرة أوكرانيا لدى الولايات المتحدة بشكل مفاجئ ما دلالات القرار في ظل مساعي كييف لتعزيز دعمها العسكري؟\n\n زمن القراءة بالدقائق: 2\n\n الأكثر شيوعا \n\nمجلس السلام يضغط على إسرائيل لوقف هجماتها في غزة \n هل تنجح الضغوط الدولية في خفض التصعيد ودفع خارطة الطريق&hellip;\n\n منذ 3 ساعات \n\nاستهداف سفينة شحن تركية بالمسيرات في البحر الأسود ما تداعيات استهداف سفن الشحن على&hellip;\n\n منذ 3 ساعات \n\nهجوم بمسيرات يوقف مصفاة روسية عن معالجة النفط في فولجوجراد كيف يؤثر استهداف منشآت الطاقة على&hellip;\n\n منذ 4 ساعات \n\nترامب: المحادثات مع إيران الفرصة الأخيرة لطهران لحل الأزمة هل تمثل تصريحات ترامب تحولًا جديدًا&hellip;\n\n منذ 4 ساعات \n\nالإدارة الأمريكية تنفي وجود مفاوضات جديدة مع إيران بعد تصريحات ترامب هل تكشف التصريحات عن تباين داخل&hellip;\n\n منذ 4 ساعات \n\n قد يهمك أيضاً \n\n الأخبار العالم \n\nترامب يعلن سيطرة البحرية الأمريكية على مضيق هرمز بالكامل واشنطن، الولايات المتحدة - أعلن الرئيس الأمريكي دونالد ترامب تصريحات عسكرية حاسمة اليوم. وتؤكد البيانات فرض سيطرة البحرية الأمريكية على&hellip;\n\n زمن القراءة بالدقائق: 2\n\n الأخبار العالم \n\nالجيش الأمريكي أعلن تحويل مسار 44 سفينة تجارية واعتلاء سفينتين واشنطن، الولايات المتحدة - أعلن الجيش الأمريكي أرقاماً وتشغيلية جديدة اليوم. وتؤكد البيانات الرسمية تحويل مسار 44 سفينة تجارية بداخل&hellip;\n\n زمن القراءة بالدقائق: 2\n\n الأخبار العالم \n\nالقيادة الوسطى تفرض الحصار البحري الأمريكي على إيران بصرامة واشنطن، الولايات المتحدة - أعلنت القيادة الوسطى الأمريكية بيانات عسكرية جديدة اليوم. وتكشف التفاصيل استمرار فرض الحصار البحري الأمريكي على&hellip;\n\n زمن القراءة بالدقائق: 2\n\n الأخبار العالم \n\nترامب يتهم إيران بالمراوغة ويؤكد لا اتفاق إلا بالاستسلام واشنطن، الولايات المتحدة - أعلن الرئيس الأمريكي دونالد ترامب تصريحات حادة اليوم. وتتضمن البيانات اتهامات رسمية تؤكد أن ترامب يتهم&hellip;\n\n زمن القراءة بالدقائق: 2",
-      "sourceHost": "voiceofemirates.com",
-      "contentChars": 4839,
-      "arabicRatio": 0.9616,
-      "relevanceNote": "이라크 내 테러·치안·시위 사건",
-      "fetchedAt": "2026-08-03T22:23:22.450Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "f21b7750884197abef1907918209cfe6aadc93c1309bc86d6e60a2dddbc5f386",
-      "previousContentHash": "278fd9db302769b1c0d76bf5db339d09d52ed519f41b5ade116d80c72a68583c",
-      "contentCheckedAt": "2026-08-03T22:23:22.450Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "security",
-        "to": "security",
-        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V3"
-      },
-      "eventGroup": {
-        "groupId": "event-mz7hfwNIoV9wl7WExg",
-        "representativeArticleId": "discovery-6L3Am6PhQft-Fkh-Vh-y2Ox5",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 29,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T22:46:43.673Z",
-        "breakdown": {
-          "terrorDirectness": 8,
-          "location": 0,
-          "incidentScale": 15,
-          "siteSafety": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "d67c788da2b9171e207f",
-        "ruleScore": 29,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -41432,9 +41319,9 @@
     "generatedAt": "2026-08-03T22:23:34.259Z"
   },
   "eventGrouping": {
-    "groupCount": 344,
-    "duplicateGroupCount": 12,
-    "duplicateArticleCount": 17,
+    "groupCount": 342,
+    "duplicateGroupCount": 13,
+    "duplicateArticleCount": 18,
     "maxHours": 72,
     "minScore": 0.5,
     "method": "ARABIC_CANONICAL_BILATERAL_EVENT_V4"
@@ -41467,5 +41354,12 @@
       "nicPolicyOrganization": 80,
       "iraqHousingGeneral": 65
     }
+  },
+  "iraqScopeGate": {
+    "method": "EXACT_ARABIC_TOKEN_SCOPE_V1",
+    "before": 383,
+    "retained": 381,
+    "excluded": 2,
+    "leadChars": 2200
   }
 }
