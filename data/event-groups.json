@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.2",
-  "generatedAt": "2026-08-03T08:48:42.266Z",
-  "groupCount": 325,
-  "duplicateGroupCount": 11,
-  "duplicateArticleCount": 16,
+  "generatedAt": "2026-08-03T22:23:50.725Z",
+  "groupCount": 344,
+  "duplicateGroupCount": 12,
+  "duplicateArticleCount": 17,
   "matches": [
     {
       "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
@@ -169,6 +169,26 @@
       ]
     },
     {
+      "left": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
+      "right": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+      "score": 1,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:دول",
+        "TITLE:خليج",
+        "TITLE:تعيد",
+        "TITLE:رسم",
+        "TITLE:خريطه",
+        "TITLE:تصدير",
+        "TITLE:نفط",
+        "TITLE:بعيدا",
+        "TITLE:هرمز",
+        "TERM:ايران",
+        "TERM:تركيا",
+        "TERM:بصره"
+      ]
+    },
+    {
       "left": "discovery-YuiObc5NIIm6SguP2y4ZiOBA",
       "right": "discovery-QCUcAdnY3qcimIo9CI0fFJkJ",
       "score": 0.9676,
@@ -242,7 +262,7 @@
     {
       "left": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
       "right": "discovery-5Yh_lTz0WtxScXSiarUbWIBt",
-      "score": 0.8853,
+      "score": 0.9053,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
         "TITLE:مجلس",
@@ -399,6 +419,282 @@
     }
   ],
   "groups": [
+    {
+      "groupId": "event-0EzeoSn0J-6O-JOorh",
+      "category": "international",
+      "representativeArticleId": "discovery-ae6Og4SdbAL_ytXHd4y43aCl",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T19:28:46.000Z",
+      "publishedTo": "2026-08-03T19:28:46.000Z",
+      "memberArticleIds": [
+        "discovery-ae6Og4SdbAL_ytXHd4y43aCl"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-ae6Og4SdbAL_ytXHd4y43aCl",
+          "sourceArabic": "ANF | Articles",
+          "articleUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/naqlt-thml-mlywny-brmyl-mn-alnft-alraqy-tbr-mdyq-hrmz-mtjht-aly-alsyn-138631",
+          "publishedAt": "2026-08-03T19:28:46.000Z",
+          "originalTitleArabic": "ناقلة تحمل مليوني برميل من النفط العراقي تعبر مضيق هرمز متجهة إلى الصين",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-JHdPvIYy8L__So3OeG",
+      "category": "international",
+      "representativeArticleId": "discovery-EORoA8YAJRMjFg4jToM5Z8v8",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T18:23:58.000Z",
+      "publishedTo": "2026-08-03T18:23:58.000Z",
+      "memberArticleIds": [
+        "discovery-EORoA8YAJRMjFg4jToM5Z8v8"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-EORoA8YAJRMjFg4jToM5Z8v8",
+          "sourceArabic": "Kurdistan24",
+          "articleUrl": "https://www.kurdistan24.net/ar/story/930168/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF%D9%8A-%D8%AD%D9%88%D8%A7%D8%B1%D8%A7%D8%AA-%D9%85%D8%B9-%D8%B7%D9%87%D8%B1%D8%A7%D9%86-%D9%84%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D9%87%D8%B1%D9%85%D8%B2-%D9%88%D8%AA%D9%88%D8%AC%D9%87-%D9%84%D8%B1%D9%81%D8%B9-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B4%D9%85%D8%A7%D9%84",
+          "publishedAt": "2026-08-03T18:23:58.000Z",
+          "originalTitleArabic": "وزير النفط الاتحادي: حوارات مع طهران لتأمين الملاحة في هرمز وتوجه لرفع صادرات الشمال",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-Je6VcImtCLTq2_-pcP",
+      "category": "politics",
+      "representativeArticleId": "discovery-orkm98-Lz7H1WRn8u8yHVgRG",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T18:08:54.000Z",
+      "publishedTo": "2026-08-03T18:08:54.000Z",
+      "memberArticleIds": [
+        "discovery-orkm98-Lz7H1WRn8u8yHVgRG"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-orkm98-Lz7H1WRn8u8yHVgRG",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://www.shafaq.com/ar/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1-%D9%88%D8%AA%D8%AD%D9%84%D9%8A%D9%84%D8%A7%D8%AA/%D9%81%D9%8A-%D8%B6%D8%B9%D9%81-%D8%AD%D8%A7%D9%84%D8%A7%D8%AA%D9%87-%D9%87%D9%84-%D9%8A%D8%AA%D9%81%D9%83%D9%83-%D8%A7%D9%84-%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A",
+          "publishedAt": "2026-08-03T18:08:54.000Z",
+          "originalTitleArabic": "\"في أضعف حالاته\".. هل يتفكك الإطار التنسيقي؟",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-gM65HLp75KCfbinZcj",
+      "category": "international",
+      "representativeArticleId": "discovery-bk-s9scQfKQ7ZMI-uvcSJN5C",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T16:22:00.000Z",
+      "publishedTo": "2026-08-03T16:22:00.000Z",
+      "memberArticleIds": [
+        "discovery-bk-s9scQfKQ7ZMI-uvcSJN5C"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-bk-s9scQfKQ7ZMI-uvcSJN5C",
+          "sourceArabic": "موقع 24",
+          "articleUrl": "https://24.ae/articleamp/964524/-%D8%B3%D9%8A%D9%81-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%A3%D9%85-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A5%D8%AF%D8%A7%D8%B1%D8%A9-%D9%85%D8%A7%D8%B0%D8%A7-%D9%88%D8%B1%D8%A7%D8%A1-%D8%A3%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%84%D8%A9-%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-",
+          "publishedAt": "2026-08-03T16:22:00.000Z",
+          "originalTitleArabic": "\"سيف\" واشنطن أم أزمة إدارة.. ماذا وراء أزمة السيولة بالعراق؟",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-WVnQaEzN9Kz9aqAHIS",
+      "category": "politics",
+      "representativeArticleId": "discovery-rK9UtSWRI9xR5PZd2DwLjCv2",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T16:16:03.000Z",
+      "publishedTo": "2026-08-03T16:16:03.000Z",
+      "memberArticleIds": [
+        "discovery-rK9UtSWRI9xR5PZd2DwLjCv2"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-rK9UtSWRI9xR5PZd2DwLjCv2",
+          "sourceArabic": "العين الإخبارية",
+          "articleUrl": "https://al-ain.com/article/delay-in-employee-salary-payments-iraq",
+          "publishedAt": "2026-08-03T16:16:03.000Z",
+          "originalTitleArabic": "تأخر صرف رواتب الموظفين في العراق.. آخر تطورات الأزمة وخطة الحكومة",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-H96hvJmXdd3P031x7L",
+      "category": "international",
+      "representativeArticleId": "discovery-TsFMdK2AD1K4_NJBPAX8ssF6",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T12:34:55.000Z",
+      "publishedTo": "2026-08-03T12:34:55.000Z",
+      "memberArticleIds": [
+        "discovery-TsFMdK2AD1K4_NJBPAX8ssF6"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-TsFMdK2AD1K4_NJBPAX8ssF6",
+          "sourceArabic": "الجزيرة نت",
+          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/3/%D9%87%D9%84-%D9%8A%D9%86%D9%82%D8%B0-%D8%AE%D8%B7-%D8%AC%D9%8A%D9%87%D8%A7%D9%86-%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9",
+          "publishedAt": "2026-08-03T12:34:55.000Z",
+          "originalTitleArabic": "هل ينقذ خط جيهان صادرات النفط العراقية من أزمة مضيق هرمز؟",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-1_-lLxwMB4iDAXJRCO",
+      "category": "international",
+      "representativeArticleId": "discovery-zuPTvuJCeM9DerVoaWsqFKw9",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T11:45:20.000Z",
+      "publishedTo": "2026-08-03T11:45:20.000Z",
+      "memberArticleIds": [
+        "discovery-zuPTvuJCeM9DerVoaWsqFKw9"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-zuPTvuJCeM9DerVoaWsqFKw9",
+          "sourceArabic": "attasiaa.com",
+          "articleUrl": "https://attasiaa.com/%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2-%D9%81%D9%8A-%D9%82%D9%84%D8%A8-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D8%A7%D9%84%D8%AF%D8%A8%D9%84%D9%88%D9%85%D8%A7%D8%B3%D9%8A%D8%A9/",
+          "publishedAt": "2026-08-03T11:45:20.000Z",
+          "originalTitleArabic": "مضيق هرمز في قلب التحركات الدبلوماسية.. العراق وإيران",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-Nq_0LZzHg0oPa-VXHe",
+      "category": "politics",
+      "representativeArticleId": "discovery-6TcRr-J31n_kKMb2uBJAMTl8",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T11:07:51.000Z",
+      "publishedTo": "2026-08-03T11:07:51.000Z",
+      "memberArticleIds": [
+        "discovery-6TcRr-J31n_kKMb2uBJAMTl8"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-6TcRr-J31n_kKMb2uBJAMTl8",
+          "sourceArabic": "المعلومة",
+          "articleUrl": "https://almaalomah.me/news/140152/report/%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%D8%A7%D8%AA-%D9%85%D9%86-%D8%A8%D8%B5%D9%85%D8%A9-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%81%D9%8A-%D8%AD%D8%B3%D9%85-%D8%A7%D9%84%D8%AD%D9%82%D8%A7%D8%A6%D8%A8-%D8%A7%D9%84%D9%88%D8%B2%D8%A7%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%A8%D9%82%D9%8A%D8%A9-%D9%88%D8%B4%D8%B1",
+          "publishedAt": "2026-08-03T11:07:51.000Z",
+          "originalTitleArabic": "تحذيرات من \"بصمة أمريكية\" في حسم الحقائب الوزارية المتبقية وشرعنة للتدخلات الإقليمية",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-Am44dNA4RSXC19GgaU",
+      "category": "security",
+      "representativeArticleId": "discovery-CFihYi46LrZ4RiatfNkGHe2E",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T10:29:20.000Z",
+      "publishedTo": "2026-08-03T10:29:20.000Z",
+      "memberArticleIds": [
+        "discovery-CFihYi46LrZ4RiatfNkGHe2E"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-CFihYi46LrZ4RiatfNkGHe2E",
+          "sourceArabic": "اندبندنت عربية",
+          "articleUrl": "https://www.independentarabia.com/node/654817/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1/%D8%B1%D8%B3%D8%A7%D8%A6%D9%84-%D8%A3%D8%B1%D8%AF%D9%86%D9%8A%D8%A9-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AA%D8%B1%D8%B3%D9%85-%D9%82%D9%88%D8%A7%D8%B9%D8%AF-%D8%A7%D8%B4%D8%AA%D8%A8%D8%A7%D9%83-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9",
+          "publishedAt": "2026-08-03T10:29:20.000Z",
+          "originalTitleArabic": "رسائل أردنية إلى العراق ترسم قواعد اشتباك جديدة",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-anw2GhzR3tHyeUWERo",
+      "category": "politics",
+      "representativeArticleId": "discovery-AKs0lhKHWbAKFgP7p2gGsYHC",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T08:33:46.000Z",
+      "publishedTo": "2026-08-03T08:33:46.000Z",
+      "memberArticleIds": [
+        "discovery-AKs0lhKHWbAKFgP7p2gGsYHC"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-AKs0lhKHWbAKFgP7p2gGsYHC",
+          "sourceArabic": "ANF | Articles",
+          "articleUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/s-138596",
+          "publishedAt": "2026-08-03T08:33:46.000Z",
+          "originalTitleArabic": "العراق.. هل تعقد ملف حصر السلاح بعد الضربات الأميركية-السعودية؟",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-SXqO4liapvy52fmwXP",
+      "category": "international",
+      "representativeArticleId": "discovery-rpQ3rqx3qyCdgc2vkTkM5Blq",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T08:25:37.000Z",
+      "publishedTo": "2026-08-03T08:25:37.000Z",
+      "memberArticleIds": [
+        "discovery-rpQ3rqx3qyCdgc2vkTkM5Blq"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-rpQ3rqx3qyCdgc2vkTkM5Blq",
+          "sourceArabic": "الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
+          "articleUrl": "https://attaqa.net/2026/08/03/%D8%B3%D8%B9%D8%B1-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%85%D8%B9%D8%B1%D9%88%D8%B6-%D8%A8%D8%AE%D8%B5%D9%85-30-%D8%AF%D9%88/",
+          "publishedAt": "2026-08-03T08:25:37.000Z",
+          "originalTitleArabic": "سعر برميل النفط العراقي معروض بخصم 30 دولارًا - الطاقة",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-NBV1RmyiB6fPKa-POS",
+      "category": "international",
+      "representativeArticleId": "discovery-86U8vOzKGNP-XU173WknUPHJ",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T07:21:03.000Z",
+      "publishedTo": "2026-08-03T07:21:03.000Z",
+      "memberArticleIds": [
+        "discovery-86U8vOzKGNP-XU173WknUPHJ"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-86U8vOzKGNP-XU173WknUPHJ",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%B3%D9%88%D9%85%D9%88-%D8%AA%D8%B7%D9%84%D8%A8-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D9%86-%D8%AA%D8%AD%D8%AF%D9%8A%D8%AF-%D8%A7%D8%AD%D8%AA%D9%8A%D8%A7%D8%AC%D8%A7%D8%AA%D9%87%D9%85-%D9%85%D9%86-%D8%AE%D8%A7%D9%85-%D8%A7%D9%84%D8%A8%D8%B5%D8%B1%D8%A9-%D9%88%D8%B3%D8%B7-%D8%AA%D9%88%D8%AA%D8%B1%D8%A7%D8%AA-%D9%87%D8%B1%D9%85%D8%B2",
+          "publishedAt": "2026-08-03T07:21:03.000Z",
+          "originalTitleArabic": "سومو تطلب من المشترين تحديد احتياجاتهم من خام البصرة وسط توترات هرمز",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
     {
       "groupId": "event-St-_WCe6ezPHaV3h-v",
       "category": "international",
@@ -578,6 +874,29 @@
           "articleUrl": "https://arabic.pressbee.net/amp/show10891121.html",
           "publishedAt": "2026-08-02T18:57:27.000Z",
           "originalTitleArabic": "موجة صعود جديدة..للدينار العـــــــــــــــــــــراقي اليوم الاحد 2 يوليو",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-oRF0VL0MycuEgEwXP2",
+      "category": "politics",
+      "representativeArticleId": "discovery-f3CHJPxM4InoLc1HmJZBzT9-",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-02T17:29:19.000Z",
+      "publishedTo": "2026-08-02T17:29:19.000Z",
+      "memberArticleIds": [
+        "discovery-f3CHJPxM4InoLc1HmJZBzT9-"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-f3CHJPxM4InoLc1HmJZBzT9-",
+          "sourceArabic": "ultrairaq.ultrasawt.com",
+          "articleUrl": "https://ultrairaq.ultrasawt.com/%D8%AA%D8%AD%D8%AF%D8%AB%D8%AA-%D8%B9%D9%86-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%AE%D8%A7%D8%B1%D8%AC%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D8%AF%D9%8A%D9%86-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%B3%D9%81%D9%8A%D9%86%D8%AA%D9%8A%D9%86-%D9%81%D9%8A-%D9%85%D9%8A%D9%86%D8%A7%D8%A1-%D8%AF%D9%85%D9%8A%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A/%D9%81%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1",
+          "publishedAt": "2026-08-02T17:29:19.000Z",
+          "originalTitleArabic": "تحدثت عن \"حصر السلاح\".. الخارجية العراقية تدين استهداف سفينتين في ميناء دمياط المصري",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1061,6 +1380,39 @@
       ]
     },
     {
+      "groupId": "event-q3dnHcuQB_FS_JD2Bx",
+      "category": "international",
+      "representativeArticleId": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-08-01T16:00:16.000Z",
+      "publishedTo": "2026-08-01T23:29:48.000Z",
+      "memberArticleIds": [
+        "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+        "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+          "sourceArabic": "الجزيرة نت",
+          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/1/%d8%af%d9%88%d9%84-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%ac-%d8%aa%d8%b9%d9%8a%d8%af-%d8%b1%d8%b3%d9%85-%d8%ae%d8%b1%d9%8a%d8%b7%d8%a9-%d8%aa%d8%b5%d8%af%d9%8a%d8%b1-%d8%a7%d9%84%d9%86%d9%81%d8%b7",
+          "publishedAt": "2026-08-01T16:00:16.000Z",
+          "originalTitleArabic": "دول الخليج تعيد رسم خريطة تصدير النفط بعيدا عن هرمز",
+          "titleKo": "",
+          "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
+          "sourceArabic": "alwatanvoice.com",
+          "articleUrl": "https://www.alwatanvoice.com/arabic/news/2026/08/01/1553484.html",
+          "publishedAt": "2026-08-01T23:29:48.000Z",
+          "originalTitleArabic": "دول الخليج تعيد رسم خريطة تصدير النفط بعيدا عن هرمز",
+          "titleKo": "",
+          "isRepresentative": false
+        }
+      ]
+    },
+    {
       "groupId": "event-rNjt6h1c3yCvBZbnbG",
       "category": "international",
       "representativeArticleId": "discovery-Idy87ju7-ImCSmRLDSU7nW_Z",
@@ -1078,6 +1430,29 @@
           "articleUrl": "https://albiladdaily.com/2026/08/02/%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D9%85%D9%86-%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D9%88%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%86/",
           "publishedAt": "2026-08-01T23:27:02.000Z",
           "originalTitleArabic": "انسحاب من كردستان وتحذيرات أمنية.. واشنطن تعيد تموضع قواتها في العراق",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-iNjEyUvMP6JAf-vOrl",
+      "category": "international",
+      "representativeArticleId": "discovery-XKuDOQVA1nCvpy9Rd6isllMT",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-01T23:25:15.000Z",
+      "publishedTo": "2026-08-01T23:25:15.000Z",
+      "memberArticleIds": [
+        "discovery-XKuDOQVA1nCvpy9Rd6isllMT"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-XKuDOQVA1nCvpy9Rd6isllMT",
+          "sourceArabic": "الشرق الأوسط",
+          "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5302489-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D8%AA%D8%AF%D8%B1%D9%8A%D8%AC%D9%8A-%D9%85%D9%86-%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
+          "publishedAt": "2026-08-01T23:25:15.000Z",
+          "originalTitleArabic": "انسحاب أميركي «تدريجي» من كردستان العراق",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1239,29 +1614,6 @@
           "articleUrl": "https://almaalomah.me/news/140018/report/%D8%A7%D9%84%D8%AD%D8%B1%D9%88%D8%A8-%D8%A7%D9%84%D8%A7%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D8%AA%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%D8%A7%D8%AA-%D9%88%D8%AA%D8%AF%D9%81%D8%B9-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D8%A5%D9%84%D9%89-%D9%85%D9%86%D8%B2%D9%84%D9%82-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B1%D8%A7",
           "publishedAt": "2026-08-01T17:02:57.000Z",
           "originalTitleArabic": "الحروب الامريكية تُربك الحسابات وتدفع بغداد إلى منزلق الاقتراض الخارجي",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-jRsKTZSxtA1YvUqcCF",
-      "category": "international",
-      "representativeArticleId": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-01T16:00:16.000Z",
-      "publishedTo": "2026-08-01T16:00:16.000Z",
-      "memberArticleIds": [
-        "discovery-iLVkqR_oVgSoaRA-K9A05BHy"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
-          "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/1/%d8%af%d9%88%d9%84-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%ac-%d8%aa%d8%b9%d9%8a%d8%af-%d8%b1%d8%b3%d9%85-%d8%ae%d8%b1%d9%8a%d8%b7%d8%a9-%d8%aa%d8%b5%d8%af%d9%8a%d8%b1-%d8%a7%d9%84%d9%86%d9%81%d8%b7",
-          "publishedAt": "2026-08-01T16:00:16.000Z",
-          "originalTitleArabic": "دول الخليج تعيد رسم خريطة تصدير النفط بعيدا عن هرمز",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1863,6 +2215,29 @@
       ]
     },
     {
+      "groupId": "event-NB0lnSnGsLBP-MKpk2",
+      "category": "security",
+      "representativeArticleId": "discovery-4CuFLeWp5XwL7WpM5wyUEtUg",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-31T13:09:00.000Z",
+      "publishedTo": "2026-07-31T13:09:00.000Z",
+      "memberArticleIds": [
+        "discovery-4CuFLeWp5XwL7WpM5wyUEtUg"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-4CuFLeWp5XwL7WpM5wyUEtUg",
+          "sourceArabic": "verify-sy.com",
+          "articleUrl": "https://www.verify-sy.com/ar/topic/regional-global/newsroom/iraq-announces-thwarting-an-attempt-to",
+          "publishedAt": "2026-07-31T13:09:00.000Z",
+          "originalTitleArabic": "العراق يعلن إحباط محاولة تهريب أسلحة قادمة من سوريا",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
       "groupId": "event-92X9S6DkhDceY7GgDH",
       "category": "politics",
       "representativeArticleId": "discovery-LFL4n7YfXL7T-Va4wtacwkm5",
@@ -2205,19 +2580,19 @@
       ]
     },
     {
-      "groupId": "event-_cCWUcJ6VR31gZ-QW5",
+      "groupId": "event-mG0BGtEIdFQNS4F7k2",
       "category": "politics",
-      "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+      "representativeArticleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
       "memberCount": 1,
       "duplicateCount": 0,
       "publishedFrom": "2026-07-30T12:11:55.000Z",
       "publishedTo": "2026-07-30T12:11:55.000Z",
       "memberArticleIds": [
-        "discovery-Nrla4itn8xE_k9yMnpm1-SOs"
+        "discovery-IwNHxQjJJ6V6T38NmMkxE5-D"
       ],
       "sources": [
         {
-          "articleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+          "articleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
           "sourceArabic": "الجزيرة نت",
           "articleUrl": "https://www.aljazeera.net/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
           "publishedAt": "2026-07-30T12:11:55.000Z",
@@ -3746,7 +4121,7 @@
       "sources": [
         {
           "articleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
-          "sourceArabic": "attaqa.net",
+          "sourceArabic": "الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
           "articleUrl": "https://attaqa.net/2026/07/28/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B3%D8%AC%D9%84-526-%D8%A3%D9%84%D9%81-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%8A/",
           "publishedAt": "2026-07-28T10:32:50.000Z",
           "originalTitleArabic": "صادرات النفط العراقي تسجل 526 ألف برميل يوميًا - الطاقة",
@@ -4469,6 +4844,29 @@
       ]
     },
     {
+      "groupId": "event-cgJfox8K2UwRtpSN0e",
+      "category": "politics",
+      "representativeArticleId": "discovery-DO-2dCsKx9apg2afz-bUV78x",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-27T09:40:07.000Z",
+      "publishedTo": "2026-07-27T09:40:07.000Z",
+      "memberArticleIds": [
+        "discovery-DO-2dCsKx9apg2afz-bUV78x"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-DO-2dCsKx9apg2afz-bUV78x",
+          "sourceArabic": "المعلومة",
+          "articleUrl": "https://almaalomah.me/news/139501/economy/%D8%A8%D8%B3%D8%A8%D8%A8-%D9%86%D9%82%D8%B5-%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%AA%D8%A4%D8%AC%D9%84-%D8%B5%D8%B1%D9%81-%D8%A7%D9%84%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D9%88%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D9%8A%D8%AA%D8%AD%D8%B1%D9%83-%D9%84%D8%A7",
+          "publishedAt": "2026-07-27T09:40:07.000Z",
+          "originalTitleArabic": "بسبب نقص السيولة.. المالية تؤجل صرف الرواتب والبرلمان يتحرك لاستضافة الوزير",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
       "groupId": "event-cSulVCfAWsmJlO5fDo",
       "category": "security",
       "representativeArticleId": "discovery-kffOKHMF-4yp9Dzxeu9n3Kv7",
@@ -4647,6 +5045,29 @@
           "articleUrl": "https://almadapaper.net/445480/",
           "publishedAt": "2026-07-26T21:20:26.000Z",
           "originalTitleArabic": "القضاء يضبط 27 مليار دينار في قضية الجميلي والنزاهة تفكك شبكة تزوير في الديوانية",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-Q7Pd_ZVOnkLZ8dJsov",
+      "category": "international",
+      "representativeArticleId": "discovery-9kLczf65bwm0JBQjfPTcWubA",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-26T19:17:56.000Z",
+      "publishedTo": "2026-07-26T19:17:56.000Z",
+      "memberArticleIds": [
+        "discovery-9kLczf65bwm0JBQjfPTcWubA"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-9kLczf65bwm0JBQjfPTcWubA",
+          "sourceArabic": "الحرة",
+          "articleUrl": "https://alhurra.com/29417",
+          "publishedAt": "2026-07-26T19:17:56.000Z",
+          "originalTitleArabic": "مصادر \"الحرة\": الزيدي يزور السعودية نهاية الأسبوع الحالي",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -5527,6 +5948,29 @@
       ]
     },
     {
+      "groupId": "event-QaOQvYv0aF-dylBEni",
+      "category": "security",
+      "representativeArticleId": "discovery-1vuq7LaXCzc05c-RCHPa9UMn",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-24T12:11:25.000Z",
+      "publishedTo": "2026-07-24T12:11:25.000Z",
+      "memberArticleIds": [
+        "discovery-1vuq7LaXCzc05c-RCHPa9UMn"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-1vuq7LaXCzc05c-RCHPa9UMn",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A8%D8%B9%D8%AF-%D9%85%D9%82%D8%AA%D9%84-%D9%88-%D8%B5%D8%A7%D8%A8%D8%A9-%D8%B3%D8%B1%D8%A7-%D9%8A%D9%84%D9%8A%D9%8A%D9%86-%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%88%D9%83%D8%A7%D8%AA%D8%B3-%D9%8A%D9%82%D8%B1%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%A8%D8%AF-%D8%A8%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9-%D8%A8-%D8%B1-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B7%D8%A7%D9%86%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%B6%D9%81%D8%A9",
+          "publishedAt": "2026-07-24T12:11:25.000Z",
+          "originalTitleArabic": "بعد مقتل وإصابة إسرائيليين.. نتنياهو وكاتس يقرران البدء بتشريع بؤر استيطانية في الضفة",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
       "groupId": "event-tMeRVy5Tit43DtFMHM",
       "category": "politics",
       "representativeArticleId": "discovery-cbt-kKWBqEEPcOOZ3MrbZLri",
@@ -6027,6 +6471,29 @@
           "articleUrl": "https://www.alaraby.com/news/%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A5%D9%8A%D8%B1%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-40-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
           "publishedAt": "2026-07-22T19:25:09.000Z",
           "originalTitleArabic": "حرب الشرق الأوسط.. تراجع إيرادات العراق بأكثر من 40 مليار دولار | التلفزيون العربي",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-gthE65C7xmIUGQqtKv",
+      "category": "politics",
+      "representativeArticleId": "discovery-myUnk0xDb4Yp8Gc1Dnh1Xfsp",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-22T17:03:16.000Z",
+      "publishedTo": "2026-07-22T17:03:16.000Z",
+      "memberArticleIds": [
+        "discovery-myUnk0xDb4Yp8Gc1Dnh1Xfsp"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-myUnk0xDb4Yp8Gc1Dnh1Xfsp",
+          "sourceArabic": "Kurdistan24",
+          "articleUrl": "https://www.kurdistan24.net/ar/story/927555",
+          "publishedAt": "2026-07-22T17:03:16.000Z",
+          "originalTitleArabic": "مجلس وزراء إقليم كوردستان يوجّه وزارة الثروات الطبيعية باتخاذ الإجراءات اللازمة لمواجهة نقص البنزين وارتفاع أسعار المشتقات النفطية",
           "titleKo": "",
           "isRepresentative": true
         }
