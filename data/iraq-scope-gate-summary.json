@@ -1,27 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T22:46:59.393Z",
+  "generatedAt": "2026-08-03T23:47:06.950Z",
   "method": "EXACT_ARABIC_TOKEN_SCOPE_V1",
-  "before": 383,
+  "before": 381,
   "retained": 381,
-  "excludedCount": 2,
-  "reasonCounts": {
-    "FOREIGN_SECURITY_PRIMARY_TITLE": 2
-  },
-  "excluded": [
-    {
-      "articleId": "discovery-FkiLRGdS3FzPg5i1S00tKrOC",
-      "category": "security",
-      "originalTitleArabic": "هجوم مسلح في شمال غربي نيجيريا يسفر عن مقتولين ومخطوفين",
-      "reason": "FOREIGN_SECURITY_PRIMARY_TITLE",
-      "note": "해외 국가·도시가 제목의 주체이며 제목에 이라크 직접 연관이 없음"
-    },
-    {
-      "articleId": "discovery-6L3Am6PhQft-Fkh-Vh-y2Ox5",
-      "category": "security",
-      "originalTitleArabic": "مقتل 30 شخصاً في هجوم مسلح بقرية شمال غربي نيجيريا",
-      "reason": "FOREIGN_SECURITY_PRIMARY_TITLE",
-      "note": "해외 국가·도시가 제목의 주체이며 제목에 이라크 직접 연관이 없음"
-    }
-  ]
+  "excludedCount": 0,
+  "reasonCounts": {},
+  "excluded": []
 }
