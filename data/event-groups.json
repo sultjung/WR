@@ -1,24 +1,171 @@
 {
-  "schemaVersion": "1.1",
-  "generatedAt": "2026-08-03T04:22:19.882Z",
-  "groupCount": 301,
-  "duplicateGroupCount": 13,
-  "duplicateArticleCount": 16,
+  "schemaVersion": "1.2",
+  "generatedAt": "2026-08-03T04:33:29.130Z",
+  "groupCount": 300,
+  "duplicateGroupCount": 12,
+  "duplicateArticleCount": 17,
   "matches": [
+    {
+      "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+      "right": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+      "right": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+      "right": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+      "right": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
+      "right": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
+      "right": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_INVESTOR_MOBILITY",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
+      "right": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_INVESTOR_MOBILITY",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+      "right": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
+    {
+      "left": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+      "right": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
+      "sharedSignals": [
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
+        "ORG_NIC",
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
+      ]
+    },
     {
       "left": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
       "right": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-      "score": 0.5452,
-      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "score": 0.93,
+      "reason": "SAME_BILATERAL_INVESTMENT_MEETING",
       "sharedSignals": [
-        "TITLE:تعزيز",
-        "TITLE:تعاون",
-        "TITLE:مصر",
-        "TITLE:عراق",
+        "COUNTRY_EGYPT",
+        "COUNTRY_IRAQ",
+        "TOPIC_INVESTMENT",
+        "TOPIC_COOPERATION",
         "ORG_NIC",
-        "TERM:بغداد",
-        "NUMBER:02",
-        "NUMBER:2026"
+        "ORG_EGYPT_COMMERCIAL_REP",
+        "ANCHOR_INVESTOR_MOBILITY",
+        "ANCHOR_BUSINESS_EXCHANGE",
+        "EVENT_DISCUSSION"
       ]
     },
     {
@@ -88,7 +235,6 @@
       "reason": "SAME_PERSON_ORGANIZATION_PERSONNEL_ACTION",
       "sharedSignals": [
         "PERSON_ADIL_AL_YASIRI",
-        "PERSON_HAIDER_MAKKIYA",
         "ORG_NIC",
         "PERSONNEL_APPOINTMENT"
       ]
@@ -96,7 +242,7 @@
     {
       "left": "discovery-qFUslYZ1hhh2H6ayD8602cS5",
       "right": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
-      "score": 0.5628,
+      "score": 0.5371,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
         "TITLE:اطار",
@@ -106,17 +252,17 @@
         "TITLE:سعودي",
         "TERM:مجلس وزراء",
         "TERM:اطار تنسيقي",
-        "TERM:ايران",
         "TERM:بغداد",
-        "TERM:علي زيدي",
         "NUMBER:15",
-        "NUMBER:30"
+        "NUMBER:30",
+        "NUMBER:2026",
+        "NUMBER:07"
       ]
     },
     {
       "left": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
       "right": "discovery-5Yh_lTz0WtxScXSiarUbWIBt",
-      "score": 0.9153,
+      "score": 0.8853,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
         "TITLE:مجلس",
@@ -150,33 +296,13 @@
         "TERM:مجلس وزراء",
         "TERM:اطار تنسيقي",
         "TERM:هيئه نزاهه",
-        "TERM:ولايات متحده"
-      ]
-    },
-    {
-      "left": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
-      "right": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-      "score": 0.5367,
-      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
-      "sharedSignals": [
-        "TITLE:ارتفاع",
-        "TITLE:صادرات",
-        "TITLE:رغم",
-        "TITLE:تباطؤ",
-        "TITLE:ملاحه",
-        "TITLE:هرمز",
-        "TERM:ولايات متحده",
-        "TERM:ايران",
-        "TERM:مضيق هرمز",
-        "NUMBER:2026",
-        "NUMBER:16",
-        "NUMBER:12"
+        "TERM:بغداد"
       ]
     },
     {
       "left": "discovery-jhquaM-6CUPnU8lO8rtpnXT9",
       "right": "discovery-andCjGWzSBqGcGMTmPoeueSQ",
-      "score": 0.8473,
+      "score": 0.8558,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
         "TITLE:صراع",
@@ -196,7 +322,7 @@
     {
       "left": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
       "right": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
-      "score": 0.513,
+      "score": 0.503,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
         "TITLE:صادرات",
@@ -206,17 +332,17 @@
         "TITLE:ملاحه",
         "TITLE:هرمز",
         "TERM:ولايات متحده",
-        "TERM:ايران",
         "TERM:مضيق هرمز",
         "NUMBER:2026",
         "NUMBER:19",
-        "NUMBER:16"
+        "NUMBER:16",
+        "NUMBER:12"
       ]
     },
     {
       "left": "discovery-rptikGxOCrrg6MI6D0xxyqKm",
       "right": "discovery-JVpLqPcaa-kPJQ_MkDQQOCrV",
-      "score": 0.6486,
+      "score": 0.6286,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
         "TITLE:سؤال",
@@ -225,12 +351,12 @@
         "TITLE:عراق",
         "TERM:رئيس وزراء",
         "TERM:ولايات متحده",
-        "TERM:ايران",
         "TERM:بغداد",
         "TERM:علي زيدي",
         "NUMBER:9",
         "NUMBER:56",
-        "NUMBER:84"
+        "NUMBER:84",
+        "NUMBER:85"
       ]
     },
     {
@@ -269,24 +395,6 @@
         "NUMBER:2026",
         "NUMBER:30",
         "NUMBER:13224"
-      ]
-    },
-    {
-      "left": "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
-      "right": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
-      "score": 0.5347,
-      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
-      "sharedSignals": [
-        "TITLE:شراكه",
-        "TITLE:عراق",
-        "TITLE:سلاح",
-        "TITLE:ميليشيات",
-        "TERM:رئيس وزراء",
-        "TERM:داعش",
-        "TERM:ولايات متحده",
-        "TERM:ايران",
-        "TERM:علي زيدي",
-        "NUMBER:600"
       ]
     },
     {
@@ -404,40 +512,39 @@
       ]
     },
     {
-      "groupId": "event-voaYcz2KCWNHiq0qXA",
+      "groupId": "event-nwfQItBOJaw4MEzRGe",
       "category": "bismayah",
-      "representativeArticleId": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T12:43:00.000Z",
+      "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "memberCount": 5,
+      "duplicateCount": 4,
+      "publishedFrom": "2026-08-02T10:26:00.000Z",
       "publishedTo": "2026-08-02T12:43:00.000Z",
       "memberArticleIds": [
-        "discovery-7wmwHu2m0dxl55SuBXKOAVHQ"
+        "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+        "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+        "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
+        "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+        "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP"
       ],
       "sources": [
         {
-          "articleId": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
-          "sourceArabic": "بوابة الأهرام",
-          "articleUrl": "https://gate.ahram.org.eg/News/5881641.aspx",
-          "publishedAt": "2026-08-02T12:43:00.000Z",
-          "originalTitleArabic": "مباحثات مصرية عراقية لفتح آفاق جديدة للتعاون الاستثماري وتفعيل الزيارات المتبادلة بين مجتمعي الأعمال",
+          "articleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+          "sourceArabic": "صدى البلد",
+          "articleUrl": "https://www.elbalad.news/7059356",
+          "publishedAt": "2026-08-02T10:26:00.000Z",
+          "originalTitleArabic": "التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق",
           "titleKo": "",
           "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-Baonwo5RwwYepoMUAf",
-      "category": "bismayah",
-      "representativeArticleId": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T12:40:58.000Z",
-      "publishedTo": "2026-08-02T12:40:58.000Z",
-      "memberArticleIds": [
-        "discovery-KXZrPIVyotNWnSBHT-M5OhVW"
-      ],
-      "sources": [
+        },
+        {
+          "articleId": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+          "sourceArabic": "youm7.com",
+          "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%A7%D9%84%D8%AA%D9%85%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9/7500589",
+          "publishedAt": "2026-08-02T11:06:54.000Z",
+          "originalTitleArabic": "التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك",
+          "titleKo": "",
+          "isRepresentative": false
+        },
         {
           "articleId": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
           "sourceArabic": "أموال الغد",
@@ -445,7 +552,25 @@
           "publishedAt": "2026-08-02T12:40:58.000Z",
           "originalTitleArabic": "مصر والعراق تبحثان تسهيل حركة المستثمرين وتعزيز الاستثمارات المشتركة",
           "titleKo": "",
-          "isRepresentative": true
+          "isRepresentative": false
+        },
+        {
+          "articleId": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+          "sourceArabic": "بوابة الأهرام",
+          "articleUrl": "https://gate.ahram.org.eg/News/5881641.aspx",
+          "publishedAt": "2026-08-02T12:43:00.000Z",
+          "originalTitleArabic": "مباحثات مصرية عراقية لفتح آفاق جديدة للتعاون الاستثماري وتفعيل الزيارات المتبادلة بين مجتمعي الأعمال",
+          "titleKo": "",
+          "isRepresentative": false
+        },
+        {
+          "articleId": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+          "sourceArabic": "ekhbary24 -",
+          "articleUrl": "https://ekhbary24.com/%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%A8%D9%8A%D9%86-%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1/",
+          "publishedAt": "2026-08-02T10:33:54.000Z",
+          "originalTitleArabic": "تعزيز التعاون الاقتصادي بين مصر والعراق",
+          "titleKo": "",
+          "isRepresentative": false
         }
       ]
     },
@@ -469,62 +594,6 @@
           "originalTitleArabic": "النزاهة: اعتقال مسؤول بالموارد المائية في كركوك بتهمة ابتزاز مراجعين ومستثمرين",
           "titleKo": "",
           "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-NzS-s6GaR2jjF44Phx",
-      "category": "bismayah",
-      "representativeArticleId": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T11:06:54.000Z",
-      "publishedTo": "2026-08-02T11:06:54.000Z",
-      "memberArticleIds": [
-        "discovery-suN4PF3uvWpX_I2J4nZwPUlH"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
-          "sourceArabic": "youm7.com",
-          "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%A7%D9%84%D8%AA%D9%85%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9/7500589",
-          "publishedAt": "2026-08-02T11:06:54.000Z",
-          "originalTitleArabic": "التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-YR7hUyikEK1Ea7Kjfw",
-      "category": "bismayah",
-      "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-      "memberCount": 2,
-      "duplicateCount": 1,
-      "publishedFrom": "2026-08-02T10:26:00.000Z",
-      "publishedTo": "2026-08-02T10:33:54.000Z",
-      "memberArticleIds": [
-        "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-        "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-          "sourceArabic": "صدى البلد",
-          "articleUrl": "https://www.elbalad.news/7059356",
-          "publishedAt": "2026-08-02T10:26:00.000Z",
-          "originalTitleArabic": "التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق",
-          "titleKo": "",
-          "isRepresentative": true
-        },
-        {
-          "articleId": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
-          "sourceArabic": "ekhbary24 -",
-          "articleUrl": "https://ekhbary24.com/%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%A8%D9%8A%D9%86-%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1/",
-          "publishedAt": "2026-08-02T10:33:54.000Z",
-          "originalTitleArabic": "تعزيز التعاون الاقتصادي بين مصر والعراق",
-          "titleKo": "",
-          "isRepresentative": false
         }
       ]
     },
@@ -5958,17 +6027,15 @@
       ]
     },
     {
-      "groupId": "event-nbwSFNuR4Ho8n9dL07",
+      "groupId": "event-BuukM8ORTe4TEodNyQ",
       "category": "international",
       "representativeArticleId": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
-      "memberCount": 3,
-      "duplicateCount": 2,
-      "publishedFrom": "2026-07-19T07:00:00.000Z",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-20T08:43:07.000Z",
       "publishedTo": "2026-07-20T08:43:07.000Z",
       "memberArticleIds": [
-        "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
-        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-        "discovery-KF_9R_-WTgJv9ym601_WJSDq"
+        "discovery-gQO7DK9Zh1BlfeeWjVe1akol"
       ],
       "sources": [
         {
@@ -5979,24 +6046,6 @@
           "originalTitleArabic": "ارتفاع صادرات الخليج النفطية رغم تباطؤ حركة الملاحة بمضيق هرمز",
           "titleKo": "",
           "isRepresentative": true
-        },
-        {
-          "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-          "sourceArabic": "صدى البلد",
-          "articleUrl": "https://www.elbalad.news/7043972",
-          "publishedAt": "2026-07-19T07:00:00.000Z",
-          "originalTitleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
-          "titleKo": "",
-          "isRepresentative": false
-        },
-        {
-          "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
-          "sourceArabic": "سانا",
-          "articleUrl": "https://sana.sy/economy/2531474/",
-          "publishedAt": "2026-07-19T07:00:00.000Z",
-          "originalTitleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
-          "titleKo": "",
-          "isRepresentative": false
         }
       ]
     },
@@ -6444,6 +6493,39 @@
           "originalTitleArabic": "من هرمز إلى بانياس.. العراق يعيد رسم خرائطه النفطية برعاية أمريكية",
           "titleKo": "",
           "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event--i890zRkjgtNHh15_1",
+      "category": "international",
+      "representativeArticleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-07-19T07:00:00.000Z",
+      "publishedTo": "2026-07-19T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+        "discovery-KF_9R_-WTgJv9ym601_WJSDq"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+          "sourceArabic": "صدى البلد",
+          "articleUrl": "https://www.elbalad.news/7043972",
+          "publishedAt": "2026-07-19T07:00:00.000Z",
+          "originalTitleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
+          "titleKo": "",
+          "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+          "sourceArabic": "سانا",
+          "articleUrl": "https://sana.sy/economy/2531474/",
+          "publishedAt": "2026-07-19T07:00:00.000Z",
+          "originalTitleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
+          "titleKo": "",
+          "isRepresentative": false
         }
       ]
     },
@@ -7086,16 +7168,15 @@
       ]
     },
     {
-      "groupId": "event-38FGIgwWvAHrPBNXCn",
+      "groupId": "event-06h9x1KZiTPVLYdyDW",
       "category": "security",
       "representativeArticleId": "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
-      "memberCount": 2,
-      "duplicateCount": 1,
-      "publishedFrom": "2026-07-15T07:00:00.000Z",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-15T20:13:00.000Z",
       "publishedTo": "2026-07-15T20:13:00.000Z",
       "memberArticleIds": [
-        "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
-        "discovery-k8pEopVIMtA9Ve5OqsZwQKDN"
+        "discovery-MoxCsY-JvgdTrycCZZkPhWcV"
       ],
       "sources": [
         {
@@ -7106,15 +7187,6 @@
           "originalTitleArabic": "واشنطن تربط الشراكة مع العراق بنزع سلاح الميليشيات",
           "titleKo": "",
           "isRepresentative": true
-        },
-        {
-          "articleId": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
-          "sourceArabic": "سكاي نيوز عربية",
-          "articleUrl": "https://www.skynewsarabia.com/middle-east/1880904-%D9%87%D9%8A%D8%BA%D8%B3%D9%8A%D8%AB-%D8%AA%D9%88%D8%B7%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%B7%D9%84%D8%A8-%D9%86%D8%B2%D8%B9-%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA",
-          "publishedAt": "2026-07-15T07:00:00.000Z",
-          "originalTitleArabic": "هيغسيث: توطيد الشراكة مع العراق يتطلب نزع سلاح الميليشيات",
-          "titleKo": "",
-          "isRepresentative": false
         }
       ]
     },
@@ -7228,6 +7300,29 @@
           "articleUrl": "https://www.majalla.com/node/332038/%D8%B1%D8%A3%D9%8A/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%A7%D9%84%D9%82%D8%AF%D9%8E%D8%B1-%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%B3%D8%B1%D9%8A",
           "publishedAt": "2026-07-15T13:31:18.000Z",
           "originalTitleArabic": "العراق والقدَر السويسري",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-i0wxLOq-jVxhU8EH8h",
+      "category": "security",
+      "representativeArticleId": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-15T07:00:00.000Z",
+      "publishedTo": "2026-07-15T07:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-k8pEopVIMtA9Ve5OqsZwQKDN"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
+          "sourceArabic": "سكاي نيوز عربية",
+          "articleUrl": "https://www.skynewsarabia.com/middle-east/1880904-%D9%87%D9%8A%D8%BA%D8%B3%D9%8A%D8%AB-%D8%AA%D9%88%D8%B7%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%B7%D9%84%D8%A8-%D9%86%D8%B2%D8%B9-%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA",
+          "publishedAt": "2026-07-15T07:00:00.000Z",
+          "originalTitleArabic": "هيغسيث: توطيد الشراكة مع العراق يتطلب نزع سلاح الميليشيات",
           "titleKo": "",
           "isRepresentative": true
         }
