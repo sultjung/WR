@@ -43,6 +43,9 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
+      - name: Test relevance and duplicate-event guards
+        run: npm test
+
       - name: Discover broad Arabic news candidates with Google News
         env:
           COLLECT_CATEGORIES: "bismayah,politics,economy,security,international"
