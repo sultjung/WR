@@ -8,6 +8,7 @@ const RECOVERED_FILE = path.join(ROOT, "data", "recovered-articles.json");
 const FALLBACK_FILE = path.join(ROOT, "data", "discovered-articles.json");
 const OUTPUT_FILE = path.join(ROOT, "data", "resolved-articles.json");
 const FETCH_TIMEOUT_MS = Number(process.env.URL_RESOLVE_TIMEOUT_MS || 15000);
+const ITEM_TIMEOUT_MS = Number(process.env.URL_RESOLVE_ITEM_TIMEOUT_MS || Math.max(FETCH_TIMEOUT_MS * 6, 90000));
 const CONCURRENCY = Number(process.env.URL_RESOLVE_CONCURRENCY || 4);
 
 function decodeHtml(value = "") {
@@ -170,6 +171,36 @@ async function resolveOne(item) {
   }
 }
 
+async function withHardTimeout(task, timeoutMs) {
+  let timer;
+  try {
+    return await Promise.race([
+      Promise.resolve().then(task),
+      new Promise((_, reject) => {
+        timer = setTimeout(() => reject(new Error("ITEM_RESOLUTION_TIMEOUT")), timeoutMs);
+      })
+    ]);
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
+async function resolveOneSafely(item) {
+  try {
+    return await withHardTimeout(() => resolveOne(item), ITEM_TIMEOUT_MS);
+  } catch (error) {
+    const message = String(error.message || error);
+    return {
+      ...item,
+      articleUrl: "",
+      urlStatus: "FAILED",
+      errorCode: /ITEM_RESOLUTION_TIMEOUT/.test(message) ? "ITEM_RESOLUTION_TIMEOUT" : "URL_RESOLUTION_FAILED",
+      resolutionError: message.slice(0, 300),
+      resolvedAt: new Date().toISOString()
+    };
+  }
+}
+
 async function mapLimit(items, limit, worker) {
   const output = new Array(items.length);
   let cursor = 0;
@@ -189,7 +220,16 @@ async function loadInput() {
 }
 
 const input = await loadInput();
-const articles = await mapLimit(input.articles || [], CONCURRENCY, resolveOne);
+const inputArticles = input.articles || [];
+let completedCount = 0;
+const articles = await mapLimit(inputArticles, CONCURRENCY, async (item) => {
+  const result = await resolveOneSafely(item);
+  completedCount += 1;
+  if (completedCount % 50 === 0 || completedCount === inputArticles.length) {
+    console.log(`[resolve] progress=${completedCount}/${inputArticles.length}`);
+  }
+  return result;
+});
 const resolvedCount = articles.filter((item) => item.urlStatus === "RESOLVED" && item.articleUrl).length;
 const resolutionMethods = articles.reduce((acc, item) => {
   const key = item.urlResolutionMethod || item.errorCode || "UNKNOWN";
