@@ -9,6 +9,7 @@ on:
       - .github/workflows/recheck-current-news.yml
       - scripts/strict-category-gate.mjs
       - scripts/test-strict-category-gate.mjs
+      - scripts/restore-relevance-candidates.mjs
       - scripts/group-duplicate-events.mjs
       - scripts/test-group-duplicate-events.mjs
       - package.json
@@ -36,6 +37,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      - name: Restore candidates removed by the first audit pass
+        env:
+          RELEVANCE_BASELINE_COMMIT: "e26506e3085a7f4d886708dcf7e55f78297b022c"
+          BASE_ARTICLES_FILE: "/tmp/pre-relevance-audit-articles.json"
+        run: |
+          git show "${RELEVANCE_BASELINE_COMMIT}:data/articles.json" > "$BASE_ARTICLES_FILE"
+          node scripts/restore-relevance-candidates.mjs
 
       - name: Test relevance and duplicate-event guards
         run: npm test
