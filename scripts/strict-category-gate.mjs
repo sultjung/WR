@@ -15,12 +15,17 @@ function normalizeArabic(value = "") {
     .replace(/ة/g, "ه")
     .replace(/[“”"'`]/g, " ")
     .replace(/\s+/g, " ")
-    .trim();
+    .trim()
+    .toLowerCase();
 }
 
 function hasAny(text = "", terms = []) {
   const normalized = normalizeArabic(text);
   return terms.some((term) => normalized.includes(normalizeArabic(term)));
+}
+
+function hasNicAcronym(text = "") {
+  return /(?:^|[^a-z0-9])nic(?:[^a-z0-9]|$)/i.test(String(text));
 }
 
 function getTitle(article = {}) {
@@ -53,7 +58,7 @@ function cleanLead(article = {}) {
 const IRAQ_CORE = [
   "العراق", "العراقي", "العراقية", "بغداد", "البصرة", "الموصل", "كركوك", "الانبار",
   "اربيل", "السليمانية", "كربلاء", "النجف", "ديالى", "صلاح الدين", "نينوى", "ذي قار",
-  "ميسان", "واسط", "بابل", "الديوانية", "المثنى", "دهوك", "كردستان العراق"
+  "ميسان", "واسط", "بابل", "الديوانية", "المثنى", "دهوك", "كردستان العراق", "iraq", "iraqi"
 ];
 const IRAQ_INSTITUTIONS = [
   "رئيس الوزراء العراقي", "رئيس مجلس الوزراء العراقي", "الحكومة العراقية", "مجلس الوزراء العراقي",
@@ -64,11 +69,15 @@ const IRAQ_INSTITUTIONS = [
   "الجيش العراقي", "الشرطة العراقية", "جهاز الامن الوطني", "الحشد الشعبي"
 ];
 const BISMAYAH = [
-  "بسماية", "بسمايه", "مدينة بسماية الجديدة", "مشروع بسماية", "شركة هانوا", "هانوا",
-  "bismayah", "hanwha"
+  "بسماية", "بسمايه", "مدينة بسماية الجديدة", "مشروع بسماية",
+  "bismayah", "bismaya", "bncp"
+];
+const HANWHA = [
+  "شركة هانوا", "هانوا", "hanwha", "한화"
 ];
 const NIC = [
   "الهيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "رئيس الهيئة الوطنية للاستثمار",
+  "national investment commission", "iraq national investment commission",
   "عادل الياسري", "عادل داخل الياسري", "حيدر مكية"
 ];
 const POLITICS = [
@@ -114,7 +123,8 @@ function hasDirectIraqLink(title, lead) {
   return hasAny(title, IRAQ_CORE)
     || hasAny(titleLead, IRAQ_INSTITUTIONS)
     || hasAny(titleLead, BISMAYAH)
-    || hasAny(titleLead, NIC);
+    || hasAny(titleLead, NIC)
+    || hasNicAcronym(titleLead);
 }
 
 function setLockedCategory(article, category, reason) {
@@ -151,10 +161,11 @@ function evaluate(article) {
 
   const directIraq = hasDirectIraqLink(title, lead);
   const bismayahMatch = hasAny(text, BISMAYAH) || /^bismayah-/i.test(keywordId);
-  const nicMatch = hasAny(text, NIC) || /(?:^|-)nic(?:-|$)/i.test(keywordId);
+  const nicMatch = hasAny(text, NIC) || hasNicAcronym(text) || /(?:^|-)nic(?:-|$)/i.test(keywordId);
+  const hanwhaIraqMatch = hasAny(text, HANWHA) && hasAny(text, IRAQ_CORE);
 
-  if (bismayahMatch || nicMatch) {
-    return { action: "keep", category: "bismayah", reason: "비스마야·한화·NIC 직접 관련" };
+  if (bismayahMatch || nicMatch || hanwhaIraqMatch) {
+    return { action: "keep", category: "bismayah", reason: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련" };
   }
 
   if (["politics", "economy", "security"].includes(current) && !directIraq) {
