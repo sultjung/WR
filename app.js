@@ -4,8 +4,10 @@
   const CATEGORY_IDS={bismayah:"countBismayah",politics:"countPolitics",economy:"countEconomy",security:"countSecurity",international:"countInternational"};
   const escapeHtml=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
   const articleKey=(article)=>article.eventGroup?.groupId||article.articleId||article.id||article.article?.canonicalUrl||article.article?.articleUrl||article.originalTitleArabic;
+  const recordOf=(article)=>article.article&&typeof article.article==="object"?article.article:article;
   const articleUrl=(article)=>{
-    const value=String(article.article?.articleUrl||article.articleUrl||"").trim();
+    const record=recordOf(article);
+    const value=String(article.articleUrl||record.articleUrl||article.canonicalUrl||record.canonicalUrl||"").trim();
     if(!/^https?:\/\//i.test(value)) return "";
     try{
       const url=new URL(value);
@@ -14,19 +16,20 @@
       return url.toString();
     }catch{return "";}
   };
-  const categoryOf=(article)=>String(article.analysis?.category||article.category||"").toLowerCase();
-  const translationStatus=(article)=>String(article.translation?.translationStatus||article.translation?.status||article.translationStatus||"PENDING").toLowerCase();
-  const contentReady=(article)=>Boolean(article.article?.originalTextArabic||article.originalTextArabic)&&Boolean(articleUrl(article));
-  const publishedAt=(article)=>article.article?.publishedAt||article.publishedAt||"";
+  const categoryOf=(article)=>String(article.analysis?.category||article.category||recordOf(article).category||"").toLowerCase();
+  const cardStatus=(article)=>String(article.card?.status||article.cardStatus||article.translation?.translationStatus||article.translation?.status||article.translationStatus||"PENDING").toLowerCase();
+  const contentReady=(article)=>Boolean(recordOf(article).originalTextArabic||article.originalTextArabic)&&Boolean(articleUrl(article));
+  const publishedAt=(article)=>recordOf(article).publishedAt||article.publishedAt||"";
   const publishedTime=(article)=>{const value=new Date(publishedAt(article)).getTime();return Number.isFinite(value)?value:null;};
-  const sourceName=(article)=>article.source?.arabicName||article.sourceArabic||article.sourceHost||"출처 미확인";
-  const translatedTitle=(article)=>String(article.translation?.titleKo||article.titleKo||"").trim();
-  const koTitle=(article)=>translatedTitle(article)||"번역 대기";
-  const arTitle=(article)=>article.article?.originalTitleArabic||article.originalTitleArabic||"";
-  const displayRelatedTitle=(article)=>translatedTitle(article)||arTitle(article)||"제목 미확인";
-  const preview=(article)=>article.translation?.previewKo||article.translation?.fullTextKo||article.previewKo||"한국어 번역이 아직 생성되지 않았습니다.";
+  const sourceName=(article)=>article.source?.arabicName||article.sourceArabic||recordOf(article).sourceArabic||article.sourceHost||"출처 미확인";
+  const cardTitle=(article)=>String(article.card?.titleKo||article.translation?.titleKo||article.titleKo||"").trim();
+  const koTitle=(article)=>cardTitle(article)||"한국어 카드 요약 대기";
+  const arTitle=(article)=>recordOf(article).originalTitleArabic||article.originalTitleArabic||"";
+  const displayRelatedTitle=(article)=>cardTitle(article)||arTitle(article)||"제목 미확인";
+  const preview=(article)=>article.card?.summaryKo||article.translation?.previewKo||article.previewKo||"아랍어 원문에서 구조화된 사실을 추출한 뒤 한국어 카드 요약을 생성합니다.";
+  const cardMethod=(article)=>article.card?.method==="STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD"?"원문 사실 추출 → 한국어 요약":"요약 대기";
   const importanceOf=(article)=>{
-    const stored=article.importance||article.analysis?.importance||article.article?.importance;
+    const stored=article.importance||article.analysis?.importance||recordOf(article).importance;
     const score=Number(stored?.score??stored?.finalScore??stored?.ruleScore??article.analysis?.importanceScore??article.importanceScore);
     if(!Number.isFinite(score)) return {score:null};
     return {score:Math.max(0,Math.min(100,Math.round(score)))};
@@ -76,7 +79,7 @@
     const startTime=startValue?new Date(`${startValue}T00:00:00`).getTime():null;
     const endTime=endValue?new Date(`${endValue}T23:59:59.999`).getTime():null;
     const sourceFilter=$("sourceFilter").value;
-    const translationFilter=$("translationFilter").value;
+    const summaryFilter=$("translationFilter").value;
     const importanceFilter=$("importanceFilter").value;
     const sortOrder=$("sortOrder").value;
     const query=$("searchInput").value.trim().toLowerCase();
@@ -89,7 +92,7 @@
       if(applySummaryFilter&&!["all","selected"].includes(state.filter)&&categoryOf(article)!==state.filter) return false;
       if(sourceFilter==="ready"&&!contentReady(article)) return false;
       if(sourceFilter==="failed"&&contentReady(article)) return false;
-      if(translationFilter!=="all"&&translationStatus(article)!==translationFilter) return false;
+      if(summaryFilter!=="all"&&cardStatus(article)!==summaryFilter) return false;
       if(!importanceMatches(importanceOf(article).score,importanceFilter)) return false;
       if(query){
         const relatedText=membersOf(article).map((member)=>[
@@ -133,13 +136,14 @@
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}점</span>`;
+      const summaryBadge=cardStatus(article)==="completed"?`<span class="badge">${escapeHtml(cardMethod(article))}</span>`:`<span class="badge disabled">카드 요약 대기</span>`;
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button">${selected?"선택됨":"보고서 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         <p class="arabic-title" lang="ar">${escapeHtml(arTitle(article))}</p>
         <p class="preview">${escapeHtml(preview(article))}</p>
-        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${duplicateCount?`<span class="badge related-count-badge">관련뉴스 ${duplicateCount}건</span>`:""}</div>
-        <div class="card-actions">${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">대표 아랍어 원문</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}<button data-action="translation" type="button" disabled>전체 번역 보기</button></div>
+        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${summaryBadge}${duplicateCount?`<span class="badge related-count-badge">관련뉴스 ${duplicateCount}건</span>`:""}</div>
+        <div class="card-actions">${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">아랍어 원문 보기</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}<span class="card-source-note">전문 번역은 생성하지 않음</span></div>
         ${relatedNewsHtml(article)}
       </article>`;
     }).join("");
