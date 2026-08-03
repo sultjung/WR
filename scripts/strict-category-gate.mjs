@@ -61,7 +61,7 @@ function cleanLead(article = {}) {
 }
 
 const IRAQ_CORE = [
-  "العراق", "العراقي", "العراقية", "بغداد", "البصرة", "الموصل", "كركوك", "الانبار",
+  "العراق", "العراقي", "العراقية", "عراقي", "عراقية", "بغداد", "البصرة", "الموصل", "كركوك", "الانبار",
   "اربيل", "السليمانية", "كربلاء", "النجف", "ديالى", "صلاح الدين", "نينوى", "ذي قار",
   "ميسان", "واسط", "بابل", "الديوانية", "المثنى", "دهوك", "كردستان العراق", "iraq", "iraqi"
 ];
@@ -114,7 +114,14 @@ const INTERNATIONAL = [
   "مفاوضات نووية", "اسعار النفط العالمية", "برنت", "خام برنت", "دبي الخام"
 ];
 const INTERNATIONAL_DIRECT_MARKET = [
-  "مضيق هرمز", "اسعار النفط العالمية", "سعر النفط العالمي", "برنت", "خام برنت", "دبي الخام"
+  "مضيق هرمز", "هرمز", "اسعار النفط العالمية", "اسعار النفط", "سعر النفط العالمي", "سعر النفط",
+  "برنت", "خام برنت", "دبي الخام", "ازمة النفط"
+];
+const INTERNATIONAL_OIL_ROUTE = [
+  "تصدير النفط", "صادرات النفط", "طرق تصدير النفط", "ناقلات النفط", "امدادات النفط"
+];
+const INTERNATIONAL_ROUTE_CONTEXT = [
+  "الخليج", "مضيق", "البحر الاحمر", "باب المندب", "قناة السويس", "الملاحة"
 ];
 const FOREIGN_PLACES = [
   "سوريا", "درعا", "حماة", "حمص", "حلب", "دمشق", "لبنان", "بيروت", "فلسطين", "غزة",
@@ -226,8 +233,13 @@ function evaluate(article) {
   }
 
   if (current === "international") {
-    if (!hasAny(text, INTERNATIONAL)) return { action: "exclude", reason: "지정 국제사회 키워드 불일치" };
-    const strategicMarketLink = hasAny(`${title}\n${opening}`, INTERNATIONAL_DIRECT_MARKET);
+    if (!hasAny(text, INTERNATIONAL) && !relevance.primary) {
+      return { action: "exclude", reason: "지정 국제사회 키워드 및 이라크 직접 연결 불일치" };
+    }
+    const internationalOpening = `${title}\n${opening}`;
+    const strategicMarketLink = hasAny(internationalOpening, INTERNATIONAL_DIRECT_MARKET)
+      || (hasAny(internationalOpening, INTERNATIONAL_OIL_ROUTE)
+        && hasAny(internationalOpening, INTERNATIONAL_ROUTE_CONTEXT));
     if (!relevance.primary && !strategicMarketLink) {
       return { action: "exclude", reason: "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사" };
     }
