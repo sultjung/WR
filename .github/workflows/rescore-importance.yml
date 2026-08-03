@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - ".github/workflows/rescore-importance.yml"
+      - "scripts/group-duplicate-events.mjs"
       - "scripts/importance-business-rules.mjs"
       - "scripts/importance-ai.mjs"
       - "scripts/apply-business-importance-floor.mjs"
@@ -48,6 +49,12 @@ jobs:
           fi
           echo "OPENAI_API_KEY is available to the workflow."
 
+      - name: Regroup existing articles into related news
+        env:
+          EVENT_GROUP_MAX_HOURS: "72"
+          EVENT_GROUP_MIN_SCORE: "0.50"
+        run: npm run collect:events
+
       - name: Normalize fields for importance scoring
         run: npm run collect:importance-prepare
 
@@ -69,15 +76,15 @@ jobs:
       - name: Validate data
         run: npm run validate:data
 
-      - name: Commit updated importance scores
+      - name: Commit updated grouping and importance scores
         run: |
-          if git diff --quiet -- data/articles.json; then
-            echo "No importance score changes"
+          if git diff --quiet -- data/articles.json data/event-groups.json; then
+            echo "No grouping or importance score changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/articles.json
-          git commit -m "Re-score article importance for Bismayah business"
+          git add data/articles.json data/event-groups.json
+          git commit -m "Regroup related news and re-score article importance"
           git pull --rebase origin main
           git push origin main
