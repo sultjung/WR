@@ -2,6 +2,14 @@ name: Recheck Current News Relevance
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/recheck-current-news.yml
+      - scripts/enforce-iraq-scope.mjs
+      - scripts/test-enforce-iraq-scope.mjs
+      - package.json
   schedule:
     - cron: "30 5 * * *" # temporary audit run at 14:30 KST
 
@@ -39,6 +47,9 @@ jobs:
 
       - name: Test relevance and duplicate-event guards
         run: npm test
+
+      - name: Enforce exact Iraq scope for security news
+        run: npm run collect:iraq-scope
 
       - name: Reapply strict Iraq relevance gate
         run: npm run collect:strict-gate
