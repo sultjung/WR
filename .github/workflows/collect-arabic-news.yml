@@ -16,7 +16,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 75
 
     steps:
       - name: Checkout repository
@@ -35,7 +35,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
           if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::OPENAI_API_KEY is not available as an Actions secret for sultjung/WR. Store it under repository Settings > Secrets and variables > Actions > Repository secrets. If it is an Environment secret, assign that environment to this job."
+            echo "::error::OPENAI_API_KEY is not available as an Actions secret for sultjung/WR."
             exit 1
           fi
           echo "OPENAI_API_KEY is available to the workflow."
@@ -43,7 +43,7 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
-      - name: Test relevance and duplicate-event guards
+      - name: Test relevance, grouping, and facts-first card guards
         run: npm test
 
       - name: Discover broad Arabic news candidates with Google News
@@ -85,8 +85,11 @@ jobs:
       - name: Repair invalid and metadata-based article titles
         run: npm run collect:title-fix
 
-      - name: Preserve unchanged translations and analysis
+      - name: Preserve unchanged facts, cards, translations, and analysis
         run: npm run collect:incremental-preserve
+
+      - name: Enforce exact Iraq scope before classification and scoring
+        run: npm run collect:iraq-scope
 
       - name: Apply strict Iraq category gate
         run: npm run collect:strict-gate
@@ -118,7 +121,23 @@ jobs:
           IMPORTANCE_AI_TIMEOUT_MS: "60000"
         run: npm run collect:importance-business
 
-      - name: Validate collected data
+      - name: Extract Arabic facts then create Korean article cards
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          CARD_AI_REQUIRED: "true"
+          CARD_FACT_MODEL: ${{ vars.CARD_FACT_MODEL || 'gpt-4.1-mini' }}
+          CARD_KO_MODEL: ${{ vars.CARD_KO_MODEL || 'gpt-4.1-mini' }}
+          CARD_MODEL_FALLBACKS: "gpt-4o-mini"
+          CARD_AI_BATCH_SIZE: "3"
+          CARD_AI_MAX_ARTICLES: "60"
+          CARD_SOURCE_MAX_CHARS: "16000"
+          CARD_AI_TIMEOUT_MS: "90000"
+        run: npm run collect:cards
+
+      - name: Audit foreign-local leakage
+        run: npm run audit:foreign-local
+
+      - name: Validate collected data and article cards
         run: npm run validate:data
 
       - name: Commit collected data
@@ -130,6 +149,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
-          git commit -m "Collect, classify, and score Iraqi Arabic news"
+          git commit -m "Collect, score, and summarize Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
