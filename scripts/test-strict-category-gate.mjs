@@ -51,6 +51,27 @@ const articles = [
     originalTextArabic: "ناقشت دول المنطقة أمن الملاحة في مضيق هرمز وتأثيره في أسعار النفط العالمية. " + padding
   },
   {
+    articleId: "iraqi-adjectival-title",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "تنسيق عراقي - تركي حول ممرات الطاقة والمياه",
+    originalTextArabic: "بحث وفدان من البلدين ممرات الطاقة والمياه والتعاون الإقليمي. " + padding
+  },
+  {
+    articleId: "red-sea-oil-price",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "أسعار النفط تتجاوز 100 دولار مع اتساع المخاطر في البحر الأحمر",
+    originalTextArabic: "ارتفعت أسعار النفط مع اضطراب الملاحة في البحر الأحمر. " + padding
+  },
+  {
+    articleId: "gulf-oil-export-routes",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "حصار الشرايين الكبرى.. كيف تبحث دول الخليج عن بدائل لتصدير النفط؟",
+    originalTextArabic: "تبحث دول الخليج عن طرق بديلة لتصدير النفط وتأمين الملاحة. " + padding
+  },
+  {
     articleId: "bab-mandab-saudi-only",
     category: "international",
     contentStatus: "FULL_TEXT",
@@ -92,7 +113,15 @@ try {
   const summary = JSON.parse(await fs.readFile(summaryFile, "utf8"));
   const excluded = new Set(summary.excluded.map((article) => article.articleId));
 
-  for (const id of ["iraq-gaza-bridge", "iraq-oman-trade", "hormuz-market", "iraq-pmf-security"]) {
+  for (const id of [
+    "iraq-gaza-bridge",
+    "iraq-oman-trade",
+    "hormuz-market",
+    "iraq-pmf-security",
+    "iraqi-adjectival-title",
+    "red-sea-oil-price",
+    "gulf-oil-export-routes"
+  ]) {
     assert.ok(retained.has(id), `${id} should be retained`);
   }
   for (const id of [
