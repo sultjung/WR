@@ -1,74 +1,313 @@
 {
-  "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T03:54:30.036Z",
-  "groupCount": 304,
-  "duplicateGroupCount": 11,
-  "duplicateArticleCount": 13,
+  "schemaVersion": "1.1",
+  "generatedAt": "2026-08-03T04:19:09.054Z",
+  "groupCount": 301,
+  "duplicateGroupCount": 13,
+  "duplicateArticleCount": 16,
   "matches": [
     {
       "left": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
       "right": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-      "score": 0.5388
+      "score": 0.5452,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:تعزيز",
+        "TITLE:تعاون",
+        "TITLE:مصر",
+        "TITLE:عراق",
+        "ORG_NIC",
+        "TERM:بغداد",
+        "NUMBER:02",
+        "NUMBER:2026"
+      ]
     },
     {
       "left": "discovery-YuiObc5NIIm6SguP2y4ZiOBA",
       "right": "discovery-QCUcAdnY3qcimIo9CI0fFJkJ",
-      "score": 0.9785
+      "score": 0.9676,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:رساله",
+        "TITLE:شديده",
+        "TITLE:لهجه",
+        "TITLE:زيدي",
+        "TITLE:اطار",
+        "TITLE:احترموا",
+        "TITLE:قرارات",
+        "TITLE:دوله",
+        "TITLE:ساستقيل",
+        "TERM:رئيس وزراء",
+        "TERM:مجلس وزراء",
+        "TERM:اطار تنسيقي"
+      ]
     },
     {
       "left": "discovery-0Wj118wXrOAXF3JyrbVFH4lo",
       "right": "discovery-dzC5WXIAoIOqTEuqDsjhy7an",
-      "score": 0.8153
+      "score": 0.8237,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:عامري",
+        "TITLE:ارسلوا",
+        "TITLE:مفخخات",
+        "TITLE:انتحاريين",
+        "TITLE:الي",
+        "TITLE:عراق",
+        "TITLE:عادوا",
+        "TITLE:يوم",
+        "TITLE:ليرسلوا",
+        "TITLE:صواريخ",
+        "TITLE:اسلام",
+        "TITLE:تايمز"
+      ]
     },
     {
       "left": "discovery-lQOAVelNnHDh8LUvuTezaDZ-",
       "right": "discovery-pzvl3d9YB4LLv8sUINdd9IaA",
-      "score": 0.8949
+      "score": 0.9049,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:امر",
+        "TITLE:قبض",
+        "TITLE:عراق",
+        "TITLE:يطيح",
+        "TITLE:بشبكه",
+        "TITLE:فساد",
+        "TITLE:كبري",
+        "TITLE:ديوانيه",
+        "TERM:هيئه نزاهه",
+        "TERM:ايران",
+        "NUMBER:30",
+        "NUMBER:5"
+      ]
+    },
+    {
+      "left": "discovery-eryuPz8nhPh7sMUM2xj-8k3y",
+      "right": "discovery-paH6LAc02WYYTwMJavnuIT2K",
+      "score": 0.96,
+      "reason": "SAME_PERSON_ORGANIZATION_PERSONNEL_ACTION",
+      "sharedSignals": [
+        "PERSON_ADIL_AL_YASIRI",
+        "PERSON_HAIDER_MAKKIYA",
+        "ORG_NIC",
+        "PERSONNEL_APPOINTMENT"
+      ]
+    },
+    {
+      "left": "discovery-qFUslYZ1hhh2H6ayD8602cS5",
+      "right": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
+      "score": 0.5628,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:اطار",
+        "TITLE:تنسيقي",
+        "TITLE:قصف",
+        "TITLE:اميركي",
+        "TITLE:سعودي",
+        "TERM:مجلس وزراء",
+        "TERM:اطار تنسيقي",
+        "TERM:ايران",
+        "TERM:بغداد",
+        "TERM:علي زيدي",
+        "NUMBER:15",
+        "NUMBER:30"
+      ]
     },
     {
       "left": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
       "right": "discovery-5Yh_lTz0WtxScXSiarUbWIBt",
-      "score": 0.9119
-    },
-    {
-      "left": "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf",
-      "right": "discovery-C29P-vsLi-qS99DYjn7ijULo",
-      "score": 0.5038
+      "score": 0.9153,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:مجلس",
+        "TITLE:وزراء",
+        "TITLE:يدين",
+        "TITLE:اعتداءات",
+        "TITLE:ميليشيات",
+        "TITLE:ارهابيه",
+        "TITLE:تابعه",
+        "TITLE:لايران",
+        "TITLE:يمن",
+        "TITLE:عراق",
+        "TITLE:علي",
+        "TITLE:منشات"
+      ]
     },
     {
       "left": "discovery-1mRUYHnsMM9ApIZb-nYbYG_O",
       "right": "discovery-DoGF2Ey4ANgERpuwqWNagvxa",
-      "score": 1
+      "score": 1,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:حمله",
+        "TITLE:زيدي",
+        "TITLE:فساد",
+        "TITLE:تقترب",
+        "TITLE:شخصيات",
+        "TITLE:سياسيه",
+        "TITLE:ثقيله",
+        "TERM:رئيس وزراء",
+        "TERM:مجلس وزراء",
+        "TERM:اطار تنسيقي",
+        "TERM:هيئه نزاهه",
+        "TERM:ولايات متحده"
+      ]
     },
     {
       "left": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
       "right": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-      "score": 0.5375
+      "score": 0.5367,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:ارتفاع",
+        "TITLE:صادرات",
+        "TITLE:رغم",
+        "TITLE:تباطؤ",
+        "TITLE:ملاحه",
+        "TITLE:هرمز",
+        "TERM:ولايات متحده",
+        "TERM:ايران",
+        "TERM:مضيق هرمز",
+        "NUMBER:2026",
+        "NUMBER:16",
+        "NUMBER:12"
+      ]
     },
     {
       "left": "discovery-jhquaM-6CUPnU8lO8rtpnXT9",
       "right": "discovery-andCjGWzSBqGcGMTmPoeueSQ",
-      "score": 0.8458
+      "score": 0.8473,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:صراع",
+        "TITLE:هرمز",
+        "TITLE:يعيد",
+        "TITLE:رسم",
+        "TITLE:خريطه",
+        "TITLE:صادرات",
+        "TITLE:نفط",
+        "TITLE:عراقيه",
+        "TERM:رئيس وزراء",
+        "TERM:داعش",
+        "TERM:ولايات متحده",
+        "TERM:سوريا"
+      ]
+    },
+    {
+      "left": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+      "right": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+      "score": 0.513,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:صادرات",
+        "TITLE:نفط",
+        "TITLE:رغم",
+        "TITLE:تباطؤ",
+        "TITLE:ملاحه",
+        "TITLE:هرمز",
+        "TERM:ولايات متحده",
+        "TERM:ايران",
+        "TERM:مضيق هرمز",
+        "NUMBER:2026",
+        "NUMBER:19",
+        "NUMBER:16"
+      ]
     },
     {
       "left": "discovery-rptikGxOCrrg6MI6D0xxyqKm",
       "right": "discovery-JVpLqPcaa-kPJQ_MkDQQOCrV",
-      "score": 0.6069
+      "score": 0.6486,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:سؤال",
+        "TITLE:ترمب",
+        "TITLE:سليماني",
+        "TITLE:عراق",
+        "TERM:رئيس وزراء",
+        "TERM:ولايات متحده",
+        "TERM:ايران",
+        "TERM:بغداد",
+        "TERM:علي زيدي",
+        "NUMBER:9",
+        "NUMBER:56",
+        "NUMBER:84"
+      ]
     },
     {
       "left": "discovery-uhCFFRCX5s_HTLQA7F51Tpvw",
       "right": "discovery-9qUcYPc__QOB7VruWE7_V7aE",
-      "score": 0.5944
+      "score": 0.6002,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:عراق",
+        "TITLE:عقوبات",
+        "TITLE:علي",
+        "TITLE:شبكات",
+        "TITLE:تمويل",
+        "TITLE:مرتبطه",
+        "TITLE:بحزب",
+        "TITLE:الله",
+        "TERM:وزاره ماليه",
+        "TERM:ايران",
+        "NUMBER:2026",
+        "NUMBER:13224"
+      ]
     },
     {
       "left": "discovery-uhCFFRCX5s_HTLQA7F51Tpvw",
       "right": "discovery-sJqzDTTIAr2xaczy1IGOPOdQ",
-      "score": 0.5016
+      "score": 0.5125,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:عقوبات",
+        "TITLE:شبكات",
+        "TITLE:تمويل",
+        "TITLE:داعش",
+        "TITLE:الله",
+        "TERM:وزاره ماليه",
+        "TERM:داعش",
+        "NUMBER:2026",
+        "NUMBER:30",
+        "NUMBER:13224"
+      ]
+    },
+    {
+      "left": "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
+      "right": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
+      "score": 0.5347,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:شراكه",
+        "TITLE:عراق",
+        "TITLE:سلاح",
+        "TITLE:ميليشيات",
+        "TERM:رئيس وزراء",
+        "TERM:داعش",
+        "TERM:ولايات متحده",
+        "TERM:ايران",
+        "TERM:علي زيدي",
+        "NUMBER:600"
+      ]
     },
     {
       "left": "discovery-9qUcYPc__QOB7VruWE7_V7aE",
       "right": "discovery-0f7MmLurb4kCjdLF_CfRuADR",
-      "score": 0.9237
+      "score": 0.9257,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:عراق",
+        "TITLE:يفرض",
+        "TITLE:عقوبات",
+        "TITLE:علي",
+        "TITLE:شبكات",
+        "TITLE:تمويل",
+        "TITLE:مرتبطه",
+        "TITLE:بحزب",
+        "TITLE:الله",
+        "TERM:وزاره ماليه",
+        "TERM:ولايات متحده",
+        "TERM:بغداد"
+      ]
     }
   ],
   "groups": [
@@ -247,7 +486,7 @@
       "sources": [
         {
           "articleId": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
-          "sourceArabic": "اليوم السابع",
+          "sourceArabic": "youm7.com",
           "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%A7%D9%84%D8%AA%D9%85%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9/7500589",
           "publishedAt": "2026-08-02T11:06:54.000Z",
           "originalTitleArabic": "التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك",
@@ -418,7 +657,7 @@
       "sources": [
         {
           "articleId": "discovery-buulzOtW6YMmHIrgVDgxMpPz",
-          "sourceArabic": "شفق نيوز",
+          "sourceArabic": "shafaq.com",
           "articleUrl": "https://www.shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%B3%D8%AA%D8%B1%D8%AF-20-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D9%82%D8%B6%D9%8A%D8%A9-%D9%81%D8%B3%D8%A7%D8%AF-%D9%85%D8%A7%D9%84%D9%8A-%D9%88-%D8%AF%D8%A7%D8%B1%D9%8A",
           "publishedAt": "2026-08-02T07:58:29.000Z",
           "originalTitleArabic": "القضاء العراقي يسترد 20 مليار دينار في قضية فساد مالي وإداري",
@@ -533,7 +772,7 @@
       "sources": [
         {
           "articleId": "discovery-gOXoAYr-xhZKPGioezeNvbaJ",
-          "sourceArabic": "اليوم السابع",
+          "sourceArabic": "youm7.com",
           "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%B1%D8%A6%D9%8A%D8%B3-%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B4%D8%AF%D8%AF-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B9-%D8%A3%D9%89-%D8%AA%D8%AC%D8%A7%D9%88%D8%B2-%D8%A3%D9%88-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF/7500085",
           "publishedAt": "2026-08-02T04:03:50.000Z",
           "originalTitleArabic": "رئيس وزراء العراق يشدد على منع أى تجاوز أو تهديد ينطلق من الأراضى العراقية تجاه دول الجوار",
@@ -1358,10 +1597,10 @@
       "sources": [
         {
           "articleId": "discovery-aVWG0PprRmjz2XksgflfuwPS",
-          "sourceArabic": "d-dall.com",
+          "sourceArabic": "شبكة دال",
           "articleUrl": "https://d-dall.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%86%D8%B2%D8%A7%D9%87%D8%A9-%D8%AA%D8%B9%D9%84%D9%86-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%AD%D8%A9-%D8%A8%D8%B4%D8%A8%D9%83/",
           "publishedAt": "2026-07-30T21:59:04.000Z",
-          "originalTitleArabic": "العراق.. هيئة النزاهة تعلن الإطاحة بشبكة فساد كبرى | دال",
+          "originalTitleArabic": "العراق.. هيئة النزاهة تعلن الإطاحة بشبكة فساد كبرى | دال | دال",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1493,15 +1732,16 @@
       ]
     },
     {
-      "groupId": "event-elMb5hJG5qC7JCIdMd",
+      "groupId": "event-JXs07Munn-Zp69M1Y1",
       "category": "bismayah",
       "representativeArticleId": "discovery-eryuPz8nhPh7sMUM2xj-8k3y",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-30T17:42:40.000Z",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-07-30T17:18:59.000Z",
       "publishedTo": "2026-07-30T17:42:40.000Z",
       "memberArticleIds": [
-        "discovery-eryuPz8nhPh7sMUM2xj-8k3y"
+        "discovery-eryuPz8nhPh7sMUM2xj-8k3y",
+        "discovery-paH6LAc02WYYTwMJavnuIT2K"
       ],
       "sources": [
         {
@@ -1512,21 +1752,7 @@
           "originalTitleArabic": "رسمياً.. تكليف عادل الياسري رئيسا للهيئة الوطنية للاستثمار",
           "titleKo": "",
           "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-Xb_-pO8KfkU5VBzEhI",
-      "category": "bismayah",
-      "representativeArticleId": "discovery-paH6LAc02WYYTwMJavnuIT2K",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-30T17:18:59.000Z",
-      "publishedTo": "2026-07-30T17:18:59.000Z",
-      "memberArticleIds": [
-        "discovery-paH6LAc02WYYTwMJavnuIT2K"
-      ],
-      "sources": [
+        },
         {
           "articleId": "discovery-paH6LAc02WYYTwMJavnuIT2K",
           "sourceArabic": "شبكة 964",
@@ -1534,7 +1760,7 @@
           "publishedAt": "2026-07-30T17:18:59.000Z",
           "originalTitleArabic": "تكليف عادل داخل بتسيير أعمال هيئة الاستثمار",
           "titleKo": "",
-          "isRepresentative": true
+          "isRepresentative": false
         }
       ]
     },
@@ -1792,17 +2018,27 @@
       ]
     },
     {
-      "groupId": "event-o7nstOEQbWqO4j0q-v",
+      "groupId": "event-Sbs2NpoUaZv08ulp52",
       "category": "politics",
-      "representativeArticleId": "discovery-qFUslYZ1hhh2H6ayD8602cS5",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-30T05:20:53.000Z",
+      "representativeArticleId": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-07-29T19:38:51.000Z",
       "publishedTo": "2026-07-30T05:20:53.000Z",
       "memberArticleIds": [
+        "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
         "discovery-qFUslYZ1hhh2H6ayD8602cS5"
       ],
       "sources": [
+        {
+          "articleId": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
+          "sourceArabic": "شفق نيوز",
+          "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%B9%D8%A7%D8%AC%D9%84-%D9%84%D9%84-%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%84%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D8%A7%D9%84-%D9%85%D9%8A%D8%B1%D9%83%D9%8A---%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A",
+          "publishedAt": "2026-07-29T19:38:51.000Z",
+          "originalTitleArabic": "اجتماع عاجل للإطار التنسيقي لمناقشة القصف الأميركي - السعودي",
+          "titleKo": "",
+          "isRepresentative": true
+        },
         {
           "articleId": "discovery-qFUslYZ1hhh2H6ayD8602cS5",
           "sourceArabic": "شفق نيوز",
@@ -1810,7 +2046,7 @@
           "publishedAt": "2026-07-30T05:20:53.000Z",
           "originalTitleArabic": "الإطار التنسيقي يدين القصف الأميركي &ndash; السعودي: يعقد المشهد",
           "titleKo": "",
-          "isRepresentative": true
+          "isRepresentative": false
         }
       ]
     },
@@ -1947,29 +2183,6 @@
           "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D9%84-%D8%B7%D8%A7%D8%B1-%D9%8A%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%83-%D9%86%D8%AD%D9%88-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84-%D9%85%D9%86-%D9%88%D8%A7%D9%84%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A8%D8%B9%D8%AF-%D9%82%D8%B5%D9%81-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF",
           "publishedAt": "2026-07-29T20:47:23.000Z",
           "originalTitleArabic": "الإطار يبحث التحرك نحو مجلس الأمن والمحكمة الدولية بعد قصف الحشد",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-J9CMNV5WNXEqzwfTAn",
-      "category": "politics",
-      "representativeArticleId": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-29T19:38:51.000Z",
-      "publishedTo": "2026-07-29T19:38:51.000Z",
-      "memberArticleIds": [
-        "discovery-fsieofXJHuhvkr2GTA9UaQuZ"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
-          "sourceArabic": "شفق نيوز",
-          "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%B9%D8%A7%D8%AC%D9%84-%D9%84%D9%84-%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%84%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D8%A7%D9%84-%D9%85%D9%8A%D8%B1%D9%83%D9%8A---%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A",
-          "publishedAt": "2026-07-29T19:38:51.000Z",
-          "originalTitleArabic": "اجتماع عاجل للإطار التنسيقي لمناقشة القصف الأميركي - السعودي",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -2998,27 +3211,17 @@
       ]
     },
     {
-      "groupId": "event-9SOCqyt8CulG9Hzcx-",
+      "groupId": "event-5sJz9kiX2_qr9SfpV1",
       "category": "politics",
-      "representativeArticleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
-      "memberCount": 2,
-      "duplicateCount": 1,
-      "publishedFrom": "2026-07-27T20:53:46.000Z",
+      "representativeArticleId": "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-28T09:50:19.000Z",
       "publishedTo": "2026-07-28T09:50:19.000Z",
       "memberArticleIds": [
-        "discovery-C29P-vsLi-qS99DYjn7ijULo",
         "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf"
       ],
       "sources": [
-        {
-          "articleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
-          "sourceArabic": "قناة الرشيد الفضائية",
-          "articleUrl": "https://www.alrasheedmedia.com/2026/07/27/693904/",
-          "publishedAt": "2026-07-27T20:53:46.000Z",
-          "originalTitleArabic": "الاطار التنسيقي يؤكد موقفه بدعم جهود محاربة الفساد وحصر السلاح بيد الدولة",
-          "titleKo": "",
-          "isRepresentative": true
-        },
         {
           "articleId": "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf",
           "sourceArabic": "taghribnews.com",
@@ -3026,7 +3229,7 @@
           "publishedAt": "2026-07-28T09:50:19.000Z",
           "originalTitleArabic": "الإطار التنسيقي في العراق يؤكد دعمه لمحاربة الفساد وحصر السلاح بيد الدولة | وكالة أنباء التقريب (TNA)",
           "titleKo": "",
-          "isRepresentative": false
+          "isRepresentative": true
         }
       ]
     },
@@ -3416,6 +3619,29 @@
           "articleUrl": "https://964media.com/702534/",
           "publishedAt": "2026-07-27T20:56:01.000Z",
           "originalTitleArabic": "الإطار التنسيقي يدعم حصر السلاح بيد الدولة ويرفض استخدام أراضي الدول للاعتداء",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-Hf5ctuQAGyGY443Lm5",
+      "category": "politics",
+      "representativeArticleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-27T20:53:46.000Z",
+      "publishedTo": "2026-07-27T20:53:46.000Z",
+      "memberArticleIds": [
+        "discovery-C29P-vsLi-qS99DYjn7ijULo"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
+          "sourceArabic": "قناة الرشيد الفضائية",
+          "articleUrl": "https://www.alrasheedmedia.com/2026/07/27/693904/",
+          "publishedAt": "2026-07-27T20:53:46.000Z",
+          "originalTitleArabic": "الاطار التنسيقي يؤكد موقفه بدعم جهود محاربة الفساد وحصر السلاح بيد الدولة",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -5732,16 +5958,17 @@
       ]
     },
     {
-      "groupId": "event-QVxICL01NcOfASoRT5",
+      "groupId": "event-nbwSFNuR4Ho8n9dL07",
       "category": "international",
       "representativeArticleId": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
-      "memberCount": 2,
-      "duplicateCount": 1,
+      "memberCount": 3,
+      "duplicateCount": 2,
       "publishedFrom": "2026-07-19T07:00:00.000Z",
       "publishedTo": "2026-07-20T08:43:07.000Z",
       "memberArticleIds": [
         "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
-        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ"
+        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+        "discovery-KF_9R_-WTgJv9ym601_WJSDq"
       ],
       "sources": [
         {
@@ -5759,6 +5986,15 @@
           "articleUrl": "https://www.elbalad.news/7043972",
           "publishedAt": "2026-07-19T07:00:00.000Z",
           "originalTitleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
+          "titleKo": "",
+          "isRepresentative": false
+        },
+        {
+          "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
+          "sourceArabic": "سانا",
+          "articleUrl": "https://sana.sy/economy/2531474/",
+          "publishedAt": "2026-07-19T07:00:00.000Z",
+          "originalTitleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
           "titleKo": "",
           "isRepresentative": false
         }
@@ -6229,29 +6465,6 @@
           "articleUrl": "https://www.kurdistan24.net/ar/story/926799",
           "publishedAt": "2026-07-19T07:00:00.000Z",
           "originalTitleArabic": "النزاهة الاتحادية تطيح بمسؤول في الكهرباء اختلس مواد باكثر من 4 مليارات دينار",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-dMt0ssxAx7mx9AvDKz",
-      "category": "international",
-      "representativeArticleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-19T07:00:00.000Z",
-      "publishedTo": "2026-07-19T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-KF_9R_-WTgJv9ym601_WJSDq"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-KF_9R_-WTgJv9ym601_WJSDq",
-          "sourceArabic": "سانا",
-          "articleUrl": "https://sana.sy/economy/2531474/",
-          "publishedAt": "2026-07-19T07:00:00.000Z",
-          "originalTitleArabic": "صادرات نفط دول الخليج ترتفع في تموز رغم تباطؤ الملاحة في هرمز",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -6873,15 +7086,16 @@
       ]
     },
     {
-      "groupId": "event-06h9x1KZiTPVLYdyDW",
+      "groupId": "event-38FGIgwWvAHrPBNXCn",
       "category": "security",
       "representativeArticleId": "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-15T20:13:00.000Z",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-07-15T07:00:00.000Z",
       "publishedTo": "2026-07-15T20:13:00.000Z",
       "memberArticleIds": [
-        "discovery-MoxCsY-JvgdTrycCZZkPhWcV"
+        "discovery-MoxCsY-JvgdTrycCZZkPhWcV",
+        "discovery-k8pEopVIMtA9Ve5OqsZwQKDN"
       ],
       "sources": [
         {
@@ -6892,6 +7106,15 @@
           "originalTitleArabic": "واشنطن تربط الشراكة مع العراق بنزع سلاح الميليشيات",
           "titleKo": "",
           "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
+          "sourceArabic": "سكاي نيوز عربية",
+          "articleUrl": "https://www.skynewsarabia.com/middle-east/1880904-%D9%87%D9%8A%D8%BA%D8%B3%D9%8A%D8%AB-%D8%AA%D9%88%D8%B7%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%B7%D9%84%D8%A8-%D9%86%D8%B2%D8%B9-%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA",
+          "publishedAt": "2026-07-15T07:00:00.000Z",
+          "originalTitleArabic": "هيغسيث: توطيد الشراكة مع العراق يتطلب نزع سلاح الميليشيات",
+          "titleKo": "",
+          "isRepresentative": false
         }
       ]
     },
@@ -7143,29 +7366,6 @@
           "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%AE%D8%A7%D8%B5-%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D9%8A%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%AA%D8%AD%D9%88%D9%84%D8%A7-%D8%AA%D8%AF%D8%B1%D9%8A%D8%AC%D9%8A%D8%A7-%D9%84%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A8%D8%AF-%D8%A7-%D9%85%D9%86-2027",
           "publishedAt": "2026-07-15T07:00:00.000Z",
           "originalTitleArabic": "خاص.. المالية النيابية تكشف تحولاً تدريجياً للموازنة العراقية بدءاً من 2027",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-i0wxLOq-jVxhU8EH8h",
-      "category": "security",
-      "representativeArticleId": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-15T07:00:00.000Z",
-      "publishedTo": "2026-07-15T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-k8pEopVIMtA9Ve5OqsZwQKDN"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-k8pEopVIMtA9Ve5OqsZwQKDN",
-          "sourceArabic": "سكاي نيوز عربية",
-          "articleUrl": "https://www.skynewsarabia.com/middle-east/1880904-%D9%87%D9%8A%D8%BA%D8%B3%D9%8A%D8%AB-%D8%AA%D9%88%D8%B7%D9%8A%D8%AF-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D9%83%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%B7%D9%84%D8%A8-%D9%86%D8%B2%D8%B9-%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA",
-          "publishedAt": "2026-07-15T07:00:00.000Z",
-          "originalTitleArabic": "هيغسيث: توطيد الشراكة مع العراق يتطلب نزع سلاح الميليشيات",
           "titleKo": "",
           "isRepresentative": true
         }
