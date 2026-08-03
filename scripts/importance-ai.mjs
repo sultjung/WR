@@ -4,7 +4,12 @@ const requested = /^(1|true|yes)$/i.test(process.env.IMPORTANCE_AI_ENABLED || "t
 const required = /^(1|true|yes)$/i.test(process.env.IMPORTANCE_AI_REQUIRED || "false");
 const hasApiKey = Boolean(String(process.env.OPENAI_API_KEY || "").trim());
 const enabled = requested && hasApiKey;
-const model = process.env.IMPORTANCE_MODEL || "gpt-5-mini";
+const primaryModel = String(process.env.IMPORTANCE_MODEL || "gpt-4.1-mini").trim();
+const fallbackModels = String(process.env.IMPORTANCE_MODEL_FALLBACKS || "gpt-4o-mini")
+  .split(",")
+  .map((value) => value.trim())
+  .filter(Boolean);
+const modelCandidates = [...new Set([primaryModel, ...fallbackModels])];
 const batchSize = Math.max(1, Math.min(10, Number(process.env.IMPORTANCE_AI_BATCH_SIZE || 6)));
 const maxArticles = Math.max(0, Number(process.env.IMPORTANCE_AI_MAX_ARTICLES || 80));
 const timeoutMs = Math.max(15000, Number(process.env.IMPORTANCE_AI_TIMEOUT_MS || 60000));
@@ -89,7 +94,7 @@ function cachedResult(article) {
   const importance = article.importance || {};
   if (importance.scoreFingerprint !== importanceFingerprint(article)) return null;
   if (!Number.isFinite(Number(importance.aiScore))) return null;
-  if (importance.aiModel && importance.aiModel !== model) return null;
+  if (importance.aiModel && !modelCandidates.includes(importance.aiModel)) return null;
   return normalizeResult({
     score: importance.aiScore,
     businessRelevance: importance.businessRelevance,
@@ -122,7 +127,12 @@ function candidatePriority(article, ruleScore, floorScore) {
     + ruleScore * 100;
 }
 
-async function request(items) {
+function isModelAccessError(error) {
+  return Boolean(error?.modelAccessError)
+    || /model_not_found|must be verified|do not have access|does not exist/i.test(String(error?.message || ""));
+}
+
+async function request(items, selectedModel) {
   const instruction = `일반적인 뉴스 화제성이 아니라 한화의 비스마야 신도시 사업 관점에서 기사 중요도를 평가한다.
 배점은 비스마야 직접 관련성 30, NIC·총리실·국무회의 등 의사결정 영향 25, 계약·대금·금융·보증·사업재개 영향 25, 즉시 대응 필요성 10, 정보 구체성·출처 신뢰성 10이다.
 NIC 의장 임명·해임·교체는 90점 이상 MUST_INCLUDE, 비스마야 직접 보도는 90점 이상, 비스마야 관련 정부 결정·계약·대금·금융·보증·재개 기사는 95점 이상으로 평가한다.
@@ -140,7 +150,7 @@ NIC 의장 임명·해임·교체는 90점 이상 MUST_INCLUDE, 비스마야 직
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model,
+        model: selectedModel,
         store: false,
         input: [
           { role: "system", content: [{ type: "input_text", text: instruction }] },
@@ -159,7 +169,12 @@ NIC 의장 임명·해임·교체는 90점 이상 MUST_INCLUDE, 비스마야 직
       })
     });
     if (!response.ok) {
-      throw new Error(`OpenAI ${response.status}: ${(await response.text()).slice(0, 500)}`);
+      const body = (await response.text()).slice(0, 800);
+      const error = new Error(`OpenAI ${response.status} (${selectedModel}): ${body}`);
+      error.status = response.status;
+      error.modelAccessError = response.status === 404
+        && /model_not_found|must be verified|do not have access|does not exist/i.test(body);
+      throw error;
     }
     return parseResults(responseText(await response.json()));
   } finally {
@@ -188,7 +203,7 @@ export async function getImportanceAiScores(articles, ruleScores, floors) {
       scores,
       enabled: false,
       model: null,
-      stats: { requested: 0, evaluated: 0, cached: cachedCount, failedBatches: 0 }
+      stats: { requested: 0, evaluated: 0, cached: cachedCount, failedBatches: 0, modelFallbacks: 0 }
     };
   }
 
@@ -207,29 +222,51 @@ export async function getImportanceAiScores(articles, ruleScores, floors) {
     .sort((a, b) => b.priority - a.priority)
     .slice(0, maxArticles);
 
+  let activeModelIndex = 0;
+  let activeModel = modelCandidates[activeModelIndex];
   let evaluated = 0;
   let failedBatches = 0;
+  let modelFallbacks = 0;
+
+  console.log(`[importance-ai] model candidates=${modelCandidates.join(",")}`);
+
   for (let offset = 0; offset < candidates.length; offset += batchSize) {
     const batch = candidates.slice(offset, offset + batchSize);
-    try {
-      const output = await request(batch.map(({ article, index }) => inputOf(article, index)));
-      const expectedIds = new Set(batch.map((item) => item.id));
-      let accepted = 0;
-      for (const item of output) {
-        const id = String(item?.id || "");
-        if (!id || !expectedIds.has(id)) continue;
-        scores.set(id, normalizeResult(item));
-        accepted += 1;
+    let output = null;
+
+    while (output === null) {
+      try {
+        output = await request(batch.map(({ article, index }) => inputOf(article, index)), activeModel);
+      } catch (error) {
+        if (isModelAccessError(error) && activeModelIndex + 1 < modelCandidates.length) {
+          const previousModel = activeModel;
+          activeModelIndex += 1;
+          activeModel = modelCandidates[activeModelIndex];
+          modelFallbacks += 1;
+          console.warn(`[importance-ai] model unavailable: ${previousModel}; switching to ${activeModel}`);
+          continue;
+        }
+        failedBatches += 1;
+        console.warn(`[importance-ai] batch failed: ${error.message}`);
+        break;
       }
-      evaluated += accepted;
-      if (accepted !== batch.length) {
-        console.warn(`[importance-ai] incomplete batch: expected=${batch.length}, accepted=${accepted}`);
-      }
-      console.log(`[importance-ai] ${Math.min(offset + batch.length, candidates.length)}/${candidates.length}, accepted=${accepted}, model=${model}`);
-    } catch (error) {
-      failedBatches += 1;
-      console.warn(`[importance-ai] batch failed: ${error.message}`);
     }
+
+    if (!output) continue;
+
+    const expectedIds = new Set(batch.map((item) => item.id));
+    let accepted = 0;
+    for (const item of output) {
+      const id = String(item?.id || "");
+      if (!id || !expectedIds.has(id)) continue;
+      scores.set(id, normalizeResult(item));
+      accepted += 1;
+    }
+    evaluated += accepted;
+    if (accepted !== batch.length) {
+      console.warn(`[importance-ai] incomplete batch: expected=${batch.length}, accepted=${accepted}`);
+    }
+    console.log(`[importance-ai] ${Math.min(offset + batch.length, candidates.length)}/${candidates.length}, accepted=${accepted}, model=${activeModel}`);
   }
 
   if (required && candidates.length > 0 && evaluated === 0) {
@@ -239,12 +276,13 @@ export async function getImportanceAiScores(articles, ruleScores, floors) {
   return {
     scores,
     enabled: true,
-    model,
+    model: activeModel,
     stats: {
       requested: candidates.length,
       evaluated,
       cached: cachedCount,
-      failedBatches
+      failedBatches,
+      modelFallbacks
     }
   };
 }
