@@ -30,6 +30,16 @@ jobs:
         with:
           node-version: "22"
 
+      - name: Verify OpenAI API secret
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "::error::OPENAI_API_KEY is not available as an Actions secret for sultjung/WR. Store it under repository Settings > Secrets and variables > Actions > Repository secrets. If it is an Environment secret, assign that environment to this job."
+            exit 1
+          fi
+          echo "OPENAI_API_KEY is available to the workflow."
+
       - name: Validate configuration
         run: npm run validate:config
 
@@ -92,16 +102,6 @@ jobs:
 
       - name: Reapply final category gate
         run: npm run collect:strict-gate
-
-      - name: Verify OpenAI API secret
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        run: |
-          if [ -z "$OPENAI_API_KEY" ]; then
-            echo "::error::OPENAI_API_KEY secret is unavailable to this workflow. Confirm it is stored under Settings > Secrets and variables > Actions > Secrets and is granted to this repository."
-            exit 1
-          fi
-          echo "OPENAI_API_KEY is available to the workflow."
 
       - name: Evaluate Bismayah business importance with AI
         env:
