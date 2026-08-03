@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.2",
-  "generatedAt": "2026-08-03T05:00:28.924Z",
-  "groupCount": 300,
+  "generatedAt": "2026-08-03T05:03:26.106Z",
+  "groupCount": 281,
   "duplicateGroupCount": 12,
   "duplicateArticleCount": 17,
   "matches": [
@@ -667,29 +667,6 @@
       ]
     },
     {
-      "groupId": "event-RjifDPtSWL_Dr4nMzD",
-      "category": "international",
-      "representativeArticleId": "discovery-ba4hoSz9KOEWqCfUKACCAKaP",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T08:53:15.000Z",
-      "publishedTo": "2026-08-02T08:53:15.000Z",
-      "memberArticleIds": [
-        "discovery-ba4hoSz9KOEWqCfUKACCAKaP"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-ba4hoSz9KOEWqCfUKACCAKaP",
-          "sourceArabic": "التلفزيون العربي",
-          "articleUrl": "https://www.alaraby.com/news/36-%D8%B9%D8%A7%D9%85%D9%8B%D8%A7-%D8%B9%D9%84%D9%89-%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D9%83%D9%8A%D9%81-%D8%AA%D8%A8%D8%AF%D9%84%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D9%88%D8%B1-%D9%88%D8%AA%D8%BA%D9%8A%D8%B1%D8%AA-%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9-%D8%A7%D9%84%D8%AD%D9%85%D8%A7%D9%8A%D8%A9?amp",
-          "publishedAt": "2026-08-02T08:53:15.000Z",
-          "originalTitleArabic": "36 عامًا على غزو الكويت.. كيف تبدلت الأمور وتغيرت معادلة الحماية؟ | التلفزيون العربي",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-oerrhLQhlUnyQ9q5Wj",
       "category": "international",
       "representativeArticleId": "discovery-KRCzC4cCmWQHxgtc8oieDT-e",
@@ -799,29 +776,6 @@
           "articleUrl": "https://almaalomah.me/news/140033/politics/%D8%AA%D8%A3%D9%83%D9%8A%D8%AF-%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86%D9%8A-%D8%B9%D9%84%D9%89-%D8%A3%D9%87%D9%85%D9%8A%D8%A9-%D8%AA%D8%AF%D9%88%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D8%B9%D9%84%D9%89-%D9%85%D9%82%D8%A7%D8%B1-%D8%A7%D9%84%D8%AD%D8%B4",
           "publishedAt": "2026-08-02T05:41:10.000Z",
           "originalTitleArabic": "تأكيد برلماني على أهمية تدويل الاعتداء السعودي على مقار الحشد الشعبي",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-U593NolfbZu4bAv3Ok",
-      "category": "international",
-      "representativeArticleId": "discovery-8PDRg5h0VUM-kK62yvtGP0JV",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T04:59:58.000Z",
-      "publishedTo": "2026-08-02T04:59:58.000Z",
-      "memberArticleIds": [
-        "discovery-8PDRg5h0VUM-kK62yvtGP0JV"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-8PDRg5h0VUM-kK62yvtGP0JV",
-          "sourceArabic": "الشرق الأوسط",
-          "articleUrl": "https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5301028-%D8%AA%D9%86%D8%B3%D9%8A%D9%82-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B1%D9%83%D9%8A-%D8%AD%D9%88%D9%84-%D9%85%D9%85%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B7%D8%A7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D9%8A%D8%A7%D9%87",
-          "publishedAt": "2026-08-02T04:59:58.000Z",
-          "originalTitleArabic": "تنسيق عراقي - تركي حول ممرات الطاقة والمياه",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1035,29 +989,6 @@
       ]
     },
     {
-      "groupId": "event-jRsKTZSxtA1YvUqcCF",
-      "category": "international",
-      "representativeArticleId": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-01T16:00:16.000Z",
-      "publishedTo": "2026-08-01T16:00:16.000Z",
-      "memberArticleIds": [
-        "discovery-iLVkqR_oVgSoaRA-K9A05BHy"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
-          "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/1/%d8%af%d9%88%d9%84-%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%ac-%d8%aa%d8%b9%d9%8a%d8%af-%d8%b1%d8%b3%d9%85-%d8%ae%d8%b1%d9%8a%d8%b7%d8%a9-%d8%aa%d8%b5%d8%af%d9%8a%d8%b1-%d8%a7%d9%84%d9%86%d9%81%d8%b7",
-          "publishedAt": "2026-08-01T16:00:16.000Z",
-          "originalTitleArabic": "دول الخليج تعيد رسم خريطة تصدير النفط بعيدا عن هرمز",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-0_tPXOctHVZWjvQ-ts",
       "category": "international",
       "representativeArticleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
@@ -1213,29 +1144,6 @@
           "articleUrl": "https://www.enabbaladi.net/819064/%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%85%D9%86-%D8%A3%D8%B1%D8%A8%D9%8A%D9%84-%D9%8A%D9%88%D8%A7%D9%83%D8%A8-%D8%A7%D8%B3%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%D8%A7/?amp\\=1",
           "publishedAt": "2026-08-01T08:41:00.000Z",
           "originalTitleArabic": "انسحاب أمريكي من أربيل يواكب استعدادات لضرب منشآت الطاقة الإيرانية",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-osg0_XKblFikSqn2zO",
-      "category": "international",
-      "representativeArticleId": "discovery-N8c9_ZOFJFt6ZQETRNnwug_5",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-01T07:06:33.000Z",
-      "publishedTo": "2026-08-01T07:06:33.000Z",
-      "memberArticleIds": [
-        "discovery-N8c9_ZOFJFt6ZQETRNnwug_5"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-N8c9_ZOFJFt6ZQETRNnwug_5",
-          "sourceArabic": "BBC",
-          "articleUrl": "https://www.bbc.com/arabic/articles/c1m1pgknzpro",
-          "publishedAt": "2026-08-01T07:06:33.000Z",
-          "originalTitleArabic": "التحالف البحري الذي تقوده السعودية: ما هو، ومن هي الدول المشاركة؟",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1407,29 +1315,6 @@
           "articleUrl": "https://qna.org.qa/ar-QA/news/news-details?id=%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-%D8%B9%D9%86%D8%B5%D8%B1%D9%8A%D9%86-%D9%85%D9%86-%D9%81%D9%84%D9%88%D9%84-%D8%AF%D8%A7%D8%B9%D8%B4-%D8%AE%D9%84%D8%A7%D9%84-%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D8%A7%D9%85%D9%86%D9%8A%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82&date=31/07/2026",
           "publishedAt": "2026-07-31T18:58:17.000Z",
           "originalTitleArabic": "اعتقال عنصرين من فلول داعش خلال عمليات أمنية شمالي العراق",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-Y_8v4tH6d2tDRyU9nb",
-      "category": "international",
-      "representativeArticleId": "discovery-RNCckeMCDmtdDSNmExJ0LGoq",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-31T18:04:16.000Z",
-      "publishedTo": "2026-07-31T18:04:16.000Z",
-      "memberArticleIds": [
-        "discovery-RNCckeMCDmtdDSNmExJ0LGoq"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-RNCckeMCDmtdDSNmExJ0LGoq",
-          "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/31/%D8%AD%D8%B5%D8%A7%D8%B1-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89-%D9%83%D9%8A%D9%81-%D8%AA%D8%A8%D8%AD%D8%AB-%D8%AF%D9%88%D9%84",
-          "publishedAt": "2026-07-31T18:04:16.000Z",
-          "originalTitleArabic": "حصار الشرايين الكبرى.. كيف تبحث دول الخليج عن بدائل لتصدير النفط؟",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -2948,29 +2833,6 @@
       ]
     },
     {
-      "groupId": "event-ST_6gkGDovO-iZaxgg",
-      "category": "politics",
-      "representativeArticleId": "discovery-7K_o-KH_NFjScvNhYghVMQZc",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T18:47:45.000Z",
-      "publishedTo": "2026-07-28T18:47:45.000Z",
-      "memberArticleIds": [
-        "discovery-7K_o-KH_NFjScvNhYghVMQZc"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-7K_o-KH_NFjScvNhYghVMQZc",
-          "sourceArabic": "شبكة سرمد الإعلامية",
-          "articleUrl": "https://sarmad.com/337480/",
-          "publishedAt": "2026-07-28T18:47:45.000Z",
-          "originalTitleArabic": "السعودية تؤكد عدم تهاونها في حماية أمنها ومصالحها ومقدراتها الوطنية",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-mVWaxgWWW4FHIqBAFg",
       "category": "politics",
       "representativeArticleId": "discovery-yUZUnzG72bbfln4bfrGfgKtK",
@@ -3740,29 +3602,6 @@
       ]
     },
     {
-      "groupId": "event-Q0X5w-eGGG5FuaVxic",
-      "category": "international",
-      "representativeArticleId": "discovery-Zom3bpe4ym5l1XTlZ7XErKB4",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T19:48:50.000Z",
-      "publishedTo": "2026-07-27T19:48:50.000Z",
-      "memberArticleIds": [
-        "discovery-Zom3bpe4ym5l1XTlZ7XErKB4"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-Zom3bpe4ym5l1XTlZ7XErKB4",
-          "sourceArabic": "ترك برس",
-          "articleUrl": "https://www.turkpress.co/node/111323",
-          "publishedAt": "2026-07-27T19:48:50.000Z",
-          "originalTitleArabic": "الخطر الأكبر على الولايات المتحدة في حرب إيران: اتساع نطاق المهمة",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-tju7OWAtvHAbzqni22",
       "category": "international",
       "representativeArticleId": "discovery-GmwImNLDIEf1SYzHe3aziMtl",
@@ -3878,29 +3717,6 @@
       ]
     },
     {
-      "groupId": "event-KQRmRWVuhel5Lu5DEo",
-      "category": "international",
-      "representativeArticleId": "discovery-AxPmeLMD9VmustrKnd4tHOMr",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T13:48:10.000Z",
-      "publishedTo": "2026-07-27T13:48:10.000Z",
-      "memberArticleIds": [
-        "discovery-AxPmeLMD9VmustrKnd4tHOMr"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-AxPmeLMD9VmustrKnd4tHOMr",
-          "sourceArabic": "شفق نيوز",
-          "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A---%D9%85%D9%8A%D8%B1%D9%83%D9%8A-%D8%B9%D9%84%D9%89-%D8%AA%D8%B3%D8%AF%D9%8A%D8%AF-%D8%A7%D9%84%D8%AF%D9%8A%D9%88%D9%86-%D8%A7%D9%84-%D9%8A%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D8%B9%D8%A8%D8%B1-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%BA%D8%B0%D8%A7-%D9%8A%D8%A9-%D9%88%D8%A7%D9%84-%D8%AF%D9%88%D9%8A%D8%A9",
-          "publishedAt": "2026-07-27T13:48:10.000Z",
-          "originalTitleArabic": "اتفاق \"عراقي - أميركي\" على تسديد الديون الإيرانية عبر المواد الغذائية والأدوية",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-kyGbY54vq_tjCwzTKf",
       "category": "economy",
       "representativeArticleId": "discovery-KHmwfNlH_usEVIVP1zG9niXj",
@@ -3918,29 +3734,6 @@
           "articleUrl": "https://almaalomah.me/articles/139524/%D8%B1%D8%AD%D9%84%D8%A9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D9%86-%D9%85%D8%A7%D9%86%D9%87%D8%A7%D8%AA%D9%86-%D8%A5%D9%84%D9%89-%D8%A7%D9%84%D8%B1%D8%B4%D9%8A%D8%AF:-%D9%82%D8%B1%D8%A7%D8%A1%D8%A9-%D9%81%D9%8A-%D8%AE%D9%81%D8%A7%D9%8A%D8%A7-%D8%A7%D9%84%D8%AA%D8%A8%D8%B9%D9%8A%D8%A9-%D8%A7",
           "publishedAt": "2026-07-27T12:55:45.000Z",
           "originalTitleArabic": "رحلة الدولار من “مانهاتن” إلى “الرشيد”: قراءة في خفايا التبعية النقدية ومستقبل “العراق 2”",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-vdTTroMIdwIZmW_Swc",
-      "category": "security",
-      "representativeArticleId": "discovery-EvBUDc8gmwL1K1kVzrhQWSql",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T09:32:36.000Z",
-      "publishedTo": "2026-07-27T09:32:36.000Z",
-      "memberArticleIds": [
-        "discovery-EvBUDc8gmwL1K1kVzrhQWSql"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-EvBUDc8gmwL1K1kVzrhQWSql",
-          "sourceArabic": "اسلام تايمز",
-          "articleUrl": "https://www.islamtimes.com/ar/news/1295348/%D8%A7%D8%B3%D8%AA%D9%86%D9%81%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D9%81%D9%84%D8%A8%D9%8A%D9%86-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D8%B9%D8%A8%D9%88%D8%A9-%D9%86%D8%A7%D8%B3%D9%81%D8%A9-%D9%82%D8%B1%D8%A8-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%AF%D9%84-%D9%88%D8%AA%D9%81%D9%83%D9%8A%D9%83-%D8%A3%D8%AE%D8%B1%D9%89-%D8%A8%D9%85%D8%AD%D9%8A%D8%B7-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%B4%D9%8A%D9%88%D8%AE",
-          "publishedAt": "2026-07-27T09:32:36.000Z",
-          "originalTitleArabic": "استنفار في الفلبين: انفجار عبوة ناسفة قرب وزارة العدل وتفكيك أخرى بمحيط مجلس الشيوخ. - اسلام تايمز",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -4125,29 +3918,6 @@
           "articleUrl": "https://almadapaper.net/445480/",
           "publishedAt": "2026-07-26T21:20:26.000Z",
           "originalTitleArabic": "القضاء يضبط 27 مليار دينار في قضية الجميلي والنزاهة تفكك شبكة تزوير في الديوانية",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-GironeNUvspcpgQscF",
-      "category": "international",
-      "representativeArticleId": "discovery-hgRljDZ0W5JpQOdamp5ckVDs",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-26T19:54:45.000Z",
-      "publishedTo": "2026-07-26T19:54:45.000Z",
-      "memberArticleIds": [
-        "discovery-hgRljDZ0W5JpQOdamp5ckVDs"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-hgRljDZ0W5JpQOdamp5ckVDs",
-          "sourceArabic": "ترك برس",
-          "articleUrl": "https://www.turkpress.co/node/111300",
-          "publishedAt": "2026-07-26T19:54:45.000Z",
-          "originalTitleArabic": "هل يمكن للولايات المتحدة أن تنسحب من حرب إيران؟",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -4936,29 +4706,6 @@
       ]
     },
     {
-      "groupId": "event-k33oLRC3AgVY6R0CIO",
-      "category": "international",
-      "representativeArticleId": "discovery-H0TA4Owq_xpL3HpIboUpqvjo",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-25T07:00:00.000Z",
-      "publishedTo": "2026-07-25T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-H0TA4Owq_xpL3HpIboUpqvjo"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-H0TA4Owq_xpL3HpIboUpqvjo",
-          "sourceArabic": "Vietnam.vn",
-          "articleUrl": "https://www.vietnam.vn/ar/tai-sao-dao-kharg-lai-mang-y-nghia-song-con-doi-voi-iran-va-nen-kinh-te-toan-cau",
-          "publishedAt": "2026-07-25T07:00:00.000Z",
-          "originalTitleArabic": "لماذا تُعد جزيرة خارك حيوية لإيران والاقتصاد العالمي؟",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-CRjaE3PeuqO5lxx164",
       "category": "economy",
       "representativeArticleId": "discovery-gR64_RSOPM93qbP0T4JuPAPJ",
@@ -5120,29 +4867,6 @@
       ]
     },
     {
-      "groupId": "event-MfukY88_UyoYFsfGfU",
-      "category": "international",
-      "representativeArticleId": "discovery-3u4oZJRpyTH56C0VovxknAS-",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-23T21:02:25.000Z",
-      "publishedTo": "2026-07-23T21:02:25.000Z",
-      "memberArticleIds": [
-        "discovery-3u4oZJRpyTH56C0VovxknAS-"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-3u4oZJRpyTH56C0VovxknAS-",
-          "sourceArabic": "الحرة",
-          "articleUrl": "https://alhurra.com/28953",
-          "publishedAt": "2026-07-23T21:02:25.000Z",
-          "originalTitleArabic": "هجمات حوثية في البحر الأحمر.. “إيران تنقل التوتر إلى باب المندب” | الحرة",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-LVweUHklcab5Fko2iX",
       "category": "economy",
       "representativeArticleId": "discovery-1I4LWElIB7DkCPRT-WlLoGXO",
@@ -5281,75 +5005,6 @@
       ]
     },
     {
-      "groupId": "event-CQCtoGGo3DXZnIO_1i",
-      "category": "international",
-      "representativeArticleId": "discovery-VWcfrGrQJjRhqmIne9pdFz7t",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-23T07:00:00.000Z",
-      "publishedTo": "2026-07-23T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-VWcfrGrQJjRhqmIne9pdFz7t"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-VWcfrGrQJjRhqmIne9pdFz7t",
-          "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%AA%D8%AA%D8%AC%D8%A7%D9%88%D8%B2-100-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D9%85%D8%B9-%D8%A7%D8%AA%D8%B3%D8%A7%D8%B9",
-          "publishedAt": "2026-07-23T07:00:00.000Z",
-          "originalTitleArabic": "أسعار النفط تتجاوز 100 دولار مع اتساع المخاطر في البحر الأحمر",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-yGMbEVBhSPkkmNzfRM",
-      "category": "international",
-      "representativeArticleId": "discovery-mZ19gpqn6faqkqlwgtt7Wd9I",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-23T07:00:00.000Z",
-      "publishedTo": "2026-07-23T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-mZ19gpqn6faqkqlwgtt7Wd9I"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-mZ19gpqn6faqkqlwgtt7Wd9I",
-          "sourceArabic": "BBC",
-          "articleUrl": "https://www.bbc.com/arabic/articles/ce97nmrl2xro",
-          "publishedAt": "2026-07-23T07:00:00.000Z",
-          "originalTitleArabic": "إلى أين يتجه التصعيد بين الحوثيين والسعودية؟ - BBC News عربي",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-MV0LFz7JyTTqPtjQUA",
-      "category": "international",
-      "representativeArticleId": "discovery-8g7f5MCvAQhVbXsP51XSrPCP",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-23T07:00:00.000Z",
-      "publishedTo": "2026-07-23T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-8g7f5MCvAQhVbXsP51XSrPCP"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-8g7f5MCvAQhVbXsP51XSrPCP",
-          "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/23/%D9%87%D9%84-%D9%8A%D8%AA%D8%AD%D9%88%D9%84-%D8%A8%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%86%D8%AF%D8%A8-%D8%A5%D9%84%D9%89-%D9%87%D8%B1%D9%85%D8%B2-%D8%AC%D8%AF%D9%8A%D8%AF",
-          "publishedAt": "2026-07-23T07:00:00.000Z",
-          "originalTitleArabic": "ماذا لو تحول \"باب المندب\" إلى \"هرمز\" جديد؟",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event-1hqI7PBBsBtbcmy5x-",
       "category": "politics",
       "representativeArticleId": "discovery--jgfiJvk3084XXDL-5HQhBVl",
@@ -5413,29 +5068,6 @@
           "articleUrl": "https://annabaa.org/arabic/authorsarticles/46837",
           "publishedAt": "2026-07-23T04:04:52.000Z",
           "originalTitleArabic": "التحديات السياسية أمام حكومة الزيدي في العراق",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-IZH05d1CXB2r95YLtN",
-      "category": "international",
-      "representativeArticleId": "discovery-QFD5CoScvuSixtIVE_DiX20L",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-23T01:37:03.000Z",
-      "publishedTo": "2026-07-23T01:37:03.000Z",
-      "memberArticleIds": [
-        "discovery-QFD5CoScvuSixtIVE_DiX20L"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-QFD5CoScvuSixtIVE_DiX20L",
-          "sourceArabic": "Vietnam.vn",
-          "articleUrl": "https://www.vietnam.vn/ar/kenh-dao-suez-co-the-giup-chau-a-vuot-qua-khung-hoang-dau-mo",
-          "publishedAt": "2026-07-23T01:37:03.000Z",
-          "originalTitleArabic": "هل يمكن لقناة السويس أن تساعد آسيا على التغلب على أزمة النفط؟",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -5866,29 +5498,6 @@
       ]
     },
     {
-      "groupId": "event-7IVU6B8HCOxEX4KWjm",
-      "category": "politics",
-      "representativeArticleId": "discovery-Jt45UpimjJxXHz8uFyUnR39p",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-21T07:00:00.000Z",
-      "publishedTo": "2026-07-21T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-Jt45UpimjJxXHz8uFyUnR39p"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-Jt45UpimjJxXHz8uFyUnR39p",
-          "sourceArabic": "الشرق الأوسط",
-          "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5298625-%D8%B4%D8%A8%D9%87%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AF-%D8%AA%D9%84%D8%A7%D8%AD%D9%82-%D9%88%D8%B2%D9%8A%D8%B1%D8%A7%D9%8B-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A7%D9%8B-%D9%88%D8%AA%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%A7%D9%84%D8%AD%D8%A7%D9%83%D9%85",
-          "publishedAt": "2026-07-21T07:00:00.000Z",
-          "originalTitleArabic": "شبهات فساد تلاحق وزيراً عراقياً... وتربك التحالف الحاكم",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
       "groupId": "event--xiOGXQWvEbgjLz8KJ",
       "category": "politics",
       "representativeArticleId": "discovery-C916BPF8idHC2hIYyRgU1ePc",
@@ -6113,29 +5722,6 @@
           "articleUrl": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A8%D8%AF%D9%84%D8%A7-%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B2%D9%86%D8%A9-%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%AA%D8%AC%D9%87-%D9%84-%D9%82%D8%B1%D8%A7%D8%B1-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%B6",
           "publishedAt": "2026-07-20T07:00:00.000Z",
           "originalTitleArabic": "بدلاً من الموازنة.. البرلمان العراقي يتجه لإقرار قانون الاقتراض",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-4STk_3_1sY7oDqobXP",
-      "category": "international",
-      "representativeArticleId": "discovery-ATDYLRq3f6wsIK9CMSbpoMC6",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T07:00:00.000Z",
-      "publishedTo": "2026-07-20T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-ATDYLRq3f6wsIK9CMSbpoMC6"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-ATDYLRq3f6wsIK9CMSbpoMC6",
-          "sourceArabic": "اسلام تايمز",
-          "articleUrl": "https://www.islamtimes.com/ar/article/1293751/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D8%A7%D9%84%D8%B0%D9%8A-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7",
-          "publishedAt": "2026-07-20T07:00:00.000Z",
-          "originalTitleArabic": "إيران في عين واشنطن… صراع النفوذ الذي يعيد رسم خريطة الشرق الأوسط - اسلام تايمز",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -6846,29 +6432,6 @@
           "articleUrl": "https://www.iranintl.com/ar/202607172947",
           "publishedAt": "2026-07-17T07:00:00.000Z",
           "originalTitleArabic": "\"الأمن القومي\" الإيراني يطالب الإعلام بعدم نشر أضرار البنية التحتية جراء الهجمات الأميركية",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-nong3v6AMB6UnRleK4",
-      "category": "international",
-      "representativeArticleId": "discovery-8PHtlcVXICrwisG4S6F1Hv91",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-17T07:00:00.000Z",
-      "publishedTo": "2026-07-17T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-8PHtlcVXICrwisG4S6F1Hv91"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-8PHtlcVXICrwisG4S6F1Hv91",
-          "sourceArabic": "middle-east-online.com",
-          "articleUrl": "https://www.middle-east-online.com/%D9%82%D8%B1%D8%A7%D8%B5%D9%86%D8%A9-%D8%B5%D9%88%D9%85%D8%A7%D9%84%D9%8A%D9%88%D9%86-%D9%8A%D8%B3%D9%8A%D8%B7%D8%B1%D9%88%D9%86-%D8%B9%D9%84%D9%89-%D8%B3%D9%81%D9%8A%D9%86%D8%A9-%D9%81%D9%8A-%D8%AE%D9%84%D9%8A%D8%AC-%D8%B9%D8%AF%D9%86",
-          "publishedAt": "2026-07-17T07:00:00.000Z",
-          "originalTitleArabic": "قراصنة صوماليون يسيطرون على سفينة في خليج عدن | MEO",
           "titleKo": "",
           "isRepresentative": true
         }
