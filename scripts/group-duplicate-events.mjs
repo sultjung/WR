@@ -17,10 +17,10 @@ const STOP_WORDS = new Set([
 
 const CANONICAL_ENTITY_ALIASES = new Map([
   ["ORG_NIC", [
-    "الهيئه الوطنيه للاستثمار",
-    "هيئه الاستثمار الوطنيه",
-    "رئاسه الهيئه الوطنيه للاستثمار",
-    "هيئه الاستثمار"
+    "الهيئة الوطنية للاستثمار",
+    "هيئة الاستثمار الوطنية",
+    "رئاسة الهيئة الوطنية للاستثمار",
+    "هيئة الاستثمار"
   ]],
   ["PERSON_ADIL_AL_YASIRI", [
     "عادل داخل الياسري",
@@ -28,9 +28,8 @@ const CANONICAL_ENTITY_ALIASES = new Map([
     "عادل داخل"
   ]],
   ["PERSON_HAIDER_MAKKIYA", [
-    "حيدر مكيه",
-    "حيدر مكيّا",
-    "حيدر مكية"
+    "حيدر مكية",
+    "حيدر مكّية"
   ]]
 ]);
 
@@ -38,18 +37,16 @@ const ACTION_ALIASES = new Map([
   ["PERSONNEL_APPOINTMENT", [
     "تكليف",
     "تعيين",
-    "تسميه",
+    "تسمية",
     "تولي المنصب",
     "تسلم مهام",
-    "تسيير اعمال",
-    "رئيسا للهيئه",
-    "رئاسه الهيئه"
+    "تسيير أعمال"
   ]],
   ["PERSONNEL_REMOVAL", [
-    "اعفاء",
-    "اقاله",
-    "انهاء تكليف",
-    "انهاء مهام",
+    "إعفاء",
+    "إقالة",
+    "إنهاء تكليف",
+    "إنهاء مهام",
     "سحب يد"
   ]]
 ]);
@@ -70,7 +67,6 @@ function normalizeArabic(value = "") {
 
 function canonicalToken(value = "") {
   let token = String(value);
-  if (token.length >= 5 && /^[وف]/.test(token)) token = token.slice(1);
 
   for (const prefix of ["بال", "كال", "فال", "وال"]) {
     if (token.startsWith(prefix) && token.length > prefix.length + 2) {
@@ -84,12 +80,18 @@ function canonicalToken(value = "") {
   return token;
 }
 
-function tokens(value = "", maxChars = 0) {
+function normalizedTokens(value = "", maxChars = 0) {
   const input = maxChars > 0 ? String(value).slice(0, maxChars) : String(value);
+  return normalizeArabic(input).split(" ").map(canonicalToken).filter(Boolean);
+}
+
+function canonicalPhrase(value = "") {
+  return normalizedTokens(value).join(" ");
+}
+
+function tokens(value = "", maxChars = 0) {
   return [...new Set(
-    normalizeArabic(input)
-      .split(" ")
-      .map(canonicalToken)
+    normalizedTokens(value, maxChars)
       .filter((token) => token.length >= 3 && !STOP_WORDS.has(token))
   )];
 }
@@ -99,21 +101,17 @@ function intersection(a = [], b = []) {
   return [...new Set(b)].filter((value) => A.has(value));
 }
 
-function intersectionCount(a = [], b = []) {
-  return intersection(a, b).length;
-}
-
 function jaccard(a = [], b = []) {
   const A = new Set(a);
   const B = new Set(b);
   if (!A.size || !B.size) return 0;
-  const common = intersectionCount(a, b);
+  const common = intersection(a, b).length;
   return common / (A.size + B.size - common);
 }
 
 function overlapCoefficient(a = [], b = []) {
   const minSize = Math.min(new Set(a).size, new Set(b).size);
-  return minSize ? intersectionCount(a, b) / minSize : 0;
+  return minSize ? intersection(a, b).length / minSize : 0;
 }
 
 function numbers(text = "") {
@@ -121,26 +119,26 @@ function numbers(text = "") {
 }
 
 function aliasSignals(text = "", aliasMap = new Map()) {
-  const normalized = normalizeArabic(text);
+  const normalized = canonicalPhrase(text);
   const output = [];
   for (const [signal, aliases] of aliasMap.entries()) {
-    if (aliases.some((alias) => normalized.includes(normalizeArabic(alias)))) output.push(signal);
+    if (aliases.some((alias) => normalized.includes(canonicalPhrase(alias)))) output.push(signal);
   }
   return output;
 }
 
 function entitySignals(text = "") {
-  const normalized = normalizeArabic(text);
-  const canonical = aliasSignals(normalized, CANONICAL_ENTITY_ALIASES);
+  const normalized = canonicalPhrase(text);
+  const canonical = aliasSignals(text, CANONICAL_ENTITY_ALIASES);
   const terms = [
-    "رئيس الوزراء","مجلس الوزراء","مجلس النواب","الاطار التنسيقي","هيئه النزاهه",
-    "وزاره الاعمار","وزاره الماليه","وزاره التخطيط","البنك المركزي العراقي","داعش","الولايات المتحده",
-    "ايران","تركيا","سوريا","بغداد","البصره","نينوي","الانبار","كركوك","ديالي","صلاح الدين",
-    "مضيق هرمز","طريق التنميه","بسمايه","هانوا","محمد شياع السوداني","علي الزيدي","نوري المالكي"
+    "رئيس الوزراء","مجلس الوزراء","مجلس النواب","الاطار التنسيقي","هيئة النزاهة",
+    "وزارة الاعمار","وزارة المالية","وزارة التخطيط","البنك المركزي العراقي","داعش","الولايات المتحدة",
+    "ايران","تركيا","سوريا","بغداد","البصرة","نينوى","الانبار","كركوك","ديالى","صلاح الدين",
+    "مضيق هرمز","طريق التنمية","بسماية","هانوا","محمد شياع السوداني","علي الزيدي","نوري المالكي"
   ];
   const literal = terms
-    .filter((term) => normalized.includes(normalizeArabic(term)))
-    .map((term) => `TERM:${normalizeArabic(term)}`);
+    .filter((term) => normalized.includes(canonicalPhrase(term)))
+    .map((term) => `TERM:${canonicalPhrase(term)}`);
   return [...new Set([...canonical, ...literal])];
 }
 
@@ -156,13 +154,13 @@ function dateHours(a, b) {
 }
 
 function sameOrContainedTitle(a = "", b = "") {
-  const A = normalizeArabic(a);
-  const B = normalizeArabic(b);
+  const A = canonicalPhrase(a);
+  const B = canonicalPhrase(b);
   if (!A || !B || Math.min(A.length, B.length) < 18) return false;
   return A === B || A.includes(B) || B.includes(A);
 }
 
-function highConfidencePersonnelMatch(a, b, aEntities, bEntities) {
+function highConfidencePersonnelMatch(aEntities, bEntities, aActions, bActions) {
   const sharedPeople = intersection(
     aEntities.filter((value) => value.startsWith("PERSON_")),
     bEntities.filter((value) => value.startsWith("PERSON_"))
@@ -171,10 +169,7 @@ function highConfidencePersonnelMatch(a, b, aEntities, bEntities) {
     aEntities.filter((value) => value.startsWith("ORG_")),
     bEntities.filter((value) => value.startsWith("ORG_"))
   );
-  const sharedActions = intersection(
-    actionSignals(a.originalTitleArabic),
-    actionSignals(b.originalTitleArabic)
-  );
+  const sharedActions = intersection(aActions, bActions);
 
   if (!sharedPeople.length || !sharedOrganizations.length || !sharedActions.length) return null;
   return {
@@ -195,7 +190,6 @@ function eventScore(a, b) {
   const aTitle = tokens(a.originalTitleArabic);
   const bTitle = tokens(b.originalTitleArabic);
   const commonTitleTokens = intersection(aTitle, bTitle);
-  const commonTitle = commonTitleTokens.length;
   const titleJaccard = jaccard(aTitle, bTitle);
   const titleOverlap = overlapCoefficient(aTitle, bTitle);
 
@@ -207,22 +201,26 @@ function eventScore(a, b) {
   const bEntities = entitySignals(`${b.originalTitleArabic || ""}\n${b.originalTextArabic || ""}`);
   const sharedEntities = intersection(aEntities, bEntities);
   const entityScore = jaccard(aEntities, bEntities);
-  const commonEntities = sharedEntities.length;
 
-  const personnelMatch = highConfidencePersonnelMatch(a, b, aEntities, bEntities);
+  const aActions = actionSignals(a.originalTitleArabic);
+  const bActions = actionSignals(b.originalTitleArabic);
+  if (aActions.length && bActions.length && !intersection(aActions, bActions).length) {
+    return { score: 0, reason: "PERSONNEL_ACTION_CONFLICT", sharedSignals: [] };
+  }
+
+  const personnelMatch = highConfidencePersonnelMatch(aEntities, bEntities, aActions, bActions);
   if (personnelMatch) return personnelMatch;
 
   const aNumbers = numbers(`${a.originalTitleArabic || ""}\n${String(a.originalTextArabic || "").slice(0, 1400)}`);
   const bNumbers = numbers(`${b.originalTitleArabic || ""}\n${String(b.originalTextArabic || "").slice(0, 1400)}`);
   const sharedNumbers = intersection(aNumbers, bNumbers);
   const numberScore = jaccard(aNumbers, bNumbers);
-  const commonNumbers = sharedNumbers.length;
 
   const exactish = sameOrContainedTitle(a.originalTitleArabic, b.originalTitleArabic);
-  const strongTitle = commonTitle >= 3 && titleOverlap >= 0.67;
-  const supportedTitle = commonTitle >= 2
+  const strongTitle = commonTitleTokens.length >= 3 && titleOverlap >= 0.67;
+  const supportedTitle = commonTitleTokens.length >= 2
     && titleOverlap >= 0.45
-    && (commonEntities > 0 || commonNumbers > 0 || leadJaccard >= 0.16);
+    && (sharedEntities.length > 0 || sharedNumbers.length > 0 || leadJaccard >= 0.16);
 
   if (!exactish && !strongTitle && !supportedTitle) {
     return { score: 0, reason: "INSUFFICIENT_EVENT_EVIDENCE", sharedSignals: [] };
