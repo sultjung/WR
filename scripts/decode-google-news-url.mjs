@@ -32,11 +32,24 @@ function validUrl(value = "") {
   } catch { return ""; }
 }
 
-async function fetchTimeout(url, options, timeoutMs) {
+async function fetchTextTimeout(url, options, timeoutMs) {
   const controller = new AbortController();
-  const timer = setTimeout(() => controller.abort(), timeoutMs);
-  try { return await fetch(url, { ...options, signal: controller.signal }); }
-  finally { clearTimeout(timer); }
+  let timedOut = false;
+  const timer = setTimeout(() => {
+    timedOut = true;
+    controller.abort();
+  }, timeoutMs);
+
+  try {
+    const response = await fetch(url, { ...options, signal: controller.signal });
+    const text = await response.text();
+    return { response, text };
+  } catch (error) {
+    if (timedOut) throw new Error("GOOGLE_FETCH_TIMEOUT");
+    throw error;
+  } finally {
+    clearTimeout(timer);
+  }
 }
 
 function legacyBase64(id) {
@@ -69,7 +82,7 @@ function directPayload(id) {
 }
 
 async function postBatch(payload, timeoutMs) {
-  const response = await fetchTimeout(
+  const { response, text } = await fetchTextTimeout(
     "https://news.google.com/_/DotsSplashUi/data/batchexecute?rpcids=Fbv4je",
     {
       method: "POST",
@@ -85,7 +98,7 @@ async function postBatch(payload, timeoutMs) {
     timeoutMs
   );
   if (!response.ok) throw new Error(`GOOGLE_BATCH_HTTP_${response.status}`);
-  const decoded = parseBatch(await response.text());
+  const decoded = parseBatch(text);
   if (!decoded) throw new Error("GOOGLE_BATCH_RESPONSE_INVALID");
   return decoded;
 }
@@ -100,7 +113,7 @@ async function signedParams(id, timeoutMs) {
     `https://news.google.com/articles/${id}?hl=en-US&gl=US&ceid=US:en`,
     `https://news.google.com/rss/articles/${id}?hl=en-US&gl=US&ceid=US:en`
   ]) {
-    const response = await fetchTimeout(url, {
+    const { response, text: html } = await fetchTextTimeout(url, {
       redirect: "follow",
       headers: {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
@@ -108,7 +121,6 @@ async function signedParams(id, timeoutMs) {
       }
     }, timeoutMs);
     if (!response.ok) continue;
-    const html = await response.text();
     const signature = attribute(html, "data-n-a-sg");
     const timestamp = attribute(html, "data-n-a-ts");
     if (signature && timestamp) return { signature, timestamp };
