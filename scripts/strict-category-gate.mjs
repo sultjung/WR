@@ -3,8 +3,13 @@ import fs from "node:fs/promises";
 import path from "node:path";
 
 const ROOT = process.cwd();
-const ARTICLES_FILE = path.join(ROOT, "data", "articles.json");
-const SUMMARY_FILE = path.join(ROOT, "data", "strict-category-gate-summary.json");
+const ARTICLES_FILE = path.resolve(
+  process.env.STRICT_GATE_ARTICLES_FILE || path.join(ROOT, "data", "articles.json")
+);
+const SUMMARY_FILE = path.resolve(
+  process.env.STRICT_GATE_SUMMARY_FILE || path.join(ROOT, "data", "strict-category-gate-summary.json")
+);
+const PRIMARY_LEAD_CHARS = Number(process.env.STRICT_GATE_PRIMARY_LEAD_CHARS || 700);
 
 function normalizeArabic(value = "") {
   return String(value)
@@ -64,7 +69,9 @@ const IRAQ_INSTITUTIONS = [
   "رئيس الوزراء العراقي", "رئيس مجلس الوزراء العراقي", "الحكومة العراقية", "مجلس الوزراء العراقي",
   "مجلس النواب العراقي", "البرلمان العراقي", "رئاسة الجمهورية العراقية", "وزارة الخارجية العراقية",
   "وزارة المالية العراقية", "وزارة التخطيط العراقية", "وزارة النفط العراقية",
-  "وزارة الاعمار والاسكان", "البنك المركزي العراقي", "القضاء العراقي", "المحكمة الاتحادية",
+  "وزارة الاعمار والاسكان", "وزارة الاعمار والاسكان والبلديات العامة",
+  "وزارة الاعمار والاسكان والبلديات والاشغال العامة", "دائرة الطرق والجسور",
+  "البنك المركزي العراقي", "القضاء العراقي", "المحكمة الاتحادية",
   "الاطار التنسيقي", "هيئة النزاهة", "الهيئة الوطنية للاستثمار", "القوات العراقية",
   "الجيش العراقي", "الشرطة العراقية", "جهاز الامن الوطني", "الحشد الشعبي"
 ];
@@ -106,6 +113,9 @@ const INTERNATIONAL = [
   "امن الملاحة", "ناقلات النفط", "طرق الشحن", "تصعيد اقليمي", "حرب اقليمية", "العقوبات الاميركية",
   "مفاوضات نووية", "اسعار النفط العالمية", "برنت", "خام برنت", "دبي الخام"
 ];
+const INTERNATIONAL_DIRECT_MARKET = [
+  "مضيق هرمز", "اسعار النفط العالمية", "سعر النفط العالمي", "برنت", "خام برنت", "دبي الخام"
+];
 const FOREIGN_PLACES = [
   "سوريا", "درعا", "حماة", "حمص", "حلب", "دمشق", "لبنان", "بيروت", "فلسطين", "غزة",
   "ايران", "طهران", "اليمن", "صنعاء", "السعودية", "مصر", "القاهرة", "الاردن", "الكويت",
@@ -118,13 +128,30 @@ const NOISE = [
   "ملخص الاخبار", "نشرة الاخبار", "اخبار المغرب العاجلة"
 ];
 
-function hasDirectIraqLink(title, lead) {
-  const titleLead = `${title}\n${lead}`;
-  return hasAny(title, IRAQ_CORE)
-    || hasAny(titleLead, IRAQ_INSTITUTIONS)
-    || hasAny(titleLead, BISMAYAH)
-    || hasAny(titleLead, NIC)
-    || hasNicAcronym(titleLead);
+function hasStrongIraqInstitution(text = "") {
+  return hasAny(text, IRAQ_INSTITUTIONS)
+    || hasAny(text, BISMAYAH)
+    || hasAny(text, NIC)
+    || hasNicAcronym(text);
+}
+
+function iraqRelevance(title, lead) {
+  const opening = String(lead || "").slice(0, PRIMARY_LEAD_CHARS);
+  const titleHasIraq = hasAny(title, IRAQ_CORE) || hasStrongIraqInstitution(title);
+  const openingHasInstitution = hasStrongIraqInstitution(opening);
+  const openingHasIraq = hasAny(opening, IRAQ_CORE);
+  const foreignPrimaryTitle = hasAny(title, FOREIGN_PLACES) && !titleHasIraq;
+  const primary = titleHasIraq
+    || openingHasInstitution
+    || (!foreignPrimaryTitle && openingHasIraq);
+
+  return {
+    primary,
+    titleHasIraq,
+    openingHasInstitution,
+    openingHasIraq,
+    foreignPrimaryTitle
+  };
 }
 
 function setLockedCategory(article, category, reason) {
@@ -140,7 +167,7 @@ function setLockedCategory(article, category, reason) {
       to: category,
       reason,
       locked: true,
-      method: "STRICT_CATEGORY_GATE_V1"
+      method: "STRICT_CATEGORY_GATE_V2"
     }
   };
 }
@@ -148,6 +175,7 @@ function setLockedCategory(article, category, reason) {
 function evaluate(article) {
   const title = getTitle(article);
   const lead = cleanLead(article);
+  const opening = lead.slice(0, PRIMARY_LEAD_CHARS);
   const text = `${title}\n${lead}`;
   const current = getCategory(article);
   const keywordId = getKeywordId(article);
@@ -159,7 +187,7 @@ function evaluate(article) {
     return { action: "exclude", reason: "스포츠·연예·생활·목록형 기사" };
   }
 
-  const directIraq = hasDirectIraqLink(title, lead);
+  const relevance = iraqRelevance(title, lead);
   const isFullText = article.contentStatus === "FULL_TEXT";
   const bismayahMatch = hasAny(text, BISMAYAH)
     || (!isFullText && /^bismayah-/i.test(keywordId));
@@ -172,8 +200,11 @@ function evaluate(article) {
     return { action: "keep", category: "bismayah", reason: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련" };
   }
 
-  if (["politics", "economy", "security"].includes(current) && !directIraq) {
-    return { action: "exclude", reason: `${current} 카테고리이나 이라크 직접 연관 없음` };
+  if (["politics", "economy", "security"].includes(current) && !relevance.primary) {
+    const reason = relevance.foreignPrimaryTitle
+      ? `${current} 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침`
+      : `${current} 카테고리이나 제목·본문 도입부에 이라크 직접 연관 없음`;
+    return { action: "exclude", reason };
   }
 
   if (current === "politics") {
@@ -187,7 +218,7 @@ function evaluate(article) {
   }
 
   if (current === "security") {
-    if (hasAny(title, FOREIGN_PLACES) && !hasAny(title, IRAQ_CORE)) {
+    if (relevance.foreignPrimaryTitle && !relevance.titleHasIraq && !relevance.openingHasInstitution) {
       return { action: "exclude", reason: "해외에서 발생한 테러·치안 사건" };
     }
     if (!hasAny(text, SECURITY)) return { action: "exclude", reason: "이라크 치안 사건 신호 부족" };
@@ -196,7 +227,17 @@ function evaluate(article) {
 
   if (current === "international") {
     if (!hasAny(text, INTERNATIONAL)) return { action: "exclude", reason: "지정 국제사회 키워드 불일치" };
-    return { action: "keep", category: "international", reason: "지정 주변국·국제정세 키워드 일치" };
+    const strategicMarketLink = hasAny(`${title}\n${opening}`, INTERNATIONAL_DIRECT_MARKET);
+    if (!relevance.primary && !strategicMarketLink) {
+      return { action: "exclude", reason: "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사" };
+    }
+    return {
+      action: "keep",
+      category: "international",
+      reason: relevance.primary
+        ? "이라크와 직접 연결된 국제정세"
+        : "호르무즈·국제유가를 통한 이라크 사업 직접 영향"
+    };
   }
 
   return { action: "exclude", reason: "허용된 카테고리 또는 키워드 규칙 불일치" };
@@ -227,6 +268,10 @@ const categoryCounts = retained.reduce((acc, article) => {
   acc[article.category] = (acc[article.category] || 0) + 1;
   return acc;
 }, {});
+const excludedReasonCounts = excluded.reduce((acc, article) => {
+  acc[article.reason] = (acc[article.reason] || 0) + 1;
+  return acc;
+}, {});
 const generatedAt = new Date().toISOString();
 
 await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
@@ -238,14 +283,18 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.0",
+  schemaVersion: "1.1",
   generatedAt,
   before: articles.length,
   retained: retained.length,
   excludedCount: excluded.length,
+  primaryLeadChars: PRIMARY_LEAD_CHARS,
+  method: "STRICT_CATEGORY_GATE_V2",
   categoryCounts,
+  excludedReasonCounts,
   excluded
 }, null, 2)}\n`, "utf8");
 
 console.log(`[strict-category-gate] before=${articles.length} retained=${retained.length} excluded=${excluded.length}`);
 console.log(`[strict-category-gate] counts=${JSON.stringify(categoryCounts)}`);
+console.log(`[strict-category-gate] excludedReasons=${JSON.stringify(excludedReasonCounts)}`);
