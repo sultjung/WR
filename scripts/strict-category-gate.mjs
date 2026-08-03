@@ -152,9 +152,25 @@ const NOISE = [
   "ملخص الاخبار", "نشرة الاخبار", "اخبار المغرب العاجلة"
 ];
 
+function hasIraqPoliticalActor(text = "") {
+  const normalized = normalizeArabic(text);
+
+  return IRAQ_POLITICAL_ACTORS.some((actor) => {
+    const term = normalizeArabic(actor);
+    if (normalized.includes(term)) return true;
+
+    if (term.startsWith("ال")) {
+      const withLiPrefix = `لل${term.slice(2)}`;
+      if (normalized.includes(withLiPrefix)) return true;
+    }
+
+    return false;
+  });
+}
+
 function hasStrongIraqInstitution(text = "") {
   return hasAny(text, IRAQ_INSTITUTIONS)
-    || hasAny(text, IRAQ_POLITICAL_ACTORS)
+    || hasIraqPoliticalActor(text)
     || hasAny(text, BISMAYAH)
     || hasAny(text, NIC)
     || hasNicAcronym(text);
