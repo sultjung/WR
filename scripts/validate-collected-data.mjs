@@ -34,7 +34,15 @@ function isForbiddenArticleUrl(url = "") {
 }
 
 function normalizeArabic(value = "") {
-  return String(value).replace(/[\u064B-\u065F\u0670]/g, "").replace(/\u0640/g, "").replace(/[إأآٱ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه").replace(/\s+/g, " ").trim();
+  return String(value)
+    .replace(/[\u064B-\u065F\u0670]/g, "")
+    .replace(/\u0640/g, "")
+    .replace(/[إأآٱ]/g, "ا")
+    .replace(/ى/g, "ي")
+    .replace(/ة/g, "ه")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
 }
 
 function hasExactBismayah(value = "") {
@@ -44,6 +52,26 @@ function hasExactBismayah(value = "") {
 function hasAny(value = "", terms = []) {
   const text = normalizeArabic(value);
   return terms.some((term) => text.includes(normalizeArabic(term)));
+}
+
+function hasNicAcronym(value = "") {
+  return /(?:^|[^a-z0-9])nic(?:[^a-z0-9]|$)/i.test(String(value));
+}
+
+const BISMAYAH_TERMS = ["bismayah", "bismaya", "bncp"];
+const NIC_TERMS = [
+  "الهيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "رئيس الهيئة الوطنية للاستثمار",
+  "national investment commission", "iraq national investment commission",
+  "عادل الياسري", "عادل داخل الياسري", "حيدر مكية"
+];
+const HANWHA_TERMS = ["شركة هانوا", "هانوا", "hanwha", "한화"];
+const IRAQ_TERMS = ["العراق", "العراقي", "العراقية", "بغداد", "iraq", "iraqi"];
+
+function validBismayahFullText(value = "") {
+  const directBismayah = hasExactBismayah(value) || hasAny(value, BISMAYAH_TERMS);
+  const directNic = hasAny(value, NIC_TERMS) || hasNicAcronym(value);
+  const hanwhaIraq = hasAny(value, HANWHA_TERMS) && hasAny(value, IRAQ_TERMS);
+  return directBismayah || directNic || hanwhaIraq;
 }
 
 function validPoliticalFullText(value = "") {
@@ -115,8 +143,8 @@ for (const file of FILES) {
         errorCount += 1;
       }
       const combined = `${article.originalTitleArabic || ""}\n${article.originalTextArabic || ""}`;
-      if (article.category === "bismayah" && !hasExactBismayah(combined)) {
-        console.error(`[validate-data] ${label}[${index}]: Bismayah article lacks exact Bismayah term`);
+      if (article.category === "bismayah" && !validBismayahFullText(combined)) {
+        console.error(`[validate-data] ${label}[${index}]: Bismayah article lacks a direct Bismayah, NIC, NIC-chair, or Hanwha+Iraq anchor`);
         errorCount += 1;
       }
       if (article.category === "politics" && !validPoliticalFullText(combined)) {
