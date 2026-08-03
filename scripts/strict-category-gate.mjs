@@ -72,8 +72,17 @@ const IRAQ_INSTITUTIONS = [
   "وزارة الاعمار والاسكان", "وزارة الاعمار والاسكان والبلديات العامة",
   "وزارة الاعمار والاسكان والبلديات والاشغال العامة", "دائرة الطرق والجسور",
   "البنك المركزي العراقي", "القضاء العراقي", "المحكمة الاتحادية",
-  "الاطار التنسيقي", "هيئة النزاهة", "الهيئة الوطنية للاستثمار", "القوات العراقية",
-  "الجيش العراقي", "الشرطة العراقية", "جهاز الامن الوطني", "الحشد الشعبي"
+  "الاطار التنسيقي", "للاطار التنسيقي", "ائتلاف الاطار التنسيقي",
+  "هيئة النزاهة", "الهيئة الوطنية للاستثمار", "القوات العراقية",
+  "الجيش العراقي", "الشرطة العراقية", "جهاز الامن الوطني", "الحشد الشعبي",
+  "عصائب اهل الحق", "العصائب", "كتائب حزب الله", "تحالف الفتح", "ائتلاف دولة القانون"
+];
+const IRAQ_POLITICAL_ACTORS = [
+  "علي الزيدي", "الزيدي", "مكتب الزيدي",
+  "محمد شياع السوداني", "السوداني",
+  "نوري المالكي", "المالكي",
+  "هادي العامري", "العامري",
+  "قيس الخزعلي", "الخزعلي"
 ];
 const BISMAYAH = [
   "بسماية", "بسمايه", "مدينة بسماية الجديدة", "مشروع بسماية",
@@ -88,7 +97,7 @@ const NIC = [
   "عادل الياسري", "عادل داخل الياسري", "حيدر مكية"
 ];
 const POLITICS = [
-  "رئيس الوزراء", "مجلس الوزراء", "مجلس النواب", "البرلمان", "الاطار التنسيقي", "انتخابات",
+  "رئيس الوزراء", "مجلس الوزراء", "مجلس النواب", "البرلمان", "الاطار التنسيقي", "للاطار التنسيقي", "انتخابات",
   "تشكيل الحكومة", "تعيين", "تكليف", "اقالة", "استقالة", "تصويت", "جلسة", "قرار",
   "بيان", "اجتماع", "مباحثات", "زيارة رسمية", "وزارة الخارجية", "هيئة النزاهة",
   "المحكمة الاتحادية", "السيادة", "حصر السلاح بيد الدولة"
@@ -118,10 +127,11 @@ const INTERNATIONAL_DIRECT_MARKET = [
   "برنت", "خام برنت", "دبي الخام", "ازمة النفط"
 ];
 const INTERNATIONAL_OIL_ROUTE = [
-  "تصدير النفط", "صادرات النفط", "طرق تصدير النفط", "ناقلات النفط", "امدادات النفط"
+  "تصدير النفط", "صادرات النفط", "طرق تصدير النفط", "ناقلات النفط", "امدادات النفط",
+  "بدائل لتصدير النفط"
 ];
 const INTERNATIONAL_ROUTE_CONTEXT = [
-  "الخليج", "مضيق", "البحر الاحمر", "باب المندب", "قناة السويس", "الملاحة"
+  "الخليج", "مضيق", "البحر الاحمر", "باب المندب", "قناة السويس", "الملاحة", "الشرايين"
 ];
 const FOREIGN_PLACES = [
   "سوريا", "السوري", "السورية", "درعا", "حماة", "حمص", "حلب", "دمشق",
@@ -144,6 +154,7 @@ const NOISE = [
 
 function hasStrongIraqInstitution(text = "") {
   return hasAny(text, IRAQ_INSTITUTIONS)
+    || hasAny(text, IRAQ_POLITICAL_ACTORS)
     || hasAny(text, BISMAYAH)
     || hasAny(text, NIC)
     || hasNicAcronym(text);
@@ -185,7 +196,7 @@ function setLockedCategory(article, category, reason) {
       to: category,
       reason,
       locked: true,
-      method: "STRICT_CATEGORY_GATE_V2"
+      method: "STRICT_CATEGORY_GATE_V3"
     }
   };
 }
@@ -247,19 +258,24 @@ function evaluate(article) {
     if (!hasAny(text, INTERNATIONAL) && !relevance.primary) {
       return { action: "exclude", reason: "지정 국제사회 키워드 및 이라크 직접 연결 불일치" };
     }
+
     const internationalOpening = `${title}\n${opening}`;
-    const strategicMarketLink = hasAny(internationalOpening, INTERNATIONAL_DIRECT_MARKET)
-      || (hasAny(internationalOpening, INTERNATIONAL_OIL_ROUTE)
-        && hasAny(internationalOpening, INTERNATIONAL_ROUTE_CONTEXT));
+    const marketLedHeadline = hasAny(title, INTERNATIONAL_DIRECT_MARKET)
+      || hasAny(title, INTERNATIONAL_OIL_ROUTE);
+    const strategicMarketLink = marketLedHeadline
+      && (hasAny(internationalOpening, INTERNATIONAL_DIRECT_MARKET)
+        || (hasAny(internationalOpening, INTERNATIONAL_OIL_ROUTE)
+          && hasAny(internationalOpening, INTERNATIONAL_ROUTE_CONTEXT)));
+
     if (!relevance.primary && !strategicMarketLink) {
-      return { action: "exclude", reason: "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사" };
+      return { action: "exclude", reason: "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사" };
     }
     return {
       action: "keep",
       category: "international",
       reason: relevance.primary
         ? "이라크와 직접 연결된 국제정세"
-        : "호르무즈·국제유가를 통한 이라크 사업 직접 영향"
+        : "제목상 호르무즈·국제유가·원유수송을 통한 이라크 사업 직접 영향"
     };
   }
 
@@ -306,13 +322,13 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.1",
+  schemaVersion: "1.2",
   generatedAt,
   before: articles.length,
   retained: retained.length,
   excludedCount: excluded.length,
   primaryLeadChars: PRIMARY_LEAD_CHARS,
-  method: "STRICT_CATEGORY_GATE_V2",
+  method: "STRICT_CATEGORY_GATE_V3",
   categoryCounts,
   excludedReasonCounts,
   excluded
