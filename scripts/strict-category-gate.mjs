@@ -160,8 +160,12 @@ function evaluate(article) {
   }
 
   const directIraq = hasDirectIraqLink(title, lead);
-  const bismayahMatch = hasAny(text, BISMAYAH) || /^bismayah-/i.test(keywordId);
-  const nicMatch = hasAny(text, NIC) || hasNicAcronym(text) || /(?:^|-)nic(?:-|$)/i.test(keywordId);
+  const isFullText = article.contentStatus === "FULL_TEXT";
+  const bismayahMatch = hasAny(text, BISMAYAH)
+    || (!isFullText && /^bismayah-/i.test(keywordId));
+  const nicMatch = hasAny(text, NIC)
+    || hasNicAcronym(text)
+    || (!isFullText && /(?:^|-)nic(?:-|$)/i.test(keywordId));
   const hanwhaIraqMatch = hasAny(text, HANWHA) && hasAny(text, IRAQ_CORE);
 
   if (bismayahMatch || nicMatch || hanwhaIraqMatch) {
