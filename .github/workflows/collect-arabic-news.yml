@@ -57,6 +57,9 @@ jobs:
           URL_RESOLVE_CONCURRENCY: "4"
         run: npm run collect:resolve
 
+      - name: Snapshot processed article state
+        run: npm run collect:incremental-prepare
+
       - name: Fetch and validate Arabic full text
         env:
           CONTENT_FETCH_TIMEOUT_MS: "18000"
@@ -66,13 +69,19 @@ jobs:
           ARTICLE_RETENTION_DAYS: "30"
         run: npm run collect:content
 
+      - name: Repair invalid and metadata-based article titles
+        run: npm run collect:title-fix
+
+      - name: Preserve unchanged translations and analysis
+        run: npm run collect:incremental-preserve
+
       - name: Apply strict Iraq category gate
         run: npm run collect:strict-gate
 
-      - name: Group duplicate reports into events
+      - name: Group duplicate reports into related news
         env:
-          EVENT_GROUP_MAX_HOURS: "48"
-          EVENT_GROUP_MIN_SCORE: "0.58"
+          EVENT_GROUP_MAX_HOURS: "72"
+          EVENT_GROUP_MIN_SCORE: "0.50"
         run: npm run collect:events
 
       - name: Normalize fields for importance scoring
