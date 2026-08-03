@@ -1,10 +1,15 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-03T01:40:08.758Z",
+  "generatedAt": "2026-08-03T03:54:30.036Z",
   "groupCount": 304,
-  "duplicateGroupCount": 7,
-  "duplicateArticleCount": 8,
+  "duplicateGroupCount": 11,
+  "duplicateArticleCount": 13,
   "matches": [
+    {
+      "left": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+      "right": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "score": 0.5388
+    },
     {
       "left": "discovery-YuiObc5NIIm6SguP2y4ZiOBA",
       "right": "discovery-QCUcAdnY3qcimIo9CI0fFJkJ",
@@ -21,9 +26,24 @@
       "score": 0.8949
     },
     {
+      "left": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
+      "right": "discovery-5Yh_lTz0WtxScXSiarUbWIBt",
+      "score": 0.9119
+    },
+    {
+      "left": "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf",
+      "right": "discovery-C29P-vsLi-qS99DYjn7ijULo",
+      "score": 0.5038
+    },
+    {
       "left": "discovery-1mRUYHnsMM9ApIZb-nYbYG_O",
       "right": "discovery-DoGF2Ey4ANgERpuwqWNagvxa",
       "score": 1
+    },
+    {
+      "left": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
+      "right": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+      "score": 0.5375
     },
     {
       "left": "discovery-jhquaM-6CUPnU8lO8rtpnXT9",
@@ -39,6 +59,11 @@
       "left": "discovery-uhCFFRCX5s_HTLQA7F51Tpvw",
       "right": "discovery-9qUcYPc__QOB7VruWE7_V7aE",
       "score": 0.5944
+    },
+    {
+      "left": "discovery-uhCFFRCX5s_HTLQA7F51Tpvw",
+      "right": "discovery-sJqzDTTIAr2xaczy1IGOPOdQ",
+      "score": 0.5016
     },
     {
       "left": "discovery-9qUcYPc__QOB7VruWE7_V7aE",
@@ -110,7 +135,7 @@
           "sourceArabic": "Hespress",
           "articleUrl": "https://www.hespress.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%82%D8%A8%D9%84-%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D9%86%D8%A7%D8%AA%D9%88-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-1786464.html",
           "publishedAt": "2026-08-02T15:55:24.000Z",
-          "originalTitleArabic": "خارج الحدود",
+          "originalTitleArabic": "العراق يقبل \"مكتب الناتو\" في بغداد",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -222,7 +247,7 @@
       "sources": [
         {
           "articleId": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
-          "sourceArabic": "youm7.com",
+          "sourceArabic": "اليوم السابع",
           "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%A7%D9%84%D8%AA%D9%85%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9/7500589",
           "publishedAt": "2026-08-02T11:06:54.000Z",
           "originalTitleArabic": "التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك",
@@ -232,25 +257,35 @@
       ]
     },
     {
-      "groupId": "event-eSvC6HjOEQZuUeEUuA",
+      "groupId": "event-YR7hUyikEK1Ea7Kjfw",
       "category": "bismayah",
-      "representativeArticleId": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T10:33:54.000Z",
+      "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-08-02T10:26:00.000Z",
       "publishedTo": "2026-08-02T10:33:54.000Z",
       "memberArticleIds": [
+        "discovery-HN63pvdWJIR7OIIEONUV1DGU",
         "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP"
       ],
       "sources": [
         {
-          "articleId": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
-          "sourceArabic": "ekhbary24.com",
-          "articleUrl": "https://ekhbary24.com/%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%A8%D9%8A%D9%86-%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1/",
-          "publishedAt": "2026-08-02T10:33:54.000Z",
-          "originalTitleArabic": "melfaramawy416@gmail.com",
+          "articleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+          "sourceArabic": "صدى البلد",
+          "articleUrl": "https://www.elbalad.news/7059356",
+          "publishedAt": "2026-08-02T10:26:00.000Z",
+          "originalTitleArabic": "التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق",
           "titleKo": "",
           "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+          "sourceArabic": "ekhbary24 -",
+          "articleUrl": "https://ekhbary24.com/%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%A8%D9%8A%D9%86-%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1/",
+          "publishedAt": "2026-08-02T10:33:54.000Z",
+          "originalTitleArabic": "تعزيز التعاون الاقتصادي بين مصر والعراق",
+          "titleKo": "",
+          "isRepresentative": false
         }
       ]
     },
@@ -295,29 +330,6 @@
           "articleUrl": "https://almasalah.com/archives/139599",
           "publishedAt": "2026-08-02T10:30:57.000Z",
           "originalTitleArabic": "من هرمز إلى جيهان.. رهان حكومة الزيدي لتأمين مستقبل النفط العراقي",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-SRG1T0sPYdfYUvTE8M",
-      "category": "bismayah",
-      "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-08-02T10:26:00.000Z",
-      "publishedTo": "2026-08-02T10:26:00.000Z",
-      "memberArticleIds": [
-        "discovery-HN63pvdWJIR7OIIEONUV1DGU"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
-          "sourceArabic": "صدى البلد",
-          "articleUrl": "https://www.elbalad.news/7059356",
-          "publishedAt": "2026-08-02T10:26:00.000Z",
-          "originalTitleArabic": "التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -521,7 +533,7 @@
       "sources": [
         {
           "articleId": "discovery-gOXoAYr-xhZKPGioezeNvbaJ",
-          "sourceArabic": "youm7.com",
+          "sourceArabic": "اليوم السابع",
           "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%B1%D8%A6%D9%8A%D8%B3-%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B4%D8%AF%D8%AF-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B9-%D8%A3%D9%89-%D8%AA%D8%AC%D8%A7%D9%88%D8%B2-%D8%A3%D9%88-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF/7500085",
           "publishedAt": "2026-08-02T04:03:50.000Z",
           "originalTitleArabic": "رئيس وزراء العراق يشدد على منع أى تجاوز أو تهديد ينطلق من الأراضى العراقية تجاه دول الجوار",
@@ -778,6 +790,29 @@
           "articleUrl": "https://attasiaa.com/%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC%D9%8A-%D9%8A%D8%A8%D8%AD%D8%AB-%D8%B9%D9%86-%D9%85%D8%AE%D8%B1%D8%AC-%D9%85%D9%86-%D9%85%D8%B6%D9%8A%D9%82-%D9%87%D8%B1%D9%85%D8%B2/",
           "publishedAt": "2026-08-01T13:59:32.000Z",
           "originalTitleArabic": "النفط الخليجي يبحث عن مخرج من مضيق هرمز",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-yq5vfnNpUtfh8HxsvX",
+      "category": "economy",
+      "representativeArticleId": "discovery-x3ZfteteBtDYM42w7ueiL-5F",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-01T13:10:58.000Z",
+      "publishedTo": "2026-08-01T13:10:58.000Z",
+      "memberArticleIds": [
+        "discovery-x3ZfteteBtDYM42w7ueiL-5F"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-x3ZfteteBtDYM42w7ueiL-5F",
+          "sourceArabic": "ارض اشور",
+          "articleUrl": "https://ashourland.net/2026/08/01/%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%A5%D8%B9%D9%85%D8%A7%D8%B1-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%AA%D9%86%D9%81%D9%8A%D8%B0-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%B7%D8%B1%D9%8A/",
+          "publishedAt": "2026-08-01T13:10:58.000Z",
+          "originalTitleArabic": "وزارة الإعمار تواصل تنفيذ مشروع الطريق الحولي وجسر الموصل السابع في نينوى",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1084,7 +1119,7 @@
         {
           "articleId": "discovery-RNCckeMCDmtdDSNmExJ0LGoq",
           "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/31/%d8%ad%d8%b5%d8%a7%d8%b1-%d8%a7%d9%84%d8%b4%d8%b1%d8%a7%d9%8a%d9%8a%d9%86-%d8%a7%d9%84%d9%83%d8%a8%d8%b1%d9%89-%d9%83%d9%8a%d9%81-%d8%aa%d8%a8%d8%ad%d8%ab-%d8%af%d9%88%d9%84",
+          "articleUrl": "https://www.aljazeera.net/ebusiness/2026/7/31/%D8%AD%D8%B5%D8%A7%D8%B1-%D8%A7%D9%84%D8%B4%D8%B1%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%83%D8%A8%D8%B1%D9%89-%D9%83%D9%8A%D9%81-%D8%AA%D8%A8%D8%AD%D8%AB-%D8%AF%D9%88%D9%84",
           "publishedAt": "2026-07-31T18:04:16.000Z",
           "originalTitleArabic": "حصار الشرايين الكبرى.. كيف تبحث دول الخليج عن بدائل لتصدير النفط؟",
           "titleKo": "",
@@ -1333,6 +1368,29 @@
       ]
     },
     {
+      "groupId": "event-2iO3maWiNXtnZtqN0A",
+      "category": "politics",
+      "representativeArticleId": "discovery-IIhKV4kgZChxentrT9kjHt7G",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-30T21:35:13.000Z",
+      "publishedTo": "2026-07-30T21:35:13.000Z",
+      "memberArticleIds": [
+        "discovery-IIhKV4kgZChxentrT9kjHt7G"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-IIhKV4kgZChxentrT9kjHt7G",
+          "sourceArabic": "Elnashra",
+          "articleUrl": "https://www.elnashra.com/news/show/1793168/%D8%AE%D8%B7%D8%A9-%D9%86%D8%B2%D8%B9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A3%D9%81%D8%B6%D9%84-%D9%84%D8%A8%D9%86%D8%A7%D9%86!",
+          "publishedAt": "2026-07-30T21:35:13.000Z",
+          "originalTitleArabic": "خطة نزع السلاح... العراق أفضل من لبنان!",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
       "groupId": "event-YenRFB-pOYEbsh6m48",
       "category": "politics",
       "representativeArticleId": "discovery-Ogz5XmiIILefu4bZ37GpaCVz",
@@ -1350,6 +1408,29 @@
           "articleUrl": "https://www.skynewsarabia.com/video/1883785-%D9%82%D9%8A%D8%A7%D8%AF%D8%A7%D8%AA-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D8%A7%D9%84%D8%B4%D8%B9%D8%A8%D9%8A-%D8%AA%D8%AA%D8%AD%D8%AF%D9%89-%D9%82%D8%B1%D8%A7%D8%B1-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
           "publishedAt": "2026-07-30T21:28:00.000Z",
           "originalTitleArabic": "قيادات في الحشد الشعبي تتحدى قرار حصر السلاح بيد الدولة",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-PiLQE-M8JvtrDWffR-",
+      "category": "politics",
+      "representativeArticleId": "discovery-RfNMmjHZVk5FUg7a5ZEnDWQn",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-30T20:00:00.000Z",
+      "publishedTo": "2026-07-30T20:00:00.000Z",
+      "memberArticleIds": [
+        "discovery-RfNMmjHZVk5FUg7a5ZEnDWQn"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-RfNMmjHZVk5FUg7a5ZEnDWQn",
+          "sourceArabic": "البيان",
+          "articleUrl": "https://www.albayan.ae/news/middle-east/iraq/1543391",
+          "publishedAt": "2026-07-30T20:00:00.000Z",
+          "originalTitleArabic": "30 أمر قبض تكشف شبكة فساد داخل بلدية الديوانية",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1770,7 +1851,7 @@
       "sources": [
         {
           "articleId": "discovery-mAIG5-7OT1iszEz3Hc0cFKWF",
-          "sourceArabic": "aliraqnews.com",
+          "sourceArabic": "شبكة اخبار العراق",
           "articleUrl": "https://aliraqnews.com/%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D9%85%D9%88%D9%82%D9%81%D9%87-%D9%85%D9%86-%D8%A7%D9%84%D8%B6%D8%B1%D8%A8%D8%A7%D8%AA/",
           "publishedAt": "2026-07-29T22:16:48.000Z",
           "originalTitleArabic": "الإطار التنسيقي يعلن موقفه من الضربات الأميركية–السعودية: انتهاك للسيادة ويهدد استقرار المنطقة",
@@ -1793,7 +1874,7 @@
       "sources": [
         {
           "articleId": "discovery-NkiboJlLZvpH6FOAWPuxcytT",
-          "sourceArabic": "aliraqnews.com",
+          "sourceArabic": "شبكة اخبار العراق",
           "articleUrl": "https://aliraqnews.com/%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%85%D8%AA%D8%B3%D8%A7%D8%B1%D8%B9-%D8%A7%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%8A%D8%B9%D9%82%D8%AF-%D8%A7%D8%AC%D8%AA/",
           "publishedAt": "2026-07-29T22:06:11.000Z",
           "originalTitleArabic": "تصعيد متسارع.. الإطار التنسيقي يعقد اجتماع أزمة بعد الضربات الأميركية–السعودية",
@@ -2585,6 +2666,29 @@
       ]
     },
     {
+      "groupId": "event-ST_6gkGDovO-iZaxgg",
+      "category": "politics",
+      "representativeArticleId": "discovery-7K_o-KH_NFjScvNhYghVMQZc",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-28T18:47:45.000Z",
+      "publishedTo": "2026-07-28T18:47:45.000Z",
+      "memberArticleIds": [
+        "discovery-7K_o-KH_NFjScvNhYghVMQZc"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-7K_o-KH_NFjScvNhYghVMQZc",
+          "sourceArabic": "شبكة سرمد الإعلامية",
+          "articleUrl": "https://sarmad.com/337480/",
+          "publishedAt": "2026-07-28T18:47:45.000Z",
+          "originalTitleArabic": "السعودية تؤكد عدم تهاونها في حماية أمنها ومصالحها ومقدراتها الوطنية",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
       "groupId": "event-mVWaxgWWW4FHIqBAFg",
       "category": "politics",
       "representativeArticleId": "discovery-yUZUnzG72bbfln4bfrGfgKtK",
@@ -2677,38 +2781,16 @@
       ]
     },
     {
-      "groupId": "event-QI1gD7xovSnbXdG0SV",
-      "category": "politics",
-      "representativeArticleId": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T17:00:47.000Z",
-      "publishedTo": "2026-07-28T17:00:47.000Z",
-      "memberArticleIds": [
-        "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
-          "sourceArabic": "برس بي",
-          "articleUrl": "https://arabic.pressbee.net/show10879728.html?title\\=%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%8A%D8%AF%D9%8A%D9%86-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A",
-          "publishedAt": "2026-07-28T17:00:47.000Z",
-          "originalTitleArabic": "مجلس الوزراء يدين اعتداءات الميليشيات الإرهابية التابعة لإيران في اليمن والعراق على منشآت نفطية - عاجل ...السعودية",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-nJgOsPtBghZ6Jjuqo0",
+      "groupId": "event-ZjCaAYTHtzOH4XS9gH",
       "category": "politics",
       "representativeArticleId": "discovery-5Yh_lTz0WtxScXSiarUbWIBt",
-      "memberCount": 1,
-      "duplicateCount": 0,
+      "memberCount": 2,
+      "duplicateCount": 1,
       "publishedFrom": "2026-07-28T16:40:00.000Z",
-      "publishedTo": "2026-07-28T16:40:00.000Z",
+      "publishedTo": "2026-07-28T17:00:47.000Z",
       "memberArticleIds": [
-        "discovery-5Yh_lTz0WtxScXSiarUbWIBt"
+        "discovery-5Yh_lTz0WtxScXSiarUbWIBt",
+        "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj"
       ],
       "sources": [
         {
@@ -2716,7 +2798,39 @@
           "sourceArabic": "alyaum",
           "articleUrl": "https://www.alyaum.com/articles/6675276/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D8%A7%D9%84%D9%85%D9%85%D9%84%D9%83%D8%A9-%D8%A7%D9%84%D9%8A%D9%88%D9%85/%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%8A%D8%AF%D9%8A%D9%86-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D9%85%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%B4%D8%A2%D8%AA-%D9%86%D9%81%D8%B7%D9%8A%D8%A9",
           "publishedAt": "2026-07-28T16:40:00.000Z",
-          "originalTitleArabic": "https://www.alyaum.com/الأخبار",
+          "originalTitleArabic": "مجلس الوزراء يدين اعتداءات الميليشيات الإرهابية التابعة لإيران في اليمن والعراق على منشآت نفطية",
+          "titleKo": "",
+          "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-rIF4bfpc-2Vf-B_VNrnbnkbj",
+          "sourceArabic": "برس بي",
+          "articleUrl": "https://arabic.pressbee.net/show10879728.html?title\\=%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D9%8A%D8%AF%D9%8A%D9%86-%D8%A7%D8%B9%D8%AA%D8%AF%D8%A7%D8%A1%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%8A%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A5%D8%B1%D9%87%D8%A7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%A7%D8%A8%D8%B9%D8%A9-%D9%84%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A",
+          "publishedAt": "2026-07-28T17:00:47.000Z",
+          "originalTitleArabic": "مجلس الوزراء يدين اعتداءات الميليشيات الإرهابية التابعة لإيران في اليمن والعراق على منشآت نفطية - عاجل ...السعودية",
+          "titleKo": "",
+          "isRepresentative": false
+        }
+      ]
+    },
+    {
+      "groupId": "event-ncMjWzhDW8KYiCgq-1",
+      "category": "politics",
+      "representativeArticleId": "discovery-LAcFLrmBGY0qUl1HArmOz_Iw",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-28T16:58:50.000Z",
+      "publishedTo": "2026-07-28T16:58:50.000Z",
+      "memberArticleIds": [
+        "discovery-LAcFLrmBGY0qUl1HArmOz_Iw"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-LAcFLrmBGY0qUl1HArmOz_Iw",
+          "sourceArabic": "ارض اشور",
+          "articleUrl": "https://ashourland.net/2026/07/28/%D8%A7%D9%84%D8%A8%D9%8A%D8%A7%D9%86-%D8%A7%D9%84%D9%85%D8%B4%D8%AA%D8%B1%D9%83-%D8%A8%D9%8A%D9%86-%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%A7%D9%84-2/",
+          "publishedAt": "2026-07-28T16:58:50.000Z",
+          "originalTitleArabic": "البيان المشترك بين جمهورية العراق والجمهورية التركية بمناسبة اختتام الزيارة الرسمية لرئيس مجلس الوزراء العراقي إلى أنقرة",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -2884,17 +2998,27 @@
       ]
     },
     {
-      "groupId": "event-5sJz9kiX2_qr9SfpV1",
+      "groupId": "event-9SOCqyt8CulG9Hzcx-",
       "category": "politics",
-      "representativeArticleId": "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-28T09:50:19.000Z",
+      "representativeArticleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-07-27T20:53:46.000Z",
       "publishedTo": "2026-07-28T09:50:19.000Z",
       "memberArticleIds": [
+        "discovery-C29P-vsLi-qS99DYjn7ijULo",
         "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf"
       ],
       "sources": [
+        {
+          "articleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
+          "sourceArabic": "قناة الرشيد الفضائية",
+          "articleUrl": "https://www.alrasheedmedia.com/2026/07/27/693904/",
+          "publishedAt": "2026-07-27T20:53:46.000Z",
+          "originalTitleArabic": "الاطار التنسيقي يؤكد موقفه بدعم جهود محاربة الفساد وحصر السلاح بيد الدولة",
+          "titleKo": "",
+          "isRepresentative": true
+        },
         {
           "articleId": "discovery-sHZZ2D3rCVvHLHj8vlxR-jGf",
           "sourceArabic": "taghribnews.com",
@@ -2902,7 +3026,7 @@
           "publishedAt": "2026-07-28T09:50:19.000Z",
           "originalTitleArabic": "الإطار التنسيقي في العراق يؤكد دعمه لمحاربة الفساد وحصر السلاح بيد الدولة | وكالة أنباء التقريب (TNA)",
           "titleKo": "",
-          "isRepresentative": true
+          "isRepresentative": false
         }
       ]
     },
@@ -3292,29 +3416,6 @@
           "articleUrl": "https://964media.com/702534/",
           "publishedAt": "2026-07-27T20:56:01.000Z",
           "originalTitleArabic": "الإطار التنسيقي يدعم حصر السلاح بيد الدولة ويرفض استخدام أراضي الدول للاعتداء",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-Hf5ctuQAGyGY443Lm5",
-      "category": "politics",
-      "representativeArticleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-27T20:53:46.000Z",
-      "publishedTo": "2026-07-27T20:53:46.000Z",
-      "memberArticleIds": [
-        "discovery-C29P-vsLi-qS99DYjn7ijULo"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-C29P-vsLi-qS99DYjn7ijULo",
-          "sourceArabic": "قناة الرشيد الفضائية",
-          "articleUrl": "https://www.alrasheedmedia.com/2026/07/27/693904/",
-          "publishedAt": "2026-07-27T20:53:46.000Z",
-          "originalTitleArabic": "الاطار التنسيقي يؤكد موقفه بدعم جهود محاربة الفساد وحصر السلاح بيد الدولة",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -5631,15 +5732,16 @@
       ]
     },
     {
-      "groupId": "event-BuukM8ORTe4TEodNyQ",
+      "groupId": "event-QVxICL01NcOfASoRT5",
       "category": "international",
       "representativeArticleId": "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-20T08:43:07.000Z",
+      "memberCount": 2,
+      "duplicateCount": 1,
+      "publishedFrom": "2026-07-19T07:00:00.000Z",
       "publishedTo": "2026-07-20T08:43:07.000Z",
       "memberArticleIds": [
-        "discovery-gQO7DK9Zh1BlfeeWjVe1akol"
+        "discovery-gQO7DK9Zh1BlfeeWjVe1akol",
+        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ"
       ],
       "sources": [
         {
@@ -5650,6 +5752,15 @@
           "originalTitleArabic": "ارتفاع صادرات الخليج النفطية رغم تباطؤ حركة الملاحة بمضيق هرمز",
           "titleKo": "",
           "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
+          "sourceArabic": "صدى البلد",
+          "articleUrl": "https://www.elbalad.news/7043972",
+          "publishedAt": "2026-07-19T07:00:00.000Z",
+          "originalTitleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
+          "titleKo": "",
+          "isRepresentative": false
         }
       ]
     },
@@ -6118,29 +6229,6 @@
           "articleUrl": "https://www.kurdistan24.net/ar/story/926799",
           "publishedAt": "2026-07-19T07:00:00.000Z",
           "originalTitleArabic": "النزاهة الاتحادية تطيح بمسؤول في الكهرباء اختلس مواد باكثر من 4 مليارات دينار",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-8kd_0wiHuf0AMLgLRS",
-      "category": "international",
-      "representativeArticleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-19T07:00:00.000Z",
-      "publishedTo": "2026-07-19T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-X-O5z4HsP2ucWeAXWnubJFQJ"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-X-O5z4HsP2ucWeAXWnubJFQJ",
-          "sourceArabic": "صدى البلد",
-          "articleUrl": "https://www.elbalad.news/7043972",
-          "publishedAt": "2026-07-19T07:00:00.000Z",
-          "originalTitleArabic": "ارتفاع صادرات النفط الخليجية رغم تباطؤ الملاحة في مضيق هرمز",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -6640,15 +6728,16 @@
       ]
     },
     {
-      "groupId": "event-Vo3WJe5Q5PXsTe6KPj",
+      "groupId": "event-fMvtWbrBb69lKIFhL5",
       "category": "security",
       "representativeArticleId": "discovery-9qUcYPc__QOB7VruWE7_V7aE",
-      "memberCount": 3,
-      "duplicateCount": 2,
+      "memberCount": 4,
+      "duplicateCount": 3,
       "publishedFrom": "2026-07-15T07:00:00.000Z",
       "publishedTo": "2026-07-16T07:00:00.000Z",
       "memberArticleIds": [
         "discovery-9qUcYPc__QOB7VruWE7_V7aE",
+        "discovery-sJqzDTTIAr2xaczy1IGOPOdQ",
         "discovery-0f7MmLurb4kCjdLF_CfRuADR",
         "discovery-uhCFFRCX5s_HTLQA7F51Tpvw"
       ],
@@ -6661,6 +6750,15 @@
           "originalTitleArabic": "العراق يفرض عقوبات على شبكات تمويل مرتبطة بحزب الله",
           "titleKo": "",
           "isRepresentative": true
+        },
+        {
+          "articleId": "discovery-sJqzDTTIAr2xaczy1IGOPOdQ",
+          "sourceArabic": "Kurdistan24",
+          "articleUrl": "https://www.kurdistan24.net/ar/story/925952",
+          "publishedAt": "2026-07-15T07:00:00.000Z",
+          "originalTitleArabic": "المالية العراقية تعمم عقوبات ضد شبكات تمويل وتسهيلات مالية لـ \"داعش\" وحزب الله",
+          "titleKo": "",
+          "isRepresentative": false
         },
         {
           "articleId": "discovery-0f7MmLurb4kCjdLF_CfRuADR",
@@ -7022,29 +7120,6 @@
           "articleUrl": "https://www.elbalad.news/7039550",
           "publishedAt": "2026-07-15T07:00:00.000Z",
           "originalTitleArabic": "رئيس وزراء العراق: عازمون على حصر السلاح بيد الدولة",
-          "titleKo": "",
-          "isRepresentative": true
-        }
-      ]
-    },
-    {
-      "groupId": "event-Kmf9YT_Zn388Rqj8GZ",
-      "category": "security",
-      "representativeArticleId": "discovery-sJqzDTTIAr2xaczy1IGOPOdQ",
-      "memberCount": 1,
-      "duplicateCount": 0,
-      "publishedFrom": "2026-07-15T07:00:00.000Z",
-      "publishedTo": "2026-07-15T07:00:00.000Z",
-      "memberArticleIds": [
-        "discovery-sJqzDTTIAr2xaczy1IGOPOdQ"
-      ],
-      "sources": [
-        {
-          "articleId": "discovery-sJqzDTTIAr2xaczy1IGOPOdQ",
-          "sourceArabic": "Kurdistan24",
-          "articleUrl": "https://www.kurdistan24.net/ar/story/925952",
-          "publishedAt": "2026-07-15T07:00:00.000Z",
-          "originalTitleArabic": "المالية العراقية تعمم عقوبات ضد شبكات تمويل وتسهيلات مالية لـ \"داعش\" وحزب الله",
           "titleKo": "",
           "isRepresentative": true
         }
