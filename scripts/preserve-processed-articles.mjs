@@ -44,6 +44,16 @@ function completedTranslation(item = {}) {
   return status === "COMPLETED" || Boolean(translation.fullTextKo || item.fullTextKo);
 }
 
+function pendingCard(reason) {
+  return {
+    status: "PENDING",
+    pipelineVersion: "FACTS_FIRST_V1",
+    titleKo: "",
+    summaryKo: "",
+    resetReason: reason
+  };
+}
+
 const currentPayload = await readJson(ARTICLES_FILE, { articles: [] });
 const previousPayload = await readJson(SNAPSHOT_FILE, { articles: [] });
 const current = Array.isArray(currentPayload) ? currentPayload : (currentPayload.articles || []);
@@ -61,6 +71,8 @@ const articles = current.map((item) => {
     newCount += 1;
     return {
       ...item,
+      cardFacts: item.cardFacts,
+      card: item.card || pendingCard("NEW_SOURCE"),
       contentHash: newHash || item.contentHash || "",
       contentCheckedAt: item.fetchedAt || new Date().toISOString(),
       contentChanged: false
@@ -74,6 +86,8 @@ const articles = current.map((item) => {
       ...item,
       translation: old.translation || item.translation,
       translationStatus: old.translationStatus || item.translationStatus,
+      cardFacts: old.cardFacts || item.cardFacts,
+      card: old.card || item.card,
       analysis: old.analysis || item.analysis,
       importance: old.importance || item.importance,
       eventGroup: old.eventGroup || item.eventGroup,
@@ -92,6 +106,12 @@ const articles = current.map((item) => {
       translation: completedTranslation(old)
         ? { status: "PENDING", translationStatus: "PENDING", titleKo: "", previewKo: "", fullTextKo: "", resetReason: "SOURCE_CONTENT_CHANGED" }
         : (item.translation || old.translation),
+      cardFacts: {
+        status: "PENDING",
+        pipelineVersion: "FACTS_FIRST_V1",
+        resetReason: "SOURCE_CONTENT_CHANGED"
+      },
+      card: pendingCard("SOURCE_CONTENT_CHANGED"),
       analysis: { ...(item.analysis || {}), status: "PENDING", resetReason: "SOURCE_CONTENT_CHANGED" },
       importance: undefined,
       contentHash: newHash,
@@ -107,6 +127,8 @@ const articles = current.map((item) => {
     ...item,
     translation: old.translation || item.translation,
     translationStatus: old.translationStatus || item.translationStatus,
+    cardFacts: old.cardFacts || item.cardFacts,
+    card: old.card || item.card,
     analysis: old.analysis || item.analysis,
     importance: old.importance || item.importance,
     eventGroup: old.eventGroup || item.eventGroup,
