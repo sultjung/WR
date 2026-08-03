@@ -12,7 +12,7 @@
     "collect:recover": "node scripts/recover-source-urls.mjs",
     "collect:resolve": "node scripts/resolve-article-urls.mjs",
     "collect:incremental-prepare": "node scripts/prepare-incremental-collection.mjs",
-    "collect:content": "node scripts/fetch-arabic-content.mjs",
+    "collect:content": "node scripts/run-fetch-arabic-content.mjs",
     "collect:title-fix": "node scripts/fix-generic-article-titles.mjs",
     "collect:incremental-preserve": "node scripts/preserve-processed-articles.mjs",
     "collect:strict-gate": "node scripts/strict-category-gate.mjs",
