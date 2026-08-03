@@ -1,21 +1,21 @@
 {
   "schemaVersion": "1.1",
-  "generatedAt": "2026-08-03T05:09:07.229Z",
+  "generatedAt": "2026-08-03T05:12:48.735Z",
   "before": 317,
-  "retained": 306,
-  "excludedCount": 11,
+  "retained": 296,
+  "excludedCount": 21,
   "primaryLeadChars": 700,
   "method": "STRICT_CATEGORY_GATE_V2",
   "categoryCounts": {
     "economy": 28,
     "security": 71,
-    "international": 68,
+    "international": 66,
     "bismayah": 7,
-    "politics": 132
+    "politics": 124
   },
   "excludedReasonCounts": {
-    "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사": 9,
-    "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침": 1,
+    "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사": 11,
+    "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침": 9,
     "security 카테고리이나 제목·본문 도입부에 이라크 직접 연관 없음": 1
   },
   "excluded": [
@@ -36,11 +36,51 @@
       "reason": "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사"
     },
     {
+      "articleId": "discovery-s_LdAHMR3C0bNdHrFECfENNN",
+      "titleArabic": "هجمات السعودية وأميركا تهدد المنطقة بأسرها – مخرجات اجتماع الإطار بحضور الزيدي",
+      "articleUrl": "https://964media.com/703281/",
+      "category": "politics",
+      "keywordId": "politics-cf-001",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-B86vvrB4pxUtNx2hVjB8yTSs",
+      "titleArabic": "مكتب الزيدي يعلن تفاصيل \"الاجتماع الطارئ\" للإطار التنسيقي بشأن الضربات الأميركية السعودية",
+      "articleUrl": "https://ultrairaq.ultrasawt.com/%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%A7%D9%84%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D8%B1%D8%A6-%D9%84%D9%84%D8%A5%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D8%B6%D8%B1%D8%A8%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/%D9%81%D8%B1%D9%8A%D9%82",
+      "category": "politics",
+      "keywordId": "politics-cf-001",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-fsieofXJHuhvkr2GTA9UaQuZ",
+      "titleArabic": "اجتماع عاجل للإطار التنسيقي لمناقشة القصف الأميركي - السعودي",
+      "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%B9%D8%A7%D8%AC%D9%84-%D9%84%D9%84-%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D9%84%D9%85%D9%86%D8%A7%D9%82%D8%B4%D8%A9-%D8%A7%D9%84%D9%82%D8%B5%D9%81-%D8%A7%D9%84-%D9%85%D9%8A%D8%B1%D9%83%D9%8A---%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A",
+      "category": "politics",
+      "keywordId": "politics-cf-001",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-OVxudmWHvW_hhLwz23qH22wU",
+      "titleArabic": "سياسي / سمو ولي العهد يرأس جلسة مجلس الوزراء في جدة",
+      "articleUrl": "https://www.spa.gov.sa/N2643266",
+      "category": "politics",
+      "keywordId": "politics-cabinet-002",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
       "articleId": "discovery-7K_o-KH_NFjScvNhYghVMQZc",
       "titleArabic": "السعودية تؤكد عدم تهاونها في حماية أمنها ومصالحها ومقدراتها الوطنية",
       "articleUrl": "https://sarmad.com/337480/",
       "category": "politics",
       "keywordId": "politics-cabinet-002",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-yUZUnzG72bbfln4bfrGfgKtK",
+      "titleArabic": "موقف محرج للزيدي بعد رفض وزير النقل التوقيع على اتفاقية مع تركيا (فيديو)",
+      "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D9%85%D9%88%D9%82%D9%81-%D9%85%D8%AD%D8%B1%D8%AC-%D9%84%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%B1%D9%81%D8%B6-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D9%86%D9%82%D9%84-%D8%A7%D9%84%D8%AA%D9%88%D9%82%D9%8A%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D8%AA%D9%81%D8%A7%D9%82%D9%8A%D8%A9-%D9%85%D8%B9-%D8%AA%D8%B1%D9%83%D9%8A%D8%A7-%D9%81%D9%8A%D8%AF%D9%8A%D9%88",
+      "category": "politics",
+      "keywordId": "politics-government-formation-001",
       "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
     },
     {
@@ -68,6 +108,22 @@
       "reason": "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사"
     },
     {
+      "articleId": "discovery-GU_dLxnEGLSaXNkl5L79LV0C",
+      "titleArabic": "تمرد في العصائب وتنازلات مرحلية.. المركز العربي يفحص تحديات الزيدي بين نفود إيران وضغط أميركا",
+      "articleUrl": "https://ultrairaq.ultrasawt.com/%D8%AA%D9%85%D8%B1%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B5%D8%A7%D8%A6%D8%A8-%D9%88%D8%AA%D9%86%D8%A7%D8%B2%D9%84%D8%A7%D8%AA-%D9%85%D8%B1%D8%AD%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A-%D9%8A%D9%81%D8%AD%D8%B5-%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A8%D9%8A%D9%86-%D9%86%D9%81%D9%88%D8%AF-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D8%B6%D8%BA%D8%B7-%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D8%A7/%D8%A7%D9%84%D9%85%D8%B1%D9%83%D8%B2",
+      "category": "politics",
+      "keywordId": "politics-government-formation-001",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-f10qcwKCPiInBPKoaWF7OxFa",
+      "titleArabic": "خاص بـ\"الحرة\": طهران طالبت الزيدي بديون قيمتها 11 مليار دولار",
+      "articleUrl": "https://alhurra.com/29311",
+      "category": "international",
+      "keywordId": "international-hormuz-001",
+      "reason": "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사"
+    },
+    {
       "articleId": "discovery-H0TA4Owq_xpL3HpIboUpqvjo",
       "titleArabic": "لماذا تُعد جزيرة خارك حيوية لإيران والاقتصاد العالمي؟",
       "articleUrl": "https://www.vietnam.vn/ar/tai-sao-dao-kharg-lai-mang-y-nghia-song-con-doi-voi-iran-va-nen-kinh-te-toan-cau",
@@ -92,6 +148,22 @@
       "reason": "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사"
     },
     {
+      "articleId": "discovery-zvF-ZfT3Po0LZW5OY3x4gCpo",
+      "titleArabic": "الزيدي في إيران اليوم: الغاز على رأس المباحثات… ولا نقاش في «حصر السلاح»",
+      "articleUrl": "https://www.alquds.co.uk/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%81%D9%8A-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D9%8A%D9%88%D9%85-%D8%A7%D9%84%D8%BA%D8%A7%D8%B2-%D8%B9%D9%84%D9%89-%D8%B1%D8%A3%D8%B3-%D8%A7%D9%84%D9%85/",
+      "category": "politics",
+      "keywordId": "politics-security-policy-001",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
+    },
+    {
+      "articleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
+      "titleArabic": "سلاح الفصائل وخطوط واشنطن الحمراء.. حقيبة مثقلة ترافق الزيدي إلى إيران (خاص)",
+      "articleUrl": "https://al-ain.com/article/iraq-iran-war-factional-weapons-red-lines",
+      "category": "international",
+      "keywordId": "international-us-001",
+      "reason": "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사"
+    },
+    {
       "articleId": "discovery-ATDYLRq3f6wsIK9CMSbpoMC6",
       "titleArabic": "إيران في عين واشنطن… صراع النفوذ الذي يعيد رسم خريطة الشرق الأوسط - اسلام تايمز",
       "articleUrl": "https://www.islamtimes.com/ar/article/1293751/%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%81%D9%8A-%D8%B9%D9%8A%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%B5%D8%B1%D8%A7%D8%B9-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D8%A7%D9%84%D8%B0%D9%8A-%D9%8A%D8%B9%D9%8A%D8%AF-%D8%B1%D8%B3%D9%85-%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7",
@@ -106,6 +178,14 @@
       "category": "international",
       "keywordId": "international-gulf-001",
       "reason": "이라크 직접 영향 또는 호르무즈·국제유가 연결이 없는 해외 지역기사"
+    },
+    {
+      "articleId": "discovery-G45fvqRIWfN_WysZ8w0e8VoJ",
+      "titleArabic": "مصادر لـ”الحرة”: إيران ضغطت لإقناع الزيدي بزيارة طهران قبل واشنطن | الحرة",
+      "articleUrl": "https://alhurra.com/27297",
+      "category": "politics",
+      "keywordId": "politics-cf-002",
+      "reason": "politics 카테고리이나 해외 사건이 제목의 주제이고 이라크 핵심 연관은 본문 부수 언급에 그침"
     }
   ]
 }
