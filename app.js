@@ -1,5 +1,5 @@
 (()=>{
-  const state={articles:[],groups:new Map(),membersByGroup:new Map(),filter:"all",selected:new Set()};
+  const state={articles:[],membersByGroup:new Map(),filter:"all",selected:new Set()};
   const $=(id)=>document.getElementById(id);
   const CATEGORY_IDS={bismayah:"countBismayah",politics:"countPolitics",economy:"countEconomy",security:"countSecurity",international:"countInternational"};
   const escapeHtml=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
@@ -25,7 +25,7 @@
   const cardTitle=(article)=>String(article.card?.titleKo||article.translation?.titleKo||article.titleKo||"").trim();
   const koTitle=(article)=>cardTitle(article)||"한국어 카드 요약 대기";
   const arTitle=(article)=>recordOf(article).originalTitleArabic||article.originalTitleArabic||"";
-  const displayRelatedTitle=(article)=>cardTitle(article)||arTitle(article)||"제목 미확인";
+  const displayRelatedTitle=(article)=>String(article.relatedTitle?.titleKo||"").trim()||cardTitle(article)||arTitle(article)||"제목 미확인";
   const preview=(article)=>article.card?.summaryKo||article.translation?.previewKo||article.previewKo||"아랍어 원문에서 구조화된 사실을 추출한 뒤 한국어 카드 요약을 생성합니다.";
   const cardMethod=(article)=>article.card?.method==="STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD"?"원문 사실 추출 → 한국어 요약":"요약 대기";
   const importanceOf=(article)=>{
@@ -96,7 +96,7 @@
       if(!importanceMatches(importanceOf(article).score,importanceFilter)) return false;
       if(query){
         const relatedText=membersOf(article).map((member)=>[
-          koTitle(member),arTitle(member),sourceName(member),preview(member)
+          displayRelatedTitle(member),arTitle(member),sourceName(member),preview(member)
         ].join(" ")).join(" ");
         const text=[koTitle(article),arTitle(article),sourceName(article),preview(article),relatedText].join(" ").toLowerCase();
         if(!text.includes(query)) return false;
@@ -161,12 +161,11 @@
     setDefaultDateRange();
     try{
       const stamp=Date.now();
-      const [articleResponse,groupResponse]=await Promise.all([fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"}),fetch(`./data/event-groups.json?v=${stamp}`,{cache:"no-store"})]);
+      const articleResponse=await fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"});
       if(!articleResponse.ok) throw new Error(`articles HTTP ${articleResponse.status}`);
       const payload=await articleResponse.json();
       state.articles=Array.isArray(payload)?payload:(payload.articles||[]);
       rebuildGroups();
-      if(groupResponse.ok){const groupPayload=await groupResponse.json();state.groups=new Map((groupPayload.groups||[]).map((group)=>[group.groupId,group]));}
       $("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
     }catch(error){$("updatedAt").textContent="데이터 로드 실패";console.error(error);}
     apply();
