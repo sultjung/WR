@@ -4,10 +4,10 @@ import path from "node:path";
 
 const ROOT = process.cwd();
 const FILES = [
-  path.join(ROOT, "data", "discovered-articles.json"),
-  path.join(ROOT, "data", "recovered-articles.json"),
-  path.join(ROOT, "data", "resolved-articles.json"),
-  path.join(ROOT, "data", "articles.json")
+  { file: path.join(ROOT, "data", "discovered-articles.json"), required: false },
+  { file: path.join(ROOT, "data", "recovered-articles.json"), required: false },
+  { file: path.join(ROOT, "data", "resolved-articles.json"), required: false },
+  { file: path.join(ROOT, "data", "articles.json"), required: true }
 ];
 
 function hostnameOf(url = "") {
@@ -88,11 +88,16 @@ function validEconomyFullText(value = "") {
 
 let errorCount = 0;
 let warningCount = 0;
-for (const file of FILES) {
+for (const { file, required } of FILES) {
   const label = path.relative(ROOT, file);
   let payload;
-  try { payload = JSON.parse(await fs.readFile(file, "utf8")); }
-  catch (error) {
+  try {
+    payload = JSON.parse(await fs.readFile(file, "utf8"));
+  } catch (error) {
+    if (!required && error?.code === "ENOENT") {
+      console.log(`[validate-data] ${label}: skipped (runtime intermediate file not present)`);
+      continue;
+    }
     console.error(`[validate-data] ${label}: invalid or missing JSON - ${error.message}`);
     errorCount += 1;
     continue;
