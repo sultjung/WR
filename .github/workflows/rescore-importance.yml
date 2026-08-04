@@ -9,10 +9,12 @@ on:
       - ".github/workflows/rescore-importance.yml"
       - "scripts/group-duplicate-events.mjs"
       - "scripts/importance-business-rules.mjs"
+      - "scripts/importance-category-rules.mjs"
       - "scripts/importance-ai.mjs"
       - "scripts/apply-business-importance-floor.mjs"
       - "scripts/score-article-importance.mjs"
       - "scripts/prepare-importance-scoring.mjs"
+      - "scripts/test-category-importance-scoring.mjs"
       - "package.json"
 
 permissions:
@@ -49,6 +51,9 @@ jobs:
           fi
           echo "OPENAI_API_KEY is available to the workflow."
 
+      - name: Test category-relative importance rules
+        run: npm run test:importance-category
+
       - name: Regroup existing articles into related news
         env:
           EVENT_GROUP_MAX_HOURS: "72"
@@ -61,7 +66,7 @@ jobs:
       - name: Calculate category rule scores
         run: npm run collect:importance
 
-      - name: Evaluate Bismayah business importance with AI
+      - name: Evaluate importance within each category with AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           IMPORTANCE_AI_ENABLED: "true"
@@ -69,7 +74,7 @@ jobs:
           IMPORTANCE_MODEL: ${{ vars.IMPORTANCE_MODEL || 'gpt-4.1-mini' }}
           IMPORTANCE_MODEL_FALLBACKS: "gpt-4o-mini"
           IMPORTANCE_AI_BATCH_SIZE: "6"
-          IMPORTANCE_AI_MAX_ARTICLES: "80"
+          IMPORTANCE_AI_MAX_ARTICLES: "120"
           IMPORTANCE_AI_TIMEOUT_MS: "60000"
         run: npm run collect:importance-business
 
