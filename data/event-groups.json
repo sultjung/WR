@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.2",
-  "generatedAt": "2026-08-04T00:07:40.858Z",
+  "generatedAt": "2026-08-04T00:10:40.978Z",
   "groupCount": 342,
   "duplicateGroupCount": 13,
   "duplicateArticleCount": 18,
@@ -169,8 +169,8 @@
       ]
     },
     {
-      "left": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
-      "right": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+      "left": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+      "right": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
       "score": 1,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
