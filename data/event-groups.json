@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.2",
-  "generatedAt": "2026-08-04T00:10:40.978Z",
-  "groupCount": 342,
-  "duplicateGroupCount": 13,
-  "duplicateArticleCount": 18,
+  "generatedAt": "2026-08-04T00:49:17.373Z",
+  "groupCount": 344,
+  "duplicateGroupCount": 12,
+  "duplicateArticleCount": 17,
   "matches": [
     {
       "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
@@ -169,8 +169,8 @@
       ]
     },
     {
-      "left": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
-      "right": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
+      "left": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
+      "right": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
       "score": 1,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
@@ -257,26 +257,6 @@
         "PERSON_ADIL_AL_YASIRI",
         "ORG_NIC",
         "PERSONNEL_APPOINTMENT"
-      ]
-    },
-    {
-      "left": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
-      "right": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
-      "score": 1,
-      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
-      "sharedSignals": [
-        "TITLE:خريطه",
-        "TITLE:فصائل",
-        "TITLE:يرفض",
-        "TITLE:حصر",
-        "TITLE:سلاح",
-        "TITLE:عراق؟",
-        "TERM:اطار تنسيقي",
-        "TERM:ولايات متحده",
-        "TERM:ايران",
-        "TERM:بغداد",
-        "TERM:بصره",
-        "TERM:انبار"
       ]
     },
     {
@@ -802,6 +782,29 @@
           "articleUrl": "https://almaalomah.me/news/140121/economy/%D8%A7%D9%84%D9%85%D8%A7%D9%84%D9%8A%D8%A9-%D8%A7%D9%84%D9%86%D9%8A%D8%A7%D8%A8%D9%8A%D8%A9-%D9%84%D9%80%D8%A7%D9%84%D9%85%D8%B9%D9%84%D9%88%D9%85%D8%A9:-%D8%B1%D9%88%D8%A7%D8%AA%D8%A8-%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81%D9%8A%D9%86-%D9%85%D8%A4%D9%85%D9%86%D8%A9-%D9%88%D8%B2%D9%8A%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%AA",
           "publishedAt": "2026-08-03T06:11:46.000Z",
           "originalTitleArabic": "المالية النيابية لـ\"المعلومة\": رواتب الموظفين مؤمنة وزيادة التصدير عبر جيهان سيعزز الإيرادات",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
+      "groupId": "event-nezLh3m1CMqTb1mzhE",
+      "category": "economy",
+      "representativeArticleId": "discovery-3rgkh_f6-g7se34zfTUc9S00",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-08-03T01:43:05.000Z",
+      "publishedTo": "2026-08-03T01:43:05.000Z",
+      "memberArticleIds": [
+        "discovery-3rgkh_f6-g7se34zfTUc9S00"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-3rgkh_f6-g7se34zfTUc9S00",
+          "sourceArabic": "وكالة الانباء الاردنية",
+          "articleUrl": "https://petra.gov.jo/bin/index.php/ar/news/%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D9%88%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%AF%D9%86-%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%85%D9%84%D9%83%D8%A7%D9%86-%D9%81%D8%B1%D8%B5%D8%A7-%D9%88%D8%A7%D8%B9%D8%AF%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D9%88%D9%83%D8%A7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A%D8%A9",
+          "publishedAt": "2026-08-03T01:43:05.000Z",
+          "originalTitleArabic": "اقتصاديون: الأردن والعراق يملكان فرصا واعدة في الاستثمار والوكالات التجارية",
           "titleKo": "",
           "isRepresentative": true
         }
@@ -1423,7 +1426,7 @@
       "sources": [
         {
           "articleId": "discovery-Idy87ju7-ImCSmRLDSU7nW_Z",
-          "sourceArabic": "albiladdaily.com",
+          "sourceArabic": "جريدة البلاد السعودية",
           "articleUrl": "https://albiladdaily.com/2026/08/02/%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D9%85%D9%86-%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D9%88%D8%AA%D8%AD%D8%B0%D9%8A%D8%B1%D8%A7%D8%AA-%D8%A3%D9%85%D9%86%D9%8A%D8%A9-%D9%88%D8%A7%D8%B4%D9%86/",
           "publishedAt": "2026-08-01T23:27:02.000Z",
           "originalTitleArabic": "انسحاب من كردستان وتحذيرات أمنية.. واشنطن تعيد تموضع قواتها في العراق",
@@ -2373,6 +2376,29 @@
       ]
     },
     {
+      "groupId": "event-MQPCT919s7y8jG6UAp",
+      "category": "international",
+      "representativeArticleId": "discovery-nK9O0ALYV6di5SozuPbLkqfR",
+      "memberCount": 1,
+      "duplicateCount": 0,
+      "publishedFrom": "2026-07-30T20:18:54.000Z",
+      "publishedTo": "2026-07-30T20:18:54.000Z",
+      "memberArticleIds": [
+        "discovery-nK9O0ALYV6di5SozuPbLkqfR"
+      ],
+      "sources": [
+        {
+          "articleId": "discovery-nK9O0ALYV6di5SozuPbLkqfR",
+          "sourceArabic": "برس بي",
+          "articleUrl": "https://arabic.pressbee.net/show10884895.html?title\\=%D8%B3%D9%8A%D9%86%D8%A7%D8%B1%D9%8A%D9%88%D9%87%D8%A7%D9%86-%D9%85%D8%AE%D8%AA%D9%84%D9%81%D8%A7%D9%86-%D9%84%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
+          "publishedAt": "2026-07-30T20:18:54.000Z",
+          "originalTitleArabic": "سيناريوهان مختلفان لبغداد ...الشرق الأوسط",
+          "titleKo": "",
+          "isRepresentative": true
+        }
+      ]
+    },
+    {
       "groupId": "event-PiLQE-M8JvtrDWffR-",
       "category": "politics",
       "representativeArticleId": "discovery-RfNMmjHZVk5FUg7a5ZEnDWQn",
@@ -2577,27 +2603,17 @@
       ]
     },
     {
-      "groupId": "event-GiJoyPSsmUNWRTszf9",
+      "groupId": "event-mG0BGtEIdFQNS4F7k2",
       "category": "politics",
-      "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
-      "memberCount": 2,
-      "duplicateCount": 1,
+      "representativeArticleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
+      "memberCount": 1,
+      "duplicateCount": 0,
       "publishedFrom": "2026-07-30T12:11:55.000Z",
       "publishedTo": "2026-07-30T12:11:55.000Z",
       "memberArticleIds": [
-        "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
         "discovery-IwNHxQjJJ6V6T38NmMkxE5-D"
       ],
       "sources": [
-        {
-          "articleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
-          "sourceArabic": "الجزيرة نت",
-          "articleUrl": "https://www.aljazeera.net/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
-          "publishedAt": "2026-07-30T12:11:55.000Z",
-          "originalTitleArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟",
-          "titleKo": "",
-          "isRepresentative": true
-        },
         {
           "articleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
           "sourceArabic": "الجزيرة نت",
@@ -2605,7 +2621,7 @@
           "publishedAt": "2026-07-30T12:11:55.000Z",
           "originalTitleArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟",
           "titleKo": "",
-          "isRepresentative": false
+          "isRepresentative": true
         }
       ]
     },
