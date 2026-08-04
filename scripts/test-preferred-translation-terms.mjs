@@ -3,7 +3,8 @@ import assert from "node:assert/strict";
 import {
   GLOSSARY_HASH,
   GLOSSARY_VERSION,
-  preferredTermsForText
+  preferredTermsForText,
+  preferredTermsSignatureForText
 } from "./preferred-translation-terms.mjs";
 import {
   cardInputOf,
@@ -15,11 +16,14 @@ import {
 assert.ok(GLOSSARY_VERSION);
 assert.equal(GLOSSARY_HASH.length, 20);
 
-const matched = preferredTermsForText("اجتمع مجلس الوزراء في بغداد وبحث الأوضاع في مدينة بسماية الجديدة");
+const matchedText = "اجتمع مجلس الوزراء في بغداد وبحث الأوضاع في مدينة بسماية الجديدة";
+const matched = preferredTermsForText(matchedText);
 assert.ok(matched.some((item) => item.korean === "국무회의"));
 assert.ok(matched.some((item) => item.korean === "바그다드"));
 assert.ok(matched.some((item) => item.korean === "비스마야 신도시"));
 assert.equal(preferredTermsForText("اعتراض النواب على القرار").length, 0);
+assert.equal(preferredTermsSignatureForText(matchedText).length, 20);
+assert.equal(preferredTermsSignatureForText("اعتراض النواب على القرار"), "");
 
 const representative = {
   articleId: "representative-1",
@@ -60,8 +64,24 @@ assert.equal(relatedInput.id, "rt-0");
 assert.ok(relatedInput.preferredTerms.some((item) => item.korean === "합동작전사령부"));
 assert.ok(relatedInput.preferredTerms.some((item) => item.korean === "바그다드"));
 
-const normalized = normalizeRelatedTitleResult({ titleKo: "합동작전사령부, 바그다드에서 새 조치 발표" }, duplicate, "test-model");
+const normalized = normalizeRelatedTitleResult(
+  { titleKo: "합동작전사령부, 바그다드에서 새 조치 발표" },
+  duplicate,
+  "test-model"
+);
+assert.equal(normalized.preferredTermsSignature.length, 20);
 const completedDuplicate = { ...duplicate, relatedTitle: normalized };
 assert.equal(relatedTitleIsCurrent(completedDuplicate), true);
 
-console.log("[test-translation-terms] preferred proper-name references and related titles passed");
+const legacyDuplicate = {
+  ...duplicate,
+  relatedTitle: {
+    ...normalized,
+    preferredTermsSignature: undefined,
+    glossaryVersion: "legacy",
+    glossaryHash: "legacy"
+  }
+};
+assert.equal(relatedTitleIsCurrent(legacyDuplicate), true, "legacy related titles must not be mass-invalidated");
+
+console.log("[test-translation-terms] preferred terms, signatures, and legacy compatibility passed");
