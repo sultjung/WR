@@ -43,7 +43,7 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
-      - name: Test relevance, grouping, and facts-first card guards
+      - name: Test relevance, grouping, cards, and translation terms
         run: npm test
 
       - name: Discover broad Arabic news candidates with Google News
@@ -85,7 +85,7 @@ jobs:
       - name: Repair invalid and metadata-based article titles
         run: npm run collect:title-fix
 
-      - name: Preserve unchanged facts, cards, translations, and analysis
+      - name: Preserve unchanged facts, cards, translations, analysis, and related titles
         run: npm run collect:incremental-preserve
 
       - name: Enforce exact Iraq scope before classification and scoring
@@ -109,7 +109,7 @@ jobs:
       - name: Reapply final category gate
         run: npm run collect:strict-gate
 
-      - name: Evaluate Bismayah business importance with AI
+      - name: Evaluate importance within each category with AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           IMPORTANCE_AI_ENABLED: "true"
@@ -134,6 +134,18 @@ jobs:
           CARD_AI_TIMEOUT_MS: "90000"
           CARD_AI_RETRY_ATTEMPTS: "2"
         run: npm run collect:cards
+
+      - name: Translate duplicate-article titles into Korean
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RELATED_TITLE_AI_REQUIRED: "true"
+          RELATED_TITLE_MODEL: ${{ vars.RELATED_TITLE_MODEL || vars.CARD_KO_MODEL || 'gpt-4.1-mini' }}
+          RELATED_TITLE_MODEL_FALLBACKS: "gpt-4o-mini"
+          RELATED_TITLE_AI_BATCH_SIZE: "8"
+          RELATED_TITLE_MAX_ARTICLES: "300"
+          RELATED_TITLE_AI_RETRY_ATTEMPTS: "2"
+          CARD_AI_TIMEOUT_MS: "90000"
+        run: npm run collect:related-titles
 
       - name: Audit foreign-local leakage
         run: npm run audit:foreign-local
