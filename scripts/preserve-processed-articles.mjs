@@ -73,6 +73,7 @@ const articles = current.map((item) => {
       ...item,
       cardFacts: item.cardFacts,
       card: item.card || pendingCard("NEW_SOURCE"),
+      relatedTitle: item.relatedTitle,
       contentHash: newHash || item.contentHash || "",
       contentCheckedAt: item.fetchedAt || new Date().toISOString(),
       contentChanged: false
@@ -88,6 +89,7 @@ const articles = current.map((item) => {
       translationStatus: old.translationStatus || item.translationStatus,
       cardFacts: old.cardFacts || item.cardFacts,
       card: old.card || item.card,
+      relatedTitle: old.relatedTitle || item.relatedTitle,
       analysis: old.analysis || item.analysis,
       importance: old.importance || item.importance,
       eventGroup: old.eventGroup || item.eventGroup,
@@ -112,6 +114,7 @@ const articles = current.map((item) => {
         resetReason: "SOURCE_CONTENT_CHANGED"
       },
       card: pendingCard("SOURCE_CONTENT_CHANGED"),
+      relatedTitle: old.relatedTitle || item.relatedTitle,
       analysis: { ...(item.analysis || {}), status: "PENDING", resetReason: "SOURCE_CONTENT_CHANGED" },
       importance: undefined,
       contentHash: newHash,
@@ -129,6 +132,7 @@ const articles = current.map((item) => {
     translationStatus: old.translationStatus || item.translationStatus,
     cardFacts: old.cardFacts || item.cardFacts,
     card: old.card || item.card,
+    relatedTitle: old.relatedTitle || item.relatedTitle,
     analysis: old.analysis || item.analysis,
     importance: old.importance || item.importance,
     eventGroup: old.eventGroup || item.eventGroup,
