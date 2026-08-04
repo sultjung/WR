@@ -57,6 +57,26 @@ const CARD_SCHEMA = {
   required: ["results"]
 };
 
+const RELATED_TITLE_SCHEMA = {
+  type: "object",
+  additionalProperties: false,
+  properties: {
+    results: {
+      type: "array",
+      items: {
+        type: "object",
+        additionalProperties: false,
+        properties: {
+          id: { type: "string" },
+          titleKo: { type: "string" }
+        },
+        required: ["id", "titleKo"]
+      }
+    }
+  },
+  required: ["results"]
+};
+
 function responseText(payload = {}) {
   if (typeof payload.output_text === "string") return payload.output_text;
   return (payload.output || [])
@@ -160,6 +180,7 @@ export async function createKoreanCards(items) {
 각 id마다 한국어 제목 1개와 2~3문장의 카드 요약을 작성한다.
 제목은 원문 제목을 직역하지 말고 핵심 주체·행동·결과가 드러나도록 짧게 재작성한다.
 요약에는 주체, 장소, 행동 또는 결정, 결과를 우선 포함하고 인명·기관명·날짜·금액·수량은 누락하거나 바꾸지 않는다.
+preferredTerms는 입력 사실에 실제로 등장한 고유명사의 권장 한국어 표기다. 같은 대상을 지칭할 때 우선 사용하되, 일반 단어처럼 기계적으로 치환하거나 등장하지 않은 용어를 억지로 넣지 않는다.
 multipleAgendaItems가 true이면 회의 전체를 단일 안건처럼 왜곡하지 않는다.
 전망, 평가, 비스마야 영향, '주목된다', '가능성이 있다' 같은 문구를 임의로 만들지 않는다.
 한국어는 짧고 단정하게 작성하며 전문 번역은 생성하지 않는다.`;
@@ -170,5 +191,22 @@ multipleAgendaItems가 true이면 회의 전체를 단일 안건처럼 왜곡하
     schema: CARD_SCHEMA,
     schemaName: "korean_article_cards",
     maxOutputTokens: Math.max(1000, items.length * 360)
+  });
+}
+
+export async function translateRelatedTitles(items) {
+  const instruction = `당신은 이라크 뉴스 사이트의 관련기사 제목 번역자다.
+각 입력의 titleArabic만 근거로 한국어 제목 1개를 작성한다.
+원문의 주체·행동·대상·숫자·인명·기관명을 보존하고, 원문에 없는 결과·평가·전망을 추가하지 않는다.
+제목은 직역투를 피하되 원문의 의미를 바꾸지 말고 짧고 자연스러운 한국어 뉴스 제목으로 작성한다.
+preferredTerms는 제목에 실제로 등장한 고유명사의 권장 한국어 표기다. 같은 대상을 지칭할 때 우선 사용하되, 일반 단어처럼 강제 치환하거나 등장하지 않은 용어를 넣지 않는다.
+각 id마다 정확히 한 개의 결과를 반환한다.`;
+  return requestStructured({
+    items,
+    models: modelList("RELATED_TITLE_MODEL", "RELATED_TITLE_MODEL_FALLBACKS"),
+    instruction,
+    schema: RELATED_TITLE_SCHEMA,
+    schemaName: "korean_related_news_titles",
+    maxOutputTokens: Math.max(800, items.length * 140)
   });
 }
