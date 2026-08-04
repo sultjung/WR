@@ -17,7 +17,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: article-card-generation
+  group: wr-articles-data-writer
   cancel-in-progress: false
 
 jobs:
@@ -60,20 +60,45 @@ jobs:
           CARD_AI_MAX_ARTICLES: ${{ inputs.max_articles || '120' }}
           CARD_SOURCE_MAX_CHARS: "16000"
           CARD_AI_TIMEOUT_MS: "90000"
+          CARD_AI_RETRY_ATTEMPTS: "2"
         run: npm run collect:cards
 
       - name: Validate article cards
         run: npm run validate:data
 
-      - name: Commit generated cards
+      - name: Preserve generated card snapshot
+        run: cp data/articles.json "$RUNNER_TEMP/generated-article-cards.json"
+
+      - name: Merge cards into latest main and commit
+        env:
+          CARD_GENERATED_FILE: ${{ runner.temp }}/generated-article-cards.json
         run: |
-          if git diff --quiet -- data/articles.json; then
-            echo "No article-card changes"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/articles.json
-          git commit -m "Generate facts-first Korean article cards"
-          git pull --rebase origin main
-          git push origin main
+
+          for attempt in 1 2 3; do
+            echo "Safe card merge attempt ${attempt}/3"
+            git fetch origin main
+            git reset --hard origin/main
+
+            npm run collect:cards-merge
+            npm run validate:data
+
+            if git diff --quiet -- data/articles.json; then
+              echo "No article-card changes after merging with latest main"
+              exit 0
+            fi
+
+            git add data/articles.json
+            git commit -m "Generate facts-first Korean article cards"
+
+            if git push origin HEAD:main; then
+              echo "Article cards pushed successfully"
+              exit 0
+            fi
+
+            echo "::warning::main changed during card push; rebuilding on the latest remote data"
+          done
+
+          echo "::error::Unable to push article cards after 3 safe merge attempts"
+          exit 1
