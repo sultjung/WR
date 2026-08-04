@@ -13,7 +13,8 @@
     "test:foreign-local-audit": "node scripts/test-foreign-local-audit.mjs",
     "test:iraq-scope": "node scripts/test-enforce-iraq-scope.mjs",
     "test:cards": "node scripts/test-article-card-pipeline.mjs",
-    "test": "npm run test:gate && npm run test:events && npm run test:foreign-local-audit && npm run test:iraq-scope && npm run test:cards",
+    "test:cards-merge": "node scripts/test-article-card-merge.mjs",
+    "test": "npm run test:gate && npm run test:events && npm run test:foreign-local-audit && npm run test:iraq-scope && npm run test:cards && npm run test:cards-merge",
     "audit:foreign-local": "node scripts/audit-foreign-local-leakage.mjs",
     "collect:discover": "node scripts/collect-arabic-news.mjs",
     "collect:recover": "node scripts/recover-source-urls.mjs",
@@ -34,6 +35,7 @@
     "collect:importance": "node scripts/score-article-importance.mjs",
     "collect:importance-business": "node scripts/apply-business-importance-floor.mjs",
     "collect:cards": "node scripts/generate-article-cards.mjs",
+    "collect:cards-merge": "node scripts/merge-generated-article-cards.mjs",
     "collect": "npm run validate:config && npm run collect:discover && npm run collect:recover && npm run collect:resolve && npm run collect:incremental-prepare && npm run collect:content && npm run collect:title-fix && npm run collect:incremental-preserve && npm run collect:iraq-scope && npm run collect:strict-gate && npm run collect:events && npm run collect:importance-prepare && npm run collect:importance && npm run collect:strict-gate && npm run collect:importance-business && npm run collect:cards && npm run audit:foreign-local && npm run validate:data"
   },
   "engines": {
