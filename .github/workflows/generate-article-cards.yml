@@ -7,11 +7,26 @@ on:
         description: Maximum uncached representative articles to process
         required: false
         default: "120"
+      max_related_titles:
+        description: Maximum uncached duplicate-article titles to translate
+        required: false
+        default: "300"
   push:
     branches:
       - main
     paths:
       - .github/workflows/generate-article-cards.yml
+      - config/translation-glossary.json
+      - scripts/preferred-translation-terms.mjs
+      - scripts/article-card-core.mjs
+      - scripts/article-card-ai.mjs
+      - scripts/generate-article-cards.mjs
+      - scripts/generate-related-titles.mjs
+      - scripts/article-card-merge.mjs
+      - scripts/merge-generated-article-cards.mjs
+      - scripts/patch-related-title-display.mjs
+      - scripts/test-preferred-translation-terms.mjs
+      - package.json
 
 permissions:
   contents: write
@@ -46,7 +61,7 @@ jobs:
             exit 1
           fi
 
-      - name: Test facts-first card architecture
+      - name: Test facts-first card architecture and translation terms
         run: npm test
 
       - name: Generate structured facts and Korean cards
@@ -63,13 +78,25 @@ jobs:
           CARD_AI_RETRY_ATTEMPTS: "2"
         run: npm run collect:cards
 
+      - name: Translate duplicate-article titles into Korean
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          RELATED_TITLE_AI_REQUIRED: "true"
+          RELATED_TITLE_MODEL: ${{ vars.RELATED_TITLE_MODEL || vars.CARD_KO_MODEL || 'gpt-4.1-mini' }}
+          RELATED_TITLE_MODEL_FALLBACKS: "gpt-4o-mini"
+          RELATED_TITLE_AI_BATCH_SIZE: "8"
+          RELATED_TITLE_MAX_ARTICLES: ${{ inputs.max_related_titles || '300' }}
+          RELATED_TITLE_AI_RETRY_ATTEMPTS: "2"
+          CARD_AI_TIMEOUT_MS: "90000"
+        run: npm run collect:related-titles
+
       - name: Validate article cards
         run: npm run validate:data
 
       - name: Preserve generated card snapshot
         run: cp data/articles.json "$RUNNER_TEMP/generated-article-cards.json"
 
-      - name: Merge cards into latest main and commit
+      - name: Merge cards and Korean related titles into latest main
         env:
           CARD_GENERATED_FILE: ${{ runner.temp }}/generated-article-cards.json
         run: |
@@ -82,18 +109,19 @@ jobs:
             git reset --hard origin/main
 
             npm run collect:cards-merge
+            node scripts/patch-related-title-display.mjs
             npm run validate:data
 
-            if git diff --quiet -- data/articles.json; then
-              echo "No article-card changes after merging with latest main"
+            if git diff --quiet -- data/articles.json app.js; then
+              echo "No article-card, related-title, or UI changes after merging with latest main"
               exit 0
             fi
 
-            git add data/articles.json
-            git commit -m "Generate facts-first Korean article cards"
+            git add data/articles.json app.js
+            git commit -m "Generate Korean article cards and related-news titles"
 
             if git push origin HEAD:main; then
-              echo "Article cards pushed successfully"
+              echo "Article cards and related titles pushed successfully"
               exit 0
             fi
 
