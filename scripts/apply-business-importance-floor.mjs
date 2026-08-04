@@ -1,7 +1,15 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
-import { businessFloorFor, importanceArticleId, importanceFingerprint } from "./importance-business-rules.mjs";
+import {
+  businessFloorFor,
+  importanceArticleId,
+  importanceFingerprint
+} from "./importance-business-rules.mjs";
+import {
+  IMPORTANCE_SCORING_VERSION,
+  categoryFloorFor
+} from "./importance-category-rules.mjs";
 import { getImportanceAiScores } from "./importance-ai.mjs";
 
 const file = process.env.IMPORTANCE_ARTICLES_FILE || path.join(process.cwd(), "data", "articles.json");
@@ -9,8 +17,9 @@ const payload = JSON.parse(await fs.readFile(file, "utf8"));
 const articles = Array.isArray(payload.articles) ? payload.articles : [];
 const clamp = (value) => Math.max(0, Math.min(100, Math.round(Number(value) || 0)));
 const ruleScores = articles.map((article) => clamp(article.importance?.score ?? article.importance?.ruleScore ?? 0));
-const floors = articles.map(businessFloorFor);
-const ai = await getImportanceAiScores(articles, ruleScores, floors);
+const businessFloors = articles.map(businessFloorFor);
+const categoryFloors = articles.map(categoryFloorFor);
+const ai = await getImportanceAiScores(articles, ruleScores, businessFloors, categoryFloors);
 const scoredAt = new Date().toISOString();
 
 function levelOf(score) {
@@ -22,6 +31,10 @@ function levelOf(score) {
   return ["LOW", "낮음", "EXCLUDE", "REFERENCE"];
 }
 
+function strongerFloor(businessFloor, categoryFloor) {
+  return businessFloor.score >= categoryFloor.score ? businessFloor : categoryFloor;
+}
+
 function blendedScore(ruleScore, aiScore, floorScore) {
   if (aiScore === null) return Math.max(ruleScore, floorScore);
   const blended = Math.round(ruleScore * 0.35 + aiScore * 0.65);
@@ -30,18 +43,22 @@ function blendedScore(ruleScore, aiScore, floorScore) {
 
 const scored = articles.map((article, index) => {
   const previous = article.importance || {};
-  const floor = floors[index];
+  const businessFloor = businessFloors[index];
+  const categoryFloor = categoryFloors[index];
+  const floor = strongerFloor(businessFloor, categoryFloor);
   const aiResult = ai.scores.get(importanceArticleId(article, index)) || null;
   const aiScore = aiResult ? clamp(aiResult.score) : null;
   const score = blendedScore(ruleScores[index], aiScore, floor.score);
   const [level, levelKo, reportStatus, defaultPriority] = levelOf(score);
   const floorApplied = floor.score > 0 && floor.score >= score;
   const reportPriority = floorApplied
-    ? (floor.score >= 90 ? "MUST_INCLUDE" : floor.score >= 80 ? "PRIORITY_REVIEW" : "REFERENCE")
+    ? (floor.score >= 90 ? "MUST_INCLUDE" : floor.score >= 80 ? "PRIORITY_REVIEW" : floor.score >= 70 ? "REVIEW" : "REFERENCE")
     : (aiResult?.reportPriority || defaultPriority);
   const reasonKo = floorApplied
     ? floor.reasonKo
-    : (aiResult?.reasonKo || previous.reasonKo || floor.reasonKo || "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함");
+    : (aiResult?.reasonKo || previous.reasonKo || floor.reasonKo || "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함");
+  const categoryRelevance = aiResult?.categoryRelevance
+    || (floor.score >= 90 ? "DIRECT" : floor.score >= 70 ? "HIGH" : floor.score >= 40 ? "MEDIUM" : "LOW");
 
   return {
     ...article,
@@ -52,14 +69,22 @@ const scored = articles.map((article, index) => {
       levelKo,
       reportStatus,
       reportPriority,
-      businessRelevance: aiResult?.businessRelevance || (floor.score >= 90 ? "DIRECT" : floor.score >= 65 ? "INDIRECT" : "REFERENCE"),
+      categoryRelevance,
+      businessRelevance: categoryRelevance,
       reasonKo,
-      scoringMethod: ai.enabled ? "BUSINESS_FLOOR_AI_BLEND_V4" : "BUSINESS_FLOOR_RULES_V4",
-      scoringVersion: 4,
+      scoringMethod: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V5" : "CATEGORY_RELATIVE_RULES_V5",
+      scoringVersion: IMPORTANCE_SCORING_VERSION,
       scoredAt,
       scoreFingerprint: importanceFingerprint(article),
       ruleScore: ruleScores[index],
-      businessFloor: floor.score,
+      category: categoryFloor.category || previous.category || "",
+      categoryFloor: categoryFloor.score,
+      categoryFloorRule: categoryFloor.rule,
+      categoryFloorReasonKo: categoryFloor.reasonKo,
+      businessFloor: businessFloor.score,
+      businessFloorRule: businessFloor.rule,
+      businessFloorReasonKo: businessFloor.reasonKo,
+      floorScore: floor.score,
       floorRule: floor.rule,
       floorReasonKo: floor.reasonKo,
       aiScore,
@@ -84,12 +109,17 @@ await fs.writeFile(file, `${JSON.stringify({
   generatedAt: scoredAt,
   importanceScoring: {
     ...(payload.importanceScoring || {}),
-    method: ai.enabled ? "BUSINESS_FLOOR_AI_BLEND_V4" : "BUSINESS_FLOOR_RULES_V4",
-    version: 4,
+    method: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V5" : "CATEGORY_RELATIVE_RULES_V5",
+    version: IMPORTANCE_SCORING_VERSION,
+    evaluationPrinciple: "CATEGORY_RELATIVE",
     aiEnabled: ai.enabled,
     aiModel: ai.model,
     aiStats: ai.stats,
     scoredCount: scored.length,
+    categoryFloors: {
+      economyNationalStalledProjectOversight: 78,
+      economyStalledProjectOversight: 72
+    },
     businessFloors: {
       bismayahGovernmentDecision: 95,
       bismayahContractPaymentExecution: 95,
@@ -102,5 +132,5 @@ await fs.writeFile(file, `${JSON.stringify({
   articles: scored
 }, null, 2)}\n`, "utf8");
 
-console.log(`[importance-business] scored=${scored.length}, ai=${ai.enabled ? ai.model : "off"}, stats=${JSON.stringify(ai.stats || {})}`);
-console.log(`[importance-business] floors=${JSON.stringify(floorCounts)}`);
+console.log(`[importance-category] scored=${scored.length}, ai=${ai.enabled ? ai.model : "off"}, stats=${JSON.stringify(ai.stats || {})}`);
+console.log(`[importance-category] floors=${JSON.stringify(floorCounts)}`);
