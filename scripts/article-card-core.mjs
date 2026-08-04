@@ -2,7 +2,8 @@ import { createHash } from "node:crypto";
 import {
   GLOSSARY_HASH,
   GLOSSARY_VERSION,
-  preferredTermsForText
+  preferredTermsForText,
+  preferredTermsSignatureForText
 } from "./preferred-translation-terms.mjs";
 
 export const CARD_PIPELINE_VERSION = "FACTS_FIRST_V1";
@@ -40,9 +41,13 @@ function factsTextOf(facts = {}) {
 }
 
 function glossaryIsCurrent(stored = {}, sourceText = "") {
-  const matched = preferredTermsForText(sourceText);
-  if (!matched.length) return true;
-  return stored.glossaryVersion === GLOSSARY_VERSION && stored.glossaryHash === GLOSSARY_HASH;
+  const signature = preferredTermsSignatureForText(sourceText);
+  if (!signature) return true;
+
+  // Legacy cards predate term-level signatures. They remain usable instead of
+  // forcing a mass regeneration whenever the glossary file itself changes.
+  if (!stored.preferredTermsSignature) return true;
+  return stored.preferredTermsSignature === signature;
 }
 
 export function articleIdOf(article = {}, index = 0) {
@@ -135,6 +140,47 @@ export function relatedTitleIsCurrent(article = {}) {
     && Boolean(compact(relatedTitle.titleKo));
 }
 
+export function reconcileArticleCardState(article = {}) {
+  let next = article;
+  let factsReset = false;
+  let cardReset = false;
+  const factsStatus = String(article.cardFacts?.status || "").toUpperCase();
+  const cardStatus = String(article.card?.status || "").toUpperCase();
+
+  if (factsStatus === "COMPLETED" && !factsAreCurrent(article)) {
+    next = {
+      ...next,
+      cardFacts: {
+        ...(article.cardFacts || {}),
+        status: "PENDING",
+        pipelineVersion: CARD_PIPELINE_VERSION,
+        resetReason: "SOURCE_OR_PIPELINE_CHANGED"
+      }
+    };
+    factsReset = true;
+  }
+
+  if (cardStatus === "COMPLETED" && (factsReset || !cardIsCurrent(next))) {
+    next = {
+      ...next,
+      card: {
+        ...(article.card || {}),
+        status: "PENDING",
+        pipelineVersion: CARD_PIPELINE_VERSION,
+        resetReason: factsReset ? "FACTS_STALE" : "CARD_STALE"
+      }
+    };
+    cardReset = true;
+  }
+
+  return {
+    article: next,
+    factsReset,
+    cardReset,
+    changed: factsReset || cardReset
+  };
+}
+
 export function needsFacts(article = {}) {
   return isRepresentative(article) && hasUsableArabicSource(article) && !factsAreCurrent(article);
 }
@@ -220,7 +266,8 @@ export function normalizeFactsResult(item = {}, article = {}, model = "") {
 
 export function normalizeCardResult(item = {}, article = {}, model = "") {
   const facts = article.cardFacts || {};
-  const preferredTerms = preferredTermsForText(factsTextOf(facts));
+  const factsText = factsTextOf(facts);
+  const preferredTerms = preferredTermsForText(factsText);
   return {
     status: "COMPLETED",
     pipelineVersion: CARD_PIPELINE_VERSION,
@@ -230,6 +277,7 @@ export function normalizeCardResult(item = {}, article = {}, model = "") {
     factsHash: factsHashOf(facts),
     glossaryVersion: GLOSSARY_VERSION,
     glossaryHash: GLOSSARY_HASH,
+    preferredTermsSignature: preferredTermsSignatureForText(factsText),
     preferredTermsApplied: preferredTerms.map((term) => term.korean),
     model,
     generatedAt: new Date().toISOString(),
@@ -240,7 +288,8 @@ export function normalizeCardResult(item = {}, article = {}, model = "") {
 }
 
 export function normalizeRelatedTitleResult(item = {}, article = {}, model = "") {
-  const preferredTerms = preferredTermsForText(sourceTitleOf(article));
+  const title = sourceTitleOf(article);
+  const preferredTerms = preferredTermsForText(title);
   return {
     status: "COMPLETED",
     pipelineVersion: RELATED_TITLE_PIPELINE_VERSION,
@@ -248,6 +297,7 @@ export function normalizeRelatedTitleResult(item = {}, article = {}, model = "")
     sourceTitleHash: sourceTitleHashOf(article),
     glossaryVersion: GLOSSARY_VERSION,
     glossaryHash: GLOSSARY_HASH,
+    preferredTermsSignature: preferredTermsSignatureForText(title),
     preferredTermsApplied: preferredTerms.map((term) => term.korean),
     model,
     generatedAt: new Date().toISOString(),
