@@ -136,7 +136,7 @@
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}점</span>`;
-      const summaryBadge=cardStatus(article)==="completed"?`<span class="badge">${escapeHtml(cardMethod(article))}</span>`:`<span class="badge disabled">카드 요약 대기</span>`;
+      const summaryBadge=cardStatus(article)==="completed"?`<span class="badge">${escapeHtml(cardMethod(article))}</span>`:"";
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button">${selected?"선택됨":"보고서 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
