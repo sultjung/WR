@@ -94,6 +94,9 @@ export function mergeGeneratedCardData(latestPayload = {}, generatedPayload = {}
     return next;
   });
 
+  const changeCount = stats.factsMerged + stats.cardsMerged + stats.pendingCardsMerged;
+  if (!changeCount) return { output: latestPayload, stats };
+
   const mergedAt = new Date().toISOString();
   const output = Array.isArray(latestPayload)
     ? mergedArticles
