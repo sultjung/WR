@@ -11,22 +11,6 @@ on:
         description: Maximum uncached duplicate-article titles to translate
         required: false
         default: "300"
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/generate-article-cards.yml
-      - config/translation-glossary.json
-      - scripts/preferred-translation-terms.mjs
-      - scripts/article-card-core.mjs
-      - scripts/article-card-ai.mjs
-      - scripts/generate-article-cards.mjs
-      - scripts/generate-related-titles.mjs
-      - scripts/article-card-merge.mjs
-      - scripts/merge-generated-article-cards.mjs
-      - scripts/patch-related-title-display.mjs
-      - scripts/test-preferred-translation-terms.mjs
-      - package.json
 
 permissions:
   contents: write
@@ -90,8 +74,8 @@ jobs:
           CARD_AI_TIMEOUT_MS: "90000"
         run: npm run collect:related-titles
 
-      - name: Validate article cards
-        run: npm run validate:data
+      - name: Validate generated cards and related titles
+        run: npm run validate:cards
 
       - name: Preserve generated card snapshot
         run: cp data/articles.json "$RUNNER_TEMP/generated-article-cards.json"
@@ -109,15 +93,14 @@ jobs:
             git reset --hard origin/main
 
             npm run collect:cards-merge
-            node scripts/patch-related-title-display.mjs
-            npm run validate:data
+            npm run validate:cards
 
-            if git diff --quiet -- data/articles.json app.js; then
-              echo "No article-card, related-title, or UI changes after merging with latest main"
+            if git diff --quiet -- data/articles.json; then
+              echo "No article-card or related-title changes after merging with latest main"
               exit 0
             fi
 
-            git add data/articles.json app.js
+            git add data/articles.json
             git commit -m "Generate Korean article cards and related-news titles"
 
             if git push origin HEAD:main; then
