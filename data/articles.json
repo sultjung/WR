@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-04T01:48:08.567Z",
+  "generatedAt": "2026-08-04T06:38:27.048Z",
   "lookbackDays": 30,
-  "count": 361,
+  "count": 362,
   "categoryCounts": {
-    "international": 99,
-    "politics": 146,
-    "security": 80,
     "economy": 29,
-    "bismayah": 7
+    "security": 80,
+    "international": 99,
+    "bismayah": 7,
+    "politics": 147
   },
   "collectionRun": {
     "discoveredCount": 430,
@@ -14742,6 +14742,123 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+      "keywordId": "politics-security-policy-001",
+      "category": "politics",
+      "priority": 94,
+      "queryArabic": "\"حصر السلاح بيد الدولة\" العراق",
+      "requiredTerms": [
+        "حصر السلاح بيد الدولة"
+      ],
+      "optionalTerms": [
+        "الحشد الشعبي",
+        "الأمن القومي",
+        "الفصائل"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHomepage": "https://www.aljazeera.net",
+      "publishedAt": "2026-07-30T12:11:55.000Z",
+      "descriptionArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟ الجزيرة نت",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxQejZJeU1zWGlhalc5VjZkRWt0VjNJSEhMeEw4VEhrMy0yem9LbWVwUnF1T2d2TGFaUmkxNXBnTm84aEFKaGk3SmtSM0pSRlFBUEZkT0FTTTBoNE5rYnM3MUFacWJPU2x1dk9KUUs4dlhqaG5QTnQyNnpKLWNwOWRtMkZDWVhuWXZtUlpqYnBLcGJSRGxnbi1NRU1pRWhpU2x4Y2RhWFVCcjhvYXdaTXJLZlJUemZiZGotdmFtaHJzMW5QQ3B2VlJqVDZ1V2Nfckl0d0dRY1pmbUUyUUp6LVZlS0hmRlFXNUQ0ZjNUYkpkVi1UX0tUVlAwQzdZTDMzcjZ3dkh3TlJOaXlhWVdSSzNLYzNUdEdzem5kME4tY2E0cWdpTDFNcGFFV2x1OXJUX3NLSGJZZVVRSkhUeXM0dHM5U3BqbFViUENOSUdzUExhOWQ5d2xMeDZ0cjBDWlVPUdIB4wJBVV95cUxPU1V2SWk1VFU4RTFtakNkZFpJcmtoczFvQlVFLS1rV2ZPb1dDYVhOWVhkMXRMcUlDUEFNbHBxZWtvdVk3YWhIZlRyS3hjOFlOREJvZFlvRk84X3B3bEFUSjkyMjgwZDdzcTRLRUJQb2NBVmVXY3BXYU5fSFFOYUpMSkt3V2JGQTh4MkpnRzlRQldaNS1JTG16bkUtcUxOTzBVN08xQkZ3OXB3WXM3bG54SzBYZXl3TUgtaXFoWk1Cb3I4ODJJbGFMREJERXpMNlNpc0dndWtBejNTVDdqUW5XSDFXazgxWEgwODZ3Q3dHQmZHa0Z0TUdDaWZnNmhuSk1OODZlTjBQNTFlYjc2N21OaEpzTzJTRDdaZzJvRU9IcVpoVElPX19Ybmt2cmlqMnU2NnNmYVU5ZWxsVmVUNW45QnY5UUNCVi1pMHZRZVQtWWNwTlZxQzlscGljZTVyTFVvSHFr?oc=5",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:36:05.253Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "aljazeera-iraq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-08-03T04:36:13.518Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-08-03T04:37:01.318Z",
+      "canonicalUrl": "https://www.aljazeera.net/politics/2026/7/30/%d8%a7%d9%84%d9%81%d8%b5%d8%a7%d8%a6%d9%84-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a%d8%a9-%d8%ae%d8%b1%d8%a7%d8%a6%d8%b7-%d8%a7%d9%84%d9%86%d9%81%d9%88%d8%b0-%d9%88%d9%85%d8%b9%d8%b6%d9%84%d8%a9",
+      "originalTextArabic": "مراسلو الجزيرة \n سياسة | العراق \n\n خريطة الفصائل.. من يرفض حصر السلاح في العراق؟\n استمع استمع (9 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n أعضاء من حركة النجباء خلال احتجاج تضامني سابق مع غزة في بغداد (رويترز) \n\n أميمة مجيد \n\n Published On 30/7/2026 30/7/2026 \n | آخر تحديث: 18:52 (توقيت مكة) آخر تحديث: 18:52 (توقيت مكة) \n\n بغداد- مع اقتراب الموعد الذي حددته الحكومة العراقية للمضي في مشروع حصر السلاح بيد الدولة بعد 30 سبتمبر/أيلول المقبل، وهو ذاته موعد خروج قوات التحالف الدولي من البلاد، برزت انقسامات واضحة داخل الفصائل المسلحة المنضوية في ما يعرف بـ\" المقاومة الإسلامية في العراق \".\n ففي حين أبدت بعض الفصائل استعدادا للتجاوب مع الإجراءات الحكومية، أعلنت أخرى رفضها الصريح أو ربطت أي نقاش بشأن سلاحها بمستقبل الوجود العسكري الأمريكي والتطورات الإقليمية، ولا سيما الحرب الدائرة بين إيران وإسرائيل والولايات المتحدة.\n وتعد هذه الفصائل جزءا من تشكيلات الحشد الشعبي من الناحية القانونية، إلا أنها تمتلك في الوقت نفسه هياكل عسكرية مستقلة، وترسانات خاصة، وشبكات نفوذ تتجاوز الإطار العسكري إلى السياسي والاقتصادي.\n\n كتائب حزب الله \n تتصدر كتائب حزب الله قائمة الفصائل الأكثر نفوذا وتسليحا داخل العراق ، وتمثل رأس الحربة في خرائط محور المقاومة العراقية، ومن أكثر التشكيلات ارتباطا ب الحرس الثوري الإيراني، كما لعبت دورا محوريا في العمليات العسكرية ضد تنظيم الدولة الإسلامية ، قبل أن تتحول لاحقا إلى أحد أبرز أطراف المواجهة مع القوات الأمريكية.\n الكتائب التي يقودها أحمد الحميداوي، تقدر مراكز أبحاث أمنية عدد مقاتليها بما يتراوح بين 10 آلاف و15 ألف عنصر، إلى جانب قوات احتياط وشبكات لوجستية واستخبارية.\n وتضم ترسانتها صواريخ قصيرة ومتوسطة المدى، وطائرات مسيرة هجومية واستطلاعية، ومنظومات صاروخية ومدفعية، فضلا عن أسلحة مضادة للدروع وأجهزة اتصال واستخبارات، ما يجعلها من أكثر الفصائل امتلاكا للقدرات العسكرية النوعية.\n وتنتشر الكتائب في بغداد وجرف الصخر والأنبار وصلاح الدين وديالى ونينوى، إضافة إلى مناطق قريبة من الحدود العراقية السورية، حيث تحتفظ بمواقع لوجستية ومخازن تسليح.\n إعلان \n\n ورغم عدم مشاركتها المباشرة في الانتخابات، فإنها تتمتع بنفوذ سياسي عبر علاقاتها مع قوى الإطار التنسيقي ومنصب رئاسة الأركان في هيئة الحشد الشعبي، كما تدعم حركة \"حقوق\" البرلمانية بزعامة حسين مؤنس الذي كان ينتمي إلى جسدها.\n وفيما يتعلق بحصر السلاح، تتمسك الكتائب بموقفها الرافض لتسليم أسلحتها، معتبرة أن استمرار الوجود العسكري الأمريكي يبرر بقاء \"المقاومة\", كما تربط مستقبل سلاحها بالتطورات الإقليمية.\n أكرم الكعبي زعيم حركة النجباء (الجزيرة) حركة النجباء \n تعد حركة النجباء ثاني أكبر الفصائل الرافضة لحصر السلاح، تأسست عام 2013، يتزعمها أكرم الكعبي، شاركت في القتال داخل العراق وسوريا، وتعتبر من أكثر الفصائل قربا من إيران.\n وتشير التقديرات إلى أن عدد مقاتليها يتراوح بين 8 آلاف و10 آلاف عنصر، موزعين على تشكيلات قتالية متعددة. وتمتلك الحركة صواريخ متنوعة، وطائرات مسيرة، ومدفعية ميدانية، وآليات مدرعة، إلى جانب أسلحة خفيفة ومتوسطة وثقيلة.\n وينتشر مقاتلوها في بغداد والنجف وكربلاء وبابل وديالى وصلاح الدين ونينوى، فضلا عن وجودها على امتداد الشريط الحدودي مع سوريا، وتعد لاعبا مؤثرا داخل محور الفصائل المسلحة، كما تحتفظ بعلاقات وثيقة مع الحرس الثوري الإيراني و حزب الله اللبناني و جماعة الحوثي في اليمن.\n وتعلن الحركة بشكل صريح رفضها تسليم السلاح، إذ يؤكد قادتها أن \"سلاح المقاومة خط أحمر\"، ويرون أن بقاءه مرتبط باستمرار القواعد الأمريكية داخل العراق، كما يعلنون انخراطهم في \"محور المقاومة\" و\"وحدة الساحات\"، واستعدادهم للمشاركة في إسناد إيران إذا اتسعت الحرب في المنطقة، وهذا ما أكده عضو المكتب السياسي للحركة حيدر اللامي للجزيرة نت.\n تشييع مقاتل من كتائب \"سيد الشهداء\" في البصرة (رويترز) كتائب \"سيد الشهداء\" \n تأسست كتائب \"سيد الشهداء\" عام 2013، يتزعمها هاشم فنيان رحيم السراجي المعروف بـ\"أبي ولاء الولائي\"، وانخرطت منذ ذلك الحين في المعارك ضد تنظيم الدولة الإسلامية، كما شاركت في القتال داخل الأراضي السورية.\n وتقدر أعداد عناصرها بين 3 آلاف و5 آلاف مقاتل، وتضم ترسانتها راجمات صواريخ و طائرات مسيرة ومدفعية ميدانية وأسلحة متوسطة وثقيلة، بينما ينتشر عناصرها في بغداد والأنبار وديالى وصلاح الدين، إضافة إلى مواقع قريبة من الحدود العراقية السورية.\n وعلى المستوى السياسي، لا تمتلك الكتائب ثقلا مماثلا للفصائل الكبرى، إلا أنها تحافظ على حضور مؤثر داخل هيئة الحشد الشعبي والإطار التنسيقي، ولم تعلن الكتائب موافقتها على مشروع حصر السلاح، بل ربطت مستقبل هذا الملف بتطورات الصراع الإقليمي، معتبرة أن الظروف الأمنية الحالية ما تزال تبرر استمرار \"المقاومة\".\n\n \"أصحاب الكهف\" \n يعد \"أصحاب الكهف\" من أكثر التشكيلات المسلحة غموضا في العراق، إذ لا يملك هيكلا تنظيميا معلنا، ولا يعرف على وجه الدقة حجم قواته أو قيادته، فيما يرجح مراقبون أن يكون واجهة عملياتية أو إعلامية لفصائل أكبر.\n ظهرت المجموعة لأول مرة في أغسطس/آب 2019، بعد شن إسرائيل هجمات على مجاميع عراقية، ولكن ازداد نشاطها بعد اغتيال الجنرال الإيراني قاسم سليماني ونائب رئيس هيئة الحشد الشعبي أبو مهدي المهندس في مطار بغداد في يناير/كانون الثاني 2020.\n إعلان \n\n وكانت قد عرضت مكافأة تصل إلى 50 ألف دولار أمريكي للعراقيين الذين يمكنهم تقديم معلومات تتعلق بأنشطة المستثمرين والاقتصاديين من الولايات المتحدة والسعودية والإمارات والمملكة المتحدة، كما هددت لاحقا مواطنين سويديين وفرنسيين.\n أدانت الجماعة إعادة فتح منفذ عرعر الحدودي بين العراق والسعودية، مؤكدة التزامها بما أسمته \"رفض المشروع السعودي في العراق\"، وفي 19 أغسطس/آب 2024، أعلنت الجماعة إعادة تشكيلها تحت اسم \"كتائب صرخة القدس\"، قائلة إن \"أهدافها لا تقتصر على حدود اتفاقية سايكس بيكو التي فرضها المستعمرون\"، على حد وصفها.\n ولا تتوفر تقديرات دقيقة عن عدد عناصرها، غير أن معظم المراقبين يشيرون إلى أن الفصيل يضم مئات المقاتلين، وأنه يمتلك طائرات مسيرة وصواريخ قصيرة المدى وأسلحة خفيفة ومتوسطة، بينما يرتبط اسمه بعدد من الهجمات التي استهدفت مصالح أمريكية في العراق والمنطقة.\n ولا يعلن الفصيل مناطق انتشاره، ويواصل إصدار بيانات تؤكد استمرار العمل المسلح ضد القوات الأمريكية، رافضا أي حديث عن إنهاء نشاطه العسكري.\n أعضاء كتائب حزب الله في موكب حداد (الفرنسية) معضلة السلاح \n وتشير التقديرات إلى أن الفصائل التي تتحفظ أو ترفض تسليم سلاحها تمتلك عشرات آلاف المقاتلين، إضافة إلى ترسانة متنوعة من الأسلحة الثقيلة والخفيفة والطائرات المسيرة، وهو ما يجعل مشروع حصر السلاح بيد الدولة واحدا من أعقد الملفات التي تواجه الحكومة العراقية.\n وتكتسب هذه المعضلة بعدا آخر، إذ تنظر غالبية هذه الفصائل إلى سلاحها بوصفه جزءا من منظومة \"محور المقاومة\" في المنطقة، وليس مجرد قوة محلية، وهو ما يربط مستقبل هذا الملف بمآلات الصراع الإقليمي أكثر من ارتباطه بالتفاهمات السياسية داخل العراق.\n في المقابل، تشدد الحكومة على أن حصر السلاح بيد الدولة يمثل التزاما دستوريا وأحد أبرز بنود برنامجها، مؤكدة عزمها المضي في تنفيذ هذا المسار بعد انتهاء مهمة التحالف الدولي، وسط تساؤلات بشأن قدرة بغداد على الوصول إلى تسوية مع الفصائل، أو الانتقال إلى خيارات أكثر حسما إذا تعثرت الحلول السياسية.\n\n المصدر: الجزيرة",
+      "sourceHost": "aljazeera.net",
+      "contentChars": 6433,
+      "arabicRatio": 0.9942,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T04:39:27.181Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "importance": {
+        "score": 36,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 40,
+          "businessImpact": 0,
+          "politicalImpact": 9,
+          "reportValue": 10,
+          "sourceReliability": 8
+        },
+        "reportPriority": "REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "이라크 무장 세력 및 무기 집중 보유 문제 및 정부 정책 관련 기사로, 비스마야 사업과 직접적 연결은 없으나 무장 세력의 정치경제적 영향력이 사업 환경에 일부 영향을 줄 가능성이 있어 간접적인 중요도로 평가됨.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "d87b9f409d4fba76d4b9",
+        "ruleScore": 67,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 20,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "이라크 무장 세력 및 무기 집중 보유 문제 및 정부 정책 관련 기사로, 비스마야 사업과 직접적 연결은 없으나 무장 세력의 정치경제적 영향력이 사업 환경에 일부 영향을 줄 가능성이 있어 간접적인 중요도로 평가됨.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 7,
+          "contractPaymentImpact": 3,
+          "responseUrgency": 3,
+          "sourceReliability": 2
+        }
+      },
+      "eventGroup": {
+        "groupId": "event-GiJoyPSsmUNWRTszf9",
+        "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+        "isRepresentative": true,
+        "memberCount": 2,
+        "duplicateCount": 1
+      },
+      "contentHash": "15354242f653e75f06758dd2b34ab3ece4627bd021d2866c06cf738952dd9316",
+      "contentCheckedAt": "2026-08-03T04:39:27.181Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V3"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
       "keywordId": "politics-security-policy-001",
       "category": "politics",
@@ -14841,11 +14958,11 @@
         "aiBreakdown": null
       },
       "eventGroup": {
-        "groupId": "event-mG0BGtEIdFQNS4F7k2",
-        "representativeArticleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
+        "groupId": "event-GiJoyPSsmUNWRTszf9",
+        "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+        "isRepresentative": false,
+        "memberCount": 2,
+        "duplicateCount": 1
       },
       "contentHash": "15354242f653e75f06758dd2b34ab3ece4627bd021d2866c06cf738952dd9316",
       "contentCheckedAt": "2026-08-04T00:48:24.845Z",
@@ -54228,15 +54345,15 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V1",
-    "before": 409,
-    "retained": 387,
-    "excluded": 22,
+    "before": 383,
+    "retained": 383,
+    "excluded": 0,
     "leadChars": 2200
   },
   "eventGrouping": {
     "groupCount": 344,
-    "duplicateGroupCount": 12,
-    "duplicateArticleCount": 17,
+    "duplicateGroupCount": 13,
+    "duplicateArticleCount": 18,
     "maxHours": 72,
     "minScore": 0.5,
     "method": "ARABIC_CANONICAL_BILATERAL_EVENT_V4"

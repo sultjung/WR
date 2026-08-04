@@ -1,9 +1,9 @@
 {
   "schemaVersion": "1.2",
-  "generatedAt": "2026-08-04T01:43:44.070Z",
+  "generatedAt": "2026-08-04T06:38:27.090Z",
   "groupCount": 344,
-  "duplicateGroupCount": 12,
-  "duplicateArticleCount": 17,
+  "duplicateGroupCount": 13,
+  "duplicateArticleCount": 18,
   "matches": [
     {
       "left": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
@@ -169,8 +169,8 @@
       ]
     },
     {
-      "left": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
-      "right": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+      "left": "discovery-iLVkqR_oVgSoaRA-K9A05BHy",
+      "right": "discovery-aKSJIsIkgWCSb_2j0Y8cFPbM",
       "score": 1,
       "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
       "sharedSignals": [
@@ -257,6 +257,26 @@
         "PERSON_ADIL_AL_YASIRI",
         "ORG_NIC",
         "PERSONNEL_APPOINTMENT"
+      ]
+    },
+    {
+      "left": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+      "right": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
+      "score": 1,
+      "reason": "TITLE_LEAD_ENTITY_NUMERIC_SIMILARITY",
+      "sharedSignals": [
+        "TITLE:خريطه",
+        "TITLE:فصائل",
+        "TITLE:يرفض",
+        "TITLE:حصر",
+        "TITLE:سلاح",
+        "TITLE:عراق؟",
+        "TERM:اطار تنسيقي",
+        "TERM:ولايات متحده",
+        "TERM:ايران",
+        "TERM:بغداد",
+        "TERM:بصره",
+        "TERM:انبار"
       ]
     },
     {
@@ -2603,17 +2623,27 @@
       ]
     },
     {
-      "groupId": "event-mG0BGtEIdFQNS4F7k2",
+      "groupId": "event-GiJoyPSsmUNWRTszf9",
       "category": "politics",
-      "representativeArticleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
-      "memberCount": 1,
-      "duplicateCount": 0,
+      "representativeArticleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+      "memberCount": 2,
+      "duplicateCount": 1,
       "publishedFrom": "2026-07-30T12:11:55.000Z",
       "publishedTo": "2026-07-30T12:11:55.000Z",
       "memberArticleIds": [
+        "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
         "discovery-IwNHxQjJJ6V6T38NmMkxE5-D"
       ],
       "sources": [
+        {
+          "articleId": "discovery-Nrla4itn8xE_k9yMnpm1-SOs",
+          "sourceArabic": "الجزيرة نت",
+          "articleUrl": "https://www.aljazeera.net/politics/2026/7/30/%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AE%D8%B1%D8%A7%D8%A6%D8%B7-%D8%A7%D9%84%D9%86%D9%81%D9%88%D8%B0-%D9%88%D9%85%D8%B9%D8%B6%D9%84%D8%A9",
+          "publishedAt": "2026-07-30T12:11:55.000Z",
+          "originalTitleArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟",
+          "titleKo": "",
+          "isRepresentative": true
+        },
         {
           "articleId": "discovery-IwNHxQjJJ6V6T38NmMkxE5-D",
           "sourceArabic": "الجزيرة نت",
@@ -2621,7 +2651,7 @@
           "publishedAt": "2026-07-30T12:11:55.000Z",
           "originalTitleArabic": "خريطة الفصائل.. من يرفض حصر السلاح في العراق؟",
           "titleKo": "",
-          "isRepresentative": true
+          "isRepresentative": false
         }
       ]
     },
