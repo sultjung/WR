@@ -106,9 +106,6 @@ jobs:
       - name: Calculate category rule scores
         run: npm run collect:importance
 
-      - name: Reapply final category gate
-        run: npm run collect:strict-gate
-
       - name: Evaluate importance within each category with AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -155,13 +152,13 @@ jobs:
 
       - name: Commit collected data
         run: |
-          if git diff --quiet -- data/*.json; then
-            echo "No collected data changes"
+          if git diff --quiet -- data/articles.json; then
+            echo "No collected article changes"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
+          git add data/articles.json
           git commit -m "Collect, score, and summarize Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
