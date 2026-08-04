@@ -9,7 +9,8 @@ import {
   needsCard,
   needsFacts,
   normalizeCardResult,
-  normalizeFactsResult
+  normalizeFactsResult,
+  reconcileArticleCardState
 } from "./article-card-core.mjs";
 import { createKoreanCards, extractArabicFacts } from "./article-card-ai.mjs";
 
@@ -53,7 +54,15 @@ async function writePayload(payload, articles, stats) {
 }
 
 const payload = JSON.parse(await fs.readFile(ARTICLES_FILE, "utf8"));
-const articles = Array.isArray(payload) ? payload : (payload.articles || []);
+const rawArticles = Array.isArray(payload) ? payload : (payload.articles || []);
+let factsReset = 0;
+let cardsReset = 0;
+const articles = rawArticles.map((article) => {
+  const reconciled = reconcileArticleCardState(article);
+  if (reconciled.factsReset) factsReset += 1;
+  if (reconciled.cardReset) cardsReset += 1;
+  return reconciled.article;
+});
 const indexById = new Map(articles.map((article, index) => [articleIdOf(article, index), index]));
 const candidates = articles
   .map((article, index) => ({ article, index, id: articleIdOf(article, index) }))
@@ -67,6 +76,8 @@ const stats = {
   cardsGenerated: 0,
   factsFailed: 0,
   cardsFailed: 0,
+  factsReset,
+  cardsReset,
   factRetryRounds: 0,
   cardRetryRounds: 0,
   skippedCached: Math.max(0, articles.filter((article) => factsAreCurrent(article) && !needsCard(article)).length)
@@ -82,6 +93,7 @@ function applyFactResult(result, model, pending) {
     ...articles[liveIndex],
     cardFacts: normalizeFactsResult(result, articles[liveIndex], model),
     card: {
+      ...(articles[liveIndex].card || {}),
       status: "PENDING",
       pipelineVersion: "FACTS_FIRST_V1",
       resetReason: "FACTS_REFRESHED"
@@ -168,7 +180,8 @@ async function processCards(targets) {
 if (!String(process.env.OPENAI_API_KEY || "").trim()) {
   const message = "OPENAI_API_KEY is unavailable to article-card generation";
   if (required && candidates.length) throw new Error(message);
-  console.warn(`[article-card] ${message}; no changes`);
+  await writePayload(payload, articles, stats);
+  console.warn(`[article-card] ${message}; stale states reconciled without AI generation`);
   process.exit(0);
 }
 
@@ -188,4 +201,4 @@ if (!candidates.length) await writePayload(payload, articles, stats);
 if (required && candidates.length && stats.cardsGenerated === 0 && stats.factsGenerated === 0) {
   throw new Error("article-card AI was required but generated no facts or cards");
 }
-console.log(`[article-card] complete candidates=${stats.candidateCount}, facts=${stats.factsGenerated}, cards=${stats.cardsGenerated}, factsFailed=${stats.factsFailed}, cardsFailed=${stats.cardsFailed}, factRetryRounds=${stats.factRetryRounds}, cardRetryRounds=${stats.cardRetryRounds}`);
+console.log(`[article-card] complete candidates=${stats.candidateCount}, facts=${stats.factsGenerated}, cards=${stats.cardsGenerated}, factsReset=${stats.factsReset}, cardsReset=${stats.cardsReset}, factsFailed=${stats.factsFailed}, cardsFailed=${stats.cardsFailed}, factRetryRounds=${stats.factRetryRounds}, cardRetryRounds=${stats.cardRetryRounds}`);
