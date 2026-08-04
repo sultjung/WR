@@ -1,6 +1,12 @@
 import { createHash } from "node:crypto";
+import {
+  GLOSSARY_HASH,
+  GLOSSARY_VERSION,
+  preferredTermsForText
+} from "./preferred-translation-terms.mjs";
 
 export const CARD_PIPELINE_VERSION = "FACTS_FIRST_V1";
+export const RELATED_TITLE_PIPELINE_VERSION = "RELATED_TITLE_V1";
 
 function recordOf(article = {}) {
   return article.article && typeof article.article === "object" ? article.article : article;
@@ -16,6 +22,27 @@ function listOf(value, maxItems = 8, maxChars = 300) {
     .map((item) => compact(item).slice(0, maxChars))
     .filter(Boolean)
     .slice(0, maxItems);
+}
+
+function factsTextOf(facts = {}) {
+  return [
+    facts.mainSubjectAr,
+    facts.actionAr,
+    facts.locationAr,
+    facts.eventDateAr,
+    facts.resultAr,
+    ...(Array.isArray(facts.keyFactsAr) ? facts.keyFactsAr : []),
+    ...(Array.isArray(facts.numbersAr) ? facts.numbersAr : []),
+    ...(Array.isArray(facts.peopleAr) ? facts.peopleAr : []),
+    ...(Array.isArray(facts.organizationsAr) ? facts.organizationsAr : []),
+    ...(Array.isArray(facts.directQuotesAr) ? facts.directQuotesAr : [])
+  ].filter(Boolean).join("\n");
+}
+
+function glossaryIsCurrent(stored = {}, sourceText = "") {
+  const matched = preferredTermsForText(sourceText);
+  if (!matched.length) return true;
+  return stored.glossaryVersion === GLOSSARY_VERSION && stored.glossaryHash === GLOSSARY_HASH;
 }
 
 export function articleIdOf(article = {}, index = 0) {
@@ -41,6 +68,11 @@ export function sourceTitleOf(article = {}) {
 export function sourceHashOf(article = {}) {
   const source = `${sourceTitleOf(article)}\n${compact(sourceTextOf(article))}`.trim();
   return source ? createHash("sha256").update(source).digest("hex") : "";
+}
+
+export function sourceTitleHashOf(article = {}) {
+  const title = sourceTitleOf(article);
+  return title ? createHash("sha256").update(title).digest("hex") : "";
 }
 
 export function factsHashOf(facts = {}) {
@@ -87,8 +119,20 @@ export function cardIsCurrent(article = {}) {
     && card.pipelineVersion === CARD_PIPELINE_VERSION
     && card.sourceContentHash === sourceHashOf(article)
     && card.factsHash === factsHashOf(facts)
+    && glossaryIsCurrent(card, factsTextOf(facts))
     && Boolean(compact(card.titleKo))
     && Boolean(compact(card.summaryKo));
+}
+
+export function relatedTitleIsCurrent(article = {}) {
+  const relatedTitle = article.relatedTitle || {};
+  const title = sourceTitleOf(article);
+  return Boolean(title)
+    && String(relatedTitle.status || "").toUpperCase() === "COMPLETED"
+    && relatedTitle.pipelineVersion === RELATED_TITLE_PIPELINE_VERSION
+    && relatedTitle.sourceTitleHash === sourceTitleHashOf(article)
+    && glossaryIsCurrent(relatedTitle, title)
+    && Boolean(compact(relatedTitle.titleKo));
 }
 
 export function needsFacts(article = {}) {
@@ -97,6 +141,10 @@ export function needsFacts(article = {}) {
 
 export function needsCard(article = {}) {
   return isRepresentative(article) && factsAreCurrent(article) && !cardIsCurrent(article);
+}
+
+export function needsRelatedTitle(article = {}) {
+  return !isRepresentative(article) && Boolean(sourceTitleOf(article)) && !relatedTitleIsCurrent(article);
 }
 
 export function factsInputOf(article = {}, index = 0, maxSourceChars = 16000) {
@@ -118,6 +166,7 @@ export function cardInputOf(article = {}, index = 0) {
     category: categoryOf(article),
     sourceArabic: compact(article.sourceArabic || article.source?.arabicName || ""),
     publishedAt: String(article.publishedAt || article.article?.publishedAt || ""),
+    preferredTerms: preferredTermsForText(factsTextOf(facts)),
     factsArabic: {
       mainSubjectAr: compact(facts.mainSubjectAr),
       actionAr: compact(facts.actionAr),
@@ -132,6 +181,17 @@ export function cardInputOf(article = {}, index = 0) {
       uncertaintiesAr: listOf(facts.uncertaintiesAr, 4, 300),
       multipleAgendaItems: Boolean(facts.multipleAgendaItems)
     }
+  };
+}
+
+export function relatedTitleInputOf(article = {}, index = 0, requestId = "") {
+  return {
+    id: requestId || articleIdOf(article, index),
+    category: categoryOf(article),
+    sourceArabic: compact(article.sourceArabic || article.source?.arabicName || ""),
+    publishedAt: String(article.publishedAt || article.article?.publishedAt || ""),
+    titleArabic: sourceTitleOf(article),
+    preferredTerms: preferredTermsForText(sourceTitleOf(article))
   };
 }
 
@@ -160,6 +220,7 @@ export function normalizeFactsResult(item = {}, article = {}, model = "") {
 
 export function normalizeCardResult(item = {}, article = {}, model = "") {
   const facts = article.cardFacts || {};
+  const preferredTerms = preferredTermsForText(factsTextOf(facts));
   return {
     status: "COMPLETED",
     pipelineVersion: CARD_PIPELINE_VERSION,
@@ -167,6 +228,9 @@ export function normalizeCardResult(item = {}, article = {}, model = "") {
     factBasis: "STRUCTURED_ARABIC_FACTS_ONLY",
     sourceContentHash: sourceHashOf(article),
     factsHash: factsHashOf(facts),
+    glossaryVersion: GLOSSARY_VERSION,
+    glossaryHash: GLOSSARY_HASH,
+    preferredTermsApplied: preferredTerms.map((term) => term.korean),
     model,
     generatedAt: new Date().toISOString(),
     titleKo: compact(item.titleKo).slice(0, 140),
@@ -175,8 +239,25 @@ export function normalizeCardResult(item = {}, article = {}, model = "") {
   };
 }
 
+export function normalizeRelatedTitleResult(item = {}, article = {}, model = "") {
+  const preferredTerms = preferredTermsForText(sourceTitleOf(article));
+  return {
+    status: "COMPLETED",
+    pipelineVersion: RELATED_TITLE_PIPELINE_VERSION,
+    method: "ARABIC_HEADLINE_TO_KOREAN_RELATED_TITLE",
+    sourceTitleHash: sourceTitleHashOf(article),
+    glossaryVersion: GLOSSARY_VERSION,
+    glossaryHash: GLOSSARY_HASH,
+    preferredTermsApplied: preferredTerms.map((term) => term.korean),
+    model,
+    generatedAt: new Date().toISOString(),
+    titleKo: compact(item.titleKo).slice(0, 160)
+  };
+}
+
 export function reportSourceOf(article = {}, index = 0) {
   const record = recordOf(article);
+  const originalTextArabic = sourceTextOf(article);
   return {
     id: articleIdOf(article, index),
     category: categoryOf(article),
@@ -184,6 +265,7 @@ export function reportSourceOf(article = {}, index = 0) {
     publishedAt: String(article.publishedAt || record.publishedAt || ""),
     articleUrl: String(article.articleUrl || record.articleUrl || article.canonicalUrl || record.canonicalUrl || ""),
     originalTitleArabic: sourceTitleOf(article),
-    originalTextArabic: sourceTextOf(article)
+    originalTextArabic,
+    preferredTerms: preferredTermsForText(`${sourceTitleOf(article)}\n${originalTextArabic}`)
   };
 }
