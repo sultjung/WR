@@ -9,6 +9,7 @@ import {
   factsAreCurrent,
   normalizeCardResult,
   normalizeFactsResult,
+  reconcileArticleCardState,
   reportSourceOf,
   sourceHashOf
 } from "./article-card-core.mjs";
@@ -62,10 +63,33 @@ assert.ok(cardIsCurrent(article));
 assert.equal(article.card.fullTranslationGenerated, false);
 assert.equal(article.card.factBasis, "STRUCTURED_ARABIC_FACTS_ONLY");
 assert.equal(article.card.factsHash, factsHashOf(article.cardFacts));
+assert.equal(article.card.preferredTermsSignature.length, 20);
+
+const legacyCardArticle = {
+  ...article,
+  card: {
+    ...article.card,
+    preferredTermsSignature: undefined,
+    glossaryVersion: "legacy",
+    glossaryHash: "legacy"
+  }
+};
+assert.ok(cardIsCurrent(legacyCardArticle), "legacy glossary metadata must not invalidate a current card");
+
+const changedArticle = {
+  ...article,
+  originalTextArabic: `${article.originalTextArabic} changed`
+};
+const reconciled = reconcileArticleCardState(changedArticle);
+assert.equal(reconciled.factsReset, true);
+assert.equal(reconciled.cardReset, true);
+assert.equal(reconciled.article.cardFacts.status, "PENDING");
+assert.equal(reconciled.article.card.status, "PENDING");
+assert.equal(reconciled.article.card.titleKo, article.card.titleKo, "old display text remains available during refresh");
 
 const reportSource = reportSourceOf(article, 0);
 assert.ok(reportSource.originalTextArabic.includes("SECRET_SOURCE_TOKEN"));
 assert.ok(!Object.hasOwn(reportSource, "summaryKo"));
 assert.ok(!Object.hasOwn(reportSource, "titleKo"));
 
-console.log("[test:article-card] facts-first pipeline passed");
+console.log("[test:article-card] facts-first pipeline and stale-state reconciliation passed");
