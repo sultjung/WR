@@ -11,7 +11,9 @@ export const PREFERRED_TRANSLATION_TERMS = (Array.isArray(payload.entries) ? pay
   .map((entry) => ({
     ko: String(entry.ko || "").trim(),
     ar: String(entry.ar || "").trim(),
-    aliases: Array.isArray(entry.aliases) ? entry.aliases.map((value) => String(value || "").trim()).filter(Boolean) : []
+    aliases: Array.isArray(entry.aliases)
+      ? entry.aliases.map((value) => String(value || "").trim()).filter(Boolean)
+      : []
   }))
   .filter((entry) => entry.ko && entry.ar);
 
@@ -32,7 +34,10 @@ function matchLength(normalizedText, entry) {
   const candidates = [entry.ar, ...entry.aliases]
     .map(normalizeArabicGlossary)
     .filter(Boolean);
-  return candidates.reduce((best, candidate) => normalizedText.includes(candidate) ? Math.max(best, candidate.length) : best, 0);
+  return candidates.reduce(
+    (best, candidate) => normalizedText.includes(candidate) ? Math.max(best, candidate.length) : best,
+    0
+  );
 }
 
 export function preferredTermsForText(value = "", maxItems = 16) {
@@ -48,4 +53,10 @@ export function preferredTermsForText(value = "", maxItems = 16) {
       arabic: entry.ar,
       korean: entry.ko
     }));
+}
+
+export function preferredTermsSignatureForText(value = "") {
+  const matched = preferredTermsForText(value);
+  if (!matched.length) return "";
+  return createHash("sha256").update(JSON.stringify(matched)).digest("hex").slice(0, 20);
 }
