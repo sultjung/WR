@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: collect-arabic-news
+  group: wr-articles-data-writer
   cancel-in-progress: false
 
 jobs:
@@ -132,6 +132,7 @@ jobs:
           CARD_AI_MAX_ARTICLES: "60"
           CARD_SOURCE_MAX_CHARS: "16000"
           CARD_AI_TIMEOUT_MS: "90000"
+          CARD_AI_RETRY_ATTEMPTS: "2"
         run: npm run collect:cards
 
       - name: Audit foreign-local leakage
