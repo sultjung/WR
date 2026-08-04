@@ -1,7 +1,8 @@
 import {
   articleIdOf,
   cardIsCurrent,
-  factsAreCurrent
+  factsAreCurrent,
+  relatedTitleIsCurrent
 } from "./article-card-core.mjs";
 
 function articleList(payload = {}) {
@@ -21,6 +22,10 @@ function cardTime(article = {}) {
   return timestamp(article.card?.generatedAt);
 }
 
+function relatedTitleTime(article = {}) {
+  return timestamp(article.relatedTitle?.generatedAt);
+}
+
 export function mergeGeneratedCardData(latestPayload = {}, generatedPayload = {}) {
   const latestArticles = articleList(latestPayload);
   const generatedArticles = articleList(generatedPayload);
@@ -34,9 +39,11 @@ export function mergeGeneratedCardData(latestPayload = {}, generatedPayload = {}
     matchedArticleCount: 0,
     factsMerged: 0,
     cardsMerged: 0,
+    relatedTitlesMerged: 0,
     pendingCardsMerged: 0,
     preservedNewerFacts: 0,
     preservedNewerCards: 0,
+    preservedNewerRelatedTitles: 0,
     skippedMissingArticle: 0,
     skippedSourceMismatch: 0
   };
@@ -91,10 +98,27 @@ export function mergeGeneratedCardData(latestPayload = {}, generatedPayload = {}
       stats.pendingCardsMerged += 1;
     }
 
+    const generatedRelatedTitle = generatedArticle.relatedTitle;
+    const generatedRelatedTitleCandidate = generatedRelatedTitle
+      ? { ...next, relatedTitle: generatedRelatedTitle }
+      : null;
+
+    if (generatedRelatedTitleCandidate && relatedTitleIsCurrent(generatedRelatedTitleCandidate)) {
+      const latestHasCurrentRelatedTitle = relatedTitleIsCurrent(next);
+      if (!latestHasCurrentRelatedTitle || relatedTitleTime(generatedArticle) >= relatedTitleTime(next)) {
+        next.relatedTitle = generatedRelatedTitle;
+        stats.relatedTitlesMerged += 1;
+      } else {
+        stats.preservedNewerRelatedTitles += 1;
+      }
+    } else if (generatedRelatedTitle) {
+      stats.skippedSourceMismatch += 1;
+    }
+
     return next;
   });
 
-  const changeCount = stats.factsMerged + stats.cardsMerged + stats.pendingCardsMerged;
+  const changeCount = stats.factsMerged + stats.cardsMerged + stats.pendingCardsMerged + stats.relatedTitlesMerged;
   if (!changeCount) return { output: latestPayload, stats };
 
   const mergedAt = new Date().toISOString();
@@ -108,6 +132,13 @@ export function mergeGeneratedCardData(latestPayload = {}, generatedPayload = {}
           ...(latestPayload.cardGeneration || {}),
           ...(generatedPayload.cardGeneration || {}),
           mergeMethod: "LATEST_MAIN_PLUS_GENERATED_CARD_FIELDS",
+          mergedAt,
+          ...stats
+        },
+        relatedTitleGeneration: {
+          ...(latestPayload.relatedTitleGeneration || {}),
+          ...(generatedPayload.relatedTitleGeneration || {}),
+          mergeMethod: "LATEST_MAIN_PLUS_GENERATED_RELATED_TITLES",
           mergedAt,
           ...stats
         }
