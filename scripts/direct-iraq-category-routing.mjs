@@ -1,9 +1,18 @@
-const IRAQ_DIRECT_TERMS = [
+const IRAQ_TITLE_TERMS = [
   "العراق", "العراقي", "العراقية", "عراقي", "عراقية", "بغداد", "حكومة العراق", "الحكومة العراقية",
   "رئيس الوزراء العراقي", "رئيس مجلس الوزراء العراقي", "مجلس الوزراء العراقي", "مجلس النواب العراقي",
   "البرلمان العراقي", "وزارة الخارجية العراقية", "وزارة النفط العراقية", "وزارة التجارة العراقية",
   "وزارة التخطيط العراقية", "وزارة النقل العراقية", "البنك المركزي العراقي", "إقليم كردستان العراق",
   "اقليم كردستان العراق", "iraq", "iraqi", "이라크", "이라크 정부", "이라크 총리"
+];
+
+const IRAQ_STRONG_OPENING_TERMS = [
+  "الحكومة العراقية", "حكومة العراق", "رئيس الوزراء العراقي", "رئيس مجلس الوزراء العراقي",
+  "مجلس الوزراء العراقي", "مجلس النواب العراقي", "البرلمان العراقي", "رئاسة الجمهورية العراقية",
+  "وزارة الخارجية العراقية", "وزارة النفط العراقية", "وزارة التجارة العراقية", "وزارة التخطيط العراقية",
+  "وزارة النقل العراقية", "وزارة الموارد المائية العراقية", "البنك المركزي العراقي", "الوفد العراقي",
+  "مسؤولون عراقيون", "الجانب العراقي", "القوات العراقية", "الجيش العراقي", "إقليم كردستان العراق",
+  "اقليم كردستان العراق", "이라크 정부", "이라크 총리", "이라크 대표단", "이라크 측", "이라크군"
 ];
 
 const POLITICS_TERMS = [
@@ -124,6 +133,13 @@ function scoreCategory(title, opening, body, terms) {
   };
 }
 
+function hasIraqAsOpeningActor(opening) {
+  if (uniqueTermCount(opening, IRAQ_STRONG_OPENING_TERMS) > 0) return true;
+  return /(?:^|[\s،,:؛-])(?:العراق|الجانب العراقي|الوفد العراقي|مسؤولون عراقيون)\s+(?:و|بحث|وقع|اتفق|اكد|أكد|ناقش|شارك|اعلن|أعلن|دعا|استقبل)/u.test(opening)
+    || /(?:بين|مع)\s+(?:العراق|الحكومه العراقيه|الجانب العراقي|الوفد العراقي)/u.test(opening)
+    || /(?:이라크|이라크 정부|이라크 대표단|이라크 측)\s*(?:과|와|이|가|는|은|정부|대표단)/u.test(opening);
+}
+
 export function classifyDirectIraqInternational(article = {}) {
   const currentCategory = currentCategoryOf(article);
   if (currentCategory !== "international") {
@@ -141,7 +157,9 @@ export function classifyDirectIraqInternational(article = {}) {
   const title = normalizeRoutingText(rawTitle);
   const opening = normalizeRoutingText(rawBody.slice(0, 1400));
   const body = normalizeRoutingText(rawBody.slice(0, 8000));
-  const directIraq = uniqueTermCount(`${title} ${opening}`, IRAQ_DIRECT_TERMS) > 0;
+  const titleHasIraq = uniqueTermCount(title, IRAQ_TITLE_TERMS) > 0;
+  const openingHasIraqActor = hasIraqAsOpeningActor(opening);
+  const directIraq = titleHasIraq || openingHasIraqActor;
 
   if (!directIraq) {
     return {
@@ -163,7 +181,9 @@ export function classifyDirectIraqInternational(article = {}) {
     economy: economy.score,
     security: security.score,
     economyHeadline,
-    securityHeadline
+    securityHeadline,
+    titleHasIraq,
+    openingHasIraqActor
   };
 
   let category = "international";
