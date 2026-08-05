@@ -1,7 +1,7 @@
 (()=>{
   const STORAGE_KEY="wr-selected-article-ids-v1";
   const REPORT_REPOSITORY="sultjung/WR";
-  const MAX_REPORT_ARTICLES=20;
+  const MAX_REPORT_ARTICLES=40;
   const state={articles:[],membersByGroup:new Map(),filter:"all",selected:new Set(loadSelectedIds())};
   const $=(id)=>document.getElementById(id);
   const CATEGORY_IDS={bismayah:"countBismayah",politics:"countPolitics",economy:"countEconomy",security:"countSecurity",international:"countInternational"};
