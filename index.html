@@ -34,6 +34,28 @@
       <button class="summary-card" data-filter="selected"><span>보고서 선택</span><strong id="countSelected">0</strong></button>
     </section>
 
+    <section class="report-builder" aria-labelledby="reportBuilderTitle">
+      <div class="report-builder-copy">
+        <p class="report-kicker">FINAL REPORT</p>
+        <h2 id="reportBuilderTitle">주간상황보고서 생성</h2>
+        <p>선택한 기사만 고급 AI가 실제 보고서 문체로 재편집하고, 오피넷의 보고일 전일·전전일 국제유가를 반영해 Word 파일을 생성합니다.</p>
+      </div>
+      <div class="report-builder-controls">
+        <label>보고일
+          <input id="reportDate" type="date">
+        </label>
+        <label>보고기간 시작
+          <input id="reportStartDate" type="date">
+        </label>
+        <label>보고기간 종료
+          <input id="reportEndDate" type="date">
+        </label>
+        <button id="requestReport" class="report-button" type="button">선택 기사로 보고서 생성</button>
+        <a class="latest-report-link" href="./reports/latest.docx" target="_blank" rel="noopener">최근 생성 보고서 다운로드</a>
+      </div>
+      <p id="reportRequestMessage" class="report-request-message" aria-live="polite"></p>
+    </section>
+
     <section class="toolbar" aria-label="기사 필터">
       <label>시작일
         <input id="startDate" type="date">
