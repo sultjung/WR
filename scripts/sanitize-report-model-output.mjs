@@ -15,6 +15,19 @@ function isResponsesApiRequest(input){
   }catch{return false;}
 }
 
+function adaptRequestInit(input,init){
+  if(!isResponsesApiRequest(input)||typeof init?.body!=="string") return init;
+  let payload;
+  try{payload=JSON.parse(init.body);}catch{return init;}
+  if(String(payload?.model||"").startsWith("gpt-4.1")){
+    delete payload.reasoning;
+    if(payload.text&&payload.text.verbosity==="low") payload.text.verbosity="medium";
+    console.log("[weekly-report-ai] adapted gpt-4.1 fallback request");
+    return {...init,body:JSON.stringify(payload)};
+  }
+  return init;
+}
+
 function routingInput(reportInput){
   return {
     ...reportInput,
@@ -74,7 +87,8 @@ if(typeof originalFetch!=="function"){
 }
 
 globalThis.fetch=async function sanitizedReportFetch(input,init){
-  const response=await originalFetch(input,init);
+  const adaptedInit=adaptRequestInit(input,init);
+  const response=await originalFetch(input,adaptedInit);
   if(!isResponsesApiRequest(input)||!response.ok) return response;
   try{
     const payload=await response.clone().json();
