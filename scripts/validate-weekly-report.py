@@ -6,6 +6,7 @@ import hashlib
 import json
 import re
 import sys
+from collections import Counter
 from pathlib import Path
 
 from docx import Document
@@ -20,6 +21,7 @@ REQUIRED_HEADINGS = [
     "2. 국제사회",
     "3. 그룹 / 건설에 미치는 영향",
 ]
+SECTION_NAMES = ("politicsItems", "securityItems", "economyItems", "internationalItems")
 
 
 def parse_args() -> argparse.Namespace:
@@ -46,6 +48,61 @@ def all_text(document: Document) -> str:
     return "\n".join(parts)
 
 
+def validate_report_article_structure(content: dict) -> dict:
+    request = content["request"]
+    report = content["report"]
+    selected = set(request["selectedArticleIds"])
+    article_index = {item["articleId"]: item for item in content.get("selectedArticleIndex", [])}
+    if set(article_index) != selected:
+        raise RuntimeError("selectedArticleIndex does not match selected article IDs")
+
+    usage: Counter[str] = Counter()
+    assignment: dict[str, str] = {}
+    section_dates: dict[str, list[str]] = {}
+    for section in SECTION_NAMES:
+        dates: list[str] = []
+        for item_index, item in enumerate(report.get(section, [])):
+            article_ids = item.get("articleIds", [])
+            if len(article_ids) != len(set(article_ids)):
+                raise RuntimeError(f"duplicate article ID inside one item: {item.get('headline', '')}")
+            item_dates: list[str] = []
+            for article_id in article_ids:
+                if article_id not in selected:
+                    raise RuntimeError(f"unselected article used in report: {article_id}")
+                meta = article_index[article_id]
+                if meta.get("targetSection") != section:
+                    raise RuntimeError(f"article {article_id} belongs to {meta.get('targetSection')} but appears in {section}")
+                usage[article_id] += 1
+                assignment[article_id] = f"{section}:{item_index}"
+                item_dates.append(str(meta.get("publishedDate", "")))
+            if item_dates:
+                dates.append(min(item_dates))
+        if dates != sorted(dates):
+            raise RuntimeError(f"items are not chronological inside {section}: {dates}")
+        section_dates[section] = dates
+
+    missing = sorted(article_id for article_id in selected if usage[article_id] == 0)
+    duplicated = sorted(article_id for article_id in selected if usage[article_id] > 1)
+    if missing or duplicated:
+        raise RuntimeError(f"selected article usage mismatch; missing={missing}, duplicated={duplicated}")
+
+    for cluster in content.get("reportClusters", []):
+        article_ids = cluster.get("articleIds", [])
+        if len(article_ids) < 2:
+            continue
+        locations = {assignment.get(article_id) for article_id in article_ids}
+        locations.discard(None)
+        if len(locations) != 1:
+            raise RuntimeError(f"similar-article cluster {cluster.get('clusterId')} was split across report items: {sorted(locations)}")
+
+    return {
+        "selected": selected,
+        "sectionDates": section_dates,
+        "clusterCount": len(content.get("reportClusters", [])),
+        "mergedClusterCount": sum(1 for cluster in content.get("reportClusters", []) if len(cluster.get("articleIds", [])) > 1),
+    }
+
+
 def validate(docx_path: Path, content_path: Path) -> dict:
     if not docx_path.exists():
         raise RuntimeError("Word output does not exist")
@@ -53,6 +110,7 @@ def validate(docx_path: Path, content_path: Path) -> dict:
         raise RuntimeError(f"Word output is unexpectedly small: {docx_path.stat().st_size} bytes")
 
     content = json.loads(content_path.read_text(encoding="utf-8"))
+    structure = validate_report_article_structure(content)
     document = Document(docx_path)
     text = all_text(document)
 
@@ -75,7 +133,6 @@ def validate(docx_path: Path, content_path: Path) -> dict:
     if f"{y}. {m}. {d}." not in text:
         raise RuntimeError("report date is missing or malformed")
 
-    # Terror table + oil table + optional cabinet tables.
     if len(document.tables) < 2:
         raise RuntimeError(f"expected at least 2 tables, found {len(document.tables)}")
     terror = report["terrorStats"]
@@ -90,16 +147,6 @@ def validate(docx_path: Path, content_path: Path) -> dict:
             if value not in text:
                 raise RuntimeError(f"oil table value missing: {value}")
 
-    selected = set(request["selectedArticleIds"])
-    used = set()
-    for section in ("politicsItems", "securityItems", "economyItems", "internationalItems"):
-        for item in report.get(section, []):
-            used.update(item.get("articleIds", []))
-    if used != selected:
-        missing = sorted(selected - used)
-        extra = sorted(used - selected)
-        raise RuntimeError(f"selected article usage mismatch; missing={missing}, extra={extra}")
-
     metadata = {
         "pipelineVersion": content.get("pipelineVersion"),
         "generatedAt": content.get("generatedAt"),
@@ -107,7 +154,10 @@ def validate(docx_path: Path, content_path: Path) -> dict:
         "periodStart": request["periodStart"],
         "periodEnd": request["periodEnd"],
         "issueNumber": request.get("issueNumber"),
-        "selectedArticleCount": len(selected),
+        "selectedArticleCount": len(structure["selected"]),
+        "clusterCount": structure["clusterCount"],
+        "mergedClusterCount": structure["mergedClusterCount"],
+        "sectionDates": structure["sectionDates"],
         "model": content.get("model"),
         "responseId": content.get("responseId"),
         "oilSource": oil.get("source"),
@@ -129,10 +179,7 @@ def main() -> int:
     metadata = validate(docx_path, content_path)
     metadata_path.parent.mkdir(parents=True, exist_ok=True)
     metadata_path.write_text(json.dumps(metadata, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(
-        f"[report-validate] passed bytes={metadata['docxBytes']} tables={metadata['tableCount']} "
-        f"paragraphs={metadata['paragraphCount']} sha256={metadata['docxSha256'][:12]}"
-    )
+    print(f"[report-validate] passed bytes={metadata['docxBytes']} tables={metadata['tableCount']} paragraphs={metadata['paragraphCount']} clusters={metadata['clusterCount']} merged={metadata['mergedClusterCount']} sha256={metadata['docxSha256'][:12]}")
     return 0
 
 
