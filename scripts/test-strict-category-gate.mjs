@@ -83,7 +83,28 @@ const articles = [
     category: "international",
     contentStatus: "FULL_TEXT",
     originalTitleArabic: "تنسيق عراقي - تركي حول ممرات الطاقة والمياه",
-    originalTextArabic: "بحث وفدان من البلدين ممرات الطاقة والمياه والتعاون الإقليمي. " + padding
+    originalTextArabic: "بحث وفدان من البلدين ممرات الطاقة والمياه والتعاون في النقل والربط الكهربائي. " + padding
+  },
+  {
+    articleId: "iraq-turkey-multifield-economy",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "العراق وتركيا يوقعان اتفاقيات متعددة لتعزيز الشراكة الاستراتيجية",
+    originalTextArabic: "وقّع العراق وتركيا اتفاقيات في مجالات متعددة شملت التجارة والاستثمار والطاقة والنقل وطريق التنمية والربط السككي. " + padding
+  },
+  {
+    articleId: "iraq-turkey-diplomatic",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "العراق وتركيا يبحثان تعزيز العلاقات الثنائية والشراكة الاستراتيجية",
+    originalTextArabic: "عقد رئيس الوزراء العراقي مباحثات رسمية مع الوفد التركي بشأن العلاقات الثنائية والملفات المشتركة والتنسيق الدبلوماسي. " + padding
+  },
+  {
+    articleId: "iraq-turkey-security",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "العراق وتركيا يوسعان التعاون الأمني لضبط الحدود ومكافحة الإرهاب",
+    originalTextArabic: "ناقش الجانبان اتفاقية أمنية والتنسيق العسكري وأمن الحدود ومكافحة الإرهاب. " + padding
   },
   {
     articleId: "red-sea-oil-price",
@@ -138,6 +159,7 @@ try {
 
   const result = JSON.parse(await fs.readFile(articlesFile, "utf8"));
   const retained = new Set(result.articles.map((article) => article.articleId));
+  const categoryById = new Map(result.articles.map((article) => [article.articleId, article.category]));
   const summary = JSON.parse(await fs.readFile(summaryFile, "utf8"));
   const excluded = new Set(summary.excluded.map((article) => article.articleId));
 
@@ -150,6 +172,9 @@ try {
     "hormuz-market",
     "iraq-pmf-security",
     "iraqi-adjectival-title",
+    "iraq-turkey-multifield-economy",
+    "iraq-turkey-diplomatic",
+    "iraq-turkey-security",
     "red-sea-oil-price",
     "gulf-oil-export-routes"
   ]) {
@@ -165,8 +190,13 @@ try {
     assert.ok(excluded.has(id), `${id} should be excluded`);
   }
 
-  assert.equal(summary.method, "STRICT_CATEGORY_GATE_V3");
-  console.log("[test:strict-gate] Iraqi primary actors retained; foreign-primary incidental stories excluded");
+  assert.equal(categoryById.get("iraqi-adjectival-title"), "economy");
+  assert.equal(categoryById.get("iraq-turkey-multifield-economy"), "economy");
+  assert.equal(categoryById.get("iraq-turkey-diplomatic"), "politics");
+  assert.equal(categoryById.get("iraq-turkey-security"), "security");
+  assert.equal(categoryById.get("hormuz-market"), "international");
+  assert.equal(summary.method, "STRICT_CATEGORY_GATE_V4");
+  console.log("[test:strict-gate] Iraq-direct international stories rerouted to politics/economy/security; indirect market stories remain international");
 } finally {
   await fs.rm(tempDir, { recursive: true, force: true });
 }
