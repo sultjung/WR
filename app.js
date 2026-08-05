@@ -1,10 +1,15 @@
 (()=>{
-  const state={articles:[],membersByGroup:new Map(),filter:"all",selected:new Set()};
+  const STORAGE_KEY="wr-selected-article-ids-v1";
+  const REPORT_REPOSITORY="sultjung/WR";
+  const MAX_REPORT_ARTICLES=20;
+  const state={articles:[],membersByGroup:new Map(),filter:"all",selected:new Set(loadSelectedIds())};
   const $=(id)=>document.getElementById(id);
   const CATEGORY_IDS={bismayah:"countBismayah",politics:"countPolitics",economy:"countEconomy",security:"countSecurity",international:"countInternational"};
   const escapeHtml=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
-  const articleKey=(article)=>article.eventGroup?.groupId||article.articleId||article.id||article.article?.canonicalUrl||article.article?.articleUrl||article.originalTitleArabic;
   const recordOf=(article)=>article.article&&typeof article.article==="object"?article.article:article;
+  const articleId=(article)=>String(article.articleId||recordOf(article).articleId||article.id||"").trim();
+  const articleKey=(article)=>articleId(article)||article.eventGroup?.groupId||article.article?.canonicalUrl||article.article?.articleUrl||article.originalTitleArabic;
+  const sourceText=(article)=>String(article.originalTextArabic||recordOf(article).originalTextArabic||"").trim();
   const articleUrl=(article)=>{
     const record=recordOf(article);
     const value=String(article.articleUrl||record.articleUrl||article.canonicalUrl||record.canonicalUrl||"").trim();
@@ -18,16 +23,16 @@
   };
   const categoryOf=(article)=>String(article.analysis?.category||article.category||recordOf(article).category||"").toLowerCase();
   const cardStatus=(article)=>String(article.card?.status||article.cardStatus||article.translation?.translationStatus||article.translation?.status||article.translationStatus||"PENDING").toLowerCase();
-  const contentReady=(article)=>Boolean(recordOf(article).originalTextArabic||article.originalTextArabic)&&Boolean(articleUrl(article));
+  const contentReady=(article)=>sourceText(article).length>=300&&Boolean(articleUrl(article));
+  const reportSelectable=(article)=>cardStatus(article)==="completed"&&sourceText(article).length>=300&&Boolean(articleId(article));
   const publishedAt=(article)=>recordOf(article).publishedAt||article.publishedAt||"";
   const publishedTime=(article)=>{const value=new Date(publishedAt(article)).getTime();return Number.isFinite(value)?value:null;};
   const sourceName=(article)=>article.source?.arabicName||article.sourceArabic||recordOf(article).sourceArabic||article.sourceHost||"출처 미확인";
   const cardTitle=(article)=>String(article.card?.titleKo||article.translation?.titleKo||article.titleKo||"").trim();
-  const koTitle=(article)=>cardTitle(article)||"한국어 카드 요약 대기";
+  const koTitle=(article)=>cardTitle(article)||"한국어 요약 준비 중";
   const arTitle=(article)=>recordOf(article).originalTitleArabic||article.originalTitleArabic||"";
   const displayRelatedTitle=(article)=>String(article.relatedTitle?.titleKo||"").trim()||cardTitle(article)||arTitle(article)||"제목 미확인";
-  const preview=(article)=>article.card?.summaryKo||article.translation?.previewKo||article.previewKo||"아랍어 원문에서 구조화된 사실을 추출한 뒤 한국어 카드 요약을 생성합니다.";
-  const cardMethod=(article)=>article.card?.method==="STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD"?"원문 사실 추출 → 한국어 요약":"요약 대기";
+  const preview=(article)=>article.card?.summaryKo||article.translation?.previewKo||article.previewKo||"아랍어 원문에서 구조화된 사실을 추출해 한국어 요약을 준비하고 있습니다.";
   const importanceOf=(article)=>{
     const stored=article.importance||article.analysis?.importance||recordOf(article).importance;
     const score=Number(stored?.score??stored?.finalScore??stored?.ruleScore??article.analysis?.importanceScore??article.importanceScore);
@@ -36,10 +41,32 @@
   };
   const representatives=()=>state.articles.filter((article)=>article.eventGroup?.isRepresentative!==false);
   const toInputDate=(date)=>{const year=date.getFullYear();const month=String(date.getMonth()+1).padStart(2,"0");const day=String(date.getDate()).padStart(2,"0");return `${year}-${month}-${day}`;};
+  const toKstDateKey=(value)=>{
+    const date=new Date(value);
+    if(Number.isNaN(date.getTime())) return "";
+    const parts=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit"}).formatToParts(date);
+    const map=Object.fromEntries(parts.map((part)=>[part.type,part.value]));
+    return `${map.year}-${map.month}-${map.day}`;
+  };
   const defaultDateRange=()=>{const end=new Date();const start=new Date(end);start.setDate(start.getDate()-13);return {start:toInputDate(start),end:toInputDate(end)};};
+  const defaultReportRange=()=>{
+    const reportDate=new Date();
+    const end=new Date(reportDate);end.setDate(end.getDate()-1);
+    const start=new Date(reportDate);start.setDate(start.getDate()-7);
+    return {reportDate:toInputDate(reportDate),start:toInputDate(start),end:toInputDate(end)};
+  };
   const dateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"날짜 미확인":new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(date);};
   const relatedDateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"":new Intl.DateTimeFormat("ko-KR",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}).format(date);};
+
+  function loadSelectedIds(){
+    try{
+      const stored=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");
+      return Array.isArray(stored)?stored.filter((value)=>typeof value==="string"&&value.trim()):[];
+    }catch{return [];}
+  }
+  function saveSelectedIds(){localStorage.setItem(STORAGE_KEY,JSON.stringify([...state.selected]));}
   function setDefaultDateRange(){const range=defaultDateRange();$("startDate").value=range.start;$("endDate").value=range.end;}
+  function setDefaultReportRange(){const range=defaultReportRange();$("reportDate").value=range.reportDate;$("reportStartDate").value=range.start;$("reportEndDate").value=range.end;}
   function importanceMatches(score,filter){
     if(filter==="all") return true;
     if(filter==="pending") return score===null;
@@ -52,6 +79,7 @@
     $("countAll").textContent=items.length;
     for(const [category,id] of Object.entries(CATEGORY_IDS)) $(id).textContent=items.filter((item)=>categoryOf(item)===category).length;
     $("countSelected").textContent=state.selected.size;
+    $("requestReport").disabled=state.selected.size===0;
   }
   function compareArticles(a,b,order){
     if(order==="importance-desc"||order==="importance-asc"){
@@ -95,9 +123,7 @@
       if(summaryFilter!=="all"&&cardStatus(article)!==summaryFilter) return false;
       if(!importanceMatches(importanceOf(article).score,importanceFilter)) return false;
       if(query){
-        const relatedText=membersOf(article).map((member)=>[
-          displayRelatedTitle(member),arTitle(member),sourceName(member),preview(member)
-        ].join(" ")).join(" ");
+        const relatedText=membersOf(article).map((member)=>[displayRelatedTitle(member),arTitle(member),sourceName(member),preview(member)].join(" ")).join(" ");
         const text=[koTitle(article),arTitle(article),sourceName(article),preview(article),relatedText].join(" ").toLowerCase();
         if(!text.includes(query)) return false;
       }
@@ -114,9 +140,7 @@
     return `<li>${titleHtml}<small>${meta}</small></li>`;
   }
   function relatedNewsHtml(article){
-    const related=membersOf(article)
-      .filter((member)=>member.articleId!==article.articleId)
-      .sort((a,b)=>(publishedTime(b)??0)-(publishedTime(a)??0));
+    const related=membersOf(article).filter((member)=>articleId(member)!==articleId(article)).sort((a,b)=>(publishedTime(b)??0)-(publishedTime(a)??0));
     if(!related.length) return "";
     const visible=related.slice(0,4);
     const hidden=related.slice(4);
@@ -133,16 +157,15 @@
     if(!items.length){list.className="news-list empty";list.textContent=state.articles.length?"현재 필터에 맞는 기사가 없습니다.":"수집된 기사가 없습니다.";return;}
     list.className="news-list";
     list.innerHTML=items.map((article)=>{
-      const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article);
+      const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),selectable=reportSelectable(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}점</span>`;
-      const summaryBadge=cardStatus(article)==="completed"?`<span class="badge">${escapeHtml(cardMethod(article))}</span>`:"";
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
-        <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button">${selected?"선택됨":"보고서 선택"}</button></div>
+        <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"보고서 선택":"요약 후 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         <p class="arabic-title" lang="ar">${escapeHtml(arTitle(article))}</p>
         <p class="preview">${escapeHtml(preview(article))}</p>
-        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${summaryBadge}${duplicateCount?`<span class="badge related-count-badge">관련뉴스 ${duplicateCount}건</span>`:""}</div>
+        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${duplicateCount?`<span class="badge related-count-badge">관련뉴스 ${duplicateCount}건</span>`:""}</div>
         <div class="card-actions">${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">아랍어 원문 보기</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}<span class="card-source-note">전문 번역은 생성하지 않음</span></div>
         ${relatedNewsHtml(article)}
       </article>`;
@@ -151,14 +174,70 @@
   function rebuildGroups(){
     state.membersByGroup=new Map();
     for(const article of state.articles){
-      const groupId=article.eventGroup?.groupId||article.articleId;
+      const groupId=article.eventGroup?.groupId||articleId(article);
+      if(!groupId) continue;
       if(!state.membersByGroup.has(groupId)) state.membersByGroup.set(groupId,[]);
       state.membersByGroup.get(groupId).push(article);
     }
   }
+  function pruneSelections(){
+    const valid=new Set(representatives().filter(reportSelectable).map(articleKey));
+    let changed=false;
+    for(const key of state.selected){if(!valid.has(key)){state.selected.delete(key);changed=true;}}
+    if(changed) saveSelectedIds();
+  }
+  function setReportMessage(message,type=""){
+    const node=$("reportRequestMessage");
+    node.textContent=message;
+    node.className=`report-request-message${type?` ${type}`:""}`;
+  }
+  function selectedArticles(){
+    const byKey=new Map(representatives().map((article)=>[articleKey(article),article]));
+    return [...state.selected].map((key)=>byKey.get(key)).filter(Boolean);
+  }
+  function validateReportRequest(){
+    const reportDate=$("reportDate").value;
+    const periodStart=$("reportStartDate").value;
+    const periodEnd=$("reportEndDate").value;
+    const selected=selectedArticles();
+    if(!reportDate||!periodStart||!periodEnd) throw new Error("보고일과 보고기간을 모두 입력해 주세요.");
+    if(periodStart>periodEnd) throw new Error("보고기간 시작일이 종료일보다 늦습니다.");
+    if(periodEnd>=reportDate) throw new Error("보고기간 종료일은 보고일보다 앞선 날짜여야 합니다.");
+    const days=Math.round((new Date(`${periodEnd}T00:00:00`)-new Date(`${periodStart}T00:00:00`))/86400000)+1;
+    if(days<1||days>14) throw new Error("보고기간은 최대 14일까지 설정할 수 있습니다.");
+    if(!selected.length) throw new Error("보고서에 반영할 기사를 먼저 선택해 주세요.");
+    if(selected.length>MAX_REPORT_ARTICLES) throw new Error(`보고서 생성은 최대 ${MAX_REPORT_ARTICLES}건까지 가능합니다. 현재 ${selected.length}건이 선택돼 있습니다.`);
+    const invalid=selected.filter((article)=>!reportSelectable(article));
+    if(invalid.length) throw new Error("요약이 완료되지 않았거나 원문이 부족한 기사가 선택돼 있습니다. 선택을 다시 확인해 주세요.");
+    const outside=selected.filter((article)=>{const date=toKstDateKey(publishedAt(article));return !date||date<periodStart||date>periodEnd;});
+    if(outside.length) throw new Error(`보고기간 밖 기사가 ${outside.length}건 포함돼 있습니다. 기사 날짜 또는 보고기간을 조정해 주세요.`);
+    return {reportDate,periodStart,periodEnd,selected};
+  }
+  function openReportRequest(){
+    try{
+      const {reportDate,periodStart,periodEnd,selected}=validateReportRequest();
+      const payload={version:1,reportDate,periodStart,periodEnd,selectedArticleIds:selected.map(articleId),requestedFrom:"github-pages"};
+      const marker=`<!-- WR_REPORT_REQUEST_V1\n${JSON.stringify(payload)}\n-->`;
+      const body=[
+        marker,
+        "## 주간상황보고서 생성 요청",
+        "",
+        `- 보고일: ${reportDate}`,
+        `- 보고기간: ${periodStart} ~ ${periodEnd}`,
+        `- 선택 기사: ${selected.length}건`,
+        "",
+        "이 이슈를 등록하면 저장소 소유자 요청에 한해 GitHub Actions가 고급 AI 편집, 오피넷 국제유가 조회, Word 생성 및 검증을 수행합니다."
+      ].join("\n");
+      const title=`[REPORT] ${reportDate} 이라크 주간상황보고서 생성`;
+      const url=`https://github.com/${REPORT_REPOSITORY}/issues/new?title=${encodeURIComponent(title)}&labels=${encodeURIComponent("report-request")}&body=${encodeURIComponent(body)}`;
+      setReportMessage("GitHub 생성 요청 화면을 열었습니다. 내용 확인 후 ‘Submit new issue’를 누르면 생성이 시작됩니다.","success");
+      window.open(url,"_blank","noopener");
+    }catch(error){setReportMessage(error.message||String(error),"error");}
+  }
   function apply(){updateCounts();render();}
   async function init(){
     setDefaultDateRange();
+    setDefaultReportRange();
     try{
       const stamp=Date.now();
       const articleResponse=await fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"});
@@ -166,6 +245,7 @@
       const payload=await articleResponse.json();
       state.articles=Array.isArray(payload)?payload:(payload.articles||[]);
       rebuildGroups();
+      pruneSelections();
       $("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
     }catch(error){$("updatedAt").textContent="데이터 로드 실패";console.error(error);}
     apply();
@@ -173,6 +253,7 @@
   document.querySelectorAll(".summary-card").forEach((button)=>button.addEventListener("click",()=>{state.filter=button.dataset.filter;document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));apply();}));
   ["startDate","endDate","sortOrder","importanceFilter","sourceFilter","translationFilter"].forEach((id)=>$(id).addEventListener("change",apply));
   $("searchInput").addEventListener("input",apply);
+  $("requestReport").addEventListener("click",openReportRequest);
   $("resetFilters").addEventListener("click",()=>{
     setDefaultDateRange();
     $("sortOrder").value="importance-desc";
@@ -184,6 +265,18 @@
     document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item.dataset.filter==="all"));
     apply();
   });
-  document.addEventListener("click",(event)=>{const button=event.target.closest("button[data-action='select']");if(!button)return;const card=button.closest(".news-card");const key=card?.dataset.key;if(!key)return;state.selected.has(key)?state.selected.delete(key):state.selected.add(key);apply();});
+  document.addEventListener("click",(event)=>{
+    const button=event.target.closest("button[data-action='select']");
+    if(!button||button.disabled) return;
+    const card=button.closest(".news-card");
+    const key=card?.dataset.key;
+    if(!key) return;
+    if(state.selected.has(key)) state.selected.delete(key);
+    else if(state.selected.size>=MAX_REPORT_ARTICLES){setReportMessage(`보고서는 최대 ${MAX_REPORT_ARTICLES}건까지 선택할 수 있습니다.`,"error");return;}
+    else state.selected.add(key);
+    saveSelectedIds();
+    setReportMessage("");
+    apply();
+  });
   init();
 })();
