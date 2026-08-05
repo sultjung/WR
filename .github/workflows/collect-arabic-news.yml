@@ -43,7 +43,7 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
-      - name: Test relevance, grouping, cards, and translation terms
+      - name: Test relevance, category routing, grouping, cards, and translation terms
         run: npm test
 
       - name: Discover broad Arabic news candidates with Google News
@@ -93,6 +93,9 @@ jobs:
 
       - name: Apply strict Iraq category gate
         run: npm run collect:strict-gate
+
+      - name: Route direct-Iraq international articles into politics, economy, or security
+        run: npm run collect:direct-iraq-routing
 
       - name: Group duplicate reports into related news
         env:
