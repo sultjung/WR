@@ -20,4 +20,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
-      - run: npm run validate
+      - name: Validate configuration and collected data
+        run: npm run validate
+      - name: Run category, grouping, card, and routing tests
+        run: npm test
