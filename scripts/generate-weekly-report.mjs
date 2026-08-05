@@ -18,49 +18,52 @@ const SECTION_NAMES=["politicsItems","securityItems","economyItems","internation
 function fail(message){throw new Error(`[weekly-report-ai] ${message}`);}
 function compact(value=""){return String(value).replace(/\s+/g," ").trim();}
 
-const reportItemSchema={
-  type:"object",
-  additionalProperties:false,
-  required:["articleIds","dateLabel","headline","details","implication","tableHeaders","tableRows"],
-  properties:{
-    articleIds:{type:"array",minItems:1,items:{type:"string"}},
-    dateLabel:{type:"string"},
-    headline:{type:"string",minLength:1,maxLength:260},
-    details:{type:"array",maxItems:5,items:{type:"string",maxLength:500}},
-    implication:{type:"string",maxLength:500},
-    tableHeaders:{type:"array",maxItems:5,items:{type:"string",maxLength:80}},
-    tableRows:{type:"array",maxItems:20,items:{type:"array",maxItems:5,items:{type:"string",maxLength:500}}}
-  }
-};
-
-const schema={
-  type:"object",
-  additionalProperties:false,
-  required:["politicsItems","securityItems","terrorStats","terrorEvidenceArticleIds","economyItems","internationalTopic","internationalItems","impactItems"],
-  properties:{
-    politicsItems:{type:"array",items:reportItemSchema},
-    securityItems:{type:"array",items:reportItemSchema},
-    terrorStats:{
-      type:"object",
-      additionalProperties:false,
-      required:["total","armedAttack","ied","assassination","protest","shooting","suicideBombing"],
-      properties:{
-        total:{type:"integer",minimum:0},
-        armedAttack:{type:"integer",minimum:0},
-        ied:{type:"integer",minimum:0},
-        assassination:{type:"integer",minimum:0},
-        protest:{type:"integer",minimum:0},
-        shooting:{type:"integer",minimum:0},
-        suicideBombing:{type:"integer",minimum:0}
-      }
-    },
-    terrorEvidenceArticleIds:{type:"array",items:{type:"string"}},
-    economyItems:{type:"array",items:reportItemSchema},
-    internationalTopic:{type:"string",maxLength:160},
-    internationalItems:{type:"array",items:reportItemSchema},
-    impactItems:{type:"array",minItems:1,maxItems:3,items:{type:"string",minLength:1,maxLength:500}}
-  }
-};
+function buildSchema(clusterIds,securityClusterIds){
+  const allClusterEnum=clusterIds.length?clusterIds:["__no_cluster__"];
+  const securityClusterEnum=securityClusterIds.length?securityClusterIds:["__no_security_cluster__"];
+  const reportItemSchema={
+    type:"object",
+    additionalProperties:false,
+    required:["clusterIds","dateLabel","headline","details","implication","tableHeaders","tableRows"],
+    properties:{
+      clusterIds:{type:"array",minItems:1,uniqueItems:true,items:{type:"string",enum:allClusterEnum}},
+      dateLabel:{type:"string"},
+      headline:{type:"string",minLength:1,maxLength:260},
+      details:{type:"array",maxItems:5,items:{type:"string",maxLength:500}},
+      implication:{type:"string",maxLength:500},
+      tableHeaders:{type:"array",maxItems:5,items:{type:"string",maxLength:80}},
+      tableRows:{type:"array",maxItems:20,items:{type:"array",maxItems:5,items:{type:"string",maxLength:500}}}
+    }
+  };
+  return {
+    type:"object",
+    additionalProperties:false,
+    required:["politicsItems","securityItems","terrorStats","terrorEvidenceClusterIds","economyItems","internationalTopic","internationalItems","impactItems"],
+    properties:{
+      politicsItems:{type:"array",items:reportItemSchema},
+      securityItems:{type:"array",items:reportItemSchema},
+      terrorStats:{
+        type:"object",
+        additionalProperties:false,
+        required:["total","armedAttack","ied","assassination","protest","shooting","suicideBombing"],
+        properties:{
+          total:{type:"integer",minimum:0},
+          armedAttack:{type:"integer",minimum:0},
+          ied:{type:"integer",minimum:0},
+          assassination:{type:"integer",minimum:0},
+          protest:{type:"integer",minimum:0},
+          shooting:{type:"integer",minimum:0},
+          suicideBombing:{type:"integer",minimum:0}
+        }
+      },
+      terrorEvidenceClusterIds:{type:"array",maxItems:securityClusterIds.length,uniqueItems:true,items:{type:"string",enum:securityClusterEnum}},
+      economyItems:{type:"array",items:reportItemSchema},
+      internationalTopic:{type:"string",maxLength:160},
+      internationalItems:{type:"array",items:reportItemSchema},
+      impactItems:{type:"array",minItems:1,maxItems:3,items:{type:"string",minLength:1,maxLength:500}}
+    }
+  };
+}
 
 function extractText(response){
   if(typeof response.output_text==="string"&&response.output_text.trim()) return response.output_text;
@@ -73,7 +76,7 @@ function extractText(response){
   return parts.join("\n").trim();
 }
 
-async function callModel(model,prompt,input){
+async function callModel(model,prompt,input,schema){
   const controller=new AbortController();
   const timer=setTimeout(()=>controller.abort(),TIMEOUT_MS);
   const base={
@@ -84,7 +87,7 @@ async function callModel(model,prompt,input){
     max_output_tokens:MAX_OUTPUT_TOKENS,
     text:{
       verbosity:"low",
-      format:{type:"json_schema",name:"iraq_weekly_report",description:"Selected-article-only Korean weekly report structure",strict:true,schema}
+      format:{type:"json_schema",name:"iraq_weekly_report",description:"Selected-cluster-only Korean weekly report structure",strict:true,schema}
     }
   };
   const attempts=[{...base,reasoning:{effort:REASONING}},base];
@@ -122,30 +125,56 @@ function itemSortMeta(item,articleMeta){
   const scores=articles.map((article)=>Number(article.importanceScore)).filter(Number.isFinite);
   return {date:dates[0]||"9999-12-31",importance:scores.length?Math.max(...scores):-1};
 }
+function normalizeAiClusters(reportInput){
+  const selectedByCluster=new Map();
+  for(const article of reportInput.selectedArticles||[]){
+    const id=String(article.topicClusterId||"");
+    if(!selectedByCluster.has(id)) selectedByCluster.set(id,[]);
+    const {articleId,topicClusterId,targetSection,...safeArticle}=article;
+    selectedByCluster.get(id).push(safeArticle);
+  }
+  return (reportInput.reportClusters||[]).map((cluster)=>({
+    clusterId:cluster.clusterId,
+    targetSection:cluster.targetSection,
+    dateStart:cluster.dateStart,
+    dateEnd:cluster.dateEnd,
+    suggestedTitleKo:cluster.suggestedTitleKo,
+    mergeBasis:cluster.mergeBasis,
+    articles:selectedByCluster.get(cluster.clusterId)||[]
+  }));
+}
 function validateAndNormalize(content,reportInput){
   const selectedArticles=reportInput.selectedArticles||[];
   const clusters=reportInput.reportClusters||[];
-  const expected=new Set(reportInput.request.selectedArticleIds||[]);
+  const expectedArticles=new Set(reportInput.request.selectedArticleIds||[]);
+  const expectedClusters=new Set(clusters.map((cluster)=>cluster.clusterId));
+  const clusterMeta=new Map(clusters.map((cluster)=>[cluster.clusterId,cluster]));
   const articleMeta=new Map(selectedArticles.map((article)=>[article.articleId,article]));
-  const usage=new Map([...expected].map((id)=>[id,0]));
-  const assignment=new Map();
+  const clusterUsage=new Map([...expectedClusters].map((id)=>[id,0]));
+  const articleUsage=new Map([...expectedArticles].map((id)=>[id,0]));
 
   for(const section of SECTION_NAMES){
     const items=Array.isArray(content[section])?content[section]:[];
-    for(let index=0;index<items.length;index+=1){
-      const item=items[index];
+    for(const item of items){
       if(!compact(item.headline)) fail("빈 보고서 항목 제목이 있습니다.");
       if(!dateLabelIsValid(item.dateLabel)) fail(`날짜 형식이 M.D 또는 M.D~M.D가 아닙니다: ${item.dateLabel}`);
-      const uniqueIds=[...new Set(item.articleIds)];
-      if(uniqueIds.length!==item.articleIds.length) fail(`한 항목 안에 동일 기사 ID가 중복됐습니다: ${item.headline}`);
-      for(const id of uniqueIds){
-        if(!expected.has(id)) fail(`선택되지 않은 기사 ID가 결과에 포함됐습니다: ${id}`);
-        const meta=articleMeta.get(id);
-        if(!meta) fail(`선택 기사 메타데이터가 없습니다: ${id}`);
-        if(meta.targetSection!==section) fail(`${id}는 ${meta.targetSection}에 들어가야 하지만 ${section}에 배치됐습니다.`);
-        usage.set(id,(usage.get(id)||0)+1);
-        assignment.set(id,`${section}:${index}`);
+      const clusterIds=[...new Set(item.clusterIds||[])];
+      if(clusterIds.length!==(item.clusterIds||[]).length) fail(`한 항목 안에 동일 군집 ID가 중복됐습니다: ${item.headline}`);
+      if(!clusterIds.length) fail(`보고서 항목에 군집 ID가 없습니다: ${item.headline}`);
+      const articleIds=[];
+      for(const clusterId of clusterIds){
+        if(!expectedClusters.has(clusterId)) fail(`알 수 없는 군집 ID가 결과에 포함됐습니다: ${clusterId}`);
+        const cluster=clusterMeta.get(clusterId);
+        if(cluster.targetSection!==section) fail(`${clusterId}는 ${cluster.targetSection}에 들어가야 하지만 ${section}에 배치됐습니다.`);
+        clusterUsage.set(clusterId,(clusterUsage.get(clusterId)||0)+1);
+        for(const articleId of cluster.articleIds||[]){
+          if(!expectedArticles.has(articleId)) fail(`군집 ${clusterId}에 선택되지 않은 기사 ID가 연결돼 있습니다: ${articleId}`);
+          articleUsage.set(articleId,(articleUsage.get(articleId)||0)+1);
+          articleIds.push(articleId);
+        }
       }
+      item.articleIds=[...new Set(articleIds)];
+      delete item.clusterIds;
       if(item.tableHeaders.length){
         if(!item.tableRows.length) fail(`표 머리글은 있으나 행이 없습니다: ${item.headline}`);
         for(const row of item.tableRows){if(row.length!==item.tableHeaders.length) fail(`표 열 수가 일치하지 않습니다: ${item.headline}`);}
@@ -153,17 +182,17 @@ function validateAndNormalize(content,reportInput){
     }
   }
 
-  const missing=[];
-  const duplicated=[];
-  for(const [id,count] of usage){if(count===0) missing.push(id);if(count>1) duplicated.push(id);}
-  if(missing.length) fail(`선택 기사 중 보고서에 반영되지 않은 ID가 있습니다: ${missing.join(",")}`);
-  if(duplicated.length) fail(`선택 기사가 여러 항목에 중복 반영됐습니다: ${duplicated.join(",")}`);
+  const missingClusters=[];
+  const duplicatedClusters=[];
+  for(const [id,count] of clusterUsage){if(count===0) missingClusters.push(id);if(count>1) duplicatedClusters.push(id);}
+  if(missingClusters.length) fail(`보고서에 반영되지 않은 군집 ID가 있습니다: ${missingClusters.join(",")}`);
+  if(duplicatedClusters.length) fail(`여러 항목에 중복 반영된 군집 ID가 있습니다: ${duplicatedClusters.join(",")}`);
 
-  for(const cluster of clusters){
-    if(!Array.isArray(cluster.articleIds)||cluster.articleIds.length<2) continue;
-    const locations=[...new Set(cluster.articleIds.map((id)=>assignment.get(id)).filter(Boolean))];
-    if(locations.length!==1) fail(`유사기사 군집 ${cluster.clusterId}가 ${locations.length}개 보고서 항목으로 나뉘었습니다. 기사 ID: ${cluster.articleIds.join(",")}`);
-  }
+  const missingArticles=[];
+  const duplicatedArticles=[];
+  for(const [id,count] of articleUsage){if(count===0) missingArticles.push(id);if(count>1) duplicatedArticles.push(id);}
+  if(missingArticles.length) fail(`선택 기사 중 보고서에 반영되지 않은 ID가 있습니다: ${missingArticles.join(",")}`);
+  if(duplicatedArticles.length) fail(`선택 기사가 여러 항목에 중복 반영됐습니다: ${duplicatedArticles.join(",")}`);
 
   for(const section of SECTION_NAMES){
     content[section]=[...(content[section]||[])].sort((left,right)=>{
@@ -176,10 +205,15 @@ function validateAndNormalize(content,reportInput){
   const stats=content.terrorStats;
   const sum=stats.armedAttack+stats.ied+stats.assassination+stats.protest+stats.shooting+stats.suicideBombing;
   if(stats.total!==sum) fail(`테러 총계(${stats.total})와 세부 합계(${sum})가 일치하지 않습니다.`);
-  for(const id of content.terrorEvidenceArticleIds){
-    if(!expected.has(id)) fail(`테러 집계 근거에 선택되지 않은 ID가 있습니다: ${id}`);
-    if(articleMeta.get(id)?.targetSection!=="securityItems") fail(`테러 집계 근거가 치안 기사로 분류되지 않았습니다: ${id}`);
+  const terrorEvidenceArticleIds=[];
+  for(const clusterId of content.terrorEvidenceClusterIds||[]){
+    const cluster=clusterMeta.get(clusterId);
+    if(!cluster) fail(`알 수 없는 테러 집계 군집 ID가 있습니다: ${clusterId}`);
+    if(cluster.targetSection!=="securityItems") fail(`테러 집계 근거 군집이 치안 섹션이 아닙니다: ${clusterId}`);
+    terrorEvidenceArticleIds.push(...(cluster.articleIds||[]));
   }
+  content.terrorEvidenceArticleIds=[...new Set(terrorEvidenceArticleIds)];
+  delete content.terrorEvidenceClusterIds;
   if(!content.impactItems.length) fail("그룹/건설 영향이 비어 있습니다.");
   const forbidden=/\bAI\b|프롬프트|자동\s*생성|선택\s*기사|모델/i;
   if(forbidden.test(JSON.stringify(content))) fail("최종 보고서에 제작 과정 문구가 포함됐습니다.");
@@ -192,24 +226,28 @@ const [reportInput,oil,prompt]=await Promise.all([
   fs.readFile(OIL_FILE,"utf8").then(JSON.parse),
   fs.readFile(PROMPT_FILE,"utf8")
 ]);
+const aiClusters=normalizeAiClusters(reportInput);
+const clusterIds=aiClusters.map((cluster)=>cluster.clusterId);
+const securityClusterIds=aiClusters.filter((cluster)=>cluster.targetSection==="securityItems").map((cluster)=>cluster.clusterId);
+const schema=buildSchema(clusterIds,securityClusterIds);
 const aiInput={
-  reportRequest:reportInput.request,
+  reportRequest:{reportDate:reportInput.request.reportDate,periodStart:reportInput.request.periodStart,periodEnd:reportInput.request.periodEnd},
   officialOilPrices:oil,
-  reportClusters:reportInput.reportClusters,
-  selectedArticles:reportInput.selectedArticles,
+  reportClusters:aiClusters,
   editorialConstraints:reportInput.editorialConstraints,
   requiredOutputLanguage:"Korean",
-  requiredReportStructure:"실제 건설, 이라크 주간 종합상황보고 양식"
+  requiredReportStructure:"실제 건설, 이라크 주간 종합상황보고 양식",
+  referenceRule:"반드시 reportClusters의 짧은 clusterId만 그대로 사용하고 기사 ID를 생성하거나 복사하지 말 것"
 };
 let result=null;
 let lastError=null;
 for(const model of [MODEL,...FALLBACKS.filter((value)=>value!==MODEL)]){
-  try{result=await callModel(model,prompt,aiInput);break;}catch(error){lastError=error;console.warn(`[weekly-report-ai] model failed: ${error.message}`);}
+  try{result=await callModel(model,prompt,aiInput,schema);break;}catch(error){lastError=error;console.warn(`[weekly-report-ai] model failed: ${error.message}`);}
 }
 if(!result) throw lastError||new Error("all report models failed");
 const validated=validateAndNormalize(result.content,reportInput);
 const output={
-  pipelineVersion:"WEEKLY_REPORT_V2_CLUSTERED",
+  pipelineVersion:"WEEKLY_REPORT_V3_CLUSTER_REFERENCES",
   generatedAt:new Date().toISOString(),
   model:result.model,
   responseId:result.responseId,
