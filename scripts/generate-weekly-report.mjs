@@ -26,7 +26,7 @@ function buildSchema(clusterIds,securityClusterIds){
     additionalProperties:false,
     required:["clusterIds","dateLabel","headline","details","implication","tableHeaders","tableRows"],
     properties:{
-      clusterIds:{type:"array",minItems:1,uniqueItems:true,items:{type:"string",enum:allClusterEnum}},
+      clusterIds:{type:"array",minItems:1,items:{type:"string",enum:allClusterEnum}},
       dateLabel:{type:"string"},
       headline:{type:"string",minLength:1,maxLength:260},
       details:{type:"array",maxItems:5,items:{type:"string",maxLength:500}},
@@ -56,7 +56,7 @@ function buildSchema(clusterIds,securityClusterIds){
           suicideBombing:{type:"integer",minimum:0}
         }
       },
-      terrorEvidenceClusterIds:{type:"array",maxItems:securityClusterIds.length,uniqueItems:true,items:{type:"string",enum:securityClusterEnum}},
+      terrorEvidenceClusterIds:{type:"array",maxItems:securityClusterIds.length,items:{type:"string",enum:securityClusterEnum}},
       economyItems:{type:"array",items:reportItemSchema},
       internationalTopic:{type:"string",maxLength:160},
       internationalItems:{type:"array",items:reportItemSchema},
@@ -206,7 +206,9 @@ function validateAndNormalize(content,reportInput){
   const sum=stats.armedAttack+stats.ied+stats.assassination+stats.protest+stats.shooting+stats.suicideBombing;
   if(stats.total!==sum) fail(`테러 총계(${stats.total})와 세부 합계(${sum})가 일치하지 않습니다.`);
   const terrorEvidenceArticleIds=[];
-  for(const clusterId of content.terrorEvidenceClusterIds||[]){
+  const terrorClusterIds=[...new Set(content.terrorEvidenceClusterIds||[])];
+  if(terrorClusterIds.length!==(content.terrorEvidenceClusterIds||[]).length) fail("테러 집계 근거 군집 ID가 중복됐습니다.");
+  for(const clusterId of terrorClusterIds){
     const cluster=clusterMeta.get(clusterId);
     if(!cluster) fail(`알 수 없는 테러 집계 군집 ID가 있습니다: ${clusterId}`);
     if(cluster.targetSection!=="securityItems") fail(`테러 집계 근거 군집이 치안 섹션이 아닙니다: ${clusterId}`);
