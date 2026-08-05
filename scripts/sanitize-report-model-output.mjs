@@ -27,10 +27,12 @@ function adaptRequestInit(input,init){
   if(!isResponsesApiRequest(input)||typeof init?.body!=="string") return init;
   let payload;
   try{payload=JSON.parse(init.body);}catch{return init;}
-  if(String(payload?.model||"").startsWith("gpt-4.1")){
+  const model=String(payload?.model||"");
+  const nonReasoningModel=model.startsWith("gpt-4.1")||model.startsWith("gpt-4o");
+  if(nonReasoningModel){
     delete payload.reasoning;
-    if(payload.text&&payload.text.verbosity==="low") payload.text.verbosity="medium";
-    console.log("[weekly-report-ai] adapted gpt-4.1 fallback request");
+    if(payload.text&&payload.text.verbosity!=="medium") payload.text.verbosity="medium";
+    console.log(`[weekly-report-ai] adapted ${model} non-reasoning request`);
     return {...init,body:JSON.stringify(payload)};
   }
   return init;
