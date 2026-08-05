@@ -49,17 +49,18 @@ jobs:
             exit 1
           fi
 
-      - name: Validate request and prepare selected article input
+      - name: Validate request, cluster similar articles, and prepare report input
         id: prepare
         env:
-          REPORT_MAX_ARTICLES: "20"
+          REPORT_MAX_ARTICLES: "40"
           REPORT_SOURCE_MAX_CHARS: "18000"
+          REPORT_TOTAL_SOURCE_MAX_CHARS: "240000"
         run: node scripts/prepare-report-request.mjs
 
       - name: Fetch D-2 and D-1 crude prices from Opinet
         run: python scripts/fetch-opinet-crude.py --request work/report-request.json --output work/oil-prices.json
 
-      - name: Edit selected articles with advanced AI
+      - name: Edit selected article clusters with advanced AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           REPORT_MODEL: ${{ vars.REPORT_MODEL || 'gpt-5.1' }}
@@ -75,7 +76,7 @@ jobs:
       - name: Render final Word report from fixed template
         run: python scripts/render-weekly-report.py --template templates/weekly-report-template.docx --content work/report-content.json --output work/weekly-report.docx
 
-      - name: Validate report structure, article usage, tables, and prices
+      - name: Validate grouping, category order, chronology, tables, and prices
         run: python scripts/validate-weekly-report.py --docx work/weekly-report.docx --content work/report-content.json --metadata work/report-metadata.json
 
       - name: Upload validated report artifact
@@ -120,12 +121,13 @@ jobs:
           script: |
             const reportDate = '${{ steps.prepare.outputs.report_date }}';
             const count = '${{ steps.prepare.outputs.selected_count }}';
+            const clusters = '${{ steps.prepare.outputs.cluster_count }}';
             const pagesUrl = `https://${context.repo.owner}.github.io/${context.repo.repo}/reports/latest.docx`;
             await github.rest.issues.createComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               issue_number: context.issue.number,
-              body: `주간상황보고서 생성이 완료됐습니다.\n\n- 보고일: ${reportDate}\n- 반영 기사: ${count}건\n- [Word 보고서 다운로드](${pagesUrl})\n\n검증을 통과한 파일만 reports/latest.docx로 교체됩니다.`
+              body: `주간상황보고서 생성이 완료됐습니다.\n\n- 보고일: ${reportDate}\n- 선택 기사: ${count}건\n- 통합 주제: ${clusters}건\n- [Word 보고서 다운로드](${pagesUrl})\n\n유사기사 통합, 카테고리 배치, 시간순 배열과 문서 검증을 통과한 파일만 reports/latest.docx로 교체됩니다.`
             });
             await github.rest.issues.update({
               owner: context.repo.owner,
