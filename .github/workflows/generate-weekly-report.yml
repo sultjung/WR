@@ -63,14 +63,14 @@ jobs:
       - name: Fetch D-2 and D-1 crude prices from Opinet
         run: python scripts/fetch-opinet-crude.py --request work/report-request.json --output work/oil-prices.json
 
-      - name: Edit selected article clusters with advanced AI
+      - name: Edit selected article clusters with cost-efficient AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          REPORT_MODEL: ${{ vars.REPORT_MODEL || 'gpt-5.1' }}
-          REPORT_MODEL_FALLBACKS: "gpt-4.1"
-          REPORT_REASONING: ${{ vars.REPORT_REASONING || 'high' }}
-          REPORT_AI_TIMEOUT_MS: "600000"
-          REPORT_MAX_OUTPUT_TOKENS: "14000"
+          REPORT_MODEL: "gpt-4.1-mini"
+          REPORT_MODEL_FALLBACKS: "gpt-4o-mini"
+          REPORT_REASONING: "none"
+          REPORT_AI_TIMEOUT_MS: "300000"
+          REPORT_MAX_OUTPUT_TOKENS: "8000"
         run: npm run report:ai
 
       - name: Build fixed Word template
