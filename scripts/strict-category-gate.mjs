@@ -29,6 +29,11 @@ function hasAny(text = "", terms = []) {
   return terms.some((term) => normalized.includes(normalizeArabic(term)));
 }
 
+function countAny(text = "", terms = []) {
+  const normalized = normalizeArabic(text);
+  return terms.reduce((count, term) => count + (normalized.includes(normalizeArabic(term)) ? 1 : 0), 0);
+}
+
 function hasNicAcronym(text = "") {
   return /(?:^|[^a-z0-9])nic(?:[^a-z0-9]|$)/i.test(String(text));
 }
@@ -88,9 +93,7 @@ const BISMAYAH = [
   "بسماية", "بسمايه", "مدينة بسماية الجديدة", "مشروع بسماية",
   "bismayah", "bismaya", "bncp"
 ];
-const HANWHA = [
-  "شركة هانوا", "هانوا", "hanwha", "한화"
-];
+const HANWHA = ["شركة هانوا", "هانوا", "hanwha", "한화"];
 const NIC = [
   "الهيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "رئيس الهيئة الوطنية للاستثمار",
   "national investment commission", "iraq national investment commission",
@@ -133,6 +136,28 @@ const INTERNATIONAL_OIL_ROUTE = [
 const INTERNATIONAL_ROUTE_CONTEXT = [
   "الخليج", "مضيق", "البحر الاحمر", "باب المندب", "قناة السويس", "الملاحة", "الشرايين"
 ];
+
+// Iraq-direct bilateral stories are domestic reporting subjects. These terms
+// decide which domestic section receives a story that arrived as international.
+const BILATERAL_ECONOMY = [
+  "التبادل التجاري", "التجارة الثنائية", "حجم التجارة", "الاستثمارات المشتركة", "الاستثمار المشترك",
+  "اتفاقيات اقتصادية", "اتفاقية اقتصادية", "اتفاقيات تجارية", "اتفاقية تجارية",
+  "مذكرة تفاهم اقتصادية", "مجلس الاعمال", "رجال الاعمال", "منطقة حرة", "التعاون الاقتصادي",
+  "التعاون التجاري", "التعاون الاستثماري", "التعاون في الطاقة", "التعاون في النقل",
+  "المياه والطاقة", "الطاقة والمياه", "الممرات الاقتصادية", "الربط السككي", "الربط الكهربائي",
+  "طريق التنمية", "النقل", "الزراعة", "الصناعة", "الجمارك", "النفط والغاز", "اعادة الاعمار"
+];
+const BILATERAL_SECURITY = [
+  "التعاون الامني", "اتفاق امني", "اتفاقية امنية", "مذكرة امنية", "امن الحدود", "ضبط الحدود",
+  "التعاون العسكري", "اتفاق دفاعي", "التنسيق العسكري", "مكافحة الارهاب", "ملاحقة داعش",
+  "القوات المسلحة", "الدفاع المشترك"
+];
+const BILATERAL_POLITICS = [
+  "العلاقات الثنائية", "الشراكة الاستراتيجية", "مجلس التعاون الاستراتيجي", "اتفاقية شراكة",
+  "تعزيز العلاقات", "تطوير العلاقات", "التعاون الثنائي", "زيارة رسمية", "زيارة دولة",
+  "لقاء ثنائي", "مباحثات رسمية", "وزيرا الخارجية", "وزير الخارجية", "السفير", "الدبلوماسية",
+  "اتفاقيات متعددة", "اتفاقيات في مجالات متعددة", "ملفات مشتركة"
+];
 const FOREIGN_PLACES = [
   "سوريا", "السوري", "السورية", "درعا", "حماة", "حمص", "حلب", "دمشق",
   "لبنان", "اللبناني", "اللبنانية", "بيروت", "فلسطين", "الفلسطيني", "الفلسطينية", "غزة",
@@ -143,9 +168,7 @@ const FOREIGN_PLACES = [
   "تركيا", "التركي", "التركية", "باكستان", "كشمير", "افغانستان", "كينيا",
   "الصومال", "كولومبيا", "المغرب", "تونس", "الجزائر", "السودان", "الهند"
 ];
-const FOREIGN_TITLE_IRAQ_EXCEPTIONS = [
-  "جسر غزة"
-];
+const FOREIGN_TITLE_IRAQ_EXCEPTIONS = ["جسر غزة"];
 const NOISE = [
   "كرة القدم", "مباراة", "الدوري", "لاعب", "ريال مدريد", "برشلونة", "مسلسل", "فنان",
   "ممثلة", "اغنية", "ابراج", "حظك اليوم", "وصفة", "طبخ", "موضة", "اهم عناوين",
@@ -154,16 +177,10 @@ const NOISE = [
 
 function hasIraqPoliticalActor(text = "") {
   const normalized = normalizeArabic(text);
-
   return IRAQ_POLITICAL_ACTORS.some((actor) => {
     const term = normalizeArabic(actor);
     if (normalized.includes(term)) return true;
-
-    if (term.startsWith("ال")) {
-      const withLiPrefix = `لل${term.slice(2)}`;
-      if (normalized.includes(withLiPrefix)) return true;
-    }
-
+    if (term.startsWith("ال") && normalized.includes(`لل${term.slice(2)}`)) return true;
     return false;
   });
 }
@@ -189,14 +206,23 @@ function iraqRelevance(title, lead) {
     ? foreignTitleIraqException
     : (titleHasIraq || openingHasInstitution || openingHasIraq);
 
-  return {
-    primary,
-    titleHasIraq,
-    openingHasInstitution,
-    openingHasIraq,
-    foreignPrimaryTitle,
-    foreignTitleIraqException
-  };
+  return { primary, titleHasIraq, openingHasInstitution, openingHasIraq, foreignPrimaryTitle, foreignTitleIraqException };
+}
+
+function routeIraqDirectInternational(title, lead) {
+  const opening = String(lead || "").slice(0, PRIMARY_LEAD_CHARS);
+  const text = `${title}\n${opening}`;
+  const economyScore = countAny(text, ECONOMY) + (countAny(text, BILATERAL_ECONOMY) * 2);
+  const securityScore = countAny(text, SECURITY) + (countAny(text, BILATERAL_SECURITY) * 2);
+  const politicsScore = countAny(text, POLITICS) + countAny(text, BILATERAL_POLITICS);
+
+  if (economyScore >= 2 && economyScore >= securityScore && economyScore >= politicsScore) {
+    return { category: "economy", reason: "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력" };
+  }
+  if (securityScore >= 2 && securityScore > economyScore) {
+    return { category: "security", reason: "이라크 직접 연관 양자 안보·군사·국경·테러 대응" };
+  }
+  return { category: "politics", reason: "이라크가 직접 주체인 외교·정부·전략적 협력" };
 }
 
 function setLockedCategory(article, category, reason) {
@@ -212,7 +238,7 @@ function setLockedCategory(article, category, reason) {
       to: category,
       reason,
       locked: true,
-      method: "STRICT_CATEGORY_GATE_V3"
+      method: "STRICT_CATEGORY_GATE_V4"
     }
   };
 }
@@ -225,20 +251,13 @@ function evaluate(article) {
   const current = getCategory(article);
   const keywordId = getKeywordId(article);
 
-  if (!title || normalizeArabic(title).length < 10) {
-    return { action: "exclude", reason: "제목 정보 부족" };
-  }
-  if (hasAny(title, NOISE)) {
-    return { action: "exclude", reason: "스포츠·연예·생활·목록형 기사" };
-  }
+  if (!title || normalizeArabic(title).length < 10) return { action: "exclude", reason: "제목 정보 부족" };
+  if (hasAny(title, NOISE)) return { action: "exclude", reason: "스포츠·연예·생활·목록형 기사" };
 
   const relevance = iraqRelevance(title, lead);
   const isFullText = article.contentStatus === "FULL_TEXT";
-  const bismayahMatch = hasAny(text, BISMAYAH)
-    || (!isFullText && /^bismayah-/i.test(keywordId));
-  const nicMatch = hasAny(text, NIC)
-    || hasNicAcronym(text)
-    || (!isFullText && /(?:^|-)nic(?:-|$)/i.test(keywordId));
+  const bismayahMatch = hasAny(text, BISMAYAH) || (!isFullText && /^bismayah-/i.test(keywordId));
+  const nicMatch = hasAny(text, NIC) || hasNicAcronym(text) || (!isFullText && /(?:^|-)nic(?:-|$)/i.test(keywordId));
   const hanwhaIraqMatch = hasAny(text, HANWHA) && hasAny(text, IRAQ_CORE);
 
   if (bismayahMatch || nicMatch || hanwhaIraqMatch) {
@@ -271,27 +290,29 @@ function evaluate(article) {
   }
 
   if (current === "international") {
-    if (!hasAny(text, INTERNATIONAL) && !relevance.primary) {
+    if (relevance.primary) {
+      const routed = routeIraqDirectInternational(title, lead);
+      return { action: "keep", category: routed.category, reason: routed.reason };
+    }
+
+    if (!hasAny(text, INTERNATIONAL)) {
       return { action: "exclude", reason: "지정 국제사회 키워드 및 이라크 직접 연결 불일치" };
     }
 
     const internationalOpening = `${title}\n${opening}`;
-    const marketLedHeadline = hasAny(title, INTERNATIONAL_DIRECT_MARKET)
-      || hasAny(title, INTERNATIONAL_OIL_ROUTE);
+    const marketLedHeadline = hasAny(title, INTERNATIONAL_DIRECT_MARKET) || hasAny(title, INTERNATIONAL_OIL_ROUTE);
     const strategicMarketLink = marketLedHeadline
       && (hasAny(internationalOpening, INTERNATIONAL_DIRECT_MARKET)
         || (hasAny(internationalOpening, INTERNATIONAL_OIL_ROUTE)
           && hasAny(internationalOpening, INTERNATIONAL_ROUTE_CONTEXT)));
 
-    if (!relevance.primary && !strategicMarketLink) {
-      return { action: "exclude", reason: "이라크 직접 영향 또는 제목상 호르무즈·국제유가·원유수송 연결이 없는 해외 지역기사" };
+    if (!strategicMarketLink) {
+      return { action: "exclude", reason: "이라크 직접 주체가 아니며 호르무즈·국제유가·원유수송 직접 영향도 없는 해외 지역기사" };
     }
     return {
       action: "keep",
       category: "international",
-      reason: relevance.primary
-        ? "이라크와 직접 연결된 국제정세"
-        : "제목상 호르무즈·국제유가·원유수송을 통한 이라크 사업 직접 영향"
+      reason: "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세"
     };
   }
 
@@ -338,13 +359,13 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.2",
+  schemaVersion: "1.3",
   generatedAt,
   before: articles.length,
   retained: retained.length,
   excludedCount: excluded.length,
   primaryLeadChars: PRIMARY_LEAD_CHARS,
-  method: "STRICT_CATEGORY_GATE_V3",
+  method: "STRICT_CATEGORY_GATE_V4",
   categoryCounts,
   excludedReasonCounts,
   excluded
