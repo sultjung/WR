@@ -7,6 +7,14 @@ const INPUT_FILE=path.resolve(process.env.REPORT_INPUT_FILE||path.join(ROOT,"wor
 const originalFetch=globalThis.fetch;
 let reportInputPromise=null;
 
+const REPORT_TERM_REPLACEMENTS=[
+  {pattern:/\bAI\b/gi,replacement:"인공지능"},
+  {pattern:/프롬프트/g,replacement:"편집 지침"},
+  {pattern:/자동\s*생성/g,replacement:"생성"},
+  {pattern:/선택\s*기사/g,replacement:"입력 기사"},
+  {pattern:/모델/g,replacement:"방식"}
+];
+
 function isResponsesApiRequest(input){
   const raw=typeof input==="string"?input:input?.url;
   try{
@@ -47,11 +55,38 @@ async function getReportInput(){
   return reportInputPromise;
 }
 
+function sanitizeReportTerms(value,pathLabel="report"){
+  if(typeof value==="string"){
+    let next=value;
+    for(const {pattern,replacement} of REPORT_TERM_REPLACEMENTS){
+      pattern.lastIndex=0;
+      if(pattern.test(next)){
+        pattern.lastIndex=0;
+        next=next.replace(pattern,replacement);
+      }
+    }
+    if(next!==value){
+      console.warn(`[weekly-report-ai] normalized report terminology at ${pathLabel}`);
+    }
+    return next;
+  }
+  if(Array.isArray(value)){
+    return value.map((entry,index)=>sanitizeReportTerms(entry,`${pathLabel}[${index}]`));
+  }
+  if(value&&typeof value==="object"){
+    for(const [key,entry] of Object.entries(value)){
+      value[key]=sanitizeReportTerms(entry,`${pathLabel}.${key}`);
+    }
+  }
+  return value;
+}
+
 async function normalizeStructuredText(text){
   if(typeof text!=="string"||!text.trim()) return text;
   let parsed;
   try{parsed=JSON.parse(text);}catch{return text;}
   const normalized=normalizeReportClusterReferences(parsed,await getReportInput(),console);
+  sanitizeReportTerms(normalized);
   return JSON.stringify(normalized);
 }
 
