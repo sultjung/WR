@@ -57,6 +57,9 @@ jobs:
           REPORT_TOTAL_SOURCE_MAX_CHARS: "240000"
         run: node scripts/prepare-report-request.mjs
 
+      - name: Correct direct-Iraq international categories before report editing
+        run: npm run report:category-routing
+
       - name: Fetch D-2 and D-1 crude prices from Opinet
         run: python scripts/fetch-opinet-crude.py --request work/report-request.json --output work/oil-prices.json
 
