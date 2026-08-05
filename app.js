@@ -234,6 +234,17 @@
       window.open(url,"_blank","noopener");
     }catch(error){setReportMessage(error.message||String(error),"error");}
   }
+  async function updateLatestReportLink(){
+    const link=$("latestReportLink");
+    try{
+      const response=await fetch(`./reports/latest.json?v=${Date.now()}`,{cache:"no-store"});
+      if(!response.ok) throw new Error(`latest report HTTP ${response.status}`);
+      const metadata=await response.json();
+      const label=String(metadata.reportDate||"").trim();
+      link.textContent=label?`최근 보고서(${label}) 다운로드`:"최근 생성 보고서 다운로드";
+      link.hidden=false;
+    }catch{link.hidden=true;}
+  }
   function apply(){updateCounts();render();}
   async function init(){
     setDefaultDateRange();
@@ -248,6 +259,7 @@
       pruneSelections();
       $("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
     }catch(error){$("updatedAt").textContent="데이터 로드 실패";console.error(error);}
+    await updateLatestReportLink();
     apply();
   }
   document.querySelectorAll(".summary-card").forEach((button)=>button.addEventListener("click",()=>{state.filter=button.dataset.filter;document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));apply();}));
