@@ -13,3 +13,8 @@ data/event-groups.json
 data/foreign-local-audit.json
 data/iraq-scope-gate-summary.json
 data/strict-category-gate-summary.json
+
+# Final report generation intermediates are validated before publishing.
+work/
+__pycache__/
+*.pyc
