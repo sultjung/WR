@@ -1,0 +1,47 @@
+{
+  "pipelineVersion": "WEEKLY_REPORT_V4_CONTENT_SECTION_OVERRIDE",
+  "generatedAt": "2026-08-05T23:29:40.687Z",
+  "reportDate": "2026-08-05",
+  "periodStart": "2026-07-29",
+  "periodEnd": "2026-08-04",
+  "issueNumber": 7,
+  "selectedArticleCount": 17,
+  "clusterCount": 17,
+  "mergedClusterCount": 0,
+  "sectionDates": {
+    "politicsItems": [
+      "2026-07-30",
+      "2026-07-30",
+      "2026-07-30",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-02",
+      "2026-08-02",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-04"
+    ],
+    "securityItems": [
+      "2026-07-31"
+    ],
+    "economyItems": [],
+    "internationalItems": []
+  },
+  "model": "gpt-5.1",
+  "responseId": "resp_0bc31ee028175791016a73c70610d0819aa519d6ba4325965a",
+  "oilSource": "오피넷(한국석유공사) 국제유가-원유",
+  "oilSourceUrl": "https://www.opinet.co.kr/gloptotSelect.do",
+  "oilTargetDates": [
+    "2026-08-03",
+    "2026-08-04"
+  ],
+  "docxSha256": "9fa03d6e69997084ca59320621a1cfc8e2d77412fc46a0b4ac7af79d5a01c1f3",
+  "docxBytes": 46659,
+  "tableCount": 2,
+  "paragraphCount": 106
+}
