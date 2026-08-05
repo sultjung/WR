@@ -15,8 +15,93 @@ const TIMEOUT_MS=Math.max(60000,Number(process.env.REPORT_AI_TIMEOUT_MS||300000)
 const MAX_OUTPUT_TOKENS=Math.max(4000,Number(process.env.REPORT_MAX_OUTPUT_TOKENS||14000));
 const SECTION_NAMES=["politicsItems","securityItems","economyItems","internationalItems"];
 
+const ECONOMY_ROUTE_TERMS=[
+  "경제","무역","교역","투자","사업","프로젝트","계약","건설","주택","인프라","재건","개발","석유","원유","가스","에너지","전력","수자원","교통","철도","항만","관세","재정","예산","금융","은행","수출","수입","산업","고용",
+  "اقتصاد","اقتصادي","اقتصادية","تجارة","تجاري","التبادل التجاري","استثمار","استثمارات","مشروع","مشاريع","عقد","عقود","اعمار","إعمار","اسكان","إسكان","بنى تحتية","بنية تحتية","نفط","غاز","طاقة","كهرباء","مياه","موارد مائية","نقل","طريق التنمية","سكك حديد","ميناء","موانئ","جمارك","تمويل","موازنة","ميزانية","مصرف","مصارف","بنك","صادرات","واردات","صناعة","تشغيل"
+];
+const POLITICS_ROUTE_TERMS=[
+  "정부","총리","대통령","의회","내각","외교","회담","정상회담","정당","선거","임명","해임","사임","표결","법안","정책","위원회","전략적 파트너십","양국 관계","협정","협약","양해각서","공식 방문",
+  "حكومة","الحكومة","رئيس الوزراء","رئيس الجمهورية","مجلس الوزراء","مجلس النواب","البرلمان","وزارة الخارجية","وزير الخارجية","سياسة","سياسي","انتخابات","تعيين","اقالة","إقالة","استقالة","تصويت","قانون","لجنة","اللجنة","العلاقات الثنائية","الشراكة الاستراتيجية","اتفاقية","اتفاقيات","مذكرة تفاهم","زيارة رسمية","مباحثات","مفاوضات"
+];
+
 function fail(message){throw new Error(`[weekly-report-ai] ${message}`);}
 function compact(value=""){return String(value).replace(/\s+/g," ").trim();}
+function normalizeRoutingText(value=""){
+  return String(value)
+    .normalize("NFKC")
+    .replace(/[\u064B-\u065F\u0670\u06D6-\u06ED]/g,"")
+    .replace(/\u0640/g,"")
+    .replace(/[إأآٱ]/g,"ا")
+    .replace(/ى/g,"ي")
+    .replace(/ة/g,"ه")
+    .toLowerCase()
+    .replace(/\s+/g," ")
+    .trim();
+}
+function termEvidence(rawText,terms){
+  const text=normalizeRoutingText(rawText);
+  const unique=[...new Set(terms.map(normalizeRoutingText))];
+  const matched=unique.filter((term)=>term&&text.includes(term));
+  return {count:matched.length,matched:matched.slice(0,12)};
+}
+function articleRoutingText(article={}){
+  const facts=article.cardFacts||{};
+  return [
+    article.titleArabic,
+    article.card?.titleKo,
+    article.card?.summaryKo,
+    article.card?.whyItMatters,
+    facts.mainSubjectAr,
+    facts.actionAr,
+    facts.locationAr,
+    facts.resultAr,
+    ...(Array.isArray(facts.keyFactsAr)?facts.keyFactsAr:[]),
+    ...(Array.isArray(facts.peopleAr)?facts.peopleAr:[]),
+    ...(Array.isArray(facts.organizationsAr)?facts.organizationsAr:[]),
+    String(article.originalTextArabic||"").slice(0,3500)
+  ].filter(Boolean).join(" ");
+}
+function clusterRoutingPolicy(cluster,selectedArticles){
+  const members=selectedArticles.filter((article)=>article.topicClusterId===cluster.clusterId);
+  const text=members.map(articleRoutingText).join(" ");
+  const titleText=members.map((article)=>`${article.titleArabic||""} ${article.card?.titleKo||""}`).join(" ");
+  const economy=termEvidence(text,ECONOMY_ROUTE_TERMS);
+  const politics=termEvidence(text,POLITICS_ROUTE_TERMS);
+  const economyTitle=termEvidence(titleText,ECONOMY_ROUTE_TERMS);
+  const politicsTitle=termEvidence(titleText,POLITICS_ROUTE_TERMS);
+  const initial=cluster.targetSection;
+  const allowed=[initial];
+
+  if(initial==="politicsItems"){
+    const strongEconomy=economyTitle.count>=1||economy.count>=3;
+    if(strongEconomy) allowed.push("economyItems");
+  }else if(initial==="economyItems"){
+    const strongPolitics=politicsTitle.count>=1&&economyTitle.count===0&&politics.count>=2;
+    if(strongPolitics) allowed.push("politicsItems");
+  }
+
+  return {
+    initialTargetSection:initial,
+    allowedSections:[...new Set(allowed)],
+    evidence:{
+      economyCount:economy.count,
+      politicsCount:politics.count,
+      economyTitleCount:economyTitle.count,
+      politicsTitleCount:politicsTitle.count,
+      economyTerms:economy.matched,
+      politicsTerms:politics.matched
+    }
+  };
+}
+function enrichClusterRouting(reportInput){
+  const selected=reportInput.selectedArticles||[];
+  for(const cluster of reportInput.reportClusters||[]){
+    const policy=clusterRoutingPolicy(cluster,selected);
+    cluster.initialTargetSection=cluster.initialTargetSection||policy.initialTargetSection;
+    cluster.allowedSections=policy.allowedSections;
+    cluster.routingEvidence=policy.evidence;
+  }
+}
 
 function buildSchema(clusterIds,securityClusterIds){
   const allClusterEnum=clusterIds.length?clusterIds:["__no_cluster__"];
@@ -136,6 +221,7 @@ function normalizeAiClusters(reportInput){
   return (reportInput.reportClusters||[]).map((cluster)=>({
     clusterId:cluster.clusterId,
     targetSection:cluster.targetSection,
+    allowedSections:cluster.allowedSections||[cluster.targetSection],
     dateStart:cluster.dateStart,
     dateEnd:cluster.dateEnd,
     suggestedTitleKo:cluster.suggestedTitleKo,
@@ -152,6 +238,7 @@ function validateAndNormalize(content,reportInput){
   const articleMeta=new Map(selectedArticles.map((article)=>[article.articleId,article]));
   const clusterUsage=new Map([...expectedClusters].map((id)=>[id,0]));
   const articleUsage=new Map([...expectedArticles].map((id)=>[id,0]));
+  const finalSectionByCluster=new Map();
 
   for(const section of SECTION_NAMES){
     const items=Array.isArray(content[section])?content[section]:[];
@@ -165,7 +252,15 @@ function validateAndNormalize(content,reportInput){
       for(const clusterId of clusterIds){
         if(!expectedClusters.has(clusterId)) fail(`알 수 없는 군집 ID가 결과에 포함됐습니다: ${clusterId}`);
         const cluster=clusterMeta.get(clusterId);
-        if(cluster.targetSection!==section) fail(`${clusterId}는 ${cluster.targetSection}에 들어가야 하지만 ${section}에 배치됐습니다.`);
+        const allowed=Array.isArray(cluster.allowedSections)&&cluster.allowedSections.length?cluster.allowedSections:[cluster.targetSection];
+        if(!allowed.includes(section)){
+          const evidence=cluster.routingEvidence||{};
+          fail(`${clusterId}는 ${cluster.targetSection} 기준이며 ${section} 배치 근거가 부족합니다. 제목: ${item.headline}; 허용=${allowed.join(",")}; 경제신호=${evidence.economyCount??0}; 정치신호=${evidence.politicsCount??0}`);
+        }
+        if(section!==cluster.targetSection){
+          console.log(`[weekly-report-ai] accepted content-based section override ${clusterId}: ${cluster.targetSection} -> ${section}`);
+        }
+        finalSectionByCluster.set(clusterId,section);
         clusterUsage.set(clusterId,(clusterUsage.get(clusterId)||0)+1);
         for(const articleId of cluster.articleIds||[]){
           if(!expectedArticles.has(articleId)) fail(`군집 ${clusterId}에 선택되지 않은 기사 ID가 연결돼 있습니다: ${articleId}`);
@@ -193,6 +288,20 @@ function validateAndNormalize(content,reportInput){
   for(const [id,count] of articleUsage){if(count===0) missingArticles.push(id);if(count>1) duplicatedArticles.push(id);}
   if(missingArticles.length) fail(`선택 기사 중 보고서에 반영되지 않은 ID가 있습니다: ${missingArticles.join(",")}`);
   if(duplicatedArticles.length) fail(`선택 기사가 여러 항목에 중복 반영됐습니다: ${duplicatedArticles.join(",")}`);
+
+  for(const cluster of clusters){
+    const finalSection=finalSectionByCluster.get(cluster.clusterId)||cluster.targetSection;
+    cluster.initialTargetSection=cluster.initialTargetSection||cluster.targetSection;
+    cluster.targetSection=finalSection;
+    cluster.finalSectionDecision=finalSection===cluster.initialTargetSection?"preclassified":"advanced-editor-content-override";
+    for(const articleId of cluster.articleIds||[]){
+      const article=articleMeta.get(articleId);
+      if(article){
+        article.initialTargetSection=article.initialTargetSection||article.targetSection;
+        article.targetSection=finalSection;
+      }
+    }
+  }
 
   for(const section of SECTION_NAMES){
     content[section]=[...(content[section]||[])].sort((left,right)=>{
@@ -228,9 +337,10 @@ const [reportInput,oil,prompt]=await Promise.all([
   fs.readFile(OIL_FILE,"utf8").then(JSON.parse),
   fs.readFile(PROMPT_FILE,"utf8")
 ]);
+enrichClusterRouting(reportInput);
 const aiClusters=normalizeAiClusters(reportInput);
 const clusterIds=aiClusters.map((cluster)=>cluster.clusterId);
-const securityClusterIds=aiClusters.filter((cluster)=>cluster.targetSection==="securityItems").map((cluster)=>cluster.clusterId);
+const securityClusterIds=aiClusters.filter((cluster)=>cluster.allowedSections.includes("securityItems")).map((cluster)=>cluster.clusterId);
 const schema=buildSchema(clusterIds,securityClusterIds);
 const aiInput={
   reportRequest:{reportDate:reportInput.request.reportDate,periodStart:reportInput.request.periodStart,periodEnd:reportInput.request.periodEnd},
@@ -249,13 +359,13 @@ for(const model of [MODEL,...FALLBACKS.filter((value)=>value!==MODEL)]){
 if(!result) throw lastError||new Error("all report models failed");
 const validated=validateAndNormalize(result.content,reportInput);
 const output={
-  pipelineVersion:"WEEKLY_REPORT_V3_CLUSTER_REFERENCES",
+  pipelineVersion:"WEEKLY_REPORT_V4_CONTENT_SECTION_OVERRIDE",
   generatedAt:new Date().toISOString(),
   model:result.model,
   responseId:result.responseId,
   usage:result.usage,
   request:reportInput.request,
-  selectedArticleIndex:reportInput.selectedArticles.map((article)=>({articleId:article.articleId,topicClusterId:article.topicClusterId,targetSection:article.targetSection,category:article.category,publishedDate:article.publishedDate,importanceScore:article.importanceScore})),
+  selectedArticleIndex:reportInput.selectedArticles.map((article)=>({articleId:article.articleId,topicClusterId:article.topicClusterId,targetSection:article.targetSection,initialTargetSection:article.initialTargetSection||article.targetSection,category:article.category,publishedDate:article.publishedDate,importanceScore:article.importanceScore})),
   reportClusters:reportInput.reportClusters,
   oil,
   report:validated
