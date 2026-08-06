@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-06T07:08:39.954Z",
+  "generatedAt": "2026-08-06T23:37:15.276Z",
   "lookbackDays": 30,
-  "count": 412,
+  "count": 422,
   "categoryCounts": {
-    "politics": 204,
-    "security": 93,
-    "economy": 89,
-    "international": 19,
-    "bismayah": 7
+    "economy": 92,
+    "security": 95,
+    "bismayah": 7,
+    "politics": 209,
+    "international": 19
   },
   "collectionRun": {
     "discoveredCount": 441,
@@ -5861,9 +5861,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       }
@@ -6962,175 +6962,6 @@
         "from": "security",
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-QmTKgVvUreBQaDEMY0MVajKS",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "ناقلة تحمل مليوني برميل من النفط العراقي تعبر مضيق هرمز متجهة إلى الصين",
-      "sourceArabic": "ANF | Articles",
-      "sourceHomepage": "https://arabic.anf-news.com",
-      "publishedAt": "2026-08-03T23:47:58.000Z",
-      "descriptionArabic": "ناقلة تحمل مليوني برميل من النفط العراقي تعبر مضيق هرمز متجهة إلى الصين ANF | Articles",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTlg1YnM4MGVjNGhMRUlXYzlnRlhfTFB1aHV4S0JuQzhfeTc4QkZ1N1M3SWR0Zjk0U2o5TkhDSXdBcC05N2NMbWhwQmFmUEIxcUl2STVRMjBmUmxsSGZDUkRnd2hNUE41TUp3WHJKZEY2ZnZCeXN5REtWNXFwYTIzNEl4c3Jna2ZYWmxNbzZobmVpVTNLbEx0OFoteTZJaEgwd0JEVXB5NFpPRDd3VlE?oc=5",
-      "articleUrl": "https://arabic.anf-news.com/l-lm/naqlt-thml-mlywny-brmyl-mn-alnft-alraqy-tbr-mdyq-hrmz-mtjht-aly-alsyn-138631",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-06T06:55:13.042Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-06T06:55:52.193Z",
-      "canonicalUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/naqlt-thml-mlywny-brmyl-mn-alnft-alraqy-tbr-mdyq-hrmz-mtjht-aly-alsyn-138631",
-      "originalTextArabic": "وكالة فرات للانباء \n\n مركز الاخبار \n\n الاثنين, ٣ أغسطس ٢٠٢٦, ٢٢:١٠ \n\n وذكرت الوكالة أن الناقلة واصلت طريقها بعد عبور المضيق، متجهة إلى الصين، دون الكشف عن مزيد من التفاصيل بشأن اسم الناقلة أو موعد وصولها المتوقع.\n\n ويُعد مضيق هرمز ممراً رئيسياً لصادرات النفط العالمية، ما يجعل حركة ناقلات النفط عبره محل متابعة واسعة في ظل التطورات الأمنية المتسارعة في المنطقة.",
-      "sourceHost": "arabic.anf-news.com",
-      "contentChars": 361,
-      "arabicRatio": 1.0176,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-06T06:57:56.649Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "cardFacts": {
-        "status": "COMPLETED",
-        "pipelineVersion": "FACTS_FIRST_V1",
-        "method": "ARABIC_SOURCE_FACT_EXTRACTION",
-        "sourceContentHash": "c07c19334bb5ab27b4fc973b44f5187eb0fed5de9fa5650a35626da74516c887",
-        "model": "gpt-4.1-mini",
-        "extractedAt": "2026-08-05T06:16:29.096Z",
-        "mainSubjectAr": "ناقلة نفط عراقية تعبر مضيق هرمز متجهة إلى الصين",
-        "actionAr": "عبور ناقلة تحمل مليوني برميل من النفط العراقي مضيق هرمز",
-        "locationAr": "مضيق هرمز",
-        "eventDateAr": "3 أغسطس 2026",
-        "resultAr": "استمرار تصدير النفط العراقي عبر مضيق هرمز من خلال ناقلة تحمل مليوني برميل متجهة إلى الصين",
-        "keyFactsAr": [
-          "ناقلة تحمل مليوني برميل من النفط العراقي عبرت مضيق هرمز",
-          "الناقلة متجهة إلى الصين",
-          "لم يتم الكشف عن اسم الناقلة ولا موعد وصولها المتوقع",
-          "مضيق هرمز ممراً رئيسياً لصادرات النفط العالمية"
-        ],
-        "numbersAr": [
-          "مليوني برميل",
-          "3 أغسطس 2026"
-        ],
-        "peopleAr": [],
-        "organizationsAr": [
-          "وكالة فرات للانباء"
-        ],
-        "directQuotesAr": [],
-        "uncertaintiesAr": [
-          "عدم الكشف عن اسم الناقلة وموعد وصولها"
-        ],
-        "multipleAgendaItems": false
-      },
-      "card": {
-        "status": "COMPLETED",
-        "pipelineVersion": "FACTS_FIRST_V1",
-        "method": "STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD",
-        "factBasis": "STRUCTURED_ARABIC_FACTS_ONLY",
-        "sourceContentHash": "c07c19334bb5ab27b4fc973b44f5187eb0fed5de9fa5650a35626da74516c887",
-        "factsHash": "cdb21190195e2f423af4170a9e4864f311f38d312e6bfad2038fc57d5eb09802",
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "b77d77e633c838039b20",
-        "preferredTermsApplied": [
-          "호르무즈 해협"
-        ],
-        "model": "gpt-4.1-mini",
-        "generatedAt": "2026-08-05T06:16:34.472Z",
-        "titleKo": "이라크산 원유 200만 배럴 호르무즈 해협 경유 중국 수출 지속",
-        "summaryKo": "2026년 8월 3일, 200만 배럴의 이라크 원유를 실은 유조선이 핵심 원유 수출로인 호르무즈 해협을 통과해 중국을 향했다. 선박명과 도착 일정은 공개되지 않았다.",
-        "fullTranslationGenerated": false
-      },
-      "importance": {
-        "score": 12,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RELATIVE_AI_BLEND_V5",
-        "scoredAt": "2026-08-06T07:03:14.616Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 5,
-        "scoreFingerprint": "1196e44e5a641e28f7d2",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-ssYTKU4wMkD-NU3lKa",
-        "representativeArticleId": "discovery-QmTKgVvUreBQaDEMY0MVajKS",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "73683dae628d498b0589d72e5fe79a83ac69c19d3fcd812359a756761117ddf8",
-      "contentCheckedAt": "2026-08-06T06:57:56.649Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       }
@@ -8780,9 +8611,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       }
@@ -8955,9 +8786,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       }
@@ -9638,9 +9469,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       },
@@ -15921,6 +15752,119 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
+      "keywordId": "international-us-001",
+      "category": "security",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "1990 الغزو العراقي للكويت",
+      "sourceArabic": "الهيئة الوطنية للإعلام",
+      "sourceHomepage": "https://www.maspero.eg",
+      "publishedAt": "2026-08-01T23:00:00.000Z",
+      "descriptionArabic": "1990 الغزو العراقي للكويت الهيئة الوطنية للإعلام",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdVVYalNkaHVPVlE3UWZsZ0YtcmdEZFp1a3FCekVYdlZqVVVTYWxCWjg2SFZNelF1VkhzenByTFl0ZWV5X3o1NzNkeFpGSDV3bXdCTnNVa3E4UE9Sdm1waDhqSVN4MXVoMlVPamJqS19mZ3U1NGEyNXAzdnVwWmU3azhBUmd5WWFIa2RlcVNNQk5RNVlEZDhGVzF3Zml1aHpDbWEzaTJpejRVNFJYT2NMU0ZjS1d6QUlPWGVhM1JPNDZBNVVuOFlHTlppeXZKenRYT0NMM3QzeHlGM042VXViRms3cnlvZ3ZJSlNZNDBoLWtaYmdZV3otTA?oc=5",
+      "articleUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.673Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:06.708Z",
+      "canonicalUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
+      "originalTextArabic": "محافظات \n تحقيقات وحوارات \n حوارات مباشرة \n مقالات \n حدث فى مثل هذا اليوم \n\n الرئيسية \n\n المزيد\n\n حدث فى مثل هذا اليوم \n\n 1990 الغزو العراقي للكويت\n\n أسامة علي\n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا وتدريبا ضمن القوات المسلحة العراقية بمهاجمة الأراضي الكويتية عبر 4 محاور رئيسية. \n\n واستغرقت العملية العسكرية يومين وانتهت باستيلاء القوات العراقية على كامل الأراضي الكويتية في 4 أغسطس ثم شكلت حكومة صورية برئاسة العقيد علاء حسين خلال 4 - 8 أغسطس تحت اسم جمهورية الكويت ثم أعلنت الحكومة العراقية يوم 9 أغسطس 1990، ضم الكويت للعراق وإلغاء جميع السفارات الدولية في الكويت.\n\n أما في الطائف بالمملكة العربية السعودية فقد تشكلت الحكومة الكويتية في المنفى حيث تواجد أمير الكويت الشيخ جابر الأحمد الصباح وولي العهد الشيخ سعد العبد الله الصباح والعديد من الوزراء وأفراد القوات المسلحة الكويتية.\n\n بعد ساعات من الاجتياح العراقي للكويت طالبت الكويت والولايات المتحدة بعقد اجتماع طارئ لمجلس الأمن وتم تمرير قرار مجلس الأمن الدولي رقم 660 والتي شجبت فيه الاجتياح وطالبت بانسحاب العراق من الكويت.\n\n وبدأت القوات الأمريكية بالتدفق إلى السعودية في 7 أغسطس من عام 1990، وفي نفس اليوم الذي أعلن العراق فيه ضمه للكويت واعتبارها \"المحافظة التاسعة عشر\"، وصل حجم التحشدات العسكرية في السعودية إلى 500,000 جندي.\n\n في خضم هذه الحشودات العسكرية صدرت سلسلة من قرارات مجلس الأمن والجامعة العربية وكانت أهمها قرار مجلس الأمن الدولي رقم 678، والذي أصدر في 29 نوفمبر عام 1990 والذي حدد فيه تاريخ 15 يناير من عام 1991 موعدا نهائيا للعراق لسحب قواتها من الكويت وإلا فإن قوات الائتلاف سوف \"تستعمل كل الوسائل الضرورية لتطبيق قرار مجلس الأمن الدولي رقم 660\".\n\n تشكل ائتلاف عسكري مكون من 34 دولة ضد العراق لتنفيذ قرارات مجلس الأمن الخاصة بانسحاب القوات العراقية من الكويت دون قيد أو شرط، وبلغت نسبة الجنود الأمريكيين من الائتلاف العسكري حوالي 74% من العدد الإجمالي للجنود التي تم حشدهم، وقد وصل العدد الإجمالي لجنود قوات الائتلاف إلى 959,600.\n\n واستمر الاحتلال العراقي للكويت فترة 7 شهور، وانتهى الاحتلال بتحرير الكويت في 26 فبراير 1991 بعد حرب الخليج الثانية.\n\n حدث في مثل هذا اليوم \n الغزو العراقي للكويت \n\n أسامة علي \n محرر بالموقع الموحد للهيئة الوطنية للإعلام \n\n أخبار ذات صلة\n\n حدث فى مثل هذا اليوم \n 2015 الرئيس عبد الفتاح السيسي يفتتح قناة السويس الجديدة \n\n أسامة علي\n\n الخميس، 06 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1876 صدور العدد الأول من جريدة الأهرام \n\n أسامة علي\n\n الأربعاء، 05 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2010 إطلاق القمر الصناعي المصري \"نايل سات 201\" \n\n أسامة علي\n\n الثلاثاء، 04 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1926 مولد الفنان رشدي أباظة \n\n أسامة علي\n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1991 وفاة الكاتب الكبير يوسف إدريس \n\n أسامة علي\n\n السبت، 01 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n\n أسامة علي\n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n حدث فى مثل هذا اليوم \n 2011 اليوم الدولي للصداقة \n\n أسامة علي\n\n الخميس، 30 يوليو 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1981 حفل زفاف الأمير تشارلز والليدي ديانا سبنسر \n\n أسامة علي\n\n الأربعاء، 29 يوليو 2026 01:00 ص\n\n المزيد من حدث فى مثل هذا اليوم \n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n 1926 مولد الفنان رشدي أباظة \n في مثل هذا اليوم الثالث من أغسطس 1926 ولد الفنان رشدي أباظة بالزقازيق بمحافظة الشرقية لأم إيطالية وأب مصري.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n 1990 الغزو العراقي للكويت \n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا...\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n السبت، 01 اغسطس 2026 01:00 ص\n\n 1991 وفاة الكاتب الكبير يوسف إدريس \n في مثل هذا اليوم الأول من أغسطس 1991 توفي الكاتب الكبير يوسف إدريس علي عن عمر ناهز 64 عاما.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n في مثل هذا اليوم الحادي والثلاثين من يوليو 2017 أعلن رئيس مركز القدس الدولي حسن خاطر، أن السلطات الإسرائيلية صادرت...\n\n أخر الأخبار \n\n الأكثر قراءة \n\n رئيس معهد الفلك: إشعارات \"جوجل\" ليست إنذارا مسبقا بموعد أو مكان الزلازل \r\n\n الإثنين، 03 اغسطس 2026 04:35 ص\n\n رئيس معهد الفلك: الهزات الارتدادية المتوقعة أقل قوة ولا داعي للقلق \r\n\n الإثنين، 03 اغسطس 2026 04:28 ص\n\n وزير الصحة يوجه برفع درجة الاستعداد القصوى بجميع المستشفيات بعد الهزة الأرضية \r\n\n الإثنين، 03 اغسطس 2026 04:23 ص\n\n بيان توضيحي من اتحاد الكرة بشأن التصريحات المنسوبة إليه \r\n\n الإثنين، 03 اغسطس 2026 04:17 ص\n\n \"القومية للزلازل\": هزة أرضية بقوة 5.6 ريختر على بعد 61 كم شمال شرق شرم الشيخ \r\n\n الإثنين، 03 اغسطس 2026 03:54 ص\n\n -->\r\n\n-->\r\n\n المعهد القومي للبحوث الفلكية: جار إعداد بيان بخصوص الهزة الإرضية \r\n\n الإثنين، 03 اغسطس 2026 03:19 ص\n\n -->\r\n\n-->\r\n\n باحث أثري يطالب بعودة مياه النيل لسور مجرى العيون ليصبح مزارا سياحيا \r\n\n الأحد، 02 اغسطس 2026 07:49 ص\n\n -->\r\n\n-->\r\n\n أسعار الذهب اليوم بالأسواق المحلية.. عيار 21 يسجل 5910 جنيها \r\n\n الأحد، 02 اغسطس 2026 09:37 ص\n\n -->\r\n\n-->\r\n\n الأرصاد: انكسار الموجة الحارة اعتبارا من الثلاثاء.. والعظمى غدا على القاهرة 37 \r\n\n الأحد، 02 اغسطس 2026 06:51 م\n\n تحقيقات وحوارات\n\n تحقيقات وحوارات \r\n\n دليلك للتنسيق الجامعي .. تساؤلات وإجابات \r\n\n السبت، 01 اغسطس 2026 10:25 ص \n\n تحقيقات وحوارات \r\n\n فيديو.. الإعلام الرقمي.. تقنيات واعدة وتحديات هائلة \r\n\n الخميس، 30 يوليو 2026 01:09 م \n\n تحقيقات وحوارات \r\n\n موجات الطقس الساخنة.. لماذا تحدث وكيف نواجهها؟ \r\n\n الخميس، 23 يوليو 2026 05:18 م \n\n تحقيقات وحوارات \r\n\n اختبارات القدرات بالكليات.. كيف يتم تنظيمها ؟ \r\n\n السبت، 18 يوليو 2026 09:22 ص \n\n تحقيقات وحوارات \r\n\n ترشيدا للمياه والطاقة .. هندسة قناة السويس تبتكر نظام ري ذكي بالطاقة الشمسية \r\n\n الثلاثاء، 14 يوليو 2026 06:11 م \n\n تحقيقات وحوارات \r\n\n بعد توجيهات الرئيس السيسي.. خريطة تطوير الإعلام المصري بعدسة الخبراء \r\n\n الخميس، 09 يوليو 2026 12:44 م \n\n مقالات\n\n محاذير ومعايير السبق في الأخبار! \r\n\n الأحد، 02 اغسطس 2026 11:09 ص \n\n مصر والقانون الدولي: قراءة هادئة في حادث دمياط واحتواء التصعيد \r\n\n السبت، 01 اغسطس 2026 10:00 ص \n\n شمش… الإله الذي كان يرى كل شيء \r\n\n الجمعة، 31 يوليو 2026 12:00 م \n\n القاهرة... بوابة المستقبل للمرأة العربية \r\n\n الجمعة، 31 يوليو 2026 10:00 ص \n\n هل يكفي انطباع واحد.. حين تخدعنا صفة واحدة عن رؤية الإنسان كله \r\n\n الخميس، 30 يوليو 2026 10:00 ص \n\n عظمة ملكات مصر القديمة \r\n\n الأربعاء، 29 يوليو 2026 10:00 ص \n\n -->\r\n\n-->\r\n\n النشرة البريدية\n\n انضم لاكثر من 72458 مشترك \r\n\n اشترك \r\n\n بالتسجيل فى النشرة البريدية فانك توافق على الشروط الخاصة بنا",
+      "sourceHost": "maspero.eg",
+      "contentChars": 6297,
+      "arabicRatio": 0.9038,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:24.319Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "security",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "security",
+        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-jS2d1bjlCEhkIFgMmU",
+        "representativeArticleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 48,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 15,
+          "iraqImpact": 8,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "e1be9f487766e2c4bc3c",
+        "ruleScore": 48,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "e65ff067934713b935ff715bee2e12cb5b1a36d819e05734440b18cce86f503b",
+      "contentCheckedAt": "2026-08-03T01:38:24.319Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-iZkeQQG3p2jT7qH9HR9CT40_",
       "keywordId": "international-hormuz-001",
       "category": "economy",
@@ -16638,184 +16582,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-nJtwrCXsZjrsEI7SU4bnyVtn",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "الجيش الأمريكى يسحب منظومات باتريوت وينقل معداته الثقيلة خارج العراق",
-      "sourceArabic": "المصري اليوم",
-      "sourceHomepage": "https://www.almasryalyoum.com",
-      "publishedAt": "2026-08-01T17:38:00.000Z",
-      "descriptionArabic": "الجيش الأمريكى يسحب منظومات باتريوت وينقل معداته الثقيلة خارج العراق المصري اليوم",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE91OWZXV1E2UjRtTXNLem5EQmdzUWVVTzVWQW9PdWxLamlPWXJ2SF9ORkx3NHhxbmU5R1puRlNtRUFrT21YRFdDYnQ3QVQ0ZkktRGRYVzRCQzBVdC1tYzdr0gFjQVVfeXFMTzctVjRXeGlqY2p3VHlfLS14MExpdUVYR0pHOUlZcmUyekFFc0lqdE1tMVluSThueXA1bkFEajcxaS1yb1AwUXQxbzlsQXQ3MGE0Y2ZSSEpiTGg1V0VSaDZLbl9F?oc=5",
-      "articleUrl": "https://www.almasryalyoum.com/news/details/4328213",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-06T06:55:12.660Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-06T06:56:18.334Z",
-      "canonicalUrl": "https://www.almasryalyoum.com/news/details/4328213",
-      "originalTextArabic": "طباعة\n\n ارسل لصديق\n\n عرب وعالم \n\n الجيش الأمريكى يسحب منظومات باتريوت وينقل معداته الثقيلة خارج العراق\n\n السبت 01-08-2026 20:38\n\n كتب:\n\n نهى رجب \n\n صواريخ «باتريوت»\n\n تصوير : آخرون \n\n صواريخ «باتريوت»\n\n A \n\n A \n\n أكد الجيش الأمريكى سحب منظومات «باتريوت» من مدينة أربيل فى شمال العراق فى إطار عملية «إعادة تموضع» للقوات والمعدات فى المنطقة، وفقًا لما نقلته وسائل إعلام عالمية.\n وأوضح مسؤول عسكرى أمريكى، فى تصريح لشبكة «رووداو» الإعلامية، أن الجيش يواصل إعادة تموضع قواته ومعداته فى المنطقة، وذلك ردا على تقارير تحدثت عن سحب منظومات الدفاع الجوى «باتريوت» من أربيل.\n وقال المسؤول، الذى طالب عدم الكشف عن هويته، إن «القيادة المركزية الأميركية تقوم باستمرار بإعادة تموضع القوات والمعدات الأميركية وانتشارها فى مواقع أخرى لدعم المهام الموكلة إليها»، مضيفًا أن الوزارة لا تناقش تفاصيل هذه التحركات «لأسباب تتعلق بأمن العمليات». \n\n أخبار متعلقة\n\n ترامب يأمر بشن هجوم جديد على إيران (تفاصيل)\n\n العد التنازلى بدأ.. ترامب يأمر بهجوم جديد على إيران وطهران تجهز خطة الانتقام (تقرير)\n\n إعلام عبرى: رفع حالة التأهب فى الدفاعات الإسرائيلية وتوقعات بهجوم واسع على إيران\n\n وفيما يتعلق بالطائرات، اكتفى المسؤول الأمريكى بالقول: «ليس لدينا فى الوقت الحالى ما نقوله»، فى هذا الأمر.\n ويأتى ذلك بعدما ذكر موقع «المونيتور»، نقلًا عن عدة مصادر مطلعة، بأن الجيش الأمريكى بدأ خلال الأسبوع الماضى سحب قواته المتمركزة قرب مطار أربيل، فى إطار عملية لا تزال مستمرة، شملت نقل معظم القوات والمعدات العسكرية الثقيلة إلى خارج العراق.\n وبحسب التقريرالأمريكى، فإن الجيش الأمريكى أزال جميع منظومات الدفاع الجوى من طراز «باتريوت» من القاعدة العسكرية فى أربيل ونقلها إلى موقع آخر، فيما أبقى على بعض منظومات الدفاع الأخرى.\n ووفقًا للمصادر، فإن هذه الخطوة تأتى فى إطار تنفيذ الاتفاق المبرم بين واشنطن وبغداد بشأن الانسحاب الكامل للقوات الأميركية من العراق بحلول 30 سبتمبر 2026.\n\n أخبار العراق\n\n أربيل\n\n أمريكا والعراق\n\n الجيش الأمريكي\n\n الجيش الأمريكي يسحب منظومات باتريوت من العراق\n\n صواريخ باتريوت\n\n منظومات باتريوت\n\n support is available since 1.9.1 -->",
-      "sourceHost": "almasryalyoum.com",
-      "contentChars": 1916,
-      "arabicRatio": 0.9832,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-06T06:58:05.614Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "card": {
-        "status": "COMPLETED",
-        "pipelineVersion": "FACTS_FIRST_V1",
-        "method": "STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD",
-        "factBasis": "STRUCTURED_ARABIC_FACTS_ONLY",
-        "sourceContentHash": "28bbefd694be4ebbe5be5a7c178adf4ecfd533e8f9e6b7b784849fe1cc807607",
-        "factsHash": "d210a1c9b6f60aff4f81837be4d6e354c22a5719afe565752f3a5dcbebf47efc",
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7f539f148c95bfb59c6",
-        "preferredTermsApplied": [
-          "미 중부사령부",
-          "바그다드",
-          "아르빌"
-        ],
-        "model": "gpt-4.1-mini",
-        "generatedAt": "2026-08-06T07:08:11.636Z",
-        "titleKo": "미군, 아르빌서 패트리엇 체계 철수 및 중장비 이송",
-        "summaryKo": "미 중부사령부는 2026년 8월 아르빌에서 패트리엇 미사일 방어 체계를 철수하고 주요 중장비를 이라크 밖으로 옮기기 시작했다. 이는 9월 말 완전 철수 합의 이행의 일환이다.",
-        "fullTranslationGenerated": false
-      },
-      "contentHash": "1134c19cb5bd9d43231f8aea61960b5d15938e458f5412ee4be8f21576d0db61",
-      "contentCheckedAt": "2026-08-06T06:58:05.614Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-cmS-kmb_TU-LzeMrP4",
-        "representativeArticleId": "discovery-nJtwrCXsZjrsEI7SU4bnyVtn",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 23,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RELATIVE_AI_BLEND_V5",
-        "scoredAt": "2026-08-06T07:03:14.616Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 5,
-        "scoreFingerprint": "419d4781cfba22dca50c",
-        "ruleScore": 23,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "cardFacts": {
-        "status": "COMPLETED",
-        "pipelineVersion": "FACTS_FIRST_V1",
-        "method": "ARABIC_SOURCE_FACT_EXTRACTION",
-        "sourceContentHash": "28bbefd694be4ebbe5be5a7c178adf4ecfd533e8f9e6b7b784849fe1cc807607",
-        "model": "gpt-4.1-mini",
-        "extractedAt": "2026-08-06T07:08:01.392Z",
-        "mainSubjectAr": "الجيش الأمريكي",
-        "actionAr": "سحب منظومات باتريوت ونقل المعدات الثقيلة",
-        "locationAr": "العراق - أربيل",
-        "eventDateAr": "أغسطس 2026",
-        "resultAr": "أكد الجيش الأمريكي سحب منظومات باتريوت من مدينة أربيل ونقل معظم معداته الثقيلة إلى خارج العراق ضمن عملية إعادة تموضع مستمرة لدعم المهام الموكلة له، وذلك تنفيذًا لاتفاق الانسحاب الأمريكي الكامل من العراق بحلول 30 سبتمبر 2026.",
-        "keyFactsAr": [
-          "الجيش الأمريكي بدأ خلال الأسبوع الماضي سحب قواته ومعداته المتمركزة قرب مطار أربيل.",
-          "تم نقل معظم القوات والمعدات العسكرية الثقيلة إلى خارج العراق.",
-          "جميع منظومات الدفاع الجوي من طراز باتريوت أزيلت من القاعدة العسكرية في أربيل ونقلت إلى موقع آخر.",
-          "تم الإبقاء على بعض منظومات الدفاع الأخرى.",
-          "الخطوة ضمن تنفيذ الاتفاق بين واشنطن وبغداد بالانسحاب الكامل للقوات الأمريكية من العراق بحلول 30 سبتمبر 2026.",
-          "القيادة المركزية الأمريكية تعيد تموضع القوات والمعدات بشكل مستمر ولا تناقش التفاصيل لأسباب أمنية."
-        ],
-        "numbersAr": [
-          "30 سبتمبر 2026"
-        ],
-        "peopleAr": [],
-        "organizationsAr": [
-          "الجيش الأمريكي",
-          "القيادة المركزية الأمريكية"
-        ],
-        "directQuotesAr": [
-          "القيادة المركزية الأميركية تقوم باستمرار بإعادة تموضع القوات والمعدات الأميركية وانتشارها فى مواقع أخرى لدعم المهام الموكلة لها."
-        ],
-        "uncertaintiesAr": [
-          "تفاصيل تحركات القوات لا تُناقش لأسباب أمن العمليات.",
-          "تصريحات الجيش بخصوص الطائرات غير متوفرة."
-        ],
-        "multipleAgendaItems": false
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-1ni16qyi-2Nb9GHn-mschP3F",
       "keywordId": "international-hormuz-001",
       "category": "politics",
@@ -17373,6 +17139,119 @@
         "summaryKo": "걸프 국가들이 2025년 이후 호르무즈 해협을 우회하는 원유 수출 경로를 재조정하며, 파이프라인 프로젝트와 확장을 통해 하루 최대 1,150만 배럴의 대체 수출이 가능해질 전망이다. 사우디는 파이프라인 용량을 7백만 배럴까지 증가시켰고, UAE와 미국도 대체 경로 구축 사업에 참여하고 있다.",
         "fullTranslationGenerated": false
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
+      "keywordId": "international-us-001",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق",
+      "sourceArabic": "تسنیم",
+      "sourceHomepage": "https://www.tasnimnews.ir",
+      "publishedAt": "2026-08-01T15:56:31.000Z",
+      "descriptionArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق تسنیم",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxPbTl6aGlPYWRHZUlRRGltaDJGTjA4cFh6ZHgxb2R2ZlBSa1VKbHEzSWhaZk9wc2cxWkhYR3RTaHZKT3U0VDNmME9RbndhTEc1SmRvTThJM0NwSnpXeEh5TFl1eXVoaVA0OUVqSFZvX0EwMUF2QmloYW5vVzd2bE5LYjllYm5wX1lxU1Z2S1l4RTA4eEl1NWZmc3NPTHBlYnJSSXJ4Y2YwdG1seTZvX1A2QWhrT1FsdVNRX2o0UHJKSzJqalVxQ1Vxd09nbUQ1YV9Va2I5ckc4RjEyLVpvQWRZQWNjQTNRU3pSbHpUd2dCa19OWVZXVHMtUjNrSGctcVIwTDhrbzZmR2FWSUhRY1ZUNjVjLTVMOTNsN1pFR1ZQa2lRVGwtbFN1RXdveWVXWkFuZ3kzYkdqMF9YT3NQNUwwSzl0UkxIc2NiV2xydzhad1hraFBLY1czSFZpMjhGNWFqdHROeU0xUV9PV1MwcmNvbjhBdFVGWWlNZk1KblQtVGxUejRsN0thVFN4VFFyNVBFZnhRVDQtYXl1dnR2T2lhTGlzYWVmem9QazdYeklJUDdXaThwRVBUTFFUbmN4ZXdtWHRSZzV6RkhTeXg2ajgyaUpsT0cxTldwWUNTMktjMkVSVGZMSXU5TlVORkVIR0JnR3g2MmNnN2U0X2_SAfsDQVVfeXFMT205emhpT2FkR2VJUURpbWgyRk4wOHBYemR4MW9kdmZQUmtVSmxxM0loWmZPcHNnMVpIWEd0U2h2Sk91NFQzZjBPUW53YUxHNUpkb004STNDcEp6V3hIeUxZdXl1aGlQNDlFakhWb19BMDFBdkJpaGFub1c3dmxOS2I5ZWJucF9ZcVNWdktZeEUwOHhJdTVmZnNzT0xwZWJyUklyeGNmMHRtbHk2b19QNkFoa09RbHVTUV9qNFBySksyampVcUNVcXdPZ21ENWFfVWtiOXJHOEYxMi1ab0FkWUFjY0EzUVN6Umx6VHdnQmtfTllWV1RzLVIza0hnLXFSMEw4a282ZkdhVklIUWNWVDY1Yy01TDkzbDdaRUdWUGtpUVRsLWxTdUV3b3llV1pBbmd5M2JHajBfWE9zUDVMMEs5dFJMSHNjYldscnc4WndYa2hQS2NXM0hWaTI4RjVhanR0TnlNMVFfT1dTMHJjb244QXRVRllpTWZNSm5ULVRsVHo0bDdLYVRTeFRRcjVQRWZ4UVQ0LWF5dXZ0dk9pYUxpc2FlZnpvUGs3WHpJSVA3V2k4cEVQVExRVG5jeGV3bVh0Umc1ekZIU3l4Nmo4MmlKbE9HMU5XcFlDUzJLYzJFUlRmTEl1OU5VTkZFSEdCZ0d4NjJjZzdlNF9v?oc=5",
+      "articleUrl": "https://www.tasnimnews.ir/ar/news/2026/08/01/3661373/%D8%A8%D8%AF%D8%A1-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A7%D9%84%D9%88%D8%AC%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B3%DA%A9%D8%B1%DB%8C-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%DB%8C%DA%A9%DB%8C-%D9%81%DB%8C-%D8%A7%D9%82%D9%84%DB%8C%D9%85-%DA%A9%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/amp",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.673Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:11.485Z",
+      "canonicalUrl": "",
+      "originalTextArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق\n\n الأخبار الشرق الأوسط \n\n 2026/08/01 - 14:16 \n\n وافادت وكالة تسنيم الدولية للانباء ان المصادر الإعلامية تحدثت عن بدء عملية سحب تدريجي للقوات الأمريكية من كردستان العراق، وذلك في إطار برنامج إعادة انتشار القوات الأمريكية وإنهاء الوجود العسكري الواسع لهذا البلد في العراق.\n\n ووفقاً لما نقلته \"العربية\"، فقد تحركت خلال الأيام الماضية قوافل عسكرية أمريكية من مدينة أربيل صوب الدول المجاورة، وبدأت عملية نقل القوات والمعدات من القواعد الأمريكية في إقليم كردستان.\n\n وبناءً على هذا التقرير، سيتم سحب القوات الأمريكية على مراحل ووفق جدول زمني محدد. بيد أن وزارة الحرب الأمريكية (البنتاغون) لم تصدر حتى الآن أي تعليق رسمي حول تفاصيل التحركات الأخيرة، ولا عدد القوات المُنسحبة، ولا كمية المعدات المنقولة.\n\n وفي الوقت نفسه، أفاد موقع \"المانيتور\" نقلاً عن قاعدة \"كلاش ريبورت\" بأن الولايات المتحدة بدأت بسحب قواتها المتبقية من العراق قبل الموعد النهائي المحدد في 30 سبتمبر/أيلول. ووفقاً لهذا التقرير، فقد قام الجيش الأمريكي أيضاً بسحب أنظمة الدفاع الجوي \"باتريوت\" من مدينة أربيل.\n\n مخاوف \"العربية\" من تراجع الوجود الأمريكي\n\n تابع موقع شبكة \"العربية\" في تقريره قائلاً إن عملية سحب القوات الأمريكية تبدأ في وقت شهدت فيه المنطقة خلال الأسابيع الأخيرة تصاعداً في التوترات العسكرية.\n\n وكتبت \"العربية\": \"إن استمرار هجمات الجماعات المسلحة المدعومة من إيران ضد مواقع في إقليم كردستان، يثير مخاوف بشأن تداعيات تراجع الوجود العسكري الأمريكي في هذه المنطقة\".\n\n اتفاق بين بغداد وواشنطن لإنهاء مهمة التحالف\n\n وزعمت \"العربية\" أن انسحاب القوات الأمريكية يتم في إطار الاتفاقات السابقة بين بغداد وواشنطن لإنهاء مهمة التحالف الدولي بقيادة الولايات المتحدة في العراق.\n\n وكان العراق والولايات المتحدة قد توصلا سابقاً إلى اتفاق بشأن جدول زمني لإعادة انتشار قوات التحالف وإنهاء المهام العسكرية لهذه القوات في عدد من القواعد العراقية. وبموجب هذا البرنامج، من المقرر أن يكتمل الانسحاب من القواعد المتبقية خلال عام 2026.\n\n غير أن بدء انسحاب العسكريين الأمريكيين من إقليم كردستان العراق، وتحديداً في خضم الحرب مع إيران، يبدو أنه يحدث خارج البرنامج المُعدّ سلفاً.\n\n واختتمت \"العربية\" تقريرها بالإشارة إلى أنه ورغم بدء عملية الانسحاب، لا يزال غير واضح عدد القوات الأمريكية التي غادرت إقليم كردستان، وحجم المعدات العسكرية التي جرى إخراجها من المنطقة. ومن المتوقع أن تستمر عملية إعادة انتشار القوات الأمريكية خلال الأسابيع المقبلة، تنفيذاً للجدول الزمني المتفق عليه بين بغداد وواشنطن.\n\n مراجعة أمريكية للوجود العسكري في الكويت\n\n وكانت صحيفة \"وول ستريت جورنال\" قد أفادت يوم الأربعاء من الأسبوع الماضي بأن الولايات المتحدة تدرس، في ضوء تطورات الحرب ضد إيران، مدى وجودها في دولة الكويت.\n\n ويأتي الإجراء الأمريكي في وقت أعلن فيه مسؤولون كويتيون أنهم لا يزالون بحاجة إلى التزام أمريكي حازم بدعم بلدهم.\n\n وذكرت \"وول ستريت جورنال\" أن المنشآت والقواعد الأمريكية قد تعرضت خلال الحرب لعدة هجمات إيرانية.\n\n وجاء في تقرير الصحيفة: \"يقول محللون إن ما يحتمل أن يؤدي إلى تغيير في هذه العلاقات، هو إدراك الولايات المتحدة لحقيقة أن الوجود العسكري الدائم والكبير في الكويت لم يعد ضرورياً أو مقبولاً من الناحية العسكرية\".\n\n /انتهى/",
+      "sourceHost": "tasnimnews.ir",
+      "contentChars": 2927,
+      "arabicRatio": 1.0067,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:26.896Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-0_tPXOctHVZWjvQ-ts",
+        "representativeArticleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 44,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 15,
+          "iraqImpact": 4,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "e3705f70ebf1ed9137da",
+        "ruleScore": 44,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "f42ecde913ed8a2969ca785386f04aaca6e48c97a1e01024cd2c443eb76ec988",
+      "contentCheckedAt": "2026-08-03T01:38:26.896Z",
+      "contentChanged": false,
+      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -18633,6 +18512,125 @@
         "generatedAt": "2026-08-05T22:40:52.497Z",
         "titleKo": "미국 보고서, 이라크 위기와 '달러 선적' 무관 밝혀"
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-Rv6Ed3USEMq2ig21T9OUHeYv",
+      "keywordId": "international-us-001",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "مأزق العراق مع تصاعد الصراع الأمريكي الإيراني.",
+      "sourceArabic": "Vietnam.vn",
+      "sourceHomepage": "https://www.vietnam.vn",
+      "publishedAt": "2026-08-01T09:47:29.000Z",
+      "descriptionArabic": "مأزق العراق مع تصاعد الصراع الأمريكي الإيراني. Vietnam.vn",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPY2ZjUWhkT1M2UGdUVHFhb2dnNEhOY3BGR0hHQVg0a3BwOFVHY3hsa0NBc1lmRHZteHh4bl9MSm04aUJPRW1yME5tc3R4QzQ1OHVRcDBjWTlBOTRPLWVzM2JfS0dXOXVseGs5bEMzVUNQeThSTTZmVnpDZ0hfWWVYQQ?oc=5",
+      "articleUrl": "https://www.vietnam.vn/ar/the-kho-cua-iraq-khi-cuoc-chien-my-iran-leo-thang",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.674Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:15.797Z",
+      "canonicalUrl": "https://www.vietnam.vn/ar/the-kho-cua-iraq-khi-cuoc-chien-my-iran-leo-thang",
+      "originalTextArabic": "العربية \n تسجيل الدخول \n\n الصفحة الرئيسية \n\n عنوان \n\n الشؤون الجارية \n\n النظام السياسي \n\n محلي \n\n حدث \n\n السياحة \n\n فيتنام سعيدة \n\n الشركات \n\n منتج \n\n إرث \n\n متحف \n\n شكل \n\n الوسائط المتعددة \n\n بيانات \n\n الصفحة الرئيسية \n\n Thời sự \n مأزق العراق مع تصاعد الصراع الأمريكي الإيراني.\n لقد وضع الهجوم المنسق الذي شنته الولايات المتحدة والسعودية ضد القوات الموالية لإيران في العراق بغداد في موقف صعب.\n Báo Khoa học và Đời sống • 01/08/2026 \n\n اتبع فيتنام G o o g l e \n أضف Vietnam.vn على G o o g l e \n\n 0 \n\n منذ عام 2003، سعى العراق باستمرار إلى الحفاظ على توازن العلاقات بين الولايات المتحدة وإيران ، متجنباً التحول إلى ساحة صراع بين القوى المتنافسة. إلا أن الوضع ازداد تعقيداً بالنسبة للبلاد منذ أن شنت الولايات المتحدة وإسرائيل هجومهما على إيران في أواخر فبراير 2026. \n اتهمت السعودية مؤخراً جماعات مسلحة في العراق باستخدام طائرات مسيرة لشن هجمات على منشآت نفطية. وردّت الرياض باستهداف قواعد قوات الحشد الشعبي المدعومة من إيران في العراق. ووفقاً لوكالة أسوشيتد برس ، فإن قوات الحشد الشعبي تُعتبر اسمياً جزءاً من قوات الأمن العراقية، لكنها غالباً ما تعمل بشكل مستقل خارج سيطرة الدولة. كما اتُهمت هذه القوات بمهاجمة القوات الأمريكية المتمركزة في العراق. \n\n مواطنون عراقيون يتفقدون المباني المتضررة في موقع غارة جوية على قاعدة لقوات الحشد الشعبي في الموصل، العراق، في 29 يوليو 2026. الصورة: AP/فريد عبد الواحد. \n\n منحت الحكومة العراقية الجماعات المسلحة غير الحكومية مهلة حتى نهاية سبتمبر لنزع سلاحها، لكن بعض أقوى الجماعات - وتلك الأقرب إلى إيران - صرحت بأنها لا تنوي القيام بذلك. \n أشاد الرئيس الأمريكي دونالد ترامب برئيس الوزراء العراقي علي الزيدي. إلا أن الزعيم العراقي قد يواجه ضغوطاً متزايدة من الولايات المتحدة لكبح جماح قوات الحشد الشعبي، وقد يؤدي أي صدام مباشر معها إلى زعزعة الاستقرار الداخلي. \n تنفي الجماعات المسلحة في العراق مهاجمة المملكة العربية السعودية. \n اتهمت الرياض القوات الموالية لإيران في العراق بتنفيذ هجمات بطائرات مسيرة استهدفت منشآت نفطية سعودية في 27 و28 يوليو/تموز. إلا أن الجماعة المسلحة العراقية نفت أي دور لها في الهجوم. ووصفت المقاومة الإسلامية في العراق، المدعومة من إيران، مزاعم السعودية بأنها \"مفبركة\" و\"محاولة لتبرير عجزها عن الرد على هجمات قوات الحوثيين في اليمن\". \n أدان مجلس الأمن القومي العراقي الهجمات التي شنتها الولايات المتحدة والمملكة العربية السعودية، والتي أسفرت عن مقتل وإصابة العديد من الأبرياء. \n وأكد المجلس أن \"الهجمات وقعت بينما كانت الحكومة العراقية تجري تحقيقاً نشطاً وتحاول معالجة مخاوف المملكة العربية السعودية والولايات المتحدة\". \n\n أعلنت قوات الحشد الشعبي أن الهجوم أسفر عن مقتل ما لا يقل عن 20 من عناصرها وإصابة 32 آخرين. \n كان من المقرر أن يزور الرئيس الزيدي المملكة العربية السعودية في 30 يوليو، لكن تم تأجيل الرحلة إلى أجل غير مسمى بعد اندلاع النزاع. \n مشكلة صعبة بالنسبة للحكومة العراقية. \n وصل الزيدي إلى السلطة بعد أشهر من الجمود السياسي منذ الانتخابات البرلمانية التي جرت العام الماضي. ويحظى بدعم ائتلاف من الأحزاب الشيعية ذات العلاقات الوثيقة بإيران، كما يحظى بتأييد الرئيس ترامب الذي استقبله مؤخراً في البيت الأبيض. \n\n الرئيس الأمريكي دونالد ترامب. الصورة: أسوشيتد برس. \n\n تعهد رئيس الوزراء العراقي بنزع سلاح الجماعات المسلحة غير الحكومية، قائلاً إنه لن يكون لديهم أي سبب لحمل السلاح بعد 30 سبتمبر/أيلول - وهو الموعد النهائي لانسحاب القوات الأمريكية المتمركزة في العراق. \n لكن العراق يواجه معضلة مماثلة لتلك التي يواجهها لبنان، حيث تتعرض الحكومة لضغوط متزايدة لنزع سلاح حزب الله المدعوم من إيران. فإذا تصرفت بعدوانية مفرطة، فقد يؤدي ذلك إلى اندلاع صراعات في دول لها تاريخ من الحروب الأهلية. أما إذا تأخرت في اتخاذ الإجراءات اللازمة، فقد يثير ذلك غضب الولايات المتحدة. \n إن وضع العراق، من بعض النواحي، يبدو \"أكثر راحة\" لأن بعض الفصائل داخل قوات الحشد الشعبي يمكن دمجها في القوات المسلحة ووضعها بالكامل تحت قيادة الجيش العراقي. لكن جماعات أخرى، مثل كتائب حزب الله - المقربة بشكل خاص من إيران - رفضت ذلك. \n \"الجميع يعلم أن هذه عملية ستستغرق شهوراً، بل سنوات. ولا تتفق عليها سوى بضع مجموعات\"، هذا ما قاله لهيب هيجل، الخبير في مجموعة الأزمات الدولية، متحدثاً عن جهود نزع السلاح. \n سبق لقوات الحشد الشعبي أن شاركت في القتال ضد مقاتلي داعش. \n قوات الحشد الشعبي هي تحالف يتألف في المقام الأول من جماعات مسلحة شيعية، مدعومة من إيران، حاربت تنظيم الدولة الإسلامية (داعش) بعد أن استولى التنظيم على مساحات شاسعة من الأراضي في العراق عام 2014. \n\n الولايات المتحدة - فيتنام: لا تفوّت \n\n في الحرب ضد تنظيم الدولة الإسلامية، كان الحشد الشعبي حليفاً غير راغب للتحالف الدولي بقيادة الولايات المتحدة ضد التنظيم. وفي عام 2016، صنّف العراق الحشد الشعبي \"قوة عسكرية مستقلة\" ضمن قواته المسلحة، إلا أن العديد من الفصائل لا تزال تتمتع بدرجة عالية من الاستقلالية. \n صرح الخبير لهيب هيجل بأنه على الرغم من أن معظم ألوية قوات الحشد الشعبي تتبع رسمياً للقيادة العسكرية العراقية، إلا أنها \"تحتفظ أساساً بنفس هيكل القيادة كما كانت عليه عندما كانت مجموعات منفصلة\". \n وبحسب ما ورد، فإنه منذ أن شنت الولايات المتحدة وإسرائيل هجوماً على إيران في 28 فبراير، شنت القوات الموالية لإيران في العراق هجمات متكررة على القواعد العسكرية الأمريكية والمنشآت الدبلوماسية ، فضلاً عن مواقع أخرى في المنطقة، بما في ذلك البنية التحتية للطاقة. \n >>> ندعو القراء لمشاهدة الفيديو: هجوم الحوثيين على سفن الشحن في البحر الأحمر عام 2025 \n\n المصدر: https://khoahocdoisong.vn/the-kho-cua-iraq-khi-cuoc-chien-my-iran-leo-thang-post2149110156.html \n\n اتبع فيتنام G o o g l e \n أضف Vietnam.vn على G o o g l e \n\n 0 \n\n تعليق ( 0 )",
+      "sourceHost": "vietnam.vn",
+      "contentChars": 5128,
+      "arabicRatio": 0.9653,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:30.742Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-o5aOCr4bmsJeVYEafa",
+        "representativeArticleId": "discovery-Rv6Ed3USEMq2ig21T9OUHeYv",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 50,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 35,
+          "countryImportance": 15,
+          "iraqImpact": 13,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "미국-이란 갈등 심화로 이라크의 정치적 어려움과 안보 불안정이 심화되고 있어 비스마야 신도시 사업의 안정적 진행에 간접적 우려를 초래할 수 있으나, 사업 직접 언급은 없음.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "15494682dc9b1b0534d4",
+        "ruleScore": 69,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 40,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "미국-이란 갈등 심화로 이라크의 정치적 어려움과 안보 불안정이 심화되고 있어 비스마야 신도시 사업의 안정적 진행에 간접적 우려를 초래할 수 있으나, 사업 직접 언급은 없음.",
+        "aiBreakdown": {
+          "bismayahRelevance": 10,
+          "decisionMakerInfluence": 10,
+          "contractPaymentImpact": 10,
+          "responseUrgency": 5,
+          "sourceReliability": 5
+        }
+      },
+      "contentHash": "221ccf1ee52bc21a672d286129a27bce1caddab92b9c563bfebec2c3437c0cd7",
+      "contentCheckedAt": "2026-08-03T01:38:30.742Z",
+      "contentChanged": false,
+      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -25481,6 +25479,120 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-QLhfQcK5Zdgr77upXnWtizHB",
+      "keywordId": "international-gulf-001",
+      "category": "economy",
+      "priority": 93,
+      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "الخليج",
+        "الملاحة",
+        "تصدير النفط",
+        "ناقلات",
+        "توتر إقليمي"
+      ],
+      "excludedTerms": [
+        "سياحة",
+        "طقس"
+      ],
+      "originalTitleArabic": "أسعار النفط تواجه ضغوطًا مع تصاعد التوترات في هرمز وباب المندب",
+      "sourceArabic": "شفقنا العربي",
+      "sourceHomepage": "https://ar.shafaqna.com",
+      "publishedAt": "2026-07-30T14:06:44.000Z",
+      "descriptionArabic": "أسعار النفط تواجه ضغوطًا مع تصاعد التوترات في هرمز وباب المندب شفقنا العربي",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1PWGNFUmU0YWtsa1MxRkJRRmcwZE5JVjJwVHhiUnhEVkZZZTFqRXRCME91Rk5uOW1HUF9qT1AzUzVIeUNtLXg3MGtn?oc=5",
+      "articleUrl": "https://ar.shafaqna.com/AR/584249/",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:39.008Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:31.621Z",
+      "canonicalUrl": "https://ar.shafaqna.com/AR/584249/",
+      "originalTextArabic": "أسعار النفط تواجه ضغوطًا مع تصاعد التوترات في هرمز وباب المندب\n\n 14:06 | الخميس 30 يوليو، 2026 \n\n شفقنا العراق -أسعار النفط عادت إلى واجهة الاهتمام العالمي مع تصاعد التوترات الأمنية في مضيقي هرمز وباب المندب، وسط تحذيرات من أن أي تصعيد جديد قد يربك أسواق الطاقة ويقود إلى موجة ارتفاعات جديدة في الخام.\n\n كشف خبير نفطي أن التوترات الأمنية والعسكرية في مضيقي هرمز وباب المندب تمثل أحد أبرز العوامل المؤثرة في أسواق الطاقة العالمية، محذراً من أن استمرار التصعيد قد يدفع أسعار النفط إلى مستويات أعلى ويزيد الضغوط التضخمية على الاقتصاد العالمي.\n\n وقال الخبير بلال خليفة إن ”الأزمات الجيوسياسية، ولا سيما تلك التي تقع في مناطق إنتاج وتصدير النفط، تنعكس بشكل مباشر على حركة الأسواق العالمية”،\n\n مبيناً أن “منطقة الخليج تُعد المحور الرئيس لإمدادات الطاقة، إذ تسهم بنحو 21.8% من الإنتاج العالمي للنفط الخام، وتستحوذ على نحو 26.6% من صادرات النفط العالمية خلال المدة 2025-2026”.\n\n وأضاف أن “بيانات عام 2023 أظهرت وصول إنتاج دول مجلس التعاون الخليجي إلى نحو 17 مليون برميل يومياً، بما يمثل 23.2% من الإنتاج العالمي، فيما بلغت صادراتها من النفط الخام نحو 12.4 مليون برميل يومياً، وهي الأعلى بين جميع التكتلات الإقليمية”.\n\n وأوضح خليفة أن “دول الخليج تنتج أيضاً قرابة 18 مليار قدم مكعب يومياً من الغاز الطبيعي، أي ما يعادل نحو 19% من الطلب العالمي، وهو ما يعكس الأهمية الاستراتيجية للمنطقة في تأمين احتياجات العالم من الطاقة”.\n\n وأشار إلى أن “مضيق هرمز يمثل الشريان الرئيس لصادرات النفط الخليجية، بينما يشكل مضيق باب المندب ممراً بحرياً حيوياً لحركة النفط والتجارة العالمية، لافتاً إلى أن أي اضطراب في الملاحة عبر هذين المضيقين يؤدي إلى انعكاسات مباشرة على أسعار الطاقة وسلاسل الإمداد”.\n\n ارتفاع أسعار خام برنت\n\n وبيّن أن “التوترات الأخيرة أدت إلى ارتفاع أسعار خام برنت من مستويات تراوحت بين 65 و70 دولاراً للبرميل إلى ما يقارب 100 دولار، قبل أن تستقر قرب مستوى 90 دولاراً، رغم توقعات سابقة بوصولها إلى أكثر من 150 دولاراً”.\n\n وعزا ذلك إلى عاملين رئيسين، “أولهما لجوء الولايات المتحدة واليابان والصين إلى استخدام احتياطياتها النفطية الاستراتيجية لتخفيف نقص المعروض، وثانيهما نجاح المملكة العربية السعودية في تحويل جزء من صادراتها النفطية إلى البحر الأحمر، ما مكنها من تصدير نحو خمسة ملايين برميل يومياً وساهم في الحد من الضغوط على الأسواق”.\n\n وحذر خليفة من أن “أي تصعيد جديد في باب المندب قد يهدد استمرار تصدير هذه الكميات، موضحاً أن أسعار خام برنت ارتفعت بأكثر من عشرة دولارات خلال اليوم الأول من تصاعد التوترات، لتقترب من حاجز 100 دولار للبرميل، وقد تتجاوز مستوى 120 دولاراً إذا استمرت الأزمة”.\n\n وأكد أن “حساسية الأسواق العالمية تجاه مضيقي هرمز وباب المندب تعود إلى تمركز نسبة كبيرة من إنتاج وتجارة النفط العالمية في منطقة تعتمد على ممرين بحريين ضيقين، ما يجعل أي اضطراب فيهما ينعكس سريعاً على الأسواق”.\n\n وختم خليفة حديثه بالقول إن “الاحتياطيات النفطية الاستراتيجية لدى عدد من الدول الكبرى تقترب من مستويات حرجة، ما قد يقلل قدرة الأسواق على امتصاص الصدمات في حال استمرار الأزمة”،\n\n محذراً من أن “ذلك سيؤدي إلى ارتفاع أسعار النفط وكلف النقل والشحن والتأمين، ومن ثم زيادة أسعار السلع عالمياً، وارتفاع معدلات التضخم، بما قد يدفع الاقتصاد العالمي إلى مواجهة موجة جديدة من التضخم الركودي”.\n\n المصدر: شفقنا العراق \n\n وسوم \n أسعار النفط \n باب المندب \n مضيق هرمز \n\n Facebook\n\n X\n\n Pinterest\n\n WhatsApp\n\n المقال السابق زيارة الأربعين وتجليات عظمة شخصية الإمام الحسين \n\n المقال التالي اليوم العالمي للصداقة.. رسالة أممية لمواجهة الكراهية وبناء السلام \n\n جمال اشرفی",
+      "sourceHost": "ar.shafaqna.com",
+      "contentChars": 3245,
+      "arabicRatio": 0.9877,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:45.744Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "economy",
+        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-7aoTj3iMmK9dXrevDI",
+        "representativeArticleId": "discovery-QLhfQcK5Zdgr77upXnWtizHB",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 53,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 8,
+          "countryImportance": 15,
+          "iraqImpact": 24,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "7390c824fe17dc7a7fa1",
+        "ruleScore": 53,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "43b71cbf86e5cdccc449fd5438c5c7b71b8357faadb9c8496c64c8d51486318f",
+      "contentCheckedAt": "2026-08-03T01:38:45.744Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-BtuaJa0Frlbgw0IBCn1n7JAE",
       "keywordId": "international-hormuz-001",
       "category": "international",
@@ -31206,6 +31318,123 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-sHPYaTZfPrYqP3JsP6M9_R0x",
+      "keywordId": "politics-security-policy-001",
+      "category": "politics",
+      "priority": 94,
+      "queryArabic": "\"حصر السلاح بيد الدولة\" العراق",
+      "requiredTerms": [
+        "حصر السلاح بيد الدولة"
+      ],
+      "optionalTerms": [
+        "الحشد الشعبي",
+        "الأمن القومي",
+        "الفصائل"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "مَن يطلق المسيرات من الأراضي العراقية؟",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHomepage": "https://www.aljazeera.net",
+      "publishedAt": "2026-07-29T13:02:32.000Z",
+      "descriptionArabic": "مَن يطلق المسيرات من الأراضي العراقية؟ الجزيرة نت",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMilgJBVV95cUxQQUxISVJJZFpfNjF3Wm9hTzhhZFpGeG40ZUhJMWJyTG5ualhDVlJUNjdRYUZ6SDE3YmsxVEEtcXhIN0I1bzdZR2l6YUY0VktlSVY2YVp3SnNZRzdfOWpKRFpsbGsyVUhNSExMbDFiOXVUS3FjTzRNR0NaWFJ0ZVE5Z0wycy1qc3JiRGpuRkdWbXJzU3FUZEdSTDBaRDd2ZUZxUUNiVFNSUDRwa3B1TzVmTXBlZmROcFBWdEtmWnZSTVc5cHExbHJWbkotY3ppaVV4Q0w2OFBTeDNoSExPYjJHQ0tQV0hDT1UtcmRqTVpPXy10S3pTNFNqdmNsenhubEFXc2V4bjU5aFgzOHhtdHR6YkFTbzNnQdIBmwJBVV95cUxNSGFnNHA1VTFoTlVxMktSZWtUSjdXWWlXRXlsRlNOdkUwRk1ncmdncjd5b1RQN2h2Q2R1YUZGeVBpcmZMNmtmZGZqeTZSbFc2cmhsT0kwVHpKM1ZzRXotN3dnbUZMWUVFREw1Sm5ZV3oxQ0xUTVJuUlJ6UHI3Rlh0VjBreXplSjk0dVFWNDA0YjdJZFN3ZGVWcEN1WW9reWRsT3ZjRWFxNGg0X2hUbmFoWmlXRjNleFUzTDFMMjVDaVZINmhHMDZwRUMxZHVJb1BsLUtabUJzMkRtbXRtTkxacHZraGM1UnVjYVJOUXRENXZuRFVULUh0OTlQellUR05hM1ByY2o3c0k3WmJkd2w4bGF4bWJ3SUJyUjFR?oc=5",
+      "articleUrl": "https://www.aljazeera.net/politics/2026/7/29/%D9%85%D9%86-%D9%8A%D8%B7%D9%84%D9%82-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%A3%D8%B1%D8%A7%D8%B6%D9%8A",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:36:05.254Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "aljazeera-iraq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-08-03T04:36:13.567Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-08-03T04:37:20.622Z",
+      "canonicalUrl": "https://www.aljazeera.net/politics/2026/7/29/%d9%85%d9%86-%d9%8a%d8%b7%d9%84%d9%82-%d8%a7%d9%84%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d9%85%d9%86-%d8%a7%d9%84%d8%a3%d8%b1%d8%a7%d8%b6%d9%8a",
+      "originalTextArabic": "مراسلو الجزيرة \n سياسة | العراق \n\n مَن يطلق المسيرات من الأراضي العراقية؟\n استمع استمع (8 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n الحشد الشعبي يعلن مقتل وإصابة 52 من عناصره إثر غارات أمريكية سعودية على مقاره في عدة محافظات عراقية (هيئة الحشد) \n\n أميمة مجيد \n\n Published On 29/7/2026 29/7/2026 \n | آخر تحديث: 15:57 (توقيت مكة) آخر تحديث: 15:57 (توقيت مكة) \n\n بغداد- لم تعد أزمة الطائرات المسيرة التي تنطلق من الأراضي العراقية، أو يُشتبه بانطلاقها منها، شأنا أمنيا داخليا، بل أصبحت من أكثر الملفات تعقيدا في علاقات بغداد الإقليمية، وسط اتهامات متبادلة، ونفي الفصائل المسلحة، وضغوط حكومية لحصر السلاح بيد الدولة، بالتزامن مع اتساع المواجهة الأمريكية الإسرائيلية ضد إيران.\n وتصاعدت المخاوف بعد هجمات بطائرات مسيرة استهدفت السعودية والكويت والأردن، إضافة إلى إقليم كردستان، مع اتهامات بانطلاق بعضها من العراق ، بينما تؤكد بغداد أنها لم تتلق أدلة تثبت ذلك، وتواصل الفصائل المسلحة نفي أي صلة لها بالهجمات.\n اقرأ أيضا \n list of 4 items list 1 of 4 الأهداف والقتلى والردود.. ماذا نعرف عن الضربات الأمريكية السعودية بالعراق؟ \n list 2 of 4 مسيرات تستهدف أربيل والتحالف يعترض بعضها \n list 3 of 4 لغز المسيّرات العابرة للأردن.. الأمن يعرف والسياسة تتحفظ \n list 4 of 4 حصر السلاح في العراق.. اختبار الدولة الأصعب \n end of list \n وفي أحدث التطورات، شنت السعودية والولايات المتحدة غارات على مقار للحشد الشعبي في 7 محافظات عراقية، أسفرت -وفق هيئة الحشد- عن مقتل 20 عنصرا وإصابة 32 آخرين في حصيلة أولية، مع استمرار عمليات الإنقاذ، ما يرجح ارتفاع عدد الضحايا خلال الساعات المقبلة.\n وقبل ذلك بساعات، أعلنت وزارة الدفاع السعودية اعتراض وتدمير طائرات مسيرة قالت إنها انطلقت من العراق واستهدفت منشآت نفطية في الشرقية والرياض، مؤكدة حق المملكة في الدفاع عن نفسها والرد على الهجمات.\n وكان من المقرر أن يزور رئيس الوزراء العراقي علي فالح الزيدي السعودية غدا الخميس، إلا أن مصادر أفادت بإلغاء الزيارة على خلفية التصعيد الأمني، دون إعلان رسمي حتى الآن.\n يأتي ذلك في ظل تصاعد المواجهة الإقليمية من تبادل الضربات بين الولايات المتحدة وإيران إلى استهداف منشآت وممرات حيوية in عدة دول، ما وضع العراق في قلب المعادلة الأمنية بحكم موقعه الجغرافي، ووجود فصائل مسلحة موالية لإيران، إلى جانب القوات الأمريكية على أراضيه.\n\n من يقف وراء قصف دول الجوار؟ \n يكشف مصدر مقرب من أحد الفصائل المسلحة، في حديثه للجزيرة نت، عن حوار جرى بين الحكومة العراقية وقادة الفصائل عقب استهداف دول عربية مجاورة، مؤكدا أن الفصائل نفت خلاله أي صلة بتلك الهجمات.\n إعلان \n\n لكنه يشير إلى أن هذا النفي لا يعكس بالضرورة الواقع الميداني، إذ تتداول أوساط الفصائل مزاعم عن وقوف \"حركة النجباء\"، إحدى فصائل ما تعرف بـ\" المقاومة الإسلامية في العراق \"، وراء استهداف الكويت، بما يعكس -وفق تقديره- فجوة بين الخطاب الرسمي وما يجري على الأرض.\n ويضيف أن الشكوك الأمنية لا تقتصر على الفصائل المعروفة، بل تشمل خلايا منفصلة تشكلت سابقا وتعمل -بحسبه- بتنسيق مع الحرس الثوري الإيراني لتنفيذ هجمات على دول خليجية تستضيف قوات أمريكية، خارج الأطر التنظيمية التقليدية، بما يصعب تحديد الجهات المنفذة وربطها مباشرة بالفصائل المسلحة.\n وفي 27 يوليو/تموز 2026، نفت ما تعرف بـ\"المقاومة الإسلامية في العراق\" مسؤوليتها عن استهداف منشآت سعودية، ولوحت برد \"قاس\" إذا أقدمت المملكة على أي عمل عسكري. كما نفت \"سرايا أولياء الدم\"، وهي فصيل غامض ينشط ضمن بيئة الفصائل المسلحة، مسؤوليتها عن الهجمات التي استهدفت أربيل أو الكويت، مؤكدة أن الاتهامات المتداولة في بعض وسائل الإعلام \"عار عن الصحة\" ولا تستند إلى أي دليل.\n\n حركة النجباء تنفي \n من جانبه، نفى عضو المكتب السياسي في حركة النجباء حيدر اللامي، في حديثه للجزيرة نت، صحة الاتهامات بوقوف الحركة وراء استهداف الكويت، مؤكدا أنها تعلن مسؤوليتها عن أي عملية تنفذها لأنها \"لا تخشى الضغوط السياسية\" وليست جزءا من العملية السياسية.\n ووصف اللامي البيان السعودي والاتهامات الموجهة إلى الفصائل العراقية بأنها \"غير صحيحة\"، مشددا على أن أيا من الفصائل لم يعلن مسؤوليته عن استهداف أربيل أو الكويت أو السعودية أو الأردن.\n وفيما يخص حصر السلاح، اعتبر أن تسليم سلاح حركة النجباء \"خط أحمر\"، موضحا أن مبررات \"سلاح المقاومة\" ما تزال قائمة في ظل استمرار تحليق الطائرات المسيرة، ووجود القواعد الأمريكية، وتدخل واشنطن في القرار العراقي، مؤكدا أن زوال هذه الأسباب وحده ينهي الحاجة إلى السلاح.\n وأضاف أن الحركة جزء من محور المقاومة ووحدة الساحات بقيادة إيران، وتنسق مع الجمهورية الإسلامية وحزب الله في لبنان وأنصار الله في اليمن، مؤكدا أنها ستكون حاضرة ميدانيا متى ما استعدت الحاجة.\n وفي 28 يوليو/تموز الجاري، أعلن مستشار الأمن القومي العراقي قاسم العبودي أن تحقيقات أمنية رصدت ما وصفه بـ\"تدخل أوكراني\" في هجمات الطائرات المسيرة التي استهدفت العراق ودولا مجاورة، مؤكدا أن التحقيقات لا تزال جارية ولم تُحسم المسؤوليات، فيما نفت وزارة الخارجية الأوكرانية الاتهامات، ووصفتها بأنها \"لا تستند إلى أي دليل\".\n عباس العنبوري شدد على عزم العراق إنهاء ظاهرة السلاح خارج سلطة الدولة (موقع ملتقى الرافدين) الرد الحكومي \n في المقابل، قال عباس العنبوري، مستشار رئيس الوزراء ، في حديثه للجزيرة نت، إن الأجهزة الأمنية لم تثبت حتى الآن انطلاق الهجمات التي استهدفت دول الجوار من الأراضي العراقية، مشيرا إلى أن جهاز المخابرات طلب من تلك الدول تزويد بغداد بالأدلة التي تثبت ذلك.\n وأضاف أن الفصائل المسلحة لم تعلن صراحة رفضها نزع السلاح ، بل نفت مسؤوليتها عن استهداف دول الجوار، ووصفت الاتهامات الموجهة إليها بأنها \"مجرد ادعاءات\".\n إعلان \n\n وفي ملف حصر السلاح، أكد العنبوري أن الحكومة ماضية في تنفيذ برنامجها القائم على حصره بعد 30 سبتمبر/أيلول المقبل، باعتبار أنه لم يعد هناك مبرر لوجود فصائل مسلحة خارج إطار الدولة. ولفت إلى أن حوارات الحكومة مع قادة الإطار التنسيقي أظهرت -حسب قوله- تأييدهم لجهود مكافحة الفساد وحصر السلاح بيد الدولة، وهو ما أكده بيان الإطار الأخير.\n وأشار إلى أنه لا يمكن استباق الإجراءات التي قد تتخذها الحكومة إذا امتنعت بعض الفصائل عن الاستجابة، لكنه شدد على عزمها إنهاء ظاهرة السلاح خارج سلطة الدولة.\n وكان الإطار التنسيقي (مظلة الأحزاب الشيعية الحاكمة في العراق)، جدد في بيانه الصادر قبل يومين خلال اجتماعه الاعتيادي بحضور رئيس الوزراء علي فالح الزيدي، دعمه لجهود الحكومة في حصر السلاح ومكافحة الفساد، ورفض استخدام أراضي الدول للاعتداء على دول أخرى.\n وتعكس هذه الروايات المتباينة تعقيد ملف الطائرات المسيرة في العراق، إذ لم يعد الخلاف مقتصرا على الجهة المنفذة للهجمات، بل امتد إلى من يملك قرار استخدام القوة خارج إطار الدولة. ومع استمرار التصعيد الإقليمي، تمثل المسيرات تحديا لبغداد يمس أمنها الداخلي، وعلاقاتها مع دول الجوار، وجهودها لحصر السلاح بيد الدولة، وسط مخاوف من أن يقود أي هجوم جديد إلى جرّ العراق مباشرة إلى دائرة الصراع.\n\n المصدر: الجزيرة",
+      "sourceHost": "aljazeera.net",
+      "contentChars": 6166,
+      "arabicRatio": 0.9878,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T04:39:32.148Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "importance": {
+        "score": 38,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 40,
+          "businessImpact": 0,
+          "politicalImpact": 13,
+          "reportValue": 10,
+          "sourceReliability": 8
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "이라크 내 드론 공격 및 정치적 긴장 상황에 대한 보도로, 비스마야 사업 직접 관련성 없고 즉각 대응·계약 영향 정보도 포함하지 않아 참고 수준임.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "2a2f1c2b18fc56aa6bb8",
+        "ruleScore": 71,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 20,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REFERENCE",
+        "aiReasonKo": "이라크 내 드론 공격 및 정치적 긴장 상황에 대한 보도로, 비스마야 사업 직접 관련성 없고 즉각 대응·계약 영향 정보도 포함하지 않아 참고 수준임.",
+        "aiBreakdown": {
+          "bismayahRelevance": 0,
+          "decisionMakerInfluence": 15,
+          "contractPaymentImpact": 0,
+          "responseUrgency": 0,
+          "sourceReliability": 5
+        }
+      },
+      "eventGroup": {
+        "groupId": "event-pb0NoEU3KtPDNlZIg7",
+        "representativeArticleId": "discovery-sHPYaTZfPrYqP3JsP6M9_R0x",
+        "isRepresentative": true,
+        "memberCount": 2,
+        "duplicateCount": 1
+      },
+      "contentHash": "7f8bef8a55123734b43497ff55e4c6f81adb27fd3ad9bee277cefcf7a7ff8303",
+      "contentCheckedAt": "2026-08-03T04:39:32.148Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-8WyjHyO_00bns8ApN8jAcSYJ",
       "keywordId": "politics-security-policy-001",
       "category": "politics",
@@ -31378,11 +31607,11 @@
         "aiBreakdown": null
       },
       "eventGroup": {
-        "groupId": "event-ZqnWtNbaR-XnGcDbUs",
-        "representativeArticleId": "discovery-8WyjHyO_00bns8ApN8jAcSYJ",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
+        "groupId": "event-pb0NoEU3KtPDNlZIg7",
+        "representativeArticleId": "discovery-sHPYaTZfPrYqP3JsP6M9_R0x",
+        "isRepresentative": false,
+        "memberCount": 2,
+        "duplicateCount": 1
       },
       "contentHash": "7f8bef8a55123734b43497ff55e4c6f81adb27fd3ad9bee277cefcf7a7ff8303",
       "contentCheckedAt": "2026-08-06T06:58:17.227Z",
@@ -34109,6 +34338,125 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-6bdwo-zGmavw4iDk63pAQ36X",
+      "keywordId": "international-us-001",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "خاص: خيارات السعودية لمواجهة المسيرات القادمة من العراق",
+      "sourceArabic": "الحرة",
+      "sourceHomepage": "https://alhurra.com",
+      "publishedAt": "2026-07-28T21:22:36.000Z",
+      "descriptionArabic": "خاص: خيارات السعودية لمواجهة المسيرات القادمة من العراق الحرة",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiPkFVX3lxTFBQeTBnMzJzS1VNd29IblhZN1RmVWwxczFuQTljeFJvTWRfeG1xYUxVN0lGTFYyanhEU0kzRHd3?oc=5",
+      "articleUrl": "https://alhurra.com/29997",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.673Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:54.015Z",
+      "canonicalUrl": "https://alhurra.com/29997",
+      "originalTextArabic": "الرئيسية \n / الشرق الأوسط \n / عالم عربي \n / الخليج \n / السعودية \n\n خاص: خيارات السعودية لمواجهة المسيرات القادمة من العراق\n\n فيما تستمر هجمات المسيرات القادمة من العراق على السعودية، تجد المملكة نفسها أمام حتمية التحرك لحماية أمنها.\n\n سكينة المشيخص \n\n اقرأ بـ English → \n\n 28 يوليو, 2026 \n · \n 3 دقيقة قراءة \n\n تُظهر صورة التقطها قمر صناعي تصاعد أعمدة الدخان من منشأة نفطية في جيزان بمنطقة جازان في السعودية، بتاريخ 26 يوليو 2026. \n\n قبيل أيام من زيارة رئيس الوزراء العراقي علي الزيدي إلى السعودية، قالت الرياض إنها تعرضت يومي الاثنين والثلاثاء لاستهداف بطائرات مسيرة أطلقتها ميليشيات موالية لإيران في العراق.\n\n أدانت وزارة الخارجية السعودية الهجمات الجديدة “بأشد العبارات”، وأكدت وزارة الدفاع أن المملكة “تحتفظ بحق الرد في الزمان والمكان المناسبين”.\n\n ووجه الزيدي بعد هجوم الاثنين بتشكيل لجنة من وزارتي الدفاع والداخلية وجهاز المخابرات للتحقيق، مؤكدا أن العراق “لن يسمح باستخدام أراضيه منطلقا للاعتداء على دول الجوار”.\n\n وطلبت السلطات العراقية من الرياض تزويدها بالمعلومات الفنية المتوافرة، بما في ذلك صور الرصد وبيانات مسارات الطائرات وأجزاء المسيرات التي جرى إسقاطها، كما عرضت على الجانب السعودي المشاركة في التحقيق.\n\n وهذه الهجمات ليست الأولى، ففي 17 مايو أعلنت السعودية اعتراض ثلاث طائرات بلا طيار قادمة من الأجواء العراقية استهدفت منشآت نفطية، بينما قالت بغداد حينها إن منظوماتها الدفاعية لم تسجل إطلاق مسيرات من داخل أراضيها.\n\n وقالت مصادر “الحرة” إن مسؤولين سعوديين عرضوا في اجتماع استضافته الرياض في يوليو على وفد عراقي بيانات لمسارات المسيرات التي استخدمت في هجمات سابقة، وأشارت تلك البيانات، إلى أن نقاط إطلاقها كانت داخل العراق وقريبة نسبيا من الحدود السعودية.\n\n وخلال زيارة رئيس الوزراء العراقي للسعودية يوم الخميس 30 يوليو، سيقدم الزيدي تطمينات لولي العهد السعودي الأمير محمد بن سلمان بأن العراق لن يسمح باستخدام أراضيه لاستهداف المملكة أو أي دولة عربية أخرى، وفقا لمصادر تحدثت لـ “الحرة”.\n\n ورغم تطمينات بغداد فإن المملكة تبحث عن خيارات حقيقية،وفق مراقبين، تسهم في وضع حد لمثل هذه التهديدات التي تطال على وجه الخصوص منشآتها النفطية التي تشكل عصب اقتصادها.\n\n ويقول المستشار السابق في وزارة الخارجية السعودية سالم اليامي لـ”الحرة” إن خيارات المملكة للرد على هجمات المسيرات تبقى مفتوحة “بما فيها الرد العسكري إذا استمرت العمليات ولم تتمكن الحكومة العراقية من السيطرة على الفصائل المسؤولة عنها”.\n\n ويستدرك بالقول إن هذا لا يعني الاتجاه إلى مواجهة مع الدولة العراقية، في ظل العلاقات الجيدة بين البلدين وإدراك الرياض أن الحكومة ليست هي الخصم ولا يجب تحميلها وحدها مسؤولية نشاط فصائل تعمل خارج سيطرتها.\n\n ويقول اليامي: “إذا حدث رد فمن المرجح أن يكون محدودا وموضعيا ضد الجماعات أو قياداتها أو معسكراتها، لا عملية واسعة داخل العراق، معتبرا أن احتمال الوصول إلى هذا الخيار ما زال منخفضا جدا”.\n\n وفي مايو نقلت رويترز عن مصادرها أن طائرات حربية سعودية قصفت أهدافا مرتبطة بجماعات مسلحة قوية متحالفة مع طهران في العراق.\n\n وقال مسؤول غربي ومصدر مطلع للوكالة إن الضربات السعودية نفذتها طائرات مقاتلة تابعة لقواتها الجوية على أهداف لتلك الجماعات بالقرب من حدود المملكة الشمالية مع العراق.\n\n وفي اجتماع يوليو قال مسؤولون سعوديون لنظرائهم العراقيين إن الرياض تتابع انتشار تشكيلات تابعة للحشد الشعبي في صحاري النجف والمثنى المحاذية للمملكة، وتريد تطمينات بشأن إبعادها عن المناطق الحدودية.\n\n ويرى اللواء المتقاعد الدكتور محمد القبيبان المختص في الشؤون العسكرية، أن المملكة لن تبدأ بعمل عسكري ما دامت الوسائل السياسية والدبلوماسية متاحة، مشيرا إلى أن زيارة الزيدي قد تتيح التوصل إلى تفاهم بشأن الإجراءات اللازمة لمنع تكرار العمليات.\n\n ومن الخيارات الدفاعية التي أشار إليها القبيبان في تصريحاته لـ”الحرة” إنشاء مواقع عسكرية لمراقبة تحركات الفصائل، وأجهزة متطورة وطائرات من دون طيار لرصد مصادر الخطر والتعامل معها.\n\n ولا يتوقع اليامي أن دعم بغداد كاف لوقف الهجمات، ويقول إن “الدعم الخارجي للحكومة العراقية لن يتفوق على النفوذ الذي تمنحه الأسلحة للفصائل”، ولهذا فهو لا يحصر الخيارات السعودية في دعم حكومة الزيدي وحدها.\n\n فبالتوازي مع العمل مع بغداد، “تستطيع المملكة تقوية قدراتها الداخلية، وتعزيز العمل الخليجي المشترك، وإقامة شراكات مع دول إقليمية وقوى دولية، إلى جانب تطوير خياراتها في مجالات التسليح والحماية والأمن”، حسب قوله.\n\n وأعلنت حكومة الزيدي خطة لحصر السلاح بيد الدولة، واستجاب فصيلان مرتبطان بإيران، هما عصائب أهل الحق وكتائب الإمام علي، لمساعي الحكومة، وكلاهما مصنفان على قوائم الإرهاب الأميركية. لكن فصائل أخرى، أبرزها كتائب حزب الله، لا تزال ترفض تسليم سلاحها، وتربط أي خطوة في هذا الاتجاه بخروج قوات التحالف الدولي من العراق وهو الأمر المقرر حدوثه في سبتمبر.\n\n ويذهب الكاتب إدريس الدريس، في خيارات المملكة لمعالجة الهجمات إلى أصل المشكلة، إذ يستبعد نجاح مشروع نزع سلاح الفصائل ما دامت تحتفظ بعلاقاتها مع طهران، لذلك يرى أن لا بد من “مواجهة دبلوماسية صريحة مع إيران” التي توجه الفصائل العراقية والحوثيين وتستخدمهم ضمن سياستها الإقليمية.\n\n مقالات مرتبطة\n\n مشاهدة الكل \n → \n\n أميركا\n\n واشنطن لطهران: الاعتذار لم يكن كافيا\n\n جو الخولي \n · \n\n 30 يوليو, 2026 \n\n الإقليم\n\n السعودية على رأس تحالف بحري دولي لحماية الملاحة من الحوثيين\n\n الحرة \n · \n\n 30 يوليو, 2026 \n\n السعودية\n\n طالت 7 محافظات.. خارطة الضربات السعودية الأميركية في العراق\n\n مصطفى سعدون \n · \n\n 29 يوليو, 2026 \n\n الإقليم\n\n خاص | مقتل 5 من الحرس الثوري الإيراني في الضربات السعودية الأميركية بالعراق\n\n الحرة \n · \n\n 29 يوليو, 2026",
+      "sourceHost": "alhurra.com",
+      "contentChars": 4990,
+      "arabicRatio": 0.9975,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:39:09.545Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-b1jPQemYhHET_z1Xci",
+        "representativeArticleId": "discovery-6bdwo-zGmavw4iDk63pAQ36X",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 36,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 35,
+          "countryImportance": 10,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "사우디와 이라크 간의 무인기 공격 및 대응 관련 내용으로, 비스마야 사업에 직접 영향 미치는 내용은 아니나, 지역 안보 불안 요소로 인한 사업 위험성 모니터 목적 간접 참고 가능함.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "bf22124bc0da266ab610",
+        "ruleScore": 76,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 15,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "사우디와 이라크 간의 무인기 공격 및 대응 관련 내용으로, 비스마야 사업에 직접 영향 미치는 내용은 아니나, 지역 안보 불안 요소로 인한 사업 위험성 모니터 목적 간접 참고 가능함.",
+        "aiBreakdown": {
+          "bismayahRelevance": 3,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 3,
+          "responseUrgency": 3,
+          "sourceReliability": 1
+        }
+      },
+      "contentHash": "08afe3447999c5025e14d72c78aaf97918870528f0a9c76b11acea810fc2822d",
+      "contentCheckedAt": "2026-08-03T01:39:09.545Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-dYOoNkhD4Q1ghYGTi2wfGQqC",
       "keywordId": "international-turkey-001",
       "category": "economy",
@@ -36793,6 +37141,130 @@
         "summaryKo": "알리 자이디 총리는 2026년 5월 이후 법원과 미국 행정부의 지원을 배경으로 강력한 행정권을 행사하며 반부패 캠페인을 주도한다. 그러나 내부 권력 균형과 무장단체 통제 문제 등 과제가 남아 있다.",
         "fullTranslationGenerated": false
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-LF8xMuI-Tx-NcOHyhWGg_bfp",
+      "keywordId": "politics-pm-001",
+      "category": "security",
+      "priority": 95,
+      "queryArabic": "\"رئيس مجلس الوزراء العراقي\" توجيهات",
+      "requiredTerms": [
+        "رئيس مجلس الوزراء"
+      ],
+      "optionalTerms": [
+        "توجيهات",
+        "قرار",
+        "سياسة",
+        "اجتماع"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "استقبال المهنئين"
+      ],
+      "originalTitleArabic": "الزيدي يرعى اجتماع الطاولة المستديرة العراقية-التركية لتعزيز التعاون الاقتصادي",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-28T14:03:25.000Z",
+      "descriptionArabic": "الزيدي يرعى اجتماع الطاولة المستديرة العراقية-التركية لتعزيز التعاون الاقتصادي شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMirAVBVV95cUxNMkoycVM3dm40MGZSVVNsaTgzY2NnbS1VREVEMm1vcTZ5bkk5TVQ1MVRucko4ZGZyTHBEWS1RYW5mODRrOENZMjVuU0s5alRZRWZjMTUxaG0wWnlETm1oQW1tNFBmYTlwbXBORWhtSk9hdDFTVlhudTczZnJiSDVESTlSR0dLZk5COHJRQlhJRkZYWkVrcjhwYjZZV0pkVzFnUXJIUGVpbXR2QjFIZld6MDNjUGthLTZKWWt2N0Q1MG9YMTVmZU5NaHY4ak5ZOFRqcXhwQXBPT3I1NUV3djFMbk04Vm9EcjV6WXpmcU5OWjdGb09XcDhKNmlzc2E5ZTFWM1lQR0tDM0tlN0E1THBRcmZpcjQ4N25NY0xDdkFfUjdTV2pJcXBMS2VvelYtMmdBeThBNXViT3FvT2l4TDdremZQR0dVQzZOUk9kbWVWTkkwVUUtMmtWc3dfWDIzNVk1NWZFOW0xZ1M1a19GYmNlTTg1SlR0bkYxNjNJdElJZ2czLWhMT0FYeGEzVG94QjJiYXFVd0VfMnl6SnVPNFpoZTlDaFo4NTZ1eWZiRndSTU1vWk9qSk4xNlgwV3RlMVZCOTQ3OG9MYjFWc09EM2w0QW1nNmdPME5icFNqM0NIOHRNeHpkZERycUprYUhtSXlCQmVaYko4MUo1MEdZS1pKa0RvY1NWYlV3bjczN3ZMS1ZXU3BNY0ZPbnY0SkVUYVJINWNwbTRqcF9CcWJrdkN0dHRaaXlyOWF6N1V1UDREZU9HNzhxWVdLamR6cEJUbk9kSV9JT0ZjbTR4bm1rQ0tlRGg2bzM5OUNmMks3SHFHaEJ4bHBUZWlFUjZHd0s3UHJ1R0QybUZFQ1RZRUplc1E0MS1UWWI4NUtHUlJwSlhkbk9nc2FjcTcyaVpfcHg?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B1%D8%B9%D9%89-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AF%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-07-29T08:00:22.961Z",
+      "urlRecoveryMethod": "source-listing",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-07-29T08:00:38.366Z",
+      "urlResolutionMethod": "source-listing",
+      "resolvedAt": "2026-07-29T08:00:55.041Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%B1%D8%B9%D9%89-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%A7%D9%84%D8%B7%D8%A7%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AF%D9%8A%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%84%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A",
+      "originalTextArabic": "الأخبار العاجلة\n\n جهاز مكافحة الإرهاب يطيح بـ \"آمر مفرزة عسكرية\" في داعش غربي بغداد\n\n مع افتتاح التداولات: أسعار الدولار تسجل صعوداً طفيفاً في بغداد وأربيل\n\n أكثر من 50 ضحيةً وجريحاً حصيلة \"غير نهائية\" للقصف السعودي - الأميركي على العراق\n\n اجتماع أمني طارئ برئاسة الزيدي لبحث تداعيات القصف الجوي\n\n الزيدي يرعى اجتماع الطاولة المستديرة العراقية-التركية لتعزيز التعاون الاقتصادي\n\n طاقة وأعمال\n\n 2026-07-28T13:51:35+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- أنقرة\n رعى رئيس مجلس الوزراء العراقي علي فالح الزيدي، يوم الثلاثاء، اجتماع الطاولة المستديرة العراقية-التركية، بمشاركة عدد من رجال الأعمال الأتراك، لبحث سبل تعزيز العلاقات الاقتصادية والتجارية بين البلدين وتوسيع آفاق التعاون الاستثماري.\n وذكر المكتب الإعلامي لرئيس الوزراء، في بيان ورد لوكالة شفق نيوز، أن الاجتماع تناول أهمية تنمية العلاقات الاقتصادية والتجارية بين العراق وتركيا، والعمل على تطويرها بما يحقق المنفعة المتبادلة للبلدين.\n وأضاف أن الاجتماع استعرض الآليات والتسهيلات التي تبنتها الحكومة العراقية لرفع مستويات التعاون وتنمية البيئة الاستثمارية والاقتصادية، في ضوء توجيهات رئيس الوزراء الخاصة بالانفتاح الاقتصادي وتسهيل الإجراءات أمام حركة التجارة البينية مع تركيا.\n ووصل الزيدي، في وقت سابق من اليوم، إلى العاصمة التركية أنقرة على رأس وفد حكومي رفيع في زيارة رسمية تتضمن مباحثات مع الرئيس التركي رجب طيب أردوغان وكبار المسؤولين الأتراك، لبحث تعزيز التعاون في مجالات الاقتصاد والمياه والأمن والاستثمار، إلى جانب مناقشة ملفات النفط والطاقة، وزيادة التبادل التجاري، ومتابعة تنفيذ الاتفاقات ومذكرات التفاهم الثنائية، فضلاً عن بحث عدد من القضايا الإقليمية والدولية، وفق مصادر رسمية خاصة ب وكالة شفق نيوز .",
+      "sourceHost": "shafaq.com",
+      "contentChars": 1601,
+      "arabicRatio": 0.9793,
+      "relevanceNote": "이라크 내 테러·치안·시위 사건",
+      "fetchedAt": "2026-07-29T08:03:38.988Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "security",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "eventGroup": {
+        "groupId": "event-q4YNZhQaGl9l8IwYYa",
+        "representativeArticleId": "discovery-LF8xMuI-Tx-NcOHyhWGg_bfp",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "categoryRouting": {
+        "from": "security",
+        "to": "security",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "securityIncident": {
+        "type": "ARMED_ATTACK",
+        "labelKo": "무장세력공격",
+        "matchedTerm": "قصف",
+        "locationSignal": "العراق",
+        "authoritySignal": null,
+        "classificationMethod": "IRAQ_OCCURRENCE_ONLY_V3"
+      },
+      "importance": {
+        "score": 53,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "terrorDirectness": 15,
+          "location": 25,
+          "incidentScale": 0,
+          "siteSafety": 5,
+          "sourceReliability": 8
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "eff2d15c9736c220bb98",
+        "ruleScore": 53,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "80aae6ccad2239825b6bf0f471883901f921521c1ff301e60560f6b2b02335a2",
+      "contentCheckedAt": "2026-07-29T08:03:38.988Z",
+      "contentChanged": false,
+      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -39980,50 +40452,46 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-GY5Yu2eqFB_RNb5hlXRaVRu5",
-      "keywordId": "international-turkey-001",
+      "articleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
+      "keywordId": "international-hormuz-001",
       "category": "economy",
-      "priority": 96,
-      "queryArabic": "تركيا العراق طريق التنمية المياه الأمن",
+      "priority": 97,
+      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
       "requiredTerms": [
         "العراق"
       ],
       "optionalTerms": [
-        "تركيا",
-        "طريق التنمية",
-        "المياه",
-        "الأمن",
-        "النفط عبر جيهان"
+        "مضيق هرمز",
+        "صادرات النفط",
+        "الملاحة",
+        "ناقلات النفط"
       ],
-      "excludedTerms": [
-        "السياحة",
-        "كرة القدم"
-      ],
-      "originalTitleArabic": "\"طريق التنمية\" وشراكة نفطية.. مرحلة جديدة من التعاون بين تركيا والعراق",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
+      "excludedTerms": [],
+      "originalTitleArabic": "صادرات النفط العراقي تسجل 526 ألف برميل يوميًا - الطاقة",
+      "sourceArabic": "الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
+      "sourceHomepage": "https://attaqa.net",
       "publishedAt": "2026-07-28T07:00:00.000Z",
-      "descriptionArabic": "\"طريق التنمية\" وشراكة نفطية.. مرحلة جديدة من التعاون بين تركيا والعراق الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNNXptYVNQUGNZWkhlVTJMOFZ1VENGWHpoZlB6QmFwTkJwUjZRSDFxeXIyeU41NGZaZWFzTi1QdHpkSDh6OERrX0VFdVNwTGFPaThLcWJ4eWp3c01lVTIwY0hLUjdPNFl0ZVZ2UG9YQjZZTlh2UlJWaldGdHRXTzdGRThXWE40OGpySGlOck1TRkYzYXlnV0Z5aWhfM253RWV6WFgwNTFSdERtZ2RHM3V6Q2JURjBCQVhWOFNhdVEzUHNtMlRlVklQWWEzTGhNUU8zV0h6Wm45R1NOWHFTWjNSS296bmxIczZLemhZZ1drT3JORGZMai1SN0tnLVhNRFRWYmNTTVNfWmRYM3dhYldiUkNPUmkxVnFYZW5mWFZFSGE1M3MzU0VnS2dydU15SU5pVTRyUnZQWE9iMldyRXJ5dHNveXA0ZkZOQy1CODFwNlHSAdYCQVVfeXFMT1lQVzRSeVE4NkFfM0pzSjdKc1lmS1doSG1OSWVfQWw3dFRRRTNncUo3Z2J2aDR6SkhkZm14TnlCYVE0SmJGZ2xDV2wzSzZfNm9NYVVIaXliTkpTT1VERWNyangzNy1pSGdtV2gteEVvRE9zMWY4REZuM2tHQVN6NXFMdV9OWmZGVHE2emV3cnYwTC1mdElqUFdadGtqSWtodVljNU81SXVhVEVkTmVOU1dWM0ZtTDZWYWstTWVXaXJyYTlRZF9fR3RNNUJEdzdtbGdrakJuWTdBOXd3M2VLU0tmSVBYTV9ad0U2Um5Ocld3VXJobEdFd1RMVHdrT2xHYmdhQWFheUtoMEdZVnpnUDdtVURoZVNqSEhVMlFyMUF5Y3pXamFQc2xkSjUyeVV2X3ZWMk42Z0JSOGFwWjRxdkVGMkRkYmg2RTVLZEV2RzVaVlBWWTFB?oc=5",
-      "articleUrl": "https://www.aljazeera.net/news/2026/7/28/%D8%A3%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%8A%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A",
+      "descriptionArabic": "صادرات النفط العراقي تسجل 526 ألف برميل يوميًا الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOX3BNRjFHYURIaWtjZzVrN1g0b19SRmkyQU5mdGFYSWplaEJlSTV1Q2szNEFaNlNsVXlUelh6RXhjbXU1VGd6R3VrQ2paSG1wU1ZCcXYzTk8zc3pLVGo1eUFkV1lwUndEelNtTnRsNGcyVkVzUTlHWFhmMlNDbkgzSDJvV2ZGOXRmNjA0OG5Rd3pBUk9hVV9oc1NLcWdNZFZEM2tuVzYySUhaa1ZOdG1mNHFUMVZLTDVnaFZTZGtEWjg3a2pxMXJ3UC1lODMtZHJXcDNvTjMyQms2Q1lwZHNKZm9OdUJTMzVCUFVvV1EzVFdmMFllSnRpZXhwY2NHOXNQc3ZGVFFfemlCc1M5R1k3X0FWXzBONllFZHJralFLR1UtbWo1SVJpa0RVQ3lQeW9oYnN3b2lIWGJmdE1ObXVqZXQyT21xSjlIeGtZ?oc=5",
+      "articleUrl": "https://attaqa.net/2026/07/28/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B3%D8%AC%D9%84-526-%D8%A3%D9%84%D9%81-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%8A/",
       "discoveryMethod": "google-news-rss",
       "language": "ar",
       "discoveryStatus": "DISCOVERED",
       "urlStatus": "RESOLVED",
       "contentStatus": "FULL_TEXT",
       "errorCode": null,
-      "discoveredAt": "2026-08-06T06:55:12.991Z",
+      "discoveredAt": "2026-08-06T06:55:13.042Z",
       "urlRecoveryMethod": null,
-      "titleSimilarity": 0.3225,
+      "titleSimilarity": null,
       "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-06T06:57:13.198Z",
-      "canonicalUrl": "https://www.aljazeera.net/news/2026/7/28/%d8%a3%d8%b1%d8%af%d9%88%d8%ba%d8%a7%d9%86-%d9%8a%d8%b3%d8%aa%d9%82%d8%a8%d9%84-%d8%b1%d8%a6%d9%8a%d8%b3-%d8%a7%d9%84%d9%88%d8%b2%d8%b1%d8%a7%d8%a1-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a",
-      "originalTextArabic": "أخبار | تركيا \n\n \"طريق التنمية\" وشراكة نفطية.. مرحلة جديدة من التعاون بين تركيا والعراق\n استمع استمع (1 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n play video play video \n\n مدة الفيديو 11 دقيقة 27 ثانية play-arrow 11:27 \n\n Published On 28/7/2026 28/7/2026 \n | آخر تحديث: 23:06 (توقيت مكة) آخر تحديث: 23:06 (توقيت مكة) \n\n أعلن الرئيس التركي رجب طيب أردوغان ورئيس الوزراء العراقي علي الزيدي ، اليوم الثلاثاء، عن تدشين مرحلة جديدة من التكامل الاقتصادي والتعاون الإستراتيجي الشامل بين البلدين، شملت إبرام شراكة نفطية تاريخية في حقل كركوك وإطلاق الأعمال الميدانية لمشروع \"طريق التنمية\".\n وخلال مؤتمر صحفي مشترك في أنقرة، أعلن أردوغان توقيع اتفاقات تعاون مع العراق، قائلا إن الملف الأمني كان في صلب النقاشات بالنظر إلى الظروف الصعبة التي تعيشها المنطقة.\n وأضاف أن توقيع عدد من الاتفاقيات مع العراق يمثل خطوة تاريخية في مسار الشراكة بين البلدين، لا سيما في مجال الطاقة.\n وأشار أردوغان إلى أن حجم التبادل التجاري مع العراق بلغ 17 مليار دولار، مشيرا إلى أن البلدين يهدفان إلى رفعه.\n ووقّع الجانبان التركي والعراقي في ختام المباحثات عقودا وشراكات شملت قطاعات الطاقة والنقل والتعليم والمياه، إلى جانب مطابقة المواقف السياسية بشأن القضايا الإقليمية في فلسطين وسوريا وإيران، وتأكيد الطرفين على تجنيب المنطقة ويلات الصراعات والتركيز على مسارات التنمية والازدهار.\n وخلال المؤتمر الصحفي المشترك بأنقرة، أكد الزيدي استعداد بلاده لتزويد تركيا بنحو مليون برميل من النفط الخام يوميا، مما يرسخ مقومات الشراكة والتكامل في ملف الطاقة بين أنقرة وبغداد، بينما أعلن الجانبان دخول شركة البترول التركية شريكة في حقل كركوك النفطي.\n\n طريق التنمية \n وأعلن رئيس الوزراء العراقي الشروع المباشر والفعلي في تنفيذ مشروع \"طريق التنمية\" الممتد بطول 1200 كيلومتر لربط ميناء الفاو الكبير بالحدود التركية ومنها إلى الأسواق الأوروبية، ووصف الزيدي هذا المشروع الإستراتيجي بـ\"النهر الثالث\" إلى جانب دجلة والفرات، ليتشكل محور تجاري بين الشرق والغرب، وفق ما نقلته وكالة الأناضول.\n وشدد أردوغان، خلال المؤتمر الصحفي، على اعتماد أنقرة مقاربة عقلانية وعلمية في إدارة ملف المياه تستند إلى الأسس الإنسانية، وتضمن الاستخدام المستدام للموارد المائية مع مراعاة احتياجات العراق، بينما أكد الزيدي أن الاتفاقات الموقعة ترسي أطرا من التعاون الشفاف لمواجهة موجات الجفاف والتغير المناخي.\n إعلان \n\n وأكد الرئيس التركي أن أمن العراق واستقراره يشكلان امتدادا مباشرا للأمن القومي التركي، مبديا استعداد بلاده لتزويد القوات العراقية بمنتجات الصناعات الدفاعية التركية المتطورة. وأشار أردوغان إلى تواصل الحوار العسكري والأمني لمكافحة التهديدات الإرهابية وجعل المنطقة خالية من الإرهاب بالكامل.\n وكان أردوغان استقبل الزيدي بمراسم رسمية في المجمع الرئاسي بأنقرة، وحضر المراسم عدد من الوزراء والمسؤولين الأتراك، يتقدمهم وزير الخارجية هاكان فيدان ، ورئيس جهاز الاستخبارات إبراهيم قالن .\n وقبيل لقاء أردوغان والزيدي، قال المتحدث باسم الحكومة العراقية حيدر العبودي إن النقاشات بين الزعيمين ستدور حول ملفات التعاون الإستراتيجي، مشيرا إلى أن ملف المياه سيحظى باهتمام خاص، بموجب الاتفاق الإطاري العراقي التركي، فضلا عن بحث التعاون في مجالات الطاقة، ومشروع طريق التنمية.\n وتُعَد تركيا، الدولة الثالثة التي يزورها الزيدي منذ توليه منصبه في 27 أبريل/نيسان الماضي، بعد زيارة طهران وواشنطن ، إذ تسعى  بغداد  لتعزيز الشراكات الإستراتيجية مع الجارة الشمالية، في وقت تواجه فيه ملفات معقدة تضم المياه والطاقة والأمن، إلى جانب مساعيها لتفعيل مشاريع اقتصادية إستراتيجية وإعادة تحريك ملف تصدير النفط عبر الأراضي التركية.\n\n المصدر: الجزيرة + الأناضول",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 3336,
-      "arabicRatio": 0.9709,
+      "resolvedAt": "2026-08-06T06:57:14.287Z",
+      "canonicalUrl": "https://attaqa.net/2026/07/28/%d8%b5%d8%a7%d8%af%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%86%d9%81%d8%b7-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a-%d8%aa%d8%b3%d8%ac%d9%84-526-%d8%a3%d9%84%d9%81-%d8%a8%d8%b1%d9%85%d9%8a%d9%84-%d9%8a/",
+      "originalTextArabic": "الرئيسية / سلايدر الرئيسية / صادرات النفط العراقي تسجل 526 ألف برميل يوميًا \n\n سلايدر الرئيسية أخبار النفط نفط \n صادرات النفط العراقي تسجل 526 ألف برميل يوميًا\n\n خلال شهري مايو ويونيو 2026\n\n أحمد بدر \n 2026-07-28 0 795 \n\n حقل مجنون النفطي - الصورة من وزارة النفط العراقية\n\n أظهرت بيانات حديثة، حصلت عليها منصة الطاقة المتخصصة (مقرّها واشنطن)، أن متوسط صادرات النفط العراقي خلال شهري مايو/أيار ويونيو/حزيران 2026 سجلت نحو 526.470 ألف برميل يوميًا، مقارنة مع نحو 329.5 ألف برميل يوميًا فقط خلال أبريل/نيسان، في ظل استمرار اضطرابات الشحن والطاقة بمنطقة الخليج.\n\n وتحسنت إيرادات صادرات العراق من النفط الخام خلال الشهرين الأخيرين، بالتزامن مع تحسُّن نسبي شهدته حركة الملاحة في مضيق هرمز، وتشغيل مسارات تصديرية أخرى مؤخرًا.\n\n وشهدت أسعار النفط حالة من الارتباك، إذ بقيت مرتفعة عند مستويات الـ100 دولار للبرميل خلال مايو/أيار، قبل من تتراجع إلى ما دون ذلك خلال يونيو/حزيران، وهو ما دعم إيرادات صادرات النفط العراقي في مايو ويونيو 2026، في وقت تزايدت فيه المخاوف بشأن نقص الإمدادات، وتوقعات ارتفاع الطلب الآسيوي، خاصةً من الصين والهند.\n\n يشار إلى أن صادرات العراق النفطية كانت قد واجهت ضغوطًا متزايدة، منذ مطلع شهر مارس/آذار الماضي، بعد تعطُّل التحميل من المواني الجنوبية بسبب الحرب على إيران، التي أثّرت مباشرة في أمن الملاحة داخل مضيق هرمز، وعطّلت كميات ضخمة من الإمدادات.\n\n صادرات النفط العراقي في مايو ويونيو 2026 \n\n تُظهر بيانات شركة تسويق النفط الحكومية \"سومو\" أن إجمالي صادرات النفط العراقي في شهري مايو ويونيو 2026 بلغ نحو 32 مليون و114 ألفًا و677 برميلًا، بمتوسط يزيد عن 16 مليون برميل للشهر الواحد، مقارنة مع 9 ملايين و884 ألفًا و130 برميلًا في أبريل/نيسان، ونحو 18 مليونًا و604 آلاف و951 برميلًا خلال مارس/آذار.\n\n وفيما يتعلق بالتوزيع الجغرافي للشحنات، بلغت صادرات نفط البصرة خلال مايو/أيار ويونيو/حزيران 20 مليون و238 ألفا و636 برميلًا بمتوسط 10.119 مليون برميل في الشهر الواحد، مقارنة مع نحو 4 ملايين و587 ألفًا و610 براميل في أبريل/نيسان، و14 مليونًا و561 ألفًا و534 برميلًا في مارس/آذار، بحسب الأرقام التي تابعتها منصة الطاقة المتخصصة.\n\n في الوقت نفسه، سجلت صادرات النفط العراقي في مايو ويونيو 2026 من إقليم كردستان عبر ميناء جيهان التركي نحو مليون و564 ألفًا و625 برميلًا، بمتوسط 782.312 ألف برميل للشهر الواحد، مقارنة مع نحو 339 ألفًا و64 برميلًا في أبريل/نيسان ومليون و271 ألفًا و200 برميل خلال مارس/آذار الماضي.\n\n كما بلغت الكميات المصدرة من نفط كركوك عبر ميناء جيهان التركي نحو 10 ملايين و311 ألفًا و216 برميلًا، بمتوسط 5.155 مليون برميل للشهر الواحد، مقارنة مع 4 ملايين و957 ألفًا و456 برميلًا خلال أبريل/نيسان، ومليونين و772 ألفًا و217 برميلًا خلال مارس/آذار، وسط استمرار التحديات اللوجستية المرتبطة بحركة النقل الإقليمي.\n\n وما زالت إمدادات النفط العراقي إلى الأردن معطّلة، ولكن من المرتقب التوصل إلى اتفاق قريب بشأن تجديد الاتفاق المنتهي في ديسمبر/كانون الأول الماضي 2025، بعدما تمكّن العراق من اختيار حكومة جديدة، والاستعانة بوزير نفط جديد، بدلًا من حكومة تسيير الأعمال السابقة.\n\n الرسم البياني الآتي -من إعداد منصة الط اقة المتخصصة- يستعرض متوسط صادرات النفط العراقي يوميًا من 2023  حتى يونيو/حزيران 2026: \n\n وبالنسبة إلى العائدات، بلغت إيرادات صادرات النفط العراقي في مايو ويونيو 2026 نحو 2.336 مليار دولار، بمتوسط 1.167 مليار دولار للشهر الواحد، مقارنة مع 1.878 مليار دولار في أبريل/نيسان، و1.957 مليار دولار خلال مارس/آذار، ونحو 6 مليارات و814 مليون دولار خلال فبراير/شباط الماضي.\n\n ويرى مراقبون أن استمرار أسعار النفط بالقرب من مستوى مستويات 100 دولار للبرميل قد يمنح بغداد هامشًا ماليًا أفضل لتعويض جزء من خسائر التراجع الحادّ في الصادرات، رغم استمرار الضغوط المرتبطة بالتوترات الأمنية في المنطقة.\n\n وكشف مصادر مطلعة في تصريحات إلى منصة الطاقة المتخصصة، أن حجم صادرات النفط العراقي في مايو/أيار 2026 بلغ نحو 14 مليون برميل، بمتوسط 451.613 ألف برميل يوميًا، قبل أن ترتفع إلى 18.114 مليون برميل، بمتوسط 603.822 ألف برميل يوميًا.\n\n الحرب على إيران \n\n كانت صادرات النفط العراقي في مايو  ويونيو 2026 تحت ضغط قوي بسبب الحرب على إيران، التي تؤثّر بوضوح في حركة الإمدادات والملاحة العالمية، على الرغم من الانسياب النسبي في مضيق هرمز وتحرُّك عدد من ناقلات النفط والغاز فيه.\n\n وتواجه بغداد ضغوطًا غير مسبوقة، أثّرت في حركة إمدادات الطاقة، جنبًا إلى جنب مع الآثار السلبية التي تركتها الحرب في الحرب، إلّا أن الجهود المبذولة للتعافي تُعدّ واضحة أيضًا، بحسب ما تتابعه منصة الطاقة المتخصصة.\n\n وتمرّ أغلب صادرات النفط العراقي من الخليج العربي، لذلك فإن أيّ اضطرابات أمنية أو استهداف للسفن في مضيق هرمز تنعكس مباشرةً على قدرات التصدير والإيرادات النفطية للبلاد، وهو ما جعل الإيرادات تنخفض بنحو 5 مليارات دولار خلال أشهر قليلة.\n\n يشار إلى أن العراق سبق أن خفّض إنتاجه من النفط الخام إلى نحو 1.2 مليون برميل يوميًا بعد اندلاع الحرب، مقارنة مع نحو 4.3 مليون برميل يوميًا سابقًا، وذلك نتيجة امتلاء مرافق التخزين وتعطُّل مسارات الشحن التقليدية لأوقات طويلة.\n\n في الوقت نفسه، تراقب بغداد تطورات السوق العالمية، بالتزامن مع استمرار تحالف أوبك+ في تطبيق سياسات ضبط الإنتاج، بعد إقرار مجموعة الدول الـ7 في تحالف أوبك+ إعادة نحو 188 ألف برميل يوميًا إلى الإنتاج في يوليو/تموز المقبل.\n\n وأقرّت المجموعة -في نهاية 2025- استمرار سياسة الحذر الإنتاجي خلال الأشهر الأولى من 2026، لتجنُّب حدوث فائض كبير في السوق العالمية، خاصةً مع استمرار التوترات الجيوسياسية وتذبذب مستويات الطلب العالمي على الخام، قبل العودة لزيادة الإنتاج تدريجيًا.\n\n موضوعات متعلقة.. \n\n إيرادات صادرات النفط العراقي تنخفض 5 مليارات دولار مقارنة بما قبل الحرب \n\n صادرات النفط العراقي في مارس 2026 تنخفض 2.9 مليون برميل يوميًا \n\n صادرات النفط العراقي في فبراير 2026 ترتفع 96 ألف برميل يوميًا \n\n اقرأ أيضًا.. \n\n ملف خاص عن أسواق الغاز المسال العربية والعالمية \n\n تقارير دورية وتغطيات لوحدة أبحاث الطاقة \n\n تغطية خاصة للحرب على إيران وتأثيراتها في أسواق الطاقة \n\n المصدر: \n\n بيانات شركة سومو من وزارة النفط \n\n تابعوا اخر اخبار الطاقة عبر Google News\n\n إشترك في النشرة البريدية ليصلك أهم أخبار الطاقة. \n\n-->\n\n إشترك في النشرة البريدية ليصلك أهم أخبار الطاقة. \n\n -->\n الوسوم\n أوبك الحرب على إيران العراق النفط العراقي النفط العراقي إلى الأردن صادرات النفط العراقي صادرات النفط العراقي في مايو 2026 مضيق هرمز \n\n Facebook X LinkedIn WhatsApp مشاركة عبر البريد طباعة",
+      "sourceHost": "attaqa.net",
+      "contentChars": 5820,
+      "arabicRatio": 0.9654,
       "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-06T06:58:26.056Z",
+      "fetchedAt": "2026-08-06T06:58:26.198Z",
       "translation": {
         "status": "PENDING",
         "titleKo": "",
@@ -40034,7 +40502,8 @@
         "category": "economy",
         "recommendation": "USER_REVIEW_REQUIRED",
         "relevanceScore": null,
-        "recommendationReason": ""
+        "recommendationReason": "",
+        "resetReason": "SOURCE_CONTENT_CHANGED"
       },
       "selection": {
         "selected": false,
@@ -40046,44 +40515,46 @@
         "status": "COMPLETED",
         "pipelineVersion": "FACTS_FIRST_V1",
         "method": "ARABIC_SOURCE_FACT_EXTRACTION",
-        "sourceContentHash": "d36cfbc21e8b5e45a04a7cbc702d373f8d717998a0f8c5e34c86c9e436cbe2d9",
+        "sourceContentHash": "41d2bfe3f93be90b7b35aca238c66d6cf7a61b0e342d3d00fb1c702328de738a",
         "model": "gpt-4.1-mini",
-        "extractedAt": "2026-08-04T07:15:34.839Z",
-        "mainSubjectAr": "رئيس الوزراء العراقي علي الزيدي والرئيس التركي رجب طيب أردوغان",
-        "actionAr": "يعلنان عن مرحلة جديدة من التعاون بين تركيا والعراق",
-        "locationAr": "أنقرة، تركيا",
-        "eventDateAr": "28 يوليو 2026",
-        "resultAr": "إعلان قيام شراكة نفطية تاريخية في حقل كركوك وإطلاق أعمال مشروع \"طريق التنمية\" الاقتصادي الاستراتيجي الذي يربط ميناء الفاو الكبير بالحدود التركية وصولاً إلى أوروبا، وتوقيع اتفاقيات تعاون في مجالات الطاقة والنقل والتعليم والمياه",
+        "extractedAt": "2026-08-06T07:06:00.770Z",
+        "mainSubjectAr": "صادرات النفط العراقي",
+        "actionAr": "تسجيل كمية صادرات",
+        "locationAr": "العراق",
+        "eventDateAr": "مايو ويونيو 2026",
+        "resultAr": "سجلت صادرات النفط العراقي نحو 526.470 ألف برميل يوميًا خلال مايو ويونيو 2026 بزيادة مقارنة بنحو 329.5 ألف برميل يوميًا في أبريل 2026.",
         "keyFactsAr": [
-          "تم الإعلان عن شراكة نفطية تشمل دخول شركة البترول التركية كشريك في حقل كركوك النفطي",
-          "الاتفاق على تزويد تركيا بمليون برميل يومياً من النفط الخام من العراق",
-          "بدء تنفيذ مشروع «طريق التنمية» بطول 1200 كيلو متر لربط ميناء الفاو بالحدود التركية والأسواق الأوروبية",
-          "حجم التبادل التجاري بين تركيا والعراق 17 مليار دولار ويهدف الطرفان لزيادته",
-          "توقيع اتفاقيات تشمل الطاقة والنقل والتعليم والمياه",
-          "التركيز على التعاون السياسي والتوافق بشأن قضايا فلسطين وسوريا وإيران",
-          "أردوغان أكد أن أمن واستقرار العراق مرتبط بالأمن القومي التركي"
+          "متوسط صادرات النفط العراقي في مايو ويونيو 2026 بلغ نحو 526.470 ألف برميل يوميًا.",
+          "إجمالي صادرات النفط في مايو ويونيو 2026 بلغ حوالي 32 مليون و114 ألف برميل.",
+          "صادرات نفط البصرة خلال مايو ويونيو 2026 بلغت 20 مليون و238 ألف برميل.",
+          "صادرات نفط إقليم كردستان عبر ميناء جيهان التركي في مايو ويونيو 2026 بلغت نحو مليون و564 ألف برميل.",
+          "صادرات نفط كركوك عبر ميناء جيهان التركي بلغت 10 ملايين و311 ألف برميل في مايو ويونيو 2026.",
+          "إيرادات صادرات النفط العراقي في مايو ويونيو 2026 بلغت 2.336 مليار دولار.",
+          "تأثرت الصادرات والمهام اللوجستية بسبب الحرب على إيران وأمن الملاحة في مضيق هرمز."
         ],
         "numbersAr": [
-          "1200 كيلومتر: طول مشروع طريق التنمية",
-          "17 مليار دولار: حجم التبادل التجاري بين تركيا والعراق",
-          "مليون برميل نفط يومياً: المقدار الذي ستزوده العراق لتركيا",
-          "300 ميغاواط: طاقة محطة الطاقية الشمسية في العراق (مذكورة في خبر متصل)"
+          "526.470 ألف برميل يوميًا",
+          "329.5 ألف برميل يوميًا",
+          "32,114,677 برميل",
+          "20,238,636 برميل",
+          "1,564,625 برميل",
+          "10,311,216 برميل",
+          "2.336 مليار دولار",
+          "1.2 مليون برميل يوميًا",
+          "4.3 مليون برميل يوميًا",
+          "188 ألف برميل يوميًا"
         ],
-        "peopleAr": [
-          "علي الزيدي",
-          "رجب طيب أردوغان",
-          "هاكان فيدان",
-          "إبراهيم قالن"
-        ],
+        "peopleAr": [],
         "organizationsAr": [
-          "شركة البترول التركية"
+          "شركة تسويق النفط الحكومية سومو",
+          "وزارة النفط العراقية",
+          "تحالف أوبك+"
         ],
-        "directQuotesAr": [
-          "أردوغان: توقيع الاتفاقيات مع العراق خطوة تاريخية في مسار الشراكة",
-          "الزيدي: مشروع \"طريق التنمية\" يشكل محوراً تجارياً بين الشرق والغرب",
-          "أردوغان: أمن العراق واستقراره امتداد مباشر للأمن القومي التركي"
+        "directQuotesAr": [],
+        "uncertaintiesAr": [
+          "تأثير الحرب على إيران مستمر على صادرات النفط العراقية",
+          "مدى استقرار أسعار النفط وتأثيرها على الإيرادات"
         ],
-        "uncertaintiesAr": [],
         "multipleAgendaItems": true
       },
       "card": {
@@ -40091,41 +40562,64 @@
         "pipelineVersion": "FACTS_FIRST_V1",
         "method": "STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD",
         "factBasis": "STRUCTURED_ARABIC_FACTS_ONLY",
-        "sourceContentHash": "d36cfbc21e8b5e45a04a7cbc702d373f8d717998a0f8c5e34c86c9e436cbe2d9",
-        "factsHash": "d3c7c7370bf9a790e48220c02c1e07edb06fe60b0455053f76462418de59dc9b",
+        "sourceContentHash": "41d2bfe3f93be90b7b35aca238c66d6cf7a61b0e342d3d00fb1c702328de738a",
+        "factsHash": "6f73f685b0d24da34b98321eb9ded068cb939030205eccf763c2cfcf99221bd3",
         "glossaryVersion": "2026-08-04.1",
         "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "a18880a8af4deaa20d31",
+        "preferredTermsSignature": "69c6bffe230aab0f8d33",
         "preferredTermsApplied": [
-          "키르쿠크"
+          "국영석유마케팅회사",
+          "호르무즈 해협",
+          "바스라",
+          "키르쿠크",
+          "석유수출국기구"
         ],
         "model": "gpt-4.1-mini",
-        "generatedAt": "2026-08-04T07:15:49.080Z",
-        "titleKo": "이라크·터키, 키르쿠크 유전 공동 개발 및 '개발의 길' 경제 프로젝트 착수 선언",
-        "summaryKo": "2026년 7월 28일 앙카라에서 이라크 총리 알리 자이디와 터키 대통령 레제프 타이이프 에르도안이 키르쿠크 유전을 터키 국영 석유사와 공동 개발하기로 합의하고, 페이 대형 항구부터 터키 국경과 유럽을 잇는 1200km 규모의 '개발의 길' 경제 프로젝트를 시작했다. 양국은 에너지·교통·교육·수자원 분야 협력 확대도 약속했다.",
+        "generatedAt": "2026-08-06T07:06:08.628Z",
+        "titleKo": "이라크 유가 수출 급증, 5월~6월 일평균 52.6만 배럴 기록",
+        "summaryKo": "이라크의 2026년 5월과 6월 평균 석유 수출량이 일일 52만 6470배럴로 4월 32만 9500배럴 대비 급증했다. 바스라, 키르쿠크, 쿠르디스탄 지역 등 주요 항로를 통한 총수출량은 약 3천 2백만 배럴이며, 총 수출 수익은 23억 3600만 달러에 달했다. 다만, 이란 전쟁과 호르무즈 해협 주변 운송에 따른 물류 문제는 여전히 제약 요소다.",
         "fullTranslationGenerated": false
       },
+      "contentHash": "1ed9ac33638d3d14dcbe4f1185f788a090080de4539541364c9e81a65b2973ed",
+      "previousContentHash": "2146bd0ffb40a22656dc689136e4ba97bc859e441a8e243b2d2a6956a489033b",
+      "contentCheckedAt": "2026-08-06T06:58:26.198Z",
+      "contentChanged": true,
+      "processingReused": false,
+      "categoryRouting": {
+        "from": "economy",
+        "to": "economy",
+        "reason": "이라크 경제·건설·투자 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-Vj9-a8DbT9VWG482g_",
+        "representativeArticleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
       "importance": {
-        "score": 36,
+        "score": 30,
         "level": "LOW",
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "CATEGORY_RELATIVE_AI_BLEND_V5",
         "scoredAt": "2026-08-06T07:03:14.616Z",
         "breakdown": {
-          "constructionInvestment": 8,
-          "nationalImportance": 13,
+          "constructionInvestment": 0,
+          "nationalImportance": 21,
           "businessImpact": 0,
-          "executionScale": 7,
-          "sourceReliability": 8
+          "executionScale": 3,
+          "sourceReliability": 6
         },
         "reportPriority": "REFERENCE",
         "categoryRelevance": "LOW",
         "businessRelevance": "LOW",
         "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
         "scoringVersion": 5,
-        "scoreFingerprint": "91b223d11bdd3a075f9b",
-        "ruleScore": 36,
+        "scoreFingerprint": "7c1ca8544e6838a7dc91",
+        "ruleScore": 30,
         "category": "economy",
         "categoryFloor": 0,
         "categoryFloorRule": "NONE",
@@ -40143,24 +40637,6 @@
         "aiReportPriority": null,
         "aiReasonKo": "",
         "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-W97tsLhwV9UgksZ510",
-        "representativeArticleId": "discovery-GY5Yu2eqFB_RNb5hlXRaVRu5",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "bce369785d9f7ee444bf892b9990556dbddeda33a773baa9d35b267aeaa81ac7",
-      "contentCheckedAt": "2026-08-06T06:58:26.056Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
       }
     },
     {
@@ -40343,46 +40819,50 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
-      "keywordId": "international-hormuz-001",
+      "articleId": "discovery-GY5Yu2eqFB_RNb5hlXRaVRu5",
+      "keywordId": "international-turkey-001",
       "category": "economy",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
+      "priority": 96,
+      "queryArabic": "تركيا العراق طريق التنمية المياه الأمن",
       "requiredTerms": [
         "العراق"
       ],
       "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
+        "تركيا",
+        "طريق التنمية",
+        "المياه",
+        "الأمن",
+        "النفط عبر جيهان"
       ],
-      "excludedTerms": [],
-      "originalTitleArabic": "صادرات النفط العراقي تسجل 526 ألف برميل يوميًا - الطاقة",
-      "sourceArabic": "الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
-      "sourceHomepage": "https://attaqa.net",
+      "excludedTerms": [
+        "السياحة",
+        "كرة القدم"
+      ],
+      "originalTitleArabic": "\"طريق التنمية\" وشراكة نفطية.. مرحلة جديدة من التعاون بين تركيا والعراق",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHomepage": "https://www.aljazeera.net",
       "publishedAt": "2026-07-28T07:00:00.000Z",
-      "descriptionArabic": "صادرات النفط العراقي تسجل 526 ألف برميل يوميًا الطاقة - أول منصة عربية متخصصة في أخبار الطاقة",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiywJBVV95cUxOX3BNRjFHYURIaWtjZzVrN1g0b19SRmkyQU5mdGFYSWplaEJlSTV1Q2szNEFaNlNsVXlUelh6RXhjbXU1VGd6R3VrQ2paSG1wU1ZCcXYzTk8zc3pLVGo1eUFkV1lwUndEelNtTnRsNGcyVkVzUTlHWFhmMlNDbkgzSDJvV2ZGOXRmNjA0OG5Rd3pBUk9hVV9oc1NLcWdNZFZEM2tuVzYySUhaa1ZOdG1mNHFUMVZLTDVnaFZTZGtEWjg3a2pxMXJ3UC1lODMtZHJXcDNvTjMyQms2Q1lwZHNKZm9OdUJTMzVCUFVvV1EzVFdmMFllSnRpZXhwY2NHOXNQc3ZGVFFfemlCc1M5R1k3X0FWXzBONllFZHJralFLR1UtbWo1SVJpa0RVQ3lQeW9oYnN3b2lIWGJmdE1ObXVqZXQyT21xSjlIeGtZ?oc=5",
-      "articleUrl": "https://attaqa.net/2026/07/28/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B3%D8%AC%D9%84-526-%D8%A3%D9%84%D9%81-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%8A/",
+      "descriptionArabic": "\"طريق التنمية\" وشراكة نفطية.. مرحلة جديدة من التعاون بين تركيا والعراق الجزيرة نت",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxNNXptYVNQUGNZWkhlVTJMOFZ1VENGWHpoZlB6QmFwTkJwUjZRSDFxeXIyeU41NGZaZWFzTi1QdHpkSDh6OERrX0VFdVNwTGFPaThLcWJ4eWp3c01lVTIwY0hLUjdPNFl0ZVZ2UG9YQjZZTlh2UlJWaldGdHRXTzdGRThXWE40OGpySGlOck1TRkYzYXlnV0Z5aWhfM253RWV6WFgwNTFSdERtZ2RHM3V6Q2JURjBCQVhWOFNhdVEzUHNtMlRlVklQWWEzTGhNUU8zV0h6Wm45R1NOWHFTWjNSS296bmxIczZLemhZZ1drT3JORGZMai1SN0tnLVhNRFRWYmNTTVNfWmRYM3dhYldiUkNPUmkxVnFYZW5mWFZFSGE1M3MzU0VnS2dydU15SU5pVTRyUnZQWE9iMldyRXJ5dHNveXA0ZkZOQy1CODFwNlHSAdYCQVVfeXFMT1lQVzRSeVE4NkFfM0pzSjdKc1lmS1doSG1OSWVfQWw3dFRRRTNncUo3Z2J2aDR6SkhkZm14TnlCYVE0SmJGZ2xDV2wzSzZfNm9NYVVIaXliTkpTT1VERWNyangzNy1pSGdtV2gteEVvRE9zMWY4REZuM2tHQVN6NXFMdV9OWmZGVHE2emV3cnYwTC1mdElqUFdadGtqSWtodVljNU81SXVhVEVkTmVOU1dWM0ZtTDZWYWstTWVXaXJyYTlRZF9fR3RNNUJEdzdtbGdrakJuWTdBOXd3M2VLU0tmSVBYTV9ad0U2Um5Ocld3VXJobEdFd1RMVHdrT2xHYmdhQWFheUtoMEdZVnpnUDdtVURoZVNqSEhVMlFyMUF5Y3pXamFQc2xkSjUyeVV2X3ZWMk42Z0JSOGFwWjRxdkVGMkRkYmg2RTVLZEV2RzVaVlBWWTFB?oc=5",
+      "articleUrl": "https://www.aljazeera.net/news/2026/7/28/%D8%A3%D8%B1%D8%AF%D9%88%D8%BA%D8%A7%D9%86-%D9%8A%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%B1%D8%A6%D9%8A%D8%B3-%D8%A7%D9%84%D9%88%D8%B2%D8%B1%D8%A7%D8%A1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A",
       "discoveryMethod": "google-news-rss",
       "language": "ar",
       "discoveryStatus": "DISCOVERED",
       "urlStatus": "RESOLVED",
       "contentStatus": "FULL_TEXT",
       "errorCode": null,
-      "discoveredAt": "2026-08-06T06:55:13.042Z",
+      "discoveredAt": "2026-08-06T06:55:12.991Z",
       "urlRecoveryMethod": null,
-      "titleSimilarity": null,
+      "titleSimilarity": 0.3225,
       "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-06T06:57:14.287Z",
-      "canonicalUrl": "https://attaqa.net/2026/07/28/%d8%b5%d8%a7%d8%af%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%86%d9%81%d8%b7-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a-%d8%aa%d8%b3%d8%ac%d9%84-526-%d8%a3%d9%84%d9%81-%d8%a8%d8%b1%d9%85%d9%8a%d9%84-%d9%8a/",
-      "originalTextArabic": "الرئيسية / سلايدر الرئيسية / صادرات النفط العراقي تسجل 526 ألف برميل يوميًا \n\n سلايدر الرئيسية أخبار النفط نفط \n صادرات النفط العراقي تسجل 526 ألف برميل يوميًا\n\n خلال شهري مايو ويونيو 2026\n\n أحمد بدر \n 2026-07-28 0 795 \n\n حقل مجنون النفطي - الصورة من وزارة النفط العراقية\n\n أظهرت بيانات حديثة، حصلت عليها منصة الطاقة المتخصصة (مقرّها واشنطن)، أن متوسط صادرات النفط العراقي خلال شهري مايو/أيار ويونيو/حزيران 2026 سجلت نحو 526.470 ألف برميل يوميًا، مقارنة مع نحو 329.5 ألف برميل يوميًا فقط خلال أبريل/نيسان، في ظل استمرار اضطرابات الشحن والطاقة بمنطقة الخليج.\n\n وتحسنت إيرادات صادرات العراق من النفط الخام خلال الشهرين الأخيرين، بالتزامن مع تحسُّن نسبي شهدته حركة الملاحة في مضيق هرمز، وتشغيل مسارات تصديرية أخرى مؤخرًا.\n\n وشهدت أسعار النفط حالة من الارتباك، إذ بقيت مرتفعة عند مستويات الـ100 دولار للبرميل خلال مايو/أيار، قبل من تتراجع إلى ما دون ذلك خلال يونيو/حزيران، وهو ما دعم إيرادات صادرات النفط العراقي في مايو ويونيو 2026، في وقت تزايدت فيه المخاوف بشأن نقص الإمدادات، وتوقعات ارتفاع الطلب الآسيوي، خاصةً من الصين والهند.\n\n يشار إلى أن صادرات العراق النفطية كانت قد واجهت ضغوطًا متزايدة، منذ مطلع شهر مارس/آذار الماضي، بعد تعطُّل التحميل من المواني الجنوبية بسبب الحرب على إيران، التي أثّرت مباشرة في أمن الملاحة داخل مضيق هرمز، وعطّلت كميات ضخمة من الإمدادات.\n\n صادرات النفط العراقي في مايو ويونيو 2026 \n\n تُظهر بيانات شركة تسويق النفط الحكومية \"سومو\" أن إجمالي صادرات النفط العراقي في شهري مايو ويونيو 2026 بلغ نحو 32 مليون و114 ألفًا و677 برميلًا، بمتوسط يزيد عن 16 مليون برميل للشهر الواحد، مقارنة مع 9 ملايين و884 ألفًا و130 برميلًا في أبريل/نيسان، ونحو 18 مليونًا و604 آلاف و951 برميلًا خلال مارس/آذار.\n\n وفيما يتعلق بالتوزيع الجغرافي للشحنات، بلغت صادرات نفط البصرة خلال مايو/أيار ويونيو/حزيران 20 مليون و238 ألفا و636 برميلًا بمتوسط 10.119 مليون برميل في الشهر الواحد، مقارنة مع نحو 4 ملايين و587 ألفًا و610 براميل في أبريل/نيسان، و14 مليونًا و561 ألفًا و534 برميلًا في مارس/آذار، بحسب الأرقام التي تابعتها منصة الطاقة المتخصصة.\n\n في الوقت نفسه، سجلت صادرات النفط العراقي في مايو ويونيو 2026 من إقليم كردستان عبر ميناء جيهان التركي نحو مليون و564 ألفًا و625 برميلًا، بمتوسط 782.312 ألف برميل للشهر الواحد، مقارنة مع نحو 339 ألفًا و64 برميلًا في أبريل/نيسان ومليون و271 ألفًا و200 برميل خلال مارس/آذار الماضي.\n\n كما بلغت الكميات المصدرة من نفط كركوك عبر ميناء جيهان التركي نحو 10 ملايين و311 ألفًا و216 برميلًا، بمتوسط 5.155 مليون برميل للشهر الواحد، مقارنة مع 4 ملايين و957 ألفًا و456 برميلًا خلال أبريل/نيسان، ومليونين و772 ألفًا و217 برميلًا خلال مارس/آذار، وسط استمرار التحديات اللوجستية المرتبطة بحركة النقل الإقليمي.\n\n وما زالت إمدادات النفط العراقي إلى الأردن معطّلة، ولكن من المرتقب التوصل إلى اتفاق قريب بشأن تجديد الاتفاق المنتهي في ديسمبر/كانون الأول الماضي 2025، بعدما تمكّن العراق من اختيار حكومة جديدة، والاستعانة بوزير نفط جديد، بدلًا من حكومة تسيير الأعمال السابقة.\n\n الرسم البياني الآتي -من إعداد منصة الط اقة المتخصصة- يستعرض متوسط صادرات النفط العراقي يوميًا من 2023  حتى يونيو/حزيران 2026: \n\n وبالنسبة إلى العائدات، بلغت إيرادات صادرات النفط العراقي في مايو ويونيو 2026 نحو 2.336 مليار دولار، بمتوسط 1.167 مليار دولار للشهر الواحد، مقارنة مع 1.878 مليار دولار في أبريل/نيسان، و1.957 مليار دولار خلال مارس/آذار، ونحو 6 مليارات و814 مليون دولار خلال فبراير/شباط الماضي.\n\n ويرى مراقبون أن استمرار أسعار النفط بالقرب من مستوى مستويات 100 دولار للبرميل قد يمنح بغداد هامشًا ماليًا أفضل لتعويض جزء من خسائر التراجع الحادّ في الصادرات، رغم استمرار الضغوط المرتبطة بالتوترات الأمنية في المنطقة.\n\n وكشف مصادر مطلعة في تصريحات إلى منصة الطاقة المتخصصة، أن حجم صادرات النفط العراقي في مايو/أيار 2026 بلغ نحو 14 مليون برميل، بمتوسط 451.613 ألف برميل يوميًا، قبل أن ترتفع إلى 18.114 مليون برميل، بمتوسط 603.822 ألف برميل يوميًا.\n\n الحرب على إيران \n\n كانت صادرات النفط العراقي في مايو  ويونيو 2026 تحت ضغط قوي بسبب الحرب على إيران، التي تؤثّر بوضوح في حركة الإمدادات والملاحة العالمية، على الرغم من الانسياب النسبي في مضيق هرمز وتحرُّك عدد من ناقلات النفط والغاز فيه.\n\n وتواجه بغداد ضغوطًا غير مسبوقة، أثّرت في حركة إمدادات الطاقة، جنبًا إلى جنب مع الآثار السلبية التي تركتها الحرب في الحرب، إلّا أن الجهود المبذولة للتعافي تُعدّ واضحة أيضًا، بحسب ما تتابعه منصة الطاقة المتخصصة.\n\n وتمرّ أغلب صادرات النفط العراقي من الخليج العربي، لذلك فإن أيّ اضطرابات أمنية أو استهداف للسفن في مضيق هرمز تنعكس مباشرةً على قدرات التصدير والإيرادات النفطية للبلاد، وهو ما جعل الإيرادات تنخفض بنحو 5 مليارات دولار خلال أشهر قليلة.\n\n يشار إلى أن العراق سبق أن خفّض إنتاجه من النفط الخام إلى نحو 1.2 مليون برميل يوميًا بعد اندلاع الحرب، مقارنة مع نحو 4.3 مليون برميل يوميًا سابقًا، وذلك نتيجة امتلاء مرافق التخزين وتعطُّل مسارات الشحن التقليدية لأوقات طويلة.\n\n في الوقت نفسه، تراقب بغداد تطورات السوق العالمية، بالتزامن مع استمرار تحالف أوبك+ في تطبيق سياسات ضبط الإنتاج، بعد إقرار مجموعة الدول الـ7 في تحالف أوبك+ إعادة نحو 188 ألف برميل يوميًا إلى الإنتاج في يوليو/تموز المقبل.\n\n وأقرّت المجموعة -في نهاية 2025- استمرار سياسة الحذر الإنتاجي خلال الأشهر الأولى من 2026، لتجنُّب حدوث فائض كبير في السوق العالمية، خاصةً مع استمرار التوترات الجيوسياسية وتذبذب مستويات الطلب العالمي على الخام، قبل العودة لزيادة الإنتاج تدريجيًا.\n\n موضوعات متعلقة.. \n\n إيرادات صادرات النفط العراقي تنخفض 5 مليارات دولار مقارنة بما قبل الحرب \n\n صادرات النفط العراقي في مارس 2026 تنخفض 2.9 مليون برميل يوميًا \n\n صادرات النفط العراقي في فبراير 2026 ترتفع 96 ألف برميل يوميًا \n\n اقرأ أيضًا.. \n\n ملف خاص عن أسواق الغاز المسال العربية والعالمية \n\n تقارير دورية وتغطيات لوحدة أبحاث الطاقة \n\n تغطية خاصة للحرب على إيران وتأثيراتها في أسواق الطاقة \n\n المصدر: \n\n بيانات شركة سومو من وزارة النفط \n\n تابعوا اخر اخبار الطاقة عبر Google News\n\n إشترك في النشرة البريدية ليصلك أهم أخبار الطاقة. \n\n-->\n\n إشترك في النشرة البريدية ليصلك أهم أخبار الطاقة. \n\n -->\n الوسوم\n أوبك الحرب على إيران العراق النفط العراقي النفط العراقي إلى الأردن صادرات النفط العراقي صادرات النفط العراقي في مايو 2026 مضيق هرمز \n\n Facebook X LinkedIn WhatsApp مشاركة عبر البريد طباعة",
-      "sourceHost": "attaqa.net",
-      "contentChars": 5820,
-      "arabicRatio": 0.9654,
+      "resolvedAt": "2026-08-06T06:57:13.198Z",
+      "canonicalUrl": "https://www.aljazeera.net/news/2026/7/28/%d8%a3%d8%b1%d8%af%d9%88%d8%ba%d8%a7%d9%86-%d9%8a%d8%b3%d8%aa%d9%82%d8%a8%d9%84-%d8%b1%d8%a6%d9%8a%d8%b3-%d8%a7%d9%84%d9%88%d8%b2%d8%b1%d8%a7%d8%a1-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a",
+      "originalTextArabic": "أخبار | تركيا \n\n \"طريق التنمية\" وشراكة نفطية.. مرحلة جديدة من التعاون بين تركيا والعراق\n استمع استمع (1 دقيقة) \n حفظ\n\n انقر هنا للمشاركة على وسائل التواصل الاجتماعي\n share-nodes شارِكْ\n facebook x whatsapp-stroke copylink \n\n play video play video \n\n مدة الفيديو 11 دقيقة 27 ثانية play-arrow 11:27 \n\n Published On 28/7/2026 28/7/2026 \n | آخر تحديث: 23:06 (توقيت مكة) آخر تحديث: 23:06 (توقيت مكة) \n\n أعلن الرئيس التركي رجب طيب أردوغان ورئيس الوزراء العراقي علي الزيدي ، اليوم الثلاثاء، عن تدشين مرحلة جديدة من التكامل الاقتصادي والتعاون الإستراتيجي الشامل بين البلدين، شملت إبرام شراكة نفطية تاريخية في حقل كركوك وإطلاق الأعمال الميدانية لمشروع \"طريق التنمية\".\n وخلال مؤتمر صحفي مشترك في أنقرة، أعلن أردوغان توقيع اتفاقات تعاون مع العراق، قائلا إن الملف الأمني كان في صلب النقاشات بالنظر إلى الظروف الصعبة التي تعيشها المنطقة.\n وأضاف أن توقيع عدد من الاتفاقيات مع العراق يمثل خطوة تاريخية في مسار الشراكة بين البلدين، لا سيما في مجال الطاقة.\n وأشار أردوغان إلى أن حجم التبادل التجاري مع العراق بلغ 17 مليار دولار، مشيرا إلى أن البلدين يهدفان إلى رفعه.\n ووقّع الجانبان التركي والعراقي في ختام المباحثات عقودا وشراكات شملت قطاعات الطاقة والنقل والتعليم والمياه، إلى جانب مطابقة المواقف السياسية بشأن القضايا الإقليمية في فلسطين وسوريا وإيران، وتأكيد الطرفين على تجنيب المنطقة ويلات الصراعات والتركيز على مسارات التنمية والازدهار.\n وخلال المؤتمر الصحفي المشترك بأنقرة، أكد الزيدي استعداد بلاده لتزويد تركيا بنحو مليون برميل من النفط الخام يوميا، مما يرسخ مقومات الشراكة والتكامل في ملف الطاقة بين أنقرة وبغداد، بينما أعلن الجانبان دخول شركة البترول التركية شريكة في حقل كركوك النفطي.\n\n طريق التنمية \n وأعلن رئيس الوزراء العراقي الشروع المباشر والفعلي في تنفيذ مشروع \"طريق التنمية\" الممتد بطول 1200 كيلومتر لربط ميناء الفاو الكبير بالحدود التركية ومنها إلى الأسواق الأوروبية، ووصف الزيدي هذا المشروع الإستراتيجي بـ\"النهر الثالث\" إلى جانب دجلة والفرات، ليتشكل محور تجاري بين الشرق والغرب، وفق ما نقلته وكالة الأناضول.\n وشدد أردوغان، خلال المؤتمر الصحفي، على اعتماد أنقرة مقاربة عقلانية وعلمية في إدارة ملف المياه تستند إلى الأسس الإنسانية، وتضمن الاستخدام المستدام للموارد المائية مع مراعاة احتياجات العراق، بينما أكد الزيدي أن الاتفاقات الموقعة ترسي أطرا من التعاون الشفاف لمواجهة موجات الجفاف والتغير المناخي.\n إعلان \n\n وأكد الرئيس التركي أن أمن العراق واستقراره يشكلان امتدادا مباشرا للأمن القومي التركي، مبديا استعداد بلاده لتزويد القوات العراقية بمنتجات الصناعات الدفاعية التركية المتطورة. وأشار أردوغان إلى تواصل الحوار العسكري والأمني لمكافحة التهديدات الإرهابية وجعل المنطقة خالية من الإرهاب بالكامل.\n وكان أردوغان استقبل الزيدي بمراسم رسمية في المجمع الرئاسي بأنقرة، وحضر المراسم عدد من الوزراء والمسؤولين الأتراك، يتقدمهم وزير الخارجية هاكان فيدان ، ورئيس جهاز الاستخبارات إبراهيم قالن .\n وقبيل لقاء أردوغان والزيدي، قال المتحدث باسم الحكومة العراقية حيدر العبودي إن النقاشات بين الزعيمين ستدور حول ملفات التعاون الإستراتيجي، مشيرا إلى أن ملف المياه سيحظى باهتمام خاص، بموجب الاتفاق الإطاري العراقي التركي، فضلا عن بحث التعاون في مجالات الطاقة، ومشروع طريق التنمية.\n وتُعَد تركيا، الدولة الثالثة التي يزورها الزيدي منذ توليه منصبه في 27 أبريل/نيسان الماضي، بعد زيارة طهران وواشنطن ، إذ تسعى  بغداد  لتعزيز الشراكات الإستراتيجية مع الجارة الشمالية، في وقت تواجه فيه ملفات معقدة تضم المياه والطاقة والأمن، إلى جانب مساعيها لتفعيل مشاريع اقتصادية إستراتيجية وإعادة تحريك ملف تصدير النفط عبر الأراضي التركية.\n\n المصدر: الجزيرة + الأناضول",
+      "sourceHost": "aljazeera.net",
+      "contentChars": 3336,
+      "arabicRatio": 0.9709,
       "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-06T06:58:26.198Z",
+      "fetchedAt": "2026-08-06T06:58:26.056Z",
       "translation": {
         "status": "PENDING",
         "titleKo": "",
@@ -40393,8 +40873,7 @@
         "category": "economy",
         "recommendation": "USER_REVIEW_REQUIRED",
         "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
+        "recommendationReason": ""
       },
       "selection": {
         "selected": false,
@@ -40406,46 +40885,44 @@
         "status": "COMPLETED",
         "pipelineVersion": "FACTS_FIRST_V1",
         "method": "ARABIC_SOURCE_FACT_EXTRACTION",
-        "sourceContentHash": "41d2bfe3f93be90b7b35aca238c66d6cf7a61b0e342d3d00fb1c702328de738a",
+        "sourceContentHash": "d36cfbc21e8b5e45a04a7cbc702d373f8d717998a0f8c5e34c86c9e436cbe2d9",
         "model": "gpt-4.1-mini",
-        "extractedAt": "2026-08-06T07:06:00.770Z",
-        "mainSubjectAr": "صادرات النفط العراقي",
-        "actionAr": "تسجيل كمية صادرات",
-        "locationAr": "العراق",
-        "eventDateAr": "مايو ويونيو 2026",
-        "resultAr": "سجلت صادرات النفط العراقي نحو 526.470 ألف برميل يوميًا خلال مايو ويونيو 2026 بزيادة مقارنة بنحو 329.5 ألف برميل يوميًا في أبريل 2026.",
+        "extractedAt": "2026-08-04T07:15:34.839Z",
+        "mainSubjectAr": "رئيس الوزراء العراقي علي الزيدي والرئيس التركي رجب طيب أردوغان",
+        "actionAr": "يعلنان عن مرحلة جديدة من التعاون بين تركيا والعراق",
+        "locationAr": "أنقرة، تركيا",
+        "eventDateAr": "28 يوليو 2026",
+        "resultAr": "إعلان قيام شراكة نفطية تاريخية في حقل كركوك وإطلاق أعمال مشروع \"طريق التنمية\" الاقتصادي الاستراتيجي الذي يربط ميناء الفاو الكبير بالحدود التركية وصولاً إلى أوروبا، وتوقيع اتفاقيات تعاون في مجالات الطاقة والنقل والتعليم والمياه",
         "keyFactsAr": [
-          "متوسط صادرات النفط العراقي في مايو ويونيو 2026 بلغ نحو 526.470 ألف برميل يوميًا.",
-          "إجمالي صادرات النفط في مايو ويونيو 2026 بلغ حوالي 32 مليون و114 ألف برميل.",
-          "صادرات نفط البصرة خلال مايو ويونيو 2026 بلغت 20 مليون و238 ألف برميل.",
-          "صادرات نفط إقليم كردستان عبر ميناء جيهان التركي في مايو ويونيو 2026 بلغت نحو مليون و564 ألف برميل.",
-          "صادرات نفط كركوك عبر ميناء جيهان التركي بلغت 10 ملايين و311 ألف برميل في مايو ويونيو 2026.",
-          "إيرادات صادرات النفط العراقي في مايو ويونيو 2026 بلغت 2.336 مليار دولار.",
-          "تأثرت الصادرات والمهام اللوجستية بسبب الحرب على إيران وأمن الملاحة في مضيق هرمز."
+          "تم الإعلان عن شراكة نفطية تشمل دخول شركة البترول التركية كشريك في حقل كركوك النفطي",
+          "الاتفاق على تزويد تركيا بمليون برميل يومياً من النفط الخام من العراق",
+          "بدء تنفيذ مشروع «طريق التنمية» بطول 1200 كيلو متر لربط ميناء الفاو بالحدود التركية والأسواق الأوروبية",
+          "حجم التبادل التجاري بين تركيا والعراق 17 مليار دولار ويهدف الطرفان لزيادته",
+          "توقيع اتفاقيات تشمل الطاقة والنقل والتعليم والمياه",
+          "التركيز على التعاون السياسي والتوافق بشأن قضايا فلسطين وسوريا وإيران",
+          "أردوغان أكد أن أمن واستقرار العراق مرتبط بالأمن القومي التركي"
         ],
         "numbersAr": [
-          "526.470 ألف برميل يوميًا",
-          "329.5 ألف برميل يوميًا",
-          "32,114,677 برميل",
-          "20,238,636 برميل",
-          "1,564,625 برميل",
-          "10,311,216 برميل",
-          "2.336 مليار دولار",
-          "1.2 مليون برميل يوميًا",
-          "4.3 مليون برميل يوميًا",
-          "188 ألف برميل يوميًا"
+          "1200 كيلومتر: طول مشروع طريق التنمية",
+          "17 مليار دولار: حجم التبادل التجاري بين تركيا والعراق",
+          "مليون برميل نفط يومياً: المقدار الذي ستزوده العراق لتركيا",
+          "300 ميغاواط: طاقة محطة الطاقية الشمسية في العراق (مذكورة في خبر متصل)"
         ],
-        "peopleAr": [],
+        "peopleAr": [
+          "علي الزيدي",
+          "رجب طيب أردوغان",
+          "هاكان فيدان",
+          "إبراهيم قالن"
+        ],
         "organizationsAr": [
-          "شركة تسويق النفط الحكومية سومو",
-          "وزارة النفط العراقية",
-          "تحالف أوبك+"
+          "شركة البترول التركية"
         ],
-        "directQuotesAr": [],
-        "uncertaintiesAr": [
-          "تأثير الحرب على إيران مستمر على صادرات النفط العراقية",
-          "مدى استقرار أسعار النفط وتأثيرها على الإيرادات"
+        "directQuotesAr": [
+          "أردوغان: توقيع الاتفاقيات مع العراق خطوة تاريخية في مسار الشراكة",
+          "الزيدي: مشروع \"طريق التنمية\" يشكل محوراً تجارياً بين الشرق والغرب",
+          "أردوغان: أمن العراق واستقراره امتداد مباشر للأمن القومي التركي"
         ],
+        "uncertaintiesAr": [],
         "multipleAgendaItems": true
       },
       "card": {
@@ -40453,64 +40930,41 @@
         "pipelineVersion": "FACTS_FIRST_V1",
         "method": "STRUCTURED_ARABIC_FACTS_TO_KOREAN_CARD",
         "factBasis": "STRUCTURED_ARABIC_FACTS_ONLY",
-        "sourceContentHash": "41d2bfe3f93be90b7b35aca238c66d6cf7a61b0e342d3d00fb1c702328de738a",
-        "factsHash": "6f73f685b0d24da34b98321eb9ded068cb939030205eccf763c2cfcf99221bd3",
+        "sourceContentHash": "d36cfbc21e8b5e45a04a7cbc702d373f8d717998a0f8c5e34c86c9e436cbe2d9",
+        "factsHash": "d3c7c7370bf9a790e48220c02c1e07edb06fe60b0455053f76462418de59dc9b",
         "glossaryVersion": "2026-08-04.1",
         "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "69c6bffe230aab0f8d33",
+        "preferredTermsSignature": "a18880a8af4deaa20d31",
         "preferredTermsApplied": [
-          "국영석유마케팅회사",
-          "호르무즈 해협",
-          "바스라",
-          "키르쿠크",
-          "석유수출국기구"
+          "키르쿠크"
         ],
         "model": "gpt-4.1-mini",
-        "generatedAt": "2026-08-06T07:06:08.628Z",
-        "titleKo": "이라크 유가 수출 급증, 5월~6월 일평균 52.6만 배럴 기록",
-        "summaryKo": "이라크의 2026년 5월과 6월 평균 석유 수출량이 일일 52만 6470배럴로 4월 32만 9500배럴 대비 급증했다. 바스라, 키르쿠크, 쿠르디스탄 지역 등 주요 항로를 통한 총수출량은 약 3천 2백만 배럴이며, 총 수출 수익은 23억 3600만 달러에 달했다. 다만, 이란 전쟁과 호르무즈 해협 주변 운송에 따른 물류 문제는 여전히 제약 요소다.",
+        "generatedAt": "2026-08-04T07:15:49.080Z",
+        "titleKo": "이라크·터키, 키르쿠크 유전 공동 개발 및 '개발의 길' 경제 프로젝트 착수 선언",
+        "summaryKo": "2026년 7월 28일 앙카라에서 이라크 총리 알리 자이디와 터키 대통령 레제프 타이이프 에르도안이 키르쿠크 유전을 터키 국영 석유사와 공동 개발하기로 합의하고, 페이 대형 항구부터 터키 국경과 유럽을 잇는 1200km 규모의 '개발의 길' 경제 프로젝트를 시작했다. 양국은 에너지·교통·교육·수자원 분야 협력 확대도 약속했다.",
         "fullTranslationGenerated": false
       },
-      "contentHash": "1ed9ac33638d3d14dcbe4f1185f788a090080de4539541364c9e81a65b2973ed",
-      "previousContentHash": "2146bd0ffb40a22656dc689136e4ba97bc859e441a8e243b2d2a6956a489033b",
-      "contentCheckedAt": "2026-08-06T06:58:26.198Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-Vj9-a8DbT9VWG482g_",
-        "representativeArticleId": "discovery-sIXp8gPWzslzBqrg6YhVQ2av",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
       "importance": {
-        "score": 30,
+        "score": 36,
         "level": "LOW",
         "levelKo": "낮음",
         "reportStatus": "EXCLUDE",
         "scoringMethod": "CATEGORY_RELATIVE_AI_BLEND_V5",
         "scoredAt": "2026-08-06T07:03:14.616Z",
         "breakdown": {
-          "constructionInvestment": 0,
-          "nationalImportance": 21,
+          "constructionInvestment": 8,
+          "nationalImportance": 13,
           "businessImpact": 0,
-          "executionScale": 3,
-          "sourceReliability": 6
+          "executionScale": 7,
+          "sourceReliability": 8
         },
         "reportPriority": "REFERENCE",
         "categoryRelevance": "LOW",
         "businessRelevance": "LOW",
         "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
         "scoringVersion": 5,
-        "scoreFingerprint": "7c1ca8544e6838a7dc91",
-        "ruleScore": 30,
+        "scoreFingerprint": "91b223d11bdd3a075f9b",
+        "ruleScore": 36,
         "category": "economy",
         "categoryFloor": 0,
         "categoryFloorRule": "NONE",
@@ -40528,6 +40982,24 @@
         "aiReportPriority": null,
         "aiReasonKo": "",
         "aiBreakdown": null
+      },
+      "eventGroup": {
+        "groupId": "event-W97tsLhwV9UgksZ510",
+        "representativeArticleId": "discovery-GY5Yu2eqFB_RNb5hlXRaVRu5",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "contentHash": "bce369785d9f7ee444bf892b9990556dbddeda33a773baa9d35b267aeaa81ac7",
+      "contentCheckedAt": "2026-08-06T06:58:26.056Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "economy",
+        "to": "economy",
+        "reason": "이라크 경제·건설·투자 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
       }
     },
     {
@@ -42088,9 +42560,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       }
@@ -45162,6 +45634,116 @@
         "summaryKo": "이라크 총리 알리 팔레흐 알자이디가 2026년 7월 27일 사우디 아라비아를 겨냥한 무인기 공격에 대해 광범위한 조사를 지시했다. 공격은 이라크 내에서 발사된 것으로 추정되며, 조사와 함께 양국 간 관계 강화 방침도 발표되었다.",
         "fullTranslationGenerated": false
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-w0HWaAA7UmC1PKtvNwGmLNKM",
+      "keywordId": "international-hormuz-001",
+      "category": "economy",
+      "priority": 97,
+      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "مضيق هرمز",
+        "صادرات النفط",
+        "الملاحة",
+        "ناقلات النفط"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "ناقلات النفط العراقية تواصل العبور وسط تباطؤ الملاحة في البحر الأحمر",
+      "sourceArabic": "شفق نيوز",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-07-27T05:51:57.000Z",
+      "descriptionArabic": "ناقلات النفط العراقية تواصل العبور وسط تباطؤ الملاحة في البحر الأحمر شفق نيوز",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwgRBVV95cUxOQ2RfVXd0NDdiX0xpaTMzRDJMeGVmb0tTVll3bXgzZnRRNERpTHAyZWtPX2xXMVV5RVB1azNBdTRnbk10OS1tc1dYcHR3V0V5NEpFTVNWMlF4a2pUR2J2UXo4YmF1VU9TeTV5Z0phUnltOTU3czc1MDI4bTdhQ3VBdTJCMFY5Q0s2a3h3clY2QTNkUTNlOERIOFRZZDEtRXI4WjhEWVBycUt0TDc3SUVzaXJEMDRTc001bmNXT081TFJXT2VmQ05FaHU1Q2M4eXRJaWI3SUtGZ1NMT2k5QlNDQmNvdDhfRk9sSGY5Ny0tSE1Cb3Vzb0ZER1RyWUlIWFE2ckdkOGZXaWx1OUthXzdjWUp0SmFXd3hSZnNEdTktdjQwZ0cyaG9VUG5SWjJKUlJaTEd4bElGQzdDWTJaX1JaMUVBQVJyN1M4LTFLSDVHTEdYRWNtUllpZjlWZnM2MkktWjRMbGJoVmRCSWtxMTh3cmJlMWlIOUJaenZKdER0S0hyTGxrbGF6WE5nUnRwaXMtczl4RUUyVy1JUUxKQXJBaHRxQzQyNnVxYkFaUUlMZWhTTjEzSkg4d2RRX1Rlbjhoai1XdS1xalNEeUZfV2NXZFU1Z25BRnhLZ2dKb2hkX0Y0eng1Nl9udWlMUWJ4YkNDVlp1RkVIOEhCbFFkc0l6cmFBYmlCR2tHU01jbmwyeUJ6elNORjZmSTRrZGVQZDRLUnBpVEJpMVdFdXBxQ2xzRFhibWRkZmpicFFwcm5WTlhPZw?oc=5",
+      "articleUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D9%86%D8%A7%D9%82%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1-%D9%88%D8%B3%D8%B7-%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%A7%D9%84-%D8%AD%D9%85%D8%B1",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:39.026Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": 0.1367,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:37:17.335Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D9%86%D8%A7%D9%82%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1-%D9%88%D8%B3%D8%B7-%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%A7%D9%84-%D8%AD%D9%85%D8%B1",
+      "originalTextArabic": "الأخبار العاجلة\n\n نيجيرفان بارزاني يلتقي الشرع في دمشق غداً\n\n منح 15 ألف زائر أفغاني تأشيرات دخول إلى العراق مجاناً (وثيقة)\n\n حصري.. اميركا تشترط تفكيك الفصائل مقابل تحرير 30 مليار دولار من \"أموال صدام\"\n\n حريق هائل يلتهم مستودعاً تجارياً في دهوك وخسائر تُقدّر بمليوني دولار (صور)\n\n ناقلات النفط العراقية تواصل العبور وسط تباطؤ الملاحة في البحر الأحمر\n\n طاقة وأعمال\n\n breaking\n\n مضيق هرمز\n\n مياه الخليج\n\n ناقلات النفط\n\n توترات البحر الاحمر\n\n 2026-07-27T05:50:53+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- بغداد \n\n أظهرت بيانات شركة Kpler تباطؤ حركة الملاحة عبر مضيق باب المندب إلى أدنى مستوياتها منذ\nأشهر، عقب الهجمات التي شنها الحوثيون على منشآت نفطية تابعة لشركة أرامكو\nالسعودية في جيزان وينبع، ما زاد من اضطرابات الشحن في البحر الأحمر. \n\n وبحسب البيانات، استمر انخفاض حركة السفن أيضاً في مضيق\nهرمز رغم توقف الضربات بين الولايات المتحدة وإيران، حيث بقي عدد السفن العابرة\nمحدوداً خلال عطلة نهاية الأسبوع، في ظل استمرار حذر شركات الشحن من المخاطر\nالأمنية. \n\n وفيما يتعلق بالعراق، أظهرت البيانات أن ناقلتين عملاقتين\nتحملان النفط الخام العراقي والإماراتي عبرتا مضيق هرمز يوم الجمعة ضمن السفن\nالمغادرة من الخليج، ما يشير إلى استمرار تدفقات الصادرات العراقية رغم التحديات\nالتي تواجه الملاحة في المنطقة. \n\n كما غادرت ناقلات نفط عدة البحر الأحمر محملة بشحنات من\nالخام السعودي والإماراتي والروسي متجهة إلى الصين، إضافة إلى ناقلة أخرى حملت\nالنفط الخام السعودي إلى باكستان، في وقت تواصل فيه الأسواق مراقبة تأثير\nالاضطرابات البحرية على إمدادات الطاقة العالمية وتكاليف الشحن. \n\n أخبار ذات صلة \n\n اقتصـاد\n\n فيتش تبقي على تصنيف ائتماني \"خطر\" للعراق وتحذر من غلق هرمز عليه\n\n المنطقة-والعالم\n\n إيران تسعى لتشكيل تحالف 7+1 لحماية مياه الخليج\n\n المنطقة-والعالم\n\n الحوثيون يعلنون استهداف سفينة في البحر العربي بطائرات مسيرة\n\n اقتصـاد\n\n العشرات من ناقلات النفط عالقة في مضيق هرمز\n\n اقتصـاد\n\n صحيفة هندية: إيران فتحت مضيق هرمز أمام ناقلات النفط البنغلاديشية\n\n المنطقة-والعالم\n\n \"رويترز\": انخفاض عدد ناقلات النفط العابرة من مضيق هرمز إلى أدنى مستوى",
+      "sourceHost": "shafaq.com",
+      "contentChars": 1957,
+      "arabicRatio": 0.9684,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:39:29.364Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "economy",
+        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-xvev2Yf0MZILUQKcxa",
+        "representativeArticleId": "discovery-w0HWaAA7UmC1PKtvNwGmLNKM",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 64,
+        "level": "REFERENCE",
+        "levelKo": "참고",
+        "reportStatus": "OPTIONAL_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 16,
+          "countryImportance": 15,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 8
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "644d8fa1f73ef70f3e3d",
+        "ruleScore": 64,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "0060a9ab3cf644d8f5569b9d7d34ca109a49846af50967c71730e677e936a24a",
+      "contentCheckedAt": "2026-08-03T01:39:29.364Z",
+      "contentChanged": false,
+      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -48926,6 +49508,116 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery--CwDDvLrRO_JNXJ0SuAvDzVV",
+      "keywordId": "international-hormuz-001",
+      "category": "economy",
+      "priority": 97,
+      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "مضيق هرمز",
+        "صادرات النفط",
+        "الملاحة",
+        "ناقلات النفط"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "ماذا بعد اغلاق مضيق هرمز؟ هل يدفع المواطن العراقي الثمن مجددا ام للحكومة بدائل استراتيجية لاحتواء الازمة؟",
+      "sourceArabic": "شبكة النبأ المعلوماتية",
+      "sourceHomepage": "https://annabaa.org",
+      "publishedAt": "2026-07-26T03:10:39.000Z",
+      "descriptionArabic": "ماذا بعد اغلاق مضيق هرمز؟ هل يدفع المواطن العراقي الثمن مجددا ام للحكومة بدائل استراتيجية لاحتواء الازمة؟ شبكة النبأ المعلوماتية",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1wcG5COEY5VTFrc2toLVdHMk9kaU1NOVliSmZDYlBhVXRaS3dYbHhxaW1tdkNRTUtqRmthUnJ0OE9RU3hrWjlxSjNlMHdJTHNNRFFoTDVXYUlNODM5?oc=5",
+      "articleUrl": "https://annabaa.org/arabic/economicreports/46175",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:15:31.997Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T04:17:30.336Z",
+      "canonicalUrl": "https://annabaa.org/arabic/economicarticles/46175",
+      "originalTextArabic": "تكشف أزمة إغلاق مضيق هرمز عن هشاشة الاقتصاد الريعي العراقي نتيجة غياب الخطط الاستراتيجية وتأخر البدائل التصديرية. ومع تراجع التدفقات الدولارية والضغط على الاحتياطي النقدي، يتحمل المواطن العراقي الكلفة الأكبر؛ حيث تظهر أعراض الأزمة تدريجياً في السوق الموازي عبر تضخم الأسعار وتراجع القدرة الشرائية للمجتمع... يمثل مضيق هرمز أحد أهم الممرات المائية الاستراتيجية في العالم، إذ تمر عبره نسبة كبيرة من صادرات النفط العالمية القادمة من دول الخليج الفارسي نحو الأسواق الدولية تقدر ب21%من الصادرات النفطية العالمية. وتمثل اهميته للعراق من كونه المنفذ الرئيس لتصدير النفط الخام عبر موانئ البصرة الجنوبية، التي تشكل العمود الفقري للإيرادات العامة للدولة العراقية. \n ومن ثم فإن أي اضطراب أمني أو عسكري يؤدي إلى تعطيل الملاحة في المضيق ينعكس بصورة مباشرة على الاقتصاد العراقي، اذ يعتمد العراق على النفط بوصفه المصدر الرئيس للإيرادات العامة، وتمثل العائدات النفطية النسبة الأكبر من موارد الموازنة العامة، فضلًا عن اعتماد الدولة على الدولار النفطي في تمويل الاستيرادات والحفاظ على استقرار سعر الصرف. \n وتتركز معظم صادرات العراق النفطية في الحقول الجنوبية التي يتم تصديرها عبر الخليج العربي، الأمر الذي يجعل مضيق هرمز حلقة حيوية في دورة الاقتصاد العراقي. .وفي ظل التوترات الإقليمية القائمة و إغلاق المضيق المستمر من شهرين تقريبا ، يبرز تساؤل جوهري مهم يتعلق بمدى قدرة الاقتصاد العراقي على مواجهة مثل هذه الصدمات، وما إذا كانت الحكومة تمتلك بدائل استراتيجية وخططًا واقعية لاحتواء الأزمة وتقليل آثارها المالية والاجتماعية.\n هشاشة الاقتصاد الريعي أمام الازمات الخارجية\n تكشف أزمة إغلاق المضيق عن الطبيعة الريعية للاقتصاد العراقي، حيث يعتمد النشاط الاقتصادي بصورة كبيرة على الإنفاق الحكومي الممول من النفط، في مقابل ضعف مساهمة القطاعات الإنتاجية الأخرى كالصناعة والزراعة والسياحة والخدمات الحديثة.\n ويؤدي هذا النمط الاقتصادي إلى ارتفاع مستوى الهشاشة المالية، لأن أي انخفاض في الصادرات النفطية أو أسعار النفط ينعكس مباشرة على: قدرة الدولة على الإنفاق العام.و مستويات التشغيل والدخل. والاستقرار النقدي وسعر صرف الدينار. و النشاط التجاري في الأسواق المحلية. كما أن اتساع حجم النفقات التشغيلية، ولا سيما الرواتب والدعم الحكومي، يزيد من صعوبة إدارة الأزمات المالية، خصوصًا في ظل محدودية الإيرادات غير النفطية. وفي حال استمرار الاغلاق الكلي أو جزئي لمضيق هرمز، فإن اعراض الازمة تظهر على الاقتصاد العراقي كتداعيات فورية، أبرزها:\n تراجع الإيرادات النفطية.\n يشكل النفط المصدر الرئيس للعملة الأجنبية، وبالتالي فإن تعطل الصادرات يؤدي إلى انخفاض التدفقات الدولارية الداخلة إلى الاقتصاد.\n الضغط على احتياطيات العملة الاجنبية\n يضطر البنك المركزي إلى استخدام الاحتياطي الأجنبي للحفاظ على استقرار سعر الصرف وتمويل الاستيرادات، مما قد يؤدي إلى تآكل الاحتياطيات إذا استمرت الأزمة لفترة طويلة. لان الاحتياطي النقدي لا يمثل حلًا دائمًا، لأن استنزافه المستمر دون وجود تدفقات نفطية كافية قد يؤدي إلى تراجع الثقة بالاقتصاد المحلي وزيادة المخاطر المالية. لذلك فإن فعالية الاحتياطي ترتبط بمدة الأزمة وحجم الصادرات المتوقفة وإجراءات الإدارة الاقتصادية المصاحبة.\n اضطراب سعر الصرف\n يؤدي انخفاض المعروض من الدولار إلى ارتفاع الطلب عليه داخل السوق المحلية، وهو ما ينعكس على قيمة الدينار ومستويات التضخم. وهذا بداءت ملامحة تظهر حاليا في السوق الموازي.\n ارتفاع الأسعار\n يعتمد العراق بصورة كبيرة على الاستيراد، ولذلك فإن أي اضطراب في تدفقات الدولار أو التجارة الخارجية يؤدي إلى ارتفاع أسعار السلع الأساسية وزيادة الأعباء المعيشية على المواطنين. وهذا واقع حال يعيشه الشعب العراقي مع كل ازمة عالمية .\n تعثر المشاريع الاستثمارية\n تلجأ الحكومات عادة في الأزمات إلى تقليص الإنفاق الاستثماري وتأجيل المشاريع الجديدة من أجل الحفاظ على النفقات التشغيلية الأساسية.\n\n البدائل الاستراتيجية المتاحة للعراق وليس بالضرورة مستغلة حاليا\n خط التصدير عبر تركيا\n يمثل خط كركوك–جيهان أحد البدائل المهمة لتقليل الاعتماد على مضيق هرمز، إلا أن طاقته الحالية لا تكفي لتعويض صادرات الجنوب بالكامل اذ تبلغ طاقته التصديرية الحالية 300 الف برميل يوميا، فضلًا عن وجود تحديات سياسية وفنية مرتبطة بتشغيله اذ ان الخط بري وطويل ويحتاج تكاليف صيانة مستمرة. كذلك كلفته التصديرية عالية لانه يمر بالاراضي التركية وبالتالي يخضع لرسوم نقل وترانزيت تدفع للجانب التركي\n مشروع الربط مع الأردن\n يُعد مشروع أنبوب البصرة–العقبة من المشاريع الاستراتيجية التي يمكن أن تمنح العراق منفذًا إضافيًا على البحر الأحمر، بما يقلل من المخاطر الجيوسياسية المرتبطة بمضيق هرمز. وهذا البديل لم يستكمل بعد\n تنويع الاقتصاد\n يظل الحل الجوهري طويل الأمد هو تقليل الاعتماد على النفط عبر تنشيط القطاعات الإنتاجية، وتشجيع الاستثمار، وتطوير الصناعة والزراعة والطاقة المتجددة. وهناك تلكئ واضح في هذا المجال منذ اكثر من 20 سنة . لذا يعتبر بديلا يسهم ب5% من معالجة الازمة الحالية.\n إصلاح السياسة المالية\n يتطلب الأمر إعادة هيكلة الإنفاق العام وتقليل الاعتماد على النفقات التشغيلية، وزيادة مساهمة الإيرادات غير النفطية في تمويل الموازنة. وهذا الامر لايمكن معالجته مادام استخدام المال سياسيا قائم في البلد.\n هنا يبرز التساؤل الاكثر اهمية هل سوف يتحمل المواطن العراقي تبعات الازمة الحالية؟\n في الواقع، نعم، وبصيرح العبارة غالبًا ما يتحمل المواطن العراقي الجزء الأكبر من كلفة الأزمات الاقتصادية، حتى عندما تكون أسبابها خارجية أو سياسية أو جيوسياسية، مثل الحروب أو تقلبات أسعار النفط أو إغلاق الممرات التجارية. وهذه ليست حالة عراقية فقط، لكنها في العراق تكون أكثر وضوحًا بسبب الطبيعة الريعية والهشة للاقتصاد. \n وكذلك عدم وجود خطط استراتيجة تتبعها الحكومة لتحقيق الاستفادة القصوى من البدائل المتوفرة في الاقتصاد العراقي. لذا سوف نرى اعراض الازمة الحالية تظهر على الاقتصاد العراقي تدريجيًا عبر عدة قنوات منها ، ارتفاع أسعار السلع نتيجة ضغط الدولار والاستيراد. و تراجع فرص العمل والاستثمار. و تأخر المشاريع والخدمات العامة. و ضعف القدرة الشرائية. و زيادة الاعتماد على الاقتراض أو الضرائب والرسوم.و تراجع او تاخر الإنفاق الحكومي التنموي لصالح الرواتب والنفقات الضرورية .\n من كل هذا يتضح أن الأمن الاقتصادي لا يقل أهمية عن الأمن العسكري، لأن قدرة الدولة على تأمين الغذاء والطاقة والاستقرار المالي تمثل عنصرًا أساسيًا في حماية الاستقرار الداخلي. ومن هذا المنطلق، فإن بناء اقتصاد أكثر تنوعًا ومرونة أصبح ضرورة استراتيجية للعراق، وليس مجرد خيار اقتصادي او بدائل مكتوبة وغير مقرؤءة تستخدم في التنظير الاعلامي غالبا. فالدول التي تعتمد على مصدر وحيد للإيرادات تكون أكثر عرضة للتقلبات الخارجية والصدمات الدولية.\n خاتمة\n إن استمرار إغلاق مضيق هرمز كشف بوضوح حجم الترابط بين الاقتصاد العراقي والتطورات الجيوسياسية في المنطقة، كما تبرز في الوقت نفسه هشاشة البنية الاقتصادية الريعية التي تعتمد بصورة مفرطة على النفط. وكذلك تكشف عدم وجود خطط استراتيجية واضحة للحكومة للتصدي لهكذا ازمات بل الاعتماد على الاجراءات المتاحة مثل بعض الأدوات المؤقتة لاحتواء الأزمات،كالاحتياطي النقدي وخطوط التصدير البديلة، إلا أن هذه الأدوات لا تكفي لضمان الاستقرار طويل الأجل ما لم تُرافقها إصلاحات هيكلية حقيقية تهدف إلى تنويع الاقتصاد وتعزيز الأمن الاقتصادي وتقليل الاعتماد على العوائد النفطية.\n وعليه، فإن التحدي الحقيقي لا يكمن فقط في كيفية مواجهة أزمة طارئة مثل إغلاق مضيق هرمز، بل في قدرة العراق على بناء نموذج اقتصادي أكثر استدامة ومرونة، يحد من انتقال الصدمات الخارجية إلى حياة المواطنين ومستوى رفاههم الاقتصادي.",
+      "sourceHost": "annabaa.org",
+      "contentChars": 6655,
+      "arabicRatio": 1.0101,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T04:18:50.755Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "importance": {
+        "score": 52,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 11,
+          "countryImportance": 10,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "8d1ffd0fdd59f486d6b0",
+        "ruleScore": 52,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "eventGroup": {
+        "groupId": "event-WHanxpCT-YKIg5kDqe",
+        "representativeArticleId": "discovery--CwDDvLrRO_JNXJ0SuAvDzVV",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "contentHash": "87d07e8d0ff9f2a9cbcd7c28035066067c2b7fec70767196d54a60ce5f440209",
+      "contentCheckedAt": "2026-08-03T04:18:50.755Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "international",
+        "to": "economy",
+        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-brF5GRIu7EaIswNr75TCCTHA",
       "keywordId": "security-isis-001",
       "category": "security",
@@ -51634,6 +52326,116 @@
         "summaryKo": "2026년 7월 현재 걸프 국가들은 미국 지원 아래 이란이 장악한 호르무즈 해협 의존도를 줄이고자 대체 송유관과 항만 건설에 박차를 가하고 있다. 이라크도 시리아와의 송유관 재건 계약을 체결하며 중동 에너지 수출망 다변화에 참여하고 있다.",
         "fullTranslationGenerated": false
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-raycBoddQLVsqlOffXzz46Sh",
+      "keywordId": "international-hormuz-001",
+      "category": "politics",
+      "priority": 97,
+      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "مضيق هرمز",
+        "صادرات النفط",
+        "الملاحة",
+        "ناقلات النفط"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "هل نحن على موعد مع حرب لا يمكن وقفها؟",
+      "sourceArabic": "youm7.com",
+      "sourceHomepage": "https://www.youm7.com",
+      "publishedAt": "2026-07-25T07:00:00.000Z",
+      "descriptionArabic": "هل نحن على موعد مع حرب لا يمكن وقفها؟ youm7.com",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMixAJBVV95cUxOMWNPNE1CNlE4X3R4SkRxR1lRWUZRcVJpaEF2MFVrNlp2TXVkVTd4ZGVNTkM3ZmRlYmEzM29TQzNnLW9zTGVmYXZ5VUZfcDUtWmpDcWNDRG9oRTVKdnRKUzFVWXBPcHRnTUxQN2F2c25YSVR1YVlOLWt4NmpkZThtZHVqazlQbm9sTXlTSXVyck1jZ3JtUUU5OHZEei1NUm5NVXlqUEVtakVsTS1sUXlTS1pOVnZKMXNMNVBleTd1LURvSDgtMTFGRUtYU2hzVEtJRjVPZGdFT2piNUZUZmFTamJNSDJYM2d2R2JpTmw2M3M5V3JfWWdXb2g4X0NJSjNWUmhMMkJ6ajRpRGlVV2FCbGhBSWFDekZwUEZoeEVTMkRVaWNkeExYUWNWNFhOWEV2ZGp2T1hqU2RjVUk3NFlfQVlCZkPSAb8CQVVfeXFMT2ZzeUpRZ0dybDhETFRrYWNNejdiaEEwS2FLd01QWUxzcVlNRnlVLW5wbWdQeVJTU0Y3dUFUaFpCTTg0YjBGUWM5WU1BZ0oxd0Z0UmhJU1BzenZQMTNLempkRjBpNjNFNHprMzQwdWhTYWc4QkRMMEVRWG9vX2RRZ2x2TUhqaHVtTUt4WWFBeFFocDNVdV9DRm1tTlhVQ3ZQbFNYb2xtVS1YN2dDTHBrZ3ZtTFZBVW1tOUx6OTVGZ0kyd3hyVzd6X3N0dDl6VWZEY3BrNkhjSy1Bdi1fRHN2MU1MQ0NTN2xvZ0ZYS0hrZTNtMEVrTVNNY1AxZmlkM3FJakZ2WjRXVTBEYmhzZDdld1l3UUpVa291WFZGQmw3UHBDd2Q2VVFPRUIycW1oTEN1Y2ZYTEhGekFmalFoNWJCSQ?oc=5",
+      "articleUrl": "https://www.youm7.com/story/2026/7/25/%D9%87%D9%84-%D9%86%D8%AD%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D9%85%D8%B9-%D8%AD%D8%B1%D8%A8-%D9%84%D8%A7-%D9%8A%D9%85%D9%83%D9%86-%D9%88%D9%82%D9%81%D9%87%D8%A7/7492554",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:39.025Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:37:30.060Z",
+      "canonicalUrl": "https://www.youm7.com/story/2026/7/25/%D9%87%D9%84-%D9%86%D8%AD%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D9%85%D8%B9-%D8%AD%D8%B1%D8%A8-%D9%84%D8%A7-%D9%8A%D9%85%D9%83%D9%86-%D9%88%D9%82%D9%81%D9%87%D8%A7/7492554",
+      "originalTextArabic": "الرئيسية \r\n\n مقالات \r\n\n أحمد موسى \r\n\n هل نحن على موعد مع حرب لا يمكن وقفها؟\r\n\n السبت، 25 يوليو 2026 03:40 م\r\n\n فيسبوك\r\n\n واتساب\r\n\n يشهد المشهد الدولي في هذه الفترة تصعيداً ملحوظاً في مسار العلاقات الإيرانية-الأمريكية، يتجاوز في أبعاده الاستراتيجية مجرد الخلافات الثنائية التقليدية ليصل إلى مستوى المواجهة الجيو-استراتيجية الشاملة. فالأزمة الراهنة لا تقتصر على الملف النووي كما كان الحال في السنوات السابقة، بل تتسع لتشمل تداعيات إقليمية واسعة تمتد من مضيق هرمز إلى البحر المتوسط، مروراً بفضاءات العراق وسوريا ولبنان واليمن. هذا التوسع الجغرافي للأزمة يعكس تحولاً جوهرياً في طبيعة الصراع، حيث لم تعد إيران مجرد دولة تسعى لتحقيق مكاسب استراتيجية ضمن نظام إقليمي قائم، بل باتت طرفاً فاعلاً في إعادة رسم خريطة النفوذ في الشرق الأوسط بأكمله.\n\n إن التحليل الاستراتيجي للموقف الحالي يتطلب النظر إلى الأزمة من منظور متعدد الأبعاد، يأخذ في الاعتبار ليس فقط الموقف العسكري والأمني، بل أيضاً الديناميكيات الاقتصادية والداخلية لكلا الطرفين، فضلاً عن تموضع القوى الدولية والإقليمية الأخرى في هذا المشهد المضطرب. فالولايات المتحدة، وهي تخوض مرحلة انتقالية في سياستها الخارجية، تواجه تحديات استراتيجية تتجاوز الملف الإيراني لتشمل صعود الصين وتعقيدات العلاقة مع روسيا، مما يفرض عليها إعادة حساباتها في تخصيص مواردها الاستراتيجية. بينما تواجه إيران، من جهتها، ضغوطاً اقتصادية خانقة تفاقمت بفعل العقوبات المستمرة، لكنها في المقابل تمتلك أدوات نفوذ إقليمية غير تقليدية تمنحها قدرة على رفع تكلفة أي مواجهة محتملة.\n\n البعد الاستراتيجي: إعادة تموضع القوى وتحولات الموازين\n\n يبرز في المشهد الاستراتيجي الراهن تحول ملحوظ في طبيعة المواجهة بين الطرفين، فقد انتقلت الأزمة من مرحلة الضغوط الدبلوماسية والاقتصادية إلى فضاء أكثر خطورة يمتزج فيه التهديد العسكري بالمناورة السياسية. فالاستراتيجية الإيرانية، التي بنتها طهران على مدى عقود، تقوم على مبدأ \"الردع غير المتماثل\"، أي الاعتماد على قدراتها الصاروخية والبحرية وشبكات الوكالة في الإقليم لمواجهة التفوق العسكري الأمريكي التقليدي. هذه الاستراتيجية، التي أثبتت فعاليتها في مراحل سابقة، تواجه اليوم اختباراً جديداً مع إعلان الولايات المتحدة عن تعزيز وجودها العسكري في المنطقة وتوسيع دائرة الردع لتشمل حماية الملاحة الدولية في مضيق هرمز ومضيق باب المندب.\n\n من الناحية الأمريكية، يتضح أن الإدارة الحالية تسعى لترسيخ استراتيجية \"الاحتواء الذكي\" التي تجمع بين الضغط الاقتصادي المستمر والحوار المشروط، مع الإبقاء على خيار العمل العسكري كأداة ضغط وليس كهدف بحد ذاته. هذا الموقف يعكس إدراكاً أمريكياً بأن أي مواجهة عسكرية شاملة مع إيران ستكون مكلفة بشكل غير مسبوق، ليس فقط على الصعيد العسكري، بل أيضاً على مستوى استقرار أسواق الطاقة العالمية وتوازنات القوى في الإقليم. فالاعتماد العالمي على إمدادات النفط الخليجي، وتحديداً من السعودية والإمارات والعراق، يجعل أي تصعيد عسكري في المنطقة تهديداً مباشراً للاقتصاد العالمي بأسره.\n\n إن تحليل الموازين الاستراتيجية يكشف عن حالة من \"التوازن الرهيب\" بين الطرفين، حيث لا تملك الولايات المتحدة القدرة على تحقيق نصر حاسم عسكري دون تكلفة باهظة، ولا تستطيع إيران في المقابل تحمل تبعات مواجهة شاملة مع قوة عظمى. هذا التوازن، رغم ما يحمله من مخاطر التصعيد غير المقصود، يخلق في الوقت ذاته فرصاً للدبلوماسية، شريطة توفر الإرادة السياسية لدى الطرفين والقدرة على تقديم تنازلات متبادلة.\n\n البعد الجيو-سياسي: إيران والشرق الأوسط الجديد\n\n تمتد التداعيات الجيو- سياسية للأزمة لتشمل كامل خريطة الشرق الأوسط، حيث باتت إيران لاعباً مركزياً في تحديد مسارات الصراعات الإقليمية. ففي العراق، تظل الميليشيات الموالية لإيران عاملاً حاسماً في توازن القوى الداخلية، وتشكل قدرة على تهديد المصالح الأمريكية في أي لحظة. وفي سوريا، تحافظ إيران على وجود عسكري مباشر يمنحها نفوذاً استراتيجياً على البحر المتوسط ويخلق جسراً برياً يربطها بلبنان. أما في اليمن، فتستمر دعم الحوثيين كأداة ضغط على السعودية والإمارات وعلى خطوط الملاحة الدولية.\n\n هذا التمدد الإقليمي، الذي يُنظر إليه في واشنطن كتهديد استراتيجي وجودي للنظام الإقليمي القائم، يفرض إعادة تقييم عميقة للسياسة الأمريكية تجاه المنطقة. فالانسحاب الأمريكي التدريجي من أفغانستان والتراجع النسبي في العراق أرسى انطباعاً بأن الولايات المتحدة تسعى لتقليص التزاماتها العسكرية المباشرة في الشرق الأوسط، مما شجع إيران على ملء الفراغ النسبي وتعزيز نفوذها. لكن التصعيد الحالي يشير إلى أن واشنطن تسعى لإعادة تأكيد حضورها الاستراتيجي في المنطقة، ليس بالضرورة عبر التدخل العسكري المباشر، بل من خلال تعزيز تحالفاتها مع الدول الإقليمية وتطوير قدرات الردع الجماعي.\n\n من الجانب الإيراني، يبدو أن الاستراتيجية تقوم على مبدأ \"الردع بالتداخل\"، أي خلق شبكة من مصالح وقدرات متشابكة تجعل أي ضربة أمريكية محتملة مكلفة للغاية على مستوى الإقليم بأسره. فالقدرة الإيرانية على إغلاق مضيق هرمز، رغم ما قد تترتب عليه من تداعيات على صادرات النفط الإيراني ذاتها، تظل ورقة ضغط استراتيجية لا يمكن تجاهلها. كما أن شبكات الوكالة الإيرانية، من حزب الله في لبنان إلى الحوثيين في اليمن، تمثل قدرة على توجيه ضربات غير مباشرة للمصالح الأمريكية وحلفائها في مناطق متعددة.\n\n البعد الداخلي: الضغوط الاقتصادية والحسابات السياسية\n\n لا يمكن فصل التحليل الاستراتيجي للأزمة عن البعد الداخلي لكلا الطرفين، فالديناميكيات الداخلية تلعب دوراً حاسماً في تحديد خيارات السياسة الخارجية. في إيران، يواجه النظام ضغوطاً اقتصادية خانقة نتيجة العقوبات المستمرة، حيث بلغ التضخم مستويات قياسية وتراجعت قيمة العملة الوطنية بشكل حاد. هذه الضغوط الاقتصادية تخلق توترات اجتماعية متزايدة، خاصة بين الشباب والطبقة الوسطى، وتضع القيادة الإيرانية أمام خيار صعب بين الاستمرار في سياسة المواجهة وتقديم تنازلات تخفف من العبء الاقتصادي.\n\n لكن الضغوط الاقتصادية لا تعني بالضرورة استعداد إيران للتراجع عن مواقفها الاستراتيجية، فالنظام الإيراني يمتلك قدرة ملحوظة على امتصاص الأزمات الداخلية وتحويلها إلى دعم للخطاب القومي والمقاوم. فالخطاب الرسمي في طهران يصور العقوبات كجزء من حرب شاملة تستهدف استقلال إيران وثورتها، مما يخلق حالة من التلاحم بين النظام والشعب في مواجهة ما يُعتبر عدواناً خارجياً. هذه القدرة على تحويل الضغوط الاقتصادية إلى دعم سياسي تمثل أحد أهم عناصر المرونة الاستراتيجية الإيرانية.\n\n من الناحية الأمريكية، تتأثر السياسة الخارجية تجاه إيران بالديناميكيات الداخلية بشكل لا يقل أهمية. فالمناخ السياسي في واشنطن يشهد استقطاباً حاداً حول الملف الإيراني، حيث يتباين الموقف بين من يدعون لسياسة ضغط أقصى ومن يرون في الحوار المباشر السبيل الوحيد لمنع تصعيد لا يحمد عقباه. هذه الانقسامات الداخلية تجعل من الصعب على أي إدارة أمريكية اتخاذ مواقف مرنة تجاه إيران، خاصة في ظل اقتراب مواعيد الانتخابات الرئاسية القادمة.\n\n التداعيات الإقليمية: تموضع القوى المحلية والدولية\n\n تتجاوز تداعيات الأزمة الإيرانية-الأمريكية الطرفين المباشرين لتشمل كامل الإقليم، حيث تتأثر مواقف الدول الإقليمية بشكل مباشر بمسار التصعيد أو التهدئة. فالسعودية، التي شهدت علاقاتها مع إيران مرحلة من التقارب في السنوات الأخيرة، تواجه تحديات في التوفيق بين هذا التقارب وتحالفها الاستراتيجي مع الولايات المتحدة. فالرياض، رغم رغبتها في تخفيف التوتر مع طهران، لا تستطيع تجاهل المخاوف الأمنية من النفوذ الإيراني في اليمن والعراق، كما أنها تعتمد على الضمانات الأمريكية لأمنها الاستراتيجي.\n\n أما إسرائيل، فتظل العامل الأكثر تأثيراً في دفع الولايات المتحدة نحو مواقف أكثر تشدداً تجاه إيران. فالخطر الاستراتيجي الذي تمثله إيران في نظر القيادة الإسرائيلية، سواء على مستوى البرنامج النووي أو على مستوى الدعم العسكري لحزب الله وحماس، يجعل من إسرائيل طرفاً فاعلاً في رسم خيارات السياسة الأمريكية. فالضربات الإسرائيلية المتكررة ضد أهداف إيرانية في سوريا والعراق تعكس استراتيجية \"الردع النشط\" التي تسعى إسرائيل من خلالها إلى تقليص القدرات الإيرانية في الإقليم، حتى لو كان ذلك على حساب استقرار العلاقات الثنائية.\n\n من جانب آخر، تبرز روسيا والصين كلاعبين دوليين يمتلكان مصالح متباينة في الملف الإيراني. فروسيا، رغم علاقاتها الاستراتيجية مع إيران، تسعى في الوقت ذاته لعدم تصعيد التوتر مع الولايات المتحدة إلى حدود قد تؤثر على مصالحها في أوكرانيا وأماكن أخرى. بينما الصين، التي تعتبر إيران شريكاً استراتيجياً في مبادرة \"الحزام والطريق\"، تسعى لضمان استمرار تدفق النفط الإيراني بأسعار مناسبة، لكنها في الوقت ذاته لا ترغب في مواجهة مباشرة مع واشنطن بسبب الملف الإيراني.\n\n سيناريوهات المرحلة المقبلة: بين التصعيد والتفاوض\n\n في ضوء التحليل السابق، يمكن رسم ثلاثة سيناريوهات رئيسية للمرحلة المقبلة، تتباين في درجة احتماليتها وتداعياتها:\n\n السيناريو الأول: التصعيد المحدود والمناورة يفترض هذا السيناريو استمرار حالة التوتر المرتفع دون الوصول إلى مواجهة عسكرية شاملة. فالطرفان يواصلان تبادل التهديدات والضغوط، مع الحفاظ على قنوات الاتصال الخلفية لتجنب التصعيد غير المقصود. في هذا السيناريو، تستمر إيران في تطوير قدراتها النووية دون الوصول إلى عتبة التسلح الفعلي، بينما تبقي الولايات المتحدة على ضغوطها الاقتصادية مع تجنب الخيار العسكري. هذا السيناريو هو الأكثر احتمالاً في المدى القريب، لكنه يحمل في طياته مخاطر التصعيد غير المنضبط نتيجة سوء تقدير أو حادث عسكري.\n\n السيناريو الثاني: العودة إلى الدبلوماسية يفترض هذا السيناريو توفر الإرادة السياسية لدى الطرفين للعودة إلى مفاوضات جدية، ربما بوساطة دولية أو إقليمية. فالضغوط الاقتصادية على إيران والرغبة الأمريكية في تجنب التورط العسكري قد يخلقان ظروفاً مواتية لاتفاق جديد، ربما يتضمن تخفيفاً تدريجياً للعقوبات مقابل قيود على البرنامج النووي والصاروخي. لكن هذا السيناريو يواجه عقبات كبيرة، أبرزها عدم الثقة المتبادل والضغوط الداخلية على كلا الطرفين.\n\n السيناريو الثالث: التصعيد العسكري المحدود يفترض هذا السيناريو وقوع مواجهة عسكرية محدودة، ربما تبدأ بضربات إسرائيلية أو أمريكية ضد أهداف نووية أو عسكرية إيرانية، تليها ردود إيرانية ضد المصالح الأمريكية وحلفائها في الإقليم. هذا السيناريو، رغم احتماليته المنخفضة نسبياً، يظل ممكناً في ظل استمرار التصعيد وغياب قنوات الاتصال الفعالة. وتداعياته ستكون واسعة النطاق، وتشمل اضطراباً حاداً في أسواق الطاقة وتفاقماً للصراعات الإقليمية.\n\n وتقف العلاقة الإيرانية-الأمريكية اليوم عند مفترق طرق حاسم، حيث لم تعد الأزمة مجرد خلاف حول البرنامج النووي، بل باتت صراعاً استراتيجياً شاملاً يتجاوز حدود البلدين ليشمل كامل الإقليم. فالتحولات الجيو-سياسية في الشرق الأوسط، من صعود القوى الإقليمية إلى تراجع الالتزام الأمريكي التقليدي، خلقت بيئة استراتيجية جديدة تتطلب إعادة تعريف لعلاقة الطرفين.\n\n إن المخرج من هذه الأزمة لا يمكن أن يكون عسكرياً بشكل حاسم، فالخيار العسكري، رغم جاذبيته النظرية لبعض الأطراف، يحمل تكاليف استراتيجية وبشرية لا يمكن تحملها. وفي المقابل، لا يمكن أن يكون المخرج دبلوماسياً بحتاً دون تلبية المخاوف الأمنية المشروعة لكلا الطرفين. فالحل المستدام يتطلب إطاراً أمنياً إقليمياً جديداً يأخذ في الاعتبار مصالح جميع الأطراف، ويحد من سباق التسلح النووي والصاروخي، ويضمن استقرار خطوط الملاحة الدولية.\n\n لكن الوصول إلى هذا الإطار يتطلب إرادة سياسية حقيقية وقدرة على التفكير الاستراتيجي بعيد المدى، وهو ما يفتقر إليه المشهد السياسي في كلا البلدين في الوقت الراهن. فالاستقطاب الداخلي في واشنطن والضغوط الأمنية في طهران تجعل من التنازلات المتبادلة أمراً صعب المنال. وبالتالي، يبدو أن المنطقة مرشحة لاستمرار حالة التوتر المرتفع، مع احتمالات متباينة للتصعيد أو التهدئة حسب تطورات المشهد الداخلي والإقليمي.\n\n في النهاية، تظل الأزمة الإيرانية-الأمريكية تعبيراً عن تحولات أعمق في النظام الدولي، حيث تتراجع القدرة الأمريكية على فرض إرادتها بشكل أحادي، وتسعى القوى الإقليمية لإعادة رسم خريطة النفوذ وفقاً لمصالحها. فالشرق الأوسط الجديد، الذي يتشكل في ظل هذه التحولات، لن يكون منطقة استقرار في المدى المنظور، بل سيبقى ساحة للتنافس الاستراتيجي والصراعات بالوكالة، ما لم تتوفر الإرادة السياسية لبناء نظام إقليمي جديد يقوم على التعاون بدلاً من المواجهة.\n\n تابعوا آخر أخبار اليوم السابع عبر Google News\r\n\n اشترك في قناة اليوم السابع على واتساب",
+      "sourceHost": "youm7.com",
+      "contentChars": 10767,
+      "arabicRatio": 1.0177,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:39:45.918Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-mIp2tN21CaV_bda9GX",
+        "representativeArticleId": "discovery-raycBoddQLVsqlOffXzz46Sh",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 57,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 11,
+          "countryImportance": 15,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "1ec97b26772818ffabdd",
+        "ruleScore": 57,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "cf0f15df485d99c59b822d51f918481587bd25c0a8ecc9cc60d381e55bf4090c",
+      "contentCheckedAt": "2026-08-03T01:39:45.918Z",
+      "contentChanged": false,
+      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -56164,9 +56966,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V4"
       }
@@ -59348,6 +60150,125 @@
         "summaryKo": "이라크 정부는 바그다드에서 무단 무기 해체 작전을 시작해 드론 제조 공장을 적발했다. 이 작업은 정보 수집과 법적 감독 하에 진행되었으며, 국가 안보 위협 가능성에 대해 조사가 계속되고 있다.",
         "fullTranslationGenerated": false
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
+      "keywordId": "international-us-001",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "سلاح الفصائل وخطوط واشنطن الحمراء.. حقيبة مثقلة ترافق الزيدي إلى إيران (خاص)",
+      "sourceArabic": "العين الإخبارية",
+      "sourceHomepage": "https://al-ain.com",
+      "publishedAt": "2026-07-22T07:00:00.000Z",
+      "descriptionArabic": "سلاح الفصائل وخطوط واشنطن الحمراء.. حقيبة مثقلة ترافق الزيدي إلى إيران (خاص) العين الإخبارية",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBnTUJLdTBhaFZtM2JKTkdnQjdyMUhtT09NUk1sOFdnSkNKNzQtZEhXZVAyUnBhWHhsWHp2VFljdmJnQk9aT19DT0owcE9jZUxFWUktTmFibFVrUWJGbGFOeUdyYVVTYnctQzc2OGJRUFJmb08zMTVB?oc=5",
+      "articleUrl": "https://al-ain.com/article/iraq-iran-war-factional-weapons-red-lines",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.674Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:37:50.292Z",
+      "canonicalUrl": "https://al-ain.com/article/iraq-iran-war-factional-weapons-red-lines",
+      "originalTextArabic": "التحليلات\n\n سلاح الفصائل وخطوط واشنطن الحمراء.. حقيبة مثقلة ترافق الزيدي إلى إيران (خاص)\n\n العين الإخبارية- خاص - علي الخفاجي \n\n الأربعاء 2026/7/22 05:22 م بتوقيت أبوظبي\n\n رئيس الوزراء العراقي علي الزيدي - أرشيفية \n\n تم تحديثه الأربعاء 2026/7/22 07:29 م بتوقيت أبوظبي \n في زيارة تحمل أبعاداً تتجاوز إطار العلاقات الثنائية، يتوجه رئيس الوزراء العراقي علي الزيدي إلى طهران وسط تصاعد التوترات الإقليمية، واضعاً على طاولة المباحثات ملفين يُعدان من أكثر القضايا حساسية بالنسبة للعراق والمنطقة.\r\n\n فإلى جانب مساعي بغداد لاستثمار علاقاتها المتوازنة مع واشنطن وطهران لإحياء مسار التهدئة وإعادة فتح قنوات الحوار بين إيران والولايات المتحدة اللتين دخلتا مرحلة جديدة من المواجهة بعد تفاهم إسلام آباد، تبرز قضية حصر السلاح بيد الدولة بوصفها استحقاقاً داخلياً يرتبط بمرحلة ما بعد الانسحاب الأمريكي والمهلة المحددة في نهاية سبتمبر/أيلول المقبل.\n\n وبين رهانات الوساطة الدبلوماسية والضغوط المرتبطة بملف الفصائل المسلحة، تبدو زيارة الزيدي اختباراً حقيقياً لقدرة العراق على الجمع بين متطلبات الاستقرار الإقليمي وترسيخ سيادة الدولة في الداخل.\n ويغادر الزيدي إلى طهران يوم الخميس في ثالث محطة خارجية له منذ توليه منصبه بعد زيارة إلى الولايات المتحدة التي استمرت 6 أيام الأسبوع الماضي، ثم محطة سريعة في قطر.\n رسائل واشنطن \n وكشف قيادي بارز في الإطار التنسيقي لـ\"العين الإخبارية\"، عن أن الزيدي أطلع الإطار في اجتماع جرى عقده مساء الإثنين في مكتب زعيم ائتلاف دولة القانون نوري المالكي على رسالة حملها من الرئيس الأمريكي دونالد ترامب بشأن استئناف المفاوضات مع إيران، شريطة أن يكون مضيق هرمز مفتوحاً ودون رسوم وتحت أي ذريعة\".\n\n ولفت القيادي مشترطاً عدم الكشف عن هويته أن زيارة الزيدي لن تقتصر على العلاقات الثنائية، بل ستتضمن رسائل سياسية تمهد لدور عراقي في الوساطة بين الولايات المتحدة وإيران، في ظل التحولات التي تشهدها المنطقة.\n وأضاف أن بغداد ترى أن استمرار المواجهة بين واشنطن وطهران ستكون له تداعيات مباشرة على الأمن العراقي، الأمر الذي يدفعها إلى التحرك دبلوماسياً لتقريب وجهات النظر.\n وتابع القيادي العراقي، أن \"الإدارة الأمريكية أبلغت رئيس الوزراء العراقي بأنها ترحب بأي خطوة يقوم بها لتهدئة الأوضاع في المنطقة، في إشارة إلى زيارته المرتقبة إلى طهران\".\n وأوضح أن \"الزيدي أكد للإطار التنسيقي بأن ترامب أبلغه بقدرته على إسقاط النظام الإيراني وتدمير البلاد في غضون ساعتين لكنه لا يريد الذهاب إلى هذه الخطوة\".\n وعند سؤاله عن إمكانية أن يلعب العراق دور الوسيط بين طهران وواشنطن، قال المصدر، إن العراق يمتلك اليوم فرصة أكبر للعب دور الوسيط مقارنة بالسنوات الماضية، مستفيداً من الانفتاح الأمريكي على حكومته واستمرار قنوات التواصل مع إيران.\n لكنه ربط \"نجاح هذا الدور بمدى استعداد واشنطن وطهران للعودة إلى طاولة الحوار، فضلاً عن قدرة بغداد على تحويل تبادل الرسائل إلى مسار تفاوضي حقيقي يخفف من حدة التوتر\".\n محطة حاسمة بشأن سلاح الفصائل\n ولفت القيادي في الإطار التنسيقي إلى أن \"زيارة الزيدي بالإضافة إلى نقل رسالة أمريكية لطهران، ستركز على ملف تسليم الفصائل الشيعية المدعومة من إيران سلاحها للحكومة العراقية\n وأوضح أن لهذا الملف أهمية استثنائية بعد أن أصبح جزءاً من التفاهمات التي طرحتها بغداد في إطار إعادة صياغة علاقتها مع واشنطن، حيث تؤكد الحكومة أن إنهاء الوجود العسكري الأمريكي يتطلب انتقال العراق إلى مرحلة جديدة تقوم على احتكار الدولة للسلاح، فيما لا تزال بعض الفصائل المسلحة تتمسك بمواقفها الرافضة للتخلي عن ترسانتها.\n وأكد أن هناك قناعة متزايدة داخل البيت السياسي الشيعي، بأن موعد انسحاب القوات الأمريكية في 30 من سبتمبر/أيلول المقبل يمثل نقطة تحول في هذا الملف.\n وأكد أن الإطار التنسيقي يقف إلى جانب توجه الحكومة بحصر السلاح بيد الدولة، مشيرًا إلى أن هذا الملف نوقش خلال اجتماعات عدة بين الإطار ورئيس الوزراء.\n وبحسب القيادي في الإطار التنسيقي، فإن انسحاب القوات الأجنبية في 30 سبتمبر/أيلول يسقط المبررات التي استندت إليها بعض الفصائل للاحتفاظ بالسلاح خارج مؤسسات الدولة، مشيراً إلى وجود اتفاق سياسي على أن تكون القوة العسكرية بعد ذلك التاريخ حكراً على الدولة العراقية.\n\n وأوضح أن بعض الفصائل باشرت بالفعل بتسليم جزء من أسلحتها، بينما تنتظر فصائل أخرى ترتيبات ومواعيد محددة، مؤكداً أن الحكومة تتابع هذا الملف بشكل مباشر.\n وشدد على أن الزيدي سيبحث مع القيادة الإيرانية مستقبل الفصائل المسلحة بعد انتهاء المهلة، في ظل النفوذ الذي ما تزال طهران تحتفظ به لدى عدد من تلك الفصائل، الأمر الذي يجعل الموقف الإيراني عاملاً مؤثراً في نجاح أو تعثر مشروع الحكومة ولجوئها إلى خيارات قضائية وعسكرية ضد الفصائل الرافضة.\n الفصائل.. مواقف متباينة\n ورغم الحديث عن تفاهمات سياسية، فإن بعض الفصائل لا تزال تعلن تمسكها بسلاحها. فقد أكدت \"المقاومة الإسلامية في العراق\" في بيان صدر عقب مراسم تشييع المرشد الإيراني الراحل علي خامنئي في 8 يوليو/تموز الجاري، أن سلاحها \"ليس خياراً للمساومة\"، متعهدة بمواصلة تطوير قدراتها العسكرية.\n كما شدد الأمين العام لجماعة كتائب حزب الله، أبوحسين الحميداوي، على استمرار الفصيل في نهج \"المقاومة\"، محذراً من أي ضغوط تستهدف نزع السلاح.\n في المقابل، يرى القيادي في حديثه، أن الملف ليس واحداً بالنسبة لجميع الفصائل، موضحاً أن الجهات المنخرطة في العملية السياسية تختلف عن تلك التي لا تزال تعمل خارج الإطار السياسي، ما يجعل آلية معالجة الملف تختلف من فصيل إلى آخر.\n ماذا دار في واشنطن؟\n وترتبط أهمية الزيارة الإيرانية -أيضاً- بما جرى خلال زيارة الزيدي إلى الولايات المتحدة، حيث كشف رئيس الوزراء في مقابلة مع مجلة «ذا أتلانتيك الأمريكية» أنه نصح الرئيس ترامب بعدم توجيه ضربة عسكرية لإيران، مؤكداً أن \"المفاوضات هي الخيار الأهم\".\n وقال الزيدي إن العراق يجب أن يكون \"نقطة التقاء لا ساحة عداء بين واشنطن وطهران\"، مشدداً على أن الوجود العسكري وحده لا يصنع العلاقات بين الشعوب، وأن الشراكات الاقتصادية هي الطريق الأكثر استدامة.\n\n وأشار إلى أن بغداد تبحث إقامة شراكة استثمارية طويلة الأمد مع الولايات المتحدة تمتد لثلاثين عاماً، بديلاً عن التركيز على الوجود العسكري، مؤكداً أن الحرب الأخيرة وإغلاق مضيق هرمز كبدا الاقتصاد العراقي خسائر كبيرة.\n وفي ملف الأمن الداخلي، شدد الزيدي على أن حصر السلاح بيد الدولة يمثل خياراً لا بديل عنه، رغم ما وصفه بصعوبة هذا المسار.\n لماذا يتحرك العراق؟\n التحرك العراقي لا يرتبط فقط بالرغبة في لعب دور دبلوماسي، بل أيضاً بحسابات الأمن القومي، فالعراق يعد من أكثر الدول تأثراً بأي تصعيد بين الولايات المتحدة وإيران، سواء من الناحية الأمنية أو الاقتصادية، نظراً لموقعه الجغرافي واعتماده الكبير على استقرار المنطقة في تجارة الطاقة والاستثمارات.\n وقد كشفت الأزمة الأخيرة المرتبطة بإغلاق مضيق هرمز هشاشة الاقتصاد العراقي، بعدما تعرضت صادرات النفط وحركة التجارة إلى اضطرابات أثرت على الإيرادات العامة. لذلك ترى بغداد أن نجاح أي مسار تهدئة يمثل مصلحة عراقية مباشرة قبل أن يكون خدمة لأي طرف آخر.\n هل ينجح العراق في الوساطة؟\n يرى أستاذ العلوم السياسية الدكتور مؤيد الجابري أن العراق يمتلك اليوم هامش حركة أكبر مقارنة بالسنوات الماضية، بفضل استمرار التواصل مع طهران والانفتاح الأمريكي على الحكومة العراقية.\n وأوضح أستاذ العلوم السياسية في حديث لـ«العين الإخبارية»، أن نجاح الوساطة لن يعتمد على بغداد وحدها، وإنما على استعداد الولايات المتحدة وإيران للانتقال من التصعيد إلى الحوار، إلا أن قبول العراق كناقل للرسائل السياسية يعكس تنامي ثقله الدبلوماسي.\n أما الخبير في العلاقات الدولية أحمد المذحجي، فيرى أن زيارة الزيدي قد تمثل بداية لتحرك سياسي مهم إذا تضمنت رسائل أمريكية واضحة، لكن نجاحها يبقى مرهوناً بقدرة بغداد على تحويل تبادل الرسائل إلى مفاوضات فعلية.\n وأضاف في حديث لـ\"العين الإخبارية\"، أن العراق سيكون من أكثر الدول حرصاً على منع اندلاع مواجهة واسعة، لأن أي حرب جديدة ستنعكس مباشرة على أمنه الداخلي واستقراره الاقتصادي.\n ورغم أن \"المؤشرات الحالية لا توحي بقرب استئناف المفاوضات الأمريكية الإيرانية بصورة رسمية، فإن مجرد قبول الطرفين بدور عراقي في نقل الرسائل وتهيئة الأجواء يعكس تطوراً في مكانة بغداد الإقليمية\"، يضيف المذحجي.\n نتائج زيارة واشنطن\n تتباين مواقف القوى السياسية العراقية إزاء التحركات الخارجية التي يقودها رئيس الوزراء علي الزيدي، إلا أن القاسم المشترك بينها يتمثل في دعم الانفتاح الدبلوماسي للحكومة، مع التأكيد على ضرورة خضوع نتائج هذه التحركات للرقابة البرلمانية، خاصة بعد زيارة واشنطن وقبيل الزيارة المرتقبة إلى طهران.\n ويرى نواب أن نجاح السياسة الخارجية لا يُقاس بعدد الزيارات، بل بما تحققه من مكاسب سياسية واقتصادية، فيما يؤكد آخرون أن الحكومة تستحق الوقت الكافي لتنفيذ برنامجها في ظل ظروف إقليمية معقدة.\n وحظيت زيارة الزيدي إلى واشنطن بدعم من الإطار التنسيقي، الذي أعلن مساندته للحكومة في تنفيذ الاتفاقات والتفاهمات التي تم التوصل إليها، مؤكداً استمرار دعمه لجهود مكافحة الفساد والإصلاح.\n زيارة اقتصادية \n ووصف عضو اللجنة المالية النيابية رياض التميمي زيارة رئيس الوزراء إلى الولايات المتحدة بأنها \"إيجابية وواضحة\"، مؤكداً أنها ركزت بصورة أساسية على الملف الاقتصادي وجذب الاستثمارات.\n وأوضح في حديث لـ\"العين الإخبارية\"، أن الوفد العراقي ضم مختصين وشركات استثمارية، بهدف فتح المجال أمام الشركات الأمريكية والعالمية للمساهمة في إعادة بناء الاقتصاد العراقي، متوقعاً الإعلان قريباً عن مشروع وطني للتنمية الاقتصادية.\n وأشار إلى أن اللجنة المالية تعمل بالتوازي مع الحكومة على تشريع قوانين تسهم في تعظيم الإيرادات غير النفطية، لافتاً إلى أن الظروف الاقتصادية الأخيرة، خصوصاً بعد اضطراب صادرات النفط، فرضت البحث عن مصادر دخل جديدة.\n وفيما يتعلق بالرقابة البرلمانية، أكد التميمي أن رئيس الوزراء لا يمانع المثول أمام مجلس النواب، معتبراً أن الزيدي \"واضح في رؤيته وعمله\"، وأن حضوره سيشكل فرصة لعرض نتائج تحركاته الخارجية أمام ممثلي الشعب.\n نجاح الزيارات يُقاس داخل البرلمان\n من جهته، ربط النائب عن ائتلاف الأساس العراقي غيث رعد آل شبع تقييم زيارة واشنطن، وما سيتبعها من زيارات، بعرض نتائجها أمام مجلس النواب.\n وأكد في حديث لـ\"العين الإخبارية\"، أن الجميع يتمنى نجاح الزيارة إذا كانت تصب في مصلحة العراق، إلا أن البرلمان بحاجة إلى معرفة تفاصيل ما جرى من تفاهمات، وطبيعة المطالب الأمريكية، ومدى تأثيرها على السيادة العراقية.\n ودعا إلى الكشف عن معايير اختيار الشركات التي جرى الاتفاق معها، مشدداً على أن البرلمان سيدعم أي اتفاقات تقوم على الكفاءة والخبرة والرصانة، لكنه في الوقت نفسه يرفض تكرار تجارب العقود السابقة التي لم تحقق نتائج ملموسة.\n ويرى أن الدور الرقابي لمجلس النواب يفرض الاستماع مباشرة إلى رئيس الوزراء، باعتبار أن المؤسسة التشريعية شريك في رسم السياسات العامة للدولة.\n الأولوية لدعم الحكومة \n في المقابل، دعا النائب عن حزب تقدم أحد الأحزاب السياسية السنية، محمد الكعود إلى منح الحكومة مزيداً من الوقت لتنفيذ برنامجها، معتبراً أن الحديث عن استضافة رئيس الوزراء في البرلمان ما يزال سابقاً لأوانه.\n وأكد الكعود في حديث لـ\"العين الإخبارية\"، دعم حزبه الكامل لرئيس الوزراء في ملفات مكافحة الفساد، وحصر السلاح بيد الدولة، وتعزيز علاقات العراق الإقليمية والدولية، مشيراً إلى أن البلاد تمر بمرحلة سياسية واقتصادية حساسة تستوجب مساندة الحكومة.\n وأضاف أن استقرار العراق وتعزيز سيادته يمثلان أولوية، معرباً عن أمله في أن تحقق الحكومة نتائج إيجابية خلال المرحلة المقبلة، مشدداً على استقرار العراق يبقى مرهوناً بقدرة الدولة على احتكار قرار القوة.\n وأكد أن جميع المؤسسات العراقية، إلى جانب المجتمع الدولي ودول الجوار، تتفق على ضرورة أن يكون السلاح بيد الدولة وحدها، معتبراً أن وجود أي قوة موازية يمثل خطأً استراتيجياً يتعارض مع الدستور ومبدأ السيادة.\n ورجح أن تستجيب الفصائل في نهاية المطاف لهذا المسار، وأن مسألة تسليم السلاح أصبحت أقرب إلى عامل الوقت منها إلى الخلاف السياسي.\n\n العراق \n\n إيران \n\n غرفة الأخبار \n\n #تقارير_خاصة\n\n #حوارات_العين_الإخبارية\n\n #شؤون_العراق\n\n #الجيش_العراقي\n\n #شؤون_إيرانية\n\n أخبار ذات صلة \n\n العراق يدرس قانون الاقتراض والمنح لتعويض غياب موازنة 2026 \n اقرأ الخبر \n\n العراق بين لهيب الصيف وأزمة الكهرباء.. الضغوط تتصاعد والحلول تتأخر \n اقرأ الخبر \n\n حملة مكافحة الفساد بالعراق.. اعتقال مسؤولين في صلاح الدين وبحث عن &laquo;أموال مدفونة&raquo; (خاص) \n اقرأ الخبر \n\n مقتل جندي أمريكي في شمال العراق خلال العمليات القتالية \n اقرأ الخبر \n\n عاجل العين الإخبارية\n\n منذ 1 ساعة \n\n زلزال قوي يهز عدة مدن مصرية \n\n منذ 2 يوم \n\n سماع دوي انفجار في مدينة &laquo;إسلام أباد غرب&raquo; بإيران \n\n منذ 2 يوم \n\n الدفاعات الجوية الكويتية تتصدى لعدوان إيراني بطائرات مسيّرة \n\n منذ 2 يوم \n\n ترامب: سنقصف إيران \n\n تريند \n\n منوعات\n\n &laquo;وجدت عظاما بشرية&raquo;.. الآثار المصرية ترد على فيديو البلوغر الفلسطيني داخل الأهرامات \n\n منوعات\n\n اعتذار الزائر ينهي أزمة صورة منزل عبد الحليم حافظ.. والأسرة تضع قواعد جديدة للزيارات \n\n فن\n\n النيران تطارد جورج كلوني.. إخلاء منزله في فرنسا بسبب الحرائق \n\n فن\n\n محمد رياض يمتنع عن التصويت لتكريم شهيرة في مهرجان المسرح المصري.. ما السر؟ \n\n اخترنا لكم \n\n مجتمع\n\n خطوات تجديد بطاقة التعريف الوطنية في تونس والوثائق المطلوبة \n\n مجتمع\n\n كيفية تجديد طلب العمل لمنحة البطالة 2026 في الجزائر بالخطوات \n\n سياحة وسفر\n\n قطارات القاهرة - الإسكندرية.. دليل شامل بالمواعيد وأسعار التذاكر \n\n سيارات\n\n استخراج شهادة بيانات السيارة في مصر.. الأوراق المطلوبة والرسوم \n\n تابعونا على",
+      "sourceHost": "al-ain.com",
+      "contentChars": 11824,
+      "arabicRatio": 1.0096,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:39:56.038Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-jbg7VDwektka7OBz3j",
+        "representativeArticleId": "discovery-TxZF7SfBN3s90AtQijX1suJD",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 34,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 35,
+          "countryImportance": 15,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "이라크 총리 이란 방문 및 안보·외교 문제, 비스마야 사업 직접 관련 내용은 없으며 사업 계약·대금 영향도 기사에 없음.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "c74d96e31b18da8cf63e",
+        "ruleScore": 81,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 8,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REFERENCE",
+        "aiReasonKo": "이라크 총리 이란 방문 및 안보·외교 문제, 비스마야 사업 직접 관련 내용은 없으며 사업 계약·대금 영향도 기사에 없음.",
+        "aiBreakdown": {
+          "bismayahRelevance": 1,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 1,
+          "responseUrgency": 0,
+          "sourceReliability": 1
+        }
+      },
+      "contentHash": "ada78de1c1122347159f65af8b51fd8cce76e789e15b0a88ea2c0b128841d8b5",
+      "contentCheckedAt": "2026-08-03T01:39:56.038Z",
+      "contentChanged": false,
+      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -67446,6 +68367,125 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-DtTyvzdilSi96pqGYVPvKNDM",
+      "keywordId": "international-us-001",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "العراق يعلن استعداده للوساطة بين أمريكا وإيران لإنهاء التصعيد واستئناف الحوار",
+      "sourceArabic": "mubasher.info",
+      "sourceHomepage": "https://www.mubasher.info",
+      "publishedAt": "2026-07-18T07:00:00.000Z",
+      "descriptionArabic": "العراق يعلن استعداده للوساطة بين أمريكا وإيران لإنهاء التصعيد واستئناف الحوار mubasher.info",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMirAVBVV95cUxObDZTMHJNbkNIMXE1dnV0elVmV0taMmd1UGdvMDlQSnkwWXBjeWFIbzZDTEoyR2h4b1kxeGdwS2dGY25GUGpXR3pBUTNFNVhRRkZ1QV9YUDJJcnJ1ZDNrbEFsSDItMWJNaFk3Q2ppV0FJNElIWlQ0dFA1czJwOF9SSmdPSjFPVUNuNm0yeUlDRWdobWxWaFVrWHA1Mkhha0FIOXpnZnUzMHZ1cmp0dDV3VFZaenZURkduWmVyNWpnVkFtSTBEeVRxYkwtQkdXclRMazEyY1plbTRuUkFPMDFscEZmXzRUV2FCZmlGSjFwai1CSHhFV3JpRE40b1k3ejViaGZWRkxldW56RnZtaEV6Qk05bUN4WkRWLVVrOVg3RU50eVBhbVB4ZU5seUxtYjBsVks0eGhSSDVodF9BQXhoYWx2cmpfbFFQbnp1a2lERkhjbjNxemFiVFJ0RnRtcGRfaWFBS1pKUzNyOTlvVWF5Mng5YUVTejlvTWpZRVN1SzI1aGJRUWlBTHIxR2dlcU9MS0FaN2RqZHc2VXdqSWc5ODNmNF9VcDZ1eWg1VUFkOGdSSkJKNmxTd1duQnh1dnh4MDJhVURYQTBkMHB6R2dVcnY1MU9UaUpETWtwbnV4cmFHTmNXallwVTVYa3hxOFF3WW5rdXJ6a1MxUEJvY3lVOHVVV0hFb2IwcURyWjQ2bVFEeElZdlNRTk0tVXNQT2s2bW4zbmY4bnp5RUNFY3BQVXVZTnA5WGQySERtTWxTc1VLTDZlbjlURlBWVEZoS0l2RmlmRWdjTXB3Tm81QTNMSmZGSUF6QU9YNVkydDV1S2hxSlhqTmpDQjUxQ2lrUmpnZUVRSWt5VjB3Z1Rpam5VTzAya0VjaHFtX2p3bEpScjRiemhxWnpxSXJ0SXI?oc=5",
+      "articleUrl": "https://www.mubasher.info/news/4642843/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B9%D9%84%D9%86-%D8%A7%D8%B3%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%D9%87-%D9%84%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D9%88%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%84%D8%A5%D9%86%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%88%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B1/%7B%7Bdetails.article.section.url%7D%7D/",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-01T06:13:39.531Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-01T06:16:02.968Z",
+      "canonicalUrl": "https://www.mubasher.info/news/4642843/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B9%D9%84%D9%86-%D8%A7%D8%B3%D8%AA%D8%B9%D8%AF%D8%A7%D8%AF%D9%87-%D9%84%D9%84%D9%88%D8%B3%D8%A7%D8%B7%D8%A9-%D8%A8%D9%8A%D9%86-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D9%88%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%84%D8%A5%D9%86%D9%87%D8%A7%D8%A1-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%88%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D8%AD%D9%88%D8%A7%D8%B1/%7B%7Bdetails.article.section.url%7D%7D/",
+      "originalTextArabic": "العراق يعلن استعداده للوساطة بين أمريكا وإيران لإنهاء التصعيد واستئناف الحوار\n\n وزير الخارجية العراقي فؤاد حسين \n\n -->\n\n GPT AdSlot 2 for Ad unit 'Mubahser_KSA/Mubasher_KSA_Mobile_ROS' ### Size: [[300,250]]\n\n End AdSlot 2\n\n -->\n\n GPT AdSlot 2 for Ad unit 'Mubahser_EGY/Mubasher_EGY_Mobile_ROS' ### Size: [[300,250]]\n\n End AdSlot 2\n\n-->\n\n GPT AdSlot 2 for Ad unit 'Mubahser_GCC/Mubasher_GCC_Mobile_ROS' ### Size: [[300,250]]\n\n End AdSlot 2\n\n -->\n\n GPT AdSlot 2 for Ad unit 'Mubahser_other/Mubasher_Other_Mobile_ROS' ### Size: [[300,250]]\n\n End AdSlot 2\n\n -->\n\n 18 يوليو 2026 01:32 م \n\n -->\n\n-->\n\nمباشر: أعلن وزير الخارجية العراقي، فؤاد حسين، استعداد بلاده للقيام بدور الوسيط بين الولايات المتحدة وإيران، بهدف وقف الحرب وتهيئة الظروف لاستئناف الحوار بين الجانبين، مؤكدًا أن إنهاء التصعيد يمثل الأولوية في المرحلة الحالية.\n\n وقال حسين، في مقابلة مع \"الشرق\"، إن رئيس الوزراء العراقي علي الزيدي سيزور إيران في 23 يوليو الجاري، عقب زيارته إلى الولايات المتحدة، مشيرًا إلى أن بغداد ستطرح خلال الزيارة رؤيتها بشأن ضرورة وقف الحرب.\n\n وأوضح أن أي نقاش حول المبادرات، خاصة الجوانب الاقتصادية، يتطلب أولًا إنهاء التصعيد، مضيفًا أن \"كل الأمور يمكن التحدث عنها إذا تم إنهاء الحرب\".\n\n وأكد وزير الخارجية العراقي أن بغداد سبق أن لعبت دورًا في تقريب وجهات النظر بين طهران وواشنطن خلال فترات سابقة، مشيرًا إلى أنها لا تحمل رسالة أمريكية إلى إيران، لكنها تستطيع نقل ما سمعته من آراء في واشنطن، إلى جانب عرض موقفها العراقي.\n\n وأشار إلى أن جولة رئيس الوزراء العراقي تشمل زيارة إلى تركيا في 28 يوليو الجاري، إلى جانب زيارة محتملة إلى المملكة العربية السعودية.\n\n ولفت حسين إلى أن الحرب ألحقت أضرارًا مباشرة بالعراق، خاصة في ظل صعوبة تصدير النفط عبر مضيق هرمز، الذي يمثل المنفذ الرئيسي لصادرات النفط العراقية، موضحًا أن الصادرات عبر خط أنابيب إقليم كردستان إلى تركيا لا تتجاوز نحو 200 ألف برميل يوميًا.\n\n وشدد على أن الحل يكمن في العودة إلى الحوار وإنهاء الحرب، مؤكدًا أن العراق يعمل على تجنيب نفسه تداعيات الصراع، رغم تأثره المباشر بالتصعيد.\n\n وفي الشأن الداخلي، أكد وزير الخارجية العراقي أن ملف الفصائل المسلحة يرتبط بالسياسة والدستور العراقي، الذي لا يسمح بوجود سلاح خارج إطار الدولة، مشددًا على أن قرار السلم والحرب يجب أن يكون بيد الحكومة.\n\n وأوضح أن ثلاث فصائل سلمت أسلحتها بالفعل إلى القوات المسلحة، فيما يجري الحوار مع أربع فصائل أخرى، مشيرًا إلى أن اثنتين منها أعلنتا عزمهما تسليم أسلحتهما بعد مغادرة القوات الأمريكية في سبتمبر المقبل.\n\n وفيما يتعلق بالعلاقات مع سوريا، قال حسين إن بغداد رفعت مستوى علاقاتها مع الحكومة السورية الجديدة، موضحًا أن المباحثات تناولت ملفات النفط والاقتصاد، وأسفرت عن تفاهمات بشأن إعادة بناء خط أنابيب النفط بين العراق ومدينة بانياس السورية بمشاركة شركات أمريكية وخليجية.\n\n كما أشار إلى مشروع آخر لمد خط أنابيب نفط إلى العقبة في الأردن، لافتًا إلى بحث هذه الملفات خلال الفترة المقبلة.\n\n وأكد وزير الخارجية العراقي تطلع بغداد إلى تعزيز استثمارات الشركات الأمريكية في قطاعات البنية التحتية والنفط والغاز، مشيرًا إلى أن العراق بحاجة إلى شركاء أقوياء يمتلكون الخبرات والتكنولوجيا لدعم التنمية الاقتصادية.\n\n وشدد حسين على تحسن علاقات العراق مع محيطه العربي، مشيرًا إلى تعزيز التعاون مع السعودية والكويت والأردن ومصر وسوريا.\n\n وبشأن الوجود العسكري الأمريكي، أوضح أن انسحاب قوات التحالف الدولي، ومن ضمنها القوات الأمريكية، يتم وفق الاتفاقات المبرمة، وأن المرحلة الأخيرة من الانسحاب من كردستان العراق مقررة بحلول نهاية سبتمبر المقبل، مع استمرار الحاجة إلى التعاون الأمنى والاستخباراتي.\n\n وأكد حسين أن العراق ليس طرفًا في الحرب ولا يؤمن بتوسيع نطاقها، مشددًا على أن بغداد ستواصل جهودها لحماية البلاد وتجنيبها تداعيات الصراع.\n\n-->\n\n سياسة\n\n اقتصاد كلي\n\n الوزارات\n\n المصدر :\n مباشر \n\n -->\n\n -->\n\n -->\n\n -->\n\n أخبار منوعة\n\n حمزة عبدالكريم يسجل ثنائية مع برشلونة- فيديو \n\n رياضة\n\n لجنة الحكام تعتمد \"تعديلات المونديال\" في الموسم الجديد \n\n رياضة\n\n \"الاستعلامات المصرية\": تحقيقات جارية لتحديد الجهة المسؤولة عن حادث ميناء دمياط \n\n منوعات\n\n رسمياً.. تطبيق زيادة تصاعدية على أسعار الكهرباء في مصر \n\n منوعات",
+      "sourceHost": "mubasher.info",
+      "contentChars": 3802,
+      "arabicRatio": 0.9178,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-01T06:17:06.594Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V4"
+      },
+      "eventGroup": {
+        "groupId": "event-HnbpnQavV9R8-sc0vQ",
+        "representativeArticleId": "discovery-DtTyvzdilSi96pqGYVPvKNDM",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 39,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 27,
+          "countryImportance": 15,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "이라크의 대외 중재 의지 표명 및 중동정세 관련 내용으로 비스마야 사업과 직접 연관된 내용이 없으며, 계약·대금·재개와 관련된 정보도 없음.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "1a45d78fc058e16f27b1",
+        "ruleScore": 73,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 20,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REFERENCE",
+        "aiReasonKo": "이라크의 대외 중재 의지 표명 및 중동정세 관련 내용으로 비스마야 사업과 직접 연관된 내용이 없으며, 계약·대금·재개와 관련된 정보도 없음.",
+        "aiBreakdown": {
+          "bismayahRelevance": 0,
+          "decisionMakerInfluence": 10,
+          "contractPaymentImpact": 0,
+          "responseUrgency": 0,
+          "sourceReliability": 10
+        }
+      },
+      "contentHash": "43598de0a2dcfabad1905594463201c7cf0641aea171eff22e0a131a5481365b",
+      "contentCheckedAt": "2026-08-01T06:17:06.594Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-jilY6APU6qvHLfKQhGhhAX_N",
       "keywordId": "politics-cf-002",
       "category": "politics",
@@ -73816,15 +74856,15 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V1",
-    "before": 472,
-    "retained": 448,
-    "excluded": 24,
+    "before": 445,
+    "retained": 445,
+    "excluded": 0,
     "leadChars": 2200
   },
   "eventGrouping": {
-    "groupCount": 391,
-    "duplicateGroupCount": 16,
-    "duplicateArticleCount": 21,
+    "groupCount": 400,
+    "duplicateGroupCount": 17,
+    "duplicateArticleCount": 22,
     "maxHours": 72,
     "minScore": 0.5,
     "method": "ARABIC_CANONICAL_BILATERAL_EVENT_V4"
