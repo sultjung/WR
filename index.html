@@ -45,10 +45,10 @@
           <input id="reportDate" type="date">
         </label>
         <label>보고기간 시작
-          <input id="reportStartDate" type="date">
+          <input id="reportStartDate" type="date" readonly aria-readonly="true" title="보고일 기준 7일 전으로 자동 설정됩니다.">
         </label>
         <label>보고기간 종료
-          <input id="reportEndDate" type="date">
+          <input id="reportEndDate" type="date" readonly aria-readonly="true" title="보고일 기준 1일 전으로 자동 설정됩니다.">
         </label>
         <button id="requestReport" class="report-button" type="button">선택 기사로 보고서 생성</button>
         <a id="latestReportLink" class="latest-report-link" href="./reports/latest.docx" target="_blank" rel="noopener" hidden>최근 생성 보고서 다운로드</a>
@@ -118,6 +118,7 @@
 
   <script src="./importance-fallback.js"></script>
   <script src="./app.js"></script>
+  <script src="./report-date-range.js"></script>
   <script src="./importance-badge-colors.js"></script>
 </body>
 </html>
