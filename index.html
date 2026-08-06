@@ -41,14 +41,14 @@
         <p>선택한 기사만 고급 AI가 실제 보고서 문체로 재편집하고, 오피넷의 보고일 전일·전전일 국제유가를 반영해 Word 파일을 생성합니다.</p>
       </div>
       <div class="report-builder-controls">
-        <label>보고일
-          <input id="reportDate" type="date">
-        </label>
         <label>보고기간 시작
           <input id="reportStartDate" type="date" readonly aria-readonly="true" title="보고일 기준 7일 전으로 자동 설정됩니다.">
         </label>
         <label>보고기간 종료
           <input id="reportEndDate" type="date" readonly aria-readonly="true" title="보고일 기준 1일 전으로 자동 설정됩니다.">
+        </label>
+        <label>보고일
+          <input id="reportDate" type="date">
         </label>
         <button id="requestReport" class="report-button" type="button">선택 기사로 보고서 생성</button>
         <a id="latestReportLink" class="latest-report-link" href="./reports/latest.docx" target="_blank" rel="noopener" hidden>최근 생성 보고서 다운로드</a>
