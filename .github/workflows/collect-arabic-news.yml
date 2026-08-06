@@ -2,6 +2,10 @@ name: Collect Arabic News
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "config/priority-news-seeds.json"
   schedule:
     - cron: "20 21 * * *" # 06:20 KST
     - cron: "30 3 * * *"  # 12:30 KST
@@ -64,11 +68,21 @@ jobs:
           MIN_TITLE_SIMILARITY: "0.54"
         run: npm run collect:recover
 
+      - name: Discover NIC and Bismayah priority sources directly
+        env:
+          PRIORITY_DISCOVERY_TIMEOUT_MS: "18000"
+          PRIORITY_DISCOVERY_MAX_DETAIL_FETCHES: "60"
+          NEWS_DISCOVERY_DAYS: "14"
+        run: npm run collect:priority-discovery
+
       - name: Verify recovered and fallback article URLs
         env:
           URL_RESOLVE_TIMEOUT_MS: "15000"
           URL_RESOLVE_CONCURRENCY: "4"
         run: npm run collect:resolve
+
+      - name: Preserve priority aggregator fallback URLs
+        run: npm run collect:priority-aggregator-fallback
 
       - name: Snapshot processed article state
         run: npm run collect:incremental-prepare
