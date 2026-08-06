@@ -61,6 +61,26 @@ console.log(`[diagnose-priority-article] total=${articles.length} exact=${exact.
 console.log(`[diagnose-priority-article] exact=${JSON.stringify(exact.map(summary), null, 2)}`);
 console.log(`[diagnose-priority-article] related=${JSON.stringify(related.map(summary).slice(0, 30), null, 2)}`);
 
+const targetUrl = "https://hathalyoum.net/articles/4207696";
+try {
+  const response = await fetch(targetUrl, {
+    redirect: "follow",
+    headers: {
+      "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/131 Safari/537.36",
+      accept: "text/html,application/xhtml+xml;q=0.9,*/*;q=0.7",
+      "accept-language": "ar-IQ,ar;q=0.9,en;q=0.4"
+    }
+  });
+  const html = await response.text();
+  const h1 = html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "";
+  const articleBlocks = [...html.matchAll(/<article\b[^>]*>([\s\S]*?)<\/article>/gi)].map((match) => match[1].length);
+  const mainBlocks = [...html.matchAll(/<main\b[^>]*>([\s\S]*?)<\/main>/gi)].map((match) => match[1].length);
+  const arabicChars = (html.match(/[\u0600-\u06FF]/g) || []).length;
+  console.log(`[diagnose-priority-http] status=${response.status} finalUrl=${response.url} htmlChars=${html.length} arabicChars=${arabicChars} h1Chars=${h1.length} articleBlocks=${JSON.stringify(articleBlocks)} mainBlocks=${JSON.stringify(mainBlocks)}`);
+} catch (error) {
+  console.log(`[diagnose-priority-http] error=${String(error?.stack || error)}`);
+}
+
 const temp = await fs.mkdtemp(path.join(os.tmpdir(), "wr-priority-fetch-"));
 try {
   await fs.mkdir(path.join(temp, "data"), { recursive: true });
@@ -75,9 +95,9 @@ try {
       category: "bismayah",
       priority: 100,
       originalTitleArabic: "الاستثمار تبحث مع هانوا الكورية استكمال مشروع بسماية وتعد بحل العقبات المالية",
-      articleUrl: "https://hathalyoum.net/articles/4207696",
-      discoveryUrl: "https://hathalyoum.net/articles/4207696",
-      priorityAggregatorUrl: "https://hathalyoum.net/articles/4207696",
+      articleUrl: targetUrl,
+      discoveryUrl: targetUrl,
+      priorityAggregatorUrl: targetUrl,
       recoveredSourceId: "hathalyoum",
       allowAggregatorFallback: true,
       urlRecoveryMethod: "priority-source-index",
@@ -110,7 +130,7 @@ try {
   console.log(`[diagnose-priority-fetch] status=${run.status} signal=${run.signal || ""}`);
   console.log(`[diagnose-priority-fetch] stdout=${String(run.stdout || "").trim()}`);
   console.log(`[diagnose-priority-fetch] stderr=${String(run.stderr || "").trim()}`);
-  console.log(`[diagnose-priority-fetch] stats=${JSON.stringify(fetched?.collectionStats || null)}`);
+  console.log(`[diagnose-priority-fetch] stats=${JSON.stringify(fetched?.collectionRun || null)}`);
   console.log(`[diagnose-priority-fetch] articles=${JSON.stringify((fetched?.articles || []).map(summary), null, 2)}`);
 } finally {
   await fs.rm(temp, { recursive: true, force: true });
