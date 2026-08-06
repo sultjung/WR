@@ -14,8 +14,16 @@ function hostnameOf(url = "") {
   try { return new URL(url).hostname.replace(/^www\./, "").toLowerCase(); } catch { return ""; }
 }
 
-function isForbiddenArticleUrl(url = "") {
-  const host = hostnameOf(url);
+function isExplicitPriorityAggregatorFallback(article = {}) {
+  return hostnameOf(article.articleUrl) === "hathalyoum.net"
+    && article.category === "bismayah"
+    && article.allowAggregatorFallback === true
+    && article.recoveredSourceId === "hathalyoum";
+}
+
+function isForbiddenArticleUrl(article = {}) {
+  const host = hostnameOf(article.articleUrl);
+  if (host === "hathalyoum.net") return !isExplicitPriorityAggregatorFallback(article);
   return !host
     || host === "news.google.com"
     || /(^|\.)google\.[a-z.]+$/i.test(host)
@@ -29,8 +37,7 @@ function isForbiddenArticleUrl(url = "") {
     || /w3\.org$/i.test(host)
     || /schema\.org$/i.test(host)
     || /xmlsoft\.org$/i.test(host)
-    || /nabd\.com$/i.test(host)
-    || /hathalyoum\.net$/i.test(host);
+    || /nabd\.com$/i.test(host);
 }
 
 function normalizeArabic(value = "") {
@@ -128,7 +135,7 @@ for (const { file, required } of FILES) {
       errorCount += 1;
     }
 
-    if (article.articleUrl && isForbiddenArticleUrl(article.articleUrl)) {
+    if (article.articleUrl && isForbiddenArticleUrl(article)) {
       console.error(`[validate-data] ${label}[${index}]: forbidden articleUrl ${article.articleUrl}`);
       errorCount += 1;
     }
