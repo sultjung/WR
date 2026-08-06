@@ -46,7 +46,8 @@ try {
         articleUrl: "https://hathalyoum.net/articles/4207696",
         urlStatus: "RECOVERED",
         recoveredSourceId: "hathalyoum",
-        allowAggregatorFallback: true
+        allowAggregatorFallback: true,
+        urlRecoveryMethod: "priority-source-index"
       }
     ]
   }, null, 2));
