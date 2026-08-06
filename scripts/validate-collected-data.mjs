@@ -1,44 +1,15 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { isForbiddenArticleUrl } from "./article-url-policy.mjs";
 
-const ROOT = process.cwd();
+const ROOT = path.resolve(process.env.COLLECTED_DATA_ROOT || process.cwd());
 const FILES = [
   { file: path.join(ROOT, "data", "discovered-articles.json"), required: false },
   { file: path.join(ROOT, "data", "recovered-articles.json"), required: false },
   { file: path.join(ROOT, "data", "resolved-articles.json"), required: false },
   { file: path.join(ROOT, "data", "articles.json"), required: true }
 ];
-
-function hostnameOf(url = "") {
-  try { return new URL(url).hostname.replace(/^www\./, "").toLowerCase(); } catch { return ""; }
-}
-
-function isExplicitPriorityAggregatorFallback(article = {}) {
-  return hostnameOf(article.articleUrl) === "hathalyoum.net"
-    && article.category === "bismayah"
-    && article.allowAggregatorFallback === true
-    && article.recoveredSourceId === "hathalyoum";
-}
-
-function isForbiddenArticleUrl(article = {}) {
-  const host = hostnameOf(article.articleUrl);
-  if (host === "hathalyoum.net") return !isExplicitPriorityAggregatorFallback(article);
-  return !host
-    || host === "news.google.com"
-    || /(^|\.)google\.[a-z.]+$/i.test(host)
-    || /gstatic\.com$/i.test(host)
-    || /googleusercontent\.com$/i.test(host)
-    || /facebook\.com$/i.test(host)
-    || /instagram\.com$/i.test(host)
-    || /youtube\.com$/i.test(host)
-    || /twitter\.com$/i.test(host)
-    || /(?:^|\.)x\.com$/i.test(host)
-    || /w3\.org$/i.test(host)
-    || /schema\.org$/i.test(host)
-    || /xmlsoft\.org$/i.test(host)
-    || /nabd\.com$/i.test(host);
-}
 
 function normalizeArabic(value = "") {
   return String(value)
