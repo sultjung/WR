@@ -25,7 +25,7 @@
     "audit:foreign-local": "node scripts/audit-foreign-local-leakage.mjs",
     "collect:discover": "node scripts/collect-arabic-news.mjs",
     "collect:recover": "node scripts/recover-source-urls.mjs && node scripts/sanitize-recovered-article-urls.mjs",
-    "collect:priority-discovery": "node scripts/discover-priority-source-news.mjs",
+    "collect:priority-discovery": "node scripts/discover-priority-source-news.mjs && node scripts/sanitize-recovered-article-urls.mjs",
     "collect:resolve": "node scripts/resolve-article-urls.mjs",
     "collect:priority-aggregator-fallback": "node scripts/restore-priority-aggregator-urls.mjs",
     "collect:incremental-prepare": "node scripts/prepare-incremental-collection.mjs",
