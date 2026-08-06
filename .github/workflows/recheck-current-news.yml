@@ -65,13 +65,13 @@ jobs:
 
       - name: Commit rechecked data
         run: |
-          if git diff --quiet -- data/*.json; then
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -u -- data/
+          if git diff --cached --quiet; then
             echo "No relevance changes"
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/*.json
           git commit -m "Recheck current news relevance and duplicate groups"
           git pull --rebase origin main
           git push origin main
