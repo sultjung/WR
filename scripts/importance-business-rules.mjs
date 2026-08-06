@@ -71,6 +71,7 @@ export function businessFloorFor(article = {}) {
   const iraqHousing = hasAny(text, TERMS.housing) && hasAny(text, TERMS.iraq);
   const rules = [];
 
+  if (bismayah && hanwha && nic) rules.push([98, "BISMAYAH_NIC_HANWHA_DIRECT", "비스마야 사업·NIC·شركة هانوا가 모두 직접 연결된 최우선 사업 기사임"]);
   if (bismayah && governmentDecision) rules.push([95, "BISMAYAH_GOVERNMENT_DECISION", "총리·국무회의 등 정부 의사결정이 비스마야 사업에 직접 관련됨"]);
   if ((bismayah || hanwha) && contract) rules.push([95, "BISMAYAH_CONTRACT_PAYMENT_EXECUTION", "비스마야 사업의 계약·대금·금융·보증 또는 사업 재개에 직접 관련됨"]);
   if (nic && nicChair && personnel) rules.push([90, "NIC_CHAIR_PERSONNEL_CHANGE", "NIC 의장 임명·해임·교체는 비스마야 사업의 협의 및 의사결정 체계에 직접 영향을 줌"]);
