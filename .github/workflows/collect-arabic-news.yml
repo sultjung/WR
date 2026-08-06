@@ -5,6 +5,7 @@ on:
   push:
     branches: [main]
     paths:
+      - ".github/workflows/collect-arabic-news.yml"
       - "config/priority-news-seeds.json"
   schedule:
     - cron: "20 21 * * *" # 06:20 KST
@@ -93,7 +94,7 @@ jobs:
           CONTENT_FETCH_CONCURRENCY: "3"
           MIN_ARABIC_CONTENT_CHARS: "300"
           MIN_ARABIC_RATIO: "0.35"
-          ARTICLE_RETENTION_DAYS: "30"
+          ARTICLE_RETENTION_DAYS: "14"
         run: npm run collect:content
 
       - name: Repair invalid and metadata-based article titles
