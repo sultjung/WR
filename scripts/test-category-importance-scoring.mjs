@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import assert from "node:assert/strict";
+import { businessFloorFor } from "./importance-business-rules.mjs";
 import {
   categoryFloorFor,
   categoryOf,
@@ -38,4 +39,14 @@ const smallLocalDelay = {
 const localFloor = categoryFloorFor(smallLocalDelay);
 assert.equal(localFloor.score, 0, `minor local delay must not receive national oversight floor, got ${localFloor.score}`);
 
-console.log(`[test-category-importance] category=economy, floor=${floorResult.score}, localFloor=${localFloor.score}`);
+const nicHanwhaBismayah = {
+  category: "bismayah",
+  articleUrl: "https://hathalyoum.net/articles/4207696",
+  originalTitleArabic: "رئيس الهيئة الوطنية للاستثمار يبحث سير العمل في مشروع بسماية مع شركة هانوا الكورية",
+  originalTextArabic: "بحث رئيس الهيئة الوطنية للاستثمار مع ممثل شركة هانوا الكورية سير العمل في مشروع مدينة بسماية الجديدة."
+};
+const businessFloor = businessFloorFor(nicHanwhaBismayah);
+assert.equal(businessFloor.rule, "BISMAYAH_NIC_HANWHA_DIRECT");
+assert.equal(businessFloor.score, 98);
+
+console.log(`[test-category-importance] category=economy, floor=${floorResult.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
