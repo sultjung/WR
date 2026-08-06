@@ -14,11 +14,15 @@ function normalizeUrl(value = "") {
   } catch { return ""; }
 }
 
+function fallbackUrlOf(item = {}) {
+  return normalizeUrl(item.priorityAggregatorUrl || item.articleUrl);
+}
+
 const recovered = JSON.parse(await fs.readFile(RECOVERED_FILE, "utf8"));
 const resolved = JSON.parse(await fs.readFile(RESOLVED_FILE, "utf8"));
 const fallbackById = new Map((recovered.articles || [])
-  .filter((item) => item.allowAggregatorFallback === true && item.articleUrl)
-  .map((item) => [item.articleId, item]));
+  .filter((item) => item.allowAggregatorFallback === true && fallbackUrlOf(item))
+  .map((item) => [item.articleId, { ...item, fallbackArticleUrl: fallbackUrlOf(item) }]));
 let restoredCount = 0;
 const articles = (resolved.articles || []).map((item) => {
   const fallback = fallbackById.get(item.articleId);
@@ -26,15 +30,16 @@ const articles = (resolved.articles || []).map((item) => {
   restoredCount += 1;
   return {
     ...item,
-    articleUrl: normalizeUrl(fallback.articleUrl),
-    discoveryUrl: fallback.discoveryUrl || item.discoveryUrl,
-    priorityAggregatorUrl: fallback.priorityAggregatorUrl || item.priorityAggregatorUrl,
+    articleUrl: fallback.fallbackArticleUrl,
+    discoveryUrl: item.discoveryUrl || fallback.discoveryUrl,
+    priorityAggregatorUrl: fallback.priorityAggregatorUrl || fallback.fallbackArticleUrl,
     urlStatus: "RESOLVED",
     urlRecoveryMethod: fallback.urlRecoveryMethod || item.urlRecoveryMethod,
     urlResolutionMethod: "PRIORITY_AGGREGATOR_FALLBACK",
     recoveredSourceId: fallback.recoveredSourceId || item.recoveredSourceId,
     priorityDiscovery: fallback.priorityDiscovery || item.priorityDiscovery,
     allowAggregatorFallback: true,
+    allowPriorityContentFallback: fallback.allowPriorityContentFallback === true,
     errorCode: null,
     resolutionError: undefined,
     resolvedAt: new Date().toISOString()
