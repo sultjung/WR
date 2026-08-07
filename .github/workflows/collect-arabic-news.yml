@@ -11,6 +11,7 @@ on:
       - "scripts/article-translation-ai.mjs"
       - "scripts/generate-article-translations.mjs"
       - "scripts/validate-article-translations.mjs"
+      - "scripts/validate-collected-data.mjs"
       - "scripts/preserve-processed-articles.mjs"
       - "scripts/prune-rolling-article-window.mjs"
       - "package.json"
@@ -184,6 +185,9 @@ jobs:
         run: npm run audit:foreign-local
 
       - name: Validate collected data and full translations
+        env:
+          MIN_ARABIC_CONTENT_CHARS: "30"
+          MIN_ARABIC_RATIO: "0.35"
         run: npm run validate:data
 
       - name: Commit collected data
