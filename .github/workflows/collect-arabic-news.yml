@@ -21,7 +21,7 @@ concurrency:
 jobs:
   collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 90
 
     steps:
       - name: Checkout repository
@@ -48,7 +48,7 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
-      - name: Test relevance, category routing, grouping, cards, and translation terms
+      - name: Test relevance, category routing, grouping, importance, and translation terms
         run: npm test
 
       - name: Discover broad Arabic news candidates with Google News
@@ -100,7 +100,7 @@ jobs:
       - name: Repair invalid and metadata-based article titles
         run: npm run collect:title-fix
 
-      - name: Preserve unchanged facts, cards, translations, analysis, and related titles
+      - name: Preserve unchanged translations, analysis, importance, and related titles
         run: npm run collect:incremental-preserve
 
       - name: Enforce exact Iraq scope before classification and scoring
@@ -136,25 +136,23 @@ jobs:
           IMPORTANCE_AI_TIMEOUT_MS: "60000"
         run: npm run collect:importance-business
 
-      - name: Extract Arabic facts then create Korean article cards
+      - name: Translate Arabic titles and full article text into Korean
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          CARD_AI_REQUIRED: "true"
-          CARD_FACT_MODEL: ${{ vars.CARD_FACT_MODEL || 'gpt-4.1-mini' }}
-          CARD_KO_MODEL: ${{ vars.CARD_KO_MODEL || 'gpt-4.1-mini' }}
-          CARD_MODEL_FALLBACKS: "gpt-4o-mini"
-          CARD_AI_BATCH_SIZE: "3"
-          CARD_AI_MAX_ARTICLES: "60"
-          CARD_SOURCE_MAX_CHARS: "16000"
-          CARD_AI_TIMEOUT_MS: "90000"
-          CARD_AI_RETRY_ATTEMPTS: "2"
-        run: npm run collect:cards
+          TRANSLATION_AI_REQUIRED: "true"
+          TRANSLATION_MODEL: ${{ vars.TRANSLATION_MODEL || 'gpt-4.1-mini' }}
+          TRANSLATION_MODEL_FALLBACKS: "gpt-4o-mini"
+          TRANSLATION_AI_MAX_ARTICLES: "30"
+          TRANSLATION_CHUNK_CHARS: "7000"
+          TRANSLATION_AI_TIMEOUT_MS: "120000"
+          TRANSLATION_AI_RETRY_ATTEMPTS: "2"
+        run: npm run collect:translations
 
       - name: Translate duplicate-article titles into Korean
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RELATED_TITLE_AI_REQUIRED: "true"
-          RELATED_TITLE_MODEL: ${{ vars.RELATED_TITLE_MODEL || vars.CARD_KO_MODEL || 'gpt-4.1-mini' }}
+          RELATED_TITLE_MODEL: ${{ vars.RELATED_TITLE_MODEL || vars.TRANSLATION_MODEL || 'gpt-4.1-mini' }}
           RELATED_TITLE_MODEL_FALLBACKS: "gpt-4o-mini"
           RELATED_TITLE_AI_BATCH_SIZE: "8"
           RELATED_TITLE_MAX_ARTICLES: "300"
@@ -165,7 +163,7 @@ jobs:
       - name: Audit foreign-local leakage
         run: npm run audit:foreign-local
 
-      - name: Validate collected data and article cards
+      - name: Validate collected data and full translations
         run: npm run validate:data
 
       - name: Commit collected data
@@ -177,6 +175,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/articles.json
-          git commit -m "Collect, score, and summarize Iraqi Arabic news"
+          git commit -m "Collect, score, and translate Iraqi Arabic news"
           git pull --rebase origin main
           git push origin main
