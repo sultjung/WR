@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="이라크·비스마야 사업 관련 아랍어 현지뉴스 검토 및 주간상황보고서 작성 지원">
-  <title>이라크 주간상황보고서</title>
+  <meta name="description" content="이라크·비스마야 사업 관련 아랍어 현지뉴스 자동수집, 한국어 전문번역 및 선별 기사 Word 다운로드">
+  <title>이라크 주간상황보고서 뉴스자료</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./importance-colors.css">
+  <link rel="stylesheet" href="./reader-mode.css">
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner">
       <div>
         <p class="eyebrow">IRAQ WEEKLY INTELLIGENCE</p>
-        <h1>이라크 주간상황보고서</h1>
-        <p class="subtitle">비스마야 사업 관련 아랍어 현지뉴스 검토 및 보고서 작성 지원</p>
+        <h1>이라크 주간상황보고서 뉴스자료</h1>
+        <p class="subtitle">비스마야 사업 관련 현지뉴스 자동수집 · 한국어 전문번역 · 보고서용 기사 선별</p>
       </div>
       <div class="header-status">
         <span class="status-dot" aria-hidden="true"></span>
@@ -31,29 +32,35 @@
       <button class="summary-card" data-filter="economy"><span>경제·건설</span><strong id="countEconomy">0</strong></button>
       <button class="summary-card" data-filter="security"><span>테러·치안</span><strong id="countSecurity">0</strong></button>
       <button class="summary-card" data-filter="international"><span>국제사회</span><strong id="countInternational">0</strong></button>
-      <button class="summary-card" data-filter="selected"><span>보고서 선택</span><strong id="countSelected">0</strong></button>
+      <button class="summary-card" data-filter="selected"><span>선택 기사</span><strong id="countSelected">0</strong></button>
     </section>
 
-    <section class="report-builder" aria-labelledby="reportBuilderTitle">
+    <section class="report-builder" aria-labelledby="sourceDownloadTitle">
       <div class="report-builder-copy">
-        <p class="report-kicker">FINAL REPORT</p>
-        <h2 id="reportBuilderTitle">주간상황보고서 생성</h2>
-        <p>선택한 기사만 고급 AI가 실제 보고서 문체로 재편집하고, 오피넷의 보고일 전일·전전일 국제유가를 반영해 Word 파일을 생성합니다.</p>
+        <p class="report-kicker">GPT SOURCE</p>
+        <h2 id="sourceDownloadTitle">선택 기사 Word 다운로드</h2>
+        <p>보고일 기준 7일의 기사 중 필요한 기사만 선택해 주간상황보고서 GPT에 바로 업로드할 수 있는 Word 자료집으로 내려받습니다. 사이트에서는 최종 보고서를 생성하지 않습니다.</p>
+        <div class="download-panel-status">
+          <span id="selectedDownloadCount" class="selection-count-pill">0건 선택</span>
+          <span class="download-note">Word에는 한국어 전문번역과 아랍어 원문을 함께 저장합니다.</span>
+        </div>
       </div>
       <div class="report-builder-controls">
-        <label>보고기간 시작
+        <label>대상기간 시작
           <input id="reportStartDate" type="date" readonly aria-readonly="true" title="보고일 기준 7일 전으로 자동 설정됩니다.">
         </label>
-        <label>보고기간 종료
+        <label>대상기간 종료
           <input id="reportEndDate" type="date" readonly aria-readonly="true" title="보고일 기준 1일 전으로 자동 설정됩니다.">
         </label>
         <label>보고일
           <input id="reportDate" type="date">
         </label>
-        <button id="requestReport" class="report-button" type="button">선택 기사로 보고서 생성</button>
-        <a id="latestReportLink" class="latest-report-link" href="./reports/latest.docx" target="_blank" rel="noopener" hidden>최근 생성 보고서 다운로드</a>
+        <div class="download-actions">
+          <button id="downloadSelected" class="report-button" type="button">선택 기사 Word 다운로드</button>
+          <button id="clearSelected" class="secondary-button" type="button">선택 초기화</button>
+        </div>
       </div>
-      <p id="reportRequestMessage" class="report-request-message" aria-live="polite"></p>
+      <p id="downloadMessage" class="report-request-message" aria-live="polite"></p>
     </section>
 
     <section class="toolbar" aria-label="기사 필터">
@@ -90,15 +97,15 @@
           <option value="failed">확보 실패</option>
         </select>
       </label>
-      <label>카드 요약 상태
+      <label>전문 번역 상태
         <select id="translationFilter">
           <option value="all">전체</option>
-          <option value="completed">요약 완료</option>
-          <option value="pending">요약 대기</option>
+          <option value="completed">번역 완료</option>
+          <option value="pending">번역 대기</option>
         </select>
       </label>
       <label class="search-field">검색
-        <input id="searchInput" type="search" placeholder="아랍어·한국어 제목, 언론사 검색">
+        <input id="searchInput" type="search" placeholder="한국어·아랍어 제목, 본문, 언론사 검색">
       </label>
       <button id="resetFilters" class="secondary-button" type="button">필터 초기화</button>
     </section>
@@ -106,9 +113,9 @@
     <section class="content-head">
       <div>
         <h2>수집 기사 검토</h2>
-        <p>아랍어 원문에서 먼저 추출한 핵심 사실을 한국어 카드 요약으로 확인한 뒤 보고서 반영 여부를 선택합니다.</p>
+        <p>AI 요약문 대신 기사 제목과 본문을 충실히 한국어로 번역합니다. 기본 화면에서는 앞부분만 보이고, ‘전문 펼쳐보기’에서 번역 전체를 확인할 수 있습니다.</p>
       </div>
-      <span id="visibleCount" class="result-count">0건 표시</span>
+      <span id="visibleCount" class="result-count">0개 사건 표시</span>
     </section>
 
     <section id="newsList" class="news-list empty" aria-live="polite">
@@ -117,8 +124,8 @@
   </main>
 
   <script src="./importance-fallback.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
   <script src="./app.js"></script>
-  <script src="./report-date-range.js"></script>
   <script src="./importance-badge-colors.js"></script>
 </body>
 </html>
