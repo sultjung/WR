@@ -1,6 +1,7 @@
 name: One-time Prune Articles To Current 7 Days
 
-# One-time maintenance workflow: keep KST 2026-08-01 through 2026-08-07 only.
+# One-time maintenance workflow: keep KST 2026-08-01 through 2026-08-07 only
+# and align direct-script defaults with production: discover 7 days, retain 14 days.
 on:
   push:
     branches: [main]
@@ -29,6 +30,44 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
+
+      - name: Align script defaults to discover 7 days and retain 14 days
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs/promises';
+
+          const edits = [
+            {
+              file: 'scripts/discover-priority-source-news.mjs',
+              oldText: 'const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 14);',
+              newText: 'const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 7);'
+            },
+            {
+              file: 'scripts/fetch-arabic-content.mjs',
+              oldText: 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 30);',
+              newText: 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 14);'
+            }
+          ];
+
+          for (const edit of edits) {
+            let text = await fs.readFile(edit.file, 'utf8');
+            if (text.includes(edit.newText)) {
+              console.log(`[defaults] already aligned: ${edit.file}`);
+              continue;
+            }
+            if (!text.includes(edit.oldText)) {
+              throw new Error(`Expected default not found in ${edit.file}`);
+            }
+            text = text.replace(edit.oldText, edit.newText);
+            await fs.writeFile(edit.file, text, 'utf8');
+            console.log(`[defaults] updated: ${edit.file}`);
+          }
+          NODE
+
+      - name: Check updated scripts
+        run: |
+          node --check scripts/discover-priority-source-news.mjs
+          node --check scripts/fetch-arabic-content.mjs
 
       - name: Keep only 2026-08-01 through 2026-08-07 articles
         run: |
@@ -89,16 +128,16 @@ jobs:
       - name: Validate pruned article data
         run: npm run validate:data
 
-      - name: Commit pruned data
+      - name: Commit maintenance changes
         run: |
           set -euo pipefail
-          if git diff --quiet -- data/articles.json; then
-            echo "No articles required pruning"
+          if git diff --quiet -- data/articles.json scripts/discover-priority-source-news.mjs scripts/fetch-arabic-content.mjs; then
+            echo "No maintenance changes required"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/articles.json
-          git commit -m "Keep only current 7-day articles [skip-prune]"
+          git add data/articles.json scripts/discover-priority-source-news.mjs scripts/fetch-arabic-content.mjs
+          git commit -m "Prune old articles and align news windows [skip-prune]"
           git pull --rebase origin main
           git push origin main
