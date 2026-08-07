@@ -118,6 +118,7 @@ for (const seed of seeds) {
     discoveryUrl: source?.discoveryUrl || seedUrl,
     priorityAggregatorUrl: source?.priorityAggregatorUrl || seedUrl,
     recoveredSourceId: source?.recoveredSourceId || "hathalyoum",
+    urlRecoveryMethod: "PRIORITY_AGGREGATOR_FALLBACK",
     allowAggregatorFallback: true,
     allowPriorityContentFallback: true,
     publishedAt,
