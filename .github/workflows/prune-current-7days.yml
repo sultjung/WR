@@ -1,5 +1,6 @@
 name: One-time Prune Articles To Current 7 Days
 
+# One-time maintenance workflow: keep KST 2026-08-01 through 2026-08-07 only.
 on:
   push:
     branches: [main]
