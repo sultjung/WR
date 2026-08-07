@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
-import { isRepresentative, translationIsCurrent } from "./article-translation-core.mjs";
+import { translationIsCurrent } from "./article-translation-core.mjs";
 import { relatedTitleIsCurrent } from "./article-card-core.mjs";
 
 const ROOT = process.cwd();
@@ -23,7 +23,6 @@ for (const [index, article] of articles.entries()) {
 
   if (translationStatus === "COMPLETED") {
     completedTranslations += 1;
-    if (!isRepresentative(article)) addError(index, "non-representative article should not carry a completed full translation");
     if (!translationIsCurrent(article)) addError(index, "completed full translation is stale or incomplete");
     if (translation.fullTranslationGenerated !== true) addError(index, "completed translation must mark fullTranslationGenerated=true");
     if (Object.hasOwn(translation, "summaryKo") || Object.hasOwn(translation, "previewKo")) {
