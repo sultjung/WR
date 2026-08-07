@@ -4,6 +4,8 @@ import path from "node:path";
 import { isForbiddenArticleUrl } from "./article-url-policy.mjs";
 
 const ROOT = path.resolve(process.env.COLLECTED_DATA_ROOT || process.cwd());
+const MIN_CONTENT_CHARS = Math.max(1, Number(process.env.MIN_ARABIC_CONTENT_CHARS || 30));
+const MIN_ARABIC_RATIO = Number(process.env.MIN_ARABIC_RATIO || 0.35);
 const FILES = [
   { file: path.join(ROOT, "data", "discovered-articles.json"), required: false },
   { file: path.join(ROOT, "data", "recovered-articles.json"), required: false },
@@ -117,11 +119,11 @@ for (const { file, required } of FILES) {
     }
 
     if (article.contentStatus === "FULL_TEXT") {
-      if (!article.originalTextArabic || article.originalTextArabic.length < 300) {
-        console.error(`[validate-data] ${label}[${index}]: FULL_TEXT without sufficient Arabic body`);
+      if (!article.originalTextArabic || article.originalTextArabic.length < MIN_CONTENT_CHARS) {
+        console.error(`[validate-data] ${label}[${index}]: FULL_TEXT without sufficient Arabic body (<${MIN_CONTENT_CHARS} chars)`);
         errorCount += 1;
       }
-      if (Number(article.arabicRatio || 0) < 0.35) {
+      if (Number(article.arabicRatio || 0) < MIN_ARABIC_RATIO) {
         console.error(`[validate-data] ${label}[${index}]: Arabic ratio below threshold`);
         errorCount += 1;
       }
@@ -147,4 +149,4 @@ if (errorCount) {
   console.error(`[validate-data] failed with ${errorCount} error(s), ${warningCount} warning(s)`);
   process.exit(1);
 }
-console.log(`[validate-data] all collected data checks passed with ${warningCount} warning(s)`);
+console.log(`[validate-data] all collected data checks passed with ${warningCount} warning(s); minArabicChars=${MIN_CONTENT_CHARS}`);
