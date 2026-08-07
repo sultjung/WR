@@ -63,7 +63,7 @@ jobs:
       - name: Discover broad Arabic news candidates with Google News
         env:
           COLLECT_CATEGORIES: "bismayah,politics,economy,security,international"
-          NEWS_DISCOVERY_DAYS: "14"
+          NEWS_DISCOVERY_DAYS: "7"
           MAX_PER_QUERY: "30"
           FETCH_TIMEOUT_MS: "15000"
           DISCOVERY_CONCURRENCY: "4"
@@ -82,7 +82,7 @@ jobs:
         env:
           PRIORITY_DISCOVERY_TIMEOUT_MS: "18000"
           PRIORITY_DISCOVERY_MAX_DETAIL_FETCHES: "60"
-          NEWS_DISCOVERY_DAYS: "14"
+          NEWS_DISCOVERY_DAYS: "7"
         run: npm run collect:priority-discovery
 
       - name: Verify recovered and fallback article URLs
