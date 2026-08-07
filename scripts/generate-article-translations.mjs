@@ -17,6 +17,7 @@ const ARTICLES_FILE = path.resolve(process.env.TRANSLATION_ARTICLES_FILE || path
 const required = /^(1|true|yes)$/i.test(process.env.TRANSLATION_AI_REQUIRED || "false");
 const maxArticles = Math.max(0, Number(process.env.TRANSLATION_AI_MAX_ARTICLES || 60));
 const chunkChars = Math.max(3000, Number(process.env.TRANSLATION_CHUNK_CHARS || 7000));
+const concurrency = Math.max(1, Math.min(4, Number(process.env.TRANSLATION_CONCURRENCY || 2)));
 const retryAttempts = Math.max(1, Math.min(3, Number(process.env.TRANSLATION_AI_RETRY_ATTEMPTS || 2)));
 
 function importanceScore(article = {}) {
@@ -139,18 +140,20 @@ const articles = rawArticles.map((article) => {
   return reconciled.article;
 });
 
-const candidates = articles
+const eligible = articles
   .map((article, index) => ({ article, index, id: articleIdOf(article, index) }))
   .filter(({ article }) => needsTranslation(article))
-  .sort((a, b) => importanceScore(b.article) - importanceScore(a.article) || publishedTime(b.article) - publishedTime(a.article))
-  .slice(0, maxArticles || undefined);
+  .sort((a, b) => importanceScore(b.article) - importanceScore(a.article) || publishedTime(b.article) - publishedTime(a.article));
+const candidates = eligible.slice(0, maxArticles || undefined);
 
 const stats = {
+  eligibleCount: eligible.length,
   candidateCount: candidates.length,
   translatedCount: 0,
   failedCount: 0,
+  deferredCount: Math.max(0, eligible.length - candidates.length),
   resetCount,
-  cachedCount: Math.max(0, articles.length - candidates.length)
+  concurrency
 };
 
 if (!String(process.env.OPENAI_API_KEY || "").trim()) {
@@ -161,24 +164,24 @@ if (!String(process.env.OPENAI_API_KEY || "").trim()) {
   process.exit(0);
 }
 
-for (const candidate of candidates) {
-  try {
-    articles[candidate.index] = {
-      ...articles[candidate.index],
-      translation: await translateArticle(articles[candidate.index], candidate.index)
-    };
-    stats.translatedCount += 1;
-  } catch (error) {
-    stats.failedCount += 1;
-    console.error(`[article-translation] ${candidate.id} failed: ${error.message}`);
-    if (required) throw error;
-  }
+for (let offset = 0; offset < candidates.length; offset += concurrency) {
+  const batch = candidates.slice(offset, offset + concurrency);
+  await Promise.all(batch.map(async (candidate) => {
+    try {
+      const translation = await translateArticle(articles[candidate.index], candidate.index);
+      articles[candidate.index] = { ...articles[candidate.index], translation };
+      stats.translatedCount += 1;
+    } catch (error) {
+      stats.failedCount += 1;
+      console.error(`[article-translation] ${candidate.id} failed and will be retried next run: ${error.message}`);
+    }
+  }));
   await writePayload(payload, articles, stats);
-  console.log(`[article-translation] progress=${stats.translatedCount + stats.failedCount}/${candidates.length}, translated=${stats.translatedCount}, failed=${stats.failedCount}`);
+  console.log(`[article-translation] progress=${Math.min(offset + batch.length, candidates.length)}/${candidates.length}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}`);
 }
 
 if (!candidates.length) await writePayload(payload, articles, stats);
 if (required && candidates.length && stats.translatedCount === 0) {
   throw new Error("full article translation was required but generated no translations");
 }
-console.log(`[article-translation] complete candidates=${stats.candidateCount}, translated=${stats.translatedCount}, failed=${stats.failedCount}, reset=${stats.resetCount}`);
+console.log(`[article-translation] complete eligible=${stats.eligibleCount}, candidates=${stats.candidateCount}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}, reset=${stats.resetCount}`);
