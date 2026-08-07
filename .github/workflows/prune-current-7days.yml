@@ -1,0 +1,103 @@
+name: One-time Prune Articles To Current 7 Days
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/prune-current-7days.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wr-articles-data-writer
+  cancel-in-progress: false
+
+jobs:
+  prune:
+    if: ${{ !contains(github.event.head_commit.message, '[skip-prune]') }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Keep only 2026-08-01 through 2026-08-07 articles
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs/promises';
+
+          const file = 'data/articles.json';
+          const START = '2026-08-01';
+          const END = '2026-08-07';
+
+          function kstDateKey(value = '') {
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) return '';
+            const parts = new Intl.DateTimeFormat('en-CA', {
+              timeZone: 'Asia/Seoul',
+              year: 'numeric', month: '2-digit', day: '2-digit'
+            }).formatToParts(date);
+            const map = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+            return `${map.year}-${map.month}-${map.day}`;
+          }
+
+          const payload = JSON.parse(await fs.readFile(file, 'utf8'));
+          const articles = Array.isArray(payload) ? payload : (payload.articles || []);
+          const kept = [];
+          const removed = [];
+
+          for (const article of articles) {
+            const rawDate = article.publishedAt || article.article?.publishedAt || '';
+            const dateKey = kstDateKey(rawDate);
+            if (dateKey && dateKey >= START && dateKey <= END) kept.push(article);
+            else removed.push({ id: article.articleId || article.id || '', date: dateKey || 'INVALID', title: article.originalTitleArabic || '' });
+          }
+
+          const generatedAt = new Date().toISOString();
+          const output = Array.isArray(payload)
+            ? kept
+            : {
+                ...payload,
+                generatedAt,
+                count: kept.length,
+                articles: kept,
+                manualPrune: {
+                  generatedAt,
+                  timezone: 'Asia/Seoul',
+                  periodStart: START,
+                  periodEnd: END,
+                  beforeCount: articles.length,
+                  afterCount: kept.length,
+                  removedCount: removed.length
+                }
+              };
+
+          await fs.writeFile(file, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+          console.log(`[prune-7days] period=${START}..${END} before=${articles.length} kept=${kept.length} removed=${removed.length}`);
+          console.log(`[prune-7days] removed sample=${JSON.stringify(removed.slice(0, 10))}`);
+          NODE
+
+      - name: Validate pruned article data
+        run: npm run validate:data
+
+      - name: Commit pruned data
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/articles.json; then
+            echo "No articles required pruning"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          git commit -m "Keep only current 7-day articles [skip-prune]"
+          git pull --rebase origin main
+          git push origin main
