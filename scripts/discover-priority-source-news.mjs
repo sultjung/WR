@@ -8,7 +8,7 @@ const INPUT = path.resolve(process.env.PRIORITY_DISCOVERY_INPUT_FILE || path.joi
 const OUTPUT = path.resolve(process.env.PRIORITY_DISCOVERY_OUTPUT_FILE || INPUT);
 const SEEDS = path.resolve(process.env.PRIORITY_DISCOVERY_SEEDS_FILE || path.join(ROOT, "config", "priority-news-seeds.json"));
 const TIMEOUT = Number(process.env.PRIORITY_DISCOVERY_TIMEOUT_MS || 18000);
-const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 14);
+const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 7);
 const MAX_DETAILS = Number(process.env.PRIORITY_DISCOVERY_MAX_DETAIL_FETCHES || 60);
 
 const SOURCES = String(process.env.PRIORITY_DISCOVERY_TEST_BASE || "") ? [

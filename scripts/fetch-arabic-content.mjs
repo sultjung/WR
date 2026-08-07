@@ -9,7 +9,7 @@ const FETCH_TIMEOUT_MS = Number(process.env.CONTENT_FETCH_TIMEOUT_MS || 18000);
 const CONCURRENCY = Number(process.env.CONTENT_FETCH_CONCURRENCY || 3);
 const MIN_CONTENT_CHARS = Number(process.env.MIN_ARABIC_CONTENT_CHARS || 300);
 const MIN_ARABIC_RATIO = Number(process.env.MIN_ARABIC_RATIO || 0.35);
-const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 30);
+const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 7);
 
 function decodeHtml(value = "") {
   return String(value)
