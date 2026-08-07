@@ -48,6 +48,9 @@ jobs:
       - name: Validate configuration
         run: npm run validate:config
 
+      - name: Validate full-translation frontend and scripts
+        run: npm run validate:frontend
+
       - name: Test relevance, category routing, grouping, importance, and translation terms
         run: npm test
 
