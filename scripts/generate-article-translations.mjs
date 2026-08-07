@@ -10,14 +10,13 @@ import {
   sourceTitleOf,
   translationContextOf
 } from "./article-translation-core.mjs";
-import { translateArabicBodyChunk, translateArabicTitle } from "./article-translation-ai.mjs";
+import { translateArabicArticle } from "./article-translation-ai.mjs";
 
 const ROOT = process.cwd();
 const ARTICLES_FILE = path.resolve(process.env.TRANSLATION_ARTICLES_FILE || path.join(ROOT, "data", "articles.json"));
 const required = /^(1|true|yes)$/i.test(process.env.TRANSLATION_AI_REQUIRED || "false");
-const maxArticles = Math.max(0, Number(process.env.TRANSLATION_AI_MAX_ARTICLES || 60));
-const chunkChars = Math.max(3000, Number(process.env.TRANSLATION_CHUNK_CHARS || 7000));
-const concurrency = Math.max(1, Math.min(4, Number(process.env.TRANSLATION_CONCURRENCY || 2)));
+const maxArticles = Math.max(0, Number(process.env.TRANSLATION_AI_MAX_ARTICLES || 200));
+const concurrency = Math.max(1, Math.min(4, Number(process.env.TRANSLATION_CONCURRENCY || 4)));
 const retryAttempts = Math.max(1, Math.min(3, Number(process.env.TRANSLATION_AI_RETRY_ATTEMPTS || 2)));
 
 function importanceScore(article = {}) {
@@ -29,48 +28,6 @@ function importanceScore(article = {}) {
 function publishedTime(article = {}) {
   const value = new Date(article.publishedAt || article.article?.publishedAt || 0).getTime();
   return Number.isFinite(value) ? value : 0;
-}
-
-function splitLongPiece(piece, limit) {
-  const chunks = [];
-  let rest = piece.trim();
-  while (rest.length > limit) {
-    let cut = rest.lastIndexOf(" ", limit);
-    if (cut < Math.floor(limit * 0.65)) cut = limit;
-    chunks.push(rest.slice(0, cut).trim());
-    rest = rest.slice(cut).trim();
-  }
-  if (rest) chunks.push(rest);
-  return chunks;
-}
-
-function splitArabicText(text, limit = chunkChars) {
-  const normalized = String(text || "").replace(/\r\n?/g, "\n").trim();
-  if (!normalized) return [];
-  if (normalized.length <= limit) return [normalized];
-
-  const units = normalized
-    .split(/(?<=[.!?؟])\s+|\n{2,}/u)
-    .map((value) => value.trim())
-    .filter(Boolean)
-    .flatMap((value) => value.length > limit ? splitLongPiece(value, limit) : [value]);
-
-  const chunks = [];
-  let current = "";
-  for (const unit of units) {
-    if (!current) {
-      current = unit;
-      continue;
-    }
-    if ((current.length + 2 + unit.length) <= limit) {
-      current += `\n\n${unit}`;
-    } else {
-      chunks.push(current);
-      current = unit;
-    }
-  }
-  if (current) chunks.push(current);
-  return chunks;
 }
 
 async function withRetry(label, fn) {
@@ -91,27 +48,17 @@ async function translateArticle(article, index) {
   const titleArabic = sourceTitleOf(article);
   const bodyArabic = sourceTextOf(article);
   const { preferredTerms } = translationContextOf(article);
-  const chunks = splitArabicText(bodyArabic);
-  if (!chunks.length) throw new Error(`${id}: Arabic body is empty`);
 
-  const titleResult = await withRetry(`${id}:title`, () => translateArabicTitle(titleArabic, preferredTerms));
-  const translatedChunks = [];
-  const models = new Set([titleResult.model]);
-
-  for (let chunkIndex = 0; chunkIndex < chunks.length; chunkIndex += 1) {
-    const result = await withRetry(
-      `${id}:body:${chunkIndex + 1}/${chunks.length}`,
-      () => translateArabicBodyChunk(chunks[chunkIndex], preferredTerms)
-    );
-    models.add(result.model);
-    translatedChunks.push(result.text.trim());
-  }
+  const result = await withRetry(
+    `${id}:article`,
+    () => translateArabicArticle(titleArabic, bodyArabic, preferredTerms)
+  );
 
   return normalizeTranslationResult({
-    titleKo: titleResult.text,
-    fullTextKo: translatedChunks.join("\n\n"),
-    model: [...models].join(","),
-    chunkCount: chunks.length
+    titleKo: result.titleKo,
+    fullTextKo: result.fullTextKo,
+    model: result.model,
+    chunkCount: 1
   }, article);
 }
 
@@ -153,7 +100,8 @@ const stats = {
   failedCount: 0,
   deferredCount: Math.max(0, eligible.length - candidates.length),
   resetCount,
-  concurrency
+  concurrency,
+  requestMode: "ONE_REQUEST_PER_ARTICLE"
 };
 
 if (!String(process.env.OPENAI_API_KEY || "").trim()) {
@@ -184,4 +132,4 @@ if (!candidates.length) await writePayload(payload, articles, stats);
 if (required && candidates.length && stats.translatedCount === 0) {
   throw new Error("full article translation was required but generated no translations");
 }
-console.log(`[article-translation] complete eligible=${stats.eligibleCount}, candidates=${stats.candidateCount}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}, reset=${stats.resetCount}`);
+console.log(`[article-translation] complete eligible=${stats.eligibleCount}, candidates=${stats.candidateCount}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}, reset=${stats.resetCount}, concurrency=${stats.concurrency}`);
