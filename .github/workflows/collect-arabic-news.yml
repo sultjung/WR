@@ -7,6 +7,12 @@ on:
     paths:
       - ".github/workflows/collect-arabic-news.yml"
       - "config/priority-news-seeds.json"
+      - "scripts/article-translation-core.mjs"
+      - "scripts/article-translation-ai.mjs"
+      - "scripts/generate-article-translations.mjs"
+      - "scripts/validate-article-translations.mjs"
+      - "scripts/preserve-processed-articles.mjs"
+      - "package.json"
   schedule:
     - cron: "20 21 * * *" # 06:20 KST
     - cron: "30 3 * * *"  # 12:30 KST
@@ -147,6 +153,7 @@ jobs:
           TRANSLATION_MODEL_FALLBACKS: "gpt-4o-mini"
           TRANSLATION_AI_MAX_ARTICLES: "30"
           TRANSLATION_CHUNK_CHARS: "7000"
+          TRANSLATION_CONCURRENCY: "2"
           TRANSLATION_AI_TIMEOUT_MS: "120000"
           TRANSLATION_AI_RETRY_ATTEMPTS: "2"
         run: npm run collect:translations
