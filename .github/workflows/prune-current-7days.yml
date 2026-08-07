@@ -1,7 +1,7 @@
-name: One-time Prune Articles To Current 7 Days
+name: Enforce Rolling 7-Day Article Window
 
-# One-time maintenance workflow: keep KST 2026-08-01 through 2026-08-07 only
-# and align direct-script defaults with production: discover 7 days, retain 14 days.
+# Maintenance workflow: keep only the rolling 7-day KST window across article data
+# and align direct-script defaults with production: discover 7 days, retain 7 days.
 on:
   push:
     branches: [main]
@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Align script defaults to discover 7 days and retain 14 days
+      - name: Align script defaults to 7-day discovery and retention
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs/promises';
@@ -39,28 +39,41 @@ jobs:
           const edits = [
             {
               file: 'scripts/discover-priority-source-news.mjs',
-              oldText: 'const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 14);',
-              newText: 'const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 7);'
+              replacements: [
+                ['const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 14);', 'const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 7);'],
+                ['const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 7);', 'const LOOKBACK = Number(process.env.NEWS_DISCOVERY_DAYS || 7);']
+              ]
             },
             {
               file: 'scripts/fetch-arabic-content.mjs',
-              oldText: 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 30);',
-              newText: 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 14);'
+              replacements: [
+                ['const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 30);', 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 7);'],
+                ['const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 14);', 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 7);'],
+                ['const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 7);', 'const RETENTION_DAYS = Number(process.env.ARTICLE_RETENTION_DAYS || 7);']
+              ]
             }
           ];
 
           for (const edit of edits) {
             let text = await fs.readFile(edit.file, 'utf8');
-            if (text.includes(edit.newText)) {
+            let changed = false;
+            for (const [oldText, newText] of edit.replacements) {
+              if (!text.includes(oldText)) continue;
+              if (oldText !== newText) {
+                text = text.replace(oldText, newText);
+                changed = true;
+              }
+              break;
+            }
+            if (!text.includes(edit.replacements.at(-1)[1])) {
+              throw new Error(`Expected 7-day default not found in ${edit.file}`);
+            }
+            if (changed) {
+              await fs.writeFile(edit.file, text, 'utf8');
+              console.log(`[defaults] updated: ${edit.file}`);
+            } else {
               console.log(`[defaults] already aligned: ${edit.file}`);
-              continue;
             }
-            if (!text.includes(edit.oldText)) {
-              throw new Error(`Expected default not found in ${edit.file}`);
-            }
-            text = text.replace(edit.oldText, edit.newText);
-            await fs.writeFile(edit.file, text, 'utf8');
-            console.log(`[defaults] updated: ${edit.file}`);
           }
           NODE
 
@@ -69,14 +82,28 @@ jobs:
           node --check scripts/discover-priority-source-news.mjs
           node --check scripts/fetch-arabic-content.mjs
 
-      - name: Keep only 2026-08-01 through 2026-08-07 articles
+      - name: Keep only rolling 7-day KST articles in all data stages
         run: |
           node --input-type=module <<'NODE'
           import fs from 'node:fs/promises';
 
-          const file = 'data/articles.json';
-          const START = '2026-08-01';
-          const END = '2026-08-07';
+          const FILES = [
+            'data/discovered-articles.json',
+            'data/recovered-articles.json',
+            'data/resolved-articles.json',
+            'data/articles.json'
+          ];
+
+          function kstTodayKey() {
+            const shifted = new Date(Date.now() + 9 * 60 * 60 * 1000);
+            return shifted.toISOString().slice(0, 10);
+          }
+
+          function shiftDateKey(dateKey, days) {
+            const date = new Date(`${dateKey}T00:00:00Z`);
+            date.setUTCDate(date.getUTCDate() + days);
+            return date.toISOString().slice(0, 10);
+          }
 
           function kstDateKey(value = '') {
             const date = new Date(value);
@@ -89,55 +116,98 @@ jobs:
             return `${map.year}-${map.month}-${map.day}`;
           }
 
-          const payload = JSON.parse(await fs.readFile(file, 'utf8'));
-          const articles = Array.isArray(payload) ? payload : (payload.articles || []);
-          const kept = [];
-          const removed = [];
-
-          for (const article of articles) {
-            const rawDate = article.publishedAt || article.article?.publishedAt || '';
-            const dateKey = kstDateKey(rawDate);
-            if (dateKey && dateKey >= START && dateKey <= END) kept.push(article);
-            else removed.push({ id: article.articleId || article.id || '', date: dateKey || 'INVALID', title: article.originalTitleArabic || '' });
+          function articleDate(article = {}) {
+            return article.publishedAt
+              || article.article?.publishedAt
+              || article.publicationDate
+              || article.pubDate
+              || article.datePublished
+              || '';
           }
 
+          const END = kstTodayKey();
+          const START = shiftDateKey(END, -6);
           const generatedAt = new Date().toISOString();
-          const output = Array.isArray(payload)
-            ? kept
-            : {
-                ...payload,
-                generatedAt,
-                count: kept.length,
-                articles: kept,
-                manualPrune: {
-                  generatedAt,
-                  timezone: 'Asia/Seoul',
-                  periodStart: START,
-                  periodEnd: END,
-                  beforeCount: articles.length,
-                  afterCount: kept.length,
-                  removedCount: removed.length
-                }
-              };
 
-          await fs.writeFile(file, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
-          console.log(`[prune-7days] period=${START}..${END} before=${articles.length} kept=${kept.length} removed=${removed.length}`);
-          console.log(`[prune-7days] removed sample=${JSON.stringify(removed.slice(0, 10))}`);
+          for (const file of FILES) {
+            let raw;
+            try {
+              raw = await fs.readFile(file, 'utf8');
+            } catch (error) {
+              if (error?.code === 'ENOENT') {
+                console.log(`[prune-7days] skip missing ${file}`);
+                continue;
+              }
+              throw error;
+            }
+
+            const payload = JSON.parse(raw);
+            const articles = Array.isArray(payload) ? payload : (Array.isArray(payload.articles) ? payload.articles : null);
+            if (!articles) {
+              throw new Error(`${file}: expected an array or an object with articles[]`);
+            }
+
+            const kept = [];
+            const removed = [];
+            for (const article of articles) {
+              const dateKey = kstDateKey(articleDate(article));
+              if (dateKey && dateKey >= START && dateKey <= END) {
+                kept.push(article);
+              } else {
+                removed.push({
+                  id: article.articleId || article.id || '',
+                  date: dateKey || 'INVALID',
+                  title: article.originalTitleArabic || article.title || ''
+                });
+              }
+            }
+
+            const output = Array.isArray(payload)
+              ? kept
+              : {
+                  ...payload,
+                  generatedAt,
+                  count: kept.length,
+                  articles: kept,
+                  rollingPrune: {
+                    generatedAt,
+                    timezone: 'Asia/Seoul',
+                    retentionDays: 7,
+                    periodStart: START,
+                    periodEnd: END,
+                    beforeCount: articles.length,
+                    afterCount: kept.length,
+                    removedCount: removed.length
+                  }
+                };
+
+            await fs.writeFile(file, `${JSON.stringify(output, null, 2)}\n`, 'utf8');
+            console.log(`[prune-7days] ${file} period=${START}..${END} before=${articles.length} kept=${kept.length} removed=${removed.length}`);
+            console.log(`[prune-7days] ${file} removed sample=${JSON.stringify(removed.slice(0, 5))}`);
+          }
           NODE
 
       - name: Validate pruned article data
         run: npm run validate:data
 
-      - name: Commit maintenance changes
+      - name: Commit rolling 7-day maintenance changes
         run: |
           set -euo pipefail
-          if git diff --quiet -- data/articles.json scripts/discover-priority-source-news.mjs scripts/fetch-arabic-content.mjs; then
-            echo "No maintenance changes required"
+          FILES=(
+            data/discovered-articles.json
+            data/recovered-articles.json
+            data/resolved-articles.json
+            data/articles.json
+            scripts/discover-priority-source-news.mjs
+            scripts/fetch-arabic-content.mjs
+          )
+          if git diff --quiet -- "${FILES[@]}"; then
+            echo "No rolling-window changes required"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/articles.json scripts/discover-priority-source-news.mjs scripts/fetch-arabic-content.mjs
-          git commit -m "Prune old articles and align news windows [skip-prune]"
+          git add "${FILES[@]}"
+          git commit -m "Enforce rolling 7-day article window [skip-prune]"
           git pull --rebase origin main
           git push origin main
