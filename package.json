@@ -6,7 +6,7 @@
   "description": "Arabic Iraqi news collection, full Korean translation, selection, and GPT source export for the Bismayah project",
   "scripts": {
     "validate:config": "node scripts/validate-config.mjs",
-    "validate:frontend": "node --check app.js && node --check scripts/article-translation-core.mjs && node --check scripts/article-translation-ai.mjs && node --check scripts/generate-article-translations.mjs && node --check scripts/validate-article-translations.mjs",
+    "validate:frontend": "node --check app.js && node --check translation-pipeline-guard.js && node --check scripts/article-translation-core.mjs && node --check scripts/article-translation-ai.mjs && node --check scripts/generate-article-translations.mjs && node --check scripts/validate-article-translations.mjs",
     "validate:translations": "node scripts/validate-article-translations.mjs",
     "validate:data": "node scripts/validate-collected-data.mjs && npm run validate:translations",
     "validate": "npm run validate:config && npm run validate:frontend && npm run validate:data",
