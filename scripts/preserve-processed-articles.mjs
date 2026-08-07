@@ -6,6 +6,7 @@ import { createHash } from "node:crypto";
 const ROOT = process.cwd();
 const ARTICLES_FILE = path.join(ROOT, "data", "articles.json");
 const SNAPSHOT_FILE = path.join(ROOT, "data", ".articles-before-collect.json");
+const TRANSLATION_PIPELINE_VERSION = "FULL_TRANSLATION_V1";
 
 async function readJson(file, fallback) {
   try { return JSON.parse(await fs.readFile(file, "utf8")); } catch { return fallback; }
@@ -28,30 +29,40 @@ function articleKey(item = {}) {
 }
 
 function originalText(item = {}) {
-  return String(item.originalTextArabic || item.article?.originalTextArabic || "")
-    .replace(/\s+/g, " ")
-    .trim();
+  return String(item.originalTextArabic || item.article?.originalTextArabic || "").trim();
+}
+
+function sourceTitle(item = {}) {
+  return String(item.originalTitleArabic || item.article?.originalTitleArabic || "").replace(/\s+/g, " ").trim();
 }
 
 function contentHash(item = {}) {
-  const text = originalText(item);
-  return text ? createHash("sha256").update(text).digest("hex") : "";
+  const source = `${sourceTitle(item)}\n${originalText(item)}`.trim();
+  return source ? createHash("sha256").update(source).digest("hex") : "";
 }
 
-function completedTranslation(item = {}) {
-  const translation = item.translation || {};
-  const status = String(translation.translationStatus || translation.status || item.translationStatus || "").toUpperCase();
-  return status === "COMPLETED" || Boolean(translation.fullTextKo || item.fullTextKo);
-}
-
-function pendingCard(reason) {
+function pendingTranslation(reason) {
   return {
     status: "PENDING",
-    pipelineVersion: "FACTS_FIRST_V1",
+    translationStatus: "PENDING",
+    pipelineVersion: TRANSLATION_PIPELINE_VERSION,
     titleKo: "",
-    summaryKo: "",
+    fullTextKo: "",
     resetReason: reason
   };
+}
+
+function withoutLegacyCardData(item = {}) {
+  const {
+    card,
+    cardFacts,
+    translationStatus,
+    fullTextKo,
+    titleKo,
+    previewKo,
+    ...rest
+  } = item;
+  return rest;
 }
 
 const currentPayload = await readJson(ARTICLES_FILE, { articles: [] });
@@ -64,15 +75,17 @@ let unchanged = 0;
 let changed = 0;
 let newCount = 0;
 
-const articles = current.map((item) => {
-  const old = previousByKey.get(articleKey(item));
-  const newHash = contentHash(item);
+const articles = current.map((rawItem) => {
+  const item = withoutLegacyCardData(rawItem);
+  const oldRaw = previousByKey.get(articleKey(rawItem));
+  const old = oldRaw ? withoutLegacyCardData(oldRaw) : null;
+  const newHash = contentHash(rawItem);
+
   if (!old) {
     newCount += 1;
     return {
       ...item,
-      cardFacts: item.cardFacts,
-      card: item.card || pendingCard("NEW_SOURCE"),
+      translation: item.translation || pendingTranslation("NEW_SOURCE"),
       relatedTitle: item.relatedTitle,
       contentHash: newHash || item.contentHash || "",
       contentCheckedAt: item.fetchedAt || new Date().toISOString(),
@@ -80,15 +93,12 @@ const articles = current.map((item) => {
     };
   }
 
-  const oldHash = old.contentHash || contentHash(old);
+  const oldHash = old.contentHash || contentHash(oldRaw);
   if (oldHash && newHash && oldHash === newHash) {
     unchanged += 1;
     return {
       ...item,
-      translation: old.translation || item.translation,
-      translationStatus: old.translationStatus || item.translationStatus,
-      cardFacts: old.cardFacts || item.cardFacts,
-      card: old.card || item.card,
+      translation: old.translation || item.translation || pendingTranslation("TRANSLATION_MISSING"),
       relatedTitle: old.relatedTitle || item.relatedTitle,
       analysis: old.analysis || item.analysis,
       importance: old.importance || item.importance,
@@ -105,15 +115,7 @@ const articles = current.map((item) => {
     changed += 1;
     return {
       ...item,
-      translation: completedTranslation(old)
-        ? { status: "PENDING", translationStatus: "PENDING", titleKo: "", previewKo: "", fullTextKo: "", resetReason: "SOURCE_CONTENT_CHANGED" }
-        : (item.translation || old.translation),
-      cardFacts: {
-        status: "PENDING",
-        pipelineVersion: "FACTS_FIRST_V1",
-        resetReason: "SOURCE_CONTENT_CHANGED"
-      },
-      card: pendingCard("SOURCE_CONTENT_CHANGED"),
+      translation: pendingTranslation("SOURCE_CONTENT_CHANGED"),
       relatedTitle: old.relatedTitle || item.relatedTitle,
       analysis: { ...(item.analysis || {}), status: "PENDING", resetReason: "SOURCE_CONTENT_CHANGED" },
       importance: undefined,
@@ -128,10 +130,7 @@ const articles = current.map((item) => {
   unchanged += 1;
   return {
     ...item,
-    translation: old.translation || item.translation,
-    translationStatus: old.translationStatus || item.translationStatus,
-    cardFacts: old.cardFacts || item.cardFacts,
-    card: old.card || item.card,
+    translation: old.translation || item.translation || pendingTranslation("TRANSLATION_MISSING"),
     relatedTitle: old.relatedTitle || item.relatedTitle,
     analysis: old.analysis || item.analysis,
     importance: old.importance || item.importance,
@@ -154,7 +153,9 @@ const output = Array.isArray(currentPayload)
         unchangedCount: unchanged,
         changedCount: changed,
         newCount,
-        generatedAt: new Date().toISOString()
+        generatedAt: new Date().toISOString(),
+        retainedProcessing: ["translation", "relatedTitle", "analysis", "importance", "eventGroup"],
+        removedLegacyProcessing: ["cardFacts", "card"]
       }
     };
 
