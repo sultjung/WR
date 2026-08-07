@@ -6,7 +6,7 @@ import { createHash } from "node:crypto";
 const ROOT = process.cwd();
 const KEYWORDS_FILE = path.join(ROOT, "config", "arabic-keywords.json");
 const OUTPUT_FILE = path.join(ROOT, "data", "discovered-articles.json");
-const LOOKBACK_DAYS = Number(process.env.NEWS_DISCOVERY_DAYS || 14);
+const LOOKBACK_DAYS = Number(process.env.NEWS_DISCOVERY_DAYS || 7);
 const MAX_PER_QUERY = Number(process.env.MAX_PER_QUERY || 30);
 const FETCH_TIMEOUT_MS = Number(process.env.FETCH_TIMEOUT_MS || 15000);
 const CONCURRENCY = Number(process.env.DISCOVERY_CONCURRENCY || 3);
