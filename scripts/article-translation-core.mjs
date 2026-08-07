@@ -7,6 +7,7 @@ import {
 } from "./preferred-translation-terms.mjs";
 
 export const TRANSLATION_PIPELINE_VERSION = "FULL_TRANSLATION_V1";
+export const MIN_TRANSLATABLE_BODY_CHARS = 30;
 
 function recordOf(article = {}) {
   return article.article && typeof article.article === "object" ? article.article : article;
@@ -59,11 +60,11 @@ export function translationIsCurrent(article = {}) {
     && translation.sourceContentHash === hash
     && glossaryIsCurrent(translation, source)
     && Boolean(compact(translation.titleKo))
-    && String(translation.fullTextKo || "").trim().length >= 50;
+    && String(translation.fullTextKo || "").trim().length >= 10;
 }
 
 export function hasUsableArabicSource(article = {}) {
-  return sourceTextOf(article).length >= 300;
+  return sourceTextOf(article).length >= MIN_TRANSLATABLE_BODY_CHARS;
 }
 
 export function needsTranslation(article = {}) {

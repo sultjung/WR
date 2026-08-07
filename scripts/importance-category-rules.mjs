@@ -1,4 +1,4 @@
-export const IMPORTANCE_SCORING_VERSION = 5;
+export const IMPORTANCE_SCORING_VERSION = 6;
 
 const CATEGORY_ALIASES = {
   bismayah: ["bismayah", "비스마야", "بسماية"],

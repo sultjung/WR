@@ -31,6 +31,13 @@ function levelOf(score) {
   return ["LOW", "낮음", "EXCLUDE", "REFERENCE"];
 }
 
+function relevanceOf(score, floorScore) {
+  if (floorScore >= 90 || score >= 90) return "DIRECT";
+  if (floorScore >= 70 || score >= 75) return "HIGH";
+  if (floorScore >= 40 || score >= 60) return "MEDIUM";
+  return "LOW";
+}
+
 function strongerFloor(businessFloor, categoryFloor) {
   return businessFloor.score >= categoryFloor.score ? businessFloor : categoryFloor;
 }
@@ -56,9 +63,8 @@ const scored = articles.map((article, index) => {
     : (aiResult?.reportPriority || defaultPriority);
   const reasonKo = floorApplied
     ? floor.reasonKo
-    : (aiResult?.reasonKo || previous.reasonKo || floor.reasonKo || "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함");
-  const categoryRelevance = aiResult?.categoryRelevance
-    || (floor.score >= 90 ? "DIRECT" : floor.score >= 70 ? "HIGH" : floor.score >= 40 ? "MEDIUM" : "LOW");
+    : (previous.reasonKo || floor.reasonKo || "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함");
+  const categoryRelevance = relevanceOf(score, floor.score);
 
   return {
     ...article,
@@ -72,7 +78,7 @@ const scored = articles.map((article, index) => {
       categoryRelevance,
       businessRelevance: categoryRelevance,
       reasonKo,
-      scoringMethod: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V5" : "CATEGORY_RELATIVE_RULES_V5",
+      scoringMethod: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V6" : "CATEGORY_RELATIVE_RULES_V6",
       scoringVersion: IMPORTANCE_SCORING_VERSION,
       scoredAt,
       scoreFingerprint: importanceFingerprint(article),
@@ -92,8 +98,8 @@ const scored = articles.map((article, index) => {
       ruleWeight: aiResult ? 0.35 : 1,
       aiModel: aiResult ? ai.model : null,
       aiReportPriority: aiResult?.reportPriority || null,
-      aiReasonKo: aiResult?.reasonKo || "",
-      aiBreakdown: aiResult?.breakdown || null
+      aiReasonKo: "",
+      aiBreakdown: null
     }
   };
 });
@@ -109,7 +115,7 @@ await fs.writeFile(file, `${JSON.stringify({
   generatedAt: scoredAt,
   importanceScoring: {
     ...(payload.importanceScoring || {}),
-    method: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V5" : "CATEGORY_RELATIVE_RULES_V5",
+    method: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V6" : "CATEGORY_RELATIVE_RULES_V6",
     version: IMPORTANCE_SCORING_VERSION,
     evaluationPrinciple: "CATEGORY_RELATIVE",
     aiEnabled: ai.enabled,

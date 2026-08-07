@@ -7,6 +7,10 @@ import {
   preferredTermsSignatureForText
 } from "./preferred-translation-terms.mjs";
 import {
+  hasUsableArabicSource,
+  MIN_TRANSLATABLE_BODY_CHARS
+} from "./article-translation-core.mjs";
+import {
   cardInputOf,
   normalizeRelatedTitleResult,
   relatedTitleInputOf,
@@ -15,6 +19,9 @@ import {
 
 assert.ok(GLOSSARY_VERSION);
 assert.equal(GLOSSARY_HASH.length, 20);
+assert.equal(MIN_TRANSLATABLE_BODY_CHARS, 30);
+assert.equal(hasUsableArabicSource({ originalTextArabic: "ع".repeat(29) }), false);
+assert.equal(hasUsableArabicSource({ originalTextArabic: "ع".repeat(30) }), true);
 
 const matchedText = "اجتمع مجلس الوزراء في بغداد وبحث الأوضاع في مدينة بسماية الجديدة";
 const matched = preferredTermsForText(matchedText);
@@ -84,4 +91,4 @@ const legacyDuplicate = {
 };
 assert.equal(relatedTitleIsCurrent(legacyDuplicate), true, "legacy related titles must not be mass-invalidated");
 
-console.log("[test-translation-terms] preferred terms, signatures, and legacy compatibility passed");
+console.log("[test-translation-terms] preferred terms, 30-char eligibility, signatures, and legacy compatibility passed");
