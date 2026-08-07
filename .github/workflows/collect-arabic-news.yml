@@ -12,6 +12,7 @@ on:
       - "scripts/generate-article-translations.mjs"
       - "scripts/validate-article-translations.mjs"
       - "scripts/preserve-processed-articles.mjs"
+      - "scripts/prune-rolling-article-window.mjs"
       - "package.json"
   schedule:
     - cron: "20 21 * * *" # 06:20 KST
@@ -94,6 +95,11 @@ jobs:
       - name: Preserve priority aggregator fallback URLs
         run: npm run collect:priority-aggregator-fallback
 
+      - name: Enforce exact KST rolling 7-day window before processing
+        env:
+          ARTICLE_RETENTION_DAYS: "7"
+        run: node scripts/prune-rolling-article-window.mjs
+
       - name: Snapshot processed article state
         run: npm run collect:incremental-prepare
 
@@ -105,6 +111,11 @@ jobs:
           MIN_ARABIC_RATIO: "0.35"
           ARTICLE_RETENTION_DAYS: "7"
         run: npm run collect:content
+
+      - name: Re-enforce exact KST 7-day window on final articles
+        env:
+          ARTICLE_RETENTION_DAYS: "7"
+        run: node scripts/prune-rolling-article-window.mjs data/articles.json
 
       - name: Repair invalid and metadata-based article titles
         run: npm run collect:title-fix
