@@ -154,9 +154,9 @@ function extractJsonLdNodes(html = "") {
 function extractJsonLdCandidates(html = "") {
   const candidates = [];
   for (const node of extractJsonLdNodes(html)) {
-    for (const key of ["articleBody", "text", "description"]) {
-      if (typeof node?.[key] === "string") candidates.push(node[key]);
-    }
+    const type = Array.isArray(node?.["@type"]) ? node["@type"].join(" ") : String(node?.["@type"] || "");
+    if (type && !/(?:NewsArticle|Article|ReportageNewsArticle)/i.test(type)) continue;
+    if (typeof node?.articleBody === "string") candidates.push(node.articleBody);
   }
   return candidates;
 }
@@ -190,24 +190,24 @@ function extractionPenalty(text = "") {
   return matches.length * 900;
 }
 
-function bestCandidate(candidates = []) {
+function bestCandidate(candidates = [], title = "") {
   return candidates
-    .map((value) => cleanArticleText(value))
+    .map((value) => cleanArticleText(value, { title }))
     .filter((value) => value.length >= MIN_CONTENT_CHARS)
     .sort((a, b) => (b.length - extractionPenalty(b)) - (a.length - extractionPenalty(a)))[0] || "";
 }
 
-function extractBestText(html = "") {
-  const jsonLd = bestCandidate(extractJsonLdCandidates(html));
+function extractBestText(html = "", title = "") {
+  const jsonLd = bestCandidate(extractJsonLdCandidates(html), title);
   if (jsonLd) return jsonLd;
 
-  const selectorText = bestCandidate(extractSelectorCandidates(html));
+  const selectorText = bestCandidate(extractSelectorCandidates(html), title);
   if (selectorText) return selectorText;
 
   return bestCandidate([
     extractMeta(html, "og:description"),
     extractMeta(html, "description")
-  ]);
+  ], title);
 }
 
 function extractCanonicalUrl(html = "", fallback = "") {
@@ -356,7 +356,7 @@ function validateCategory(item = {}, title = "", body = "", articleUrl = "") {
 function sanitizeStoredArticle(item = {}) {
   const articleUrl = item.canonicalUrl || item.articleUrl || "";
   const title = cleanArticleTitle(item.originalTitleArabic || "", articleUrl);
-  const body = cleanArticleText(item.originalTextArabic || "");
+  const body = cleanArticleText(item.originalTextArabic || "", { title });
   const validation = validateCategory(item, title, body, articleUrl);
   if (!validation.ok) return null;
   return {
@@ -372,8 +372,8 @@ async function hydrate(item) {
   try {
     const page = await fetchPage(item.articleUrl);
     const articleUrl = normalizeUrl(page.finalUrl || item.articleUrl);
-    const originalTextArabic = extractBestText(page.html);
     const originalTitleArabic = extractTitle(page.html, item.originalTitleArabic || "", articleUrl);
+    const originalTextArabic = extractBestText(page.html, originalTitleArabic);
     const combinedText = `${originalTitleArabic}\n${originalTextArabic}`;
     const ratio = arabicRatio(combinedText);
     const canonicalUrl = extractCanonicalUrl(page.html, articleUrl);
