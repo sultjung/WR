@@ -33,3 +33,11 @@
 .scroll-top-button:hover{background:#a9470b}
 @media(max-width:760px){.collapse-article-row{padding:0 13px 13px}.collapse-article-button{width:100%}.scroll-top-button{right:max(12px,env(safe-area-inset-right));bottom:max(12px,env(safe-area-inset-bottom));min-height:44px;padding:9px 12px}}
 @media(prefers-reduced-motion:reduce){.scroll-top-button{transition:none}}
+
+.importance-score{background:#fffbeb!important;border-color:#fde68a!important;color:#92400e!important}
+.importance-stars{display:inline-flex;align-items:center;gap:1px;white-space:nowrap}
+.importance-stars .star{font-size:15px;line-height:1}
+.importance-stars .star.full{color:#f59e0b}
+.importance-stars .star.empty{color:#d1d5db}
+.importance-stars .star.half{background:linear-gradient(90deg,#f59e0b 50%,#d1d5db 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.importance-stars .star-value{margin-left:5px;font-variant-numeric:tabular-nums;font-weight:800}

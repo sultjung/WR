@@ -36,10 +36,11 @@ const recordOf = (article = {}) => article.article && typeof article.article ===
 
 export function importanceArticleText(article = {}) {
   const record = recordOf(article);
-  return [record.originalTitleArabic, article.originalTitleArabic, record.descriptionArabic, article.descriptionArabic,
-    record.originalTextArabic, article.originalTextArabic, article.translation?.titleKo, article.translation?.previewKo,
-    article.translation?.fullTextKo, article.display_title, article.display_summary, article.title, article.summary]
-    .filter(Boolean).join("\n");
+  return [
+    record.originalTitleArabic, article.originalTitleArabic,
+    record.descriptionArabic, article.descriptionArabic,
+    record.originalTextArabic, article.originalTextArabic
+  ].filter(Boolean).join("\n");
 }
 
 function headlineOf(article = {}) {
@@ -54,7 +55,9 @@ export function importanceArticleId(article = {}, index = 0) {
 }
 
 export function importanceFingerprint(article = {}) {
-  return crypto.createHash("sha256").update(importanceArticleText(article)).digest("hex").slice(0, 20);
+  const record = recordOf(article);
+  const category = String(article.analysis?.category || article.category || record.category || "").trim().toLowerCase();
+  return crypto.createHash("sha256").update(`${category}\n${importanceArticleText(article)}`).digest("hex").slice(0, 20);
 }
 
 export function businessFloorFor(article = {}) {

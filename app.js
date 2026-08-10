@@ -41,8 +41,15 @@
   const importanceOf=(article)=>{
     const stored=article.importance||article.analysis?.importance||recordOf(article).importance;
     const score=Number(stored?.score??stored?.finalScore??stored?.ruleScore??article.analysis?.importanceScore??article.importanceScore);
-    if(!Number.isFinite(score)) return {score:null};
-    return {score:Math.max(0,Math.min(100,Math.round(score)))};
+    const savedStars=Number(stored?.stars);
+    if(Number.isFinite(savedStars))return {score:Number.isFinite(score)?score:null,stars:Math.max(.5,Math.min(5,Math.round(savedStars*2)/2))};
+    if(!Number.isFinite(score))return {score:null,stars:null};
+    return {score:Math.max(0,Math.min(100,Math.round(score))),stars:Math.max(.5,Math.min(5,Math.round(score/10)/2))};
+  };
+  const starRatingHtml=(stars)=>{
+    if(stars===null)return "";
+    const nodes=[];for(let index=1;index<=5;index+=1){const state=stars>=index?"full":stars>=index-.5?"half":"empty";nodes.push(`<span class="star ${state}" aria-hidden="true">★</span>`);}
+    return `<span class="importance-stars" role="img" aria-label="중요도 별점 ${stars.toFixed(1)}점">${nodes.join("")}<span class="star-value">${stars.toFixed(1)}</span></span>`;
   };
   const representatives=()=>state.articles.filter((article)=>article.eventGroup?.isRepresentative!==false);
   const toInputDate=(date)=>{const year=date.getFullYear();const month=String(date.getMonth()+1).padStart(2,"0");const day=String(date.getDate()).padStart(2,"0");return `${year}-${month}-${day}`;};
@@ -77,11 +84,11 @@
     $("reportStartDate").value=range.start;
     $("reportEndDate").value=range.end;
   }
-  function importanceMatches(score,filter){
-    if(filter==="all") return true;
-    if(filter==="pending") return score===null;
-    if(score===null) return false;
-    const [min,max]=filter.split("-").map(Number);return score>=min&&score<=max;
+  function importanceMatches(stars,filter){
+    if(filter==="all")return true;
+    if(filter==="pending")return stars===null;
+    if(stars===null)return false;
+    const [min,max]=filter.split("-").map(Number);return stars>=min&&stars<=max;
   }
   function updateCounts(){
     const items=filteredArticles(false);
@@ -94,7 +101,7 @@
   }
   function compareArticles(a,b,order){
     if(order==="importance-desc"||order==="importance-asc"){
-      const aScore=importanceOf(a).score,bScore=importanceOf(b).score;
+      const aScore=importanceOf(a).stars,bScore=importanceOf(b).stars;
       if(aScore===null&&bScore!==null)return 1;if(aScore!==null&&bScore===null)return -1;
       if(aScore!==null&&bScore!==null&&aScore!==bScore)return order==="importance-asc"?aScore-bScore:bScore-aScore;
       return (publishedTime(b)??0)-(publishedTime(a)??0);
@@ -121,7 +128,7 @@
       if(sourceFilter==="ready"&&sourceText(article).length<300)return false;
       if(sourceFilter==="failed"&&sourceText(article).length>=300)return false;
       if(translationFilter!=="all"&&translationStatus(article)!==translationFilter)return false;
-      if(!importanceMatches(importanceOf(article).score,importanceFilter))return false;
+      if(!importanceMatches(importanceOf(article).stars,importanceFilter))return false;
       if(query){
         const related=membersOf(article).map((member)=>[member.relatedTitle?.titleKo,sourceTitle(member),sourceName(member)].join(" ")).join(" ");
         const text=[koTitle(article),sourceTitle(article),sourceName(article),fullTranslation(article),related].join(" ").toLowerCase();
@@ -149,7 +156,7 @@
     list.innerHTML=items.map((article)=>{
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),selectable=exportSelectable(article),ready=translationReady(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
-      const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}점</span>`;
+      const scoreBadge=importance.stars===null?`<span class="badge importance-pending">별점 평가 대기</span>`:`<span class="badge importance-score">${starRatingHtml(importance.stars)}</span>`;
       const translationBlock=ready?`<p class="translation-preview">${escapeHtml(previewText(article))}</p><details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":"번역 후 선택"}</button></div>
@@ -209,13 +216,13 @@
     body.push(wordParagraph("이 문서는 기사 요약본이 아니라 선택한 기사의 한국어 전문 번역과 아랍어 원문을 함께 담은 GPT 입력용 자료입니다.","Normal"));
     body.push(pageBreak());
     sorted.forEach((article,index)=>{
-      const importance=importanceOf(article).score;const groupId=String(article.eventGroup?.groupId||"");const related=membersOf(article).filter((member)=>articleId(member)!==articleId(article));
+      const importance=importanceOf(article).stars;const groupId=String(article.eventGroup?.groupId||"");const related=membersOf(article).filter((member)=>articleId(member)!==articleId(article));
       body.push(wordParagraph(`[ARTICLE_BEGIN]`,"Meta"));
       body.push(wordParagraph(`기사 번호: ${index+1}`,"Meta"));
       body.push(wordParagraph(`기사 ID: ${articleId(article)}`,"Meta"));
       body.push(wordParagraph(`동일사건 그룹 ID: ${groupId||"없음"}`,"Meta"));
       body.push(wordParagraph(`카테고리: ${categoryLabel(categoryOf(article))}`,"Meta"));
-      body.push(wordParagraph(`중요도: ${importance===null?"미평가":importance}`,"Meta"));
+      body.push(wordParagraph(`중요도 별점: ${importance===null?"미평가":`${importance.toFixed(1)} / 5.0`}`,"Meta"));
       body.push(wordParagraph(`보도일시: ${publishedAt(article)}`,"Meta"));
       body.push(wordParagraph(`언론사: ${sourceName(article)}`,"Meta"));
       body.push(wordParagraph(`원문 URL: ${articleUrl(article)||"미확보"}`,"Meta"));
