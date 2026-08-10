@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import {
   articleIdOf,
+  isBismayahArticle,
   needsTranslation,
   normalizeTranslationResult,
   reconcileTranslationState,
@@ -90,7 +91,11 @@ const articles = rawArticles.map((article) => {
 const eligible = articles
   .map((article, index) => ({ article, index, id: articleIdOf(article, index) }))
   .filter(({ article }) => needsTranslation(article))
-  .sort((a, b) => importanceScore(b.article) - importanceScore(a.article) || publishedTime(b.article) - publishedTime(a.article));
+  .sort((a, b) => {
+    const bismayahPriority = Number(isBismayahArticle(b.article)) - Number(isBismayahArticle(a.article));
+    if (bismayahPriority) return bismayahPriority;
+    return importanceScore(b.article) - importanceScore(a.article) || publishedTime(b.article) - publishedTime(a.article);
+  });
 const candidates = eligible.slice(0, maxArticles || undefined);
 
 const stats = {
@@ -100,6 +105,9 @@ const stats = {
   failedCount: 0,
   deferredCount: Math.max(0, eligible.length - candidates.length),
   resetCount,
+  bismayahEligibleCount: eligible.filter(({ article }) => isBismayahArticle(article)).length,
+  bismayahCandidateCount: candidates.filter(({ article }) => isBismayahArticle(article)).length,
+  unresolvedBismayahCount: 0,
   concurrency,
   requestMode: "ONE_REQUEST_PER_ARTICLE"
 };
@@ -128,8 +136,17 @@ for (let offset = 0; offset < candidates.length; offset += concurrency) {
   console.log(`[article-translation] progress=${Math.min(offset + batch.length, candidates.length)}/${candidates.length}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}`);
 }
 
-if (!candidates.length) await writePayload(payload, articles, stats);
+const unresolvedBismayah = articles
+  .map((article, index) => ({ article, id: articleIdOf(article, index) }))
+  .filter(({ article }) => isBismayahArticle(article) && needsTranslation(article));
+stats.unresolvedBismayahCount = unresolvedBismayah.length;
+await writePayload(payload, articles, stats);
+
+if (required && unresolvedBismayah.length) {
+  const ids = unresolvedBismayah.slice(0, 10).map(({ id }) => id).join(",");
+  throw new Error(`Bismayah full translation incomplete for ${unresolvedBismayah.length} article(s): ${ids}`);
+}
 if (required && candidates.length && stats.translatedCount === 0) {
   throw new Error("full article translation was required but generated no translations");
 }
-console.log(`[article-translation] complete eligible=${stats.eligibleCount}, candidates=${stats.candidateCount}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}, reset=${stats.resetCount}, concurrency=${stats.concurrency}`);
+console.log(`[article-translation] complete eligible=${stats.eligibleCount}, candidates=${stats.candidateCount}, translated=${stats.translatedCount}, failed=${stats.failedCount}, deferred=${stats.deferredCount}, reset=${stats.resetCount}, bismayahEligible=${stats.bismayahEligibleCount}, unresolvedBismayah=${stats.unresolvedBismayahCount}, concurrency=${stats.concurrency}`);
