@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-10T03:39:35.018Z",
+  "generatedAt": "2026-08-10T06:51:01.019Z",
   "lookbackDays": 14,
-  "count": 344,
+  "count": 339,
   "categoryCounts": {
-    "economy": 61,
+    "economy": 60,
     "security": 66,
     "bismayah": 9,
-    "politics": 192,
+    "politics": 188,
     "international": 16
   },
   "collectionRun": {
@@ -124,7 +124,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-9ePz9dArl0vsgZ_6fC",
@@ -266,7 +266,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-j_SEEjXEBiMVf1Lzm7",
@@ -405,7 +405,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-OgdG2W77ZM3SPe4agw",
@@ -543,7 +543,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7EVHwsS_RvaeMobVe4",
@@ -683,7 +683,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Uda5tPOibwb2BNDVIs",
@@ -825,7 +825,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Jk5ibxTOUX59BU2nkL",
@@ -964,7 +964,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-QgCcVWnxZtxYCRwc6M",
@@ -1101,7 +1101,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-2J2f-iAziJoh7gnA-Y",
@@ -1239,7 +1239,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event---aJDSHsV1NqjvsgEm",
@@ -1369,7 +1369,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Ub9XVeHBM9UtyBGuwq",
@@ -1500,7 +1500,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-FE10t83yGESoOULVGc",
@@ -1627,7 +1627,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-AiqAwxfbneaV6tTlpg",
@@ -1779,7 +1779,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-_qk150vmSqTAM3RpNS",
@@ -1916,7 +1916,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-hPdmp5jWLo1MmSNpB_",
@@ -2057,7 +2057,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-WTG2m4K55djCtrzcj6",
@@ -2194,7 +2194,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-lN2x4NnIoqFU8M3VAW",
@@ -2332,7 +2332,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ySY47evAapXu0Myzvq",
@@ -2472,7 +2472,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-WliykApZPPvIWB2S4a",
@@ -2614,7 +2614,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Gvmq0gIhCwjF82MadV",
@@ -2754,7 +2754,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-vBIYcvQicI1895zF9w",
@@ -2887,9 +2887,9 @@
       "categoryRouting": {
         "from": "security",
         "to": "security",
-        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
+        "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-mSMjf8joYo8Q863PLF",
@@ -3029,7 +3029,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-QLPeeHlUgKtwgalIRA",
@@ -3161,7 +3161,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-yuYvDsxTYKTzX6cFWY",
@@ -3298,7 +3298,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-X4Xfyky0J26vNNZD5s",
@@ -3437,7 +3437,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-_10xVNjp12GfPZKS-x",
@@ -3574,7 +3574,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-rtEDxMlrQ3B-qlH8AD",
@@ -3718,7 +3718,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-AiqAwxfbneaV6tTlpg",
@@ -3853,7 +3853,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-oIYsFExqYbuLueqfPR",
@@ -3993,7 +3993,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-15wGc3aWk2gVC0N6ow",
@@ -4132,7 +4132,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-qvDkINNldHwu8U5o_Y",
@@ -4273,7 +4273,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-tlqlVKOJlrybuVPpiZ",
@@ -4411,7 +4411,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Mbq_Bh0kkGrQMi1RSc",
@@ -4554,7 +4554,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KEk0aqBdj7oSHhFLKe",
@@ -4691,7 +4691,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Nxft-AnLKTOoCEIDwN",
@@ -4838,7 +4838,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Sd13A-IOkcYwjFriJp",
@@ -4977,7 +4977,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-6OT-u8YUnHs3PQ9Zhv",
@@ -5115,7 +5115,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-q27nQW1LgICBST1YZX",
@@ -5258,7 +5258,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-qdB_V_AU5NMBJuDXV5",
@@ -5380,7 +5380,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-qdB_V_AU5NMBJuDXV5",
@@ -5530,7 +5530,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-TGRzFIx8mmCWdR7Q8v",
@@ -5668,7 +5668,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-hIkhipMgt3yo8ZcYIu",
@@ -5852,7 +5852,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -5939,7 +5939,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-lRf93TypLcIIFIkgRN",
@@ -6076,7 +6076,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-rRpfM7Dpp9gJKOHDHx",
@@ -6214,7 +6214,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-XXPvt28kv9fE65hI9t",
@@ -6351,7 +6351,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-9xDBUUd4CELKNdoFCo",
@@ -6488,7 +6488,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-HRPQBl8ASe34wXE30O",
@@ -6677,7 +6677,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -6769,7 +6769,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-feX-SrVHz7EKAp69B9",
@@ -6916,7 +6916,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-HK6b7bbIh1wR06LGRp",
@@ -7058,7 +7058,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-iH2aHGsN5B1fv2wazu",
@@ -7195,7 +7195,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-bveLu6nWGI40cqhR2h",
@@ -7335,7 +7335,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-RN-ZENERmT2jVclhqS",
@@ -7474,7 +7474,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7E3kqL_twML-a6HUbo",
@@ -7612,7 +7612,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-kU05BSUDHtwxUn_wdL",
@@ -7798,7 +7798,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -7938,7 +7938,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -8032,7 +8032,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7yAndmUCVwTUaaghTo",
@@ -8164,9 +8164,9 @@
       "categoryRouting": {
         "from": "security",
         "to": "security",
-        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
+        "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-vTVaYiSKHeFaTLcPTJ",
@@ -8308,7 +8308,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-1esS20qOvMIcfI9sXK",
@@ -8446,7 +8446,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-OUdqhe9n4nJiDKYBeA",
@@ -8584,7 +8584,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-4RJb2wsYTfOd5vTD5X",
@@ -8715,7 +8715,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-OG2I7q_KmHSn7S5A4S",
@@ -8846,7 +8846,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-H3ARZJrQvAieAChUDs",
@@ -8979,7 +8979,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-RYWYC46zEJyRRo0Pp1",
@@ -9112,7 +9112,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-pu6IYbL54lKIvmPwgK",
@@ -9297,7 +9297,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -9381,7 +9381,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-XoPbVd4yFfch9MJ27E",
@@ -9565,7 +9565,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -9667,7 +9667,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-2h2LvZTv3WrY4mNOJw",
@@ -9853,7 +9853,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -9944,7 +9944,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-zTQUTZLuKVRp2BroKe",
@@ -10129,7 +10129,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -10227,7 +10227,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-OsJlFPxbBEcokPfSya",
@@ -10361,7 +10361,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-T5Af9RCwcA4Aow0RNv",
@@ -10539,7 +10539,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -10633,7 +10633,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-GOG1mde1zr3G_8amMo",
@@ -10769,7 +10769,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-N7BIluS1pgZecg27sY",
@@ -10906,7 +10906,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ytwajvZp63NO77S98y",
@@ -11044,7 +11044,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-LPAfSUCOQ4itX3V_Nn",
@@ -11181,7 +11181,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-kb8BcMEqn8szjIH8jo",
@@ -11364,7 +11364,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -11452,7 +11452,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ZLM6UGwydIOwT53OeH",
@@ -11586,7 +11586,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-WfpahJ-dfA53NTvTIh",
@@ -11724,7 +11724,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-gLcToTPrLFA4zszoRm",
@@ -11867,7 +11867,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ASFmuNs-WNPE9z1Htj",
@@ -12052,7 +12052,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -12139,7 +12139,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-GQIvNy0T3SOqD9_kRz",
@@ -12272,9 +12272,9 @@
       "categoryRouting": {
         "from": "security",
         "to": "security",
-        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
+        "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-M8tEOPZD5bsCjsc4CR",
@@ -12411,7 +12411,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-mdpT-c6HLwAbhhr0OQ",
@@ -12548,7 +12548,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Z0g_8VsZ27lNKCBXU2",
@@ -12687,7 +12687,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-EXS_SSzh3uFoxh-YwP",
@@ -12824,7 +12824,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-kC3RLVCsNU659CV_v8",
@@ -12944,7 +12944,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Y3gUHd8NMkXzmmWVNC",
@@ -13095,7 +13095,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event--BUmPIJBjvKl7nPd9F",
@@ -13283,7 +13283,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -13375,7 +13375,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Y3gUHd8NMkXzmmWVNC",
@@ -13495,7 +13495,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Y3gUHd8NMkXzmmWVNC",
@@ -13692,7 +13692,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -13780,7 +13780,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-m95E1igTs6fiezLzyl",
@@ -13919,7 +13919,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-v_LhngpmtkN5kDf6-C",
@@ -14057,7 +14057,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KbCd9ItKC59H_XuF0y",
@@ -14194,7 +14194,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-jJKo6NCFGtAg-HRh8f",
@@ -14380,7 +14380,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -14471,7 +14471,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-pq5o-KpOXKcs3hfesR",
@@ -14602,7 +14602,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-M1q1iMHBqfujb2GGkN",
@@ -14747,7 +14747,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-y5OMFB1wW8bZdRwepC",
@@ -14884,7 +14884,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-20HqCcmX4JZGa9q_E1",
@@ -15022,7 +15022,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-pfNq_8Vgv7rY5AnM7m",
@@ -15161,7 +15161,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-_y68n4q-OEfIbHqIYZ",
@@ -15292,7 +15292,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-YsLfVB-k5EPPwJPiBW",
@@ -15431,7 +15431,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-yluPuowV3hsBuBZ2Rm",
@@ -15567,7 +15567,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-yYQkuPvXHzEWVV5QMi",
@@ -15702,7 +15702,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-eJQxpxUVHZZ61fB5Qa",
@@ -15836,7 +15836,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-S2vCZuiyGD5lhTRwL8",
@@ -15970,7 +15970,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-EgTdltkG-Nw8mJ9N9z",
@@ -16154,7 +16154,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -16244,7 +16244,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-iHO_R7L6pA6Ygb4qBd",
@@ -16387,7 +16387,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-en233sxzRoBXBwXT9p",
@@ -16523,7 +16523,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ulasVfMVDUXyn3at4o",
@@ -16660,7 +16660,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-q69CXvadtXgoMF9Sww",
@@ -16795,7 +16795,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-w1gtEpuEfW44h7U_wE",
@@ -16935,7 +16935,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-r4uDZ3nGVH0kjDjOQd",
@@ -17075,7 +17075,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-4CudLLdP1bCKh50dm5",
@@ -17254,7 +17254,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -17343,7 +17343,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-NUQ--TJ5tDBWI2QTVF",
@@ -17481,7 +17481,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-PO_PA8FShSAA11uKXO",
@@ -17624,7 +17624,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ztnQ1JuuL3C0oWWcvP",
@@ -17766,7 +17766,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-lHtTN9NaLSJQZA98wv",
@@ -17908,7 +17908,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-1ZZ0yHx8lG0pvEv0EI",
@@ -18051,7 +18051,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-0tGceL5Z3r6H7lydGj",
@@ -18187,7 +18187,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-NUnQ2bfonG5CNaEXi3",
@@ -18320,7 +18320,7 @@
       "contentCheckedAt": "2026-08-08T21:50:32.887Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -18428,7 +18428,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event--RiSa8Ii6EVreODsQu",
@@ -18611,7 +18611,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -18699,7 +18699,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KVp5SjvhNorNXAe0NX",
@@ -18841,7 +18841,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-4HH3wctbVkU0JOGPrI",
@@ -18979,7 +18979,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-uZjHBNKRtyerWdxJPh",
@@ -19118,7 +19118,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-XL55w3wvKNlYjkNF4a",
@@ -19261,7 +19261,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-j3XKdxAm1EW0CGfJPn",
@@ -19402,7 +19402,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Zl71_KQi3kcS35STt0",
@@ -19539,7 +19539,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-k_oGIClhhVYjTTdsK1",
@@ -19674,7 +19674,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-OQsHHc6ldhoPQVsjjg",
@@ -19814,7 +19814,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-WeGs1fSe54F90gz9V9",
@@ -19951,7 +19951,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7MzVGuLBA63aZjdsju",
@@ -20097,7 +20097,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7HxUr4elW0Gnj5bQbG",
@@ -20238,7 +20238,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-cMyacznp7gWFxBetJT",
@@ -20383,7 +20383,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7kFOjbDb1jqnxD97Cc",
@@ -20528,7 +20528,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-O6PJP7BTy9uUo3Rfen",
@@ -20671,7 +20671,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-QZE92oj5xs8E5H9nus",
@@ -20813,7 +20813,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-nxxlDIV4zIGLUxi8OI",
@@ -20954,7 +20954,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-HeqgNTAxVHdKwh-zol",
@@ -21088,7 +21088,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-d0_4YoqJVNrnHDE8_i",
@@ -21222,7 +21222,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-wFcHlUVMSzXDzyMtLR",
@@ -21360,7 +21360,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-HegM-4bcTPlfBnogzH",
@@ -21500,7 +21500,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-VOkUSKty-Lwr4cZXB0",
@@ -21684,7 +21684,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -21780,7 +21780,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-UVv2M6zS1kSY_z_NRa",
@@ -21923,7 +21923,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-3RBINsLE0wQ1O-Qsg5",
@@ -22065,7 +22065,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-mAuQbcb9YtCsaaCmyf",
@@ -22210,7 +22210,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-rYFqbMg9EzR-h4R0ED",
@@ -22349,7 +22349,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-twqy0CJbSBlg9rvWJS",
@@ -22491,7 +22491,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Bozi37cGhRdxZGXhMF",
@@ -22676,7 +22676,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -22773,7 +22773,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ZyEKKanAls8xZYY3ez",
@@ -22908,7 +22908,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-8vSGI6ahn4UjiI-MEi",
@@ -23046,7 +23046,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-1aRUpg02kV_uY0gZOE",
@@ -23186,7 +23186,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-xTabvaZsGtVg_3Drws",
@@ -23326,7 +23326,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-A45LxLkePsJNMIJmYI",
@@ -23468,7 +23468,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-F58HTcCT9baS9ca9wF",
@@ -23654,7 +23654,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -23801,7 +23801,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -23889,7 +23889,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ebLgyHT-wPJkZmCSTU",
@@ -24022,7 +24022,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-9mpH41sFP6UlDG-1AX",
@@ -24163,7 +24163,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-nzJd5tohcm0qscw7mA",
@@ -24304,7 +24304,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-fPzjGd32F9WihHqJ56",
@@ -24446,7 +24446,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-cBOry_FEfInBLSYTc0",
@@ -24583,7 +24583,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-idhLhWGM3y9Ko0FlK2",
@@ -24722,7 +24722,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-GVEWyLk6TC1SmuO8S1",
@@ -24865,7 +24865,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "previousContentHash": "9e8ba2ca8253a403c77aaa275159b2e47aef166f93ff36a27dbccd8159020b26",
       "importance": {
@@ -24991,7 +24991,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KwxsryKBlqIxhZEYd3",
@@ -25126,7 +25126,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-JwITo_aV8ZidBzliyG",
@@ -25269,7 +25269,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-DGPx1P3JqZi4SBiZxW",
@@ -25403,7 +25403,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-phqaphHDcBT4n3suWg",
@@ -25545,7 +25545,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-0qu2ZtR2rPvmtT5pci",
@@ -25682,7 +25682,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Vwo0tRBEf-PrF011RY",
@@ -25821,7 +25821,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-LiLk4p-NefUW60Aaua",
@@ -25944,7 +25944,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-LiLk4p-NefUW60Aaua",
@@ -26094,7 +26094,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-WVnQaEzN9Kz9aqAHIS",
@@ -26212,7 +26212,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-OvPE7LOIfJoQ4SZcuF",
@@ -26330,7 +26330,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-i0iRUXvvYatZUksc-o",
@@ -26439,7 +26439,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-RIA2GFnCMm4EhAUgy6",
@@ -26555,11 +26555,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-eZF3h1wgT2j9Kif6nx",
@@ -26672,7 +26672,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-nwfQItBOJaw4MEzRGe",
@@ -26791,7 +26791,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-nwfQItBOJaw4MEzRGe",
@@ -26910,7 +26910,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-hMkPCqmj5WuQiKeirv",
@@ -27071,7 +27071,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -27196,7 +27196,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -27264,11 +27264,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-C9Bz_QTwDpSf5m6Cgv",
@@ -27378,11 +27378,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-InvPr2KvxZcGoTXlgm",
@@ -27502,7 +27502,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-nwfQItBOJaw4MEzRGe",
@@ -27621,7 +27621,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-cm7ahDHzn4xWJUrohG",
@@ -27777,7 +27777,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -27845,7 +27845,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-BgmLbY7m8VFVxG6Jxq",
@@ -27951,11 +27951,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-EF603CH_svMEOUn7gK",
@@ -28064,7 +28064,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KAdRSpCYTp1w3_JG42",
@@ -28174,11 +28174,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-U593NolfbZu4bAv3Ok",
@@ -28338,7 +28338,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -28410,7 +28410,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-JUePf422UdgKRSt3uh",
@@ -28572,121 +28572,8 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
-      "keywordId": "international-us-001",
-      "category": "security",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "1990 الغزو العراقي للكويت",
-      "sourceArabic": "الهيئة الوطنية للإعلام",
-      "sourceHomepage": "https://www.maspero.eg",
-      "publishedAt": "2026-08-01T23:00:00.000Z",
-      "descriptionArabic": "1990 الغزو العراقي للكويت الهيئة الوطنية للإعلام",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdVVYalNkaHVPVlE3UWZsZ0YtcmdEZFp1a3FCekVYdlZqVVVTYWxCWjg2SFZNelF1VkhzenByTFl0ZWV5X3o1NzNkeFpGSDV3bXdCTnNVa3E4UE9Sdm1waDhqSVN4MXVoMlVPamJqS19mZ3U1NGEyNXAzdnVwWmU3azhBUmd5WWFIa2RlcVNNQk5RNVlEZDhGVzF3Zml1aHpDbWEzaTJpejRVNFJYT2NMU0ZjS1d6QUlPWGVhM1JPNDZBNVVuOFlHTlppeXZKenRYT0NMM3QzeHlGM042VXViRms3cnlvZ3ZJSlNZNDBoLWtaYmdZV3otTA?oc=5",
-      "articleUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:38.673Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:36:06.708Z",
-      "canonicalUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
-      "originalTextArabic": "محافظات \n تحقيقات وحوارات \n حوارات مباشرة \n مقالات \n حدث فى مثل هذا اليوم \n\n الرئيسية \n\n المزيد\n\n حدث فى مثل هذا اليوم \n\n 1990 الغزو العراقي للكويت\n\n أسامة علي\n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا وتدريبا ضمن القوات المسلحة العراقية بمهاجمة الأراضي الكويتية عبر 4 محاور رئيسية. \n\n واستغرقت العملية العسكرية يومين وانتهت باستيلاء القوات العراقية على كامل الأراضي الكويتية في 4 أغسطس ثم شكلت حكومة صورية برئاسة العقيد علاء حسين خلال 4 - 8 أغسطس تحت اسم جمهورية الكويت ثم أعلنت الحكومة العراقية يوم 9 أغسطس 1990، ضم الكويت للعراق وإلغاء جميع السفارات الدولية في الكويت.\n\n أما في الطائف بالمملكة العربية السعودية فقد تشكلت الحكومة الكويتية في المنفى حيث تواجد أمير الكويت الشيخ جابر الأحمد الصباح وولي العهد الشيخ سعد العبد الله الصباح والعديد من الوزراء وأفراد القوات المسلحة الكويتية.\n\n بعد ساعات من الاجتياح العراقي للكويت طالبت الكويت والولايات المتحدة بعقد اجتماع طارئ لمجلس الأمن وتم تمرير قرار مجلس الأمن الدولي رقم 660 والتي شجبت فيه الاجتياح وطالبت بانسحاب العراق من الكويت.\n\n وبدأت القوات الأمريكية بالتدفق إلى السعودية في 7 أغسطس من عام 1990، وفي نفس اليوم الذي أعلن العراق فيه ضمه للكويت واعتبارها \"المحافظة التاسعة عشر\"، وصل حجم التحشدات العسكرية في السعودية إلى 500,000 جندي.\n\n في خضم هذه الحشودات العسكرية صدرت سلسلة من قرارات مجلس الأمن والجامعة العربية وكانت أهمها قرار مجلس الأمن الدولي رقم 678، والذي أصدر في 29 نوفمبر عام 1990 والذي حدد فيه تاريخ 15 يناير من عام 1991 موعدا نهائيا للعراق لسحب قواتها من الكويت وإلا فإن قوات الائتلاف سوف \"تستعمل كل الوسائل الضرورية لتطبيق قرار مجلس الأمن الدولي رقم 660\".\n\n تشكل ائتلاف عسكري مكون من 34 دولة ضد العراق لتنفيذ قرارات مجلس الأمن الخاصة بانسحاب القوات العراقية من الكويت دون قيد أو شرط، وبلغت نسبة الجنود الأمريكيين من الائتلاف العسكري حوالي 74% من العدد الإجمالي للجنود التي تم حشدهم، وقد وصل العدد الإجمالي لجنود قوات الائتلاف إلى 959,600.\n\n واستمر الاحتلال العراقي للكويت فترة 7 شهور، وانتهى الاحتلال بتحرير الكويت في 26 فبراير 1991 بعد حرب الخليج الثانية.\n\n حدث في مثل هذا اليوم \n الغزو العراقي للكويت \n\n أسامة علي \n محرر بالموقع الموحد للهيئة الوطنية للإعلام \n\n أخبار ذات صلة\n\n حدث فى مثل هذا اليوم \n 2015 الرئيس عبد الفتاح السيسي يفتتح قناة السويس الجديدة \n\n أسامة علي\n\n الخميس، 06 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1876 صدور العدد الأول من جريدة الأهرام \n\n أسامة علي\n\n الأربعاء، 05 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2010 إطلاق القمر الصناعي المصري \"نايل سات 201\" \n\n أسامة علي\n\n الثلاثاء، 04 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1926 مولد الفنان رشدي أباظة \n\n أسامة علي\n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1991 وفاة الكاتب الكبير يوسف إدريس \n\n أسامة علي\n\n السبت، 01 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n\n أسامة علي\n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n حدث فى مثل هذا اليوم \n 2011 اليوم الدولي للصداقة \n\n أسامة علي\n\n الخميس، 30 يوليو 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1981 حفل زفاف الأمير تشارلز والليدي ديانا سبنسر \n\n أسامة علي\n\n الأربعاء، 29 يوليو 2026 01:00 ص\n\n المزيد من حدث فى مثل هذا اليوم \n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n 1926 مولد الفنان رشدي أباظة \n في مثل هذا اليوم الثالث من أغسطس 1926 ولد الفنان رشدي أباظة بالزقازيق بمحافظة الشرقية لأم إيطالية وأب مصري.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n 1990 الغزو العراقي للكويت \n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا...\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n السبت، 01 اغسطس 2026 01:00 ص\n\n 1991 وفاة الكاتب الكبير يوسف إدريس \n في مثل هذا اليوم الأول من أغسطس 1991 توفي الكاتب الكبير يوسف إدريس علي عن عمر ناهز 64 عاما.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n في مثل هذا اليوم الحادي والثلاثين من يوليو 2017 أعلن رئيس مركز القدس الدولي حسن خاطر، أن السلطات الإسرائيلية صادرت...\n\n أخر الأخبار \n\n الأكثر قراءة \n\n رئيس معهد الفلك: إشعارات \"جوجل\" ليست إنذارا مسبقا بموعد أو مكان الزلازل \r\n\n الإثنين، 03 اغسطس 2026 04:35 ص\n\n رئيس معهد الفلك: الهزات الارتدادية المتوقعة أقل قوة ولا داعي للقلق \r\n\n الإثنين، 03 اغسطس 2026 04:28 ص\n\n وزير الصحة يوجه برفع درجة الاستعداد القصوى بجميع المستشفيات بعد الهزة الأرضية \r\n\n الإثنين، 03 اغسطس 2026 04:23 ص\n\n بيان توضيحي من اتحاد الكرة بشأن التصريحات المنسوبة إليه \r\n\n الإثنين، 03 اغسطس 2026 04:17 ص\n\n \"القومية للزلازل\": هزة أرضية بقوة 5.6 ريختر على بعد 61 كم شمال شرق شرم الشيخ \r\n\n الإثنين، 03 اغسطس 2026 03:54 ص\n\n -->\r\n\n-->\r\n\n المعهد القومي للبحوث الفلكية: جار إعداد بيان بخصوص الهزة الإرضية \r\n\n الإثنين، 03 اغسطس 2026 03:19 ص\n\n -->\r\n\n-->\r\n\n باحث أثري يطالب بعودة مياه النيل لسور مجرى العيون ليصبح مزارا سياحيا \r\n\n الأحد، 02 اغسطس 2026 07:49 ص\n\n -->\r\n\n-->\r\n\n أسعار الذهب اليوم بالأسواق المحلية.. عيار 21 يسجل 5910 جنيها \r\n\n الأحد، 02 اغسطس 2026 09:37 ص\n\n -->\r\n\n-->\r\n\n الأرصاد: انكسار الموجة الحارة اعتبارا من الثلاثاء.. والعظمى غدا على القاهرة 37 \r\n\n الأحد، 02 اغسطس 2026 06:51 م\n\n تحقيقات وحوارات\n\n تحقيقات وحوارات \r\n\n دليلك للتنسيق الجامعي .. تساؤلات وإجابات \r\n\n السبت، 01 اغسطس 2026 10:25 ص \n\n تحقيقات وحوارات \r\n\n فيديو.. الإعلام الرقمي.. تقنيات واعدة وتحديات هائلة \r\n\n الخميس، 30 يوليو 2026 01:09 م \n\n تحقيقات وحوارات \r\n\n موجات الطقس الساخنة.. لماذا تحدث وكيف نواجهها؟ \r\n\n الخميس، 23 يوليو 2026 05:18 م \n\n تحقيقات وحوارات \r\n\n اختبارات القدرات بالكليات.. كيف يتم تنظيمها ؟ \r\n\n السبت، 18 يوليو 2026 09:22 ص \n\n تحقيقات وحوارات \r\n\n ترشيدا للمياه والطاقة .. هندسة قناة السويس تبتكر نظام ري ذكي بالطاقة الشمسية \r\n\n الثلاثاء، 14 يوليو 2026 06:11 م \n\n تحقيقات وحوارات \r\n\n بعد توجيهات الرئيس السيسي.. خريطة تطوير الإعلام المصري بعدسة الخبراء \r\n\n الخميس، 09 يوليو 2026 12:44 م \n\n مقالات\n\n محاذير ومعايير السبق في الأخبار! \r\n\n الأحد، 02 اغسطس 2026 11:09 ص \n\n مصر والقانون الدولي: قراءة هادئة في حادث دمياط واحتواء التصعيد \r\n\n السبت، 01 اغسطس 2026 10:00 ص \n\n شمش… الإله الذي كان يرى كل شيء \r\n\n الجمعة، 31 يوليو 2026 12:00 م \n\n القاهرة... بوابة المستقبل للمرأة العربية \r\n\n الجمعة، 31 يوليو 2026 10:00 ص \n\n هل يكفي انطباع واحد.. حين تخدعنا صفة واحدة عن رؤية الإنسان كله \r\n\n الخميس، 30 يوليو 2026 10:00 ص \n\n عظمة ملكات مصر القديمة \r\n\n الأربعاء، 29 يوليو 2026 10:00 ص \n\n -->\r\n\n-->\r\n\n النشرة البريدية\n\n انضم لاكثر من 72458 مشترك \r\n\n اشترك \r\n\n بالتسجيل فى النشرة البريدية فانك توافق على الشروط الخاصة بنا",
-      "sourceHost": "maspero.eg",
-      "contentChars": 6297,
-      "arabicRatio": 0.9038,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-03T01:38:24.319Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "international",
-        "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-jS2d1bjlCEhkIFgMmU",
-        "representativeArticleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 48,
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "iraqLink": 19,
-          "countryImportance": 15,
-          "iraqImpact": 8,
-          "businessImpact": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "e1be9f487766e2c4bc3c",
-        "ruleScore": 48,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "e65ff067934713b935ff715bee2e12cb5b1a36d819e05734440b18cce86f503b",
-      "contentCheckedAt": "2026-08-03T01:38:24.319Z",
-      "contentChanged": false,
-      "processingReused": true
     },
     {
       "schemaVersion": "1.0",
@@ -28749,11 +28636,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-LK67sii5_0B-eU0CoI",
@@ -28865,7 +28752,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-uH0JbF7cGsVesRins-",
@@ -28971,11 +28858,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-VR4Zh_VX1QNCCqrtwU",
@@ -29085,7 +28972,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Hk2xpJmWAi8M7Vf7-9",
@@ -29197,7 +29084,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-jRsKTZSxtA1YvUqcCF",
@@ -29239,119 +29126,6 @@
       },
       "contentHash": "22a12bccb53bd5512e024498772fd6cb28760fc2ed81da8dfd869941cb6d5133",
       "contentCheckedAt": "2026-08-03T01:38:25.806Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق",
-      "sourceArabic": "تسنیم",
-      "sourceHomepage": "https://www.tasnimnews.ir",
-      "publishedAt": "2026-08-01T15:56:31.000Z",
-      "descriptionArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق تسنیم",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxPbTl6aGlPYWRHZUlRRGltaDJGTjA4cFh6ZHgxb2R2ZlBSa1VKbHEzSWhaZk9wc2cxWkhYR3RTaHZKT3U0VDNmME9RbndhTEc1SmRvTThJM0NwSnpXeEh5TFl1eXVoaVA0OUVqSFZvX0EwMUF2QmloYW5vVzd2bE5LYjllYm5wX1lxU1Z2S1l4RTA4eEl1NWZmc3NPTHBlYnJSSXJ4Y2YwdG1seTZvX1A2QWhrT1FsdVNRX2o0UHJKSzJqalVxQ1Vxd09nbUQ1YV9Va2I5ckc4RjEyLVpvQWRZQWNjQTNRU3pSbHpUd2dCa19OWVZXVHMtUjNrSGctcVIwTDhrbzZmR2FWSUhRY1ZUNjVjLTVMOTNsN1pFR1ZQa2lRVGwtbFN1RXdveWVXWkFuZ3kzYkdqMF9YT3NQNUwwSzl0UkxIc2NiV2xydzhad1hraFBLY1czSFZpMjhGNWFqdHROeU0xUV9PV1MwcmNvbjhBdFVGWWlNZk1KblQtVGxUejRsN0thVFN4VFFyNVBFZnhRVDQtYXl1dnR2T2lhTGlzYWVmem9QazdYeklJUDdXaThwRVBUTFFUbmN4ZXdtWHRSZzV6RkhTeXg2ajgyaUpsT0cxTldwWUNTMktjMkVSVGZMSXU5TlVORkVIR0JnR3g2MmNnN2U0X2_SAfsDQVVfeXFMT205emhpT2FkR2VJUURpbWgyRk4wOHBYemR4MW9kdmZQUmtVSmxxM0loWmZPcHNnMVpIWEd0U2h2Sk91NFQzZjBPUW53YUxHNUpkb004STNDcEp6V3hIeUxZdXl1aGlQNDlFakhWb19BMDFBdkJpaGFub1c3dmxOS2I5ZWJucF9ZcVNWdktZeEUwOHhJdTVmZnNzT0xwZWJyUklyeGNmMHRtbHk2b19QNkFoa09RbHVTUV9qNFBySksyampVcUNVcXdPZ21ENWFfVWtiOXJHOEYxMi1ab0FkWUFjY0EzUVN6Umx6VHdnQmtfTllWV1RzLVIza0hnLXFSMEw4a282ZkdhVklIUWNWVDY1Yy01TDkzbDdaRUdWUGtpUVRsLWxTdUV3b3llV1pBbmd5M2JHajBfWE9zUDVMMEs5dFJMSHNjYldscnc4WndYa2hQS2NXM0hWaTI4RjVhanR0TnlNMVFfT1dTMHJjb244QXRVRllpTWZNSm5ULVRsVHo0bDdLYVRTeFRRcjVQRWZ4UVQ0LWF5dXZ0dk9pYUxpc2FlZnpvUGs3WHpJSVA3V2k4cEVQVExRVG5jeGV3bVh0Umc1ekZIU3l4Nmo4MmlKbE9HMU5XcFlDUzJLYzJFUlRmTEl1OU5VTkZFSEdCZ0d4NjJjZzdlNF9v?oc=5",
-      "articleUrl": "https://www.tasnimnews.ir/ar/news/2026/08/01/3661373/%D8%A8%D8%AF%D8%A1-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A7%D9%84%D9%88%D8%AC%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B3%DA%A9%D8%B1%DB%8C-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%DB%8C%DA%A9%DB%8C-%D9%81%DB%8C-%D8%A7%D9%82%D9%84%DB%8C%D9%85-%DA%A9%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/amp",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:38.673Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:36:11.485Z",
-      "canonicalUrl": "",
-      "originalTextArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق\n\n الأخبار الشرق الأوسط \n\n 2026/08/01 - 14:16 \n\n وافادت وكالة تسنيم الدولية للانباء ان المصادر الإعلامية تحدثت عن بدء عملية سحب تدريجي للقوات الأمريكية من كردستان العراق، وذلك في إطار برنامج إعادة انتشار القوات الأمريكية وإنهاء الوجود العسكري الواسع لهذا البلد في العراق.\n\n ووفقاً لما نقلته \"العربية\"، فقد تحركت خلال الأيام الماضية قوافل عسكرية أمريكية من مدينة أربيل صوب الدول المجاورة، وبدأت عملية نقل القوات والمعدات من القواعد الأمريكية في إقليم كردستان.\n\n وبناءً على هذا التقرير، سيتم سحب القوات الأمريكية على مراحل ووفق جدول زمني محدد. بيد أن وزارة الحرب الأمريكية (البنتاغون) لم تصدر حتى الآن أي تعليق رسمي حول تفاصيل التحركات الأخيرة، ولا عدد القوات المُنسحبة، ولا كمية المعدات المنقولة.\n\n وفي الوقت نفسه، أفاد موقع \"المانيتور\" نقلاً عن قاعدة \"كلاش ريبورت\" بأن الولايات المتحدة بدأت بسحب قواتها المتبقية من العراق قبل الموعد النهائي المحدد في 30 سبتمبر/أيلول. ووفقاً لهذا التقرير، فقد قام الجيش الأمريكي أيضاً بسحب أنظمة الدفاع الجوي \"باتريوت\" من مدينة أربيل.\n\n مخاوف \"العربية\" من تراجع الوجود الأمريكي\n\n تابع موقع شبكة \"العربية\" في تقريره قائلاً إن عملية سحب القوات الأمريكية تبدأ في وقت شهدت فيه المنطقة خلال الأسابيع الأخيرة تصاعداً في التوترات العسكرية.\n\n وكتبت \"العربية\": \"إن استمرار هجمات الجماعات المسلحة المدعومة من إيران ضد مواقع في إقليم كردستان، يثير مخاوف بشأن تداعيات تراجع الوجود العسكري الأمريكي في هذه المنطقة\".\n\n اتفاق بين بغداد وواشنطن لإنهاء مهمة التحالف\n\n وزعمت \"العربية\" أن انسحاب القوات الأمريكية يتم في إطار الاتفاقات السابقة بين بغداد وواشنطن لإنهاء مهمة التحالف الدولي بقيادة الولايات المتحدة في العراق.\n\n وكان العراق والولايات المتحدة قد توصلا سابقاً إلى اتفاق بشأن جدول زمني لإعادة انتشار قوات التحالف وإنهاء المهام العسكرية لهذه القوات في عدد من القواعد العراقية. وبموجب هذا البرنامج، من المقرر أن يكتمل الانسحاب من القواعد المتبقية خلال عام 2026.\n\n غير أن بدء انسحاب العسكريين الأمريكيين من إقليم كردستان العراق، وتحديداً في خضم الحرب مع إيران، يبدو أنه يحدث خارج البرنامج المُعدّ سلفاً.\n\n واختتمت \"العربية\" تقريرها بالإشارة إلى أنه ورغم بدء عملية الانسحاب، لا يزال غير واضح عدد القوات الأمريكية التي غادرت إقليم كردستان، وحجم المعدات العسكرية التي جرى إخراجها من المنطقة. ومن المتوقع أن تستمر عملية إعادة انتشار القوات الأمريكية خلال الأسابيع المقبلة، تنفيذاً للجدول الزمني المتفق عليه بين بغداد وواشنطن.\n\n مراجعة أمريكية للوجود العسكري في الكويت\n\n وكانت صحيفة \"وول ستريت جورنال\" قد أفادت يوم الأربعاء من الأسبوع الماضي بأن الولايات المتحدة تدرس، في ضوء تطورات الحرب ضد إيران، مدى وجودها في دولة الكويت.\n\n ويأتي الإجراء الأمريكي في وقت أعلن فيه مسؤولون كويتيون أنهم لا يزالون بحاجة إلى التزام أمريكي حازم بدعم بلدهم.\n\n وذكرت \"وول ستريت جورنال\" أن المنشآت والقواعد الأمريكية قد تعرضت خلال الحرب لعدة هجمات إيرانية.\n\n وجاء في تقرير الصحيفة: \"يقول محللون إن ما يحتمل أن يؤدي إلى تغيير في هذه العلاقات، هو إدراك الولايات المتحدة لحقيقة أن الوجود العسكري الدائم والكبير في الكويت لم يعد ضرورياً أو مقبولاً من الناحية العسكرية\".\n\n /انتهى/",
-      "sourceHost": "tasnimnews.ir",
-      "contentChars": 2927,
-      "arabicRatio": 1.0067,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-03T01:38:26.896Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-0_tPXOctHVZWjvQ-ts",
-        "representativeArticleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 44,
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "iraqLink": 19,
-          "countryImportance": 15,
-          "iraqImpact": 4,
-          "businessImpact": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "e3705f70ebf1ed9137da",
-        "ruleScore": 44,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "f42ecde913ed8a2969ca785386f04aaca6e48c97a1e01024cd2c443eb76ec988",
-      "contentCheckedAt": "2026-08-03T01:38:26.896Z",
       "contentChanged": false,
       "processingReused": true
     },
@@ -29472,7 +29246,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -29592,7 +29366,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -29664,7 +29438,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-U32DW5nCJZFg1nKIkp",
@@ -29773,11 +29547,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ADGCQ2pb4gZpecPgMD",
@@ -29886,11 +29660,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-o5aOCr4bmsJeVYEafa",
@@ -30047,11 +29821,11 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -30122,7 +29896,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Klzz3nBMXeMtKGVHsV",
@@ -30274,7 +30048,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -30343,7 +30117,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-4Ofu3ioap8jnnpWBdc",
@@ -30461,7 +30235,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-jLS-xErHK5AtIz2HXP",
@@ -30570,7 +30344,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-WpwqqmPXcM6o8FRgdf",
@@ -30679,11 +30453,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-o58bkFI4yfGukV_kwg",
@@ -30796,7 +30570,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-rHEv5u5FMhVQ4Gb06Y",
@@ -30948,7 +30722,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -31019,7 +30793,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-g7uh8hQrwG3KXhei5j",
@@ -31068,7 +30842,7 @@
       "schemaVersion": "1.0",
       "articleId": "discovery-19eZmbRwV0stQHZwjeOaydEj",
       "keywordId": "politics-cf-001",
-      "category": "politics",
+      "category": "security",
       "priority": 98,
       "queryArabic": "\"الإطار التنسيقي\" اجتماع",
       "requiredTerms": [
@@ -31117,7 +30891,7 @@
       },
       "analysis": {
         "status": "PENDING",
-        "category": "politics",
+        "category": "security",
         "recommendation": "USER_REVIEW_REQUIRED",
         "relevanceScore": null,
         "recommendationReason": ""
@@ -31130,10 +30904,10 @@
       },
       "categoryRouting": {
         "from": "politics",
-        "to": "politics",
-        "reason": "이라크 정치·정부·의회 직접 관련",
+        "to": "security",
+        "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event--zZsNr6qz-uxEXYhqZ",
@@ -31248,7 +31022,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-yYvYrAD83vNHE4WKR7",
@@ -31358,7 +31132,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-I_Yi9I45dcht83n-vE",
@@ -31467,7 +31241,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-4iRkxhLCeoXzMOCh4W",
@@ -31581,7 +31355,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-3axDUTgbgnk9QhILRe",
@@ -31696,7 +31470,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-yYvYrAD83vNHE4WKR7",
@@ -31812,7 +31586,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-B3Hrd2iIYnmEQIwb8s",
@@ -31925,7 +31699,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-92X9S6DkhDceY7GgDH",
@@ -32043,7 +31817,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-jLS-xErHK5AtIz2HXP",
@@ -32152,7 +31926,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-w-Z9Z2lm-7OaOf1MdW",
@@ -32321,7 +32095,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -32397,7 +32171,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-2iO3maWiNXtnZtqN0A",
@@ -32503,7 +32277,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-YenRFB-pOYEbsh6m48",
@@ -32626,7 +32400,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-PiLQE-M8JvtrDWffR-",
@@ -32734,7 +32508,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-9nLc59wEWwsCpsmtmk",
@@ -32854,7 +32628,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-2XlvkWR4Et5V5ttiOo",
@@ -32968,7 +32742,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-JXs07Munn-Zp69M1Y1",
@@ -33087,7 +32861,7 @@
         "to": "bismayah",
         "reason": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-JXs07Munn-Zp69M1Y1",
@@ -33201,7 +32975,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-5b-jm_Kxlz0-iTOfRt",
@@ -33317,11 +33091,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7aoTj3iMmK9dXrevDI",
@@ -33473,7 +33247,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -33590,7 +33364,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -33662,7 +33436,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-2XlvkWR4Et5V5ttiOo",
@@ -33776,7 +33550,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-AHBK5qW3PLnK6neUmQ",
@@ -33886,7 +33660,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-RCR7GW52gp9QiGNjkv",
@@ -33999,7 +33773,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-UXyLyvWJ7i4NrysdVI",
@@ -34113,7 +33887,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Kj3ULHAeI8GwkvgF7e",
@@ -34227,7 +34001,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-m3kbHAAQjIEwK49Pqe",
@@ -34340,7 +34114,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-fhgoO-W9ixcs1ShxcV",
@@ -34460,7 +34234,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Sbs2NpoUaZv08ulp52",
@@ -34574,7 +34348,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-vrHV4NNLaqoWmDCqGF",
@@ -34729,7 +34503,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -34843,7 +34617,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -34914,7 +34688,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-LwfbtWvnE7b5QrLtrG",
@@ -35028,7 +34802,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-FoEB0odnIv0Zv6mxEl",
@@ -35142,7 +34916,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-simdSbFStBlnfHpFup",
@@ -35256,7 +35030,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Sbs2NpoUaZv08ulp52",
@@ -35369,7 +35143,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-c2Di97Berr_-pCcBB7",
@@ -35478,7 +35252,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Aj_PdWqKfvZyIDsyxV",
@@ -35587,7 +35361,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-O76nc05VOI1SKbxrP_",
@@ -35702,7 +35476,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-TTkhTxc_YtGzZpTXgv",
@@ -35808,11 +35582,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KK3G8D-QbyfSnEAiUY",
@@ -35921,7 +35695,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-f7yc5iJLomdD-_kfPu",
@@ -36034,7 +35808,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-GoEF2DC4831RzXRu0Q",
@@ -36149,11 +35923,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-8q0z2xP1t8D5NtkX-L",
@@ -36266,7 +36040,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-JmmIhc6QIIx50_v8wL",
@@ -36379,7 +36153,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-5NAZGWvYoKAMaPZ5Ay",
@@ -36538,7 +36312,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -36610,7 +36384,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-3mG1rIii5EaqDnqmyr",
@@ -36719,7 +36493,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-QnEVQcFvaYoiOsB3qP",
@@ -36835,9 +36609,9 @@
       "categoryRouting": {
         "from": "security",
         "to": "security",
-        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
+        "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-4E5gkZmVZza2bKXUom",
@@ -36948,7 +36722,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Kb0W-VRQjHi99e_o3W",
@@ -37076,7 +36850,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 35,
@@ -37196,7 +36970,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "securityIncident": {
         "type": "MISSILE_DRONE_ATTACK",
@@ -37311,7 +37085,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-nGWMiRC_QjGKTtO3Uy",
@@ -37417,11 +37191,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-CdX5-2IlHTh6tIHO3f",
@@ -37535,7 +37309,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-PMvrienY82gI88o2zY",
@@ -37651,7 +37425,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-wRzGKt_s0ReHz2CdFz",
@@ -37764,7 +37538,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-3RDhvefWeJGJu5_MIv",
@@ -37917,7 +37691,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -37988,7 +37762,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event--EX0Gtvf-PFkmYxjdV",
@@ -38097,11 +37871,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-b1jPQemYhHET_z1Xci",
@@ -38232,7 +38006,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 43,
@@ -38337,11 +38111,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-jItgfy2Z_jtHc5Bmaw",
@@ -38454,7 +38228,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7h-F8ZtyhZb3NuAuUO",
@@ -38565,7 +38339,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-mVWaxgWWW4FHIqBAFg",
@@ -38692,7 +38466,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 40,
@@ -38797,7 +38571,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-tIuhurCzTRhEx9qXC0",
@@ -38915,7 +38689,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ZjCaAYTHtzOH4XS9gH",
@@ -39031,7 +38805,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ncMjWzhDW8KYiCgq-1",
@@ -39140,7 +38914,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ZjCaAYTHtzOH4XS9gH",
@@ -39259,7 +39033,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-MHp8o3Q5julgNyiQsc",
@@ -39388,7 +39162,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "securityIncident": {
         "type": "ARMED_ATTACK",
@@ -39499,7 +39273,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Vln6_LbTA0Gv_aTspy",
@@ -39621,7 +39395,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "securityIncident": {
         "type": "ARMED_ATTACK",
@@ -39742,7 +39516,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 30,
@@ -39859,7 +39633,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 65,
@@ -39970,11 +39744,11 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Vj9-a8DbT9VWG482g_",
@@ -40084,7 +39858,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-5sJz9kiX2_qr9SfpV1",
@@ -40194,11 +39968,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ZxC8x1KKwt0vRTZb2F",
@@ -40317,7 +40091,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 31,
@@ -40425,7 +40199,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-TL5oxXwP3cApYHt-ij",
@@ -40539,7 +40313,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-u_xCImpgDCGYuBj9Nw",
@@ -40655,11 +40429,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-UoR1OqfSFNB0lVtOfC",
@@ -40773,7 +40547,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-PREnDBwO_boN_75YxT",
@@ -40883,11 +40657,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-vsNSSfnH3TFU0a_kIf",
@@ -41001,7 +40775,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ZITz3Jvj-N2E_mVmYF",
@@ -41115,7 +40889,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-NUTyADBXkGrsMisALx",
@@ -41229,7 +41003,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ty0-aIPYRQPzemWTiD",
@@ -41339,7 +41113,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-zfacX9z1hDwnWJ-dD9",
@@ -41452,7 +41226,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-qOHPLXM73Omjgyp8et",
@@ -41563,7 +41337,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-7x9Mo2k0UxN9Drnieg",
@@ -41678,7 +41452,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-pZTz__X5gAcKPqatYk",
@@ -41790,7 +41564,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-uKemRyPWL6SX6Yd8UV",
@@ -41904,7 +41678,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-jOrxiUfqPNNCkV0tv6",
@@ -42025,7 +41799,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "importance": {
         "score": 58,
@@ -42132,7 +41906,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Hf5ctuQAGyGY443Lm5",
@@ -42242,11 +42016,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-UHV1mKokftIJXlzNzL",
@@ -42366,7 +42140,7 @@
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-tju7OWAtvHAbzqni22",
@@ -42476,11 +42250,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-9VysXL1-Z4kIvODD8p",
@@ -42600,7 +42374,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-VikLC2kJmL5gwKJpWI",
@@ -42713,7 +42487,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-NBMgRpofts3b7N4-2A",
@@ -42825,11 +42599,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ST9f578thshmehnTP_",
@@ -42941,11 +42715,11 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-KQRmRWVuhel5Lu5DEo",
@@ -43061,7 +42835,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-kyGbY54vq_tjCwzTKf",
@@ -43178,7 +42952,7 @@
         "to": "security",
         "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "securityIncident": {
         "type": "ARMED_ATTACK",
@@ -43288,7 +43062,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-fv55M59DKTrILTLaZU",
@@ -43398,7 +43172,7 @@
         "to": "economy",
         "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Lfh152frXMYHWyIB9a",
@@ -43512,7 +43286,7 @@
         "to": "politics",
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-ucQXAoFCizoV1W4AUC",
@@ -43556,338 +43330,6 @@
       "contentCheckedAt": "2026-08-03T01:39:28.671Z",
       "contentChanged": false,
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-w0HWaAA7UmC1PKtvNwGmLNKM",
-      "keywordId": "international-hormuz-001",
-      "category": "economy",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "ناقلات النفط العراقية تواصل العبور وسط تباطؤ الملاحة في البحر الأحمر",
-      "sourceArabic": "شفق نيوز",
-      "sourceHomepage": "https://shafaq.com",
-      "publishedAt": "2026-07-27T05:51:57.000Z",
-      "descriptionArabic": "ناقلات النفط العراقية تواصل العبور وسط تباطؤ الملاحة في البحر الأحمر شفق نيوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwgRBVV95cUxOQ2RfVXd0NDdiX0xpaTMzRDJMeGVmb0tTVll3bXgzZnRRNERpTHAyZWtPX2xXMVV5RVB1azNBdTRnbk10OS1tc1dYcHR3V0V5NEpFTVNWMlF4a2pUR2J2UXo4YmF1VU9TeTV5Z0phUnltOTU3czc1MDI4bTdhQ3VBdTJCMFY5Q0s2a3h3clY2QTNkUTNlOERIOFRZZDEtRXI4WjhEWVBycUt0TDc3SUVzaXJEMDRTc001bmNXT081TFJXT2VmQ05FaHU1Q2M4eXRJaWI3SUtGZ1NMT2k5QlNDQmNvdDhfRk9sSGY5Ny0tSE1Cb3Vzb0ZER1RyWUlIWFE2ckdkOGZXaWx1OUthXzdjWUp0SmFXd3hSZnNEdTktdjQwZ0cyaG9VUG5SWjJKUlJaTEd4bElGQzdDWTJaX1JaMUVBQVJyN1M4LTFLSDVHTEdYRWNtUllpZjlWZnM2MkktWjRMbGJoVmRCSWtxMTh3cmJlMWlIOUJaenZKdER0S0hyTGxrbGF6WE5nUnRwaXMtczl4RUUyVy1JUUxKQXJBaHRxQzQyNnVxYkFaUUlMZWhTTjEzSkg4d2RRX1Rlbjhoai1XdS1xalNEeUZfV2NXZFU1Z25BRnhLZ2dKb2hkX0Y0eng1Nl9udWlMUWJ4YkNDVlp1RkVIOEhCbFFkc0l6cmFBYmlCR2tHU01jbmwyeUJ6elNORjZmSTRrZGVQZDRLUnBpVEJpMVdFdXBxQ2xzRFhibWRkZmpicFFwcm5WTlhPZw?oc=5",
-      "articleUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D9%86%D8%A7%D9%82%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1-%D9%88%D8%B3%D8%B7-%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%A7%D9%84-%D8%AD%D9%85%D8%B1",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:39.026Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": 0.1367,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:37:17.335Z",
-      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D9%86%D8%A7%D9%82%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%AA%D9%88%D8%A7%D8%B5%D9%84-%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%B1-%D9%88%D8%B3%D8%B7-%D8%AA%D8%A8%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AD%D8%B1-%D8%A7%D9%84-%D8%AD%D9%85%D8%B1",
-      "originalTextArabic": "الأخبار العاجلة\n\n نيجيرفان بارزاني يلتقي الشرع في دمشق غداً\n\n منح 15 ألف زائر أفغاني تأشيرات دخول إلى العراق مجاناً (وثيقة)\n\n حصري.. اميركا تشترط تفكيك الفصائل مقابل تحرير 30 مليار دولار من \"أموال صدام\"\n\n حريق هائل يلتهم مستودعاً تجارياً في دهوك وخسائر تُقدّر بمليوني دولار (صور)\n\n ناقلات النفط العراقية تواصل العبور وسط تباطؤ الملاحة في البحر الأحمر\n\n طاقة وأعمال\n\n breaking\n\n مضيق هرمز\n\n مياه الخليج\n\n ناقلات النفط\n\n توترات البحر الاحمر\n\n 2026-07-27T05:50:53+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز- بغداد \n\n أظهرت بيانات شركة Kpler تباطؤ حركة الملاحة عبر مضيق باب المندب إلى أدنى مستوياتها منذ\nأشهر، عقب الهجمات التي شنها الحوثيون على منشآت نفطية تابعة لشركة أرامكو\nالسعودية في جيزان وينبع، ما زاد من اضطرابات الشحن في البحر الأحمر. \n\n وبحسب البيانات، استمر انخفاض حركة السفن أيضاً في مضيق\nهرمز رغم توقف الضربات بين الولايات المتحدة وإيران، حيث بقي عدد السفن العابرة\nمحدوداً خلال عطلة نهاية الأسبوع، في ظل استمرار حذر شركات الشحن من المخاطر\nالأمنية. \n\n وفيما يتعلق بالعراق، أظهرت البيانات أن ناقلتين عملاقتين\nتحملان النفط الخام العراقي والإماراتي عبرتا مضيق هرمز يوم الجمعة ضمن السفن\nالمغادرة من الخليج، ما يشير إلى استمرار تدفقات الصادرات العراقية رغم التحديات\nالتي تواجه الملاحة في المنطقة. \n\n كما غادرت ناقلات نفط عدة البحر الأحمر محملة بشحنات من\nالخام السعودي والإماراتي والروسي متجهة إلى الصين، إضافة إلى ناقلة أخرى حملت\nالنفط الخام السعودي إلى باكستان، في وقت تواصل فيه الأسواق مراقبة تأثير\nالاضطرابات البحرية على إمدادات الطاقة العالمية وتكاليف الشحن. \n\n أخبار ذات صلة \n\n اقتصـاد\n\n فيتش تبقي على تصنيف ائتماني \"خطر\" للعراق وتحذر من غلق هرمز عليه\n\n المنطقة-والعالم\n\n إيران تسعى لتشكيل تحالف 7+1 لحماية مياه الخليج\n\n المنطقة-والعالم\n\n الحوثيون يعلنون استهداف سفينة في البحر العربي بطائرات مسيرة\n\n اقتصـاد\n\n العشرات من ناقلات النفط عالقة في مضيق هرمز\n\n اقتصـاد\n\n صحيفة هندية: إيران فتحت مضيق هرمز أمام ناقلات النفط البنغلاديشية\n\n المنطقة-والعالم\n\n \"رويترز\": انخفاض عدد ناقلات النفط العابرة من مضيق هرمز إلى أدنى مستوى",
-      "sourceHost": "shafaq.com",
-      "contentChars": 1957,
-      "arabicRatio": 0.9684,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-03T01:39:29.364Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "economy",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "international",
-        "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-xvev2Yf0MZILUQKcxa",
-        "representativeArticleId": "discovery-w0HWaAA7UmC1PKtvNwGmLNKM",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 64,
-        "level": "REFERENCE",
-        "levelKo": "참고",
-        "reportStatus": "OPTIONAL_REVIEW",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "iraqLink": 16,
-          "countryImportance": 15,
-          "iraqImpact": 25,
-          "businessImpact": 0,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "644d8fa1f73ef70f3e3d",
-        "ruleScore": 64,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "0060a9ab3cf644d8f5569b9d7d34ca109a49846af50967c71730e677e936a24a",
-      "contentCheckedAt": "2026-08-03T01:39:29.364Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-fGUx9iw8eWsQ-ctHSRXZ5s8Y",
-      "keywordId": "politics-government-formation-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "\"تشكيل الحكومة\" العراق",
-      "requiredTerms": [
-        "تشكيل الحكومة"
-      ],
-      "optionalTerms": [
-        "التشكيلة الوزارية",
-        "الحقائب الوزارية",
-        "منح الثقة"
-      ],
-      "excludedTerms": [
-        "حكومة محلية"
-      ],
-      "originalTitleArabic": "تحديات الحكومة العراقية الجديدة بين الضغوط الداخلية والتعقيدات الإقليمية",
-      "sourceArabic": "شبكة النبأ المعلوماتية",
-      "sourceHomepage": "https://annabaa.org",
-      "publishedAt": "2026-07-27T02:55:35.000Z",
-      "descriptionArabic": "تحديات الحكومة العراقية الجديدة بين الضغوط الداخلية والتعقيدات الإقليمية شبكة النبأ المعلوماتية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBXeGZXdm5IaEpJeHRabTB2VzZZcG8xbkQ0ZlAzTjRlLS1wRS1LaWZDbS1rNlVTVVFYMEV3RTVMQmtVY1VwMjNPQmp5OUxOTXBSZEtQTVNmcmg4OTBW?oc=5",
-      "articleUrl": "https://annabaa.org/arabic/authorsarticles/46274",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:37.286Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:37:18.280Z",
-      "canonicalUrl": "https://annabaa.org/arabic/authorsarticles/46274",
-      "originalTextArabic": "الحكومة العراقية المقبلة لن تُقاس بقدرتها على تشكيل تحالفات سياسية فقط، بل بقدرتها على إدارة دولة مثقلة بالأزمات والتناقضات. فالعراق يقف اليوم أمام مفترق طرق حقيقي. إما الانتقال نحو مرحلة إصلاح تدريجي يعزز الدولة والمؤسسات، أو الاستمرار في دوامة الأزمات التي تستنزف قدراته وثرواته. التحدي الأكبر ليس في تشخيص... لا تبدو مهمة أي حكومة عراقية مقبلة سهلة في ظل تراكم الأزمات السياسية والاقتصادية والأمنية التي تواجه البلاد. فالعراق، رغم امتلاكه ثروات نفطية هائلة وموقعًا جيوسياسيًا مهمًا، ما يزال يعيش حالة من عدم الاستقرار البنيوي الناتج عن تداخل الانقسامات الداخلية مع الضغوط الإقليمية والدولية. ولهذا، فإن الحكومة المقبلة أو الجديدة لن تواجه مجرد ملفات خدمية أو سياسية تقليدية، بل ستجد نفسها أمام اختبار حقيقي يتعلق بقدرتها على الحفاظ على الدولة ومنع انزلاقها نحو أزمات أكثر تعقيدًا.\n ولعلَّ أولى هذه التحديات، تتمثل في الأزمة السياسية الداخلية، إذ لا يزال النظام السياسي العراقي، يعاني من الانقسام والتنازع بين القوى السياسية، ولاسيّما داخل البيت الشيعي نفسه، وفي ظل مقاطعة التيار الصدري للعملية السياسية، فضلًا عن الخلافات المستمرة بين بغداد وأربيل، والتوترات المرتبطة بتمثيل المكونات الأخرى، بالتزامن مع استمرار الخلافات بشأن توزيع المناصب والحقائب الوزارية؛ الأمر الذي يعكس هشاشة التوافقات السياسية القائمة.\n هذه الانقسامات تجعل أي حكومة مقبلة عرضة للضغوط الحزبية والمحاصصة، وهو ما يضعف قدرتها على اتخاذ قرارات إصلاحية حقيقية. فالمشكلة في العراق، لم تعد مرتبطة فقط بتشكيل الحكومة والتوافق السياسي حول تشكيل الكابينة الوزارية، بل بقدرتها على العمل باستقلالية بعيدًا عن نفوذ الكتل السياسية والمصالح المتشابكة والرغبات الخارجية (الإقليمية والدولية).\n أما التحدي الثاني، فهو الفساد الإداري والمالي، الذي تحول إلى أزمة بنيوية تهدد مؤسسات الدولة. فعلى الرغم من تعاقب الحكومات ورفع شعارات الإصلاح، ما تزال شبكات الفساد قادرة على التكيف والبقاء داخل مفاصل الدولة. ويكمن الخطر الحقيقي في أن الفساد لم يعد مجرد حالات فردية، بل أصبح جزءًا من طبيعة النظام الإداري والسياسي القائم على المحسوبية والولاءات الحزبية. ويعاني العراق كذلك من تضخم كبير في القطاع العام والاعتماد المفرط على التوظيف الحكومي؛ الأمر الذي يستنزف الموازنة العامة ويقلل فرص التنمية الحقيقية. إذ تشير بعض التقارير المتخصصة، إلى أن أكثر من نصف الإنفاق الحكومي يذهب للرواتب والتقاعد، في ظل ضعف واضح في الإنتاجية والخدمات. \n التحدي الثالث يتمثل في الاقتصاد الريعي واعتماد العراق شبه الكامل على النفط. فالدولة العراقية ما تزال تعتمد على النفط بنسبة تفوق 90% من إيراداتها، ما يجعل الاقتصاد هشًا أمام أي انخفاض في أسعار النفط العالمية. ومع الحديث عن موازنة 2026، تتزايد المخاوف من تأثير تقلبات أسعار النفط على قدرة الحكومة المقبلة في تمويل الإنفاق العام والمشاريع الخدمية.\n هذا الواقع يفرض على الحكومة العراقية الجديدة، ضرورة التحرك نحو تنويع الاقتصاد، وتشجيع الاستثمار والقطاع الخاص، بدل الاستمرار بسياسة الاقتصاد الريعي التي كرَّست البطالة والاعتماد على الدولة. غير أن هذا التحول يحتاج إلى بيئة قانونية وأمنية مستقرة، وهي أمور ما تزال تواجه عقبات كبيرة.\n وفي الجانب الأمني، ورغم تراجع خطر تنظيم \"داعش\" الإرهابي مقارنة بالسنوات الماضية، إلا أن الملف الأمني ما يزال معقدًا. فالعراق يعيش حالة من التداخل بين الدولة والجماعات المسلحة، إلى جانب استمرار تأثير الصراع الأمريكي–الإيراني داخل الساحة العراقية. والتحدي الأمني المقبل، لا يتمثل فقط في مواجهة الإرهاب، بل في قدرة الدولة على فرض سيادتها وإدارة التوازنات الداخلية والخارجية، ومدى التزامها بالبرنامج الحكومي وتحقيق الرغبة المحلية والدولية في بسط نفوذها على كل المجاميع المسلحة وحصر السلاح بيد الدولة.\n وتزداد خطورة هذا الملف مع احتمال تحول العراق إلى ساحة تصفية حسابات إقليمية، ولاسيّما في ظل التوتر المستمر بين واشنطن وطهران. فالحكومة المقبلة ستكون مطالبة بالحفاظ على سياسة توازن دقيقة تمنع انجرار البلاد إلى صراعات المحاور، وهو أمر يبدو بالغ الصعوبة في البيئة الحالية.\n فضلًا عن ذلك، لا يقل ملف الخدمات أهمية عن بقية التحديات، إذ ما يزال المواطن العراقي يعاني من تراجع الكهرباء والمياه والبنى التحتية، رغم الموازنات الضخمة التي أُنفقت خلال السنوات الماضية. كما أن أزمة المياه باتت تهدد الأمن المائي والغذائي للعراق، ولاسيّما مع تراجع الإطلاقات المائية من دول الجوار والتغيرات المناخية المتسارعة. وتشير تقارير دولية إلى أن التصحر وشح المياه، أصبحا من أخطر التحديات المستقبلية التي تواجه العراق.\n بالإضافة إلى ذلك، تواجه الحكومة العراقية المقبلة تحديًا اجتماعيًا خطيرًا يتمثل في ارتفاع معدلات البطالة والفقر، ولاسيّما بين الشباب والخريجين. ومع تراجع فرص التعيين الحكومي وضعف القطاع الخاص، تتزايد حالة الإحباط الشعبي، ما قد يؤدي إلى موجات احتجاج جديدة إذا لم تتمكن الحكومة من تقديم حلول ملموسة.\n ومن التحديات المهمة أيضًا مسألة بناء الثقة بين المواطن والدولة. فسنوات الفساد وضعف الخدمات والصراعات السياسية، خلقت فجوة واسعة بين الشارع والطبقة السياسية. ولم يعد المواطن العراقي يقتنع بالشعارات السياسية التقليدية، بل أصبح يطالب بنتائج فعلية تمس حياته اليومية، وقد تزداد تلك التحديات في ظل تردي واقع الكهرباء والماء والخدمات بشكل عام، بالتزامن مع فصل الصيف الحار، ولاسيّما في ظل تحركات زعيم التيار الصدري السيد مقتدى الصدر الاخيرة، ومهلة التسعين يوم التي منحها لحكومة السيد الزيدي لتحسين واقع العملية السياسية والعراق بشكل عام. \n بالمجمل، يمكن القول إنَّ الحكومة العراقية المقبلة لن تُقاس بقدرتها على تشكيل تحالفات سياسية فقط، بل بقدرتها على إدارة دولة مثقلة بالأزمات والتناقضات. فالعراق يقف اليوم أمام مفترق طرق حقيقي. إما الانتقال نحو مرحلة إصلاح تدريجي يعزز الدولة والمؤسسات، أو الاستمرار في دوامة الأزمات التي تستنزف قدراته وثرواته.\n وإن التحدي الأكبر ليس في تشخيص المشكلات، فالجميع يدرك حجمها، وإنما في امتلاك الإرادة السياسية لاتخاذ قرارات حقيقية قد تكون مكلفة على المدى القصير، لكنها ضرورية لإنقاذ العراق على المدى البعيد.\n * مركز الفرات للتنمية والدراسات الإستراتيجية/2004-Ⓒ2026\n www.fcdrs.com",
-      "sourceHost": "annabaa.org",
-      "contentChars": 5404,
-      "arabicRatio": 1.0141,
-      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
-      "fetchedAt": "2026-08-03T01:39:29.829Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "politics",
-        "to": "politics",
-        "reason": "이라크 정치·정부·의회 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-2GMIdHXfaUgOlMi2Gl",
-        "representativeArticleId": "discovery-fGUx9iw8eWsQ-ctHSRXZ5s8Y",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 35,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 17,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "091e01696884fe6d6aab",
-        "ruleScore": 35,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "07d2f65f1dd68204ea6ca7fb7b5cfe0a1f76bf64800aeaf9bc4df81964d1a9b0",
-      "contentCheckedAt": "2026-08-03T01:39:29.829Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-gymxVlVrJFrz4u4OjfRujcE5",
-      "keywordId": "politics-government-formation-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "\"تشكيل الحكومة\" العراق",
-      "requiredTerms": [
-        "تشكيل الحكومة"
-      ],
-      "optionalTerms": [
-        "التشكيلة الوزارية",
-        "الحقائب الوزارية",
-        "منح الثقة"
-      ],
-      "excludedTerms": [
-        "حكومة محلية"
-      ],
-      "originalTitleArabic": "الرئيس العراقي يؤكد أهمية وقف التصعيد في المنطقة",
-      "sourceArabic": "Qatar news agency",
-      "sourceHomepage": "https://qna.org.qa",
-      "publishedAt": "2026-07-27T02:45:25.000Z",
-      "descriptionArabic": "الرئيس العراقي يؤكد أهمية وقف التصعيد في المنطقة Qatar news agency",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMisANBVV95cUxQZjNJN2pnNFVFN3NJR1VqcmxoRGZIWUYxNkM4b0RKeE5CNTRpaXo4dDBjcENmT0pRWmdGbHJLUWdfQkhnellRVFpYOTAzZnVab2IwQkpWRXQ0eGxObFpBOE9mZUE5UDJ1bGpMbThHTVEzaDRUYVh4ZXFVQVQwbUFlQ1Vna2QxSThoQmpzeDFWaVlIdEdVdDUtSDNVd1Y5NUU2SFBiV0FxczRjaW0yVENTZ0ZFUElQVm5lWUFhSkZPS1B6V0czY2padzRBbDVmZUpydGNYWDJaYjlWZjJjSy1wUE5WNGRZNzdPaDM2QnRPa2pwSm1qMlhBcnh0SE16NTlUa1pLQlU4T0ViNlkxWTNtbHJVNjBDSjBvR2lSMVI5QlpheUdSUnR0aFAwMS0taDA0QktUUFR6cFZ3TDAwS3pWelpHcFlwMDVZU2c3X2RleHJXMVo0Tm9IVjQ3NGdKTHI3RUV0OXM4VHlOVVZmVVFoc0hhSTNNaEhSbVE1RFZkUFZRYlBuSXN4eW56aWpkX0JDZFdrOWpodkYzdERnVVBrU3ZtUWpTSlhaMUM0U1Atb2o?oc=5",
-      "articleUrl": "https://qna.org.qa/ar-QA/news/news-details?id=%D8%A7%D9%84%D8%B1%D9%8A%D9%8A%D8%B3-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D9%88%D9%83%D8%AF-%D8%A7%D9%87%D9%85%D9%8A%D8%A9-%D9%88%D9%82%D9%81-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9&date=26/07/2026",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:37.285Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:37:19.050Z",
-      "canonicalUrl": "https://qna.org.qa/ar-QA/news/news-details?id=%D8%A7%D9%84%D8%B1%D9%8A%D9%8A%D8%B3-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D9%88%D9%83%D8%AF-%D8%A7%D9%87%D9%85%D9%8A%D8%A9-%D9%88%D9%82%D9%81-%D8%A7%D9%84%D8%AA%D8%B5%D8%B9%D9%8A%D8%AF-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9&date=26/07/2026",
-      "originalTextArabic": "الرجوع \n\n تفاصيل الأخبار \n\n فيسبوك \n تويتر \n البريد الألكتروني \n بينتيريست \n لينكد إن \n ريديت \n واتس آب \n بريد \n\n شاهد المزيد…\n\n bookmark \n\n الرئيس العراقي يؤكد أهمية وقف التصعيد في المنطقة\n\n عام\n\n A- \n\n A \n\n A+ \n\n استمع \n\n بغداد في 26 يوليو /قنا/ أكد الرئيس العراقي نزار آميدي على أهمية وقف التصعيد في المنطقة واعتماد الحوار والدبلوماسية لمعالجة الأزمات، بما يسهم في تعزيز الأمن والاستقرار على المستويين الإقليمي والدولي.\n\n جاء ذلك خلال لقاء الرئيس العراقي اليوم مع نواف سلام رئيس الوزراء اللبناني، الذي يزور العراق حاليا.\n\n وذكر بيان صادر عن الرئاسة العراقية أن الجانبين بحثا العلاقات الثنائية بين البلدين وسبل تطويرها، إلى جانب استعراض مستجدات الأوضاع الإقليمية.\n\n وقال الرئيس العراقي خلال اللقاء، إن المرحلة الراهنة تتطلب تضافر الجهود لمواجهة التحديات، مجددا موقف العراق الداعم لأمن لبنان واستقراره السياسي والاقتصادي، ومؤكدا أهمية التوافق الوطني وتعزيز مؤسسات الدولة بما يحفظ سيادة لبنان ووحدته.\n\n من جانبه، أكد رئيس الوزراء اللبناني أن بلاده تنظر إلى العراق بوصفه شريكا عربيا محوريا، معربا عن تطلع حكومته إلى توسيع مجالات التعاون وتنفيذ مشاريع وبرامج مشتركة، ومثمنا مواقف العراق الداعمة لتعزيز الأمن والاستقرار في لبنان.\n\n العراق \n\n الرئيس العراقي \n\n لبنان \n\n رئيس الوزراء \n\n أخبار ذات صلة\n\n الرئيس العراقي الجديد يتسلم مهام منصبه رسميا\n\n بغداد في 12 أبريل /قنا/ تسلم الرئيس العراقي الجديد نزار آميدي، اليوم، مهام منصبه رسميا.\n\n سياسي\n\n 12 أبريل 2026\n\n الرئيس العراقي يكلف علي الزيدي بتشكيل الحكومة الجديدة\n\n بغداد في 27 أبريل /قنا/ أعلن نزار آميدي الرئيس العراقي، اليوم، عن تكليف علي الزيدي بتشكيل الحكومة الجديدة.\n\n سياسي\n\n 27 أبريل 2026\n\n الرئيس العراقي يصل الدوحة لتقديم العزاء في فقيد الوطن الكبير\n\n الدوحة في 13 يوليو /قنا/ وصل إلى الدوحة، اليوم، فخامة الرئيس نزار آميدي رئيس جمهورية العراق الشقيقة، والوفد المرافق له لتقديم العزاء في وفاة فقيد الوطن الكبير المغفور له بإذن الله صاحب السمو الأمير الوالد الشيخ حمد بن خليفة آل ثاني.\n\n سياسي\n\n 13 يوليو 2026\n\n chat\n\n مرحباً\n كيف يمكننا مساعدتك؟ \n\n Beta",
-      "sourceHost": "qna.org.qa",
-      "contentChars": 1912,
-      "arabicRatio": 0.9823,
-      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
-      "fetchedAt": "2026-08-03T01:39:30.574Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "politics",
-        "to": "politics",
-        "reason": "이라크 정치·정부·의회 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
-      },
-      "eventGroup": {
-        "groupId": "event-FkgmkB8va65YhVGKOY",
-        "representativeArticleId": "discovery-gymxVlVrJFrz4u4OjfRujcE5",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 61,
-        "level": "REFERENCE",
-        "levelKo": "참고",
-        "reportStatus": "OPTIONAL_REVIEW",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "nationalImportance": 40,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 10,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "508095e73c6e6ba4c5f7",
-        "ruleScore": 61,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "c5ce107578948e59729cc814bd70254ba234710e4fd23556e23e29f1715f1014",
-      "contentCheckedAt": "2026-08-03T01:39:30.574Z",
-      "contentChanged": false,
-      "processingReused": true
     }
   ],
   "titleCorrectionRun": {
@@ -43914,13 +43356,13 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V1",
-    "before": 359,
-    "retained": 359,
+    "before": 350,
+    "retained": 350,
     "excluded": 0,
     "leadChars": 2200
   },
   "eventGrouping": {
-    "groupCount": 329,
+    "groupCount": 324,
     "duplicateGroupCount": 11,
     "duplicateArticleCount": 15,
     "maxHours": 72,
