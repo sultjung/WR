@@ -4,7 +4,8 @@ import { businessFloorFor } from "./importance-business-rules.mjs";
 import {
   categoryFloorFor,
   categoryOf,
-  normalizeImportanceCategory
+  normalizeImportanceCategory,
+  starsForScore
 } from "./importance-category-rules.mjs";
 
 const nationalStalledProjects = {
@@ -19,6 +20,10 @@ const nationalStalledProjects = {
 
 assert.equal(normalizeImportanceCategory("경제/건설"), "economy");
 assert.equal(normalizeImportanceCategory("construction"), "economy");
+assert.equal(starsForScore(98), 5);
+assert.equal(starsForScore(84), 4);
+assert.equal(starsForScore(73), 3.5);
+assert.equal(starsForScore(5), 0.5);
 assert.equal(categoryOf(nationalStalledProjects), "economy");
 
 const floorResult = categoryFloorFor(nationalStalledProjects);
