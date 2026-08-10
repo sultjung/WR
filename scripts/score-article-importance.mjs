@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { starsForScore } from "./importance-category-rules.mjs";
 
 const ROOT = process.cwd();
 const ARTICLES_FILE = path.join(ROOT, "data", "articles.json");
@@ -148,13 +149,20 @@ function scoreSecurity(article, text) {
   const iraq = ["العراق", "العراقي", "القوات الأمنية العراقية", "الحشد الشعبي", "جهاز مكافحة الإرهاب"];
   const scale = ["قتلى", "جرحى", "ضحايا", "هجوم واسع", "حالة الطوارئ", "إغلاق الطرق", "تعليق الرحلات"];
   const foreigner = ["أجانب", "شركة أجنبية", "سفارة", "بعثة دبلوماسية", "إجلاء", "تحذير أمني"];
-  const terrorDirectness = clamp(countMatches(text, terror) * 5 + (hasAny(text, directIncident) ? 8 : 0), 0, 35);
+  const protest = ["تظاهرة", "تظاهرات", "احتجاج", "احتجاجات", "متظاهرون", "اعتصام", "اعتصامات", "إضراب", "اضراب", "وقفات احتجاجية"];
+  const protestScale = ["اعتصام مفتوح", "إضراب عام", "جامعات", "محافظات", "موظفين", "أساتذة", "توسع الاحتجاجات", "إغلاق الطرق"];
+  const isProtest = hasAny(text, protest);
+  const incidentDirectness = isProtest
+    ? clamp(18 + countMatches(text, protest) * 3, 0, 35)
+    : clamp(countMatches(text, terror) * 5 + (hasAny(text, directIncident) ? 8 : 0), 0, 35);
   let location = 0;
   if (hasAny(text, baghdad)) location = 25;
   else if (hasAny(text, iraq)) location = 15;
-  const incidentScale = clamp(countMatches(text, scale) * 4 + (hasAny(text, directIncident) ? 3 : 0), 0, 15);
+  const incidentScale = isProtest
+    ? clamp(countMatches(text, protestScale) * 3, 0, 15)
+    : clamp(countMatches(text, scale) * 4 + (hasAny(text, directIncident) ? 3 : 0), 0, 15);
   const siteSafety = clamp(countMatches(text, foreigner) * 5 + (location === 25 ? 5 : 0), 0, 15);
-  return { terrorDirectness, location, incidentScale, siteSafety };
+  return { incidentDirectness, location, incidentScale, siteSafety };
 }
 
 function scoreInternational(article, text) {
@@ -190,10 +198,12 @@ function scoreArticle(article) {
   const level = levelOf(score);
   return {
     score,
+    stars: starsForScore(score),
+    ratingScale: "0.5_TO_5_STARS",
     level: level.code,
     levelKo: level.labelKo,
     reportStatus: level.reportStatus,
-    scoringMethod: "CATEGORY_RULES_V2_NESTED",
+    scoringMethod: "CATEGORY_RULES_V3_STAR",
     scoredAt: new Date().toISOString(),
     breakdown
   };
@@ -207,11 +217,11 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
   ...payload,
   generatedAt: new Date().toISOString(),
   importanceScoring: {
-    method: "CATEGORY_RULES_V2_NESTED",
+    method: "CATEGORY_RULES_V3_STAR",
     scoredCount: scored.length,
-    thresholds: { urgent: 90, important: 80, notable: 70, reference: 60, general: 40 }
+    starScale: { minimum: 0.5, maximum: 5, step: 0.5 }
   },
   articles: scored
 }, null, 2)}\n`, "utf8");
 
-console.log(`[importance] scored=${scored.length}, method=CATEGORY_RULES_V2_NESTED`);
+console.log(`[importance] scored=${scored.length}, method=CATEGORY_RULES_V3_STAR`);
