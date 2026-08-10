@@ -150,7 +150,7 @@
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),selectable=exportSelectable(article),ready=translationReady(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.score===null?`<span class="badge importance-pending">중요도 평가 대기</span>`:`<span class="badge importance-score">중요도 ${importance.score}점</span>`;
-      const translationBlock=ready?`<p class="translation-preview">${escapeHtml(previewText(article))}</p><details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
+      const translationBlock=ready?`<p class="translation-preview">${escapeHtml(previewText(article))}</p><details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":"번역 후 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
@@ -270,6 +270,32 @@
   $("downloadSelected").addEventListener("click",downloadSelectedArticles);
   $("clearSelected").addEventListener("click",()=>{state.selected.clear();saveSelectedIds();setDownloadMessage("");apply();});
   $("resetFilters").addEventListener("click",()=>{setDefaultDateRange();$("sortOrder").value="importance-desc";$("importanceFilter").value="all";$("sourceFilter").value="all";$("translationFilter").value="all";$("searchInput").value="";state.filter="all";document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item.dataset.filter==="all"));apply();});
-  document.addEventListener("click",(event)=>{const button=event.target.closest("button[data-action='select']");if(!button||button.disabled)return;const card=button.closest(".news-card");const key=card?.dataset.key;if(!key)return;if(state.selected.has(key))state.selected.delete(key);else if(state.selected.size>=MAX_EXPORT_ARTICLES){setDownloadMessage(`한 번에 최대 ${MAX_EXPORT_ARTICLES}건까지 선택할 수 있습니다.`,"error");return;}else state.selected.add(key);saveSelectedIds();setDownloadMessage("");apply();});
+  document.addEventListener("click",(event)=>{
+    const button=event.target.closest("button[data-action]");
+    if(!button||button.disabled)return;
+    const action=button.dataset.action;
+    const card=button.closest(".news-card");
+    if(action==="collapse-article"){
+      const details=button.closest(".full-translation");
+      if(details)details.open=false;
+      card?.scrollIntoView({behavior:"smooth",block:"start"});
+      return;
+    }
+    if(action!=="select")return;
+    const key=card?.dataset.key;if(!key)return;
+    if(state.selected.has(key))state.selected.delete(key);
+    else if(state.selected.size>=MAX_EXPORT_ARTICLES){setDownloadMessage(`한 번에 최대 ${MAX_EXPORT_ARTICLES}건까지 선택할 수 있습니다.`,"error");return;}
+    else state.selected.add(key);
+    saveSelectedIds();setDownloadMessage("");apply();
+  });
+  const scrollTopButton=$("scrollTopButton");
+  const syncScrollTopButton=()=>{
+    const visible=window.scrollY>600;
+    scrollTopButton.classList.toggle("visible",visible);
+    scrollTopButton.setAttribute("aria-hidden",String(!visible));
+  };
+  window.addEventListener("scroll",syncScrollTopButton,{passive:true});
+  scrollTopButton.addEventListener("click",()=>window.scrollTo({top:0,behavior:"smooth"}));
+  syncScrollTopButton();
   init();
 })();
