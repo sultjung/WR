@@ -145,6 +145,16 @@ jobs:
       - name: Calculate category rule scores
         run: npm run collect:importance
 
+      - name: Restore reusable AI results from checkpoint
+        env:
+          AI_CHECKPOINT_FILE: ${{ runner.temp }}/wr-ai-checkpoint.json
+        run: |
+          if git show origin/automation/ai-checkpoint:data/articles.json > "$AI_CHECKPOINT_FILE" 2>/dev/null; then
+            npm run collect:restore-ai-checkpoint
+          else
+            echo "No AI checkpoint is available yet"
+          fi
+
       - name: Evaluate importance within each category with AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -180,6 +190,26 @@ jobs:
           RELATED_TITLE_AI_RETRY_ATTEMPTS: "2"
           CARD_AI_TIMEOUT_MS: "90000"
         run: npm run collect:related-titles
+
+      - name: Save AI results checkpoint
+        run: |
+          checkpoint_dir="$(mktemp -d)"
+          if git show-ref --verify --quiet refs/remotes/origin/automation/ai-checkpoint; then
+            git worktree add -B automation/ai-checkpoint "$checkpoint_dir" origin/automation/ai-checkpoint
+          else
+            git worktree add -b automation/ai-checkpoint "$checkpoint_dir" HEAD
+          fi
+          cp data/articles.json "$checkpoint_dir/data/articles.json"
+          git -C "$checkpoint_dir" config user.name "github-actions[bot]"
+          git -C "$checkpoint_dir" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$checkpoint_dir" add data/articles.json
+          if git -C "$checkpoint_dir" diff --cached --quiet; then
+            echo "AI checkpoint is already current"
+          else
+            git -C "$checkpoint_dir" commit -m "Checkpoint AI-scored and translated articles"
+            git -C "$checkpoint_dir" push origin HEAD:automation/ai-checkpoint
+          fi
+          git worktree remove "$checkpoint_dir" --force
 
       - name: Audit foreign-local leakage
         run: npm run audit:foreign-local
