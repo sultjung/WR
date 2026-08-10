@@ -119,6 +119,10 @@ const SECURITY = [
   "تظاهرة", "تظاهرات", "احتجاج", "احتجاجات", "متظاهرون", "اعتصام", "قطع الطريق",
   "اغلاق الطريق", "ساحة التحرير", "المنطقة الخضراء"
 ];
+const PROTEST_EVENT = [
+  "تظاهرة", "تظاهرات", "احتجاج", "احتجاجات", "متظاهر", "متظاهرون",
+  "اعتصام", "اعتصامات", "اضراب", "اضرابات", "وقفة احتجاجية", "وقفات احتجاجية"
+];
 const INTERNATIONAL = [
   "حرب ايران", "الحرب مع ايران", "ايران والولايات المتحدة", "ايران واسرائيل", "الولايات المتحدة وايران",
   "مضيق هرمز", "الخليج", "دول الخليج", "البحر الاحمر", "باب المندب", "الحوثي", "الحوثيين",
@@ -225,6 +229,17 @@ function routeIraqDirectInternational(title, lead) {
   return { category: "politics", reason: "이라크가 직접 주체인 외교·정부·전략적 협력" };
 }
 
+function routeStrongDomesticEvent(title = "", opening = "") {
+  const primary = `${title}\n${opening}`;
+  if (hasAny(primary, PROTEST_EVENT)) {
+    return {
+      category: "security",
+      reason: "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸"
+    };
+  }
+  return null;
+}
+
 function setLockedCategory(article, category, reason) {
   return {
     ...article,
@@ -238,7 +253,7 @@ function setLockedCategory(article, category, reason) {
       to: category,
       reason,
       locked: true,
-      method: "STRICT_CATEGORY_GATE_V4"
+      method: "STRICT_CATEGORY_GATE_V5"
     }
   };
 }
@@ -262,6 +277,15 @@ function evaluate(article) {
 
   if (bismayahMatch || nicMatch || hanwhaIraqMatch) {
     return { action: "keep", category: "bismayah", reason: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련" };
+  }
+
+  const strongDomesticEvent = relevance.primary ? routeStrongDomesticEvent(title, opening) : null;
+  if (strongDomesticEvent) {
+    return {
+      action: "keep",
+      category: strongDomesticEvent.category,
+      reason: strongDomesticEvent.reason
+    };
   }
 
   if (["politics", "economy", "security"].includes(current) && !relevance.primary) {
@@ -359,13 +383,13 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(SUMMARY_FILE, `${JSON.stringify({
-  schemaVersion: "1.3",
+  schemaVersion: "1.4",
   generatedAt,
   before: articles.length,
   retained: retained.length,
   excludedCount: excluded.length,
   primaryLeadChars: PRIMARY_LEAD_CHARS,
-  method: "STRICT_CATEGORY_GATE_V4",
+  method: "STRICT_CATEGORY_GATE_V5",
   categoryCounts,
   excludedReasonCounts,
   excluded

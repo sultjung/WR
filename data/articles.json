@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-10T00:59:12.060Z",
+  "generatedAt": "2026-08-10T03:39:35.018Z",
   "lookbackDays": 14,
   "count": 344,
   "categoryCounts": {
     "economy": 61,
-    "security": 65,
+    "security": 66,
     "bismayah": 9,
-    "politics": 193,
+    "politics": 192,
     "international": 16
   },
   "collectionRun": {
@@ -18241,7 +18241,7 @@
       "schemaVersion": "1.0",
       "articleId": "discovery-KP4SwCjfm8McVtNEXt8ygDdU",
       "keywordId": "politics-government-formation-001",
-      "category": "politics",
+      "category": "security",
       "priority": 95,
       "queryArabic": "\"تشكيل الحكومة\" العراق",
       "requiredTerms": [
@@ -18278,7 +18278,7 @@
       "sourceHost": "alaraby.com",
       "contentChars": 2408,
       "arabicRatio": 0.9792,
-      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "relevanceNote": "이라크 내 시위·집회·농성 직접 관련",
       "fetchedAt": "2026-08-08T21:50:32.887Z",
       "translation": {
         "status": "COMPLETED",
@@ -18305,7 +18305,7 @@
       },
       "analysis": {
         "status": "PENDING",
-        "category": "politics",
+        "category": "security",
         "recommendation": "USER_REVIEW_REQUIRED",
         "relevanceScore": null,
         "recommendationReason": ""
@@ -18321,10 +18321,10 @@
       "contentChanged": false,
       "categoryRouting": {
         "from": "politics",
-        "to": "politics",
-        "reason": "이라크 정치·정부·의회 직접 관련",
+        "to": "security",
+        "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V4"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-63x2e54XDLp4l-U474",
@@ -18332,45 +18332,6 @@
         "isRepresentative": true,
         "memberCount": 1,
         "duplicateCount": 0
-      },
-      "importance": {
-        "score": 73,
-        "level": "NOTABLE",
-        "levelKo": "주목",
-        "reportStatus": "REVIEW",
-        "scoringMethod": "CATEGORY_RELATIVE_AI_BLEND_V6",
-        "scoredAt": "2026-08-09T21:53:55.418Z",
-        "breakdown": {
-          "nationalImportance": 40,
-          "businessImpact": 0,
-          "politicalImpact": 13,
-          "reportValue": 10,
-          "sourceReliability": 6
-        },
-        "reportPriority": "PRIORITY_REVIEW",
-        "categoryRelevance": "MEDIUM",
-        "businessRelevance": "MEDIUM",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 6,
-        "scoreFingerprint": "2e062a4a02859c04fdde",
-        "ruleScore": 69,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": 75,
-        "aiWeight": 0.65,
-        "ruleWeight": 0.35,
-        "aiModel": "gpt-4.1-mini",
-        "aiReportPriority": "PRIORITY_REVIEW",
-        "aiReasonKo": "",
-        "aiBreakdown": null
       },
       "processingReused": true
     },
