@@ -9,12 +9,37 @@ import {
 export const TRANSLATION_PIPELINE_VERSION = "FULL_TRANSLATION_V1";
 export const MIN_TRANSLATABLE_BODY_CHARS = 30;
 
+const BISMAYAH_ARABIC_TERMS = [
+  "بسماية",
+  "بسمايه",
+  "مدينة بسماية الجديدة",
+  "مشروع بسماية"
+];
+const BISMAYAH_LATIN_PATTERN = /(?:^|[^a-z0-9])(bismayah|bismaya|bncp)(?:[^a-z0-9]|$)/i;
+
 function recordOf(article = {}) {
   return article.article && typeof article.article === "object" ? article.article : article;
 }
 
 function compact(value = "") {
   return String(value).replace(/\s+/g, " ").trim();
+}
+
+function normalizeArabic(value = "") {
+  return String(value)
+    .replace(/[\u064B-\u065F\u0670]/g, "")
+    .replace(/\u0640/g, "")
+    .replace(/[إأآٱ]/g, "ا")
+    .replace(/ى/g, "ي")
+    .replace(/ة/g, "ه")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function categoryOf(article = {}) {
+  const record = recordOf(article);
+  return String(article.analysis?.category || article.category || record.category || "").trim().toLowerCase();
 }
 
 export function articleIdOf(article = {}, index = 0) {
@@ -34,6 +59,30 @@ export function sourceTitleOf(article = {}) {
 export function sourceTextOf(article = {}) {
   const record = recordOf(article);
   return String(article.originalTextArabic || record.originalTextArabic || "").trim();
+}
+
+export function isBismayahArticle(article = {}) {
+  if (categoryOf(article) === "bismayah") return true;
+
+  const source = `${sourceTitleOf(article)}\n${sourceTextOf(article)}`.trim();
+  if (!source) return false;
+
+  const normalized = normalizeArabic(source);
+  if (BISMAYAH_ARABIC_TERMS.some((term) => normalized.includes(normalizeArabic(term)))) return true;
+  return BISMAYAH_LATIN_PATTERN.test(source);
+}
+
+export function looksLikeKoreanTranslation(value = "", options = {}) {
+  const text = String(value || "").trim();
+  if (!text) return false;
+
+  const minHangul = Math.max(1, Number(options.minHangul || 10));
+  const maxArabicToHangulRatio = Math.max(0, Number(options.maxArabicToHangulRatio ?? 0.15));
+  const hangulCount = (text.match(/\p{Script=Hangul}/gu) || []).length;
+  const arabicCount = (text.match(/\p{Script=Arabic}/gu) || []).length;
+
+  if (hangulCount < minHangul) return false;
+  return arabicCount <= Math.max(4, Math.floor(hangulCount * maxArabicToHangulRatio));
 }
 
 export function sourceHashOf(article = {}) {
@@ -59,8 +108,8 @@ export function translationIsCurrent(article = {}) {
     && translation.pipelineVersion === TRANSLATION_PIPELINE_VERSION
     && translation.sourceContentHash === hash
     && glossaryIsCurrent(translation, source)
-    && Boolean(compact(translation.titleKo))
-    && String(translation.fullTextKo || "").trim().length >= 10;
+    && looksLikeKoreanTranslation(translation.titleKo, { minHangul: 2, maxArabicToHangulRatio: 0.2 })
+    && looksLikeKoreanTranslation(translation.fullTextKo, { minHangul: 10, maxArabicToHangulRatio: 0.15 });
 }
 
 export function hasUsableArabicSource(article = {}) {
@@ -68,7 +117,8 @@ export function hasUsableArabicSource(article = {}) {
 }
 
 export function needsTranslation(article = {}) {
-  return isRepresentative(article) && hasUsableArabicSource(article) && !translationIsCurrent(article);
+  const fullTranslationRequired = isRepresentative(article) || isBismayahArticle(article);
+  return fullTranslationRequired && hasUsableArabicSource(article) && !translationIsCurrent(article);
 }
 
 export function pendingTranslation(reason = "PENDING") {
@@ -92,7 +142,7 @@ export function reconcileTranslationState(article = {}) {
     article: {
       ...article,
       translation: {
-        ...pendingTranslation("SOURCE_OR_PIPELINE_CHANGED"),
+        ...pendingTranslation("SOURCE_PIPELINE_OR_LANGUAGE_QUALITY_CHANGED"),
         previousModel: translation.model || null
       }
     },
