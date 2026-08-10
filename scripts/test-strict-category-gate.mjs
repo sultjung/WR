@@ -16,6 +16,20 @@ const padding = "تفاصيل محلية واقتصادية متكررة ".repea
 
 const articles = [
   {
+    articleId: "iraq-university-salary-protests",
+    category: "politics",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "وسط العجز المالي.. أزمة الرواتب توسع رقعة الاحتجاجات في جامعات العراق",
+    originalTextArabic: "شهدت جامعات بغداد والبصرة وديالى وكركوك والكوفة وبابل وواسط تظاهرات ووقفات احتجاجية للأساتذة والموظفين بسبب تأخر صرف الرواتب والمخصصات المالية. وحذر المحتجون من الدخول في اعتصام مفتوح ما لم تستجب الحكومة العراقية. " + padding
+  },
+  {
+    articleId: "iraq-cabinet-with-incidental-protest",
+    category: "politics",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "مجلس الوزراء العراقي يعقد جلسة لمناقشة برنامج الحكومة",
+    originalTextArabic: "عقد مجلس الوزراء العراقي جلسة رسمية واتخذ قراراً بشأن برنامج الحكومة والتعيينات. " + padding + " ووردت الاحتجاجات في خلفية بعيدة للتقرير."
+  },
+  {
     articleId: "iraq-gaza-bridge",
     category: "economy",
     contentStatus: "FULL_TEXT",
@@ -164,6 +178,8 @@ try {
   const excluded = new Set(summary.excluded.map((article) => article.articleId));
 
   for (const id of [
+    "iraq-university-salary-protests",
+    "iraq-cabinet-with-incidental-protest",
     "iraq-gaza-bridge",
     "coordination-framework-zaidi-saudi",
     "zaidi-turkey",
@@ -190,13 +206,18 @@ try {
     assert.ok(excluded.has(id), `${id} should be excluded`);
   }
 
+  assert.equal(categoryById.get("iraq-university-salary-protests"), "security");
+  assert.equal(categoryById.get("iraq-cabinet-with-incidental-protest"), "politics");
+  const protestArticle = result.articles.find((article) => article.articleId === "iraq-university-salary-protests");
+  assert.equal(protestArticle.categoryRouting.from, "politics");
+  assert.match(protestArticle.categoryRouting.reason, /시위/);
   assert.equal(categoryById.get("iraqi-adjectival-title"), "economy");
   assert.equal(categoryById.get("iraq-turkey-multifield-economy"), "economy");
   assert.equal(categoryById.get("iraq-turkey-diplomatic"), "politics");
   assert.equal(categoryById.get("iraq-turkey-security"), "security");
   assert.equal(categoryById.get("hormuz-market"), "international");
-  assert.equal(summary.method, "STRICT_CATEGORY_GATE_V4");
-  console.log("[test:strict-gate] Iraq-direct international stories rerouted to politics/economy/security; indirect market stories remain international");
+  assert.equal(summary.method, "STRICT_CATEGORY_GATE_V5");
+  console.log("[test:strict-gate] content-led routing moves protest events to security and preserves unrelated political reporting");
 } finally {
   await fs.rm(tempDir, { recursive: true, force: true });
 }
