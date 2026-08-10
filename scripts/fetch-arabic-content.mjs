@@ -357,6 +357,7 @@ function sanitizeStoredArticle(item = {}) {
   const articleUrl = item.canonicalUrl || item.articleUrl || "";
   const title = cleanArticleTitle(item.originalTitleArabic || "", articleUrl);
   const body = cleanArticleText(item.originalTextArabic || "", { title });
+  if (body.length < MIN_CONTENT_CHARS || arabicRatio(body) < MIN_ARABIC_RATIO) return null;
   const validation = validateCategory(item, title, body, articleUrl);
   if (!validation.ok) return null;
   return {
