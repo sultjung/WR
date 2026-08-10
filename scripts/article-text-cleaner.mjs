@@ -46,7 +46,7 @@ export function cleanArticleText(value = "") {
   let keptChars = 0;
 
   for (const line of lines) {
-    if (END_MARKER.test(line) && keptChars >= 180) break;
+    if (END_MARKER.test(line) && keptChars >= 60) break;
     if (SOCIAL_LINE.test(line) || COPYRIGHT_LINE.test(line)) continue;
     if (/شفق نيوز\s*\|\s*آخر الأخبار العاجلة في العراق وكوردستان والعالم/iu.test(line)) continue;
     if (/^آخر الأخبار العاجلة في العراق وكوردستان والعالم$/iu.test(line)) continue;
