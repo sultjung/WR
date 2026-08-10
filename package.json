@@ -6,7 +6,7 @@
   "description": "Arabic Iraqi news collection, full Korean translation, selection, and GPT source export for the Bismayah project",
   "scripts": {
     "validate:config": "node scripts/validate-config.mjs",
-    "validate:frontend": "node --check app.js && node --check translation-pipeline-guard.js && node --check scripts/article-translation-core.mjs && node --check scripts/article-translation-ai.mjs && node --check scripts/generate-article-translations.mjs && node --check scripts/validate-article-translations.mjs",
+    "validate:frontend": "node --check app.js && node --check translation-pipeline-guard.js && node --check scripts/article-translation-core.mjs && node --check scripts/article-translation-ai.mjs && node --check scripts/generate-article-translations.mjs && node --check scripts/validate-article-translations.mjs && node --check scripts/restore-ai-checkpoint.mjs",
     "validate:translations": "node scripts/validate-article-translations.mjs",
     "validate:data": "node scripts/validate-collected-data.mjs && npm run validate:translations",
     "validate": "npm run validate:config && npm run validate:frontend && npm run validate:data",
@@ -44,7 +44,8 @@
     "collect:translations": "node scripts/generate-article-translations.mjs",
     "collect:related-titles": "node scripts/generate-related-titles.mjs",
     "collect": "npm run validate:config && npm run validate:frontend && npm run collect:discover && npm run collect:recover && npm run collect:priority-discovery && npm run collect:resolve && npm run collect:priority-aggregator-fallback && npm run collect:incremental-prepare && npm run collect:content && npm run collect:title-fix && npm run collect:incremental-preserve && npm run collect:iraq-scope && npm run collect:strict-gate && npm run collect:direct-iraq-routing && npm run collect:events && npm run collect:importance-prepare && npm run collect:importance && npm run collect:importance-business && npm run collect:translations && npm run collect:related-titles && npm run audit:foreign-local && npm run validate:data",
-    "test:article-text-cleaner": "node scripts/test-article-text-cleaner.mjs"
+    "test:article-text-cleaner": "node scripts/test-article-text-cleaner.mjs",
+    "collect:restore-ai-checkpoint": "node scripts/restore-ai-checkpoint.mjs"
   },
   "engines": {
     "node": ">=22"
