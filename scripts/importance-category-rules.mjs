@@ -1,4 +1,10 @@
-export const IMPORTANCE_SCORING_VERSION = 6;
+export const IMPORTANCE_SCORING_VERSION = 7;
+
+export function starsForScore(value) {
+  const score = Number(value);
+  if (!Number.isFinite(score)) return null;
+  return Math.max(0.5, Math.min(5, Math.round(score / 10) / 2));
+}
 
 const CATEGORY_ALIASES = {
   bismayah: ["bismayah", "비스마야", "بسماية"],
