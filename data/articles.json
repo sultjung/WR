@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-10T06:51:01.019Z",
+  "generatedAt": "2026-08-10T07:55:07.824Z",
   "lookbackDays": 14,
-  "count": 339,
+  "count": 338,
   "categoryCounts": {
-    "economy": 60,
-    "security": 66,
+    "economy": 58,
+    "security": 67,
     "bismayah": 9,
     "politics": 188,
     "international": 16
@@ -28577,6 +28577,119 @@
     },
     {
       "schemaVersion": "1.0",
+      "articleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
+      "keywordId": "international-us-001",
+      "category": "security",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "1990 الغزو العراقي للكويت",
+      "sourceArabic": "الهيئة الوطنية للإعلام",
+      "sourceHomepage": "https://www.maspero.eg",
+      "publishedAt": "2026-08-01T23:00:00.000Z",
+      "descriptionArabic": "1990 الغزو العراقي للكويت الهيئة الوطنية للإعلام",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdVVYalNkaHVPVlE3UWZsZ0YtcmdEZFp1a3FCekVYdlZqVVVTYWxCWjg2SFZNelF1VkhzenByTFl0ZWV5X3o1NzNkeFpGSDV3bXdCTnNVa3E4UE9Sdm1waDhqSVN4MXVoMlVPamJqS19mZ3U1NGEyNXAzdnVwWmU3azhBUmd5WWFIa2RlcVNNQk5RNVlEZDhGVzF3Zml1aHpDbWEzaTJpejRVNFJYT2NMU0ZjS1d6QUlPWGVhM1JPNDZBNVVuOFlHTlppeXZKenRYT0NMM3QzeHlGM042VXViRms3cnlvZ3ZJSlNZNDBoLWtaYmdZV3otTA?oc=5",
+      "articleUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.673Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:06.708Z",
+      "canonicalUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
+      "originalTextArabic": "محافظات \n تحقيقات وحوارات \n حوارات مباشرة \n مقالات \n حدث فى مثل هذا اليوم \n\n الرئيسية \n\n المزيد\n\n حدث فى مثل هذا اليوم \n\n 1990 الغزو العراقي للكويت\n\n أسامة علي\n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا وتدريبا ضمن القوات المسلحة العراقية بمهاجمة الأراضي الكويتية عبر 4 محاور رئيسية. \n\n واستغرقت العملية العسكرية يومين وانتهت باستيلاء القوات العراقية على كامل الأراضي الكويتية في 4 أغسطس ثم شكلت حكومة صورية برئاسة العقيد علاء حسين خلال 4 - 8 أغسطس تحت اسم جمهورية الكويت ثم أعلنت الحكومة العراقية يوم 9 أغسطس 1990، ضم الكويت للعراق وإلغاء جميع السفارات الدولية في الكويت.\n\n أما في الطائف بالمملكة العربية السعودية فقد تشكلت الحكومة الكويتية في المنفى حيث تواجد أمير الكويت الشيخ جابر الأحمد الصباح وولي العهد الشيخ سعد العبد الله الصباح والعديد من الوزراء وأفراد القوات المسلحة الكويتية.\n\n بعد ساعات من الاجتياح العراقي للكويت طالبت الكويت والولايات المتحدة بعقد اجتماع طارئ لمجلس الأمن وتم تمرير قرار مجلس الأمن الدولي رقم 660 والتي شجبت فيه الاجتياح وطالبت بانسحاب العراق من الكويت.\n\n وبدأت القوات الأمريكية بالتدفق إلى السعودية في 7 أغسطس من عام 1990، وفي نفس اليوم الذي أعلن العراق فيه ضمه للكويت واعتبارها \"المحافظة التاسعة عشر\"، وصل حجم التحشدات العسكرية في السعودية إلى 500,000 جندي.\n\n في خضم هذه الحشودات العسكرية صدرت سلسلة من قرارات مجلس الأمن والجامعة العربية وكانت أهمها قرار مجلس الأمن الدولي رقم 678، والذي أصدر في 29 نوفمبر عام 1990 والذي حدد فيه تاريخ 15 يناير من عام 1991 موعدا نهائيا للعراق لسحب قواتها من الكويت وإلا فإن قوات الائتلاف سوف \"تستعمل كل الوسائل الضرورية لتطبيق قرار مجلس الأمن الدولي رقم 660\".\n\n تشكل ائتلاف عسكري مكون من 34 دولة ضد العراق لتنفيذ قرارات مجلس الأمن الخاصة بانسحاب القوات العراقية من الكويت دون قيد أو شرط، وبلغت نسبة الجنود الأمريكيين من الائتلاف العسكري حوالي 74% من العدد الإجمالي للجنود التي تم حشدهم، وقد وصل العدد الإجمالي لجنود قوات الائتلاف إلى 959,600.\n\n واستمر الاحتلال العراقي للكويت فترة 7 شهور، وانتهى الاحتلال بتحرير الكويت في 26 فبراير 1991 بعد حرب الخليج الثانية.\n\n حدث في مثل هذا اليوم \n الغزو العراقي للكويت \n\n أسامة علي \n محرر بالموقع الموحد للهيئة الوطنية للإعلام \n\n أخبار ذات صلة\n\n حدث فى مثل هذا اليوم \n 2015 الرئيس عبد الفتاح السيسي يفتتح قناة السويس الجديدة \n\n أسامة علي\n\n الخميس، 06 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1876 صدور العدد الأول من جريدة الأهرام \n\n أسامة علي\n\n الأربعاء، 05 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2010 إطلاق القمر الصناعي المصري \"نايل سات 201\" \n\n أسامة علي\n\n الثلاثاء، 04 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1926 مولد الفنان رشدي أباظة \n\n أسامة علي\n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1991 وفاة الكاتب الكبير يوسف إدريس \n\n أسامة علي\n\n السبت، 01 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n\n أسامة علي\n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n حدث فى مثل هذا اليوم \n 2011 اليوم الدولي للصداقة \n\n أسامة علي\n\n الخميس، 30 يوليو 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1981 حفل زفاف الأمير تشارلز والليدي ديانا سبنسر \n\n أسامة علي\n\n الأربعاء، 29 يوليو 2026 01:00 ص\n\n المزيد من حدث فى مثل هذا اليوم \n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n 1926 مولد الفنان رشدي أباظة \n في مثل هذا اليوم الثالث من أغسطس 1926 ولد الفنان رشدي أباظة بالزقازيق بمحافظة الشرقية لأم إيطالية وأب مصري.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n 1990 الغزو العراقي للكويت \n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا...\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n السبت، 01 اغسطس 2026 01:00 ص\n\n 1991 وفاة الكاتب الكبير يوسف إدريس \n في مثل هذا اليوم الأول من أغسطس 1991 توفي الكاتب الكبير يوسف إدريس علي عن عمر ناهز 64 عاما.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n في مثل هذا اليوم الحادي والثلاثين من يوليو 2017 أعلن رئيس مركز القدس الدولي حسن خاطر، أن السلطات الإسرائيلية صادرت...\n\n أخر الأخبار \n\n الأكثر قراءة \n\n رئيس معهد الفلك: إشعارات \"جوجل\" ليست إنذارا مسبقا بموعد أو مكان الزلازل \r\n\n الإثنين، 03 اغسطس 2026 04:35 ص\n\n رئيس معهد الفلك: الهزات الارتدادية المتوقعة أقل قوة ولا داعي للقلق \r\n\n الإثنين، 03 اغسطس 2026 04:28 ص\n\n وزير الصحة يوجه برفع درجة الاستعداد القصوى بجميع المستشفيات بعد الهزة الأرضية \r\n\n الإثنين، 03 اغسطس 2026 04:23 ص\n\n بيان توضيحي من اتحاد الكرة بشأن التصريحات المنسوبة إليه \r\n\n الإثنين، 03 اغسطس 2026 04:17 ص\n\n \"القومية للزلازل\": هزة أرضية بقوة 5.6 ريختر على بعد 61 كم شمال شرق شرم الشيخ \r\n\n الإثنين، 03 اغسطس 2026 03:54 ص\n\n -->\r\n\n-->\r\n\n المعهد القومي للبحوث الفلكية: جار إعداد بيان بخصوص الهزة الإرضية \r\n\n الإثنين، 03 اغسطس 2026 03:19 ص\n\n -->\r\n\n-->\r\n\n باحث أثري يطالب بعودة مياه النيل لسور مجرى العيون ليصبح مزارا سياحيا \r\n\n الأحد، 02 اغسطس 2026 07:49 ص\n\n -->\r\n\n-->\r\n\n أسعار الذهب اليوم بالأسواق المحلية.. عيار 21 يسجل 5910 جنيها \r\n\n الأحد، 02 اغسطس 2026 09:37 ص\n\n -->\r\n\n-->\r\n\n الأرصاد: انكسار الموجة الحارة اعتبارا من الثلاثاء.. والعظمى غدا على القاهرة 37 \r\n\n الأحد، 02 اغسطس 2026 06:51 م\n\n تحقيقات وحوارات\n\n تحقيقات وحوارات \r\n\n دليلك للتنسيق الجامعي .. تساؤلات وإجابات \r\n\n السبت، 01 اغسطس 2026 10:25 ص \n\n تحقيقات وحوارات \r\n\n فيديو.. الإعلام الرقمي.. تقنيات واعدة وتحديات هائلة \r\n\n الخميس، 30 يوليو 2026 01:09 م \n\n تحقيقات وحوارات \r\n\n موجات الطقس الساخنة.. لماذا تحدث وكيف نواجهها؟ \r\n\n الخميس، 23 يوليو 2026 05:18 م \n\n تحقيقات وحوارات \r\n\n اختبارات القدرات بالكليات.. كيف يتم تنظيمها ؟ \r\n\n السبت، 18 يوليو 2026 09:22 ص \n\n تحقيقات وحوارات \r\n\n ترشيدا للمياه والطاقة .. هندسة قناة السويس تبتكر نظام ري ذكي بالطاقة الشمسية \r\n\n الثلاثاء، 14 يوليو 2026 06:11 م \n\n تحقيقات وحوارات \r\n\n بعد توجيهات الرئيس السيسي.. خريطة تطوير الإعلام المصري بعدسة الخبراء \r\n\n الخميس، 09 يوليو 2026 12:44 م \n\n مقالات\n\n محاذير ومعايير السبق في الأخبار! \r\n\n الأحد، 02 اغسطس 2026 11:09 ص \n\n مصر والقانون الدولي: قراءة هادئة في حادث دمياط واحتواء التصعيد \r\n\n السبت، 01 اغسطس 2026 10:00 ص \n\n شمش… الإله الذي كان يرى كل شيء \r\n\n الجمعة، 31 يوليو 2026 12:00 م \n\n القاهرة... بوابة المستقبل للمرأة العربية \r\n\n الجمعة، 31 يوليو 2026 10:00 ص \n\n هل يكفي انطباع واحد.. حين تخدعنا صفة واحدة عن رؤية الإنسان كله \r\n\n الخميس، 30 يوليو 2026 10:00 ص \n\n عظمة ملكات مصر القديمة \r\n\n الأربعاء، 29 يوليو 2026 10:00 ص \n\n -->\r\n\n-->\r\n\n النشرة البريدية\n\n انضم لاكثر من 72458 مشترك \r\n\n اشترك \r\n\n بالتسجيل فى النشرة البريدية فانك توافق على الشروط الخاصة بنا",
+      "sourceHost": "maspero.eg",
+      "contentChars": 6297,
+      "arabicRatio": 0.9038,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:24.319Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "security",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "security",
+        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-jS2d1bjlCEhkIFgMmU",
+        "representativeArticleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 48,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 15,
+          "iraqImpact": 8,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "e1be9f487766e2c4bc3c",
+        "ruleScore": 48,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "e65ff067934713b935ff715bee2e12cb5b1a36d819e05734440b18cce86f503b",
+      "contentCheckedAt": "2026-08-03T01:38:24.319Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
       "articleId": "discovery-iZkeQQG3p2jT7qH9HR9CT40_",
       "keywordId": "international-hormuz-001",
       "category": "economy",
@@ -29126,6 +29239,119 @@
       },
       "contentHash": "22a12bccb53bd5512e024498772fd6cb28760fc2ed81da8dfd869941cb6d5133",
       "contentCheckedAt": "2026-08-03T01:38:25.806Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
+      "keywordId": "international-us-001",
+      "category": "politics",
+      "priority": 96,
+      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "انسحاب القوات",
+        "القوات الأميركية",
+        "التحالف الدولي",
+        "قاعدة عسكرية"
+      ],
+      "excludedTerms": [
+        "رياضة",
+        "فن"
+      ],
+      "originalTitleArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق",
+      "sourceArabic": "تسنیم",
+      "sourceHomepage": "https://www.tasnimnews.ir",
+      "publishedAt": "2026-08-01T15:56:31.000Z",
+      "descriptionArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق تسنیم",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxPbTl6aGlPYWRHZUlRRGltaDJGTjA4cFh6ZHgxb2R2ZlBSa1VKbHEzSWhaZk9wc2cxWkhYR3RTaHZKT3U0VDNmME9RbndhTEc1SmRvTThJM0NwSnpXeEh5TFl1eXVoaVA0OUVqSFZvX0EwMUF2QmloYW5vVzd2bE5LYjllYm5wX1lxU1Z2S1l4RTA4eEl1NWZmc3NPTHBlYnJSSXJ4Y2YwdG1seTZvX1A2QWhrT1FsdVNRX2o0UHJKSzJqalVxQ1Vxd09nbUQ1YV9Va2I5ckc4RjEyLVpvQWRZQWNjQTNRU3pSbHpUd2dCa19OWVZXVHMtUjNrSGctcVIwTDhrbzZmR2FWSUhRY1ZUNjVjLTVMOTNsN1pFR1ZQa2lRVGwtbFN1RXdveWVXWkFuZ3kzYkdqMF9YT3NQNUwwSzl0UkxIc2NiV2xydzhad1hraFBLY1czSFZpMjhGNWFqdHROeU0xUV9PV1MwcmNvbjhBdFVGWWlNZk1KblQtVGxUejRsN0thVFN4VFFyNVBFZnhRVDQtYXl1dnR2T2lhTGlzYWVmem9QazdYeklJUDdXaThwRVBUTFFUbmN4ZXdtWHRSZzV6RkhTeXg2ajgyaUpsT0cxTldwWUNTMktjMkVSVGZMSXU5TlVORkVIR0JnR3g2MmNnN2U0X2_SAfsDQVVfeXFMT205emhpT2FkR2VJUURpbWgyRk4wOHBYemR4MW9kdmZQUmtVSmxxM0loWmZPcHNnMVpIWEd0U2h2Sk91NFQzZjBPUW53YUxHNUpkb004STNDcEp6V3hIeUxZdXl1aGlQNDlFakhWb19BMDFBdkJpaGFub1c3dmxOS2I5ZWJucF9ZcVNWdktZeEUwOHhJdTVmZnNzT0xwZWJyUklyeGNmMHRtbHk2b19QNkFoa09RbHVTUV9qNFBySksyampVcUNVcXdPZ21ENWFfVWtiOXJHOEYxMi1ab0FkWUFjY0EzUVN6Umx6VHdnQmtfTllWV1RzLVIza0hnLXFSMEw4a282ZkdhVklIUWNWVDY1Yy01TDkzbDdaRUdWUGtpUVRsLWxTdUV3b3llV1pBbmd5M2JHajBfWE9zUDVMMEs5dFJMSHNjYldscnc4WndYa2hQS2NXM0hWaTI4RjVhanR0TnlNMVFfT1dTMHJjb244QXRVRllpTWZNSm5ULVRsVHo0bDdLYVRTeFRRcjVQRWZ4UVQ0LWF5dXZ0dk9pYUxpc2FlZnpvUGs3WHpJSVA3V2k4cEVQVExRVG5jeGV3bVh0Umc1ekZIU3l4Nmo4MmlKbE9HMU5XcFlDUzJLYzJFUlRmTEl1OU5VTkZFSEdCZ0d4NjJjZzdlNF9v?oc=5",
+      "articleUrl": "https://www.tasnimnews.ir/ar/news/2026/08/01/3661373/%D8%A8%D8%AF%D8%A1-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A7%D9%84%D9%88%D8%AC%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B3%DA%A9%D8%B1%DB%8C-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%DB%8C%DA%A9%DB%8C-%D9%81%DB%8C-%D8%A7%D9%82%D9%84%DB%8C%D9%85-%DA%A9%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/amp",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.673Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:11.485Z",
+      "canonicalUrl": "",
+      "originalTextArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق\n\n الأخبار الشرق الأوسط \n\n 2026/08/01 - 14:16 \n\n وافادت وكالة تسنيم الدولية للانباء ان المصادر الإعلامية تحدثت عن بدء عملية سحب تدريجي للقوات الأمريكية من كردستان العراق، وذلك في إطار برنامج إعادة انتشار القوات الأمريكية وإنهاء الوجود العسكري الواسع لهذا البلد في العراق.\n\n ووفقاً لما نقلته \"العربية\"، فقد تحركت خلال الأيام الماضية قوافل عسكرية أمريكية من مدينة أربيل صوب الدول المجاورة، وبدأت عملية نقل القوات والمعدات من القواعد الأمريكية في إقليم كردستان.\n\n وبناءً على هذا التقرير، سيتم سحب القوات الأمريكية على مراحل ووفق جدول زمني محدد. بيد أن وزارة الحرب الأمريكية (البنتاغون) لم تصدر حتى الآن أي تعليق رسمي حول تفاصيل التحركات الأخيرة، ولا عدد القوات المُنسحبة، ولا كمية المعدات المنقولة.\n\n وفي الوقت نفسه، أفاد موقع \"المانيتور\" نقلاً عن قاعدة \"كلاش ريبورت\" بأن الولايات المتحدة بدأت بسحب قواتها المتبقية من العراق قبل الموعد النهائي المحدد في 30 سبتمبر/أيلول. ووفقاً لهذا التقرير، فقد قام الجيش الأمريكي أيضاً بسحب أنظمة الدفاع الجوي \"باتريوت\" من مدينة أربيل.\n\n مخاوف \"العربية\" من تراجع الوجود الأمريكي\n\n تابع موقع شبكة \"العربية\" في تقريره قائلاً إن عملية سحب القوات الأمريكية تبدأ في وقت شهدت فيه المنطقة خلال الأسابيع الأخيرة تصاعداً في التوترات العسكرية.\n\n وكتبت \"العربية\": \"إن استمرار هجمات الجماعات المسلحة المدعومة من إيران ضد مواقع في إقليم كردستان، يثير مخاوف بشأن تداعيات تراجع الوجود العسكري الأمريكي في هذه المنطقة\".\n\n اتفاق بين بغداد وواشنطن لإنهاء مهمة التحالف\n\n وزعمت \"العربية\" أن انسحاب القوات الأمريكية يتم في إطار الاتفاقات السابقة بين بغداد وواشنطن لإنهاء مهمة التحالف الدولي بقيادة الولايات المتحدة في العراق.\n\n وكان العراق والولايات المتحدة قد توصلا سابقاً إلى اتفاق بشأن جدول زمني لإعادة انتشار قوات التحالف وإنهاء المهام العسكرية لهذه القوات في عدد من القواعد العراقية. وبموجب هذا البرنامج، من المقرر أن يكتمل الانسحاب من القواعد المتبقية خلال عام 2026.\n\n غير أن بدء انسحاب العسكريين الأمريكيين من إقليم كردستان العراق، وتحديداً في خضم الحرب مع إيران، يبدو أنه يحدث خارج البرنامج المُعدّ سلفاً.\n\n واختتمت \"العربية\" تقريرها بالإشارة إلى أنه ورغم بدء عملية الانسحاب، لا يزال غير واضح عدد القوات الأمريكية التي غادرت إقليم كردستان، وحجم المعدات العسكرية التي جرى إخراجها من المنطقة. ومن المتوقع أن تستمر عملية إعادة انتشار القوات الأمريكية خلال الأسابيع المقبلة، تنفيذاً للجدول الزمني المتفق عليه بين بغداد وواشنطن.\n\n مراجعة أمريكية للوجود العسكري في الكويت\n\n وكانت صحيفة \"وول ستريت جورنال\" قد أفادت يوم الأربعاء من الأسبوع الماضي بأن الولايات المتحدة تدرس، في ضوء تطورات الحرب ضد إيران، مدى وجودها في دولة الكويت.\n\n ويأتي الإجراء الأمريكي في وقت أعلن فيه مسؤولون كويتيون أنهم لا يزالون بحاجة إلى التزام أمريكي حازم بدعم بلدهم.\n\n وذكرت \"وول ستريت جورنال\" أن المنشآت والقواعد الأمريكية قد تعرضت خلال الحرب لعدة هجمات إيرانية.\n\n وجاء في تقرير الصحيفة: \"يقول محللون إن ما يحتمل أن يؤدي إلى تغيير في هذه العلاقات، هو إدراك الولايات المتحدة لحقيقة أن الوجود العسكري الدائم والكبير في الكويت لم يعد ضرورياً أو مقبولاً من الناحية العسكرية\".\n\n /انتهى/",
+      "sourceHost": "tasnimnews.ir",
+      "contentChars": 2927,
+      "arabicRatio": 1.0067,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:26.896Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-0_tPXOctHVZWjvQ-ts",
+        "representativeArticleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 44,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 15,
+          "iraqImpact": 4,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "e3705f70ebf1ed9137da",
+        "ruleScore": 44,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "f42ecde913ed8a2969ca785386f04aaca6e48c97a1e01024cd2c443eb76ec988",
+      "contentCheckedAt": "2026-08-03T01:38:26.896Z",
       "contentChanged": false,
       "processingReused": true
     },
@@ -30903,7 +31129,7 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "politics",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -42997,339 +43223,6 @@
       "contentCheckedAt": "2026-07-29T08:03:59.393Z",
       "contentChanged": false,
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-fUCh3kdmlYPQUCnzbqmlPyhR",
-      "keywordId": "politics-security-policy-001",
-      "category": "economy",
-      "priority": 94,
-      "queryArabic": "\"حصر السلاح بيد الدولة\" العراق",
-      "requiredTerms": [
-        "حصر السلاح بيد الدولة"
-      ],
-      "optionalTerms": [
-        "الحشد الشعبي",
-        "الأمن القومي",
-        "الفصائل"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "معادلة «السلاح بيد الدولة والنفط إلى البحر»: بغداد وبيروت تتفاوضان على الشراكة الجديدة - ميدل ايست نيوز بالعربي",
-      "sourceArabic": "میدل ایست نیوز",
-      "sourceHomepage": "https://mdeast.news",
-      "publishedAt": "2026-07-27T07:25:37.000Z",
-      "descriptionArabic": "معادلة «السلاح بيد الدولة والنفط إلى البحر»: بغداد وبيروت تتفاوضان على الشراكة الجديدة میدل ایست نیوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiywJBVV95cUxPM1ZMUHRBVzhaMWxuOVhlN2NzTEFCU3I0M3VOZUpsRW91VHJFeklELUxPdTQza3RwR3h2Wl9MUklpSWtLSnJjRHVsSWJkdmJPYThlWGRvc1FxOTAyRnpvX2xnUFgtM0JxNXdHS1E4dDRvQTRVcjRUZlJqLVpRU2xBUWVnd2dQV0VDdWhBbHJNaGxqb2ktU3ZrZVpYYlRZU3dFVUxLVWpQMy1TTXdIa1lxb09jdU41YnV6VEY3X21vOVV4Yl96aTRVUlBpZHNndmZTNkVEcFRKOTNjaXR4QVN1Sy1kSGJITWxqMi1WZDhHMnJSR0xrTGhhdFdwUjl2ZUZnSUlDSVBnc3duZDZfVURnS3JuYUowQmVaVEktRmJ4ZWV4eW1pb2ctUDZQZWY0Y29aQnJyZC16MnlDV0E1QVZHWmdPMkMzV0YwQXEw?oc=5",
-      "articleUrl": "https://mdeast.news/ar/2026/07/27/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A8%D9%8A%D8%AF-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9-%D9%88%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A5%D9%84%D9%89-%D8%A7/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-07-31T06:10:22.594Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-07-31T06:11:29.763Z",
-      "canonicalUrl": "https://mdeast.news/ar/2026/07/27/%D9%85%D8%B9%D8%A7%D8%AF%D9%84%D8%A9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A8%D9%8A%D8%AF-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9-%D9%88%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A5%D9%84%D9%89-%D8%A7/",
-      "originalTextArabic": "معادلة «السلاح بيد الدولة والنفط إلى البحر»: بغداد وبيروت تتفاوضان على الشراكة الجديدة \n يبدو أن العلاقة بين العراق ولبنان اليوم تتحول من مجرد “فزعة” ودعم بالوقود لتشغيل الكهرباء وسداد الديون، إلى شراكة حقيقية أعمق.\n 2026-07-27/09:49 4 دقائق \n\n ميدل ايست نيوز: يبدو أن العلاقة بين العراق ولبنان اليوم تتحول من مجرد “فزعة” ودعم بالوقود لتشغيل الكهرباء وسداد الديون، إلى شراكة حقيقية أعمق. حيث إن التركيز الحالي يتجه نحو خطوات عملية تجمع بين ضبط السلاح واستقرار الدولة، إلى جانب فتح آفاق اقتصادية جديدة تستغل الموانئ والأنابيب لتأمين منفذ تجاري ونفطي للعراق على البحر المتوسط.\n توقيت مهم \n ويقول القيادي في تيار الحكمة فهد الجبوري، إن “زيارة رئيس الوزراء اللبناني إلى العراق ولقاءه الحكومة العراقية جاءت في إطار الوضع العام، إذ جرى خلال الاجتماع مع رئيس الوزراء والوفد المرافق له بحث الدعم المتبادل بين البلدين، إلى جانب الاتفاقيات المزمع توقيعها، وهو ما أشار إليه أيضاً مكتب رئيس الوزراء ضمن إطار التعاون الثنائي”.\n ويضيف، أن “توقيت الزيارة يستدعي التوقف عنده، ولا سيما أنها جاءت بعد زيارة رئيس الوزراء العراقي إلى واشنطن، وأعقبتها زيارة رئيس الجمهورية اللبناني إلى واشنطن، لذا الربط بين الزيارتين وتوقيتهما، إلى جانب ملف حصر السلاح بيد الدولة في كلا البلدين، يشير إلى وجود ملفات لم يجر الإعلان عنها حتى الآن”.\n موانئ المتوسط \n ويشير الجبوري إلى أن “الجانب الاقتصادي سيكون حاضراً أيضاً، فالولايات المتحدة كانت ترعى مشروع الأنبوب السوري العراقي الذي سيجري إنشاؤه بإدارة أو بدعم أميركي، فضلاً عن استثمار الأنبوب الذي توقف العمل به في زمن حافظ الأسد باتجاه لبنان، والذي يتيح مرور النفط العراقي إلى البحر المتوسط”.\n ويتابع، أن “ملف التعامل مع الوضع اللبناني، سواء وفق النهج السابق أو الحالي، يقوم على اتفاق بشأن الدعم المتبادل، إلا أن آليات هذا الدعم ستخضع لالتزامات العراق المالية، لكن لا نعتقد أن بغداد ستتجه إلى مستوى الدعم الذي كان قائماً في الحكومات السابقة، سواء من ناحية تقديم الأموال أو غيرها من أشكال الدعم، نظراً للظروف التي يمر بها العراق”.\n ويؤكد الجبوري، أن “الوضع الحالي يختلف عن السابق، حيث إن العراق يواجه أزمة مالية وأزمة نقدية، وأن الكثير من تداعيات هذه الملفات ستتضح خلال الأيام المقبلة”.\n الوقود العراقي \n ووقع العراق ولبنان في تموز 2021 اتفاقاً يقضي بتزويد الجانب اللبناني بمليون طن من وقود الفيول (النفط الأسود) لتشغيل محطات الكهرباء، في خطوة هدفت إلى تخفيف أزمة الطاقة التي كان يعاني منها لبنان. ونص الاتفاق على أن يحصل العراق، مقابل زيت الوقود الثقيل، على “خدمات وسلع” من الجانب اللبناني، إلا أن هذا البند لم يدخل حيز التنفيذ.\n ومع استمرار حاجة لبنان إلى الوقود، وافقت الحكومة العراقية في نهاية عام 2023 على تمديد عقد تزويد الوقود، مع رفع الكمية السنوية إلى مليوني طن بدلاً من 1.5 مليون طن، في إطار استمرار دعم تشغيل محطات الكهرباء اللبنانية.\n مستحقات متراكمة \n وعلى الرغم من تجديد الاتفاقات، لم يسدد لبنان المستحقات المالية المترتبة عليه منذ سنوات، والناجمة عن عقود بيع وتوريد الوقود الثقيل، إذ بلغت الديون المستحقة لصالح العراق نحو 2.7 مليار دولار أمريكي، فيما أعلن وزير المالية اللبناني ياسين جابر خلال تموز الجاري أن هذه الأموال أصبحت جاهزة، بانتظار إطلاق المنصة الخاصة بالبنك المركزي العراقي لإتمام إجراءات التسوية.\n وقبيل وصول الوفد اللبناني، كشف المستشار المالي والاقتصادي لرئيس الوزراء، مظهر محمد صالح، في تصريح صحفي أن زيارة رئيس الحكومة اللبنانية نواف سلام تستهدف تجديد عقد تزويد لبنان بالوقود اللازم لتشغيل محطات الكهرباء، إلى جانب بحث مشروع تصدير النفط العراقي إلى البحر المتوسط عبر الأراضي اللبنانية.\n وأوضح صالح، أن الزيارة لا تقتصر على بعدها السياسي، وإنما تمثل محاولة لإعادة صياغة العلاقة الاقتصادية بين البلدين، مبيناً أن ملف الطاقة يشكل محوراً رئيساً في المباحثات، مع بحث تطوير اتفاق تزويد لبنان بالوقود، فضلاً عن مشاريع النقل والربط الإقليمي، ومن بينها استخدام الأراضي اللبنانية منفذاً إضافياً للعراق نحو البحر المتوسط، بما يمنح لبنان دورا لوجستيا ويتيح للعراق نافذة تجارية جديدة.\n ووصل رئيس الحكومة اللبنانية نواف سلام إلى العاصمة بغداد، في وقت سابق من اليوم الأحد، على رأس وفد وزاري ضم وزير المالية ياسين جابر، ووزير الطاقة والمياه جو صدي، ووزير الاتصالات شارل الحاج، في زيارة ركزت على ملفات الطاقة والاقتصاد والتعاون الثنائي، وسط ترقب لمخرجاتها، ولا سيما ما يتعلق بتجديد اتفاق الفيول، واليات تسوية المستحقات المالية، وإمكانية توسيع التعاون في قطاعات أخرى.\n شراكة شاملة \n من جهته، يقول المحلل السياسي مجاشع التميمي، إن “زيارة رئيس الوزراء اللبناني نواف سلام إلى العراق، برفقة وزراء المالية والطاقة والاتصالات، تتجاوز مسألة تجديد عقد تزويد لبنان بالوقود الأسود، وتمثل محاولة لإعادة صياغة العلاقة بين البلدين على أسس اقتصادية أكثر تكافؤا”.\n ويضيف أن “الجانبين يسعيان إلى الانتقال من مرحلة الدعم الأحادي إلى تحريك ملف المستحقات المالية البالغة 2.7 مليار دولار عبر خدمات استثمارية ومنصة البنك المركزي”، مبيناً أن “طبيعة الوفد اللبناني تعكس رغبة بغداد وبيروت في بناء شراكة مؤسساتية شاملة تمتد إلى قطاعات الاتصالات والخدمات والمناطق الحرة، ولا تقتصر على تزويد محطات الكهرباء بالوقود”.\n تعزيز الدولة \n ويشير التميمي إلى أن “لبنان بعد وصول نواف سلام وجوزيف عون إلى السلطة في عام 2025 يختلف عن المرحلة السابقة، حيث إنهما يعدان خارج محور المقاومة، في حين يقود العراق الإطار التنسيقي، القريب من إيران، وهو ما يضفي بعداً سياسياً على مسار العلاقات بين البلدين”.\n ويوضح، أن “التوافق على تعزيز سيادة الدولة ومؤسساتها الرسمية يفتح المجال أمام تقارب سياسي يتجاوز الملفات الاقتصادية، حيث إن التقاطع بين توجه حكومة سلام لحصر السلاح بيد الدولة، والنهج العراقي لضبط السلاح المنفلت، يحد من نفوذ الفاعلين غير الحكوميين في البلدين، ويوفر أرضية لتنسيق أمني ودبلوماسي يعزز مفهوم الدولة الوطنية، ولا سيما أن العراق ولبنان يواجهان تحديات متشابهة تتعلق بملف السلاح والضغوط الأمريكية”.\n ترتيبات جديدة \n ويرى التميمي، أن “طرح استخدام الأراضي اللبنانية وميناء طرابلس منفذاً للنفط العراقي يمثل سيناريو استراتيجياً واقعياً يخدم مصالح الطرفين، رغم التحديات الفنية، وربط تجديد عقد الفيول بهذا البعد اللوجستي يمنح العراق منفذاً تجارياً جديداً على البحر المتوسط لتصدير النفط، ويعيد للبنان دوره الإقليمي كمركز للطاقة والخدمات”.\n ويؤكد، أن “تحقيق هذا المشروع يتطلب إرادة سياسية، وتخطيطاً استراتيجياً، وتنسيقاً بين العراق ولبنان وسوريا، كما أن التحرك اللبناني العراقي يمكن قراءته بوصفه جزءاً من ترتيبات إقليمية جديدة تهدف إلى ملء الفراغ الجيوسياسي الناتج عن انحسار النفوذ الإيراني في البلدين، عبر إحياء محاور عربية أكثر تماسكاً، وترسيخ مفهوم الدولة الوطنية من خلال مشاريع اقتصادية واستراتيجية مشتركة، بينها الأنبوب النفطي والشراكات الخدمية، بما يعزز استقلالية القرار ويخدم الاستقرار الإقليمي”.\n وتأتي هذه الزيارة في وقت لم تعد فيه العلاقة بين بغداد وبيروت محصورة بملف تزويد الوقود، بل باتت ترتبط بحزمة من المشاريع الاقتصادية واللوجستية والمالية، لتضع الطرفين أمام اختبار تحويل سنوات من الدعم والالتزامات المتراكمة إلى شراكة أكثر استدامة تقوم على تبادل المصالح، بدلاً من الاكتفاء بإدارة الأزمات.\n تابع ميدل ايست نيوز على التلغرام \n المصدر \n العالم الجديد \n الوسوم\n العراق حزب الله حصر السلاح علي الزيدي لبنان \n نسخ الرابط تم نسخ الرابط \n\n 2026-07-27/09:49 4 دقائق \n\n فيسبوك X لينكدإن بينتيريست Reddit واتساب تيلقرام ڤايبر مشاركة عبر البريد طباعة",
-      "sourceHost": "mdeast.news",
-      "contentChars": 6645,
-      "arabicRatio": 1.0125,
-      "relevanceNote": "비스마야 사업환경과 연관 가능한 이라크 경제·건설·투자 기사",
-      "fetchedAt": "2026-07-31T06:13:06.019Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "economy",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "economy",
-        "to": "economy",
-        "reason": "이라크 경제·건설·투자 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-fv55M59DKTrILTLaZU",
-        "representativeArticleId": "discovery-fUCh3kdmlYPQUCnzbqmlPyhR",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 42,
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "constructionInvestment": 12,
-          "nationalImportance": 17,
-          "businessImpact": 0,
-          "executionScale": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "012c66a7391c94a173de",
-        "ruleScore": 42,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "a4de9ac06de502e8766bc301f33d984199f2e870cd6d48e0323b3ba89556ba8f",
-      "contentCheckedAt": "2026-07-31T06:13:06.019Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-QAh18d0BJ22OLLtD3Y3pFBCx",
-      "keywordId": "economy-projects-001",
-      "category": "economy",
-      "priority": 95,
-      "queryArabic": "\"المشاريع المتلكئة\" العراق",
-      "requiredTerms": [
-        "المشاريع المتلكئة"
-      ],
-      "optionalTerms": [
-        "استئناف",
-        "تمويل",
-        "نسب الإنجاز",
-        "مقاولين"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "البرلمان يفتح ملف المشاريع المتلكئة في العراق",
-      "sourceArabic": "وكالة الصحافة المستقلة",
-      "sourceHomepage": "https://mustaqila.com",
-      "publishedAt": "2026-07-27T07:00:14.000Z",
-      "descriptionArabic": "البرلمان يفتح ملف المشاريع المتلكئة في العراق وكالة الصحافة المستقلة",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxNVkdzMFdVYVF5TkZoWW50SC1zdEEtQkctbnU1cVJjdHUxVXhHa1k2YXlHbEtXeGFOYWs2TTdwVk9VRG82MGZfTzlmWFJxNmFqLUFWX015am93UGs3dl9fcDA1VDVUSktaR0dmWHROdHBwbWNjOEM1c1Q2QW1FcWh6MEtlSXdseXZ0UGkxODdtUDEwSmNSNlB1WXB0cjhLTEFQbWNHSnVielZLeHgtaWxwbXg0d3pSVHpYY3hWSDhDOHF0S1RITlhEUlVzWE5KV3R6ck14UUxHcHBmYm5mbjZmN0hHZnlhQ3ZWQWd2T3ZDaDhOeGlpWU5VcUp0RjlBdUxTMHVGTGJiUkptUzUtb01pT1RoR1UxVVZRaUM4SEFYU1ljcnROVXZXZno3UnFuQWJwVXdIRjVZVGtQUUd0b3ZSSjBR?oc=5",
-      "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D9%8A%D9%81%D8%AA%D8%AD-%D9%85%D9%84%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D9%84%D9%83%D8%A6%D8%A9-%D9%81/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:37.453Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:37:16.676Z",
-      "canonicalUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D9%8A%D9%81%D8%AA%D8%AD-%D9%85%D9%84%D9%81-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D8%A7%D9%84%D9%85%D8%AA%D9%84%D9%83%D8%A6%D8%A9-%D9%81/",
-      "originalTextArabic": "البرلمان يفتح ملف المشاريع المتلكئة في العراق\n يوليو 27, 2026 آخر تحديث: يوليو 27, 2026 \n\n المستقلة/- تتجه لجنة الخدمات والإعمار النيابية إلى فتح ملف المشاريع المتلكئة في بغداد والمحافظات، عبر سلسلة من الاستضافات المرتقبة لمسؤولين تنفيذيين، في خطوة تهدف إلى كشف أسباب توقف المشاريع الخدمية ووضع حلول عملية لإعادة العمل بها.\n وقال عضو اللجنة النائب رعد الدليمي إن اللجنة ستبدأ خلال الأيام المقبلة باستضافة محافظ بغداد وأمين بغداد وعدد من المسؤولين التنفيذيين، لمناقشة واقع المشاريع المتوقفة، والوقوف على أسباب تعثرها، فضلاً عن بحث الإجراءات المطلوبة لاستئناف تنفيذها.\n وأكد الدليمي أن جزءاً كبيراً من المشاريع توقف بسبب أزمة السيولة المالية، مبيناً أن عدداً من المشاريع المدرجة ضمن الموازنات السابقة وصلت إلى مراحل متقدمة من الإنجاز، لكنها توقفت نتيجة عدم توفير التخصيصات المالية اللازمة لإكمال الأعمال المتبقية.\n وتأتي هذه الخطوة في وقت تواجه فيه العديد من المحافظات تحديات مرتبطة بتأخر تنفيذ المشاريع الخدمية، خصوصاً في قطاعات البنى التحتية والطرق والخدمات الأساسية، ما دفع اللجان النيابية إلى تكثيف دورها الرقابي ومتابعة أداء الجهات التنفيذية.\n وأوضحت لجنة الخدمات والإعمار أنها ستعمل على متابعة الملفات مع الوزارات والدوائر المعنية، بهدف تحديد مكامن الخلل ومعالجة أسباب التأخير، بما يضمن إعادة المشاريع المتوقفة إلى مسار التنفيذ وتحسين مستوى الخدمات المقدمة للمواطنين.\n كما تتزامن هذه التحركات مع برنامج رقابي أوسع أعدته لجنة التخطيط النيابية، يتضمن استضافة عدد من المحافظين ورؤساء الهيئات والوزارات لمتابعة تنفيذ الخطط التنموية والمشاريع الاستثمارية، وتقييم التحديات التي تواجه الحكومات المحلية.\n ويرى مراقبون أن معالجة ملف المشاريع المتلكئة تمثل اختباراً مهماً أمام الحكومة والبرلمان، خصوصاً أن استكمال المشاريع المتوقفة قد يوفر حلولاً سريعة لتحسين الخدمات دون الحاجة إلى إطلاق مشاريع جديدة، شرط تجاوز العقبات المالية والإدارية التي عطلت تنفيذها خلال السنوات الماضية.\n\n أخبار قد تهمك\n\nالعراق يتصدر أسواق الحمضيات التركية… 357 مليون دولار واردات خلال 6 أشهر \nأغسطس 2, 2026",
-      "sourceHost": "mustaqila.com",
-      "contentChars": 1876,
-      "arabicRatio": 1.0025,
-      "relevanceNote": "비스마야 사업환경과 연관 가능한 이라크 경제·건설·투자 기사",
-      "fetchedAt": "2026-08-03T01:39:28.548Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "economy",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "economy",
-        "to": "economy",
-        "reason": "이라크 경제·건설·투자 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-Lfh152frXMYHWyIB9a",
-        "representativeArticleId": "discovery-QAh18d0BJ22OLLtD3Y3pFBCx",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 19,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "constructionInvestment": 4,
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "executionScale": 4,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "b112e1ada614bebd6013",
-        "ruleScore": 19,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "9f6f61c0a8a8de1142208119b309881d4983aec0d78a242c954c622af54c33a6",
-      "contentCheckedAt": "2026-08-03T01:39:28.548Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-VwPGW6rP6IGoxqUArzt6bgGl",
-      "keywordId": "politics-pm-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "\"رئيس مجلس الوزراء العراقي\" توجيهات",
-      "requiredTerms": [
-        "رئيس مجلس الوزراء"
-      ],
-      "optionalTerms": [
-        "توجيهات",
-        "قرار",
-        "سياسة",
-        "اجتماع"
-      ],
-      "excludedTerms": [
-        "تهنئة",
-        "تعزية",
-        "استقبال المهنئين"
-      ],
-      "originalTitleArabic": "بلكي الاخباري / تحقيق عراقي رفيع المستوى بشان طائرات مسيرة استهدفت السعودية",
-      "sourceArabic": "تطبيق نبض",
-      "sourceHomepage": "https://nabdapp.com",
-      "publishedAt": "2026-07-27T07:00:00.000Z",
-      "descriptionArabic": "بلكي الاخباري / تحقيق عراقي رفيع المستوى بشان طائرات مسيرة استهدفت السعودية تطبيق نبض",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9vNmZfUHBIZmtyTFpqOEJxeDlnbkZnckRXZ0NpLTBuVVBuNldHdF9rUkZIMXBlY0NrWUM3UTV6TE1rNFVyOWc?oc=5",
-      "articleUrl": "https://nabdapp.com/t/175898750",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:36.460Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:37:17.062Z",
-      "canonicalUrl": "https://nabdapp.com/t/175898750",
-      "originalTextArabic": "منذ 6 أيام \n\n بلكي الاخباري \n\n تحقيق عراقي رفيع المستوى بشان طائرات مسيرة استهدفت السعودية \n\n الإثنين، ٢٧ يوليو / تموز ٢٠٢٦ \n\nاصدر رئيس مجلس الوزراء العراقي علي فالح الزيدي توجيهات عاجلة الى الجهات الامنية المختصة للبدء في تحقيقات دقيقة وموسعة حول المعلومات التي اوردتها وزارة الدفاع السعودية بخصوص تعرض اراضي المملكة لهجمات بطائرات مسيرة انطلقت من داخل الحدود العراقية.\n\nواكدت الحكومة العراقية في بيان رسمي التزامها الكامل بالمبادئ الدستورية التي تمنع تحويل الاراضي العراقية الى منطلق لشن اي عمليات عدائية ضد دول الجوار او الاشقاء في المنطقة.\n\nواضافت المصادر الحكومية ان بغداد تضع سيادة اراضيها وامن محيطها العربي على رأس اولوياتها وانها ستتخذ كافة الاجراءات القانونية الرادعة بحق اي جهة يثبت تورطها في هذه الانشطة التي تهدد استقرار العلاقات الثنائية.\n\nتحرك حكومي لضبط الامن وحماية الجوار\n\nوبينت السلطات العراقية ان العلاقات مع المملكة العربية السعودية تستند الى روابط اخوية تاريخية ومصالح مشتركة راسخة لا يمكن السماح لاي طرف خارجي او محاولات مشبوهة بالنيل منها او تعكير صفوها.\n\nوشددت على ان الاجهزة الاستخباراتية والامنية بدأت بالفعل في عمليات تحري واسعة لجمع الادلة والمعلومات المتعلقة بالادعاءات السعودية لضمان كشف الحقائق ووضع حد لاي خروقات امنية قد تحدث.\n\nواوضحت الحكومة ان التزامها بحماية امن واستقرار المنطقة يمثل نهجا ثابتا في سياستها الخارجية والداخلية حيث لن تتهاون في ملاحقة المتورطين وتقديمهم للعدالة وفقا لنتائج التحقيقات الجارية.\n\nموقف رسمي حازم من هجمات المسيرات\n\nوكشفت التقارير الواردة عن الجانب السعودي عن اعتراض وتدمير طائرات مسيرة كانت تستهدف منشآت نفطية حيوية في الرياض والمنطقة الشرقية وهو ما دفع بغداد للتحرك الفوري لتطويق الموقف.\n\nواكدت بغداد في ختام موقفها انها ستواصل العمل بكل حزم لتعزيز سيادة الدولة والسيطرة الكاملة على امن حدودها لمنع استخدامها في اي اعتداءات خارجية قد تضر بمصالح العراق وعلاقاته الاقليمية. \n\n النشرة الإخبارية اليومية \n\n البريد الالكتروني: \n\n نسخة النشرة: \n\n من فضلك اختر الدولة مصر السعودية الكويت الإمارات لبنان قطر سوريا البحرين الأردن فلسطين تونس عمان اليمن المغرب ليبيا الجزائر السودان العراق موريتانيا \n\n الاشتراك \n\n --!-->\n\n شكراً لتسجيلك معنا\n\n سوف تصلك أهم الأخبار عبر بريدك الإلكتروني\n\n اقرأ على الموقع الرسمي \n\n حمل التطبيق الآن من البلاي ستور \n حمل التطبيق الآن من الآب ستور \n\n المزيد من بلكي الاخباري \n\n العيسوي يرعى احتفال حزب التنمية الوطني بالأعياد والمناسبات الوطنية \n العيسوي يرعى احتفال حزب التنمية الوطني بالأعياد والمناسبات الوطنية \n\n منذ 9 ساعات \n\n زلزال يضرب منطقة الشرق الأوسط يشعر به عدد من سكان محافظات جنوب الأردن #عاجل \n زلزال يضرب منطقة الشرق الأوسط يشعر به عدد من سكان محافظات جنوب الأردن #عاجل \n\n منذ ساعة \n\n تحركات دولية مكثفة لاحتواء التصعيد في غزة وتطبيق خطة السلام \n تحركات دولية مكثفة لاحتواء التصعيد في غزة وتطبيق خطة السلام \n\n منذ 5 ساعات \n\n مهرجان جرش يختتم فعاليات دورته الأربعين \n مهرجان جرش يختتم فعاليات دورته الأربعين \n\n منذ 4 ساعات \n\n شروط تل ابيب الجديدة لضمان استقرار الحدود اللبنانية \n شروط تل ابيب الجديدة لضمان استقرار الحدود اللبنانية \n\n منذ 5 ساعات \n\n المقام العراقي يتصدر أمسيات الهيبودروم في مهرجان جرش \n المقام العراقي يتصدر أمسيات الهيبودروم في مهرجان جرش \n\n منذ 4 ساعات \n\n الأكثر تداولا في الأردن \n\n مهرجان جرش يختتم فعاليات دورته الأربعين #الاردن \n مهرجان جرش يختتم فعاليات دورته الأربعين #الاردن \n\n وكالة عمون الإخبارية \n منذ 4 ساعات \n\n \"أوبك \" تقر زيادة 188 ألف برميل يوميا بحصص إنتاج النفط بسبتمبر الأردن التفاصيل \n \"أوبك \" تقر زيادة 188 ألف برميل يوميا بحصص إنتاج النفط بسبتمبر الأردن التفاصيل \n\n صحيفة الرأي الأردنية \n منذ 4 ساعات \n\n تحوّل نيابي مفاجئ ينتهي بإقرار استملاك ربع الأراضي مجانًا \n تحوّل نيابي مفاجئ ينتهي بإقرار استملاك ربع الأراضي مجانًا \n\n وكالة تليسكوب الاخبارية \n منذ ساعة \n\n يزن يخرج عن صمته ويكشف ما جرى مع الوزير السابق ولماذا هدده بالقتل \n يزن يخرج عن صمته ويكشف ما جرى مع الوزير السابق ولماذا هدده بالقتل \n\n صوت عمّان \n منذ 5 ساعات \n\n قرار جديد من مصرف سورية بشأن استبدال الليرة القديمة \n قرار جديد من مصرف سورية بشأن استبدال الليرة القديمة \n\n خبرني \n منذ ساعتين \n\n مقال مالك العثامنة. الأردن الذي لم نحسن روايته \n مقال مالك العثامنة. الأردن الذي لم نحسن روايته \n\n صحيفة الغد الأردنية \n منذ 5 ساعات \n\n -->",
-      "sourceHost": "nabdapp.com",
-      "contentChars": 3938,
-      "arabicRatio": 0.9972,
-      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
-      "fetchedAt": "2026-08-03T01:39:28.671Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "politics",
-        "to": "politics",
-        "reason": "이라크 정치·정부·의회 직접 관련",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-ucQXAoFCizoV1W4AUC",
-        "representativeArticleId": "discovery-VwPGW6rP6IGoxqUArzt6bgGl",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 59,
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "nationalImportance": 34,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 10,
-          "sourceReliability": 10
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "ca8ba0e1226b8b23f7d8",
-        "ruleScore": 59,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "b68f0b307bf198d2e6ef665f672c39b298fa84dfc7768e7821adbee5733318ac",
-      "contentCheckedAt": "2026-08-03T01:39:28.671Z",
-      "contentChanged": false,
-      "processingReused": true
     }
   ],
   "titleCorrectionRun": {
@@ -43356,13 +43249,13 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V1",
-    "before": 350,
-    "retained": 350,
+    "before": 347,
+    "retained": 347,
     "excluded": 0,
     "leadChars": 2200
   },
   "eventGrouping": {
-    "groupCount": 324,
+    "groupCount": 323,
     "duplicateGroupCount": 11,
     "duplicateArticleCount": 15,
     "maxHours": 72,
