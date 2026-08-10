@@ -154,7 +154,6 @@
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":"번역 후 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
-        <p class="arabic-title" lang="ar" dir="rtl">${escapeHtml(sourceTitle(article))}</p>
         ${translationBlock}
         <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${ready?`<span class="badge translation-complete">전문 번역 완료</span>`:`<span class="badge importance-pending">전문 번역 대기</span>`}</div>
         <div class="card-actions">${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">언론사 원문 열기</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}<span class="card-source-note">요약 없이 기사 전문을 충실 번역</span></div>
