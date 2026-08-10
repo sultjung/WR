@@ -8,7 +8,8 @@ import {
 } from "./importance-business-rules.mjs";
 import {
   IMPORTANCE_SCORING_VERSION,
-  categoryFloorFor
+  categoryFloorFor,
+  starsForScore
 } from "./importance-category-rules.mjs";
 import { getImportanceAiScores } from "./importance-ai.mjs";
 
@@ -22,12 +23,12 @@ const categoryFloors = articles.map(categoryFloorFor);
 const ai = await getImportanceAiScores(articles, ruleScores, businessFloors, categoryFloors);
 const scoredAt = new Date().toISOString();
 
-function levelOf(score) {
-  if (score >= 90) return ["URGENT", "긴급", "IMMEDIATE_REVIEW", "MUST_INCLUDE"];
-  if (score >= 80) return ["IMPORTANT", "중요", "PRIORITY_REVIEW", "PRIORITY_REVIEW"];
-  if (score >= 70) return ["NOTABLE", "주목", "REVIEW", "REVIEW"];
-  if (score >= 60) return ["REFERENCE", "참고", "OPTIONAL_REVIEW", "REFERENCE"];
-  if (score >= 40) return ["GENERAL", "일반", "REFERENCE_ONLY", "REFERENCE"];
+function levelOf(stars) {
+  if (stars >= 4.5) return ["URGENT", "최우선", "IMMEDIATE_REVIEW", "MUST_INCLUDE"];
+  if (stars >= 4) return ["IMPORTANT", "중요", "PRIORITY_REVIEW", "PRIORITY_REVIEW"];
+  if (stars >= 3.5) return ["NOTABLE", "주목", "REVIEW", "REVIEW"];
+  if (stars >= 3) return ["REFERENCE", "참고", "OPTIONAL_REVIEW", "REFERENCE"];
+  if (stars >= 2) return ["GENERAL", "일반", "REFERENCE_ONLY", "REFERENCE"];
   return ["LOW", "낮음", "EXCLUDE", "REFERENCE"];
 }
 
@@ -44,7 +45,7 @@ function strongerFloor(businessFloor, categoryFloor) {
 
 function blendedScore(ruleScore, aiScore, floorScore) {
   if (aiScore === null) return Math.max(ruleScore, floorScore);
-  const blended = Math.round(ruleScore * 0.35 + aiScore * 0.65);
+  const blended = Math.round(ruleScore * 0.6 + aiScore * 0.4);
   return Math.max(floorScore, blended);
 }
 
@@ -56,7 +57,8 @@ const scored = articles.map((article, index) => {
   const aiResult = ai.scores.get(importanceArticleId(article, index)) || null;
   const aiScore = aiResult ? clamp(aiResult.score) : null;
   const score = blendedScore(ruleScores[index], aiScore, floor.score);
-  const [level, levelKo, reportStatus, defaultPriority] = levelOf(score);
+  const stars = starsForScore(score);
+  const [level, levelKo, reportStatus, defaultPriority] = levelOf(stars);
   const floorApplied = floor.score > 0 && floor.score >= score;
   const reportPriority = floorApplied
     ? (floor.score >= 90 ? "MUST_INCLUDE" : floor.score >= 80 ? "PRIORITY_REVIEW" : floor.score >= 70 ? "REVIEW" : "REFERENCE")
@@ -71,6 +73,8 @@ const scored = articles.map((article, index) => {
     importance: {
       ...previous,
       score,
+      stars,
+      ratingScale: "0.5_TO_5_STARS",
       level,
       levelKo,
       reportStatus,
@@ -78,7 +82,7 @@ const scored = articles.map((article, index) => {
       categoryRelevance,
       businessRelevance: categoryRelevance,
       reasonKo,
-      scoringMethod: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V6" : "CATEGORY_RELATIVE_RULES_V6",
+      scoringMethod: "CATEGORY_RULES_STAR_V7",
       scoringVersion: IMPORTANCE_SCORING_VERSION,
       scoredAt,
       scoreFingerprint: importanceFingerprint(article),
@@ -94,8 +98,8 @@ const scored = articles.map((article, index) => {
       floorRule: floor.rule,
       floorReasonKo: floor.reasonKo,
       aiScore,
-      aiWeight: aiResult ? 0.65 : 0,
-      ruleWeight: aiResult ? 0.35 : 1,
+      aiWeight: aiResult ? 0.4 : 0,
+      ruleWeight: aiResult ? 0.6 : 1,
       aiModel: aiResult ? ai.model : null,
       aiReportPriority: aiResult?.reportPriority || null,
       aiReasonKo: "",
@@ -115,9 +119,10 @@ await fs.writeFile(file, `${JSON.stringify({
   generatedAt: scoredAt,
   importanceScoring: {
     ...(payload.importanceScoring || {}),
-    method: ai.enabled ? "CATEGORY_RELATIVE_AI_BLEND_V6" : "CATEGORY_RELATIVE_RULES_V6",
+    method: "CATEGORY_RULES_STAR_V7",
     version: IMPORTANCE_SCORING_VERSION,
-    evaluationPrinciple: "CATEGORY_RELATIVE",
+    evaluationPrinciple: "CATEGORY_RULES_AND_DIRECT_BUSINESS_IMPACT",
+    ratingScale: "0.5_TO_5_STARS",
     aiEnabled: ai.enabled,
     aiModel: ai.model,
     aiStats: ai.stats,
