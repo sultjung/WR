@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { cleanArticleText } from "./article-text-cleaner.mjs";
 
 const ROOT = process.cwd();
 const INPUT_FILE = path.join(ROOT, "data", "resolved-articles.json");
@@ -184,24 +185,29 @@ function extractSelectorCandidates(html = "") {
   return candidates;
 }
 
-function cleanArticleText(value = "") {
-  return stripTags(value)
-    .replace(/شفق نيوز\s*\|\s*آخر الأخبار العاجلة في العراق وكوردستان والعالم/gi, " ")
-    .replace(/آخر الأخبار العاجلة في العراق وكوردستان والعالم/gi, " ")
-    .replace(/حقوق النشر[^\n]*|جميع الحقوق محفوظة[^\n]*|اشترك في النشرة[^\n]*|تابعنا على[^\n]*/gi, " ")
-    .replace(/[ \t]+/g, " ")
-    .replace(/\n\s*\n+/g, "\n\n")
-    .trim();
+function extractionPenalty(text = "") {
+  const matches = String(text).match(/(?:فيسبوك|تويتر|واتساب|الأكثر\s+(?:قراءة|مشاهدة)|أخبار\s+ذات\s+صلة|مواضيع\s+ذات\s+صلة|facebook|twitter|whatsapp|most\s+(?:read|viewed)|related\s+(?:news|articles))/gi) || [];
+  return matches.length * 900;
+}
+
+function bestCandidate(candidates = []) {
+  return candidates
+    .map((value) => cleanArticleText(value))
+    .filter((value) => value.length >= MIN_CONTENT_CHARS)
+    .sort((a, b) => (b.length - extractionPenalty(b)) - (a.length - extractionPenalty(a)))[0] || "";
 }
 
 function extractBestText(html = "") {
-  const candidates = [
-    ...extractJsonLdCandidates(html),
-    ...extractSelectorCandidates(html),
+  const jsonLd = bestCandidate(extractJsonLdCandidates(html));
+  if (jsonLd) return jsonLd;
+
+  const selectorText = bestCandidate(extractSelectorCandidates(html));
+  if (selectorText) return selectorText;
+
+  return bestCandidate([
     extractMeta(html, "og:description"),
     extractMeta(html, "description")
-  ].map(cleanArticleText).filter(Boolean);
-  return candidates.sort((a, b) => b.length - a.length)[0] || "";
+  ]);
 }
 
 function extractCanonicalUrl(html = "", fallback = "") {
