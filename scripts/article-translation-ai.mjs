@@ -1,3 +1,5 @@
+import { looksLikeKoreanTranslation } from "./article-translation-core.mjs";
+
 const apiKey = String(process.env.OPENAI_API_KEY || "").trim();
 const timeoutMs = Math.max(30000, Number(process.env.TRANSLATION_AI_TIMEOUT_MS || 120000));
 const primaryModel = String(process.env.TRANSLATION_MODEL || "gpt-4.1-mini").trim();
@@ -32,18 +34,36 @@ function parseStructuredText(text = "") {
     .replace(/^```(?:json)?\s*/i, "")
     .replace(/\s*```$/i, "")
     .trim();
-  const parsed = JSON.parse(cleaned);
+
+  let parsed;
+  try {
+    parsed = JSON.parse(cleaned);
+  } catch {
+    throw new Error("translation returned invalid JSON");
+  }
+
   if (!parsed || typeof parsed !== "object") throw new Error("translation returned invalid JSON");
   if (!String(parsed.titleKo || "").trim()) throw new Error("translation returned empty titleKo");
   if (!String(parsed.fullTextKo || "").trim()) throw new Error("translation returned empty fullTextKo");
-  return {
-    titleKo: String(parsed.titleKo).trim(),
-    fullTextKo: String(parsed.fullTextKo).trim()
-  };
+
+  const titleKo = String(parsed.titleKo).trim();
+  const fullTextKo = String(parsed.fullTextKo).trim();
+  if (!looksLikeKoreanTranslation(titleKo, { minHangul: 2, maxArabicToHangulRatio: 0.2 })) {
+    throw new Error("translation returned non-Korean titleKo");
+  }
+  if (!looksLikeKoreanTranslation(fullTextKo, { minHangul: 10, maxArabicToHangulRatio: 0.15 })) {
+    throw new Error("translation returned non-Korean fullTextKo");
+  }
+
+  return { titleKo, fullTextKo };
 }
 
 function isModelAccessError(status, body) {
   return status === 404 && /model_not_found|must be verified|do not have access|does not exist/i.test(body);
+}
+
+function isOutputValidationError(error) {
+  return /^translation returned /i.test(String(error?.message || ""));
 }
 
 function termsInstruction(preferredTerms = []) {
@@ -69,6 +89,8 @@ export async function translateArabicArticle(titleArabic, bodyArabic, preferredT
 원문의 주체·행동·대상·인명·기관명·지명·날짜·금액·수량·인용·부정 표현·조건 표현·뉘앙스를 보존한다.
 본문의 문장 순서와 문단 순서를 유지하고 반복 내용도 임의로 삭제하지 않는다.
 원문에 없는 정보나 연결 문장을 만들지 않는다.
+아랍어 원문을 그대로 복사해서는 안 되며, titleKo와 fullTextKo는 반드시 한국어 번역문이어야 한다.
+fullTextKo에는 아랍어 문장을 남기지 말고 본문 전체를 끝까지 한국어로 번역한다.
 titleKo에는 자연스러운 한국어 제목만, fullTextKo에는 본문 전체 번역만 넣는다.${termsInstruction(preferredTerms)}`;
 
   const inputText = JSON.stringify({ titleArabic: title, bodyArabic: body });
@@ -119,6 +141,13 @@ titleKo에는 자연스러운 한국어 제목만, fullTextKo에는 본문 전�
 
       const translated = parseStructuredText(responseText(await response.json()));
       return { ...translated, model };
+    } catch (error) {
+      lastError = error;
+      if (isOutputValidationError(error)) {
+        console.warn(`[article-translation-ai] rejected invalid translation output from ${model}: ${error.message}`);
+        continue;
+      }
+      throw error;
     } finally {
       clearTimeout(timer);
     }
