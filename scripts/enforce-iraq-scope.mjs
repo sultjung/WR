@@ -10,6 +10,7 @@ const SUMMARY_FILE = path.resolve(
   process.env.IRAQ_SCOPE_SUMMARY_FILE || path.join(ROOT, "data", "iraq-scope-gate-summary.json")
 );
 const LEAD_CHARS = Number(process.env.IRAQ_SCOPE_LEAD_CHARS || 2200);
+const PRIMARY_FOREIGN_LEAD_CHARS = Number(process.env.IRAQ_SCOPE_FOREIGN_LEAD_CHARS || 900);
 
 function normalizeArabic(value = "") {
   return String(value)
@@ -109,21 +110,45 @@ const FOREIGN_SECURITY_LOCATIONS = [
   "فلسطين", "الفلسطيني", "الفلسطينية", "غزة", "ايران", "الايراني", "الايرانية",
   "اليمن", "اليمني", "اليمنية", "السعودية", "السعودي", "مصر", "المصري", "الاردن",
   "الكويت", "قطر", "الامارات", "البحرين", "تركيا", "التركي", "افغانستان", "باكستان",
-  "الهند", "كينيا", "الصومال", "السودان", "المغرب", "تونس", "الجزائر", "كولومبيا"
+  "الهند", "كينيا", "الصومال", "السودان", "المغرب", "تونس", "الجزائر", "كولومبيا",
+  "تايلاند", "التايلاندية", "التايلاندي", "بانكوك", "نونثابوري"
 ];
+
+// Iraqi and Kurdish outlets often prefix syndicated foreign stories with a desk location
+// such as "زاكروس - أربيل". That is publisher metadata, not evidence that the incident
+// occurred in Iraq. Remove only short, obvious outlet/dateline prefixes before scope checks.
+function stripPublisherDateline(value = "") {
+  let text = String(value || "");
+  text = text
+    .replace(/^\s*(?:zagros\s*tv\s*)?(?:\d{1,2}:\d{2}\s*(?:ص|م|صباحا|مساء)?)?\s*زاكروس\s*[-–—|:]\s*(?:أ?ربيل)\s*/iu, "")
+    .replace(/^\s*زاكروس\s*[-–—|:]\s*(?:أ?ربيل)\s*/iu, "")
+    .replace(/^\s*(?:شفق\s+نيوز|السومرية\s+نيوز|رووداو)\s*[-–—|:]\s*(?:أ?ربيل|بغداد)\s*/iu, "");
+  return text.trimStart();
+}
 
 function evaluateSecurityScope(article = {}) {
   const title = getTitle(article);
-  const lead = getBody(article).slice(0, LEAD_CHARS);
+  const rawLead = getBody(article).slice(0, LEAD_CHARS);
+  const lead = stripPublisherDateline(rawLead);
+  const primaryLead = lead.slice(0, PRIMARY_FOREIGN_LEAD_CHARS);
   const iraqInTitle = containsAnyPhrase(title, IRAQ_ANCHORS);
   const iraqInLead = containsAnyPhrase(lead, IRAQ_ANCHORS);
   const foreignPrimaryTitle = containsAnyPhrase(title, FOREIGN_SECURITY_LOCATIONS);
+  const foreignPrimaryLead = containsAnyPhrase(primaryLead, FOREIGN_SECURITY_LOCATIONS);
 
   if (foreignPrimaryTitle && !iraqInTitle) {
     return {
       keep: false,
       reason: "FOREIGN_SECURITY_PRIMARY_TITLE",
       note: "해외 국가·도시가 제목의 주체이며 제목에 이라크 직접 연관이 없음"
+    };
+  }
+
+  if (foreignPrimaryLead && !iraqInTitle && !iraqInLead) {
+    return {
+      keep: false,
+      reason: "FOREIGN_SECURITY_PRIMARY_LEAD",
+      note: "본문 도입부가 해외 사건을 직접 다루며 언론사 발행지 표기를 제외하면 이라크 직접 연관이 없음"
     };
   }
 
@@ -177,11 +202,12 @@ const output = Array.isArray(payload)
       generatedAt: new Date().toISOString(),
       articles: retained,
       iraqScopeGate: {
-        method: "EXACT_ARABIC_TOKEN_SCOPE_V1",
+        method: "EXACT_ARABIC_TOKEN_SCOPE_V2",
         before: articles.length,
         retained: retained.length,
         excluded: excluded.length,
-        leadChars: LEAD_CHARS
+        leadChars: LEAD_CHARS,
+        primaryForeignLeadChars: PRIMARY_FOREIGN_LEAD_CHARS
       }
     };
 
@@ -191,9 +217,9 @@ const reasonCounts = excluded.reduce((counts, item) => {
 }, {});
 
 const summary = {
-  schemaVersion: "1.0",
+  schemaVersion: "1.1",
   generatedAt: new Date().toISOString(),
-  method: "EXACT_ARABIC_TOKEN_SCOPE_V1",
+  method: "EXACT_ARABIC_TOKEN_SCOPE_V2",
   before: articles.length,
   retained: retained.length,
   excludedCount: excluded.length,
