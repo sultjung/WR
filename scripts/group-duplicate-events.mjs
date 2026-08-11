@@ -118,6 +118,47 @@ const BILATERAL_EVENT_ALIASES = new Map([
   ]]
 ]);
 
+const SECURITY_EVENT_ALIASES = new Map([
+  ["EVENT_AIRSTRIKE", [
+    "قصف جوي",
+    "ضربة جوية",
+    "ضربات جوية",
+    "غارة جوية",
+    "غارات جوية",
+    "عملية جوية",
+    "عمليات جوية"
+  ]],
+  ["EVENT_DESTROY", [
+    "تدمير",
+    "دمر",
+    "دمرت",
+    "يدمر",
+    "تدميرها",
+    "تدميرهم"
+  ]],
+  ["TARGET_HIDEOUT", [
+    "وكر",
+    "اوكار",
+    "أوكار",
+    "كهف",
+    "كهوف",
+    "مخبأ",
+    "مخابئ",
+    "مضافة",
+    "مضافات"
+  ]]
+]);
+
+const SECURITY_LOCATION_SIGNALS = new Set([
+  "TERM:بغداد",
+  "TERM:البصرة",
+  "TERM:نينوى",
+  "TERM:الانبار",
+  "TERM:كركوك",
+  "TERM:ديالى",
+  "TERM:صلاح الدين"
+]);
+
 function normalizeArabic(value = "") {
   return String(value)
     .replace(/[\u064B-\u065F\u0670]/g, "")
@@ -224,6 +265,10 @@ function bilateralEventSignals(text = "") {
   return aliasSignals(text, BILATERAL_EVENT_ALIASES);
 }
 
+function securityEventSignals(text = "") {
+  return aliasSignals(text, SECURITY_EVENT_ALIASES);
+}
+
 function dateHours(a, b) {
   const A = new Date(a || 0).getTime();
   const B = new Date(b || 0).getTime();
@@ -297,6 +342,37 @@ function highConfidenceBilateralInvestmentMatch(a, b, aSignals, bSignals) {
   return null;
 }
 
+function highConfidenceSecurityStrikeMatch(a, b, aEntities, bEntities, aNumbers, bNumbers, aSignals, bSignals) {
+  if (String(a.category || "").toLowerCase() !== "security"
+    || String(b.category || "").toLowerCase() !== "security") return null;
+
+  const sharedEntities = intersection(aEntities, bEntities);
+  if (!sharedEntities.includes("TERM:داعش")) return null;
+
+  const sharedLocations = sharedEntities.filter((signal) => SECURITY_LOCATION_SIGNALS.has(signal));
+  if (!sharedLocations.length) return null;
+
+  const sharedIncidentNumbers = intersection(aNumbers, bNumbers).filter((value) => {
+    const numeric = Number(String(value).replace(",", "."));
+    return Number.isFinite(numeric) && numeric > 0 && numeric < 1900;
+  });
+  if (!sharedIncidentNumbers.length) return null;
+
+  const sharedEventSignals = intersection(aSignals, bSignals);
+  if (!sharedEventSignals.length) return null;
+
+  return {
+    score: 0.95,
+    reason: "SAME_SECURITY_STRIKE_INCIDENT",
+    sharedSignals: [
+      "TERM:داعش",
+      ...sharedLocations,
+      ...sharedIncidentNumbers.map((value) => `NUMBER:${value}`),
+      ...sharedEventSignals
+    ].slice(0, 12)
+  };
+}
+
 function eventScore(a, b) {
   if ((a.category || "") !== (b.category || "")) {
     return { score: 0, reason: "CATEGORY_MISMATCH", sharedSignals: [] };
@@ -345,6 +421,20 @@ function eventScore(a, b) {
   const bNumbers = numbers(`${b.originalTitleArabic || ""}\n${String(b.originalTextArabic || "").slice(0, 1400)}`);
   const sharedNumbers = intersection(aNumbers, bNumbers);
   const numberScore = jaccard(aNumbers, bNumbers);
+
+  const aSecuritySignals = securityEventSignals(aLeadText);
+  const bSecuritySignals = securityEventSignals(bLeadText);
+  const securityMatch = highConfidenceSecurityStrikeMatch(
+    a,
+    b,
+    aEntities,
+    bEntities,
+    aNumbers,
+    bNumbers,
+    aSecuritySignals,
+    bSecuritySignals
+  );
+  if (securityMatch) return securityMatch;
 
   const exactish = sameOrContainedTitle(a.originalTitleArabic, b.originalTitleArabic);
   const strongTitle = commonTitleTokens.length >= 3 && titleOverlap >= 0.67;
@@ -495,13 +585,13 @@ await fs.writeFile(ARTICLES_FILE, `${JSON.stringify({
     duplicateArticleCount,
     maxHours: MAX_HOURS,
     minScore: MIN_SCORE,
-    method: "ARABIC_CANONICAL_BILATERAL_EVENT_V4"
+    method: "ARABIC_CANONICAL_SECURITY_EVENT_V5"
   },
   articles: annotated
 }, null, 2)}\n`, "utf8");
 
 await fs.writeFile(GROUPS_FILE, `${JSON.stringify({
-  schemaVersion: "1.2",
+  schemaVersion: "1.3",
   generatedAt: new Date().toISOString(),
   groupCount: groups.length,
   duplicateGroupCount: duplicateGroups.length,
