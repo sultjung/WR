@@ -18,6 +18,12 @@ const fixtures = [
     originalTextArabic: "بواسطة محمد يسري. هاجم مسلحون قرية في ولاية سوكوتو وخطفوا عددا من السكان."
   },
   {
+    articleId: "zagros-thailand-dateline-false-positive",
+    category: "security",
+    originalTitleArabic: "مقتل ثمانية أشخاص في إطلاق نار داخل مدرسة قرب بانكوك",
+    originalTextArabic: "Zagros TV 11:23 ص زاكروس - أربيل قتل فتى قاصر جدّيه بالرصاص، قبل أن يردي 6 أشخاص آخرين على الأقل، بإطلاق نار في مدرسة بالقرب من العاصمة التايلاندية بانكوك اليوم الجمعة. وذكرت الشرطة أن الحادث وقع في مقاطعة نونثابوري."
+  },
+  {
     articleId: "wasit-real-incident",
     category: "security",
     originalTitleArabic: "القوات الأمنية تعتقل منفذي هجوم مسلح في واسط",
@@ -71,9 +77,11 @@ assert.deepEqual(ids, [
   "iraq-syria-border",
   "non-security-untouched"
 ]);
-assert.equal(summary.excludedCount, 2);
+assert.equal(summary.excludedCount, 3);
 assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_TITLE, 2);
+assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_LEAD, 1);
 assert.ok(!ids.includes("nigeria-byline-false-positive"), "بواسطة must not match واسط");
+assert.ok(!ids.includes("zagros-thailand-dateline-false-positive"), "Zagros - Erbil publisher dateline must not make a Thailand incident Iraqi");
 assert.ok(ids.includes("wasit-real-incident"), "standalone واسط must remain valid");
 assert.ok(ids.includes("prefixed-iraq-token"), "بالعراق must match العراق after proclitic stripping");
 
