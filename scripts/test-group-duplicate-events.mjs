@@ -76,6 +76,30 @@ const articles = [
     originalTitleArabic: "مصر والعراق تبحثان استثمارات مشتركة في قطاع النفط",
     originalTextArabic: "ناقش وزيرا النفط في مصر والعراق فرص الاستثمار المشترك في قطاع الطاقة.",
     sourceArabic: "fixture"
+  },
+  {
+    articleId: "newturk-kirkuk-strike",
+    category: "security",
+    publishedAt: "2026-08-10T20:35:00.000Z",
+    originalTitleArabic: "العراق.. قصف جوي يدمر 8 أوكار لتنظيم داعش في كركوك",
+    originalTextArabic: "نفذت القوات العراقية قصفا جويا في كركوك أدى إلى تدمير 8 أوكار لتنظيم داعش بالكامل.",
+    sourceArabic: "newturkpost.com"
+  },
+  {
+    articleId: "anadolu-kirkuk-strike",
+    category: "security",
+    publishedAt: "2026-08-10T12:16:00.000Z",
+    originalTitleArabic: "العراق.. تدمير 8 كهوف لداعش بضربات جوية في كركوك",
+    originalTextArabic: "أعلنت السلطات العراقية تدمير 8 كهوف ومخابئ لداعش خلال ضربات جوية في محافظة كركوك.",
+    sourceArabic: "Anadolu Ajansı"
+  },
+  {
+    articleId: "kirkuk-arrest-counterexample",
+    category: "security",
+    publishedAt: "2026-08-10T13:00:00.000Z",
+    originalTitleArabic: "اعتقال 8 مطلوبين في كركوك خلال عملية أمنية",
+    originalTextArabic: "أعلنت القوات العراقية اعتقال 8 مطلوبين في كركوك خلال عملية أمنية منفصلة.",
+    sourceArabic: "fixture"
   }
 ];
 
@@ -121,7 +145,29 @@ try {
     );
   }
 
-  console.log("[test:events] bilateral investment rewrites grouped; unrelated stories kept separate");
+  const strikeGroup = result.groups.find((group) =>
+    group.memberArticleIds.includes("newturk-kirkuk-strike")
+  );
+  assert.ok(strikeGroup, "expected Kirkuk ISIS airstrike group");
+  assert.deepEqual(
+    new Set(strikeGroup.memberArticleIds),
+    new Set(["newturk-kirkuk-strike", "anadolu-kirkuk-strike"]),
+    "semantic rewrites of the same ISIS strike must be grouped together"
+  );
+  assert.ok(
+    result.matches.some((match) =>
+      match.reason === "SAME_SECURITY_STRIKE_INCIDENT"
+      && new Set([match.left, match.right]).has("newturk-kirkuk-strike")
+      && new Set([match.left, match.right]).has("anadolu-kirkuk-strike")
+    ),
+    "expected a semantic security-incident match reason"
+  );
+  assert.ok(
+    !strikeGroup.memberArticleIds.includes("kirkuk-arrest-counterexample"),
+    "same-place same-number but different security event must remain separate"
+  );
+
+  console.log("[test:events] bilateral and security semantic rewrites grouped; unrelated stories kept separate");
 } finally {
   await fs.rm(tempDir, { recursive: true, force: true });
 }
