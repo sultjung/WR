@@ -20,7 +20,7 @@ const fixtures = [
   {
     articleId: "zagros-thailand-dateline-false-positive",
     category: "security",
-    originalTitleArabic: "مقتل ثمانية أشخاص في إطلاق نار داخل مدرسة قرب بانكوك",
+    originalTitleArabic: "مطلق النار فتى يدرس في المدرسة نفسها، لافتة إلى أنه لقي حتفه أيضاً",
     originalTextArabic: "Zagros TV 11:23 ص زاكروس - أربيل قتل فتى قاصر جدّيه بالرصاص، قبل أن يردي 6 أشخاص آخرين على الأقل، بإطلاق نار في مدرسة بالقرب من العاصمة التايلاندية بانكوك اليوم الجمعة. وذكرت الشرطة أن الحادث وقع في مقاطعة نونثابوري."
   },
   {
