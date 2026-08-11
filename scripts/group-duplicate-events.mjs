@@ -197,6 +197,15 @@ function canonicalPhrase(value = "") {
   return normalizedTokens(value).join(" ");
 }
 
+function includesCanonicalPhrase(normalizedText = "", canonicalValue = "") {
+  if (!canonicalValue) return false;
+  if (normalizedText.includes(` ${canonicalValue} `)) return true;
+
+  return ["و", "ف", "ب", "ك", "ل"].some((prefix) =>
+    normalizedText.includes(` ${prefix}${canonicalValue} `)
+  );
+}
+
 function tokens(value = "", maxChars = 0) {
   return [...new Set(
     normalizedTokens(value, maxChars)
@@ -251,7 +260,7 @@ function entitySignals(text = "") {
   const literal = terms
     .filter((term) => {
       const canonicalTerm = canonicalPhrase(term);
-      return canonicalTerm && normalized.includes(` ${canonicalTerm} `);
+      return includesCanonicalPhrase(normalized, canonicalTerm);
     })
     .map((term) => `TERM:${canonicalPhrase(term)}`);
   return [...new Set([...canonical, ...literal])];
