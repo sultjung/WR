@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-12T06:52:58.510Z",
+  "generatedAt": "2026-08-12T07:15:19.829Z",
   "lookbackDays": 14,
-  "count": 328,
+  "count": 325,
   "categoryCounts": {
     "economy": 47,
-    "security": 62,
+    "security": 60,
     "bismayah": 12,
-    "politics": 188,
+    "politics": 187,
     "international": 19
   },
   "collectionRun": {
@@ -32374,9 +32374,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -33083,9 +33083,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -33197,9 +33197,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -33770,9 +33770,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -33993,9 +33993,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -34396,119 +34396,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
-      "keywordId": "international-us-001",
-      "category": "security",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "1990 الغزو العراقي للكويت",
-      "sourceArabic": "الهيئة الوطنية للإعلام",
-      "sourceHomepage": "https://www.maspero.eg",
-      "publishedAt": "2026-08-01T23:00:00.000Z",
-      "descriptionArabic": "1990 الغزو العراقي للكويت الهيئة الوطنية للإعلام",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQdVVYalNkaHVPVlE3UWZsZ0YtcmdEZFp1a3FCekVYdlZqVVVTYWxCWjg2SFZNelF1VkhzenByTFl0ZWV5X3o1NzNkeFpGSDV3bXdCTnNVa3E4UE9Sdm1waDhqSVN4MXVoMlVPamJqS19mZ3U1NGEyNXAzdnVwWmU3azhBUmd5WWFIa2RlcVNNQk5RNVlEZDhGVzF3Zml1aHpDbWEzaTJpejRVNFJYT2NMU0ZjS1d6QUlPWGVhM1JPNDZBNVVuOFlHTlppeXZKenRYT0NMM3QzeHlGM042VXViRms3cnlvZ3ZJSlNZNDBoLWtaYmdZV3otTA?oc=5",
-      "articleUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:38.673Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:36:06.708Z",
-      "canonicalUrl": "https://www.maspero.eg/same-day/2026/08/02/976294/1990-%D8%A7%D9%84%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA",
-      "originalTextArabic": "محافظات \n تحقيقات وحوارات \n حوارات مباشرة \n مقالات \n حدث فى مثل هذا اليوم \n\n الرئيسية \n\n المزيد\n\n حدث فى مثل هذا اليوم \n\n 1990 الغزو العراقي للكويت\n\n أسامة علي\n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا وتدريبا ضمن القوات المسلحة العراقية بمهاجمة الأراضي الكويتية عبر 4 محاور رئيسية. \n\n واستغرقت العملية العسكرية يومين وانتهت باستيلاء القوات العراقية على كامل الأراضي الكويتية في 4 أغسطس ثم شكلت حكومة صورية برئاسة العقيد علاء حسين خلال 4 - 8 أغسطس تحت اسم جمهورية الكويت ثم أعلنت الحكومة العراقية يوم 9 أغسطس 1990، ضم الكويت للعراق وإلغاء جميع السفارات الدولية في الكويت.\n\n أما في الطائف بالمملكة العربية السعودية فقد تشكلت الحكومة الكويتية في المنفى حيث تواجد أمير الكويت الشيخ جابر الأحمد الصباح وولي العهد الشيخ سعد العبد الله الصباح والعديد من الوزراء وأفراد القوات المسلحة الكويتية.\n\n بعد ساعات من الاجتياح العراقي للكويت طالبت الكويت والولايات المتحدة بعقد اجتماع طارئ لمجلس الأمن وتم تمرير قرار مجلس الأمن الدولي رقم 660 والتي شجبت فيه الاجتياح وطالبت بانسحاب العراق من الكويت.\n\n وبدأت القوات الأمريكية بالتدفق إلى السعودية في 7 أغسطس من عام 1990، وفي نفس اليوم الذي أعلن العراق فيه ضمه للكويت واعتبارها \"المحافظة التاسعة عشر\"، وصل حجم التحشدات العسكرية في السعودية إلى 500,000 جندي.\n\n في خضم هذه الحشودات العسكرية صدرت سلسلة من قرارات مجلس الأمن والجامعة العربية وكانت أهمها قرار مجلس الأمن الدولي رقم 678، والذي أصدر في 29 نوفمبر عام 1990 والذي حدد فيه تاريخ 15 يناير من عام 1991 موعدا نهائيا للعراق لسحب قواتها من الكويت وإلا فإن قوات الائتلاف سوف \"تستعمل كل الوسائل الضرورية لتطبيق قرار مجلس الأمن الدولي رقم 660\".\n\n تشكل ائتلاف عسكري مكون من 34 دولة ضد العراق لتنفيذ قرارات مجلس الأمن الخاصة بانسحاب القوات العراقية من الكويت دون قيد أو شرط، وبلغت نسبة الجنود الأمريكيين من الائتلاف العسكري حوالي 74% من العدد الإجمالي للجنود التي تم حشدهم، وقد وصل العدد الإجمالي لجنود قوات الائتلاف إلى 959,600.\n\n واستمر الاحتلال العراقي للكويت فترة 7 شهور، وانتهى الاحتلال بتحرير الكويت في 26 فبراير 1991 بعد حرب الخليج الثانية.\n\n حدث في مثل هذا اليوم \n الغزو العراقي للكويت \n\n أسامة علي \n محرر بالموقع الموحد للهيئة الوطنية للإعلام \n\n أخبار ذات صلة\n\n حدث فى مثل هذا اليوم \n 2015 الرئيس عبد الفتاح السيسي يفتتح قناة السويس الجديدة \n\n أسامة علي\n\n الخميس، 06 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1876 صدور العدد الأول من جريدة الأهرام \n\n أسامة علي\n\n الأربعاء، 05 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2010 إطلاق القمر الصناعي المصري \"نايل سات 201\" \n\n أسامة علي\n\n الثلاثاء، 04 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1926 مولد الفنان رشدي أباظة \n\n أسامة علي\n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1991 وفاة الكاتب الكبير يوسف إدريس \n\n أسامة علي\n\n السبت، 01 اغسطس 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n\n أسامة علي\n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n حدث فى مثل هذا اليوم \n 2011 اليوم الدولي للصداقة \n\n أسامة علي\n\n الخميس، 30 يوليو 2026 01:00 ص\n\n حدث فى مثل هذا اليوم \n 1981 حفل زفاف الأمير تشارلز والليدي ديانا سبنسر \n\n أسامة علي\n\n الأربعاء، 29 يوليو 2026 01:00 ص\n\n المزيد من حدث فى مثل هذا اليوم \n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الإثنين، 03 اغسطس 2026 01:00 ص\n\n 1926 مولد الفنان رشدي أباظة \n في مثل هذا اليوم الثالث من أغسطس 1926 ولد الفنان رشدي أباظة بالزقازيق بمحافظة الشرقية لأم إيطالية وأب مصري.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الأحد، 02 اغسطس 2026 01:00 ص\n\n 1990 الغزو العراقي للكويت \n في مثل هذا اليوم الثاني من أغسطس 1990 قامت 7 فرق عسكرية من قوات الحرس الجمهوري العراقي وهي الأفضل تسليحا...\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n السبت، 01 اغسطس 2026 01:00 ص\n\n 1991 وفاة الكاتب الكبير يوسف إدريس \n في مثل هذا اليوم الأول من أغسطس 1991 توفي الكاتب الكبير يوسف إدريس علي عن عمر ناهز 64 عاما.\n\n أسامة علي\n\n حدث فى مثل هذا اليوم \n\n الجمعة، 31 يوليو 2026 04:14 ص\n\n 2017 السلطات الإسرائيلية تصادر وثائق مهمة من داخل المسجد الأقصى \n في مثل هذا اليوم الحادي والثلاثين من يوليو 2017 أعلن رئيس مركز القدس الدولي حسن خاطر، أن السلطات الإسرائيلية صادرت...\n\n أخر الأخبار \n\n الأكثر قراءة \n\n رئيس معهد الفلك: إشعارات \"جوجل\" ليست إنذارا مسبقا بموعد أو مكان الزلازل \r\n\n الإثنين، 03 اغسطس 2026 04:35 ص\n\n رئيس معهد الفلك: الهزات الارتدادية المتوقعة أقل قوة ولا داعي للقلق \r\n\n الإثنين، 03 اغسطس 2026 04:28 ص\n\n وزير الصحة يوجه برفع درجة الاستعداد القصوى بجميع المستشفيات بعد الهزة الأرضية \r\n\n الإثنين، 03 اغسطس 2026 04:23 ص\n\n بيان توضيحي من اتحاد الكرة بشأن التصريحات المنسوبة إليه \r\n\n الإثنين، 03 اغسطس 2026 04:17 ص\n\n \"القومية للزلازل\": هزة أرضية بقوة 5.6 ريختر على بعد 61 كم شمال شرق شرم الشيخ \r\n\n الإثنين، 03 اغسطس 2026 03:54 ص\n\n -->\r\n\n-->\r\n\n المعهد القومي للبحوث الفلكية: جار إعداد بيان بخصوص الهزة الإرضية \r\n\n الإثنين، 03 اغسطس 2026 03:19 ص\n\n -->\r\n\n-->\r\n\n باحث أثري يطالب بعودة مياه النيل لسور مجرى العيون ليصبح مزارا سياحيا \r\n\n الأحد، 02 اغسطس 2026 07:49 ص\n\n -->\r\n\n-->\r\n\n أسعار الذهب اليوم بالأسواق المحلية.. عيار 21 يسجل 5910 جنيها \r\n\n الأحد، 02 اغسطس 2026 09:37 ص\n\n -->\r\n\n-->\r\n\n الأرصاد: انكسار الموجة الحارة اعتبارا من الثلاثاء.. والعظمى غدا على القاهرة 37 \r\n\n الأحد، 02 اغسطس 2026 06:51 م\n\n تحقيقات وحوارات\n\n تحقيقات وحوارات \r\n\n دليلك للتنسيق الجامعي .. تساؤلات وإجابات \r\n\n السبت، 01 اغسطس 2026 10:25 ص \n\n تحقيقات وحوارات \r\n\n فيديو.. الإعلام الرقمي.. تقنيات واعدة وتحديات هائلة \r\n\n الخميس، 30 يوليو 2026 01:09 م \n\n تحقيقات وحوارات \r\n\n موجات الطقس الساخنة.. لماذا تحدث وكيف نواجهها؟ \r\n\n الخميس، 23 يوليو 2026 05:18 م \n\n تحقيقات وحوارات \r\n\n اختبارات القدرات بالكليات.. كيف يتم تنظيمها ؟ \r\n\n السبت، 18 يوليو 2026 09:22 ص \n\n تحقيقات وحوارات \r\n\n ترشيدا للمياه والطاقة .. هندسة قناة السويس تبتكر نظام ري ذكي بالطاقة الشمسية \r\n\n الثلاثاء، 14 يوليو 2026 06:11 م \n\n تحقيقات وحوارات \r\n\n بعد توجيهات الرئيس السيسي.. خريطة تطوير الإعلام المصري بعدسة الخبراء \r\n\n الخميس، 09 يوليو 2026 12:44 م \n\n مقالات\n\n محاذير ومعايير السبق في الأخبار! \r\n\n الأحد، 02 اغسطس 2026 11:09 ص \n\n مصر والقانون الدولي: قراءة هادئة في حادث دمياط واحتواء التصعيد \r\n\n السبت، 01 اغسطس 2026 10:00 ص \n\n شمش… الإله الذي كان يرى كل شيء \r\n\n الجمعة، 31 يوليو 2026 12:00 م \n\n القاهرة... بوابة المستقبل للمرأة العربية \r\n\n الجمعة، 31 يوليو 2026 10:00 ص \n\n هل يكفي انطباع واحد.. حين تخدعنا صفة واحدة عن رؤية الإنسان كله \r\n\n الخميس، 30 يوليو 2026 10:00 ص \n\n عظمة ملكات مصر القديمة \r\n\n الأربعاء، 29 يوليو 2026 10:00 ص \n\n -->\r\n\n-->\r\n\n النشرة البريدية\n\n انضم لاكثر من 72458 مشترك \r\n\n اشترك \r\n\n بالتسجيل فى النشرة البريدية فانك توافق على الشروط الخاصة بنا",
-      "sourceHost": "maspero.eg",
-      "contentChars": 6297,
-      "arabicRatio": 0.9038,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-03T01:38:24.319Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "international",
-        "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-jS2d1bjlCEhkIFgMmU",
-        "representativeArticleId": "discovery-x9Cz607INTA6JDKcHIpqAudm",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 48,
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "iraqLink": 19,
-          "countryImportance": 15,
-          "iraqImpact": 8,
-          "businessImpact": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "e1be9f487766e2c4bc3c",
-        "ruleScore": 48,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "e65ff067934713b935ff715bee2e12cb5b1a36d819e05734440b18cce86f503b",
-      "contentCheckedAt": "2026-08-03T01:38:24.319Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-iZkeQQG3p2jT7qH9HR9CT40_",
       "keywordId": "international-hormuz-001",
       "category": "economy",
@@ -34568,9 +34455,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -34790,9 +34677,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -35058,119 +34945,6 @@
       },
       "contentHash": "22a12bccb53bd5512e024498772fd6cb28760fc2ed81da8dfd869941cb6d5133",
       "contentCheckedAt": "2026-08-03T01:38:25.806Z",
-      "contentChanged": false,
-      "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق",
-      "sourceArabic": "تسنیم",
-      "sourceHomepage": "https://www.tasnimnews.ir",
-      "publishedAt": "2026-08-01T15:56:31.000Z",
-      "descriptionArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق تسنیم",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi-wNBVV95cUxPbTl6aGlPYWRHZUlRRGltaDJGTjA4cFh6ZHgxb2R2ZlBSa1VKbHEzSWhaZk9wc2cxWkhYR3RTaHZKT3U0VDNmME9RbndhTEc1SmRvTThJM0NwSnpXeEh5TFl1eXVoaVA0OUVqSFZvX0EwMUF2QmloYW5vVzd2bE5LYjllYm5wX1lxU1Z2S1l4RTA4eEl1NWZmc3NPTHBlYnJSSXJ4Y2YwdG1seTZvX1A2QWhrT1FsdVNRX2o0UHJKSzJqalVxQ1Vxd09nbUQ1YV9Va2I5ckc4RjEyLVpvQWRZQWNjQTNRU3pSbHpUd2dCa19OWVZXVHMtUjNrSGctcVIwTDhrbzZmR2FWSUhRY1ZUNjVjLTVMOTNsN1pFR1ZQa2lRVGwtbFN1RXdveWVXWkFuZ3kzYkdqMF9YT3NQNUwwSzl0UkxIc2NiV2xydzhad1hraFBLY1czSFZpMjhGNWFqdHROeU0xUV9PV1MwcmNvbjhBdFVGWWlNZk1KblQtVGxUejRsN0thVFN4VFFyNVBFZnhRVDQtYXl1dnR2T2lhTGlzYWVmem9QazdYeklJUDdXaThwRVBUTFFUbmN4ZXdtWHRSZzV6RkhTeXg2ajgyaUpsT0cxTldwWUNTMktjMkVSVGZMSXU5TlVORkVIR0JnR3g2MmNnN2U0X2_SAfsDQVVfeXFMT205emhpT2FkR2VJUURpbWgyRk4wOHBYemR4MW9kdmZQUmtVSmxxM0loWmZPcHNnMVpIWEd0U2h2Sk91NFQzZjBPUW53YUxHNUpkb004STNDcEp6V3hIeUxZdXl1aGlQNDlFakhWb19BMDFBdkJpaGFub1c3dmxOS2I5ZWJucF9ZcVNWdktZeEUwOHhJdTVmZnNzT0xwZWJyUklyeGNmMHRtbHk2b19QNkFoa09RbHVTUV9qNFBySksyampVcUNVcXdPZ21ENWFfVWtiOXJHOEYxMi1ab0FkWUFjY0EzUVN6Umx6VHdnQmtfTllWV1RzLVIza0hnLXFSMEw4a282ZkdhVklIUWNWVDY1Yy01TDkzbDdaRUdWUGtpUVRsLWxTdUV3b3llV1pBbmd5M2JHajBfWE9zUDVMMEs5dFJMSHNjYldscnc4WndYa2hQS2NXM0hWaTI4RjVhanR0TnlNMVFfT1dTMHJjb244QXRVRllpTWZNSm5ULVRsVHo0bDdLYVRTeFRRcjVQRWZ4UVQ0LWF5dXZ0dk9pYUxpc2FlZnpvUGs3WHpJSVA3V2k4cEVQVExRVG5jeGV3bVh0Umc1ekZIU3l4Nmo4MmlKbE9HMU5XcFlDUzJLYzJFUlRmTEl1OU5VTkZFSEdCZ0d4NjJjZzdlNF9v?oc=5",
-      "articleUrl": "https://www.tasnimnews.ir/ar/news/2026/08/01/3661373/%D8%A8%D8%AF%D8%A1-%D8%AA%D8%B1%D8%A7%D8%AC%D8%B9-%D8%A7%D9%84%D9%88%D8%AC%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B3%DA%A9%D8%B1%DB%8C-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%DB%8C%DA%A9%DB%8C-%D9%81%DB%8C-%D8%A7%D9%82%D9%84%DB%8C%D9%85-%DA%A9%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82/amp",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:38.673Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:36:11.485Z",
-      "canonicalUrl": "",
-      "originalTextArabic": "بدء تراجع الوجود العسكري الأمريكي في اقليم كردستان العراق\n\n الأخبار الشرق الأوسط \n\n 2026/08/01 - 14:16 \n\n وافادت وكالة تسنيم الدولية للانباء ان المصادر الإعلامية تحدثت عن بدء عملية سحب تدريجي للقوات الأمريكية من كردستان العراق، وذلك في إطار برنامج إعادة انتشار القوات الأمريكية وإنهاء الوجود العسكري الواسع لهذا البلد في العراق.\n\n ووفقاً لما نقلته \"العربية\"، فقد تحركت خلال الأيام الماضية قوافل عسكرية أمريكية من مدينة أربيل صوب الدول المجاورة، وبدأت عملية نقل القوات والمعدات من القواعد الأمريكية في إقليم كردستان.\n\n وبناءً على هذا التقرير، سيتم سحب القوات الأمريكية على مراحل ووفق جدول زمني محدد. بيد أن وزارة الحرب الأمريكية (البنتاغون) لم تصدر حتى الآن أي تعليق رسمي حول تفاصيل التحركات الأخيرة، ولا عدد القوات المُنسحبة، ولا كمية المعدات المنقولة.\n\n وفي الوقت نفسه، أفاد موقع \"المانيتور\" نقلاً عن قاعدة \"كلاش ريبورت\" بأن الولايات المتحدة بدأت بسحب قواتها المتبقية من العراق قبل الموعد النهائي المحدد في 30 سبتمبر/أيلول. ووفقاً لهذا التقرير، فقد قام الجيش الأمريكي أيضاً بسحب أنظمة الدفاع الجوي \"باتريوت\" من مدينة أربيل.\n\n مخاوف \"العربية\" من تراجع الوجود الأمريكي\n\n تابع موقع شبكة \"العربية\" في تقريره قائلاً إن عملية سحب القوات الأمريكية تبدأ في وقت شهدت فيه المنطقة خلال الأسابيع الأخيرة تصاعداً في التوترات العسكرية.\n\n وكتبت \"العربية\": \"إن استمرار هجمات الجماعات المسلحة المدعومة من إيران ضد مواقع في إقليم كردستان، يثير مخاوف بشأن تداعيات تراجع الوجود العسكري الأمريكي في هذه المنطقة\".\n\n اتفاق بين بغداد وواشنطن لإنهاء مهمة التحالف\n\n وزعمت \"العربية\" أن انسحاب القوات الأمريكية يتم في إطار الاتفاقات السابقة بين بغداد وواشنطن لإنهاء مهمة التحالف الدولي بقيادة الولايات المتحدة في العراق.\n\n وكان العراق والولايات المتحدة قد توصلا سابقاً إلى اتفاق بشأن جدول زمني لإعادة انتشار قوات التحالف وإنهاء المهام العسكرية لهذه القوات في عدد من القواعد العراقية. وبموجب هذا البرنامج، من المقرر أن يكتمل الانسحاب من القواعد المتبقية خلال عام 2026.\n\n غير أن بدء انسحاب العسكريين الأمريكيين من إقليم كردستان العراق، وتحديداً في خضم الحرب مع إيران، يبدو أنه يحدث خارج البرنامج المُعدّ سلفاً.\n\n واختتمت \"العربية\" تقريرها بالإشارة إلى أنه ورغم بدء عملية الانسحاب، لا يزال غير واضح عدد القوات الأمريكية التي غادرت إقليم كردستان، وحجم المعدات العسكرية التي جرى إخراجها من المنطقة. ومن المتوقع أن تستمر عملية إعادة انتشار القوات الأمريكية خلال الأسابيع المقبلة، تنفيذاً للجدول الزمني المتفق عليه بين بغداد وواشنطن.\n\n مراجعة أمريكية للوجود العسكري في الكويت\n\n وكانت صحيفة \"وول ستريت جورنال\" قد أفادت يوم الأربعاء من الأسبوع الماضي بأن الولايات المتحدة تدرس، في ضوء تطورات الحرب ضد إيران، مدى وجودها في دولة الكويت.\n\n ويأتي الإجراء الأمريكي في وقت أعلن فيه مسؤولون كويتيون أنهم لا يزالون بحاجة إلى التزام أمريكي حازم بدعم بلدهم.\n\n وذكرت \"وول ستريت جورنال\" أن المنشآت والقواعد الأمريكية قد تعرضت خلال الحرب لعدة هجمات إيرانية.\n\n وجاء في تقرير الصحيفة: \"يقول محللون إن ما يحتمل أن يؤدي إلى تغيير في هذه العلاقات، هو إدراك الولايات المتحدة لحقيقة أن الوجود العسكري الدائم والكبير في الكويت لم يعد ضرورياً أو مقبولاً من الناحية العسكرية\".\n\n /انتهى/",
-      "sourceHost": "tasnimnews.ir",
-      "contentChars": 2927,
-      "arabicRatio": 1.0067,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-03T01:38:26.896Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-0_tPXOctHVZWjvQ-ts",
-        "representativeArticleId": "discovery-SYJst7ntjrlomYmzjir0GPFt",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 44,
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "iraqLink": 19,
-          "countryImportance": 15,
-          "iraqImpact": 4,
-          "businessImpact": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "e3705f70ebf1ed9137da",
-        "ruleScore": 44,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "f42ecde913ed8a2969ca785386f04aaca6e48c97a1e01024cd2c443eb76ec988",
-      "contentCheckedAt": "2026-08-03T01:38:26.896Z",
       "contentChanged": false,
       "processingReused": true
     },
@@ -35592,9 +35366,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -35705,9 +35479,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -35866,9 +35640,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -36498,9 +36272,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -36948,7 +36722,7 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "politics",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -39136,9 +38910,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -41744,9 +41518,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -42085,9 +41859,9 @@
         "userNote": ""
       },
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -43291,116 +43065,6 @@
       "contentCheckedAt": "2026-08-03T01:03:21.646Z",
       "contentChanged": false,
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-6SeDHKlOxeZgFpY_XeHp0-km",
-      "keywordId": "international-hormuz-001",
-      "category": "security",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "هجمات المليشيات العراقية الأخيرة على الخليج.. “حلقة نار” أم ضمان سيادة هرمز؟",
-      "sourceArabic": "القدس العربي",
-      "sourceHomepage": "https://www.alquds.co.uk",
-      "publishedAt": "2026-07-29T07:00:00.000Z",
-      "descriptionArabic": "هجمات المليشيات العراقية الأخيرة على الخليج.. \"حلقة نار\" أم ضمان سيادة هرمز؟ القدس العربي",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMixAJBVV95cUxQZnVUcENORTFzYTNOTjRJbGI3Wkh2bklaM0VtYWlOVnFGZE9ObXZuZi1LSWpTdXpaR2tKdUlmRFFkUEtaSG5jOVV5X1ZfZDByOVk1WWtzUHR2VU1nZElLdXdadkJSQ01WVzZPalI2a3VfdjV6MlJKbWIxemJZdXZObEpBN1VuVU5UbERtbzc1dkh6b2xTQlpibWUxcUZEYzZxbEJDcGx4U09vajV6d1NGRTM3Sk9ZTkRVaEVmYk5jbEh4WWRpOVlTanNsbUxneldrY0pVbndXTTk1RWl0SVpFUzJUekFfLXFveWdIV1M0MjFGMTdMdnplUlZlWHFZR2V2REtRa2k0elRBaENER2lFcEI4T3hwN1M5ZTRLZDhKNzIzM2U0MDRVdGhHMnJGd2JzRUF2Wm93ckdobmJhTlJuNy1vMG4?oc=5",
-      "articleUrl": "https://www.alquds.co.uk/%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D8%B9%D9%84%D9%89/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "errorCode": null,
-      "discoveredAt": "2026-08-03T01:35:39.026Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-03T01:36:49.999Z",
-      "canonicalUrl": "https://www.alquds.co.uk/%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D9%84%D9%8A%D8%B4%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%A3%D8%AE%D9%8A%D8%B1%D8%A9-%D8%B9%D9%84%D9%89/",
-      "originalTextArabic": "إن وابل الطائرات المسيرة والصواريخ التي شنتها إيران ووكلاؤها في العراق على دول الخليج والأردن، والأضرار التي لحقت بناقلات النفط المبحرة في “ممر غير آمن” في مضيق هرمز، والغارة الجوية التي استهدفت ناقلة نفط أمريكية ترسو قبالة سواحل مصر، ليست فقط محاولة لرسم حدود المنطقة التي تحيط بها إيران، بل تشير هذه الأحداث إلى تصميم [&hellip;]",
-      "sourceHost": "alquds.co.uk",
-      "contentChars": 330,
-      "arabicRatio": 0.9969,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-03T01:39:04.783Z",
-      "translation": {
-        "status": "PENDING",
-        "titleKo": "",
-        "fullTextKo": ""
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "categoryRouting": {
-        "from": "international",
-        "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-CdX5-2IlHTh6tIHO3f",
-        "representativeArticleId": "discovery-6SeDHKlOxeZgFpY_XeHp0-km",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 38,
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
-        "scoredAt": "2026-08-03T05:02:54.197Z",
-        "breakdown": {
-          "iraqLink": 8,
-          "countryImportance": 10,
-          "iraqImpact": 16,
-          "businessImpact": 0,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "businessRelevance": "REFERENCE",
-        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
-        "scoringVersion": 4,
-        "scoreFingerprint": "8088fc1e8dff848899a8",
-        "ruleScore": 38,
-        "businessFloor": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "contentHash": "a27f2b1a9f13e95b427350e83e2b6a4cc95270ed6e7e0153fa5aaadd51040cc7",
-      "contentCheckedAt": "2026-08-03T01:39:04.783Z",
-      "contentChanged": false,
-      "processingReused": true
     }
   ],
   "titleCorrectionRun": {
@@ -43427,14 +43091,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V2",
-    "before": 334,
-    "retained": 334,
+    "before": 332,
+    "retained": 332,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 305,
+    "groupCount": 302,
     "duplicateGroupCount": 18,
     "duplicateArticleCount": 23,
     "maxHours": 72,
