@@ -26,7 +26,7 @@
   const categoryOf=(article)=>String(article.analysis?.category||article.category||recordOf(article).category||"").toLowerCase();
   const translationOf=(article)=>article.translation&&typeof article.translation==="object"?article.translation:{};
   const translationStatus=(article)=>String(translationOf(article).status||translationOf(article).translationStatus||"PENDING").toLowerCase();
-  const translationReady=(article)=>translationStatus(article)==="completed"&&String(translationOf(article).titleKo||"").trim()&&String(translationOf(article).fullTextKo||"").trim().length>=50;
+  const translationReady=(article)=>translationStatus(article)==="completed"&&Boolean(String(translationOf(article).titleKo||"").trim())&&Boolean(String(translationOf(article).fullTextKo||"").trim());
   const koTitle=(article)=>String(translationOf(article).titleKo||"").trim()||"한국어 제목 번역 준비 중";
   const fullTranslation=(article)=>String(translationOf(article).fullTextKo||"").trim();
   const previewText=(article)=>{

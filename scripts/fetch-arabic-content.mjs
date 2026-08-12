@@ -2,6 +2,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { cleanArticleText } from "./article-text-cleaner.mjs";
+import { extractAnadoluCandidates } from "./article-source-extractors.mjs";
 
 const ROOT = process.cwd();
 const INPUT_FILE = path.join(ROOT, "data", "resolved-articles.json");
@@ -197,7 +198,13 @@ function bestCandidate(candidates = [], title = "") {
     .sort((a, b) => (b.length - extractionPenalty(b)) - (a.length - extractionPenalty(a)))[0] || "";
 }
 
-function extractBestText(html = "", title = "") {
+function extractBestText(html = "", title = "", articleUrl = "") {
+  const host = hostnameOf(articleUrl);
+  if (host === "aa.com.tr" || host.endsWith(".aa.com.tr")) {
+    const anadolu = bestCandidate(extractAnadoluCandidates(html), title);
+    if (anadolu) return anadolu;
+  }
+
   const jsonLd = bestCandidate(extractJsonLdCandidates(html), title);
   if (jsonLd) return jsonLd;
 
@@ -374,7 +381,7 @@ async function hydrate(item) {
     const page = await fetchPage(item.articleUrl);
     const articleUrl = normalizeUrl(page.finalUrl || item.articleUrl);
     const originalTitleArabic = extractTitle(page.html, item.originalTitleArabic || "", articleUrl);
-    const originalTextArabic = extractBestText(page.html, originalTitleArabic);
+    const originalTextArabic = extractBestText(page.html, originalTitleArabic, articleUrl);
     const combinedText = `${originalTitleArabic}\n${originalTextArabic}`;
     const ratio = arabicRatio(combinedText);
     const canonicalUrl = extractCanonicalUrl(page.html, articleUrl);

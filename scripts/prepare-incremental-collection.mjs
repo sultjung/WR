@@ -7,6 +7,7 @@ const RESOLVED_FILE = path.join(ROOT, "data", "resolved-articles.json");
 const ARTICLES_FILE = path.join(ROOT, "data", "articles.json");
 const SNAPSHOT_FILE = path.join(ROOT, "data", ".articles-before-collect.json");
 const RECHECK_DAYS = Number(process.env.CONTENT_RECHECK_DAYS || 7);
+const MIN_CONTENT_CHARS = Number(process.env.MIN_ARABIC_CONTENT_CHARS || 300);
 const FORCE_RECHECK = /^(1|true|yes)$/i.test(String(process.env.FORCE_CONTENT_RECHECK || ""));
 
 async function readJson(file, fallback) {
@@ -30,7 +31,8 @@ function articleKey(item = {}) {
 }
 
 function hasFullText(item = {}) {
-  return Boolean(String(item.originalTextArabic || item.article?.originalTextArabic || "").trim())
+  const text = String(item.originalTextArabic || item.article?.originalTextArabic || "").trim();
+  return text.length >= MIN_CONTENT_CHARS
     && String(item.contentStatus || item.article?.contentStatus || "FULL_TEXT").toUpperCase() !== "FAILED";
 }
 
