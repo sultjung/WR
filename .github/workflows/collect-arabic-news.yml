@@ -52,7 +52,7 @@ jobs:
       - name: Discover broad Arabic news candidates with Google News
         env:
           COLLECT_CATEGORIES: "bismayah,politics,economy,security,international"
-          NEWS_DISCOVERY_DAYS: "7"
+          NEWS_DISCOVERY_DAYS: "14"
           MAX_PER_QUERY: "30"
           FETCH_TIMEOUT_MS: "15000"
           DISCOVERY_CONCURRENCY: "4"
@@ -71,7 +71,7 @@ jobs:
         env:
           PRIORITY_DISCOVERY_TIMEOUT_MS: "18000"
           PRIORITY_DISCOVERY_MAX_DETAIL_FETCHES: "60"
-          NEWS_DISCOVERY_DAYS: "7"
+          NEWS_DISCOVERY_DAYS: "14"
         run: npm run collect:priority-discovery
 
       - name: Verify recovered and fallback article URLs
@@ -83,9 +83,9 @@ jobs:
       - name: Preserve priority aggregator fallback URLs
         run: npm run collect:priority-aggregator-fallback
 
-      - name: Enforce exact KST rolling 7-day window before processing
+      - name: Enforce exact KST rolling 14-day window before processing
         env:
-          ARTICLE_RETENTION_DAYS: "7"
+          ARTICLE_RETENTION_DAYS: "14"
         run: node scripts/prune-rolling-article-window.mjs
 
       - name: Snapshot processed article state
@@ -97,12 +97,12 @@ jobs:
           CONTENT_FETCH_CONCURRENCY: "3"
           MIN_ARABIC_CONTENT_CHARS: "30"
           MIN_ARABIC_RATIO: "0.35"
-          ARTICLE_RETENTION_DAYS: "7"
+          ARTICLE_RETENTION_DAYS: "14"
         run: npm run collect:content
 
-      - name: Re-enforce exact KST 7-day window on final articles
+      - name: Re-enforce exact KST 14-day window on final articles
         env:
-          ARTICLE_RETENTION_DAYS: "7"
+          ARTICLE_RETENTION_DAYS: "14"
         run: node scripts/prune-rolling-article-window.mjs data/articles.json
 
       - name: Repair invalid and metadata-based article titles
