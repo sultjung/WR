@@ -5,14 +5,14 @@
 .download-note{font-size:12px;color:#6b7280}
 .download-actions{grid-column:span 2;display:flex;gap:8px;align-items:end;flex-wrap:wrap}
 .download-actions .report-button{flex:1;min-width:210px}
-.translation-preview{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;white-space:normal;line-height:1.72;color:#374151;margin:14px 0 12px}
+.translation-preview{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;white-space:normal;font-size:20px;line-height:1.7;color:#374151;margin:14px 0 12px}
 .translation-pending{margin:14px 0;padding:14px 16px;border-radius:12px;background:#f9fafb;color:#6b7280;border:1px dashed #d1d5db}
 .full-translation{margin:12px 0 14px;border:1px solid #e5e7eb;border-radius:14px;background:#fafafa;overflow:hidden}
 .full-translation>summary,.related-news-collapsible>summary,.arabic-source>summary{cursor:pointer;list-style:none;font-weight:700;color:#c65b12;padding:12px 15px;user-select:none}
 .full-translation>summary::-webkit-details-marker,.related-news-collapsible>summary::-webkit-details-marker,.arabic-source>summary::-webkit-details-marker{display:none}
 .full-translation>summary::after,.related-news-collapsible>summary::after,.arabic-source>summary::after{content:"＋";float:right;color:#9ca3af;font-weight:400}
 .full-translation[open]>summary::after,.related-news-collapsible[open]>summary::after,.arabic-source[open]>summary::after{content:"－"}
-.translation-body{padding:4px 16px 18px;white-space:pre-wrap;line-height:1.82;color:#1f2937;border-top:1px solid #f0f0f0}
+.translation-body{padding:4px 16px 18px;white-space:pre-wrap;font-size:20px;line-height:1.7;color:#1f2937;border-top:1px solid #f0f0f0}
 .arabic-source{margin:0 16px 16px;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
 .arabic-source>summary{color:#6b7280}
 .arabic-source>div{padding:4px 16px 18px;white-space:pre-wrap;line-height:2;font-family:"Noto Naskh Arabic","Segoe UI",Tahoma,sans-serif;font-size:16px;color:#374151;border-top:1px solid #f3f4f6}
