@@ -55,8 +55,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TRANSLATION_AI_REQUIRED: "true"
-          TRANSLATION_MODEL: ${{ vars.TRANSLATION_MODEL || 'gpt-4.1-mini' }}
-          TRANSLATION_MODEL_FALLBACKS: "gpt-4o-mini"
+          TRANSLATION_MODEL: "gpt-5.6-luna"
+          TRANSLATION_MODEL_FALLBACKS: "gpt-4.1-mini,gpt-4o-mini"
           TRANSLATION_AI_MAX_ARTICLES: ${{ inputs.max_articles || '40' }}
           TRANSLATION_CHUNK_CHARS: "7000"
           TRANSLATION_CONCURRENCY: "2"
@@ -68,8 +68,8 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           RELATED_TITLE_AI_REQUIRED: "true"
-          RELATED_TITLE_MODEL: ${{ vars.RELATED_TITLE_MODEL || vars.TRANSLATION_MODEL || 'gpt-4.1-mini' }}
-          RELATED_TITLE_MODEL_FALLBACKS: "gpt-4o-mini"
+          RELATED_TITLE_MODEL: "gpt-5.6-luna"
+          RELATED_TITLE_MODEL_FALLBACKS: "gpt-4.1-mini,gpt-4o-mini"
           RELATED_TITLE_AI_BATCH_SIZE: "8"
           RELATED_TITLE_MAX_ARTICLES: ${{ inputs.max_related_titles || '300' }}
           RELATED_TITLE_AI_RETRY_ATTEMPTS: "2"
