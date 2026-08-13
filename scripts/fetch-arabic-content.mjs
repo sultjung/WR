@@ -3,6 +3,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { cleanArticleText } from "./article-text-cleaner.mjs";
 import { extractAnadoluCandidates } from "./article-source-extractors.mjs";
+import { isForbiddenArticleUrl } from "./article-url-policy.mjs";
 
 const ROOT = process.cwd();
 const INPUT_FILE = path.join(ROOT, "data", "resolved-articles.json");
@@ -372,6 +373,7 @@ function validateCategory(item = {}, title = "", body = "", articleUrl = "") {
 
 function sanitizeStoredArticle(item = {}) {
   const articleUrl = item.canonicalUrl || item.articleUrl || "";
+  if (articleUrl && isForbiddenArticleUrl({ ...item, articleUrl })) return null;
   const title = cleanArticleTitle(item.originalTitleArabic || "", articleUrl);
   const body = cleanArticleText(item.originalTextArabic || "", { title });
   if (body.length < MIN_CONTENT_CHARS || arabicRatio(body) < MIN_ARABIC_RATIO) return null;

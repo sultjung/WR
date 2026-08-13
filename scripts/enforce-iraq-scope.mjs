@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import { isForbiddenArticleUrl } from "./article-url-policy.mjs";
 
 const ROOT = process.cwd();
 const ARTICLES_FILE = path.resolve(
@@ -86,6 +87,11 @@ function getBody(article = {}) {
 
 function getCategory(article = {}) {
   return String(article.analysis?.category || article.category || getRecord(article).category || "").toLowerCase();
+}
+
+function getArticleUrl(article = {}) {
+  const record = getRecord(article);
+  return record.articleUrl || article.articleUrl || article.canonicalUrl || "";
 }
 
 function getArticleId(article = {}, index = 0) {
@@ -180,6 +186,14 @@ function evaluateSecurityScope(article = {}) {
 }
 
 function evaluateArticle(article = {}) {
+  const articleUrl = getArticleUrl(article);
+  if (articleUrl && isForbiddenArticleUrl({ articleUrl })) {
+    return {
+      keep: false,
+      reason: "FORBIDDEN_AGGREGATOR_URL",
+      note: "신뢰하지 않는 뉴스 집계 플랫폼 URL"
+    };
+  }
   const category = getCategory(article);
   if (category !== "security") {
     return { keep: true, reason: "CATEGORY_NOT_TARGETED", note: "치안 카테고리 외 기사" };
@@ -207,11 +221,19 @@ articles.forEach((article, index) => {
   });
 });
 
+const categoryCounts = retained.reduce((counts, article) => {
+  const category = getCategory(article) || "uncategorized";
+  counts[category] = (counts[category] || 0) + 1;
+  return counts;
+}, {});
+
 const output = Array.isArray(payload)
   ? retained
   : {
       ...payload,
       generatedAt: new Date().toISOString(),
+      count: retained.length,
+      categoryCounts,
       articles: retained,
       iraqScopeGate: {
         method: "EXACT_ARABIC_TOKEN_SCOPE_V3",

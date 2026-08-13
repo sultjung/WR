@@ -58,6 +58,13 @@ const fixtures = [
     category: "economy",
     originalTitleArabic: "مشروع اقتصادي تجريبي",
     originalTextArabic: "نص تجريبي"
+  },
+  {
+    articleId: "nabd-nonsecurity-aggregator",
+    category: "politics",
+    articleUrl: "https://nabdapp.com/t/176333533",
+    originalTitleArabic: "خبر سياسي عراقي من منصة تجميع",
+    originalTextArabic: "أعلنت القوات الأمنية العراقية رفع الجاهزية."
   }
 ];
 
@@ -83,12 +90,16 @@ assert.deepEqual(ids, [
   "iraq-syria-border",
   "non-security-untouched"
 ]);
-assert.equal(summary.excludedCount, 4);
+assert.equal(output.count, 4);
+assert.deepEqual(output.categoryCounts, { security: 3, economy: 1 });
+assert.equal(summary.excludedCount, 5);
 assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_TITLE, 3);
 assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_LEAD, 1);
+assert.equal(summary.reasonCounts.FORBIDDEN_AGGREGATOR_URL, 1);
 assert.ok(!ids.includes("nigeria-byline-false-positive"), "بواسطة must not match واسط");
 assert.ok(!ids.includes("zagros-thailand-dateline-false-positive"), "Zagros - Erbil publisher dateline must not make a Thailand incident Iraqi");
 assert.ok(!ids.includes("nabd-syria-with-iraq-boilerplate"), "Nabd marketing and related-news Iraq mentions must not make a Syrian incident Iraqi");
+assert.ok(!ids.includes("nabd-nonsecurity-aggregator"), "Nabd URLs must be rejected in every category");
 assert.ok(ids.includes("wasit-real-incident"), "standalone واسط must remain valid");
 assert.ok(ids.includes("prefixed-iraq-token"), "بالعراق must match العراق after proclitic stripping");
 
