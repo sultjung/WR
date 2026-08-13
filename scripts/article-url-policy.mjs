@@ -59,5 +59,5 @@ export function isForbiddenArticleUrl(article = {}) {
     || /w3\.org$/i.test(host)
     || /schema\.org$/i.test(host)
     || /xmlsoft\.org$/i.test(host)
-    || /nabd\.com$/i.test(host);
+    || /(^|\.)nabd(?:app)?\.com$/i.test(host);
 }

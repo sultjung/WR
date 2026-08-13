@@ -126,14 +126,26 @@ function stripPublisherDateline(value = "") {
   return text.trimStart();
 }
 
+// Aggregators append outlet tags and marketing slogans to the target headline.
+// Those suffixes can mention Iraq even when the actual incident is wholly foreign.
+function stripTitleScopeNoise(value = "") {
+  return String(value || "")
+    .replace(/^\s*وان\s+نيوز\s*\/\s*/iu, "")
+    .replace(/\s*\(\s*وان[_\s-]+نيوز\s*\)\s*/giu, " ")
+    .replace(/\s*\(\s*المنصة[_\s-]+الإخبارية[_\s-]+الأولى[_\s-]+في[_\s-]+العراق\s*\)\s*/giu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function evaluateSecurityScope(article = {}) {
   const title = getTitle(article);
+  const scopeTitle = stripTitleScopeNoise(title);
   const rawLead = getBody(article).slice(0, LEAD_CHARS);
   const lead = stripPublisherDateline(rawLead);
   const primaryLead = lead.slice(0, PRIMARY_FOREIGN_LEAD_CHARS);
-  const iraqInTitle = containsAnyPhrase(title, IRAQ_ANCHORS);
+  const iraqInTitle = containsAnyPhrase(scopeTitle, IRAQ_ANCHORS);
   const iraqInLead = containsAnyPhrase(lead, IRAQ_ANCHORS);
-  const foreignPrimaryTitle = containsAnyPhrase(title, FOREIGN_SECURITY_LOCATIONS);
+  const foreignPrimaryTitle = containsAnyPhrase(scopeTitle, FOREIGN_SECURITY_LOCATIONS);
   const foreignPrimaryLead = containsAnyPhrase(primaryLead, FOREIGN_SECURITY_LOCATIONS);
 
   if (foreignPrimaryTitle && !iraqInTitle) {
@@ -202,7 +214,7 @@ const output = Array.isArray(payload)
       generatedAt: new Date().toISOString(),
       articles: retained,
       iraqScopeGate: {
-        method: "EXACT_ARABIC_TOKEN_SCOPE_V2",
+        method: "EXACT_ARABIC_TOKEN_SCOPE_V3",
         before: articles.length,
         retained: retained.length,
         excluded: excluded.length,
@@ -217,9 +229,9 @@ const reasonCounts = excluded.reduce((counts, item) => {
 }, {});
 
 const summary = {
-  schemaVersion: "1.1",
+  schemaVersion: "1.2",
   generatedAt: new Date().toISOString(),
-  method: "EXACT_ARABIC_TOKEN_SCOPE_V2",
+  method: "EXACT_ARABIC_TOKEN_SCOPE_V3",
   before: articles.length,
   retained: retained.length,
   excludedCount: excluded.length,

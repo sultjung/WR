@@ -27,4 +27,6 @@ assert.equal(isForbiddenArticleUrl({ ...approvedRecovered, urlRecoveryMethod: "s
 assert.equal(isForbiddenArticleUrl({ ...approvedRecovered, articleUrl: "https://hathalyoum.net/category/iraq" }), true);
 assert.equal(isForbiddenArticleUrl({ articleUrl: "https://ina.iq/articles/1001" }), false);
 assert.equal(isForbiddenArticleUrl({ articleUrl: "https://news.google.com/rss/articles/example" }), true);
+assert.equal(isForbiddenArticleUrl({ articleUrl: "https://nabd.com/t/1001" }), true);
+assert.equal(isForbiddenArticleUrl({ articleUrl: "https://nabdapp.com/t/176337038" }), true);
 console.log("[test-article-url-policy] explicit priority fallback accepted and untrusted aggregator URLs rejected");

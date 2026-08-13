@@ -246,6 +246,15 @@ function cleanArticleTitle(title = "", articleUrl = "") {
   return value;
 }
 
+function stripTitleScopeNoise(value = "") {
+  return String(value || "")
+    .replace(/^\s*وان\s+نيوز\s*\/\s*/iu, "")
+    .replace(/\s*\(\s*وان[_\s-]+نيوز\s*\)\s*/giu, " ")
+    .replace(/\s*\(\s*المنصة[_\s-]+الإخبارية[_\s-]+الأولى[_\s-]+في[_\s-]+العراق\s*\)\s*/giu, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
 function extractH1Title(html = "") {
   return stripTags(String(html).match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || "");
 }
@@ -313,7 +322,8 @@ function securityValidation(item = {}, title = "", body = "", articleUrl = "") {
   const requiredTerms = Array.isArray(item.requiredTerms) ? item.requiredTerms : [];
   const excludedTerms = Array.isArray(item.excludedTerms) ? item.excludedTerms : [];
   const lead = String(body).slice(0, 2200);
-  const evidence = `${title}\n${lead}`;
+  const scopeTitle = stripTitleScopeNoise(title);
+  const evidence = `${scopeTitle}\n${lead}`;
   const foreignPlaces = [
     "الهند", "باكستان", "سوريا", "لبنان", "فلسطين", "غزة", "ايران", "إيران", "اليمن", "السعودية",
     "مصر", "الاردن", "الأردن", "الكويت", "قطر", "الامارات", "الإمارات", "البحرين", "تركيا",
@@ -330,8 +340,8 @@ function securityValidation(item = {}, title = "", body = "", articleUrl = "") {
     "عملية امنية", "عملية أمنية", "اعتقال", "احباط هجوم", "إحباط هجوم", "مقتل", "اصابة", "إصابة",
     "تظاهرة", "تظاهرات", "احتجاج", "احتجاجات", "اعتصام", "قطع الطريق", "اغلاق الطريق", "إغلاق الطريق"
   ];
-  const foreignLocationInTitle = hasAny(title, foreignPlaces);
-  const iraqInTitle = hasAny(title, iraqAnchors);
+  const foreignLocationInTitle = hasAny(scopeTitle, foreignPlaces);
+  const iraqInTitle = hasAny(scopeTitle, iraqAnchors);
   const iraqInLead = hasAny(lead, iraqAnchors);
   const isShafaqWorldSection = (() => {
     if (hostnameOf(articleUrl) !== "shafaq.com") return false;
@@ -339,7 +349,7 @@ function securityValidation(item = {}, title = "", body = "", articleUrl = "") {
   })();
 
   if (hasAny(evidence, excludedTerms)) return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "제외 키워드가 확인된 치안기사" };
-  if (foreignLocationInTitle && !iraqInTitle && !iraqInLead) {
+  if (foreignLocationInTitle && !iraqInTitle) {
     return { ok: false, errorCode: "FOREIGN_SECURITY_EVENT", note: "이라크와 무관한 해외 치안·시위 사건" };
   }
   if (isShafaqWorldSection && !iraqInTitle && !iraqInLead) {

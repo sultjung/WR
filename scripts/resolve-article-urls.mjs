@@ -29,7 +29,7 @@ function normalizeUrl(url = "") {
 }
 
 function isBlockedHost(host = "") {
-  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host) || /youtube\.com$/i.test(host) || /facebook\.com$/i.test(host) || /instagram\.com$/i.test(host) || /(?:^|\.)x\.com$/i.test(host) || /twitter\.com$/i.test(host) || /w3\.org$/i.test(host) || /schema\.org$/i.test(host) || /xmlsoft\.org$/i.test(host) || /nabd\.com$/i.test(host) || /hathalyoum\.net$/i.test(host);
+  return !host || host === "news.google.com" || /(^|\.)google\.[a-z.]+$/i.test(host) || /gstatic\.com$/i.test(host) || /googleusercontent\.com$/i.test(host) || /youtube\.com$/i.test(host) || /facebook\.com$/i.test(host) || /instagram\.com$/i.test(host) || /(?:^|\.)x\.com$/i.test(host) || /twitter\.com$/i.test(host) || /w3\.org$/i.test(host) || /schema\.org$/i.test(host) || /xmlsoft\.org$/i.test(host) || /(^|\.)nabd(?:app)?\.com$/i.test(host) || /hathalyoum\.net$/i.test(host);
 }
 
 function isLikelyArticleUrl(url = "") {

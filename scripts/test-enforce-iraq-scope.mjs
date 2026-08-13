@@ -42,6 +42,12 @@ const fixtures = [
     originalTextArabic: "وأشار التقرير لاحقا إلى متابعة أخبار العراق والمنطقة."
   },
   {
+    articleId: "nabd-syria-with-iraq-boilerplate",
+    category: "security",
+    originalTitleArabic: "وان نيوز / التلفزيون السوري: قتلى ومصابون في انفجار عبوة ناسفة بحافلة ركاب في جرمانا بريف دمشق (وان_نيوز) (المنصة_الإخبارية_الأولى_في_العراق)",
+    originalTextArabic: "التلفزيون السوري: قتلى ومصابون في انفجار عبوة ناسفة بحافلة ركاب في جرمانا بريف دمشق. المزيد من وان نيوز: الفصائل العراقية تعلن تأجيل الرد. الأكثر تداولا في العراق."
+  },
+  {
     articleId: "iraq-syria-border",
     category: "security",
     originalTitleArabic: "تعزيز الأمن على الحدود العراقية السورية لمنع تسلل داعش",
@@ -77,11 +83,12 @@ assert.deepEqual(ids, [
   "iraq-syria-border",
   "non-security-untouched"
 ]);
-assert.equal(summary.excludedCount, 3);
-assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_TITLE, 2);
+assert.equal(summary.excludedCount, 4);
+assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_TITLE, 3);
 assert.equal(summary.reasonCounts.FOREIGN_SECURITY_PRIMARY_LEAD, 1);
 assert.ok(!ids.includes("nigeria-byline-false-positive"), "بواسطة must not match واسط");
 assert.ok(!ids.includes("zagros-thailand-dateline-false-positive"), "Zagros - Erbil publisher dateline must not make a Thailand incident Iraqi");
+assert.ok(!ids.includes("nabd-syria-with-iraq-boilerplate"), "Nabd marketing and related-news Iraq mentions must not make a Syrian incident Iraqi");
 assert.ok(ids.includes("wasit-real-incident"), "standalone واسط must remain valid");
 assert.ok(ids.includes("prefixed-iraq-token"), "بالعراق must match العراق after proclitic stripping");
 
