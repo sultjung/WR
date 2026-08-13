@@ -2,8 +2,8 @@ import { looksLikeKoreanTranslation } from "./article-translation-core.mjs";
 
 const apiKey = String(process.env.OPENAI_API_KEY || "").trim();
 const timeoutMs = Math.max(30000, Number(process.env.TRANSLATION_AI_TIMEOUT_MS || 120000));
-const primaryModel = String(process.env.TRANSLATION_MODEL || "gpt-4.1-mini").trim();
-const fallbackModels = String(process.env.TRANSLATION_MODEL_FALLBACKS || "gpt-4o-mini")
+const primaryModel = String(process.env.TRANSLATION_MODEL || "gpt-5.6-luna").trim();
+const fallbackModels = String(process.env.TRANSLATION_MODEL_FALLBACKS || "gpt-4.1-mini,gpt-4o-mini")
   .split(",")
   .map((value) => value.trim())
   .filter(Boolean);
@@ -110,6 +110,7 @@ titleKo에는 자연스러운 한국어 제목만, fullTextKo에는 본문 전�
         },
         body: JSON.stringify({
           model,
+          ...(model.startsWith("gpt-5.6-") ? { reasoning: { effort: "none" } } : {}),
           store: false,
           input: [
             { role: "system", content: [{ type: "input_text", text: instruction }] },
