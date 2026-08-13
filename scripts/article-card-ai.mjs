@@ -95,7 +95,7 @@ function parseResults(payload = {}) {
 
 function modelList(primaryEnv, fallbackEnv, defaultPrimary = "gpt-4.1-mini") {
   const primary = String(process.env[primaryEnv] || defaultPrimary).trim();
-  const fallbacks = String(process.env[fallbackEnv] || process.env.CARD_MODEL_FALLBACKS || "gpt-4o-mini")
+  const fallbacks = String(process.env[fallbackEnv] || process.env.CARD_MODEL_FALLBACKS || "gpt-4.1-mini,gpt-4o-mini")
     .split(",")
     .map((value) => value.trim())
     .filter(Boolean);
@@ -122,6 +122,7 @@ async function requestStructured({ items, models, instruction, schema, schemaNam
         },
         body: JSON.stringify({
           model,
+          ...(model.startsWith("gpt-5.6-") ? { reasoning: { effort: "none" } } : {}),
           store: false,
           input: [
             { role: "system", content: [{ type: "input_text", text: instruction }] },
@@ -203,7 +204,7 @@ preferredTerms는 제목에 실제로 등장한 고유명사의 권장 한국어
 각 id마다 정확히 한 개의 결과를 반환한다.`;
   return requestStructured({
     items,
-    models: modelList("RELATED_TITLE_MODEL", "RELATED_TITLE_MODEL_FALLBACKS"),
+    models: modelList("RELATED_TITLE_MODEL", "RELATED_TITLE_MODEL_FALLBACKS", "gpt-5.6-luna"),
     instruction,
     schema: RELATED_TITLE_SCHEMA,
     schemaName: "korean_related_news_titles",
