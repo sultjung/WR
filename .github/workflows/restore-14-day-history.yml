@@ -1,0 +1,112 @@
+name: Restore 14-Day Article History
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/restore-14-day-history.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wr-articles-data-writer
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full repository history
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Restore missing articles from the pre-prune snapshot
+        run: |
+          git show 2ce78865002978d7d0266e3e1e0e5b559010acb7:data/articles.json > "${RUNNER_TEMP}/articles-before-prune.json"
+          node --input-type=module <<'NODE'
+          import fs from "node:fs";
+
+          const currentPath = "data/articles.json";
+          const oldPath = `${process.env.RUNNER_TEMP}/articles-before-prune.json`;
+          const currentPayload = JSON.parse(fs.readFileSync(currentPath, "utf8"));
+          const oldPayload = JSON.parse(fs.readFileSync(oldPath, "utf8"));
+          const current = Array.isArray(currentPayload) ? currentPayload : currentPayload.articles;
+          const old = Array.isArray(oldPayload) ? oldPayload : oldPayload.articles;
+
+          function normalizeUrl(value = "") {
+            try {
+              const url = new URL(String(value));
+              for (const key of [...url.searchParams.keys()]) {
+                if (/^(utm_|fbclid|gclid|mc_)/i.test(key)) url.searchParams.delete(key);
+              }
+              url.hash = "";
+              return url.toString();
+            } catch {
+              return "";
+            }
+          }
+
+          function key(item = {}) {
+            return normalizeUrl(item.canonicalUrl || item.articleUrl || item.article?.canonicalUrl || item.article?.articleUrl)
+              || String(item.articleId || item.id || "");
+          }
+
+          function blocked(item = {}) {
+            const value = `${item.articleUrl || ""} ${item.canonicalUrl || ""} ${item.discoveryUrl || ""}`.toLowerCase();
+            return value.includes("nabdapp.com");
+          }
+
+          const known = new Set(current.map(key).filter(Boolean));
+          const restored = old.filter((item) => {
+            const articleKey = key(item);
+            return articleKey && !known.has(articleKey) && !blocked(item);
+          });
+
+          const merged = [...current, ...restored].sort(
+            (a, b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0)
+          );
+          const output = Array.isArray(currentPayload)
+            ? merged
+            : {
+                ...currentPayload,
+                generatedAt: new Date().toISOString(),
+                count: merged.length,
+                articles: merged,
+                historyRestoration: {
+                  restoredAt: new Date().toISOString(),
+                  sourceCommit: "2ce78865002978d7d0266e3e1e0e5b559010acb7",
+                  restoredBeforeRetentionPrune: restored.length
+                }
+              };
+
+          fs.writeFileSync(currentPath, `${JSON.stringify(output, null, 2)}\n`);
+          console.log(`[restore-history] current=${current.length} restored-before-prune=${restored.length} merged=${merged.length}`);
+          NODE
+
+      - name: Keep the exact current 14-day KST window
+        env:
+          ARTICLE_RETENTION_DAYS: "14"
+        run: node scripts/prune-rolling-article-window.mjs data/articles.json
+
+      - name: Validate restored article data
+        env:
+          MIN_ARABIC_CONTENT_CHARS: "30"
+          MIN_ARABIC_RATIO: "0.35"
+        run: node scripts/validate-collected-data.mjs
+
+      - name: Commit restored article history
+        run: |
+          if git diff --quiet -- data/articles.json; then
+            echo "No missing articles to restore"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          git commit -m "Restore missing articles within 14-day window"
+          git pull --rebase origin main
+          git push origin main
