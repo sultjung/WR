@@ -93,7 +93,18 @@ try {
   assert.equal(byId.get("turkey-iraq-strategic-partnership")?.categoryRouting?.method, "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1");
   const summary = JSON.parse(await fs.readFile(summaryFile, "utf8"));
   assert.equal(summary.routedCount, 4);
-  console.log("[test:direct-iraq-routing] direct Iraq bilateral articles routed to politics/economy/security; external market context retained as international");
+  
+const cabinetHousing = {
+  category: "politics",
+  originalTitleArabic: "مجلس الوزراء العراقي يقر حزمة إجراءات ويبحث الاستعدادات لمشروع مليون وحدة سكنية",
+  originalTextArabic: "بحث مجلس الوزراء الاستعدادات لتنفيذ مشروع وطني للإسكان."
+};
+const cabinetHousingResult = classifyDirectIraqInternational(cabinetHousing);
+assert.equal(cabinetHousingResult.category, "economy");
+assert.equal(cabinetHousingResult.changed, true);
+assert.equal(cabinetHousingResult.reason, "iraq-government-housing-policy");
+
+console.log("[test:direct-iraq-routing] direct Iraq bilateral articles routed to politics/economy/security; external market context retained as international");
 } finally {
   await fs.rm(tempDir, { recursive: true, force: true });
 }
