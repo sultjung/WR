@@ -37,7 +37,12 @@ const SOURCES = String(process.env.PRIORITY_DISCOVERY_TEST_BASE || "") ? [
     type: "official",
     base: "https://investpromo.gov.iq/ar/",
     hosts: ["investpromo.gov.iq"],
-    endpoints: ["/ar/feed/", "/ar/category/arabic-news/", "/wp-sitemap.xml"]
+    endpoints: [
+      "/ar/feed/",
+      "/ar/category/arabic-news/",
+      "/ar/category/chairman-news/",
+      "/wp-sitemap-posts-post-1.xml"
+    ]
   },
   {
     id: "hathalyoum",
@@ -163,7 +168,12 @@ const priority = (value, source) => {
     "عادل داخل الياسري",
     "حيدر مكية"
   ].some((term) => text.includes(norm(term)));
-  return bismayah || (hanwha && (nic || text.includes(norm("العراق")))) || (source.id === "nic" && nic);
+  const nicOfficialNews = source.id === "nic" && [
+    "الهيئة", "رئيس الهيئة", "استثمار", "مشروع", "فرص استثمارية", "بيان",
+    "اجتماع", "يلتقي", "يستقبل", "يبحث", "يتابع", "يعلن", "تعلن",
+    "توقيع", "مذكرة", "زيارة", "افتتاح"
+  ].some((term) => text.includes(norm(term)));
+  return bismayah || (hanwha && (nic || text.includes(norm("العراق")))) || nicOfficialNews;
 };
 
 async function fetchText(url) {
@@ -359,6 +369,8 @@ for (const { source, matched } of discoveries) {
       recoveredSourceId: source.id,
       allowAggregatorFallback: fallback,
       contentStatus: "PENDING",
+      officialSource: source.type === "official",
+      sourceReliability: source.type === "official" ? "OFFICIAL" : "AGGREGATOR",
       errorCode: null,
       discoveredAt: new Date().toISOString()
     };
