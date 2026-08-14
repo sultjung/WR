@@ -37,6 +37,9 @@ const ECONOMY_TERMS = [
 ];
 
 const ECONOMY_HEADLINE_TERMS = [
+  "وحدة سكنية", "وحدات سكنية", "مشروع سكني", "مشاريع سكنية", "مدينة سكنية", "مدن سكنية",
+  "مليون وحدة سكنية", "المجمعات السكنية", "المشروع السكني", "مشروع الإسكان", "سياسة الإسكان",
+  "주택사업", "주택 단지", "주거단지", "주거 사업", "주택 정책", "백만 호",
   "التبادل التجاري", "التجارة", "الاستثمار", "الاستثمارات", "النفط", "الغاز", "الطاقة", "الكهرباء",
   "المياه", "النقل", "طريق التنمية", "السكك الحديد", "الموانئ", "الجمارك", "التمويل", "الإعمار",
   "الاسكان", "البنى التحتية", "무역", "교역", "투자", "석유", "가스", "에너지", "전력",
@@ -142,6 +145,29 @@ function hasIraqAsOpeningActor(opening) {
 
 export function classifyDirectIraqInternational(article = {}) {
   const currentCategory = currentCategoryOf(article);
+  const rawTitle = titleOf(article);
+  const rawBody = bodyOf(article);
+  const normalizedTitle = normalizeRoutingText(rawTitle);
+
+  // Publisher sections are not reliable topical categories. A cabinet story
+  // filed under politics must still move to economy when its headline is
+  // explicitly about a national housing project or housing-unit programme.
+  if (currentCategory === "politics") {
+    const housingHeadline = uniqueTermCount(normalizedTitle, ECONOMY_HEADLINE_TERMS) > 0;
+    const governmentHousing = uniqueTermCount(normalizedTitle, [
+      "مجلس الوزراء", "رئيس الوزراء", "الحكومة", "국무회의", "총리", "정부"
+    ]) > 0;
+    if (housingHeadline && governmentHousing) {
+      return {
+        category: "economy",
+        changed: true,
+        directIraq: true,
+        reason: "iraq-government-housing-policy",
+        scores: { economyHeadline: 1, governmentHousing: true }
+      };
+    }
+  }
+
   if (currentCategory !== "international") {
     return {
       category: currentCategory,
@@ -151,9 +177,6 @@ export function classifyDirectIraqInternational(article = {}) {
       scores: null
     };
   }
-
-  const rawTitle = titleOf(article);
-  const rawBody = bodyOf(article);
   const title = normalizeRoutingText(rawTitle);
   const opening = normalizeRoutingText(rawBody.slice(0, 1400));
   const body = normalizeRoutingText(rawBody.slice(0, 8000));
@@ -263,6 +286,7 @@ export function routingSummaryLabel(result = {}) {
     "direct-iraq-economy-dominant": "이라크 직접 관련 경제 중심 기사",
     "direct-iraq-government-or-diplomatic-affairs": "이라크 정부·외교·양국관계 기사",
     "direct-iraq-economic-affairs": "이라크 경제·사업 기사",
+    "iraq-government-housing-policy": "이라크 정부의 주택·주거사업 정책 기사",
     "direct-iraq-security-affairs": "이라크 치안·안보 기사"
   };
   return labels[result.reason] || compact(result.reason || "국제사회 유지");
