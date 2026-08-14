@@ -19,6 +19,19 @@ const ENABLED_CATEGORIES = new Set(
 
 const BISMAYAH_KEYWORDS = [
   {
+    keywordId: "bismayah-nic-official-site-001",
+    category: "bismayah",
+    arabicQuery: "site:investpromo.gov.iq",
+    requiredTerms: [],
+    optionalTerms: ["الهيئة الوطنية للاستثمار", "رئيس الهيئة", "بسماية", "مشروع", "فرص استثمارية"],
+    excludedTerms: ["تهنئة", "تعزية", "احتفالية"],
+    requiredSourceHosts: ["investpromo.gov.iq"],
+    officialSource: true,
+    priority: 100,
+    description: "NIC 공식 홈페이지 신규 게시물",
+    enabled: true
+  },
+  {
     keywordId: "bismayah-nic-001",
     category: "bismayah",
     arabicQuery: '"الهيئة الوطنية للاستثمار"',
@@ -114,6 +127,17 @@ function looksCeremonial(item = {}, keyword = {}) {
   return excluded.some((term) => hasTerm(text, term));
 }
 
+function matchesRequiredSource(item = {}, keyword = {}) {
+  const requiredHosts = keyword.requiredSourceHosts || [];
+  if (!requiredHosts.length) return true;
+  try {
+    const hostname = new URL(item.sourceHomepage || "").hostname.replace(/^www\./, "").toLowerCase();
+    return requiredHosts.some((required) => hostname === required || hostname.endsWith(`.${required}`));
+  } catch {
+    return false;
+  }
+}
+
 function isSocialSource(sourceHomepage = "", sourceArabic = "") {
   const value = `${sourceHomepage} ${sourceArabic}`.toLowerCase();
   return /facebook\.com|instagram\.com|youtube\.com|twitter\.com|(^|\s)x\.com|tiktok\.com/.test(value);
@@ -182,10 +206,16 @@ function parseItems(xml, keyword) {
       discoveryStatus: "DISCOVERED",
       urlStatus: "PENDING",
       contentStatus: "PENDING",
+      officialSource: keyword.officialSource === true,
+      sourceReliability: keyword.officialSource === true ? "OFFICIAL" : "PUBLISHER",
       errorCode: null,
       discoveredAt: new Date().toISOString()
     };
-  }).filter((item) => item.originalTitleArabic && item.discoveryUrl && !isSocialSource(item.sourceHomepage, item.sourceArabic) && !looksCeremonial(item, keyword));
+  }).filter((item) => item.originalTitleArabic
+    && item.discoveryUrl
+    && matchesRequiredSource(item, keyword)
+    && !isSocialSource(item.sourceHomepage, item.sourceArabic)
+    && !looksCeremonial(item, keyword));
 }
 
 async function mapLimit(items, limit, worker) {
