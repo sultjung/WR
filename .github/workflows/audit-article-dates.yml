@@ -1,0 +1,40 @@
+name: Audit WR Article Dates
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/audit-article-dates.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Count article dates
+        run: |
+          git show 2ce78865002978d7d0266e3e1e0e5b559010acb7:data/articles.json > "${RUNNER_TEMP}/old.json"
+          node --input-type=module <<'NODE'
+          import fs from "node:fs";
+          const read = p => { const x=JSON.parse(fs.readFileSync(p,"utf8")); return Array.isArray(x)?x:x.articles||[]; };
+          const old=read(process.env.RUNNER_TEMP+"/old.json"), current=read("data/articles.json");
+          const counts = list => list.reduce((a,x)=>{const d=String(x.publishedAt||x.publicationDate||x.pubDate||"").slice(0,10)||"INVALID";a[d]=(a[d]||0)+1;return a;},{});
+          const report={checkedAt:new Date().toISOString(),historicalTotal:old.length,currentTotal:current.length,historicalByDate:counts(old),currentByDate:counts(current)};
+          fs.writeFileSync("data/article-date-audit.json",JSON.stringify(report,null,2)+"\n");
+          console.log(JSON.stringify(report));
+          NODE
+      - name: Commit audit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/article-date-audit.json
+          git commit -m "Audit WR article dates"
+          git pull --rebase origin main
+          git push origin main
