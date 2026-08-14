@@ -26,7 +26,9 @@ jobs:
           const read = p => { const x=JSON.parse(fs.readFileSync(p,"utf8")); return Array.isArray(x)?x:x.articles||[]; };
           const old=read(process.env.RUNNER_TEMP+"/old.json"), current=read("data/articles.json");
           const counts = list => list.reduce((a,x)=>{const d=String(x.publishedAt||x.publicationDate||x.pubDate||"").slice(0,10)||"INVALID";a[d]=(a[d]||0)+1;return a;},{});
-          const report={checkedAt:new Date().toISOString(),historicalTotal:old.length,currentTotal:current.length,historicalByDate:counts(old),currentByDate:counts(current)};
+          const representatives=current.filter(x=>x.eventGroup?.isRepresentative!==false);
+          const translated=representatives.filter(x=>String(x.translation?.status||x.translation?.translationStatus||"").toLowerCase()==="completed");
+          const report={checkedAt:new Date().toISOString(),historicalTotal:old.length,currentTotal:current.length,representativeTotal:representatives.length,translatedRepresentativeTotal:translated.length,historicalByDate:counts(old),currentByDate:counts(current),representativeByDate:counts(representatives),translatedRepresentativeByDate:counts(translated)};
           fs.writeFileSync("data/article-date-audit.json",JSON.stringify(report,null,2)+"\n");
           console.log(JSON.stringify(report));
           NODE
