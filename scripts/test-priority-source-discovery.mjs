@@ -42,10 +42,12 @@ const root = path.join(temp, "web");
 await fs.mkdir(path.join(root, "nic"), { recursive: true });
 await fs.mkdir(path.join(root, "hatha", "articles"), { recursive: true });
 const title = "رئيس الهيئة الوطنية للاستثمار يبحث سير العمل في مشروع بسماية مع شركة هانوا الكورية";
+const genericNicTitle = "إطلاق خمس فرص استثمارية جديدة في قطاعات الإسكان والطاقة والصناعة";
 const hathaPath = path.join(root, "hatha", "articles", "4207696");
 const nicFeedPath = path.join(root, "nic", "feed");
-await fs.writeFile(nicFeedPath, `<?xml version="1.0"?><rss><channel><item><title>${title}</title><link>${base}/nic/article-5001</link><pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate><description>متابعة مشروع بسماية مع شركة هانوا</description></item></channel></rss>`);
+await fs.writeFile(nicFeedPath, `<?xml version="1.0"?><rss><channel><item><title>${title}</title><link>${base}/nic/article-5001</link><pubDate>Wed, 05 Aug 2026 12:00:00 GMT</pubDate><description>متابعة مشروع بسماية مع شركة هانوا</description></item><item><title>${genericNicTitle}</title><link>${base}/nic/article-5002</link><pubDate>Thu, 06 Aug 2026 12:00:00 GMT</pubDate><description>فرص استثمارية رسمية جديدة</description></item></channel></rss>`);
 await fs.writeFile(path.join(root, "nic", "article-5001"), `<html><head><meta property="og:title" content="${title}"></head><body><article>النص</article></body></html>`);
+await fs.writeFile(path.join(root, "nic", "article-5002"), `<html><head><meta property="og:title" content="${genericNicTitle}"></head><body><article>النص</article></body></html>`);
 await fs.writeFile(hathaPath, `<html><head><meta property="og:title" content="${title}"><meta property="og:description" content="رئيس الهيئة الوطنية للاستثمار يتابع مشروع بسماية مع شركة هانوا"></head><body><article>النص</article></body></html>`);
 
 const server = spawn("python", ["-m", "http.server", String(port), "--bind", "127.0.0.1", "--directory", root], { stdio: "ignore" });
@@ -71,12 +73,17 @@ try {
   const run = spawnSync(process.execPath, [DISCOVERY_SCRIPT], { env: commonEnv, encoding: "utf8" });
   assert.equal(run.status, 0, run.stderr || run.stdout);
   const output = JSON.parse(await fs.readFile(inputFile, "utf8"));
-  assert.equal(output.articles.length, 1, run.stdout);
-  assert.equal(output.articles[0].recoveredSourceId, "nic", "official NIC copy must win over duplicate aggregator copy");
-  assert.equal(output.articles[0].allowAggregatorFallback, false);
+  assert.equal(output.articles.length, 2, run.stdout);
+  const officialCopy = output.articles.find((article) => article.originalTitleArabic === title);
+  const genericOfficialPost = output.articles.find((article) => article.originalTitleArabic === genericNicTitle);
+  assert.equal(officialCopy?.recoveredSourceId, "nic", "official NIC copy must win over duplicate aggregator copy");
+  assert.equal(officialCopy?.allowAggregatorFallback, false);
+  assert.equal(genericOfficialPost?.officialSource, true, "generic NIC official posts must be collected without a Bismayah keyword");
+  assert.equal(genericOfficialPost?.sourceReliability, "OFFICIAL");
 
   await fs.writeFile(nicFeedPath, `<?xml version="1.0"?><rss><channel></channel></rss>`);
   await fs.rm(path.join(root, "nic", "article-5001"));
+  await fs.rm(path.join(root, "nic", "article-5002"));
   await fs.writeFile(inputFile, JSON.stringify({ schemaVersion: "1.0", articles: [], recoveredCount: 0, failedCount: 0 }));
   const fallbackRun = spawnSync(process.execPath, [DISCOVERY_SCRIPT], { env: commonEnv, encoding: "utf8" });
   assert.equal(fallbackRun.status, 0, fallbackRun.stderr || fallbackRun.stdout);
