@@ -273,10 +273,13 @@ function evaluate(article) {
   const isFullText = article.contentStatus === "FULL_TEXT";
   const bismayahMatch = hasAny(text, BISMAYAH) || (!isFullText && /^bismayah-/i.test(keywordId));
   const nicMatch = hasAny(text, NIC) || hasNicAcronym(text) || (!isFullText && /(?:^|-)nic(?:-|$)/i.test(keywordId));
+  const nicOfficialSource = article.officialSource === true
+    || article.sourceReliability === "OFFICIAL"
+    || article.recoveredSourceId === "nic";
   const hanwhaIraqMatch = hasAny(text, HANWHA) && hasAny(text, IRAQ_CORE);
 
-  if (bismayahMatch || nicMatch || hanwhaIraqMatch) {
-    return { action: "keep", category: "bismayah", reason: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련" };
+  if (bismayahMatch || nicMatch || nicOfficialSource || hanwhaIraqMatch) {
+    return { action: "keep", category: "bismayah", reason: "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련" };
   }
 
   const strongDomesticEvent = relevance.primary ? routeStrongDomesticEvent(title, opening) : null;
