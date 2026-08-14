@@ -16,6 +16,16 @@ const padding = "تفاصيل محلية واقتصادية متكررة ".repea
 
 const articles = [
   {
+    articleId: "nic-official-generic-investment-post",
+    category: "economy",
+    contentStatus: "FULL_TEXT",
+    officialSource: true,
+    sourceReliability: "OFFICIAL",
+    recoveredSourceId: "nic",
+    originalTitleArabic: "إطلاق خمس فرص جديدة في قطاعات الإسكان والطاقة والصناعة",
+    originalTextArabic: "أُطلقت خمس فرص جديدة أمام المستثمرين في قطاعات الإسكان والطاقة والصناعة. " + padding
+  },
+  {
     articleId: "iraq-university-salary-protests",
     category: "politics",
     contentStatus: "FULL_TEXT",
@@ -178,6 +188,7 @@ try {
   const excluded = new Set(summary.excluded.map((article) => article.articleId));
 
   for (const id of [
+    "nic-official-generic-investment-post",
     "iraq-university-salary-protests",
     "iraq-cabinet-with-incidental-protest",
     "iraq-gaza-bridge",
@@ -207,6 +218,7 @@ try {
   }
 
   assert.equal(categoryById.get("iraq-university-salary-protests"), "security");
+  assert.equal(categoryById.get("nic-official-generic-investment-post"), "bismayah");
   assert.equal(categoryById.get("iraq-cabinet-with-incidental-protest"), "politics");
   const protestArticle = result.articles.find((article) => article.articleId === "iraq-university-salary-protests");
   assert.equal(protestArticle.categoryRouting.from, "politics");
