@@ -66,6 +66,7 @@ function articleBodyOf(article = {}) {
 
 const RELIABLE_SOURCES = [
   "وكالة الأنباء العراقية", "واع", "مجلس الوزراء", "مجلس النواب", "رئاسة الوزراء",
+  "الهيئة الوطنية للاستثمار", "National Investment Commission",
   "البنك المركزي العراقي", "وزارة", "شفق نيوز", "السومرية", "شبكة 964", "الجزيرة",
   "رويترز", "فرانس برس", "أسوشيتد برس", "CNN Arabic", "Kurdistan24"
 ];
@@ -79,6 +80,7 @@ function sourceScore(article, text) {
   const source = `${article.sourceArabic || ""} ${article.source?.arabicName || ""}`;
   const url = articleUrlOf(article);
   const body = articleBodyOf(article);
+  if (article.officialSource === true || article.sourceReliability === "OFFICIAL") return 10;
   if (hasAny(`${source}\n${text}`, ["بيان رسمي", "أعلن مكتب رئيس الوزراء", "ذكرت الدائرة الإعلامية"])) return 10;
   if (hasAny(source, RELIABLE_SOURCES)) return 8;
   if (url && body.length >= 500) return 6;
