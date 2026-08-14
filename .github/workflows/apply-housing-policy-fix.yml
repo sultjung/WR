@@ -1,0 +1,56 @@
+name: Apply Housing Policy Fix
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/apply-housing-policy-fix.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: wr-articles-data-writer
+  cancel-in-progress: false
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Run focused regression tests
+        run: |
+          npm run test:direct-iraq-routing
+          npm run test:importance-category
+      - name: Reclassify and rescore existing articles without AI
+        env:
+          IMPORTANCE_AI_ENABLED: "false"
+          IMPORTANCE_AI_REQUIRED: "false"
+        run: |
+          npm run collect:direct-iraq-routing
+          npm run collect:importance-prepare
+          npm run collect:importance
+          npm run collect:importance-business
+      - name: Validate article data
+        env:
+          MIN_ARABIC_CONTENT_CHARS: "30"
+          MIN_ARABIC_RATIO: "0.35"
+        run: node scripts/validate-collected-data.mjs
+      - name: Commit corrected categories and scores
+        run: |
+          if git diff --quiet -- data/articles.json; then
+            echo "No article changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/articles.json
+          git commit -m "Apply housing policy classification and importance fix"
+          git pull --rebase origin main
+          git push origin main
