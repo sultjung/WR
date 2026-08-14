@@ -27,8 +27,11 @@
   const translationOf=(article)=>article.translation&&typeof article.translation==="object"?article.translation:{};
   const translationStatus=(article)=>String(translationOf(article).status||translationOf(article).translationStatus||"PENDING").toLowerCase();
   const translationReady=(article)=>translationStatus(article)==="completed"&&Boolean(String(translationOf(article).titleKo||"").trim())&&Boolean(String(translationOf(article).fullTextKo||"").trim());
-  const koTitle=(article)=>String(translationOf(article).titleKo||"").trim()||"한국어 제목 번역 준비 중";
+  const legacyCardOf=(article)=>article.card&&typeof article.card==="object"?article.card:{};
+  const legacyCardReady=(article)=>String(legacyCardOf(article).status||"").toLowerCase()==="completed"&&Boolean(String(legacyCardOf(article).titleKo||"").trim());
+  const koTitle=(article)=>String(translationOf(article).titleKo||legacyCardOf(article).titleKo||"").trim()||"한국어 제목 번역 준비 중";
   const fullTranslation=(article)=>String(translationOf(article).fullTextKo||"").trim();
+  const legacySummary=(article)=>String(legacyCardOf(article).summaryKo||"").trim();
   const previewText=(article)=>{
     const text=fullTranslation(article).replace(/\s+/g," ").trim();
     if(!text) return "아랍어 원문 전문의 한국어 번역을 준비하고 있습니다.";
@@ -157,12 +160,12 @@
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),selectable=exportSelectable(article),ready=translationReady(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.stars===null?`<span class="badge importance-pending">별점 평가 대기</span>`:`<span class="badge importance-score">${starRatingHtml(importance.stars)}</span>`;
-      const translationBlock=ready?`<p class="translation-preview">${escapeHtml(previewText(article))}</p><details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
+      const legacyReady=legacyCardReady(article),legacyText=legacySummary(article);const translationBlock=ready?`<p class="translation-preview">${escapeHtml(previewText(article))}</p><details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:legacyReady&&legacyText?`<p class="translation-preview">${escapeHtml(legacyText)}</p><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":"번역 후 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         ${translationBlock}
-        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${ready?`<span class="badge translation-complete">전문 번역 완료</span>`:`<span class="badge importance-pending">전문 번역 대기</span>`}</div>
+        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${ready?`<span class="badge translation-complete">전문 번역 완료</span>`:legacyReady?`<span class="badge importance-pending">기존 요약 복원</span>`:`<span class="badge importance-pending">전문 번역 대기</span>`}</div>
         <div class="card-actions">${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">언론사 원문 열기</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}<span class="card-source-note">요약 없이 기사 전문을 충실 번역</span></div>
         ${relatedNewsHtml(article)}
       </article>`;
