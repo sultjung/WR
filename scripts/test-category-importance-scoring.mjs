@@ -54,4 +54,14 @@ const businessFloor = businessFloorFor(nicHanwhaBismayah);
 assert.equal(businessFloor.rule, "BISMAYAH_NIC_HANWHA_DIRECT");
 assert.equal(businessFloor.score, 98);
 
+
+const millionHousingCabinet = {
+  category: "politics",
+  originalTitleArabic: "مجلس الوزراء العراقي يقر حزمة إجراءات ويبحث الاستعدادات لمشروع مليون وحدة سكنية",
+  originalTextArabic: "بحث مجلس الوزراء العراقي الاستعدادات الخاصة بمشروع مليون وحدة سكنية في العراق."
+};
+const millionHousingFloor = businessFloorFor(millionHousingCabinet);
+assert.equal(millionHousingFloor.rule, "IRAQ_HOUSING_GENERAL");
+assert.ok(millionHousingFloor.score >= 65);
+
 console.log(`[test-category-importance] category=economy, floor=${floorResult.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
