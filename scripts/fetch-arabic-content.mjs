@@ -206,11 +206,15 @@ function extractBestText(html = "", title = "", articleUrl = "") {
     if (anadolu) return anadolu;
   }
 
-  const jsonLd = bestCandidate(extractJsonLdCandidates(html), title);
-  if (jsonLd) return jsonLd;
-
-  const selectorText = bestCandidate(extractSelectorCandidates(html), title);
-  if (selectorText) return selectorText;
+  // Some publishers (notably Shafaq) expose a short keyword string in
+  // JSON-LD articleBody while the real article is present in the page body.
+  // Rank every structured/body candidate together instead of accepting the
+  // first non-empty JSON-LD value.
+  const articleText = bestCandidate([
+    ...extractJsonLdCandidates(html),
+    ...extractSelectorCandidates(html)
+  ], title);
+  if (articleText) return articleText;
 
   return bestCandidate([
     extractMeta(html, "og:description"),
