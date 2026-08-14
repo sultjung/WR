@@ -83,7 +83,17 @@ jobs:
                 }
               };
 
-          fs.writeFileSync(currentPath, `${JSON.stringify(output, null, 2)}\n`);
+          fs.writeFileSync(currentPath, `${JSON.stringify(output, null, 2)}\\n`);
+          fs.writeFileSync("data/history-restore-report.json", `${JSON.stringify({
+            checkedAt: new Date().toISOString(),
+            currentBefore: current.length,
+            historicalSnapshot: old.length,
+            restoredBeforePrune: restored.length,
+            mergedBeforePrune: merged.length,
+            oldestHistoricalDate: old.map(x => x.publishedAt).filter(Boolean).sort()[0] || null,
+            historicalBeforeAugust7: old.filter(x => String(x.publishedAt || "") < "2026-08-07").length,
+            restoredBeforeAugust7: restored.filter(x => String(x.publishedAt || "") < "2026-08-07").length
+          }, null, 2)}\\n`);
           console.log(`[restore-history] current=${current.length} restored-before-prune=${restored.length} merged=${merged.length}`);
           NODE
 
@@ -100,13 +110,13 @@ jobs:
 
       - name: Commit restored article history
         run: |
-          if git diff --quiet -- data/articles.json; then
+          if git diff --quiet -- data/articles.json data/history-restore-report.json; then
             echo "No missing articles to restore"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/articles.json
+          git add data/articles.json data/history-restore-report.json
           git commit -m "Restore missing articles within 14-day window"
           git pull --rebase origin main
           git push origin main
