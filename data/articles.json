@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-16T04:12:11.942Z",
+  "generatedAt": "2026-08-16T05:52:51.061Z",
   "lookbackDays": 14,
-  "count": 371,
+  "count": 381,
   "categoryCounts": {
-    "economy": 59,
+    "economy": 62,
     "security": 70,
-    "politics": 214,
-    "international": 20,
-    "bismayah": 8
+    "bismayah": 13,
+    "politics": 216,
+    "international": 20
   },
   "collectionRun": {
     "discoveredCount": 417,
@@ -170,9 +170,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -1433,148 +1433,6 @@
         "from": "international",
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-KNtNnQcgAxppRfyXzllhEO_j",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "صادرات النفط العراقي ترتفع لأعلى معدل يومي منذ بدء الحرب",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-08-14T17:43:31.000Z",
-      "descriptionArabic": "صادرات النفط العراقي ترتفع لأعلى معدل يومي منذ بدء الحرب الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQdXk2cHhSWlY0VlhEWHA5SXhmZ0hJV2RuZjZKczl4QnlkcHpHcU1zSWRSeFFBTVFfbmw0SmJTTkZndVppc3c3eDZrZE1nQm5CYTZ5WlVBSzFFQnUzUmRiaV92RWdBY2RRS1R4YWt4M0h1TG9ramZBSTJfZ0VFM3h3eUN0LVVtMXptajlOanJkYnNCamtacGFTZHVjamNHVkVLTlpaOVpkTFFnaDZPS0ZJQW9fWVBHODlQaUE2a1hmWVAyT2g2RVh2SV9QdjNqSU41RERTVWxiY01DbUpKVG5sMnlwdHYwNlA0NnJQY1dQdTBVR09yb3ktRmx0cFJCV2lzdzI4UTdsRno4Z3Zjbm1nUVlBTUdtY1pHTTFKQ1hzeFV6c0s4cFNGc3BzMWtfTEdpOHFMVU92d1FyZng0eUhtMlZYb1JmaUFsRHpzcWVmTF8zNlNDM0l2V1ROMkZSNW5K0gHmAkFVX3lxTE5VLUFoMmJfZmtvX2RFZG5QQXEweUotbGdhTmVfclhUZENsNjc2Qi1mb3hKeTJaYlcyb3czUGZ6MDlXVWFSVlhmYkhxa2hoVjYwSHNrNEE0Yy1qM0E4bE9TeEw3RlNNWkdUX3N6VzlNLXYyajJKUm9WSW4tQ3IwRmhoanNwdmhZcFRNYkJvSWk5N3VxVDRhc3hpcGpjalZVOTlaeGpycXVlYVlIellYZU1FUXV5TC1YWFNOdkVQaFRtZFJnVmJDMWlwOUh1TzV0cnVYNzE0aEpyTUEybkVnYWpXVm4waDVnVmdMRl9kbzE0d2dWc29HWTJva0s3SlhEbWZ1S056bEU4NUppR0ZFM0dOaEJEUDI2NmxyVFdzRGg1dFhkZzJkS0ljb1lidy0zM3FmYzhheDN1a3U1UXZwdmt0blFsNkVKZUFlOHRyR1ZTZExULVBIU0pSRzNMSVFVQ3lVbUxnSFE?oc=5",
-      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/14/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B1%D8%AA%D9%81%D8%B9-%D9%84%D8%A3%D8%B9%D9%84%D9%89-%D9%85%D8%B9%D8%AF%D9%84",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-08-16T04:06:47.783Z",
-      "urlRecoveryMethod": "source-listing",
-      "recoveredSourceId": "aljazeera-iraq",
-      "titleSimilarity": 1,
-      "recoveredAt": "2026-08-16T04:07:02.676Z",
-      "urlResolutionMethod": "source-listing",
-      "resolvedAt": "2026-08-16T04:07:19.995Z",
-      "canonicalUrl": "https://www.aljazeera.net/ebusiness/2026/8/14/%d8%b5%d8%a7%d8%af%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%86%d9%81%d8%b7-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a-%d8%aa%d8%b1%d8%aa%d9%81%d8%b9-%d9%84%d8%a3%d8%b9%d9%84%d9%89-%d9%85%d8%b9%d8%af%d9%84",
-      "originalTextArabic": "قال وزير النفط العراقي باسم خضير الجمعة إن العراق صدّر في أغسطس/آب الجاري مليوني برميل يوميا، وهو المستوى الأعلى منذ بدء حرب الشرق الأوسط وإغلاق مضيق هرمز الذي كانت تمرّ عبره معظم صادرات بغداد النفطية.\n\nوقال خضير -اليوم الجمعة خلال مؤتمر صحفي في البصرة – إن \"الصادرات منذ بداية الشهر (الجاري) بلغت معدل مليوني برميل\" يوميا، أي ما يعادل 26 مليون برميل تقريبا، موضحا أن بلوغ هذا المعدّل اليومي \"يحصل لأول مرة منذ بداية الأزمة\".",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 425,
-      "arabicRatio": 1.0105,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-16T04:09:50.924Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "af7f867f827548a792fd3f39b9a5b221d74038b23dc56bbca9b232df998c114a",
-        "sourceChars": 425,
-        "translatedChars": 261,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f9bc11650ddbfb357a8c",
-        "preferredTermsApplied": [
-          "호르무즈 해협",
-          "바스라",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-08-14T21:48:41.289Z",
-        "titleKo": "이라크 석유 수출, 전쟁 발발 이후 일일 최고치로 증가",
-        "fullTextKo": "이라크 석유장관 바셈 쿠다이르는 금요일, 이라크가 이달 8월 하루 200만 배럴을 수출했다며 이는 중동 전쟁이 시작되고 바그다드의 석유 수출 대부분이 통과하던 호르무즈 해협이 폐쇄된 이후 가장 높은 수준이라고 밝혔다.\n\n쿠다이르는 이날 금요일 바스라에서 열린 기자회견에서 “이달 초부터 수출량은 하루 평균 200만 배럴에 달했다”며, 이는 약 2,600만 배럴에 해당한다고 말했다. 그는 이 같은 일일 평균치에 도달한 것은 “위기가 시작된 이후 처음”이라고 설명했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 6,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V7",
-        "scoredAt": "2026-08-16T04:11:24.095Z",
-        "breakdown": {
-          "nationalImportance": 12,
-          "businessImpact": 0,
-          "politicalImpact": 4,
-          "reportValue": 3,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 7,
-        "scoreFingerprint": "427401c38d5f784bee1c",
-        "ruleScore": 10,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": 0,
-        "aiWeight": 0.4,
-        "ruleWeight": 0.6,
-        "aiModel": null,
-        "aiReportPriority": "REFERENCE",
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-uutqL7CX-dXylwQmQw",
-        "representativeArticleId": "discovery-KNtNnQcgAxppRfyXzllhEO_j",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "af7f867f827548a792fd3f39b9a5b221d74038b23dc56bbca9b232df998c114a",
-      "contentCheckedAt": "2026-08-16T04:09:50.924Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -3832,9 +3690,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -4914,9 +4772,9 @@
       "contentCheckedAt": "2026-08-16T04:09:54.065Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -7335,9 +7193,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8310,9 +8168,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -11673,9 +11531,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -26839,9 +26697,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -34424,9 +34282,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -34859,9 +34717,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -36292,9 +36150,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -36624,9 +36482,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -37182,150 +37040,6 @@
         "titleKo": "이라크, 호르무즈 통해 석유 수출 위해 이란과 조율"
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-dyz6UvZO7BFwsDGrZWEOlsEV",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "ماذا بنى العراق بعد 38 عاماً من نهاية حرب الثماني سنوات ؟!",
-      "sourceArabic": "المعلومة",
-      "sourceHomepage": "https://almaalomah.me",
-      "publishedAt": "2026-08-08T11:04:49.000Z",
-      "descriptionArabic": "ماذا بنى العراق بعد 38 عاماً من نهاية حرب الثماني سنوات ؟! المعلومة",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMirwNBVV95cUxOeVVSTkp1a0lrVHpTbzR2ZV9WaUcxaUlZMjNQU2VHcXNJVElyell0ZEkydTJMekJuUnd6ekhnYm4xQS1TSUt3ZGpSSmhKT3NiN0dyVmRwODVzQ0ZkV3pBZW5ycXJOeGN4ZExtYkIxVVY5WktRZHF3QTZ5X1R5SWcwYXk5WkZaSTFueGJYdmJEWmMtam1qUl9BUDYycnZUTHdOb2hocmhhUHpLa2ZQTjRtQ3Q1ZW1HQjFETW5xNzdYbl9wLVp6Q19vUnExbm1lbmYweUQ3N29jRnBuckJXQlRCMDZiRkdWTWxCcU1kb28xeDRQUGZDaXlHdWE3RmluR01jZk9HLTRaTUpmNnZsVEs1WjFLbVNzVkhGRnpLMXpmVVQ5akR0WEVxUXRsUGluek9HOEFWZ1RXbjUwZ0ZkMkpNdmZCZ0lKczN4dTkyZHdRa3d6YTVCeTg2bGR4REhPWS1LYmg0Zlk2NEJZSEdabmQzRlpjM21uY1U3QTJpMzJsRDNtSE5DVUhDTnQxWHlFQ09LWWpfQzlRdjhXWENVenNvcFVLaXNLVXJ2QTEwc2ZqWQ?oc=5",
-      "articleUrl": "https://almaalomah.me/articles/140590/%D9%85%D8%A7%D8%B0%D8%A7-%D8%A8%D9%86%D9%89-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D8%B9%D8%AF-38-%D8%B9%D8%A7%D9%85%D8%A7-%D9%85%D9%86-%D9%86%D9%87%D8%A7%D9%8A%D8%A9-%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%AB%D9%85%D8%A7%D9%86%D9%8A-%D8%B3%D9%86%D9%88%D8%A7%D8%AA",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-08-16T04:06:47.506Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-16T04:08:54.101Z",
-      "canonicalUrl": "https://almaalomah.me/articles/140590/%D9%85%D8%A7%D8%B0%D8%A7-%D8%A8%D9%86%D9%89-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A8%D8%B9%D8%AF-38-%D8%B9%D8%A7%D9%85%D8%A7-%D9%85%D9%86-%D9%86%D9%87%D8%A7%D9%8A%D8%A9-%D8%AD%D8%B1%D8%A8-%D8%A7%D9%84%D8%AB%D9%85%D8%A7%D9%86%D9%8A-%D8%B3%D9%86%D9%88%D8%A7%D8%AA",
-      "originalTextArabic": "وما تقدم في أعلاه لا يعني أن إيران أصبحت دولة نووية عسكرياً؛ فهذه مسألة مختلفة تحتاج إلى إثبات مستقل، لكن المؤكد أن المسافة العلمية والتقنية التي قطعتها إيران في المجال النووي والصناعات المرتبطة به أصبحت كبيرة جداً مقارنة بما كانت عليه في نهاية الحرب، سؤال يطرح نفسه: لماذا إستطاعت إيران أن تتقدم في التكنولوجيا بينما تراجع العراق؟ الإجابة ليست أن الإيرانيين &ldquo;أفضل&rdquo; من العراقيين، وليست أن العراق يفتقر إلى العلماء، بل العراق كان ولا يزال يمتلك عقولاً وكفاءات علمية كبيرة، والمشكلة في إختلاف المشروع الوطني. إيران بنت مؤسسات الدولة ومراكز البحث العلمي حول أهداف إستراتيجية طويلة المدى، أما العراق، فقد كان ينتقل من أزمة إلى أزمة، وكلما حاول أن يبدأ البناء جاءت أزمة وأدناه الأزمات المتتالية التي أنهكت العراق: عام 1988: نهاية حرب إيران. عام 1990: غزو الكويت. عام 1991: حرب الخليج. 1990s: الحصار والعقوبات. عام 2003: سقوط النظام والحرب والإحتلال. عام 2006&ndash;2008: العنف الطائفي والإقتتال المذهبي. عام 2014: سقوط مدن واسعة بيد داعش. عام 2017: الإنتصار العسكري على داعش، ثم أزمات سياسية وإقتصادية وإحتجاجات وتحديات أمنية مستمرة. وهكذا أصبح العراق مثل شخص يخرج من المستشفى، وقبل أن يبدأ العلاج والتأهيل يتعرض لإصابة جديدة، والمفارقة الكبرى هي أن العراق كان يملك المال وإيران بنت المعرفة، العراق يمتلك واحدة من أهم الثروات النفطية في العالم، لكن النفط وحده لا يصنع دولة متقدمة؛ البنك الدولي حذر مراراً من أن إعتماد العراق الكبير على النفط سيجعله معرضاً للصدمات، وأن ضعف القطاع الخاص وقلة الوظائف والتنويع الإقتصادي والفساد وضعف الخدمات تشكل عوائق أساسية أمام التنمية. أما إيران، ورغم العقوبات والضغوط، فقد حاولت تحويل جزء من حاجتها إلى الإنتاج المحلي إلى قاعدة صناعية وتقنية، وهنا يجب أن نتوقف عند درس بالغ الأهمية: الثروة الطبيعية تمنح الدولة فرصة، لكنها لا تمنحها تلقائياً القوة، والقوة الحقيقية تأتي من: العلم. الصناعة. التكنولوجيا. المؤسسات. التعليم. الإدارة. الإنتاج. والقدرة على تحويل المعرفة إلى قوة إقتصادية وإستراتيجية. العراق بعد 2003 كان أمام فرصة تأريخية لم تُستثمر كما يجب؛ وبعد 2003 حصل العراق على فرصة تأريخية فعلاً، حيث إرتفعت إيرادات النفط بصورة كبيرة، وعاد العراق إلى الأسواق العالمية، وأصبح بإمكانه الحصول على التكنولوجيا والإستثمارات، وإنفتحت الجامعات والإقتصاد على العالم، لكن الفرصة لم تتحول إلى مشروع نهضة. البنك الدولي وصف العراق بأنه بقي عالقاً في &ldquo;فخ الهشاشة&rdquo;، مشيراً إلى مشكلات عدم الإستقرار السياسي، والفساد، وضعف الخدمات، ونقص الوظائف، والحاجة إلى تنويع الإقتصاد بعيداً عن النفط، حتى الكهرباء، وهي أبسط مؤشر على قدرة الدولة الحديثة، ظلت مشكلة مزمنة رغم إنفاق عشرات المليارات من الدولارات، وفي تقييم للبنك الدولي، كانت إحتياجات العراق من الكهرباء بعد 2003 شديدة الإضطراب، إلى درجة أن الهدف الأول كان في بعض المراحل مجرد إعادة المنظومة إلى مستوى موثوق قريب من مستواها قبل 1991، لا بناء منظومة تتجاوز ذلك المستوى، وهذه وحدها تختصر مأساة أربعة عقود. إيران بنت &ldquo;العمق الإستراتيجي&rdquo;&hellip; والعراق بحث عن &ldquo;الأمان السياسي&rdquo; إيران بعد 1988 لم تنظر إلى أمنها بإعتباره حماية للحدود فقط، بل بنت شبكة واسعة من النفوذ الإقليمي، وطورت قدراتها الصاروخية، ووسعت صناعاتها العسكرية، وإستثمرت في الطائرات المسيّرة، وراكمت خبرات نووية وصناعية، أي أنها بنت ما يمكن تسميته: &ldquo;دولة قادرة على إنتاج أدوات قوتها&rdquo;. أما العراق، فقد أصبح بعد 2003 دولة تعتمد بدرجة كبيرة على الخارج في التكنولوجيا والتسليح والإستثمار والخدمات والبنية التحتية، وهنا تكمن المفارقة؛ فالعراق الذي كان في ثمانينيات القرن الماضي يمتلك مؤسسة عسكرية وصناعات وقدرات علمية مهمة، أصبح بعد عقود دولة تحاول إعادة بناء مؤسساتها الأساسية !ولكن هل إيران إنتصرت فعلاً؟ ليس بهذه البساطة، فإيران نفسها دفعت ثمناً باهظاً نتيجة العقوبات التي أرهقت إقتصادها، والتضخم والبطالة ومشكلات العملة والإستثمار أزمات حقيقية؛ والبرنامج النووي جلب عليها ضغوطاً دولية كبيرة؛ كما أن بناء القوة العسكرية لم يحل جميع مشكلات المواطن الإيراني؛ لذلك لا يجوز أن نقول إن إيران &ldquo;نجحت في كل شيءلكن يمكن القول شيئاً أكثر دقة: إيران نجحت في بناء قدرات إستراتيجية وتقنية وعسكرية لم تكن تملكها بهذا المستوى عام 1988؛ وهذه حقيقة يصعب تجاهلها،؛أما العراق، فقد إمتلك الموارد والإمكانات التي كان يمكن أن تجعله واحداً من أهم إقتصادات المنطقة، لكنه لم يستطع تحويلها إلى مشروع تنموي مستدام؛ من ربح الحرب إذن؟ إذا أردنا الإجابة التأريخية، فالحرب نفسها لم تمنح أحد الطرفين نصراً إستراتيجياً واضحاً؛\n\nأما إذا إنتقلنا من سؤال &ldquo;من ربح الحرب؟&rdquo; إلى سؤال &ldquo;من أحسن إدارة ما بعد الحرب؟&rdquo; فالصورة تختلف إيران حولت تجربة الحرب إلى جزء من بناء عقيدتها الأمنية والصناعية والعسكرية؛ العراق لم يستطع تحويل نهاية الحرب إلى مشروع بناء طويل الأمد. وهذا هو الدرس الأخطر؛ الحروب لا تنتهي عندما تتوقف المدافع؛ الحرب تنتهي فعلاً عندما تتحول الدولة من إقتصاد الحرب إلى إقتصاد المعرفة، ومن ثقافة التعبئة إلى ثقافة البناء، ومن شراء السلاح إلى إنتاج التكنولوجيا، ومن إستهلاك الموارد إلى إستثمارها: 8 آب 1988 ذكرى يجب ألا تكون مجرد مناسبة بعد قرابة أربعة عقود، ينبغي للعراقي أن يسأل نفسه: ماذا كان يمكن أن يكون عليه العراق لو إستثمرنا أربعين عاماً في التعليم والصناعة والزراعة والطاقة والتكنولوجيا؟ ماذا لو أصبح النفط مصدراً لتمويل الجامعات ومراكز الأبحاث والمصانع، لا مجرد وسيلة لتمويل الرواتب؟ وماذا لو تحول العراق إلى مركز إقليمي للطاقة والنقل والتجارة؟وماذا لو تم بناء دولة مؤسسات لا دولة أزمات؟ وماذا لو تعلمنا من إيران، لا بمعنى تقليد نظامها السياسي، وإنما بمعنى فهم كيف تبني دولةٌ ما قدراتٍ إستراتيجية محلية رغم الحصار والضغوط؟ هذه الأسئلة ليست ترفاً فكرياً بل إنها أسئلة عن مستقبل العراق. في 8 آب 1988 خرج العراق وإيران من حرب إستمرت قرابة ثماني سنوات، وإيران خرجت من الحرب لتبدأ مشروع بناء القوة، العراق خرج من الحرب ليدخل سلسلة جديدة من الحروب والأزمات، وبين التأريخين ضاعت عقود؛ وإيران أستثمرت في الصواريخ والتكنولوجيا والبرنامج النووي والصناعات العسكرية والبحث العلمي والنفوذ الإقليمي، أما العراق أمتلك النفط، لكنه لم ينجح حتى الآن في تحويل هذه الثروة إلى إقتصاد متنوع ومستدام يضعه في مصاف الدول المتقدمة. وهنا لا تكمن المأساة في أن إيران تطورت، المأساة الحقيقية أن العراق لم يتطور بالسرعة التي تسمح له بمكانته وإمكاناته. العراق لا يحتاج اليوم إلى حرب جديدة كي يثبت وجوده، بل يحتاج إلى ثورة في الإدارة، والتعليم، والصناعة، والزراعة، والطاقة، والتكنولوجيا، ومكافحة الفساد، ويحتاج إلى أن ينتقل من دولة تستهلك النفط إلى دولة تستثمره، ومن دولة تستورد التكنولوجيا إلى دولة تنتجها، ومن دولة تنتظر الحلول من الخارج إلى دولة تمتلك قرارها وإمكاناتها. لأن السؤال الذي ينبغي أن يطرحه العراقي في ذكرى 8 آب ليس: &ldquo;من انتصر في حرب الثماني سنوات؟&rdquo; بل: &ldquo;لماذا بعد 38 عاماً من توقف الحرب ما زلنا نسأل: ماذا حقق العراق؟&rdquo; وهذا السؤال، في الحقيقة، أقسى من كل أسئلة الحرب.",
-      "sourceHost": "almaalomah.me",
-      "contentChars": 6271,
-      "arabicRatio": 0.99,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-16T04:10:20.082Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "f2abae45266f0fde2cbfb4a3c610093c981bb48b290987f8baf826a51e81642d",
-        "sourceChars": 6271,
-        "translatedChars": 3843,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "09706a1d060373a13965",
-        "preferredTermsApplied": [
-          "세계은행"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-08-16T04:11:54.489Z",
-        "titleKo": "8년 전쟁 종전 38년 후, 이라크는 무엇을 건설했는가?!",
-        "fullTextKo": "앞서 언급한 내용이 이란이 군사적으로 핵보유국이 되었다는 뜻은 아니다. 이는 별개의 문제이며 독립적인 입증이 필요하다. 그러나 확실한 것은 이란이 핵 분야와 그와 연관된 산업에서 밟아온 과학적·기술적 거리가 전쟁이 끝난 시점과 비교해 매우 커졌다는 점이다. 이런 질문이 제기된다. 이란은 기술 분야에서 발전할 수 있었는데 이라크는 왜 후퇴했는가? 답은 이란인들이 이라크인들보다 “더 우수하다”는 것이 아니며, 이라크에 과학자들이 부족하다는 것도 아니다. 이라크는 과거에도, 지금도 뛰어난 인재와 과학적 역량을 보유하고 있다. 문제는 국가 프로젝트의 차이에 있다. 이란은 장기적인 전략 목표를 중심으로 국가기관과 과학연구센터를 세웠다. 반면 이라크는 위기에서 위기로 옮겨 다녔고, 건설을 시작하려 할 때마다 위기가 닥쳤다. 다음은 이라크를 소진시킨 연속된 위기들이다.\n\n1988년: 이란과의 전쟁 종식.\n1990년: 쿠웨이트 침공.\n1991년: 걸프전.\n1990년대: 봉쇄와 제재.\n2003년: 정권 붕괴와 전쟁 및 점령.\n2006~2008년: 종파 간 폭력과 종파적 내전.\n2014년: 광범위한 도시들이 داعش의 수중에 넘어감.\n2017년: داعش에 대한 군사적 승리, 이후에도 지속된 정치·경제 위기와 시위 및 안보 도전.\n\n이렇게 이라크는 병원에서 나온 사람이 치료와 재활을 시작하기도 전에 새로운 부상을 입는 것과 같은 처지가 되었다. 가장 큰 역설은 이라크가 돈을 보유했고 이란은 지식을 쌓았다는 점이다. 이라크는 세계에서 가장 중요한 석유 부 가운데 하나를 보유하고 있지만, 석유만으로 선진국가를 만들 수는 없다. 세계은행은 이라크의 석유 의존도가 높을수록 충격에 취약해질 것이라고 여러 차례 경고했으며, 민간 부문의 취약성, 일자리 부족, 경제 다변화의 부족, 부패와 열악한 공공서비스가 발전을 가로막는 핵심 장애물이라고 지적했다.\n\n반면 이란은 제재와 압박에도 불구하고 자국의 필요 가운데 일부를 국내 생산으로 전환해 산업·기술 기반으로 만들려 했다. 여기서 매우 중요한 교훈에 주목해야 한다. 천연자원은 국가에 기회를 제공하지만, 자동으로 힘을 부여하지는 않는다. 진정한 힘은 과학, 산업, 기술, 제도, 교육, 행정, 생산, 그리고 지식을 경제적·전략적 힘으로 전환하는 능력에서 나온다.\n\n2003년 이후 이라크에는 역사적인 기회가 있었지만, 이를 제대로 활용하지 못했다. 실제로 2003년 이후 이라크는 역사적인 기회를 얻었다. 석유 수입은 크게 증가했고, 이라크는 세계시장으로 복귀했으며, 기술과 투자를 확보할 수 있게 되었다. 대학과 경제도 세계를 향해 열렸다. 그러나 그 기회는 국가 부흥 프로젝트로 전환되지 못했다.\n\n세계은행은 이라크가 정치적 불안정, 부패, 열악한 공공서비스, 일자리 부족, 석유에서 벗어난 경제 다변화의 필요성 등의 문제를 언급하며 이라크가 “취약성의 함정”에 계속 갇혀 있다고 평가했다. 현대국가의 역량을 보여주는 가장 단순한 지표인 전력조차 수백억 달러를 지출했음에도 만성적인 문제로 남아 있다. 세계은행의 평가에 따르면 2003년 이후 이라크의 전력 수요는 매우 불안정했으며, 어떤 시기에는 첫 번째 목표가 그 체계를 그보다 더 높은 수준으로 건설하는 것이 아니라 1991년 이전의 신뢰할 수 있는 수준에 가깝게 복구하는 것에 불과했다. 이것만으로도 40년에 걸친 비극이 요약된다.\n\n이란은 “전략적 깊이”를 건설했고… 이라크는 “정치적 안전”을 모색했다\n\n1988년 이후 이란은 안보를 단순히 국경을 보호하는 것으로 보지 않았다. 이란은 광범위한 지역 영향력 네트워크를 구축하고, 미사일 역량을 발전시키며, 군수산업을 확대하고, 무인기에 투자했으며, 핵·산업 분야의 경험을 축적했다. 즉 이란은 “자신의 힘을 만들어낼 수 있는 국가”라고 부를 수 있는 것을 건설했다.\n\n반면 이라크는 2003년 이후 기술, 무장, 투자, 서비스와 기반시설에서 외부에 크게 의존하는 국가가 되었다. 여기서 역설이 드러난다. 1980년대 이라크는 중요한 군사기관과 산업 및 과학 역량을 보유하고 있었지만, 수십 년이 지난 뒤에는 핵심 국가기관을 다시 건설하려는 국가가 되었다!\n\n그러나 이란이 정말 승리했는가? 그렇게 단순하지는 않다. 이란 역시 경제를 압박한 제재로 막대한 대가를 치렀고, 인플레이션과 실업, 통화와 투자 문제는 실제 위기다. 핵 프로그램은 이란에 커다란 국제적 압박을 초래했다. 또한 군사력 건설이 이란 국민의 모든 문제를 해결한 것도 아니다. 따라서 이란이 “모든 면에서 성공했다”고 말해서는 안 된다. 다만 더 정확하게는 이렇게 말할 수 있다. 이란은 1988년에 그 정도 수준으로 보유하지 못했던 전략적·기술적·군사적 역량을 구축하는 데 성공했다. 이는 외면하기 어려운 사실이다.\n\n이라크는 이라크를 이 지역의 가장 중요한 경제국 가운데 하나로 만들 수 있었던 자원과 역량을 보유했지만, 이를 지속 가능한 발전 프로젝트로 전환하지 못했다.\n\n그렇다면 누가 전쟁에서 이겼는가? 역사적으로 답하려 한다면, 전쟁 자체는 어느 한쪽에도 분명한 전략적 승리를 안겨주지 않았다.\n\n그러나 “누가 전쟁에서 이겼는가?”라는 질문에서 “누가 전쟁 이후를 더 잘 관리했는가?”라는 질문으로 옮겨가면 그림은 달라진다. 이란은 전쟁의 경험을 안보·산업·군사 교리를 구축하는 과정의 일부로 전환했다. 이라크는 전쟁의 종식을 장기적인 건설 프로젝트로 전환하지 못했다.\n\n이것이 가장 위험한 교훈이다. 전쟁은 포성이 멈출 때 끝나는 것이 아니다. 전쟁은 국가가 전쟁경제에서 지식경제로, 동원 문화에서 건설 문화로, 무기 구매에서 기술 생산으로, 자원 소비에서 자원 투자로 전환될 때 비로소 끝난다.\n\n1988년 8월 8일은 단순한 기념일로 남아서는 안 된다. 거의 40년이 지난 지금, 이라크인은 스스로에게 물어야 한다. 우리가 40년을 교육·산업·농업·에너지·기술에 투자했다면 이라크는 어떤 모습이었을까? 석유가 단순히 급여를 지급하는 수단이 아니라 대학과 연구센터, 공장에 자금을 대는 원천이 되었다면 어땠을까? 이라크가 에너지·운송·무역의 지역 중심지로 변모했다면 어땠을까? 위기의 국가가 아니라 제도국가가 건설되었다면 어땠을까? 이란을 배웠다면 어땠을까? 이는 이란의 정치체제를 모방한다는 뜻이 아니라, 봉쇄와 압박 속에서도 한 국가가 어떻게 국내의 전략적 역량을 구축하는지 이해한다는 뜻이다.\n\n이 질문들은 지적 사치가 아니라 이라크의 미래에 관한 질문이다. 1988년 8월 8일, 이라크와 이란은 거의 8년간 이어진 전쟁에서 벗어났다. 이란은 전쟁에서 벗어나 힘을 건설하는 프로젝트를 시작했고, 이라크는 전쟁에서 벗어나 새로운 전쟁과 위기의 연속으로 들어갔다. 두 역사적 시점 사이에서 수십 년이 사라졌다.\n\n이란은 미사일, 기술, 핵 프로그램, 군수산업, 과학연구와 지역 영향력에 투자했다. 반면 이라크는 석유를 보유했지만, 지금까지도 이 자원을 선진국 대열에 들어설 수 있는 다변화되고 지속 가능한 경제로 전환하는 데 성공하지 못했다.\n\n비극은 이란이 발전했다는 데 있지 않다. 진정한 비극은 이라크가 자신의 지위와 역량에 걸맞은 속도로 발전하지 못했다는 데 있다.\n\n오늘날 이라크는 자신의 존재를 증명하기 위해 새로운 전쟁이 필요하지 않다. 이라크에 필요한 것은 행정, 교육, 산업, 농업, 에너지, 기술과 부패 척도의 혁명이다. 또한 석유를 소비하는 국가에서 석유를 투자하는 국가로, 기술을 수입하는 국가에서 기술을 생산하는 국가로, 외부의 해결책을 기다리는 국가에서 자신의 결정권과 역량을 보유한 국가로 전환해야 한다.\n\n왜냐하면 8월 8일 기념일에 이라크인이 던져야 할 질문은 “8년 전쟁에서 누가 승리했는가?”가 아니라 “전쟁이 멈춘 지 38년이 지난 지금도 우리는 왜 ‘이라크가 무엇을 이뤘는가?’라고 묻고 있는가?”이기 때문이다.\n\n그리고 이 질문은 사실 전쟁에 관한 그 어떤 질문보다도 더 가혹하다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "f2abae45266f0fde2cbfb4a3c610093c981bb48b290987f8baf826a51e81642d",
-      "previousContentHash": "aa675b15cdaae65c8ed7872c31ebb5abef5acffce721fe50e262b00a848e439b",
-      "contentCheckedAt": "2026-08-16T04:10:20.082Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-XXPvt28kv9fE65hI9t",
-        "representativeArticleId": "discovery-dyz6UvZO7BFwsDGrZWEOlsEV",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 35,
-        "stars": 2,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "CATEGORY_RULES_STAR_V7",
-        "scoredAt": "2026-08-16T04:11:24.095Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 17,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 7,
-        "scoreFingerprint": "cd9b94b8aa949f737de9",
-        "ruleScore": 35,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -40548,150 +40262,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-edWQLN93lIVS9xXIzWSZK5Ba",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "رويترز: شركات صينية وهندية تسعى لإرسال سفن عبر هرمز لتحميل النفط العراقي وسط تردد مالكي السفن",
-      "sourceArabic": "Elnashra",
-      "sourceHomepage": "https://www.elnashra.com",
-      "publishedAt": "2026-08-07T07:58:33.000Z",
-      "descriptionArabic": "رويترز: شركات صينية وهندية تسعى لإرسال سفن عبر هرمز لتحميل النفط العراقي وسط تردد مالكي السفن Elnashra",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMisANBVV95cUxNZlBrTWFta0hoVnlKeDZ2V0YxUk14MmkxS042S1ZPbHpPbGNjNmFNQVpRUzh0SEVSZTF4Vjk5NG4zZGVUZGFXaDFsbDdnYmJKOGJFMndUa1dJVUw2T25NZUxxdEIyajQzX1N6ZmdkdTBQZ3JTQ2NtLWplUjBFYmgycy0zSGJ0RDFPc3lyLVV1dW1nSkQ3WUt5SldMdjhZeERkRTNwWDBOZUJCRTY0Q2VDYVg5bVlxRjVmcDZwWXppMlExQi1vbEpnWTVva01SODhWOG9FRUJ1bHBMaVRfQ2FRTXVXRWhxNktDS0d1NnhvN2luN2w0eFQ5bEtsdk1vUjZGRm53SnUtQ2ljWGhPTmR3aTlYby1mbmFKRXBlRXF5WGNaQmQwbS00cWNnS0taTHJVWG12ZElpLWFQYlpVcUhUWV9tWDRBaHd2TFVNRTdYM1FhWkN6VkphOFRiSVZsWHE4c184dVFGUFpVWkQyYkxRa3czQVpDTVB4Q01oTzFoQWZPdUpURk53d01XQ3kzYUJ3SzRFWVBMQTFLcGxPRjl2SXUtUGNwRVVWaC1Kd04wdnA?oc=5",
-      "articleUrl": "https://www.elnashra.com/news/show/1794176/%D8%B1%D9%88%D9%8A%D8%AA%D8%B1%D8%B2-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D9%88%D9%87%D9%86%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B3%D8%B9%D9%89-%D9%84%D8%A5%D8%B1%D8%B3%D8%A7%D9%84-%D8%B3%D9%81%D9%86-%D8%B9%D8%A8%D8%B1-%D9%87%D8%B1%D9%85%D8%B2",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-08-16T04:06:47.784Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-16T04:09:03.663Z",
-      "canonicalUrl": "https://www.elnashra.com/news/show/1794176/%D8%B1%D9%88%D9%8A%D8%AA%D8%B1%D8%B2-%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D8%B5%D9%8A%D9%86%D9%8A%D8%A9-%D9%88%D9%87%D9%86%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B3%D8%B9%D9%89-%D9%84%D8%A5%D8%B1%D8%B3%D8%A7%D9%84-%D8%B3%D9%81%D9%86-%D8%B9%D8%A8%D8%B1-%D9%87%D8%B1%D9%85%D8%B2",
-      "originalTextArabic": "أفادت وكالة \"رويترز\"، نقلًا عن مصادر في قطاع الشحن، بأن العديد من شركات التكرير الصينية والهندية سعت هذا الأسبوع إلى حجز سفن لدخول ​ مضيق هرمز ​ وتحميل النفط الخام في محطة ​ البصرة ​ النفطية ب​ العراق ​، مدفوعةً بخصومات كبيرة.",
-      "sourceHost": "elnashra.com",
-      "contentChars": 226,
-      "arabicRatio": 1.0259,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-16T04:10:21.165Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "60b6aeaa1c2ad115f339f9b3e6044684977817f7b8bb794e4984ccba4be3a238",
-        "sourceChars": 226,
-        "translatedChars": 115,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "a1e1a294670b6b14ebb8",
-        "preferredTermsApplied": [
-          "호르무즈 해협",
-          "바스라"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-08-16T04:11:57.690Z",
-        "titleKo": "로이터: 중국·인도 기업들, 선박을 호르무즈 해협으로 보내 이라크산 원유 선적 추진… 선주들은 주저",
-        "fullTextKo": "로이터통신은 해운업계 소식통을 인용해, 중국과 인도의 여러 정유업체가 큰 폭의 할인에 이끌려 이번 주 선박을 예약해 호르무즈 해협에 진입하고 이라크의 바스라 석유 터미널에서 원유를 선적하려 했다고 보도했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "titleCorrection": {
-        "previousTitleArabic": "أخبار لبنان والشرق الأوسط",
-        "correctedTitleArabic": "رويترز: شركات صينية وهندية تسعى لإرسال سفن عبر هرمز لتحميل النفط العراقي وسط تردد مالكي السفن",
-        "method": "ARTICLE_H1",
-        "correctedAt": "2026-08-16T04:10:41.995Z"
-      },
-      "contentHash": "60b6aeaa1c2ad115f339f9b3e6044684977817f7b8bb794e4984ccba4be3a238",
-      "contentCheckedAt": "2026-08-16T04:10:21.165Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-uhG09OouBJ6MQi9lbX",
-        "representativeArticleId": "discovery-edWQLN93lIVS9xXIzWSZK5Ba",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 4,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V7",
-        "scoredAt": "2026-08-16T04:11:24.095Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 7,
-        "scoreFingerprint": "ea3576b400591f5b9844",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -47022,9 +46592,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -48003,9 +47573,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -48240,9 +47810,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -50401,9 +49971,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -52111,6 +51681,1516 @@
         "aiReasonKo": "",
         "aiBreakdown": null
       }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-FhpB4qfJil_iiySx_kFBil78",
+      "keywordId": "international-gulf-001",
+      "category": "economy",
+      "priority": 93,
+      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "الخليج",
+        "الملاحة",
+        "تصدير النفط",
+        "ناقلات",
+        "توتر إقليمي"
+      ],
+      "excludedTerms": [
+        "سياحة",
+        "طقس"
+      ],
+      "originalTitleArabic": "من جيهان إلى كركوك… لماذا أصبحت الشراكة التركية العراقية أحد أهم مفاتيح أمن الطاقة العالمي؟",
+      "sourceArabic": "ترك برس",
+      "sourceHomepage": "https://www.turkpress.co",
+      "publishedAt": "2026-08-02T15:45:25.000Z",
+      "descriptionArabic": "من جيهان إلى كركوك… لماذا أصبحت الشراكة التركية العراقية أحد أهم مفاتيح أمن الطاقة العالمي؟ ترك برس",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE9YRVFtcElkTE83aWFxUTNDUnc4QnBiWk51SEJQVXBZUkNZb1FtSFdNOGtCVlRCTFJieG9zR0pNdHkxaV9HaHQxa2VYRTU?oc=5",
+      "articleUrl": "https://www.turkpress.co/node/111431",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:39.009Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:35:58.427Z",
+      "canonicalUrl": "https://www.turkpress.co/node/111431",
+      "originalTextArabic": "-->\n -->\n\n غزوان مصري - خاص ترك برس\n\n في عالم تتغير فيه خرائط النفوذ مع كل أزمة طاقة، لم يعد السؤال: من يملك النفط؟ بل أصبح: من يملك طريق وصوله إلى الأسواق العالمية؟ ومن هنا، لا يمكن النظر إلى الاتفاق النفطي الأخير بين تركيا والعراق باعتباره عقداً فنياً لنقل النفط، بل خطوة استراتيجية تنقل العلاقة بين البلدين من مرحلة العبور إلى مرحلة الشراكة في إنتاج الطاقة ونقلها وتأمينها، في وقت يبحث فيه العالم عن مسارات أكثر أمناً واستقراراً في ظل التوترات التي تهدد الملاحة في مضيق هرمز.\n\n هذا التحول لا يقتصر على قطاع الطاقة، بل يعكس انتقال العلاقات التركية العراقية إلى مرحلة جديدة تقوم على التكامل الاقتصادي، حيث تتقاطع مشاريع النفط والغاز مع التجارة، والمقاولات، والمعابر الحدودية، والممرات اللوجستية، لتشكّل معاً أحد أهم المشاريع الاقتصادية في الشرق الأوسط.\n\n وجاء الاتفاق الموقع بين أنقرة وبغداد لمدة عام واحد لنقل 750 ألف برميل يومياً عبر خط الأنابيب العراقي–التركي، ليؤكد رغبة البلدين في إعادة تشغيل هذا الشريان الاستراتيجي بكفاءة عالية، مع سعي تركيا إلى الاستفادة من كامل طاقته التصميمية التي تبلغ 1.5 مليون برميل يومياً. ولا يقتصر هدف الاتفاق على خدمة البلدين، بل يمتد إلى تعزيز أمن إمدادات الطاقة للأسواق العالمية، في ظل تزايد المخاوف من اضطرابات الملاحة في الخليج العربي.\n\n لكن التطور الأهم يتمثل في أن تركيا لم تعد تكتفي بدور دولة العبور. فدخول شركة البترول التركية TPAO شريكاً بحصة 15% في ائتلاف تطوير حقول كركوك، إلى جانب شركات عالمية، يعني أن العلاقة انتقلت من مرحلة نقل النفط إلى المشاركة في إنتاجه. وتشمل المرحلة الأولى من المشروع حقولاً تنتج نحو 300 ألف برميل يومياً، مع احتياطيات تقدر بما يعادل 3 مليارات برميل، وهو ما يمنح هذه الشراكة بعداً استراتيجياً طويل الأمد.\n\n ومن هنا تتغير طبيعة العلاقة الاقتصادية بين البلدين. فتركيا أصبحت شريكاً في سلسلة القيمة الكاملة لقطاع الطاقة؛ من تطوير الحقول، إلى نقل النفط عبر خط كركوك–جيهان، وصولاً إلى تصديره عبر موانئ البحر المتوسط. وهذا التحول يعزز مصالح البلدين المشتركة، ويجعل استقرار هذه المنظومة هدفاً اقتصادياً واستراتيجياً للطرفين.\n\n ولا تنفصل هذه التطورات عن الصورة الاقتصادية الأوسع. فالعراق اليوم هو خامس أكبر سوق للصادرات التركية في العالم، إذ بلغت قيمة الصادرات التركية إليه أكثر من 12 مليار دولار عام 2025، من إجمالي تبادل تجاري يقارب 16.8 مليار دولار، ليصبح أكبر شريك تجاري لتركيا في العالم الإسلامي. وهذه الأرقام تعكس عمق الاعتماد الاقتصادي المتبادل بين البلدين.\n\n كما يحتل العراق مكانة متقدمة في نشاط شركات المقاولات التركية، التي نفذت أكثر من 1100 مشروع بقيمة تقارب 36.5 مليار دولار، ليصبح العراق ثالث أكبر سوق عالمية للمقاولين الأتراك. وهذا يعني أن العلاقة الاقتصادية لم تعد قائمة على تصدير السلع فقط، بل أصبحت تشمل بناء الطرق والجسور والمطارات ومحطات الطاقة والبنية التحتية التي يحتاجها العراق في مسيرة إعادة الإعمار.\n\n وفي الوقت نفسه، تتجه أنقرة وبغداد إلى بناء شبكة متكاملة من الممرات الاقتصادية. فالإعلان عن قرب افتتاح معبر نصيبين–القامشلي، وربطه بمعبر اليعربية ثم الموصل، يمنح التجارة التركية منفذاً جديداً نحو العراق والخليج. وعندما يلتقي هذا المسار مع مشروع طريق التنمية الذي يربط ميناء الفاو بتركيا، تتشكل شبكة لوجستية تمتد من الخليج العربي إلى البحر المتوسط، مروراً بالعراق وتركيا، لتتحول المنطقة إلى مركز عبور للتجارة والطاقة معاً.\n\n ولا يمكن فصل هذه المشاريع عن التحولات العالمية في قطاع الطاقة. فالتوترات المتكررة في الخليج، واحتمالات تعطل الملاحة في مضيق هرمز، دفعت الدول المستهلكة للطاقة إلى البحث عن مسارات أكثر أمناً ومرونة. وفي هذا السياق، يكتسب خط كركوك–جيهان أهمية تتجاوز حدود تركيا والعراق، لأنه يوفر منفذاً بديلاً لإيصال النفط إلى الأسواق الأوروبية عبر البحر المتوسط، ويخفف من الاعتماد الكامل على طرق النقل البحرية الحساسة.\n\n ومن المرجح أن تزداد أهمية هذا الخط إذا نجحت تركيا في تشغيله بطاقته الكاملة، بالتوازي مع تطوير التعاون في مجالات الغاز الطبيعي والبتروكيماويات والطاقة الكهربائية، وهو ما قد يحول الشراكة التركية العراقية إلى أحد أهم محاور أمن الطاقة في المنطقة.\n\n ورغم أن العلاقات بين البلدين شهدت في مراحل سابقة خلافات سياسية وأمنية حول ملفات الحدود، والمياه، ومكافحة الإرهاب، فإن التجربة أثبتت أن الاقتصاد كان دائماً القاسم المشترك الذي حافظ على استمرارية التواصل. واليوم يبدو أن المصالح الاقتصادية أصبحت أقوى من عوامل الخلاف، وأن لغة الاستثمار والتجارة بدأت تفرض نفسها على حساب لغة الأزمات.\n\n إن ما يجري بين تركيا والعراق ليس مجرد اتفاق لنقل النفط أو زيادة في حجم التجارة، بل إعادة صياغة لدور البلدين في الاقتصاد الإقليمي. فالعالم يعيش سباقاً على إنشاء الممرات التجارية ومراكز الطاقة، وتركيا والعراق يمتلكان من الموقع الجغرافي والإمكانات الاقتصادية ما يؤهلهما ليكونا جزءاً أساسياً من هذه الخريطة الجديدة.\n\n قبل سنوات كان يُنظر إلى خط كركوك–جيهان على أنه مجرد أنبوب لنقل النفط، أما اليوم فقد أصبح رمزاً لتحول أوسع؛ فتركيا والعراق لا يبنيان خطاً للطاقة فحسب، بل يعيدان رسم خريطة الممرات الاقتصادية في الشرق الأوسط. وإذا نجحت مشاريع الطاقة والمعابر البرية وطريق التنمية في التكامل، فإن المنطقة قد تشهد ولادة محور اقتصادي يمتد من الخليج إلى البحر المتوسط، لتتحول أنقرة وبغداد من جارتين تتقاسمان الحدود إلى شريكتين تتقاسمان صناعة المستقبل.\n\n عن الكاتب \n\n غزوان مصري \n\n نائب رئيس المنتدى الدولي للأعمال (IBF) وعضو المجلس الاستشاري الأعلى في جمعية الموصياد (MÜSİAD)، ورئيس مجلس إدارة مجموعة سنترال الدولية \n\n هل أعجبك الموضوع؟ شاركه مع أصدقائك!\n\n مواضيع ذات علاقة \n\n تركيا تصعد إلى الدوري العالمي عبر كركوك \n\n محافظ كركوك: مشروع \"طريق التنمية\" هو \"النهر الثالث\" الذي سيربط العراق بتركيا \n\n بعد قرن من معاهدة أنقرة.. تركيا تدخل حقول كركوك بشراكة نفطية \"تاريخية\" \n\n مواضيع أخرى للكاتب \n\n من جيهان إلى كركوك… لماذا أصبحت الشراكة التركية العراقية أحد أهم مفاتيح أمن الطاقة العالمي؟ \n\n المنطقة الحرة في سراقب… بوابة استراتيجية من الخليج إلى أوروبا \n\n الحرب القادمة بدأت بالفعل… لكن كثيرا من دولنا لم تدرك ذلك بعد \n\n مقالات الكتاب المنشورة تعبر عن رأي كاتبها، ولا تعبر بالضرورة عن رأي ترك برس\n\n اقرأ ايضاً \n\n وماذا عن الكادر القيادي للتنظيم؟ \n\n الدولة التي جعلت العاصفة خلفها: كيف تكسب تركيا؟ \n\n إسرائيل هي \"السبب\"، وكل ما عداها \"نتيجة\" \n\n الاستراتيجية المغربية في عهد الملك محمد السادس \n\n من جيهان إلى كركوك… لماذا أصبحت الشراكة التركية العراقية أحد أهم مفاتيح أمن الطاقة العالمي؟ \n\n من حرية الصحافة إلى سلطة الظهور: الوجه الصامت للرقابة الحديثة في الغرب \n\n من الدبابات إلى الخوارزميات: قمة الناتو في تركيا وتحوّل الردع نحو حرب البيانات \n\n الحرب الأمريكية الإيرانية: مأزق متبادل يُفشل الهدن ويُطيل أمد الصراع \n\n الدعاء في القرآن الكريم عبادة عظيمة وسلاح المؤمن في جلب الخير ودفع البلاء وتحقيق الفرج",
+      "sourceHost": "turkpress.co",
+      "contentChars": 6085,
+      "arabicRatio": 1.012,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:15.157Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "economy",
+        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-eZF3h1wgT2j9Kif6nx",
+        "representativeArticleId": "discovery-FhpB4qfJil_iiySx_kFBil78",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 60,
+        "level": "REFERENCE",
+        "levelKo": "참고",
+        "reportStatus": "OPTIONAL_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 10,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "1140c6098cc9ef0a4802",
+        "ruleScore": 60,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "b9079b98267db6165597a888d58709a7a628c8a6a29d082db9e234046ce40a35",
+      "contentCheckedAt": "2026-08-03T01:38:15.157Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-7wmwHu2m0dxl55SuBXKOAVHQ",
+      "keywordId": "economy-investment-001",
+      "category": "bismayah",
+      "priority": 97,
+      "queryArabic": "\"الهيئة الوطنية للاستثمار\" مشاريع سكنية",
+      "requiredTerms": [
+        "الهيئة الوطنية للاستثمار"
+      ],
+      "optionalTerms": [
+        "مشاريع سكنية",
+        "مدن جديدة",
+        "عقود استثمار",
+        "مستثمر أجنبي"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "ندوة"
+      ],
+      "originalTitleArabic": "مباحثات مصرية عراقية لفتح آفاق جديدة للتعاون الاستثماري وتفعيل الزيارات المتبادلة بين مجتمعي الأعمال",
+      "sourceArabic": "بوابة الأهرام",
+      "sourceHomepage": "https://gate.ahram.org.eg",
+      "publishedAt": "2026-08-02T12:43:00.000Z",
+      "descriptionArabic": "مباحثات مصرية عراقية لفتح آفاق جديدة للتعاون الاستثماري وتفعيل الزيارات المتبادلة بين مجتمعي الأعمال بوابة الأهرام",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9icjJLNlNOYVpiOExpN3AyOE9TYU9WdUYzWDhpZEQzTllKYXNrTUJNa0tocEFyZnpzM21sWndsNkU3cGRKYXpwN2tDaW04NzEwZmJFRjNR?oc=5",
+      "articleUrl": "https://gate.ahram.org.eg/News/5881641.aspx",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:37.613Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:35:59.570Z",
+      "canonicalUrl": "https://gate.ahram.org.eg/News/5881641.aspx",
+      "originalTextArabic": "في إطار توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، بتعزيز العلاقات الاقتصادية والاستثمارية مع الدول العربية الشقيقة، وتكثيف جهود التمثيل التجاري المصري لدعم الاستثمارات المصرية وفتح آفاق جديدة أمام القطاع الخاص، عقد المستشار التجاري سمير قرشي، رئيس مكتب التمثيل التجاري المصري في بغداد، لقاءً مع السيد سالار محمد أمين، نائب رئيس الهيئة الوطنية للاستثمار بجمهورية العراق، بحضور حيدر حمادة، مدير عام دائرة العلاقات والإعلام بالهيئة، وعدد من مسؤولي الهيئة.\n\n وتناول اللقاء سبل تعزيز التعاون الاقتصادي والاستثماري بين مصر والعراق، وفتح مجالات جديدة للتنسيق المشترك بما يسهم في تطوير العلاقات الثنائية، وتفعيل الزيارات المتبادلة بين الجهات المعنية ومجتمعي الأعمال في البلدين، بما يعزز فرص إقامة شراكات واستثمارات مشتركة.\n\n كما ناقش الجانبان آليات تسهيل دخول المستثمرين المصريين إلى العراق، وتبسيط إجراءات منح سمات الدخول للمستثمرين ورجال الأعمال العراقيين، بما يدعم حركة الاستثمار، ويشجع على إقامة مشروعات جديدة، ويعزز التواصل المباشر بين المستثمرين في البلدين.\n\n وأكد الجانبان أهمية دعم القطاع الخاص باعتباره شريكًا رئيسيًا في تحقيق التنمية الاقتصادية، والعمل على توسيع دوره في تنفيذ المشروعات الاستثمارية، مع مواصلة الجهود الرامية إلى تهيئة بيئة أعمال جاذبة للاستثمار، وتشجيع تبادل الخبرات والاستفادة من الفرص الاستثمارية المتاحة.\n\n ومن جانبه، أكد الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، أن مصر تولي اهتمامًا كبيرًا بتعزيز التعاون الاقتصادي والاستثماري مع جمهورية العراق، انطلاقًا من العلاقات التاريخية التي تربط البلدين، والفرص الواعدة المتاحة أمام مجتمع الأعمال، مشيرًا إلى أن الوزارة تعمل على دعم نفاذ الشركات المصرية إلى السوق العراقية، وزيادة الاستثمارات المشتركة، وتعزيز دور القطاع الخاص في تنفيذ المشروعات التنموية.\n\n وأضاف الوزير أن الوزارة تحرص على تعزيز التواصل مع المؤسسات الاقتصادية والاستثمارية العراقية، والعمل على إزالة التحديات التي قد تواجه المستثمرين، بما يسهم في تهيئة بيئة أكثر جذبًا للاستثمار، وتشجيع إقامة شراكات استراتيجية تحقق المصالح الاقتصادية المشتركة.\n\n ومن جانبه، أكد الدكتور عبد العزيز الشريف، وكيل أول الوزارة رئيس التمثيل التجاري، أن هذا اللقاء يأتي في إطار تنفيذ توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، بتعزيز التعاون مع المؤسسات الاستثمارية في الدول العربية الشقيقة، ودعم تواجد الشركات المصرية في الأسواق ذات الأولوية، والعمل على تذليل التحديات التي قد تواجه المستثمرين المصريين، بما يسهم في زيادة الاستثمارات المتبادلة وتعزيز الشراكة الاقتصادية بين البلدين.\n\n وأشار الشريف إلى أن التمثيل التجاري المصري، من خلال مكتب التمثيل التجاري في بغداد، سيواصل التنسيق مع الهيئة الوطنية للاستثمار والجهات العراقية المعنية لتيسير إجراءات المستثمرين، وتنظيم لقاءات الأعمال، والتعريف بالفرص الاستثمارية المتاحة، وتشجيع تبادل الوفود الاقتصادية والاستثمارية، بما يسهم في زيادة الاستثمارات المشتركة، وتعزيز حركة التجارة البينية، ودعم الشراكة الاقتصادية بين مصر والعراق.\n\n وأكد أن المرحلة المقبلة ستشهد تكثيف التواصل مع الجهات العراقية المختصة ومجتمع الأعمال في البلدين، بما يضمن تحويل الفرص الاستثمارية المتاحة إلى مشروعات عملية، وزيادة مساهمة القطاع الخاص في دعم التنمية الاقتصادية، بما يحقق المصالح المشتركة لمصر والعراق.",
+      "sourceHost": "gate.ahram.org.eg",
+      "contentChars": 2990,
+      "arabicRatio": 1.0227,
+      "relevanceNote": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
+      "fetchedAt": "2026-08-03T01:38:16.450Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "bismayah",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "bismayah",
+        "to": "bismayah",
+        "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-nwfQItBOJaw4MEzRGe",
+        "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+        "isRepresentative": false,
+        "memberCount": 5,
+        "duplicateCount": 4
+      },
+      "importance": {
+        "score": 80,
+        "level": "IMPORTANT",
+        "levelKo": "중요",
+        "reportStatus": "PRIORITY_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "relevance": 25,
+          "projectImpact": 5,
+          "reportValue": 10,
+          "sourceReliability": 6
+        },
+        "reportPriority": "PRIORITY_REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "scoringVersion": 4,
+        "scoreFingerprint": "a794e1cf4e831d9c65c9",
+        "ruleScore": 31,
+        "businessFloor": 80,
+        "floorRule": "NIC_POLICY_ORGANIZATION",
+        "floorReasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "aiScore": 25,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "한국과 이라크 간 투자협력 강화 및 비스마야 사업과 직접 연관성은 없으나, 투자 환경 개선 관련 모니터링 차원에서 참고 가능.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 5,
+          "responseUrgency": 5,
+          "sourceReliability": 5
+        }
+      },
+      "contentHash": "79cb48d56d16ba1567e1688a5cf5a2e35e6c251f54daa540ff1aed8974b81eac",
+      "contentCheckedAt": "2026-08-03T01:38:16.450Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-KXZrPIVyotNWnSBHT-M5OhVW",
+      "keywordId": "bismayah-nic-001",
+      "category": "bismayah",
+      "priority": 100,
+      "queryArabic": "\"الهيئة الوطنية للاستثمار\"",
+      "requiredTerms": [
+        "الهيئة الوطنية للاستثمار"
+      ],
+      "optionalTerms": [
+        "رئيس",
+        "مشروع",
+        "استثمار",
+        "بسماية"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "احتفالية"
+      ],
+      "originalTitleArabic": "مصر والعراق تبحثان تسهيل حركة المستثمرين وتعزيز الاستثمارات المشتركة",
+      "sourceArabic": "أموال الغد",
+      "sourceHomepage": "https://amwalalghad.com",
+      "publishedAt": "2026-08-02T12:40:58.000Z",
+      "descriptionArabic": "مصر والعراق تبحثان تسهيل حركة المستثمرين وتعزيز الاستثمارات المشتركة أموال الغد",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi0wJBVV95cUxNbUZtN0Q0UWtIdDFrU2tBOS1rU2lnYjFnX1U1Y2NoVW11N1hNWTFTNVY0UXlkcU92T0NUaDBCRm9SR2pIdFlJVUgtcW5XdUxUcktrU0N6Vnl4bXZsMW15WGFJU3lPX2dBaHgwN21oenFkRzRWRUx3T1EyaGN5b1dNMDA3bmktWkJaNDB2SkNJQWFmVXktalJDWEVrS3RYSUhSVk1meXA5dkg2dU5aQmlsTFJpNFFsRTFLYjNkb3NxRmFqNlFrR2l3M3lsVXNUa0ktbTR4azdCVXkzMTVWRUEyXzlmc01pamx4NmlLSlpodWc1azR5U1E3SFduakN2MnVlNm1pMG5wNV9DVnFEY1pGR2FZb0tEemoxd2FqRlUwZW4zR05EUTNHa0ZCcnVmcUdSYlRvRmUyOHFvUXFFczc0QVMtUVVGd3dvekdQbGNCbEp4VVk?oc=5",
+      "articleUrl": "https://amwalalghad.com/2026/08/02/%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AA%D8%A8%D8%AD%D8%AB%D8%A7%D9%86-%D8%AA%D8%B3%D9%87%D9%8A%D9%84-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AB%D9%85/",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:36.500Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:01.459Z",
+      "canonicalUrl": "https://amwalalghad.com/2026/08/02/%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AA%D8%A8%D8%AD%D8%AB%D8%A7%D9%86-%D8%AA%D8%B3%D9%87%D9%8A%D9%84-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AB%D9%85/",
+      "originalTextArabic": "مصر والعراق تبحثان تسهيل حركة المستثمرين وتعزيز الاستثمارات المشتركة\n\n عبد العزيز الشريف: التمثيل التجاري يواصل دعم توسع الشركات المصرية في السوق العراقية\n\n بواسطة سناء علام \n 2 أغسطس 2026 | 3:40 م \n\n كتب سناء علام \n\n 2 أغسطس 2026 | 3:40 م \n\n النشر \n Facebook Twitter Pinterest Linkedin Whatsapp Telegram Email \n\n 28 \n بحث مكتب التمثيل التجاري المصري في بغداد مع الهيئة الوطنية للاستثمار العراقية سبل تعزيز التعاون الاقتصادي والاستثماري بين البلدين، وتسهيل حركة المستثمرين، بما يدعم زيادة الاستثمارات المشتركة ويفتح آفاقًا جديدة أمام القطاع الخاص المصري والعراقي.\n\n ويأتي اللقاء في إطار توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، بتعزيز العلاقات الاقتصادية والاستثمارية مع الدول العربية الشقيقة، وتكثيف جهود جهاز التمثيل التجاري لدعم توسع الاستثمارات المصرية في الأسواق الخارجية.\n\n إقرأ أيضاً \n\n «التمثيل التجاري»: أفريقيا تستحوذ على 14.5% من صادرات مصر بقيمة 7 مليارات دولار \n\n «التمثيل التجاري»: صادرات مصر إلى جنوب أفريقيا ارتفعت 30% مع تطبيق اتفاقية التجارة الحرة القارية \n\n 6 مليارات يورو حجم التجارة المصرية الألمانية في 2025.. نمو صادرات الأجهزة الطبية 334% \n\n وعقد المستشار التجاري سمير قرشي، رئيس مكتب التمثيل التجاري المصري في بغداد، اجتماعًا مع سالار محمد أمين، نائب رئيس الهيئة الوطنية للاستثمار بجمهورية العراق، بحضور حيدر حمادة، مدير عام دائرة العلاقات والإعلام بالهيئة، وعدد من مسؤوليها، حيث ناقش الجانبان آليات تطوير التعاون الاستثماري وتوسيع مجالات التنسيق المشترك بين المؤسسات المعنية في البلدين.\n\n وتناول الاجتماع سبل تفعيل الزيارات المتبادلة بين الجهات الحكومية ومجتمعي الأعمال في مصر والعراق، بما يسهم في تعزيز الشراكات الاستثمارية وإتاحة فرص جديدة أمام المستثمرين، إلى جانب بحث آليات تسهيل دخول المستثمرين المصريين إلى السوق العراقية، وتبسيط إجراءات منح سمات الدخول للمستثمرين ورجال الأعمال العراقيين، بما يدعم حركة الاستثمار والتبادل الاقتصادي بين البلدين.\n\n وأكد الجانبان أهمية تعزيز دور القطاع الخاص باعتباره شريكًا رئيسيًا في تحقيق التنمية الاقتصادية، والعمل على توفير بيئة أعمال أكثر جذبًا للاستثمار، مع تشجيع تبادل الخبرات والاستفادة من الفرص الاستثمارية المتاحة في كلا السوقين.\n\n وقال الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، إن مصر تولي اهتمامًا كبيرًا بتعزيز التعاون الاقتصادي والاستثماري مع العراق، انطلاقًا من العلاقات التاريخية التي تجمع البلدين، وما توفره السوق العراقية من فرص واعدة أمام الشركات المصرية.\n\n وأضاف أن الوزارة تعمل على دعم نفاذ الشركات المصرية إلى السوق العراقية، وزيادة حجم الاستثمارات المشتركة، إلى جانب إزالة التحديات التي قد تواجه المستثمرين، بما يسهم في تحسين مناخ الاستثمار وإقامة شراكات استراتيجية تحقق المصالح الاقتصادية المشتركة.\n\n من جانبه، أكد الدكتور عبد العزيز الشريف، وكيل أول وزارة الاستثمار والتجارة الخارجية ورئيس جهاز التمثيل التجاري، أن اللقاء يأتي في إطار خطة الوزارة لتعزيز التعاون مع المؤسسات الاستثمارية بالدول العربية، ودعم تواجد الشركات المصرية في الأسواق ذات الأولوية، وتذليل العقبات أمام المستثمرين المصريين.\n\n وأشار إلى أن مكتب التمثيل التجاري المصري في بغداد سيواصل التنسيق مع الهيئة الوطنية للاستثمار والجهات العراقية المختصة لتيسير إجراءات المستثمرين، وتنظيم لقاءات الأعمال، والترويج للفرص الاستثمارية، وتشجيع تبادل الوفود الاقتصادية، بما يسهم في زيادة الاستثمارات المشتركة، وتعزيز حركة التجارة البينية بين مصر والعراق.\n\n وأوضح الشريف أن المرحلة المقبلة ستشهد تكثيف التواصل مع مجتمع الأعمال والجهات المعنية في البلدين، بهدف تحويل الفرص الاستثمارية إلى مشروعات فعلية، وزيادة مساهمة القطاع الخاص في دعم التنمية الاقتصادية وتعزيز الشراكة الاستراتيجية بين مصر والعراق.\n\n اللينك المختصرللمقال: https://amwalalghad.com/ml8s \r\n\n العلاقات المصرية العراقية جهاز التمثيل التجاري مكتب التمثيل التجاري ببغداد",
+      "sourceHost": "amwalalghad.com",
+      "contentChars": 3507,
+      "arabicRatio": 0.9788,
+      "relevanceNote": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
+      "fetchedAt": "2026-08-03T01:38:18.559Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "bismayah",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "bismayah",
+        "to": "bismayah",
+        "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-nwfQItBOJaw4MEzRGe",
+        "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+        "isRepresentative": false,
+        "memberCount": 5,
+        "duplicateCount": 4
+      },
+      "importance": {
+        "score": 80,
+        "level": "IMPORTANT",
+        "levelKo": "중요",
+        "reportStatus": "PRIORITY_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "relevance": 25,
+          "projectImpact": 0,
+          "reportValue": 10,
+          "sourceReliability": 6
+        },
+        "reportPriority": "PRIORITY_REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "scoringVersion": 4,
+        "scoreFingerprint": "bc4d307ca90f42190170",
+        "ruleScore": 26,
+        "businessFloor": 80,
+        "floorRule": "NIC_POLICY_ORGANIZATION",
+        "floorReasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "aiScore": 20,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "기사 내용은 이집트와 이라크 간 투자 협력 강화 및 투자자 이동성 증진 관련이며, 비스마야 사업에 직접 언급되거나 구체적 영향은 없음. 양국 투자 활성화라는 넓은 맥락에서 간접적인 관련성 존재.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 5,
+          "responseUrgency": 3,
+          "sourceReliability": 2
+        }
+      },
+      "contentHash": "8dd0fbc23418415040eede1f9d3e706d805ced045bae2bfc4330da4c74ef4143",
+      "contentCheckedAt": "2026-08-03T01:38:18.559Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-4bv7eEiag2A3jsAlvUIMLlC7",
+      "keywordId": "politics-integrity-001",
+      "category": "politics",
+      "priority": 92,
+      "queryArabic": "\"هيئة النزاهة\" مسؤول العراق",
+      "requiredTerms": [
+        "هيئة النزاهة"
+      ],
+      "optionalTerms": [
+        "فساد",
+        "مسؤول",
+        "وزير",
+        "مدير عام",
+        "إحالة"
+      ],
+      "excludedTerms": [
+        "ندوة",
+        "احتفالية"
+      ],
+      "originalTitleArabic": "النزاهة: اعتقال مسؤول بالموارد المائية في كركوك بتهمة ابتزاز مراجعين ومستثمرين",
+      "sourceArabic": "الترا العراق",
+      "sourceHomepage": "https://ultrairaq.ultrasawt.com",
+      "publishedAt": "2026-08-02T12:03:34.000Z",
+      "descriptionArabic": "النزاهة: اعتقال مسؤول بالموارد المائية في كركوك بتهمة ابتزاز مراجعين ومستثمرين الترا العراق",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi8AVBVV95cUxNZ3cwQnFsOGZvWTlYS1hEMGVIMVk3ZWJablByYWQ2R2QtdXkwS0RGaTJYTDZBX1R0Ri1nTlRySU9vOTNHbVRsNGtPdkNNb3pCNjM1QlVyNVROcVprWjdNeGlucnRocG1JSWhMX0htb0F4c1ZTRlBDNGJ5c0tPbTNsaDk4Zm5HWXpZdWZsVW9iLUdqaUUtNGwyNG5wSVRfTTY0VkxMXzBsMmZyeGJVNzZ0a24yTWdXX2dabDhFRTNXX1RtVGxpajVzbFNkVGNVTjREcmphWi1RYXZ6Z05FSVhkQm1kVURUUmlSMjJuNk5iSERuQ1RJMk1Ea2h6YmxCQjlvd1ViX2ROYm5CX2dKSFJZOVhFZUczclVNSm53MTVodXhzaUFZaWxVTkhlQllfZ2lWSmhDWTNUbU1ocnhsdUlwcHpQVFQ5X0Jhbzl6NFBLVWIwbGdhLVZTY3pUSWdqeVVqd21UVmRlcUJaWGxwWnJVMUZfVGpwXzM3cXVPYWt4aDZ0SjljeExLQkJvdDY1VFQ5Y0NLY3lLR2ZDd0J6ZklsLUdaSFR4cHhRY2JlZFFzYVZrNGZ5OF8ya3A5QVdIcTdkRFlCQmx4bDNocGRRcURYcmFMLTdKRE5XTVdBQkc5RTVJZEtmNXZUWTZJdmJrQWZ2azV3dFBUUk16RDBkVnk0UWx3RW9WOWNHZDgtb2hrUk9nM1JIZFlnc2pwOWRGSzRudVlBeHladENpRXRndFBEdW9zMnJGZmQ4Q2pHWVAzRG4yeXhxbG1VOUlJeGxSZVU5cjN3ZHJWYURGbHk0ZEQ5SjdTSGlUbkRJRV9zMmhVdjBFOFJqMFhBMVJzaktpNmtqMmFNV0xRaE5RSDhQVzI0Rm01bkF6ZjVxT3lvUXMwU1Y3R2k5Rm4ySk8xMkJwM2ZxTjU2Znp3ZWNrZER6YzJJT0IzdXFYdDlOQUhqbS1lX0dDVDROcDdVdFh6SHF3anVNTnFoYWlwWnBSN01lTjFYRA?oc=5",
+      "articleUrl": "https://ultrairaq.ultrasawt.com/%D8%A7%D9%84%D9%86%D8%B2%D8%A7%D9%87%D8%A9-%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D9%85%D8%A7%D8%A6%D9%8A%D8%A9-%D9%81%D9%8A-%D9%83%D8%B1%D9%83%D9%88%D9%83-%D8%A8%D8%AA%D9%87%D9%85%D8%A9-%D8%A7%D8%A8%D8%AA%D8%B2%D8%A7%D8%B2-%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D9%8A%D9%86-%D9%88%D9%85%D8%B3%D8%AA%D8%AB%D9%85%D8%B1%D9%8A%D9%86/%D9%81%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:37.243Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:35:59.885Z",
+      "canonicalUrl": "https://ultrairaq.ultrasawt.com/%D8%A7%D9%84%D9%86%D8%B2%D8%A7%D9%87%D8%A9-%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84-%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B1%D8%AF-%D8%A7%D9%84%D9%85%D8%A7%D8%A6%D9%8A%D8%A9-%D9%81%D9%8A-%D9%83%D8%B1%D9%83%D9%88%D9%83-%D8%A8%D8%AA%D9%87%D9%85%D8%A9-%D8%A7%D8%A8%D8%AA%D8%B2%D8%A7%D8%B2-%D9%85%D8%B1%D8%A7%D8%AC%D8%B9%D9%8A%D9%86-%D9%88%D9%85%D8%B3%D8%AA%D8%AB%D9%85%D8%B1%D9%8A%D9%86/%D9%81%D8%B1%D9%8A%D9%82-%D8%A7%D9%84%D8%AA%D8%AD%D8%B1%D9%8A%D8%B1/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1",
+      "originalTextArabic": "أخبار \n\n النزاهة: اعتقال مسؤول بالموارد المائية في كركوك بتهمة ابتزاز مراجعين ومستثمرين \n\n 2 أغسطس 2026\n\n مديرية الموارد المائية في كركوك (فيسبوك)\n\n فريق التحرير\n\n الترا عراق\n\n ع\n\n ع\n\n كشفت هيئة النزاهة، يوم الأحد 2 آب/أغسطس 2026، عن اعتقال مسؤول في مديرية الموارد المائية في محافظة كركوك، بتهمة ابتزاز مراجعين ومستثمرين.\n وأعلنت هيئة النزاهة الاتحاديَّة في بيان اطلع عليه \"ألترا عراق\"، \"تمكُّنها من الإيقاع بأحد المسؤولين المحليّين بمُحافظة كركوك؛ إثر تورُّطها بابتزاز المُواطنين والمُقاولين وطلب مبالغ ماليَّة؛ مقابل إنجاز معاملاتٍ تتعلَّق بواجباتها الوظيفيَّة\".\n الهيئة أوضحت، في معرض حديثها عن عمليَّة الضبط، أنَّها \"ألَّفت فريق عملٍ من مكتب تحقيق كركوك؛ للتحرّي والتقصّي والتحقُّق من معلوماتٍ تلقَّتها تفيد بإقدام رئيس قسم التشغيل في مديريَّة الموارد المائيَّة بمحافظة كركوك بابتزاز المُراجعين والمستثمرين وطلب الرشى منهم\".\n وقالت إنَّ \"الفريق بادر إلى التحرّي والتقصّي عن المعلومات، وبعد استحصال قرار قاضي محكمة تحقيق كركوك المُختصَّة بالنظر في قضايا النزاهة، قام بنصب كمينٍ محكمٍ، حيث تمَّ ضبط المُتَّهمة مُتلبّسةً أثناء تسلُّم مبلغٍ ماليٍّ؛ مقابل تنظيم كتاب (عدم تعارض) خاصٍّ بإنشاء مشروعٍ استثماريٍّ لتربية الأسماك المُغلقة، فيما أسفرت العمليَّة أيضاً عن ضبط كتبٍ ومُستنداتٍ تتعلَّق بالمشروع ذاته\".\n وأشارت إلى \"تنظيم محضر ضبطٍ أصوليٍّ في العمليَّة، التي نُفِّذَت وفق أحكام القرار رقم (160 لسنة 1983)، وعرضه بصحبة المُتَّهمة والمُبرزات الجرميَّة على قاضي التحقيق المُختص؛ لاستكمال الإجراءات القانونيَّة بحقِّ المُتَّهمة\".\n\n الكلمات المفتاحية\n\n الفساد في العراق \n\n مكافحة الفساد في العراق \n\n الفساد في كركوك \n\n وزارة الموارد المائية \n\n الرشوة في العراق \n\n المزيد من قسم أخبار \n\n المزيد \n\n تحدثت عن \"حصر السلاح\".. الخارجية العراقية تدين استهداف سفينتين في ميناء دمياط المصري\n\n خلال اتصال مع وزير الخارجية المصري، بدر عبد العاطي\n\n انفجار أعتدة داخل معسكر التاجي بسبب ارتفاع درجات الحرارة\n\n قالت إن فرق الدفاع المدني تواصل مكافحة الحريق\n\n الداخلية تنفي توجيهًا لمعرفة تفاصيل عن مقرات الحشد: الكتاب مزور وسنلاحق الجناة\n\n نفي صادر عن وزارة الداخلية لوثيقة تداولتها منصات مقربة من الفصائل المسلحة\n\n محكمة تحقيق الرصافة تسترد 20 مليار دينار\n\n في قضية فساد مالي وإداري لم يُفصح عن تفاصيلها\n\n إقرأ/ي أيضاً \n\n المزيد \n\n راصد \n\n منع \"البرمودة\" في واسط.. الشرطة تصدر توضيحًا إثر انتقادات وردود ساخرة\n\n أثار قرار منع ارتداء \"البرمودة\" ردودًا غاضبة وأخرى ساخرة ما دفع الشرطة إلى إصدار توضيح رسمي \n\n أخبار \n\n تحدثت عن \"حصر السلاح\".. الخارجية العراقية تدين استهداف سفينتين في ميناء دمياط المصري\n\n خلال اتصال مع وزير الخارجية المصري، بدر عبد العاطي\n\n أخبار \n\n انفجار أعتدة داخل معسكر التاجي بسبب ارتفاع درجات الحرارة\n\n قالت إن فرق الدفاع المدني تواصل مكافحة الحريق\n\n منوعات \n\n الكرمة يلعب 5 مباريات ودية ويغلق الانتقالات بضم الآلوسي\n\n استعدادات نادي الكرمة لخوض دوري نجوم العراق\n\nالأكثر قراءة\n\n 1\n\n أخبار \n\n الداخلية تنفي توجيهًا لمعرفة تفاصيل عن مقرات الحشد: الكتاب مزور وسنلاحق الجناة\n\n 2\n\n سياسة \n\n المونيتور: قوات عراقية حاولت تفتيش مقر للنجباء ومُنعت من الدخول.. تم تهديد الضباط باعتقالهم\n\n 3\n\n سياسة \n\n خاص| الأردن أبلغت العراق بهجوم متوقع من \"أولياء الدم\".. وهددت برد عسكري\n\n 4\n\n أخبار \n\n خبير ينتقد تبريرات الحكومة حول مصدر الهجمات على السعودية: تضعف موقف الدولة\n\n 5\n\n أخبار \n\n القضاء يعلن السجن المؤبد بحق \"الحجامي\" بعد تعاون بين العراق وأستراليا",
+      "sourceHost": "ultrairaq.ultrasawt.com",
+      "contentChars": 3146,
+      "arabicRatio": 1.0394,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T01:38:16.580Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-hMkPCqmj5WuQiKeirv",
+        "representativeArticleId": "discovery-4bv7eEiag2A3jsAlvUIMLlC7",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 50,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 28,
+          "businessImpact": 0,
+          "politicalImpact": 9,
+          "reportValue": 7,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "2426898300080ce2853f",
+        "ruleScore": 50,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "2c89ea17c77cf099adeff6eaaef781a4614d01ab26f728c84aae051c6892fdba",
+      "contentCheckedAt": "2026-08-03T01:38:16.580Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-suN4PF3uvWpX_I2J4nZwPUlH",
+      "keywordId": "bismayah-nic-001",
+      "category": "bismayah",
+      "priority": 100,
+      "queryArabic": "\"الهيئة الوطنية للاستثمار\"",
+      "requiredTerms": [
+        "الهيئة الوطنية للاستثمار"
+      ],
+      "optionalTerms": [
+        "رئيس",
+        "مشروع",
+        "استثمار",
+        "بسماية"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "احتفالية"
+      ],
+      "originalTitleArabic": "التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك",
+      "sourceArabic": "youm7.com",
+      "sourceHomepage": "https://m.youm7.com",
+      "publishedAt": "2026-08-02T11:06:54.000Z",
+      "descriptionArabic": "التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك youm7.com",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMipwRBVV95cUxOWThhQjI4WFZVUmlOWVBEWENGTTNCQkxOZlI3ZzZnOENaY0Nnak00UVdKY0p2YzV0dGpiVWRud0ZPVXFvN1JkcWlPWEFMQ3ZSNmJ6aXFqRGZfMk82M1d6ZGlIV2Y1eC1iX1FTWE9WNTNXVHdBYkJFLU05QUFGWUh3ci04R2xwUDZSaE5CLXFYaEQzZkZDTUlxY2lNTGthRk1oM3JoZXdLTWE3X05laVpyTHF1aVRCZnZLeGJzSzlLaE5jQ1cyMWpyODE3X3pqRm56SHp4Yzh0U3VFaHMwYWNhb1FEZGJOMHpaQTllZzdtRGh3M0ppRjM0UTNZa2pOZWx2U0YxQnQ4T1kyVFY0TzVkMVlvTW1mSW0zWW5EY184NFFqX2tlSE1ieHBRUTR6M29LeVpOLU1peUZ1ZDVOcUtpbFlzWEUzb1dLSWJyZ0dhaWt5cFRyY05DS0h5b0xzQ0JMamF6WVB5eW9jaHBPazl2MVhSVENMakpVbDJ4b0swZG12UnVLWUtYa0hTTUFteFF5OTRYZElZWUdWbnZUMkU3TkRhcHpsZExjakVFYXozTVk3Q0paMHpqZEJsYXNLTkpHbTBqYTQ5d0wyLVo0R3paV0VKdy1UTVFJZWluWmNWVXVXYnFvNEpDdTZsRWlTRi1JNy1tWFJRdDU2c1FaOURKVzV3UlhpYVlkS1ZWTmVqWG9ZNkk2TzkxajN3Vjk0YVF2ZVgxOGZoQdIBpwRBVV95cUxOWThhQjI4WFZVUmlOWVBEWENGTTNCQkxOZlI3ZzZnOENaY0Nnak00UVdKY0p2YzV0dGpiVWRud0ZPVXFvN1JkcWlPWEFMQ3ZSNmJ6aXFqRGZfMk82M1d6ZGlIV2Y1eC1iX1FTWE9WNTNXVHdBYkJFLU05QUFGWUh3ci04R2xwUDZSaE5CLXFYaEQzZkZDTUlxY2lNTGthRk1oM3JoZXdLTWE3X05laVpyTHF1aVRCZnZLeGJzSzlLaE5jQ1cyMWpyODE3X3pqRm56SHp4Yzh0U3VFaHMwYWNhb1FEZGJOMHpaQTllZzdtRGh3M0ppRjM0UTNZa2pOZWx2U0YxQnQ4T1kyVFY0TzVkMVlvTW1mSW0zWW5EY184NFFqX2tlSE1ieHBRUTR6M29LeVpOLU1peUZ1ZDVOcUtpbFlzWEUzb1dLSWJyZ0dhaWt5cFRyY05DS0h5b0xzQ0JMamF6WVB5eW9jaHBPazl2MVhSVENMakpVbDJ4b0swZG12UnVLWUtYa0hTTUFteFF5OTRYZElZWUdWbnZUMkU3TkRhcHpsZExjakVFYXozTVk3Q0paMHpqZEJsYXNLTkpHbTBqYTQ5d0wyLVo0R3paV0VKdy1UTVFJZWluWmNWVXVXYnFvNEpDdTZsRWlTRi1JNy1tWFJRdDU2c1FaOURKVzV3UlhpYVlkS1ZWTmVqWG9ZNkk2TzkxajN3Vjk0YVF2ZVgxOGZoQQ?oc=5",
+      "articleUrl": "https://www.youm7.com/amp/2026/8/2/%D8%A7%D9%84%D8%AA%D9%85%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9/7500589",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:36:04.218Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T04:36:23.677Z",
+      "canonicalUrl": "https://www.youm7.com/story/2026/8/2/%D8%A7%D9%84%D8%AA%D9%85%D8%AB%D9%8A%D9%84-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D9%8A-%D9%81%D9%8A-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%85%D8%B9-%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9/7500589",
+      "originalTextArabic": "الرئيسية \r\n\n اقتصاد وبورصة \r\n\n المستشار التجاري سمير قرشي، رئيس مكتب التمثيل التجاري المصري في بغداد \r\n\n التمثيل التجاري في بغداد يبحث مع الهيئة الوطنية للاستثمار العراقية تعزيز التعاون المشترك\n\n كتب إسلام سعيد\n\n الأحد، 02 أغسطس 2026 02:03 م \r\n\n في إطار توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، بتعزيز العلاقات الاقتصادية والاستثمارية مع الدول العربية الشقيقة، وتكثيف جهود التمثيل التجاري المصري لدعم الاستثمارات المصرية وفتح آفاق جديدة أمام القطاع الخاص، عقد المستشار التجاري سمير قرشي، رئيس مكتب التمثيل التجاري المصري في بغداد، لقاءً مع السيد سالار محمد أمين، نائب رئيس الهيئة الوطنية للاستثمار بجمهورية العراق، بحضور السيد حيدر حمادة، مدير عام دائرة العلاقات والإعلام بالهيئة، وعدد من مسؤولي الهيئة.\n\n وتناول اللقاء سبل تعزيز التعاون الاقتصادي والاستثماري بين مصر والعراق، وفتح مجالات جديدة للتنسيق المشترك بما يسهم في تطوير العلاقات الثنائية، وتفعيل الزيارات المتبادلة بين الجهات المعنية ومجتمعي الأعمال في البلدين، بما يعزز فرص إقامة شراكات واستثمارات مشتركة.\n\n كما ناقش الجانبان آليات تسهيل دخول المستثمرين المصريين إلى العراق، وتبسيط إجراءات منح سمات الدخول للمستثمرين ورجال الأعمال العراقيين ، بما يدعم حركة الاستثمار، ويشجع على إقامة مشروعات جديدة، ويعزز التواصل المباشر بين المستثمرين في البلدين.\n\n وأكد الجانبان أهمية دعم القطاع الخاص باعتباره شريكًا رئيسيًا في تحقيق التنمية الاقتصادية، والعمل على توسيع دوره في تنفيذ المشروعات الاستثمارية، مع مواصلة الجهود الرامية إلى تهيئة بيئة أعمال جاذبة للاستثمار، وتشجيع تبادل الخبرات والاستفادة من الفرص الاستثمارية المتاحة.\n\n الاستثمارات المشتركة\n\n ومن جانبه أكد الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، أن مصر تولي اهتمامًا كبيرًا بتعزيز التعاون الاقتصادي والاستثماري مع جمهورية العراق، انطلاقًا من العلاقات التاريخية التي تربط البلدين، والفرص الواعدة المتاحة أمام مجتمع الأعمال، مشيرًا إلى أن الوزارة تعمل على دعم نفاذ الشركات المصرية إلى السوق العراقية، وزيادة الاستثمارات المشتركة، وتعزيز دور القطاع الخاص في تنفيذ المشروعات التنموية.\n\n وأضاف الوزير أن الوزارة تحرص على تعزيز التواصل مع المؤسسات الاقتصادية والاستثمارية العراقية، والعمل على إزالة التحديات التي قد تواجه المستثمرين، بما يسهم في تهيئة بيئة أكثر جذبًا للاستثمار، وتشجيع إقامة شراكات استراتيجية تحقق المصالح الاقتصادية المشتركة.\n\n ومن جانبه، أكد الدكتور عبد العزيز الشريف، وكيل أول الوزارة رئيس التمثيل التجاري، أن هذا اللقاء يأتي في إطار تنفيذ توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، بتعزيز التعاون مع المؤسسات الاستثمارية في الدول العربية الشقيقة، ودعم تواجد الشركات المصرية في الأسواق ذات الأولوية، والعمل على تذليل التحديات التي قد تواجه المستثمرين المصريين، بما يسهم في زيادة الاستثمارات المتبادلة وتعزيز الشراكة الاقتصادية بين البلدين.\n\n تعزيز التعاون المشترك\n\n وأشار الشريف إلى أن التمثيل التجاري المصري، من خلال مكتب التمثيل التجاري في بغداد، سيواصل التنسيق مع الهيئة الوطنية للاستثمار والجهات العراقية المعنية لتيسير إجراءات المستثمرين، وتنظيم لقاءات الأعمال، والتعريف بالفرص الاستثمارية المتاحة، وتشجيع تبادل الوفود الاقتصادية والاستثمارية، بما يسهم في زيادة الاستثمارات المشتركة، وتعزيز حركة التجارة البينية، ودعم الشراكة الاقتصادية بين مصر والعراق.\n\n وأكد أن المرحلة المقبلة ستشهد تكثيف التواصل مع الجهات العراقية المختصة ومجتمع الأعمال في البلدين، بما يضمن تحويل الفرص الاستثمارية المتاحة إلى مشروعات عملية، وزيادة مساهمة القطاع الخاص في دعم التنمية الاقتصادية، بما يحقق المصالح المشتركة لمصر والعراق.\n\n الصادرات المصرية \r\n\n التمثيل التجاري \r\n\n جهاز التمثيل التجاري",
+      "sourceHost": "youm7.com",
+      "contentChars": 3353,
+      "arabicRatio": 1.0173,
+      "relevanceNote": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
+      "fetchedAt": "2026-08-03T04:39:15.216Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "bismayah",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "importance": {
+        "score": 80,
+        "level": "IMPORTANT",
+        "levelKo": "중요",
+        "reportStatus": "PRIORITY_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "relevance": 25,
+          "projectImpact": 5,
+          "reportValue": 10,
+          "sourceReliability": 6
+        },
+        "reportPriority": "PRIORITY_REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "scoringVersion": 4,
+        "scoreFingerprint": "a76ddc4e01f10db1e318",
+        "ruleScore": 31,
+        "businessFloor": 80,
+        "floorRule": "NIC_POLICY_ORGANIZATION",
+        "floorReasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "aiScore": 25,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "이집트 상무 대표부와 이라크 투자청 간 협력 논의로 비스마야 사업과 직접 관련은 없으나 간접적인 투자 환경 변화 참고용.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 5,
+          "responseUrgency": 5,
+          "sourceReliability": 5
+        }
+      },
+      "eventGroup": {
+        "groupId": "event-nwfQItBOJaw4MEzRGe",
+        "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+        "isRepresentative": false,
+        "memberCount": 5,
+        "duplicateCount": 4
+      },
+      "contentHash": "7d5a51d87e923192be5f2098a36a11a6444bc32799e385e230de043538ebb15b",
+      "contentCheckedAt": "2026-08-03T04:39:15.216Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "bismayah",
+        "to": "bismayah",
+        "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-Iz9bWy0j38JRxSwDvdMeJ8kP",
+      "keywordId": "bismayah-nic-001",
+      "category": "bismayah",
+      "priority": 100,
+      "queryArabic": "\"الهيئة الوطنية للاستثمار\"",
+      "requiredTerms": [
+        "الهيئة الوطنية للاستثمار"
+      ],
+      "optionalTerms": [
+        "رئيس",
+        "مشروع",
+        "استثمار",
+        "بسماية"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "احتفالية"
+      ],
+      "originalTitleArabic": "تعزيز التعاون الاقتصادي بين مصر والعراق",
+      "sourceArabic": "ekhbary24 -",
+      "sourceHomepage": "https://ekhbary24.com",
+      "publishedAt": "2026-08-02T10:33:54.000Z",
+      "descriptionArabic": "تعزيز التعاون الاقتصادي بين مصر والعراق ekhbary24 -",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwgJBVV95cUxQbFRtQ0oyNktzZHBZWDFfWWJuS3RPRklaR29xMkllSUNvcTV4WDI1c3BnbWxJc0U1OGZGUUtSUExMWGE1R21TZHhFdXVPZ1NhaDROd1phU3JTVUh0d0NVQWlUUldiRENrUTctbVR3c2hvcFg1S2M3eWVSNE0zY25iT1pzYm1odEZsaTl5VWZNSU1ReG5ia1FHQkQ2LUlSQ0k1SEVsbFJSSmIyQzRtWXNVcHlYcWt4bDBFT0pDMUdNLXdQQkxwZW55dmtjb0JlS0VrOFdoemtJakJGTVhraXBRUHNUOG9sMzF5M252eVFwRjNpTWdxNVgwT0VlOTdtOEdpZHprdjVQdG5uaS16dHUzRGp1WENveE9Vc1FMZi1VWVRfemdnaGtmSFN1dmVfay13MEwyRGJrUWF5Q0RFeW85MlV3?oc=5",
+      "articleUrl": "https://ekhbary24.com/%D8%AA%D8%B9%D8%B2%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A-%D8%A8%D9%8A%D9%86-%D9%85%D8%B5%D8%B1-%D9%88%D8%A7%D9%84%D8%B9%D8%B1/",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:36:04.220Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T04:36:24.710Z",
+      "canonicalUrl": "https://ekhbary24.com/%d8%aa%d8%b9%d8%b2%d9%8a%d8%b2-%d8%a7%d9%84%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d8%a7%d9%84%d8%a7%d9%82%d8%aa%d8%b5%d8%a7%d8%af%d9%8a-%d8%a8%d9%8a%d9%86-%d9%85%d8%b5%d8%b1-%d9%88%d8%a7%d9%84%d8%b9%d8%b1/",
+      "originalTextArabic": "إقتصاد \r\n تعزيز التعاون الاقتصادي بين مصر والعراق\n\n 02/08/2026 13:33:54 \r\n\n كتب: كريم همام \n\n بحث مكتب التمثيل التجاري المصري في بغداد مع الهيئة الوطنية للاستثمار العراقية سبل تعزيز التعاون الاقتصادي والاستثماري بين مصر والعراق. جاء ذلك في إطار الجهود المتواصلة لفتح آفاق جديدة للشراكات بين مجتمعي الأعمال في البلدين، بالإضافة إلى مناقشة آليات تيسير حركة المستثمرين ورجال الأعمال لدعم الاستثمارات المشتركة وتعزيز التعاون.\n\n توجيهات وزير الاستثمار\n\n تأتي هذه اللقاءات في ضوء توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، الذي يركز على أهمية تعزيز العلاقات الاقتصادية مع الدول العربية. تسعى الوزارة إلى تكثيف الجهود لدعم الاستثمارات المصرية وفتح أسواق جديدة أمام القطاع الخاص، ما يبرز أهمية العراق كسوق ذات أولوية.\n\n اجتماع مع الهيئة الوطنية للاستثمار\n\n عقد المستشار التجاري سمير قرشي، رئيس مكتب التمثيل التجاري المصري في بغداد، اجتماعًا مع سالار محمد أمين، نائب رئيس الهيئة الوطنية للاستثمار العراقية. حضر الاجتماع عدد من المسؤولين العراقيين، حيث تم تناول سُبل تعزيز التعاون الاقتصادي ورسم خطط لتفعيل الزيارات المتبادلة بين الجهات المعنية.\n\n آليات تسهيل دخول المستثمرين\n\n تناول اللقاء سبل تسهيل دخول المستثمرين المصريين إلى العراق، بالإضافة إلى التطرق إلى تبسيط إجراءات منح سمات الدخول للمستثمرين ورجال الأعمال من العراق. يهدف هذا التوجه إلى تشجيع حركة الاستثمار وزيادة فرص تنفيذ مشروعات جديدة بين البلدين.\n\n دعم القطاع الخاص\n\n أكد المسؤولون خلال الاجتماع على أهمية دعم القطاع الخاص باعتباره شريكًا رئيسيًا في تحقيق التنمية الاقتصادية. وضرورة توسيع دوره في تنفيذ المشروعات الاستثمارية، مع العمل المستمر على تحسين بيئة الأعمال لجذب الاستثمارات الأجنبية.\n\n فرص الاستثمار المتاحة\n\n أشار الوزير محمد فريد إلى أن العراق يتيح فرصًا واعدة لمجتمع الأعمال المصري، مؤكدًا حرص الوزارة على دعم تواجد الشركات المصرية وتعزيز الاستثمارات المشتركة. كما تبرز أهمية إزالة التحديات التي قد تواجه المستثمرين، مما يسهم في تهيئة بيئة أكثر جذبًا للاستثمار.\n\n استراتيجيات التعاون المستقبلي\n\n أكد الدكتور عبد العزيز الشريف، وكيل أول وزارة الاستثمار ورئيس التمثيل التجاري، على أن اللقاء يأتي تنفيذًا لتوجيهات الوزير من أجل تعزيز التعاون مع المؤسسات الاستثمارية في الدول العربية. سيسعى المكتب لمواصلة التعاون مع الهيئة الوطنية للاستثمار العراقية وتطوير الإجراءات لضمان انسيابية حركة المستثمرين.\n\n التواصل مع مجتمعات الأعمال\n\n وفي النهاية، أوضح الشريف أن المرحلة المقبلة ستشهد تكثيف التواصل بين الجهات العراقية ومجتمعي الأعمال في مصر والعراق، بهدف تحويل الفرص الاستثمارية إلى مشروعات فعلية. الهدف هو زيادة مساهمة القطاع الخاص في دعم التنمية الاقتصادية، مما يخدم المصالح المشتركة للبلدين.\n\n يمكنك قراءة المزيد في المصدر .\n\n لمزيد من التفاصيل اضغط هنا .\n\n Post Views: 6٬891 \r\n\n مشاركة الخبر:",
+      "sourceHost": "ekhbary24.com",
+      "contentChars": 2575,
+      "arabicRatio": 0.9891,
+      "relevanceNote": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
+      "fetchedAt": "2026-08-03T04:39:04.875Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "bismayah",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "titleCorrection": {
+        "previousTitleArabic": "melfaramawy416@gmail.com",
+        "correctedTitleArabic": "تعزيز التعاون الاقتصادي بين مصر والعراق",
+        "method": "ARTICLE_H1",
+        "correctedAt": "2026-08-03T04:40:02.100Z"
+      },
+      "importance": {
+        "score": 80,
+        "level": "IMPORTANT",
+        "levelKo": "중요",
+        "reportStatus": "PRIORITY_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "relevance": 25,
+          "projectImpact": 10,
+          "reportValue": 15,
+          "sourceReliability": 6
+        },
+        "reportPriority": "PRIORITY_REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "scoringVersion": 4,
+        "scoreFingerprint": "9b22acd28f5e637211a2",
+        "ruleScore": 41,
+        "businessFloor": 80,
+        "floorRule": "NIC_POLICY_ORGANIZATION",
+        "floorReasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "aiScore": 25,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "이집트와 이라크간 협력 강화 논의로, 비스마야 직접 관련 내용은 없으나 간접적으로 투자 활성화 기대 가능성 있어 검토 가치 있음.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 5,
+          "responseUrgency": 5,
+          "sourceReliability": 5
+        }
+      },
+      "eventGroup": {
+        "groupId": "event-nwfQItBOJaw4MEzRGe",
+        "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+        "isRepresentative": false,
+        "memberCount": 5,
+        "duplicateCount": 4
+      },
+      "contentHash": "3da7a4f31d030a4ff38cdc9af35e8614455616d54881bedb998bda2835de4d95",
+      "contentCheckedAt": "2026-08-03T04:39:04.875Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "bismayah",
+        "to": "bismayah",
+        "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-fCa6RvCa5ZNnjleJa8g0aD-n",
+      "keywordId": "international-iran-001",
+      "category": "politics",
+      "priority": 95,
+      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "إيران",
+        "عقوبات",
+        "الفصائل",
+        "النفوذ الإيراني",
+        "الحدود"
+      ],
+      "excludedTerms": [
+        "مباراة",
+        "مسلسل"
+      ],
+      "originalTitleArabic": "هل يصحو العراق من الكابوس الإيراني؟",
+      "sourceArabic": "صحيفة المقر",
+      "sourceHomepage": "https://maqar.com",
+      "publishedAt": "2026-08-02T10:32:02.000Z",
+      "descriptionArabic": "هل يصحو العراق من الكابوس الإيراني؟ صحيفة المقر",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBWc1ExVVJrbjJiR0pvemE0aThZcnFIeXM1MGdGbjV5bVYtbWxqMUVEbFVhTXBVa3Fial9ST05pZDVzb3JnZ3NIUg?oc=5",
+      "articleUrl": "https://maqar.com/archives/767052",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:38.710Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:01.176Z",
+      "canonicalUrl": "https://maqar.com/archives/767052",
+      "originalTextArabic": "مكرم أحمد الطراونة \n كتاب المقر \n هل يصحو العراق من الكابوس الإيراني؟ \n بقلم مكرم الطراونة بتاريخ أغسطس 2, 2026 \n\n شارك \n\n في العام 2003، وفي أعقاب سقوط نظام الرئيس الراحل صدام حسين، واجه العراق معضلتين أساسيتين، أولاهما انهيار الدولة والمؤسسات، والثانية أنه وجد نفسه في فراغ سياسي وإقليمي هائل. \n وقتها، ارتكب النظام العربي خطأ إستراتيجيا مكلفا عندما تعامل بحذر شديد مع العراق الجديد، ورفضت غالبية الدول العربية الاعتراف بمجلس الحكم الانتقالي، وسحبت بعثاتها الدبلوماسية من بغداد لسنوات طويلة، تاركة الساحة مفتوحة أمام الطرف الأكثر استعدادا لملء الفراغ، وهو إيران.\n نجاح إيران جاء نتيجة إستراتيجية طويلة الأمد استثمرت في السياسة والمجتمع والدين والاقتصاد والأمن. وبينما كان العرب يترددون في الانخراط في العراق خشية شرعنة الاحتلال الأميركي، كانت طهران تبني شبكات نفوذ داخل مؤسسات الدولة، وتدعم أحزابا سياسية، وتشكل فصائل مسلحة، وتؤسس منظومة مصالح اقتصادية واجتماعية جعلت ارتباط أجزاء واسعة من الطبقة السياسية العراقية بإيران ارتباطا عضويا يصعب فكه.\n بعد أكثر من عقدين، تبدو الصورة أكثر تعقيدا. فإيران لم تعد مجرد دولة مؤثرة في العراق، بل أصبحت تمتلك نفوذا واسعا داخل مفاصل الدولة، وتستفيد من الموارد الاقتصادية العراقية في مواجهة العقوبات الأميركية، وتستخدم الأراضي العراقية ساحة لتصفية حساباتها الإقليمية، كما استخدمت بعض الفصائل المسلحة المرتبطة بها الأراضي العراقية في تهديد دول عربية، ومنها الأردن، عبر عمليات تهريب أو إطلاق طائرات مسيرة أو صواريخ في مراحل مختلفة من التوتر الإقليمي.\n الأصوات العراقية المعارضة للنفوذ الإيراني، واجهت ضغوطا سياسية وأمنية كبيرة، ووصل الأمر في بعض الحالات إلى الاغتيالات والترهيب، ما جعل مساحة الحركة أمام القوى الوطنية العراقية أكثر ضيقا، رغم استمرار وجودها. لكن ذلك لا يأخذنا إلى الاستنتاج أن العراق أصبح خارج الفضاء العربي بصورة نهائية، فرغم ما حدث، لم يفقد هويته العربية ولا مصالحه العربية. والغالبية الساحقة من العراقيين تنظر إلى بلدها بوصفه دولة ذات هوية عربية وإسلامية مستقلة، وليست امتدادا لدولة أخرى. كما أن قطاعات واسعة من النخب السياسية والاقتصادية والثقافية تدرك أن استمرار الارتهان لأي قوة خارجية يحرم العراق من استعادة دوره الطبيعي في المنطقة. المزاج الشعبي العراقي، كذلك، شهد تحولات واضحة خلال السنوات الأخيرة، ورفضا للتبعية الخارجية. صحيح أن التحولات لم تغير موازين القوى بصورة جذرية، لكنها كشفت وجود تيار وطني واسع يسعى إلى بناء دولة مستقلة القرار.\n لكن الخروج من دائرة النفوذ الإيراني لن يتحقق بقرار سياسي مفاجئ، ولا عبر مواجهة مباشرة، وإنما عندما يتشكل داخل العراق شعور وطني عام بأن مصلحة العراقي تكمن في استقلال قراره، وأن الدولة التي تربط مصيرها بأجندة خارجية، أيا كان مصدرها، تفقد قدرتها على حماية مصالح شعبها، وتبتعد تدريجيا عن محيطها الطبيعي. كما أن استمرار بعض القوى السياسية في تقديم أولويات طهران على أولويات بغداد سيجعل العراق، مهما امتلك من إمكانات، خارج حسابات الشراكة العربية الحقيقية، لأن العرب لا يستطيعون بناء علاقات إستراتيجية مع دولة لا تمتلك قرارها السيادي بصورة كاملة.\n معادلة موازين القوى في الداخل العراقي تبدو معقّدة كثيرا، لكن التاريخ يعلّمنا ألا نتعامل مع موازين القوى باعتبارها حقائق أبدية. الطبقات السياسية التي صنعتها إيران داخل العراق ليست قدرا لا يتغيّر، كما أن النفوذ الإقليمي، مهما بدا راسخا، يظل مرتبطا بظروف سياسية وأمنية واقتصادية قابلة للتبدل. التاريخ فاجأنا كثيرا بتحولات كبرى أطاحت بأنظمة ونخب وتحالفات كانت تبدو عصية على التغيير.\n إذا استطاع العراقيون أن يرسخوا فكرة أن ولاءهم الأول يجب أن يكون للدولة العراقية وحدها، وأن عمقهم العربي يمثل فرصة للتنمية والاستقرار لا ساحة للصراع، فإن استعادة العراق لمكانته العربية لن تكون حلما مستحيلا، بل مسارا تاريخيا ممكنا، مهما طال الزمن، وعندها سوف يصحو العراق من الكابوس الإيراني الذي يجثم على صدره.\n\n شارك Facebook Twitter WhatsApp البريد الإلكتروني \n\n مكرم الطراونة \n\n التعليقات مغلقة.\n\n مقالات اخرى للكاتب \n جرش... حين يصبح الفن رسالة أمن وثقة \n الخيانة بضاعة ليست أردنية \n مراقبة أداء الدولة.. أم مراقبة سقوطها؟ \n عليكم بسحب قانون الضمان؟ \n \"صنع في الميدان\" \n توسيع نطاق تطبيق عقوبة الإعدام \n زيادة الرواتب.. قرار يتجاوز القيمة المالية \n لماذا يصبح كل تصريح معركة؟ \n توقيت غير مناسب \n الأردن.. التمرد على الضرورات \n المزيد من مقالات الكاتب \n\n المشاركات الاخيرة \n العالم \n\n روبيو: لن نسمح للصين بأن تصبح القوة الأولى على حساب الولايات المتحدة \n منذ 49 دقيقة \n قال وزير الخارجية الأميركي ماركو روبيو إن الولايات المتحدة لن تسمح للصين بأن تصبح الدولة الأقوى في العالم على&hellip;\n\n ستافروبولـو: التجربة الأردنية في استضافة اللاجئين قدمت دروسا مهمة&hellip; \n أغسطس 2, 2026 \n\n “النواب” يضيف السكك إلى تعريف “الطريق” في معدل&hellip; \n أغسطس 2, 2026 \n\n صندوق النقد الدولي حوّل 188 مليون دولار بعد استكمال مراجعتين للأردن \n أغسطس 2, 2026 \n\n طلاب “المدارس الرقمية” يتميزون في مسابقة&hellip; \n أغسطس 2, 2026 \n\n السابق التالي \n\n اختيارات المحرر \n ستافروبولـو: التجربة الأردنية في استضافة اللاجئين قدمت دروسا مهمة للمجتمع الدولي \n أغسطس 2, 2026 \n\n “النواب” يضيف السكك إلى تعريف “الطريق” في معدل “الملكية العقارية” \n أغسطس 2, 2026 \n\n مجلس النواب يواصل اليوم مناقشة “معدّل قانون الملكية العقارية” \n أغسطس 2, 2026 \n\n “تنظيم الطاقة” تتلقى 1048 طلبا للحصول على تراخيص خلال حزيران الماضي \n أغسطس 2, 2026 \n\n صندوق استثمار أموال الضمان: القرار الاستثماري مستقل ويستند إلى منظومة حاكمية مؤسسية راسخة \n أغسطس 2, 2026",
+      "sourceHost": "maqar.com",
+      "contentChars": 4929,
+      "arabicRatio": 0.9871,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:18.135Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "politics",
+        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-C9Bz_QTwDpSf5m6Cgv",
+        "representativeArticleId": "discovery-fCa6RvCa5ZNnjleJa8g0aD-n",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 52,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 15,
+          "iraqImpact": 12,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "138645fa428534b4ecab",
+        "ruleScore": 52,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "d502d79ed0dab985035a6e1fb933e7be706ad38e41d3eb8ecba80caf08ddfd3c",
+      "contentCheckedAt": "2026-08-03T01:38:18.135Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-6lwlsH5vGIaInQtOlgjTm9sm",
+      "keywordId": "international-gulf-001",
+      "category": "economy",
+      "priority": 93,
+      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "الخليج",
+        "الملاحة",
+        "تصدير النفط",
+        "ناقلات",
+        "توتر إقليمي"
+      ],
+      "excludedTerms": [
+        "سياحة",
+        "طقس"
+      ],
+      "originalTitleArabic": "من هرمز إلى جيهان.. رهان حكومة الزيدي لتأمين مستقبل النفط العراقي",
+      "sourceArabic": "المسلة الحدث كما حدث",
+      "sourceHomepage": "https://almasalah.com",
+      "publishedAt": "2026-08-02T10:30:57.000Z",
+      "descriptionArabic": "من هرمز إلى جيهان.. رهان حكومة الزيدي لتأمين مستقبل النفط العراقي المسلة الحدث كما حدث",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9YaWNCcGRFSl9KaUxPZm5jZS11dUVPNjBVamtXaHBwcFFCZjNaOGl1UTQyNVNqM1RMMGdwVTFKTUVfRlBKS0pJUm1JWXNNQQ?oc=5",
+      "articleUrl": "https://almasalah.com/archives/139599",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:39.009Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:02.544Z",
+      "canonicalUrl": "https://almasalah.com/archives/139599",
+      "originalTextArabic": "من هرمز إلى جيهان.. رهان حكومة الزيدي لتأمين مستقبل النفط العراقي\n\n 2 غشت، 2026 \n\n بغداد/المسلة:  في وقت لا تزال فيه ملفات كثيرة في العراق رهينة لحسابات الولاءات والمحاور، يبدو أن رئيس الوزراء علي الزيدي اختار أن يقرأ المشهد بمنطق مختلف: تنويع منافذ تصدير النفط بعيداً عن الاعتماد الحصري على مضيق هرمز المهدد بالإغلاق. فبين توقيع اتفاقية جيهان وفتح الباب أمام شراكات في حقول كركوك، تتقدم بغداد بخطوة تبدو محسوبة اقتصادياً أكثر منها سياسية، تضع مصلحة الاقتصاد العراقي واستقرار موازناته النفطية في صدارة الأولويات، بمعزل عن أي حسابات إقليمية أخرى قد تتقاطع مع الملف.\n\n تفاصيل\n\n في خضم الزيارة التي قادها رئيس الوزراء العراقي علي الزيدي إلى أنقرة نهاية تموز الماضي، والتي وصفها بأنها فتحت “إنجازاً استراتيجياً” في ملف الطاقة، مضت تركيا بخطى متسارعة لترسيخ موقعها بديلاً محتملاً لممرات نفط الخليج، مستفيدة من التوترات التي خلّفتها الحرب الأميركية الإيرانية وتعطل الملاحة قرب مضيق هرمز.\n\n ووقّعت وزارة الطاقة التركية، السبت، اتفاقية جديدة مدتها عام واحد بين شركة “بوتاش” الحكومية وشركتي النفط العراقيتين “سومو” و”شركة نفط الشمال”، لضمان استمرار تشغيل خط أنابيب كركوك-جيهان البالغ طوله نحو 970 كيلومتراً، بعد انتهاء العمل بالاتفاقية التاريخية الموقعة عام 1973. وأعلن وزير الطاقة التركي ألب أرسلان بيرقدار عبر حسابه على منصة “إكس” أن اللقاء مع وزير النفط العراقي كان “مثمراً”، وأن الاتفاق يضمن الاستخدام الأمثل للخط الذي تبلغ طاقته التصميمية 1.5 مليون برميل يومياً، رغم أن التدفقات الفعلية لا تتجاوز حالياً 170 ألف برميل.\n\n بالتوازي، حصلت مؤسسة البترول التركية على حصة 15% في ائتلاف يضم “بي بي” و”كونوكو فيليبس” لتطوير حقول قبة بابا وباي حسن وجمبور وخباز في كركوك، في خطوة نقلت أنقرة من موقع الناقل إلى موقع الشريك المنتج.\n\n وعلّق الزيدي على منصة “إكس” واصفاً الاتفاق بأنه خطوة تؤمّن انسيابية الصادرات النفطية العراقية. من جهتها، رأت الباحثة كيت دوريان أن الترتيب الانتقالي يمهّد لاتفاقية دائمة تشمل النفط والغاز والكهرباء، فيما تسعى تركيا إلى ربط هذه المكاسب بمشروع “طريق التنمية” كممر تجاري بين الخليج وأوروبا.\n\n ألب أرسلان بيرقدار (وزير الطاقة التركي، @aBayraktar1):  أشار إلى أن الاجتماع مع الوفد العراقي كان مثمراً وأفضى إلى اتفاق يضمن الاستخدام الفعّال لخط الأنابيب العراقي-التركي.\n\n المسلة – متابعة – وكالات \n\n النص الذي يتضمن اسم الكاتب او الجهة او الوكالة، لايعبّر بالضرورة عن وجهة نظر المسلة، والمصدر هو المسؤول عن المحتوى. ومسؤولية المسلة هو في نقل الأخبار بحيادية، والدفاع عن حرية الرأي بأعلى مستوياتها. \n\n About Post Author\n\n Admin \n\n See author's posts \n\n Continue Reading\n\n Previous إيران تنفي الوساطة من أجل تعليق الضربات \n Next أمانة بغداد تستنفر الملاكات لخدمة زائري أربعينية الإمام الحسين \n\n Subscribe \n\n Login \n\n Notify of \n\n new follow-up comments \n new replies to my comments \n\n Label \n\n {} \n [+] \n\n الاسم* \n\n البريد الالكتروني* \n\n Website \n\n Δ \n\n Label \n\n {} \n [+] \n\n الاسم* \n\n البريد الالكتروني* \n\n Website \n\n Δ \n\n 0 تعليقات \n\n Inline Feedbacks \n\n View all comments\n\n أخبار ذات علاقة \n\n ترامب يعلن عن محادثات جديدة مع إيران \n\n المتحدث الحكومي: إيران لم تفِ بوعودها للزيدي في عبور نفط العراق عبر هرمز  \n\n رصد الميديا: هل ينجح العراق في تفادي صراع إقليمي يقترب من حد الاشتعال؟",
+      "sourceHost": "almasalah.com",
+      "contentChars": 2991,
+      "arabicRatio": 0.9283,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:19.290Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "economy",
+        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-InvPr2KvxZcGoTXlgm",
+        "representativeArticleId": "discovery-6lwlsH5vGIaInQtOlgjTm9sm",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 47,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 27,
+          "countryImportance": 10,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "이라크의 석유 수출 다변화 관련 정부 결정은 비스마야 사업 전체 경제 환경에 간접적 영향을 줄 수 있으나 직접 계약이나 대금 관련 내용은 아님.",
+        "scoringVersion": 4,
+        "scoreFingerprint": "7af4d11ecaecb4506684",
+        "ruleScore": 68,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": 35,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "이라크의 석유 수출 다변화 관련 정부 결정은 비스마야 사업 전체 경제 환경에 간접적 영향을 줄 수 있으나 직접 계약이나 대금 관련 내용은 아님.",
+        "aiBreakdown": {
+          "bismayahRelevance": 10,
+          "decisionMakerInfluence": 15,
+          "contractPaymentImpact": 5,
+          "responseUrgency": 0,
+          "sourceReliability": 5
+        }
+      },
+      "contentHash": "22786eb3ed07fca8b774dcdf5c3131bec38f6bfa71ef1cb3abc7d19cab089960",
+      "contentCheckedAt": "2026-08-03T01:38:19.290Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+      "keywordId": "bismayah-nic-001",
+      "category": "bismayah",
+      "priority": 100,
+      "queryArabic": "\"الهيئة الوطنية للاستثمار\"",
+      "requiredTerms": [
+        "الهيئة الوطنية للاستثمار"
+      ],
+      "optionalTerms": [
+        "رئيس",
+        "مشروع",
+        "استثمار",
+        "بسماية"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية",
+        "احتفالية"
+      ],
+      "originalTitleArabic": "التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق",
+      "sourceArabic": "صدى البلد",
+      "sourceHomepage": "https://www.elbalad.news",
+      "publishedAt": "2026-08-02T10:26:00.000Z",
+      "descriptionArabic": "التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق صدى البلد",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE1VbkprdDFCMEZLMHVJTG9tWDlFMHhoeXcxTng2RFNGZlEyS2F1QVJoQV9XLUZwWkdFZlNNMXpyYnV5cVpDNUVV?oc=5",
+      "articleUrl": "https://www.elbalad.news/7059356",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:36.500Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:02.041Z",
+      "canonicalUrl": "https://www.elbalad.news/7059356",
+      "originalTextArabic": "الرئيسية\r\n\n اقتصاد\r\n\n اقتصاد\n\n التمثيل التجاري يبحث تعزيز التعاون وتيسير حركة المستثمرين بين مصر والعراق\r\n\n الأحد 02/أغسطس/2026 - 01:26 م\r\n 8/2/2026 1:26:09 PM \r\n\n طباعة\r\n\n شارك\r\n\n التمثيل التجارى \r\n\n ولاء عبد الكريم \r\n\nبحث مكتب التمثيل التجاري المصري في بغداد مع الهيئة الوطنية للاستثمار العراقية سبل تعزيز التعاون الاقتصادي والاستثماري بين البلدين، وفتح آفاق جديدة للشراكة بين مجتمعي الأعمال، إلى جانب مناقشة آليات تيسير حركة المستثمرين ورجال الأعمال، بما يدعم زيادة الاستثمارات المشتركة ويعزز التعاون الاقتصادي.\n\nجاء ذلك في إطار توجيهات الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، بتعزيز العلاقات الاقتصادية والاستثمارية مع الدول العربية، وتكثيف جهود التمثيل التجاري لدعم الاستثمارات المصرية وفتح أسواق جديدة أمام القطاع الخاص.\n\n تعزيز التعاون وتبادل الزيارات\n\n وعقد المستشار التجاري سمير قرشي، رئيس مكتب التمثيل التجاري المصري في بغداد، اجتماعًا مع سالار محمد أمين، نائب رئيس الهيئة الوطنية للاستثمار العراقية، بحضور حيدر حمادة، مدير عام دائرة العلاقات والإعلام بالهيئة، وعدد من مسؤوليها.\n\n ارتفاع مبيعات المشغولات الذهبية في مصر أول 7 أشهر من 2026\n\n نظام الإيجار المنتهي بالتملك للأراضي الصناعية.. سداد 5% من قيمة المتر سنويًا\n\n وتناول اللقاء بحث سبل تعزيز التعاون الاقتصادي والاستثماري بين مصر والعراق، وتفعيل الزيارات المتبادلة بين الجهات المعنية ومجتمعي الأعمال، بما يسهم في إقامة شراكات ومشروعات استثمارية مشتركة، إلى جانب بحث آليات تطوير العلاقات الثنائية وفتح مجالات جديدة للتنسيق بين الجانبين.\n\n تيسير إجراءات المستثمرين\n\n وناقش الجانبان سبل تسهيل دخول المستثمرين المصريين إلى العراق، وتبسيط إجراءات منح سمات الدخول للمستثمرين ورجال الأعمال العراقيين، بما يدعم حركة الاستثمار ويشجع على تنفيذ مشروعات جديدة، فضلًا عن تعزيز التواصل المباشر بين المستثمرين في البلدين.\nكما أكدا أهمية دعم القطاع الخاص باعتباره شريكًا رئيسيًا في تحقيق التنمية الاقتصادية، والعمل على توسيع دوره في تنفيذ المشروعات الاستثمارية، مع مواصلة الجهود الرامية إلى تهيئة بيئة أعمال جاذبة للاستثمار وتشجيع تبادل الخبرات والاستفادة من الفرص الاستثمارية المتاحة.\n\n وزير الاستثمار: العراق سوق عربية ذات أولوية\n\n وأكد الدكتور محمد فريد، وزير الاستثمار والتجارة الخارجية، أن العراق يمثل أحد الأسواق العربية ذات الأولوية بالنسبة لمصر، مشيرًا إلى حرص الوزارة على تعزيز التعاون الاقتصادي والاستثماري مع بغداد، في ظل العلاقات التاريخية التي تجمع البلدين والفرص الواعدة المتاحة أمام مجتمع الأعمال.\nوأوضح أن الوزارة تعمل على دعم تواجد الشركات المصرية في السوق العراقية، وزيادة الاستثمارات المشتركة، وتعزيز دور القطاع الخاص في تنفيذ المشروعات التنموية، إلى جانب إزالة التحديات التي قد تواجه المستثمرين وتهيئة بيئة أكثر جذبًا للاستثمار، بما يسهم في إقامة شراكات استراتيجية تحقق المصالح المشتركة.\n\n التمثيل التجاري يواصل دعم الشركات المصرية\n\n من جانبه، أكد الدكتور عبد العزيز الشريف، وكيل أول وزارة الاستثمار والتجارة الخارجية ورئيس التمثيل التجاري، أن اللقاء يأتي تنفيذًا لتوجيهات الوزير بتعزيز التعاون مع المؤسسات الاستثمارية في الدول العربية، ودعم تواجد الشركات المصرية في الأسواق ذات الأولوية، والعمل على تذليل التحديات أمام المستثمرين بما يسهم في زيادة الاستثمارات المتبادلة.\nوأشار إلى أن مكتب التمثيل التجاري المصري في بغداد سيواصل التنسيق مع الهيئة الوطنية للاستثمار والجهات العراقية المختصة لتيسير إجراءات المستثمرين، وتنظيم لقاءات الأعمال، والتعريف بالفرص الاستثمارية، وتشجيع تبادل الوفود الاقتصادية والاستثمارية، بما يعزز الاستثمارات المشتركة وحركة التجارة بين البلدين.\nوأضاف الشريف أن المرحلة المقبلة ستشهد تكثيف التواصل مع الجهات العراقية ومجتمعي الأعمال في مصر والعراق، بهدف تحويل الفرص الاستثمارية إلى مشروعات فعلية، وزيادة مساهمة القطاع الخاص في دعم التنمية الاقتصادية، بما يخدم المصالح المشتركة للبلدين.\n\n طباعة\r\n\n شارك\r\n\n التمثيل التجارى\r\n\n العراق\r\n\n التعاون المشترك\r\n\n ﺗﻔﻀﻴﻼﺕ اﻟﻘﺮاء\n\n تقييمات أسبوعية وشهرية لطلاب البكالوريا .. والحصول على 50% شرط لدخول الامتحان\r\n\n بعد اعلان الحد الأدنى.. مؤشرات تنسيق المرحلة الأولي 92.8% للطب 91.9 للأسنان87.9% للهندسة\r\n\n 900 جنيه.. تراجع كبير في سعر الجنيه الذهب وعيار 21 مفاجأة\r\n\n بالأسماء.. شاهد اعتماد حركة التنقلات الداخلية لرؤساء مباحث أقسام الجيزة\r\n\n زلزال بقوة 5.2 ريختر في عدة مناطق بمصر.. وبيان عاجل من البحوث الفلكية\r\n\n نقابة المهندسين تشترط 75% في المواد الأساسية للقبول بكليات الهندسة\r\n\n نجل الشهيد أحمد المنسي يحقق تفوقا وإنجازا علميا في امتحانات الدبلومة الأمريكية\r\n\n العظمى تتخطى 45 درجة في الظل.. تحذير عاجل من الأرصاد بشأن طقس الغد\r\n\n ترشيحاتنا\r\n\n ميريهان حسين تستعرض رشاقتها بفستان لافت\r\n\n سحل وضرب أمام الجميع.. شاب يعتدي على زوجين مسنين وسط الشارع في المنوفية\r\n\n وسط صراخ واستغاثات.. خلاف على قطعة أرض يتحول إلى مشادة أمام الأهالي في الشرقية\r\n\n -->\r\n\n ﻣﻘﺎﻻﺕ\r\n\n د. محمد عسكر يكتب: التكنولوجيا.. القوة التي تعيد تشكيل العالم\r\n\n ياسر إبراهيم عبيدو يكتب: حين ينهار السقف.. الغش من خيانة القلم إلى دمار المجتمع\r\n\n خالد عامر يكتب : قراءة في هندسة فوضى الشرق الأوسط الجديد\r\n\n د. أحمد محمد عبد الوهاب يكتب: الطلاق والأبناء... كيف نحمي أطفالنا من صراعات الكبار؟\r\n\n إلهام أبو الفتح تكتب: ولادك يا بلدنا رجالة\r\n\n المزيد",
+      "sourceHost": "elbalad.news",
+      "contentChars": 4757,
+      "arabicRatio": 0.9959,
+      "relevanceNote": "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련",
+      "fetchedAt": "2026-08-03T01:38:18.777Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "bismayah",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "bismayah",
+        "to": "bismayah",
+        "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-nwfQItBOJaw4MEzRGe",
+        "representativeArticleId": "discovery-HN63pvdWJIR7OIIEONUV1DGU",
+        "isRepresentative": true,
+        "memberCount": 5,
+        "duplicateCount": 4
+      },
+      "importance": {
+        "score": 80,
+        "level": "IMPORTANT",
+        "levelKo": "중요",
+        "reportStatus": "PRIORITY_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "relevance": 25,
+          "projectImpact": 5,
+          "reportValue": 10,
+          "sourceReliability": 6
+        },
+        "reportPriority": "PRIORITY_REVIEW",
+        "businessRelevance": "INDIRECT",
+        "reasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "scoringVersion": 4,
+        "scoreFingerprint": "35db783e942a19d52405",
+        "ruleScore": 46,
+        "businessFloor": 80,
+        "floorRule": "NIC_POLICY_ORGANIZATION",
+        "floorReasonKo": "NIC 정책·권한·조직 또는 주요 의사결정과 관련됨",
+        "aiScore": 25,
+        "aiWeight": 0.65,
+        "ruleWeight": 0.35,
+        "aiModel": "gpt-4.1-mini",
+        "aiReportPriority": "REVIEW",
+        "aiReasonKo": "이집트-이라크 투자 협력 증진 관련 소식으로, 비스마야 직접 사업과는 거리가 있으나 향후 투자 환경 개선 가능성에 대한 간접 참고 가치 있음.",
+        "aiBreakdown": {
+          "bismayahRelevance": 5,
+          "decisionMakerInfluence": 5,
+          "contractPaymentImpact": 5,
+          "responseUrgency": 5,
+          "sourceReliability": 5
+        }
+      },
+      "contentHash": "6564aae9ae4bdf42ec401e9c3de24e1e67cbd2351e90bcc697418f53045b421e",
+      "contentCheckedAt": "2026-08-03T01:38:18.777Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-7SxhHYVZv6b07kYuYDLPDQoH",
+      "keywordId": "politics-integrity-001",
+      "category": "politics",
+      "priority": 92,
+      "queryArabic": "\"هيئة النزاهة\" مسؤول العراق",
+      "requiredTerms": [
+        "هيئة النزاهة"
+      ],
+      "optionalTerms": [
+        "فساد",
+        "مسؤول",
+        "وزير",
+        "مدير عام",
+        "إحالة"
+      ],
+      "excludedTerms": [
+        "ندوة",
+        "احتفالية"
+      ],
+      "originalTitleArabic": "النزاهة تُوقِع بأحد المسؤولين المحليين في كركوك متلبساً بتسلُّم رشوة",
+      "sourceArabic": "Kurdistan24",
+      "sourceHomepage": "https://www.kurdistan24.net",
+      "publishedAt": "2026-08-02T09:15:00.000Z",
+      "descriptionArabic": "النزاهة تُوقِع بأحد المسؤولين المحليين في كركوك متلبساً بتسلُّم رشوة Kurdistan24",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1hWTFzemxKLWpmZzZSbjJNakxpU25SeWc1bEZnOF94UUJtUnFlN3lvcmgxNi1pSlAyMk1udVNEM3E4TUd3UkVfd0NVcnk4OE5kcGhKeFBR?oc=5",
+      "articleUrl": "https://www.kurdistan24.net/ar/story/929833",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:37.243Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:02.785Z",
+      "canonicalUrl": "https://www.kurdistan24.net/ar/story/929833",
+      "originalTextArabic": "أمن \n\n النزاهة تُوقِع بأحد المسؤولين المحليين في كركوك متلبساً بتسلُّم رشوة\n\n منذ 16 ساعة \n\n العراق \n هيئة النزاهة الاتحادية \n كركوك \n مديرية الموارد المائية \n\n أربيل (كوردستان 24)- أعلنت هيئة النزاهة الاتحادية تمكنها من الإيقاع بأحد المسؤولين المحليين بمحافظة كركوك؛ إثر تورطها بابتزاز المواطنين والمقاولين وطلب مبالغ مالية؛ مقابل إنجاز معاملات تتعلق بواجباتها الوظيفية.\n\n وأوضحت الهيئة في معرض حديثها عن عملية الضبط، أنها ألفت فريق عمل من مكتب تحقيق كركوك؛ للتحري والتقصي والتحقق من معلومات تلقتها تفيد بإقدام رئيس قسم التشغيل في مديرية الموارد المائية بمحافظة كركوك بابتزاز المراجعين والمستثمرين وطلب الرشى منهم.\n\n وقالت إن الفريق بادر إلى التحري والتقصي عن المعلومات، وبعد استحصال قرار قاضي محكمة تحقيق كركوك المختصة بالنظر في قضايا النزاهة، قام بنصب كمين محكم، حيث تم ضبط المتهمة متلبسة أثناء تسلم مبلغ مالی؛ مقابل تنظيم كتاب \"عدم تعارض\" خاص بإنشاء مشروع استثماري لتربية الأسماك المغلقة، فيما أسفرت العملية أيضاً عن ضبط كتب ومستندات تتعلق بالمشروع ذاته.\n\n ونوهت بتنظيم محضر ضبط أصولي في العملية، التي نفذت وفق أحكام القرار رقم (160 لسنة 1983)، وعرضه بصحبة المتهمة والمبرزات الجرمية على قاضي التحقيق المختص؛ لاستكمال الإجراءات القانونية بحق المتهمة.\n\n Kurdistan24 \n , \n\n آخر الأخبار\n\n منذ 4 ساعات \n\n الميلاتونين أم المغنيسيوم.. أيهما يمنح نوما أفضل؟\n\n منذ 4 ساعات \n\n وزير الصحة الاتحادي يوجه بإعفاء مدير مستشفى الكرخ العام من منصبه\n\n منذ 5 ساعات \n\n شرطة ديالى: القبض على متهمين اثنين مطلوبين وفق المادة (4 إرهاب)\n\n منذ 5 ساعات \n\n بزشكيان: مذكرة التفاهم الموقعة ستكون \"مركز ثقل\" علاقاتنا الخارجية مستقبلاً\n\n منذ 6 ساعات \n\n إسرائيل تبلغ واشنطن بـ \"مخاوف أمنية\" تجاه اتفاق نزع سلاح حماس\n\n مقالة ذات صلة\n\n تشديد الحصار البحري الأمريكي على إيران وتمديد تعليق الرحلات الجوية إلى إسرائيل حتى 2027\n\n مقتل 7 أشخاص وإصابة 18 في تفجير انتحاري قرب مركز شرطة في باكستان\n\n إصابة برلماني کـوردي في تفجير استهدف مطعماً بموسكو وارتفاع حصيلة الضحايا إلى 5 قتلى\n\n فاضل ميراني \n\n فاضل ميراني\n\n مسؤول الهيئة العاملة للمكتب السياسي للحزب الديمقراطي الكوردستاني\n\n ورقة بحثية في السلاح و الامن و السيادة",
+      "sourceHost": "kurdistan24.net",
+      "contentChars": 1983,
+      "arabicRatio": 0.9938,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T01:38:20.594Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-cm7ahDHzn4xWJUrohG",
+        "representativeArticleId": "discovery-7SxhHYVZv6b07kYuYDLPDQoH",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 48,
+        "level": "GENERAL",
+        "levelKo": "일반",
+        "reportStatus": "REFERENCE_ONLY",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 28,
+          "businessImpact": 0,
+          "politicalImpact": 5,
+          "reportValue": 7,
+          "sourceReliability": 8
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "7e7db324b5f01d7c5e05",
+        "ruleScore": 48,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "8316d78142b2df162d1570ffbaa0eb8f8ceceadc7846f7f12d4fc9fe271a4689",
+      "contentCheckedAt": "2026-08-03T01:38:20.594Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-buulzOtW6YMmHIrgVDgxMpPz",
+      "keywordId": "politics-cabinet-002",
+      "category": "politics",
+      "priority": 97,
+      "queryArabic": "\"جلسة مجلس الوزراء\" العراق",
+      "requiredTerms": [
+        "مجلس الوزراء"
+      ],
+      "optionalTerms": [
+        "جلسة",
+        "اجتماع اعتيادي",
+        "حزمة قرارات"
+      ],
+      "excludedTerms": [
+        "تهنئة",
+        "تعزية"
+      ],
+      "originalTitleArabic": "القضاء العراقي يسترد 20 مليار دينار في قضية فساد مالي وإداري",
+      "sourceArabic": "shafaq.com",
+      "sourceHomepage": "https://shafaq.com",
+      "publishedAt": "2026-08-02T07:58:29.000Z",
+      "descriptionArabic": "القضاء العراقي يسترد 20 مليار دينار في قضية فساد مالي وإداري shafaq.com",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi7ANBVV95cUxNM2R6MEsxZk9MVzNwNWZrMC1yR215TU1JQVdBLTNuRHlHU3FuVHdOeHhKM190ZnlDbmI5V3lvZFg3bV9ybk91cmpELXc4aHhzY09FMmxhUnhYUE1ocjZGeUJkSm4yOV9JaFZhZ21xS0FjMDU3Umowdmx1clVLUVppMDlaSS1qV2xrQjdxSmQ1dWJlRjJUcTk5SDBOblJRQnRKYXhJUlQ4czBkU0Y4NmItVE5pcEUzS1pFVHU0T3dyLXpxbGdmMEhqdUJHemxST3lwczRfUmwxOC1zUUUxTVBkbEZpd25FRUJOTm1fSFVBUEt6eVRieTBpY3JUWUUtdXRwTTk1bFdTZW9jOTZGMnhub2ZObVJFSE1pdWxhRE9BRWh6bUpyRGZqbktCeDFsakxkRktHWE96VDdITHA3SFJjQXVMRXVTd1pMVXc3Z2FmZGJVVDhvM09vczBVZWZSMUMtQmt3RHpkcUxOLW5GWTdGTVFzWWE4MFI1NmtsdDBsbXB5bjVmSUN0M3pJeWRJMTZUODFJUUJ0ZE9td0Q1LUNONkNINnhrMC1SaFNsXzZLTnZrelB0S3Z6ZjV0SVBrQ0dqYnRqcm5udUp5TmZ3V0QxSWZxM3Jya0ZnaWZqeWVISDJqRGV1bjV2TjJLT1E?oc=5",
+      "articleUrl": "https://www.shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%B3%D8%AA%D8%B1%D8%AF-20-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D9%82%D8%B6%D9%8A%D8%A9-%D9%81%D8%B3%D8%A7%D8%AF-%D9%85%D8%A7%D9%84%D9%8A-%D9%88-%D8%AF%D8%A7%D8%B1%D9%8A",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T04:36:04.537Z",
+      "urlRecoveryMethod": "source-sitemap",
+      "recoveredSourceId": "shafaq",
+      "titleSimilarity": 1,
+      "recoveredAt": "2026-08-03T04:36:13.400Z",
+      "urlResolutionMethod": "source-sitemap",
+      "resolvedAt": "2026-08-03T04:36:27.006Z",
+      "canonicalUrl": "https://shafaq.com/ar/%D9%85%D8%AC%D8%AA%D9%80%D9%85%D8%B9/%D8%A7%D9%84%D9%82%D8%B6%D8%A7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%8A%D8%B3%D8%AA%D8%B1%D8%AF-20-%D9%85%D9%84%D9%8A%D8%A7%D8%B1-%D8%AF%D9%8A%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D9%82%D8%B6%D9%8A%D8%A9-%D9%81%D8%B3%D8%A7%D8%AF-%D9%85%D8%A7%D9%84%D9%8A-%D9%88-%D8%AF%D8%A7%D8%B1%D9%8A",
+      "originalTextArabic": "الأخبار العاجلة\n\n نيجيرفان بارزاني يلتقي الشرع في دمشق غداً\n\n منح 15 ألف زائر أفغاني تأشيرات دخول إلى العراق مجاناً (وثيقة)\n\n حصري.. اميركا تشترط تفكيك الفصائل مقابل تحرير 30 مليار دولار من \"أموال صدام\"\n\n حريق هائل يلتهم مستودعاً تجارياً في دهوك وخسائر تُقدّر بمليوني دولار (صور)\n\n القضاء العراقي يسترد 20 مليار دينار في قضية فساد مالي وإداري\n\n شؤون عراقية\n\n breaking\n\n القضاء العراقي\n\n مكافحة الفساد\n\n استرداد الأموال\n\n 20 مليار دينار\n\n مبنى رئاسة محكمة استئناف بغداد/الرصافة (أرشيف)\n\n 2026-08-02T07:01:47+00:00 \n\n Share \n\n font \n\n Enable Reading Mode \n\n A- \n A \n A+ \n\n شفق نيوز - بغداد\n أعلن مجلس القضاء الأعلى، اليوم الأحد، أن محكمة تحقيق الرصافة المختصة بالنظر في قضايا النزاهة وغسل الأموال استردت مبلغاً مالياً قدره 20 مليار دينار عراقي.\n وجاء في بيان صادر عن المجلس، أن عملية استرداد المبلغ جاءت على خلفية جرائم فساد مالي وإداري، واحتيال مالي، مؤكداً استمرار الإجراءات القانونية بحق المخالفين الذين يتبعون أساليب غير مشروعة لتحقيق أرباح تضر بالمال العام.\n ولم يفصح البيان عن هويات ومناصب المدانين في هذه القضية، ولا الجهات التي ينتمون إليها، فيما سبق أن أعلنت السلطة القضائية عن استردادها عشرات المليارات من الدنانير ضمن جهود ملاحقة المتورطين بجرائم الفساد.\n وتأتي هذه العملية تزامناً مع حملة اعتقالات أطلقتها الجهات المعنية في الدولة العراقية، فجر يوم الأحد (28 حزيران الماضي)، طالت مسؤولين سياسيين ونواباً ورجال أعمال ضمن حملة مكافحة الفساد، والتي وصفها رئيس الحكومة الاتحادية علي الزيدي، خلال جلسة لمجلس الوزراء، بأنها \"المرحلة الأولى\" من إجراءات أوسع لاسترداد المال العام، مع تكليف الأجهزة الرقابية باستقبال أي مؤشرات تتعلق بحالات الفساد أو التقصير في مؤسسات الدولة.\n وذكرت هيئة النزاهة الاتحادية، أن مذكرات القبض تُنفذ وفق القانون وبإشراف القضاء، فيما تشير معطيات التحقيق، بحسب مصادر قضائية، إلى استمرار فتح ملفات جديدة قد تطال شخصيات أخرى خلال الفترة المقبلة، في إطار مساعٍ لاسترداد الأموال العامة وملاحقة المتورطين داخل العراق وخارجه.\n\n أخبار ذات صلة \n\n أمـن\n\n القضاء العراقي يحسم مصير أكثر من 1000 من أطفال داعش \n\n أمـن\n\n الحكم بالإعدام على تاسع فرنسي في العراق\n\n مجتـمع\n\n وثيقة .. القضاء العراقي يحكم بالسجن 15 عاما لمن ينشئ صفحة مزيفة على التواصل الاجتماعي\n\n سیاسة\n\n بترايوس مستنداً إلى تقرير شفق نيوز: العراق أمام لحظة مفصلية لإستعادة سلطة الدولة\n\n مجتـمع\n\n تاكيداً لشفق نيوز.. القضاء يعلن ضبط 25 مليار دينار ومليون دولار وذهب في قضية الجميلي (صور)\n\n سیاسة\n\n من \"سرقة القرن\" إلى \"مصافي الشمال\".. القضاء يلوّح للجميلي بـ\"سيناريو نور زهير\" المشروط",
+      "sourceHost": "shafaq.com",
+      "contentChars": 2362,
+      "arabicRatio": 0.9767,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T04:39:05.961Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "importance": {
+        "score": 65,
+        "level": "REFERENCE",
+        "levelKo": "참고",
+        "reportStatus": "OPTIONAL_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 40,
+          "businessImpact": 0,
+          "politicalImpact": 9,
+          "reportValue": 10,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "a08df953b781c84beace",
+        "ruleScore": 65,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "eventGroup": {
+        "groupId": "event-RBd_q1UkqaFZP7STZI",
+        "representativeArticleId": "discovery-buulzOtW6YMmHIrgVDgxMpPz",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "contentHash": "8273dd027867cd93cb34673ea696a0137bbea34d65c3a11233545d6cc36026b8",
+      "contentCheckedAt": "2026-08-03T04:39:05.961Z",
+      "contentChanged": false,
+      "processingReused": true,
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      }
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-EW56ETnZlbSKRNiUAaXfM_w-",
+      "keywordId": "politics-parliament-002",
+      "category": "politics",
+      "priority": 93,
+      "queryArabic": "\"اللجنة المالية النيابية\" الموازنة",
+      "requiredTerms": [
+        "اللجنة المالية النيابية"
+      ],
+      "optionalTerms": [
+        "الموازنة",
+        "تمويل",
+        "تخصيصات",
+        "إنفاق"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "العراق يلجأ إلى طباعة العملة لمواجهة أزمة السيولة",
+      "sourceArabic": "وكالة الصحافة المستقلة",
+      "sourceHomepage": "https://mustaqila.com",
+      "publishedAt": "2026-08-02T06:22:55.000Z",
+      "descriptionArabic": "العراق يلجأ إلى طباعة العملة لمواجهة أزمة السيولة وكالة الصحافة المستقلة",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxQdjNBMjBua3pPV3k1UDY3SUtuc2RBZEh1OGxseFRFWW9xUFZPdG4zbjNyeGJqUnJFRWVoN3BYVXVWa2Jkc2lVemZ4S2h2UU9IM1ViNWdJMHlmeUR0S2tpY0NHQVJvcjczWVFUY0NUTDFIZjRnRElfWHkzZ1hfZFZXQ1ZHTzlDVFZ3TmRGNlBoYU5sTlNBcnJxdU9UX0FQYk0tM2JLUW15OVBMT0xzaTJVdmNLeUt6UDl0TFptcDJQOER4RGdKbXo4a3d2WGl4Ym1qeVRBZnBhbVNvZ3FEcVJaTjRROVhleEthakRPNHl1RkRQNHBzdlI0ZnVDSlVsRUdhb29ZbHh0MnNCX0lfcjRrSDQ1Mm9YTnpma1AyVEdEYWRHdGRqNW1nQVJDVG1FdW12MW5kenUtVnRra2xpOE10alpZNA?oc=5",
+      "articleUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%84%D8%AC%D8%A3-%D8%A5%D9%84%D9%89-%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A9-%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A3/",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:37.040Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:04.132Z",
+      "canonicalUrl": "https://mustaqila.com/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%84%D8%AC%D8%A3-%D8%A5%D9%84%D9%89-%D8%B7%D8%A8%D8%A7%D8%B9%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D8%A9-%D9%84%D9%85%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%A3/",
+      "originalTextArabic": "العراق يلجأ إلى طباعة العملة لمواجهة أزمة السيولة\n أغسطس 2, 2026 آخر تحديث: أغسطس 2, 2026 \n\n المستقلة/- في ظل تصاعد الضغوط على المالية العامة العراقية وتراجع السيولة المتاحة، طرحت اللجنة المالية النيابية جملة من الخيارات لمعالجة الأزمة، من بينها طباعة العملة لتوفير السيولة اللازمة لتغطية الرواتب والإنفاق الحكومي، في وقت حذرت فيه من أن رفع سعر صرف الدولار لن يكون حلاً فعالاً للمرحلة الحالية.\n ويأتي هذا الطرح وسط مخاوف متزايدة من تأثير تراجع الإيرادات النفطية ومحدودية التصدير على قدرة الحكومة في الوفاء بالتزاماتها المالية، خصوصاً مع ارتفاع حجم الإنفاق التشغيلي واعتماد الموازنة بشكل كبير على عائدات النفط.\n 7.8 تريليونات دينار شهرياً للالتزامات \n وقال عضو اللجنة المالية النيابية جمال كوجر إن الحكومة تحتاج شهرياً إلى نحو 7 تريليونات و800 مليار دينار لتغطية التزاماتها المالية، مشيراً إلى أن الأزمة الحالية كانت متوقعة نتيجة انخفاض صادرات النفط وتراجع الموارد المتاحة.\n وأوضح أن استمرار الاعتماد على النفط كمصدر رئيسي للإيرادات جعل المالية العراقية أكثر تأثراً بأي اضطراب في التصدير أو الأسواق العالمية.\n خيارات حكومية محدودة \n وأشار كوجر إلى أن بعض الحلول المطروحة، ومنها بيع العقارات التابعة للدولة لتسديد الديون، لن توفر موارد كافية لمعالجة الأزمة، مبيناً أن هذه الإجراءات قد توفر مبالغ محدودة لا تكفي لسد الاحتياجات المالية المتزايدة.\n كما دعا إلى التركيز على ملف استرداد الأموال المنهوبة وملاحقة المتورطين بملفات الفساد، باعتبار أن إعادة تلك الأموال إلى خزينة الدولة يمكن أن تسهم في تخفيف جزء من الضغوط المالية.\n تحذير من بيع أصول الدولة \n وحذر عضو اللجنة المالية من التوجه نحو بيع أصول الدولة في الوقت الحالي، معتبراً أن هذا الخيار يحمل مخاطر اقتصادية كبيرة، وقد يؤدي إلى فقدان ممتلكات عامة بأسعار أقل من قيمتها الحقيقية.\n وأكد أن إدارة الأزمة تحتاج إلى حلول مدروسة تحافظ على مقدرات الدولة وتمنع اتخاذ قرارات قد تخلق مشاكل اقتصادية جديدة مستقبلاً.\n طباعة العملة… حل سريع أم مخاطر مستقبلية؟ \n ويثير مقترح طباعة العملة جدلاً واسعاً بين الخبراء الاقتصاديين، إذ يرى مؤيدوه أنها قد توفر سيولة سريعة لتغطية الالتزامات العاجلة، بينما يحذر آخرون من أن زيادة المعروض النقدي دون نمو اقتصادي حقيقي قد تؤدي إلى ضغوط تضخمية وتراجع القوة الشرائية للعملة المحلية.\n ويرى مختصون أن أي خطوة بهذا الاتجاه تحتاج إلى دراسة دقيقة وتوازن بين الحاجة إلى السيولة والحفاظ على الاستقرار النقدي.\n رفع سعر الصرف خارج الحسابات \n وأكد كوجر أن رفع سعر صرف الدولار لن يكون حلاً مناسباً في الظروف الحالية، مشيراً إلى أن الأزمة مرتبطة أساساً بمشكلة السيولة والإيرادات وليس فقط بسعر الصرف.\n\n أخبار قد تهمك\n\nالعراق يتصدر أسواق الحمضيات التركية… 357 مليون دولار واردات خلال 6 أشهر \nأغسطس 2, 2026",
+      "sourceHost": "mustaqila.com",
+      "contentChars": 2467,
+      "arabicRatio": 1.003,
+      "relevanceNote": "이라크 정치권의 실질 정책·결정 기사",
+      "fetchedAt": "2026-08-03T01:38:20.682Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "politics",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "politics",
+        "to": "politics",
+        "reason": "이라크 정치·정부·의회 직접 관련",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-BgmLbY7m8VFVxG6Jxq",
+        "representativeArticleId": "discovery-EW56ETnZlbSKRNiUAaXfM_w-",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 31,
+        "level": "LOW",
+        "levelKo": "낮음",
+        "reportStatus": "EXCLUDE",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "nationalImportance": 5,
+          "businessImpact": 0,
+          "politicalImpact": 13,
+          "reportValue": 7,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "5ccaab1f5622eba969d8",
+        "ruleScore": 31,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "35002c01232e9b66e84afede542fbfb51b0523c2086dc43126682025a90f8996",
+      "contentCheckedAt": "2026-08-03T01:38:20.682Z",
+      "contentChanged": false,
+      "processingReused": true
+    },
+    {
+      "schemaVersion": "1.0",
+      "articleId": "discovery-52Aul8WpNBqnKvqA8xtw0maX",
+      "keywordId": "international-hormuz-001",
+      "category": "economy",
+      "priority": 97,
+      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
+      "requiredTerms": [
+        "العراق"
+      ],
+      "optionalTerms": [
+        "مضيق هرمز",
+        "صادرات النفط",
+        "الملاحة",
+        "ناقلات النفط"
+      ],
+      "excludedTerms": [],
+      "originalTitleArabic": "أنقرة تعيد فتح بوابة جيهان.. هل يخرج العراق من قوقعة \"هرمز\"؟",
+      "sourceArabic": "ANF | Articles",
+      "sourceHomepage": "https://arabic.anf-news.com",
+      "publishedAt": "2026-08-02T06:03:31.000Z",
+      "descriptionArabic": "أنقرة تعيد فتح بوابة جيهان.. هل يخرج العراق من قوقعة \"هرمز\"؟ ANF | Articles",
+      "discoveryUrl": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPSjlBUjVJT0FvMWtvQmV5RXZOUWNTOEF4RlNHUU1jRThzV2lTNy1mUDBOak9fZ1dKalRNRXlGdmVOMlR3LVk4NHVpRkFOQXJHYTd2QnJjOFVkc2FiTTh2WFZ1bGp2VVVNc0lfSmUxWE9acHJpT3ZJdEVvbmFpVUhOeXNuTkQzOUhfWExfbTA5UkNiWnQydnBQUXduY3dMZmpQbG9Ud3BsSy1yOG91S09QWVdKQUlpdHFObEowZzg2MWNjeWE4Wk81VVJCNFNpOGI3X1dHTHpuelpKbnV3RTF4dVc3cGNpSHhqQ3AxNg?oc=5",
+      "articleUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/anqrt-tyd-fth-bwabt-jyhan-hl-ykhrj-alraq-mn-qwqt-hrmz-138555",
+      "discoveryMethod": "google-news-rss",
+      "language": "ar",
+      "discoveryStatus": "DISCOVERED",
+      "urlStatus": "RESOLVED",
+      "contentStatus": "FULL_TEXT",
+      "errorCode": null,
+      "discoveredAt": "2026-08-03T01:35:39.025Z",
+      "urlRecoveryMethod": null,
+      "titleSimilarity": null,
+      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
+      "resolvedAt": "2026-08-03T01:36:03.641Z",
+      "canonicalUrl": "https://arabic.anf-news.com/%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7/anqrt-tyd-fth-bwabt-jyhan-hl-ykhrj-alraq-mn-qwqt-hrmz-138555",
+      "originalTextArabic": "مروان مهدي \n\n بغداد \n\n الأحد, ٢ أغسطس ٢٠٢٦, ٠٩:٠٠ \n\n بعد أسابيع من البحث عن منافذ أكثر أمناً لتصدير النفط في ظل الاضطرابات التي شهدها مضيق هرمز، وقّع العراق وتركيا اتفاقاً لمدة عام لاستئناف نقل النفط عبر خط الأنابيب العراقي–التركي إلى ميناء جيهان، بحد أدنى يبلغ 750 ألف برميل يومياً، على أن يُستكمل لاحقاً باتفاقية إطارية تشمل النفط والكهرباء والموارد المائية. وبينما عدّتها بغداد \"إنجازاً استراتيجياً\"، يرى مختصون أن نجاحها سيظل مرهوناً ببنودها المالية والقانونية وقدرتها على تحقيق مصالح العراق بعيداً عن الضغوط السياسية.\n\n ويرى خبير الطاقة رمضان حمزة أن الاتفاقية تمثل \"خطوة مهمة في الاتجاه الصحيح\" لتعزيز أمن الطاقة العراقي وتنويع منافذ التصدير، لكنها لا يمكن أن تُقرأ باعتبارها بديلاً كاملاً عن الصادرات الجنوبية عبر الخليج العربي ومضيق هرمز، بل تمثل جزءاً من منظومة متكاملة لإدارة مخاطر التصدير.\n\n ويشير إلى أن الاتفاق المؤقت، الممتد لعام واحد، يمنح بغداد وأنقرة فرصة للتفاوض على اتفاقية طويلة الأمد، مؤكداً أن اعتماد العراق التاريخي على منفذ واحد لتصدير معظم نفطه شكّل نقطة ضعف استراتيجية، ما يجعل إعادة تشغيل خط كركوك–جيهان ورفع طاقته التشغيلية خطوة مهمة لتقليل المخاطر المرتبطة بأي اضطرابات قد تصيب الملاحة في مضيق هرمز.\n\n ويستدرك حمزة بأن الخط، حتى لو عمل بكامل طاقته التصميمية، لن يكون قادراً على تعويض جميع الصادرات الجنوبية، وبالتالي لا يمكن اعتباره بديلاً كاملاً، وإنما منفذاً استراتيجياً إضافياً يعزز مرونة منظومة التصدير العراقية.\n\n وفي ما يتعلق بالغرامة الدولية التي ألزمت هيئة التحكيم تركيا بدفعها للعراق، يعتبر حمزة أنها تمثل \"انتصاراً قانونياً\" لبغداد، بعدما أكدت حق الحكومة الاتحادية الحصري في إدارة وتصدير النفط العراقي، إثر تصدير نفط إقليم كردستان من دون موافقة الحكومة الاتحادية.\n\n لكنه يؤكد أن الغرامة يجب ألا تتحول إلى محور العلاقة مع أنقرة، مشدداً على ضرورة الفصل بين الحقوق القانونية والمصالح الاقتصادية المستقبلية، بما يضمن الحفاظ على حقوق العراق المالية والسيادية، وفي الوقت نفسه استثمار الاتفاقية الجديدة لبناء شراكة طويلة الأمد تحقق استقرار صادرات النفط وتطوير البنية التحتية للطاقة وتعزيز التعاون الاقتصادي بين البلدين.\n\n ويضيف أن المرحلة الحالية تتطلب رؤية استراتيجية أوسع تقوم على تنويع منافذ تصدير النفط، وعدم الاعتماد على مسار واحد، عبر تطوير خطوط الأنابيب باتجاه تركيا وسوريا والأردن بالتوازي مع الموانئ الجنوبية، وربط الاتفاقيات النفطية بتفاهمات تشمل ملفات الطاقة والمياه والنقل والتجارة، فضلاً عن اعتماد سياسة لإدارة المخاطر الجيوسياسية بما يضمن استمرار الصادرات العراقية في مختلف الظروف.\n\n ويخلص حمزة إلى أن الاتفاقية العراقية–التركية تمثل فرصة مهمة لتعزيز أمن الطاقة العراقي، لكنها \"ليست عصا سحرية\" لحل جميع تحديات التصدير، إذ سيعتمد نجاحها على سرعة التنفيذ، وزيادة الطاقة التشغيلية للخط، والتوصل إلى تسوية مستدامة للقضايا القانونية والمالية العالقة بما يحفظ مصالح العراق.\n\n في المقابل، يطرح الباحث الاقتصادي دريد العنزي جملة من التساؤلات بشأن الآليات المالية للاتفاق، معتبراً أن جوهر نجاحه لا يرتبط فقط بزيادة كميات النفط المصدرة، وإنما بكيفية إدارة عائداتها.\n\n ويتساءل العنزي عما إذا كانت مبيعات النفط عبر هذا الخط ستجري بعيداً عن الآلية المعتمدة حالياً، إذ تذهب عائدات النفط العراقي إلى الاحتياطي الفيدرالي الأميركي قبل تحويلها إلى العراق، بخلاف ما كان يجري سابقاً في صادرات إقليم كردستان التي كانت تعود إيراداتها مباشرة إلى الإقليم.\n\n ويشير إلى أن تصدير 750 ألف برميل يومياً لن يحقق الفائدة المرجوة ما لم يكن السعر قريباً من السعر العالمي، موضحاً أن نفط كركوك ثقيل بطبيعته، وقد يضطر العراق إلى ضخ جزء من نفط البصرة للوصول إلى الكميات المستهدفة.\n\n ويؤكد أن تفاصيل الاتفاق ما تزال غير واضحة، ولا سيما ما يتعلق بآلية التسعير، معتبراً أن هذا الجانب هو الأكثر حساسية، لأن اعتماد أسعار شبيهة بتلك التي كان يبيع بها إقليم كردستان نفطه، أو الخضوع لشروط تركية، سيؤدي إلى خسائر مالية كبيرة للعراق.\n\n كما ينتقد العنزي طريقة إبرام الاتفاق، معتبراً أن ذهاب الوفد العراقي إلى تركيا لتوقيع الاتفاق يعطي انطباعاً بـ\"أفضلية تفاوضية\" للجانب التركي، رغم أن العراق هو صاحب السلعة، وكان يفترض – بحسب رأيه – أن يأتي الطرف الآخر إلى بغداد لإتمام التوقيع، خصوصاً في ظل حجم التبادل التجاري الكبير بين البلدين.\n\n ويرى أن هذا الخلل التفاوضي يرتبط أيضاً بملفات أخرى، وفي مقدمتها أزمة المياه، التي تمنح أنقرة أوراق ضغط إضافية في علاقاتها مع بغداد.\n\n وبينما تتفق القراءات على أن إعادة تشغيل خط جيهان تمثل مكسباً مهماً للعراق في ظل التحديات التي تواجه صادراته النفطية، يبقى نجاح الاتفاق مرهوناً ببنوده النهائية، وآلية التسعير، وضمان الحقوق المالية للعراق، فضلاً عن قدرته على التحول من حل مؤقت إلى شراكة استراتيجية تقلل اعتماد بغداد على منفذ تصدير واحد، وتمنحها مرونة أكبر في مواجهة التقلبات الإقليمية.",
+      "sourceHost": "arabic.anf-news.com",
+      "contentChars": 4315,
+      "arabicRatio": 1.0254,
+      "relevanceNote": "카테고리 전용 검증 미적용",
+      "fetchedAt": "2026-08-03T01:38:20.876Z",
+      "translation": {
+        "status": "PENDING",
+        "titleKo": "",
+        "fullTextKo": ""
+      },
+      "analysis": {
+        "status": "PENDING",
+        "category": "economy",
+        "recommendation": "USER_REVIEW_REQUIRED",
+        "relevanceScore": null,
+        "recommendationReason": ""
+      },
+      "selection": {
+        "selected": false,
+        "reportSection": null,
+        "displayOrder": null,
+        "userNote": ""
+      },
+      "categoryRouting": {
+        "from": "international",
+        "to": "economy",
+        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "locked": true,
+        "method": "STRICT_CATEGORY_GATE_V5"
+      },
+      "eventGroup": {
+        "groupId": "event-EF603CH_svMEOUn7gK",
+        "representativeArticleId": "discovery-52Aul8WpNBqnKvqA8xtw0maX",
+        "isRepresentative": true,
+        "memberCount": 1,
+        "duplicateCount": 0
+      },
+      "importance": {
+        "score": 65,
+        "level": "REFERENCE",
+        "levelKo": "참고",
+        "reportStatus": "OPTIONAL_REVIEW",
+        "scoringMethod": "BUSINESS_FLOOR_AI_BLEND_V4",
+        "scoredAt": "2026-08-03T05:02:54.197Z",
+        "breakdown": {
+          "iraqLink": 19,
+          "countryImportance": 15,
+          "iraqImpact": 25,
+          "businessImpact": 0,
+          "sourceReliability": 6
+        },
+        "reportPriority": "REFERENCE",
+        "businessRelevance": "REFERENCE",
+        "reasonKo": "카테고리 규칙과 비스마야 사업 관련성을 종합 평가함",
+        "scoringVersion": 4,
+        "scoreFingerprint": "f969528af1f6fcdd5023",
+        "ruleScore": 65,
+        "businessFloor": 0,
+        "floorRule": "NONE",
+        "floorReasonKo": "",
+        "aiScore": null,
+        "aiWeight": 0,
+        "ruleWeight": 1,
+        "aiModel": null,
+        "aiReportPriority": null,
+        "aiReasonKo": "",
+        "aiBreakdown": null
+      },
+      "contentHash": "8d3aad79a71a94fcca33a8d4df31e1cbb84efdd4683c214e874a988125bb5fd3",
+      "contentCheckedAt": "2026-08-03T01:38:20.876Z",
+      "contentChanged": false,
+      "processingReused": true
     }
   ],
   "titleCorrectionRun": {
@@ -52137,16 +53217,16 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 409,
-    "retained": 406,
-    "excluded": 3,
+    "before": 386,
+    "retained": 386,
+    "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 333,
-    "duplicateGroupCount": 28,
-    "duplicateArticleCount": 38,
+    "groupCount": 339,
+    "duplicateGroupCount": 29,
+    "duplicateArticleCount": 42,
     "maxHours": 72,
     "minScore": 0.5,
     "method": "ARABIC_CANONICAL_SECURITY_EVENT_V5"
