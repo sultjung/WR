@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-08-17T04:14:35.264Z",
+  "generatedAt": "2026-08-17T05:59:58.459Z",
   "lookbackDays": 14,
-  "count": 381,
+  "count": 379,
   "categoryCounts": {
-    "politics": 219,
+    "politics": 217,
     "bismayah": 9,
     "economy": 59,
     "security": 74,
@@ -965,9 +965,9 @@
       "contentCheckedAt": "2026-08-17T04:12:32.360Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1867,147 +1867,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-yd9wMgBlCP4VCL2LOg4cD2d6",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "سجال تأثير انسحاب القوات الأمريكية من العراق",
-      "sourceArabic": "العمق المغربي",
-      "sourceHomepage": "https://al3omk.com",
-      "publishedAt": "2026-08-16T11:26:01.000Z",
-      "descriptionArabic": "سجال تأثير انسحاب القوات الأمريكية من العراق العمق المغربي",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE5KOFRIWGd2Y1EwSld4VW5IYjViYmkzM2dRR3l3N3duRU1tWmtrZXZxVlp2Tnl0emtiNEVLU1RtbVB2czhycWc?oc=5",
-      "articleUrl": "https://al3omk.com/1181027.html",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-08-17T04:10:13.499Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-08-17T04:10:40.039Z",
-      "canonicalUrl": "https://al3omk.com/1181027.html",
-      "originalTextArabic": "الجميع ينتظرون في العراق يوم 30 أيلول/سبتمبر 2026 موعداً نهائياً لمغادرة الجنود الأمريكيين الأراضي العراقية، هؤلاء كانوا موجودين منذ 2003 غادروا بناء على اتفاقية صوفا في 2011 رجعوا بطلب عراقي رسمي في 2014 واليوم تقول الحكومة انها لم تعد بحاجة إليهم، فهي قادرة على حماية البلد، لكن السبب المباشر والأهم من ذلك هو ان وجودهم أصبح مرتبطاً بملف سلاح الفصائل خارج نطاق الدولة الرسمي، ونسبة غير قليلة بملفات دولية إقليمية أمنية.\n\nليس هذا هو كل شيء، أي ان الملف ليس أمنياً لوحده، وإنما هناك نقاش حول مدى التأثير السلبي على العلاقة بين واشنطن وبغداد من جانب، وما يتركه الانسحاب من مخلفات غير مريحة على العراق والحالة الاقتصادية والسياسية والأمنية للدولة، وفي التناول ثمة من يبالغ ويذهب بعيداً في التاثير السلبي خاصة على الجانب الأمني والإقتصادي، والاخرون يرون فيه حالة طبيعية لا تنعكس بالسلب على العلاقة ببين البلدين.\n\n１- إن الانسحاب لن يكون كاملاً لدرجة الوجود الصفري العسكري في العراق، وإنما يكون عدم الحضور العسكري الرسمي لغايات قتالية، أما الوجود العسكري من حيث هو يبقى، لكن في نطاق محدود جداً من أجل التدريب والاستشارية حيث يكون ضرورياً وقبل ذلك لحماية السفارة الأمريكية في بغداد والقنصلية الأميريكية الأكبر في الشرق الأوسط والتي هي في مدينة أربيل في إقليم كُردستان. ولن تسلم واشنطن حماية السفارة والقنصلية الى القوات العراقية.\n\n２- إن الانسحاب هو بالاتفاق بين الطرفين ولا يأتي من اللاإتفاق حتى يترك أثراً سلبياً مضراً على العلاقة بينهما، والمتضرر يكون العراق بالدرجة الأولى لأن الأمريكيين لهم أكثر من مكان لحماية مصالحهم في المنطقة، فهو خطوة من ضمن اتفاق عام بينهما. أي أنه ليس اجبارياً يفرضه العراق على الولايات المتحدة حتى يرتد بسوء عليه.\n\n３- إن طبيعة الوجود العسكري الأمريكي في أي منطقة لم يأت من طرف واحد، أي انها لم يأت من الطرف الأمريكي أو العراقي فحسب، بل بالاتفاق بين الطرفين، بمعنى انه يلبي مصلحة الطرفين كليهما ولا تقتصر على صالح طرف واحد، لهذا فليس وجود عسكري أميركي من أجل العراق فقط حتى غيابه يكون كارثياً عليه، بل ربما تشكل المصلحة الأميريكية الجانب الأكبر منها لضرورة الامن القومي الأمريكي في الشرق الأوسط، وعلاقة وجودها العسكري بملفات غير عراقية. فمخطئون من يرون ويقرأون في الانسحاب الأميركي حلول كارثة كبرى على الوضع العراقي في جميع مجالاته.\n\n４- لا شك أن وجود القواعد العسكرية لأي بلد على أرض بلد آخر دليل على متانة العلاقة بينهما، وله دور كبير في المستويات المختلفة، لكن هناك سوء حساب من بعض المُقَيّمينَ في العراق، وهي:\n\n• أن العودة الأميركية العسكرية الى العراق كان بعد ظهور تنظيم الدولة وانهيار الجيش العراقي أمامه في 2014، أي انها كانت لغايات عسكرية بحتة، وفي الماضي حين كان المسؤولون العراقيون يرفضون انسحاب هذه القوات تخوفاً من الانهيار الأمني من جديد، ولم يكن الرفض آتياً من احتمال تأثر العلاقات بين البلدين تأثراً سلبياً. ولم يكن ذلك في البال على الإطلاق.\n\n• إن وجود تلك القواعد العسكرية لا تساوي مجمل العلاقة بينهما، لأن الولايات المتحدة الأميركية لا تعبر عنها القوة العسكرية لوحدها، بل هي قوة اقصادية تقنية صناعية قبل كل ذلك ومن خلالها تُشكل العلاقات مع الآخرين، فالمعادلة بينهما والتساوي خطأ وسوء فهم وقراءة مغلوطة، إن تأثير واشنطن في العراق لا يقوم على القوة الباطشة فهي إذا ارادت إجبار العراق على موقف معين أو منعه من سياسة محددة تمتلك العديد من الأدوات، في المقدمة الأداة الاقتصادية وقطع الدولار عنه، والامتناع عن ارسال واردات النفط التي تمرّ على نيويورك في طريقها الى بغداد، مثلاً:\n\nعندما ارادت الكتل الشيعية تحديد نوري المالكي رئيساً للحكومة، كتب الرئيس دونالد ترامب تغريدة واحدة قال إنّ المالكي اختيار سيء، ولن يساعد في حسن العلاقة بين البلدين، فهِم العراقيون ذلك، ومن دون طلقة واحدة تغير الاختيار الى من يريده ترامب، لأن القيادة العراقية تيقنت بأن الإصرار على خيار المالكي معناه التدهور الاقتصادي للبلاد، وان العملة العراقية تنهار أمام الدولار وبالتالي الدخول في المتاهة والفوضى.\n\n５- هناك من يرى بأن مغادرة القوات الامريكية العراق تتسبب بأضرار كبيرة في مجالات الحياة الأخرى، هذا التوقع يتجاهل أن العلاقة مع الولايات المتحدة تكيفها اتفاقية استراتيجية شاملة بينهما، وليس الجانب العسكري النافذة الوحيدة لذلك، إن المجالات الدبلوماسية السياسية الاقتصادية الاجتماعية الثقافية هي الأطر التي تشكل وتحكم على نوع التعامل وليس قيادة “سينتكوم” أو المستشار الأمني.\n\n６- الحذر الأكبر من الانسحاب يأتي من بعض الأصوات الاكاديمية في إقليم كوردستان، هؤلاء حذرهم قائم على سوء نية أطراف عراقية طاغية في السلطة تجاه الشعب الكُردي وكيانه الإداري القانوني، من حق هؤلاء الحذر لو كان المعيار هو ممارسة تلك القوى في السنوات الفارطة، لكن المعادلات الجديدة التي تغيرت وتتغير تخفف من هذا الحذر، لأن الفصائل المسلحة في طريقها الى الفناء الهيكلي العسكري، والحرب الحالية الدائرة بين طهران وواشنطن في نهاياتها تقع في مصلحة السلام الشامل في العراق، وينعكس ذلك على إقليم كُردستان، مع أن الوضع الإداري لإقليم كُردستان دستوري غير قابل للتحرش به، ثم إن سماء كُردستان خلال السنوات الماضية لم تحمها القواعد العسكرية الأميركية فيه، فقد قُصِفَ من كل الجوانب بالصواريخ والمسيرات، والمضادات الجوية الامريكية في أربيل كانت تدافع عن المنطقة المحيطة بالجنود الأمريكيين في مطار أربيل الدولي و القنصلية الأميركية، أما البقية الباقية فكانت مفتوحة أمام الصواريخ، بمعنى أن الانسحاب الأميركي لن يؤثر على حماية السماء الكُردية.\n\n７- ان غياب العسكري الأميركي يترك فراغاً أمنياً في العراق، هذا صحيح، لكن هل يترك العراق إيران لملء الفراغ كما يتصور؟، ثم التأثير على توجيه سياسات الدولة العراقية عبر التهديد بالقوة؟ لو كان الامر كالسابق ربما، لكن الأمور مختلفة الآن اختلافاً ظاهراً للعيان، الحالة العراقية مختلفة من حيث عقلية القيادة، والحالة الايرانية مختلفة نتيجة الحرب الاميركية الإسرائيلية عليها، والقوى التي كانت ترتكز عليها إيران في تمرير سياساتها جبراً من غير اقتناع هي الآن في الطريق الى الزوال أو الضعف، ثم ان العراق يمكنه الاستفادة من الانسحاب الأميركي ويتحرر من مبررات الضغط الإيراني عليه، وهذه راحة للمسؤولين العراقيين الميالين لإيران واستراحة للآخرين.",
-      "sourceHost": "al3omk.com",
-      "contentChars": 5435,
-      "arabicRatio": 1.0174,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-17T04:12:33.021Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "cd0ecdcd00ae352b5401d4333c304e11a2b3557b2f8ee55b41500dd507dd9b8b",
-        "sourceChars": 5435,
-        "translatedChars": 3471,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "b059a4a7e0bbb91e17d6",
-        "preferredTermsApplied": [
-          "바그다드",
-          "아르빌"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-08-17T04:14:20.932Z",
-        "titleKo": "미군의 이라크 철수 영향에 관한 공방",
-        "fullTextKo": "이라크의 모든 사람은 2026년 9월 30일, 미군 병사들이 이라크 영토를 떠나는 최종 시한을 기다리고 있다. 이들은 2003년부터 주둔했고, 2011년 소파 협정에 따라 철수했다가 2014년 이라크의 공식 요청으로 돌아왔다. 오늘날 정부는 더 이상 이들이 필요하지 않으며 국가를 보호할 능력이 있다고 말한다. 그러나 그보다 직접적이고 중요한 이유는 미군의 주둔이 국가의 공식 범위를 벗어난 파벌들의 무기 문제와 연계되어 있고, 상당 부분 국제·지역 안보 현안들과도 연결되어 있기 때문이다.\n\n이것이 전부는 아니다. 즉 이 사안은 안보 문제만은 아니며, 한편으로는 워싱턴과 바그다드의 관계에 미치는 부정적 영향의 정도에 대한 논의가 있고, 다른 한편으로는 철수가 이라크와 국가의 경제적·정치적·안보적 상황에 남길 불편한 여파가 있다. 이를 다루는 과정에서 특히 안보와 경제 측면에 미치는 부정적 영향을 과장하고 지나치게 확대하는 사람들이 있는 반면, 다른 사람들은 이를 양국 관계에 부정적으로 반영되지 않는 정상적인 상황으로 본다.\n\n1- 철수는 이라크 내 군사적 주둔이 완전히 0이 되는 수준의 전면 철수는 아니다. 다만 전투 목적의 공식적인 군사 주둔이 사라지는 것이며, 군사적 존재 자체는 매우 제한적인 범위에서 훈련과 자문을 위해 필요한 경우 유지된다. 그보다 우선적으로는 바그다드의 미국 대사관과 중동 최대 규모인 쿠르디스탄 지역 아르빌의 미국 영사관을 보호하기 위해 유지된다. 워싱턴은 대사관과 영사관의 보호를 이라크군에 넘기지 않을 것이다.\n\n2- 철수는 양측의 합의에 따른 것이며, 합의가 이루어지지 않은 상태에서 진행되는 것이 아니므로 양국 관계에 해롭고 부정적인 영향을 남기지 않는다. 오히려 가장 큰 피해를 보는 쪽은 이라크가 될 수 있다. 미국인들은 역내 자국의 이익을 보호할 장소를 여러 곳 가지고 있기 때문이다. 이는 양측 간 포괄적 합의의 일부인 조치다. 즉 이라크가 미국에 강요하는 의무적 철수가 아니므로, 그것이 이라크에 나쁜 결과로 되돌아오는 일도 없다.\n\n3- 어느 지역에서든 미국의 군사적 주둔은 한쪽만의 의사에서 비롯된 것이 아니다. 미국 측이나 이라크 측 어느 한쪽에서만 나온 것이 아니라 양측의 합의에 따른 것이다. 다시 말해 양측 모두의 이익에 부합하며 어느 한쪽의 이익에만 국한되지 않는다. 따라서 미국의 군사적 주둔이 오직 이라크를 위한 것이어서 그 부재가 이라크에 재앙이 되는 것은 아니다. 오히려 그 주둔의 더 큰 부분은 중동에서 미국의 국가안보상 필요성과, 미국의 군사적 주둔이 이라크와 무관한 현안들과 연계되어 있다는 점에서 미국의 이익을 구성할 수도 있다. 미국의 철수를 이라크의 모든 분야에 거대한 재앙이 닥치는 것으로 보고 해석하는 사람들은 잘못된 것이다.\n\n4- 어느 국가든 다른 나라의 영토에 군사기지를 두고 있다는 것은 양국 관계가 견고하다는 증거이며, 여러 수준에서 큰 역할을 한다는 데에는 의심의 여지가 없다. 그러나 이라크의 일부 평가자들은 다음과 같이 잘못 계산하고 있다.\n\n• 미국의 군사적 이라크 복귀는 2014년 이슬람국가 조직이 등장하고 이라크군이 그 앞에서 붕괴한 뒤에 이루어졌다. 즉 순전히 군사적 목적을 위한 것이었다. 과거 이라크 관리들이 안보 붕괴가 다시 발생할 것을 우려해 이들 병력의 철수에 반대했을 때도, 그 반대는 양국 관계가 부정적으로 영향을 받을 가능성에서 비롯된 것이 아니었다. 그런 가능성은 전혀 염두에 없었다.\n\n• 그러한 군사기지의 존재가 양국 관계 전체와 같은 것은 아니다. 미국은 군사력만으로 자신을 나타내는 국가가 아니기 때문이다. 미국은 무엇보다 경제·기술·산업 강국이며, 이를 통해 다른 국가들과 관계를 형성한다. 양국 관계와 군사기지의 존재를 동일시하는 것은 잘못된 등식이고 오해이며 왜곡된 해석이다. 워싱턴의 이라크에 대한 영향력은 압도적인 무력에만 기반하지 않는다. 미국이 이라크에 특정 입장을 강요하거나 특정 정책을 막고자 한다면 여러 수단을 가지고 있으며, 그중 가장 앞선 수단은 경제적 수단, 즉 이라크에 대한 달러 공급을 끊고 뉴욕을 거쳐 바그다드로 향하는 석유 수입 대금의 송금을 중단하는 것이다. 예를 들면 다음과 같다.\n\n시아파 정파들이 누리 알말리키를 정부 수반으로 지명하려 했을 때, 도널드 트럼프 대통령은 “알말리키는 나쁜 선택이며 양국 관계 개선에 도움이 되지 않을 것”이라고 한 차례의 게시글을 올렸다. 이라크인들은 이를 이해했고, 총 한 발 쏘지 않고도 선택은 트럼프가 원하는 사람으로 바뀌었다. 이라크 지도부가 알말리키를 선택하겠다는 고집은 국가 경제의 악화를 의미하며, 이라크 통화가 달러 앞에서 붕괴해 미로와 혼란에 빠지는 결과를 낳는다는 사실을 확신했기 때문이다.\n\n5- 미군의 이라크 철수가 다른 생활 분야에 큰 피해를 초래한다고 보는 사람들이 있다. 이러한 예상은 양국 관계가 포괄적인 전략적 협정에 의해 조정되고 있으며, 군사 부문만이 관계를 규정하는 유일한 창구가 아니라는 점을 무시한다. 외교·정치·경제·사회·문화 분야가 تعامل의 유형을 형성하고 규정하는 틀이며, 중부사령부나 안보 보좌관이 그 틀이 아니다.\n\n6- 철수에 대해 가장 크게 경계하는 목소리는 쿠르디스탄 지역의 일부 학계에서 나온다. 이들의 경계는 이라크의 지배적인 일부 권력 세력이 쿠르드 민족과 그 법적·행정적 실체에 대해 악의를 품고 있다는 판단에 근거한다. 과거 몇 년 동안 그러한 세력들이 보인 행태가 기준이라면 이들이 경계하는 것은 당연한 권리다. 그러나 변화했고 지금도 변화하고 있는 새로운 역학관계는 이러한 경계심을 완화한다. 무장 파벌들이 군사적 구조의 소멸을 향해 가고 있고, 현재 테헤란과 워싱턴 사이에서 벌어지는 전쟁이 막바지에 이른 것은 이라크의 포괄적 평화에 이익이 되며, 이는 쿠르디스탄 지역에도 영향을 미친다. 쿠르디스탄 지역의 행정적 지위는 헌법에 근거해 있어 침해할 수 없다는 점도 있다. 게다가 지난 몇 년 동안 쿠르디스탄의 하늘을 보호한 것은 그곳의 미군 기지들이 아니었다. 쿠르디스탄은 사방에서 미사일과 무인기의 공격을 받았다. 아르빌의 미국 방공망은 아르빌 국제공항의 미군 병사들과 미국 영사관 주변 지역을 방어했을 뿐이고, 나머지 지역은 미사일에 노출되어 있었다. 이는 미국의 철수가 쿠르드 하늘의 보호에 영향을 미치지 않는다는 뜻이다.\n\n7- 미군의 부재가 이라크에 안보 공백을 남긴다는 말은 맞다. 그러나 이란이 사람들이 생각하듯 그 공백을 메우도록 이라크를 내버려둘 것인가? 그리고 무력으로 위협해 이라크 국가 정책의 방향에 영향을 미칠 것인가? 과거와 같다면 그럴 수도 있다. 하지만 현재 상황은 눈에 띄게 다르다. 지도부의 사고방식이라는 측면에서 이라크의 상황이 달라졌고, 이란의 상황도 이란을 상대로 한 미국·이스라엘 전쟁의 결과로 달라졌다. 확신이 아니라 강압을 통해 이란이 정책을 관철하는 데 의존했던 세력들은 이제 소멸하거나 약화되는 길에 있다. 또한 이라크는 미국의 철수를 활용해 이란이 이라크에 압력을 가할 명분에서 벗어날 수 있다. 이는 이란에 기울어진 이라크 관리들에게는 안도이고, 다른 이들에게는 휴식이다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "cd0ecdcd00ae352b5401d4333c304e11a2b3557b2f8ee55b41500dd507dd9b8b",
-      "contentCheckedAt": "2026-08-17T04:12:33.021Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-qPwe7vv-PfFLfWrdug",
-        "representativeArticleId": "discovery-yd9wMgBlCP4VCL2LOg4cD2d6",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 23,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V7",
-        "scoredAt": "2026-08-17T04:13:41.170Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 7,
-        "scoreFingerprint": "440f545904c80911ea1f",
-        "ruleScore": 23,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -3145,9 +3004,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -4688,148 +4547,6 @@
         "from": "international",
         "to": "international",
         "reason": "이라크가 직접 주체는 아니지만 호르무즈·국제유가·원유수송을 통해 사업환경에 영향을 주는 국제정세",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-KNtNnQcgAxppRfyXzllhEO_j",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "صادرات النفط العراقي ترتفع لأعلى معدل يومي منذ بدء الحرب",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-08-14T17:43:31.000Z",
-      "descriptionArabic": "صادرات النفط العراقي ترتفع لأعلى معدل يومي منذ بدء الحرب الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQdXk2cHhSWlY0VlhEWHA5SXhmZ0hJV2RuZjZKczl4QnlkcHpHcU1zSWRSeFFBTVFfbmw0SmJTTkZndVppc3c3eDZrZE1nQm5CYTZ5WlVBSzFFQnUzUmRiaV92RWdBY2RRS1R4YWt4M0h1TG9ramZBSTJfZ0VFM3h3eUN0LVVtMXptajlOanJkYnNCamtacGFTZHVjamNHVkVLTlpaOVpkTFFnaDZPS0ZJQW9fWVBHODlQaUE2a1hmWVAyT2g2RVh2SV9QdjNqSU41RERTVWxiY01DbUpKVG5sMnlwdHYwNlA0NnJQY1dQdTBVR09yb3ktRmx0cFJCV2lzdzI4UTdsRno4Z3Zjbm1nUVlBTUdtY1pHTTFKQ1hzeFV6c0s4cFNGc3BzMWtfTEdpOHFMVU92d1FyZng0eUhtMlZYb1JmaUFsRHpzcWVmTF8zNlNDM0l2V1ROMkZSNW5K0gHmAkFVX3lxTE5VLUFoMmJfZmtvX2RFZG5QQXEweUotbGdhTmVfclhUZENsNjc2Qi1mb3hKeTJaYlcyb3czUGZ6MDlXVWFSVlhmYkhxa2hoVjYwSHNrNEE0Yy1qM0E4bE9TeEw3RlNNWkdUX3N6VzlNLXYyajJKUm9WSW4tQ3IwRmhoanNwdmhZcFRNYkJvSWk5N3VxVDRhc3hpcGpjalZVOTlaeGpycXVlYVlIellYZU1FUXV5TC1YWFNOdkVQaFRtZFJnVmJDMWlwOUh1TzV0cnVYNzE0aEpyTUEybkVnYWpXVm4waDVnVmdMRl9kbzE0d2dWc29HWTJva0s3SlhEbWZ1S056bEU4NUppR0ZFM0dOaEJEUDI2NmxyVFdzRGg1dFhkZzJkS0ljb1lidy0zM3FmYzhheDN1a3U1UXZwdmt0blFsNkVKZUFlOHRyR1ZTZExULVBIU0pSRzNMSVFVQ3lVbUxnSFE?oc=5",
-      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/14/%D8%B5%D8%A7%D8%AF%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D8%AA%D8%B1%D8%AA%D9%81%D8%B9-%D9%84%D8%A3%D8%B9%D9%84%D9%89-%D9%85%D8%B9%D8%AF%D9%84",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-08-17T04:10:13.852Z",
-      "urlRecoveryMethod": "source-listing",
-      "recoveredSourceId": "aljazeera-iraq",
-      "titleSimilarity": 1,
-      "recoveredAt": "2026-08-17T04:10:24.539Z",
-      "urlResolutionMethod": "source-listing",
-      "resolvedAt": "2026-08-17T04:10:59.805Z",
-      "canonicalUrl": "https://www.aljazeera.net/ebusiness/2026/8/14/%d8%b5%d8%a7%d8%af%d8%b1%d8%a7%d8%aa-%d8%a7%d9%84%d9%86%d9%81%d8%b7-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a-%d8%aa%d8%b1%d8%aa%d9%81%d8%b9-%d9%84%d8%a3%d8%b9%d9%84%d9%89-%d9%85%d8%b9%d8%af%d9%84",
-      "originalTextArabic": "قال وزير النفط العراقي باسم خضير الجمعة إن العراق صدّر في أغسطس/آب الجاري مليوني برميل يوميا، وهو المستوى الأعلى منذ بدء حرب الشرق الأوسط وإغلاق مضيق هرمز الذي كانت تمرّ عبره معظم صادرات بغداد النفطية.\n\nوقال خضير -اليوم الجمعة خلال مؤتمر صحفي في البصرة – إن \"الصادرات منذ بداية الشهر (الجاري) بلغت معدل مليوني برميل\" يوميا، أي ما يعادل 26 مليون برميل تقريبا، موضحا أن بلوغ هذا المعدّل اليومي \"يحصل لأول مرة منذ بداية الأزمة\".",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 425,
-      "arabicRatio": 1.0105,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-08-17T04:12:37.703Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "af7f867f827548a792fd3f39b9a5b221d74038b23dc56bbca9b232df998c114a",
-        "sourceChars": 425,
-        "translatedChars": 261,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f9bc11650ddbfb357a8c",
-        "preferredTermsApplied": [
-          "호르무즈 해협",
-          "바스라",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-08-14T21:48:41.289Z",
-        "titleKo": "이라크 석유 수출, 전쟁 발발 이후 일일 최고치로 증가",
-        "fullTextKo": "이라크 석유장관 바셈 쿠다이르는 금요일, 이라크가 이달 8월 하루 200만 배럴을 수출했다며 이는 중동 전쟁이 시작되고 바그다드의 석유 수출 대부분이 통과하던 호르무즈 해협이 폐쇄된 이후 가장 높은 수준이라고 밝혔다.\n\n쿠다이르는 이날 금요일 바스라에서 열린 기자회견에서 “이달 초부터 수출량은 하루 평균 200만 배럴에 달했다”며, 이는 약 2,600만 배럴에 해당한다고 말했다. 그는 이 같은 일일 평균치에 도달한 것은 “위기가 시작된 이후 처음”이라고 설명했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 2,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V7",
-        "scoredAt": "2026-08-17T04:13:41.170Z",
-        "breakdown": {
-          "nationalImportance": 12,
-          "businessImpact": 0,
-          "politicalImpact": 4,
-          "reportValue": 3,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 7,
-        "scoreFingerprint": "427401c38d5f784bee1c",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": 0,
-        "aiWeight": 0.4,
-        "ruleWeight": 0.6,
-        "aiModel": null,
-        "aiReportPriority": "REFERENCE",
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-uutqL7CX-dXylwQmQw",
-        "representativeArticleId": "discovery-KNtNnQcgAxppRfyXzllhEO_j",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "af7f867f827548a792fd3f39b9a5b221d74038b23dc56bbca9b232df998c114a",
-      "contentCheckedAt": "2026-08-17T04:12:37.703Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -10732,9 +10449,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -11707,9 +11424,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -22834,9 +22551,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -30657,9 +30374,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -32709,16 +32426,11 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-08-17T04:13:02.835Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-Jk5ibxTOUX59BU2nkL",
@@ -40456,9 +40168,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -44186,9 +43898,9 @@
       "contentCheckedAt": "2026-08-17T04:12:55.649Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -51128,9 +50840,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -52109,9 +51821,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -53544,14 +53256,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 415,
-    "retained": 413,
-    "excluded": 2,
+    "before": 381,
+    "retained": 381,
+    "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 343,
+    "groupCount": 341,
     "duplicateGroupCount": 28,
     "duplicateArticleCount": 38,
     "maxHours": 72,
