@@ -44,7 +44,7 @@
       score+=Math.min(25,count(text,["عقوبات","اتفاق","حدود","مياه","غاز","كهرباء","نفط","تجارة","أمن","قصف","تأشيرات","رحلات جوية","طريق التنمية","استثمار"])*4);
       score+=Math.min(15,count(text,["بسماية","شركة هانوا","الهيئة الوطنية للاستثمار","الشركات الكورية","المشاريع السكنية","الاستثمار الأجنبي"])*5);
     }
-    if(!urlOf(article))score-=10;if(bodyOf(article).length<300)score-=8;if(article.eventGroup?.isRepresentative===false)score-=15;return clamp(score);
+    if(!urlOf(article))score-=10;if(bodyOf(article).length<100)score-=8;if(article.eventGroup?.isRepresentative===false)score-=15;return clamp(score);
   }
   function hasStoredScore(article){const stored=article.importance||article.analysis?.importance||article.article?.importance;return Number.isFinite(Number(stored?.score??stored?.finalScore??stored?.ruleScore??article.analysis?.importanceScore??article.importanceScore));}
   window.fetch=async(...args)=>{
