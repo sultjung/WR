@@ -37,7 +37,8 @@
     if(!text) return "아랍어 원문 전문의 한국어 번역을 준비하고 있습니다.";
     return text.length>360?`${text.slice(0,360).trim()}…`:text;
   };
-  const exportSelectable=(article)=>translationReady(article)&&sourceText(article).length>=300&&Boolean(articleId(article));
+  const MIN_SELECTABLE_SOURCE_CHARS=100;
+  const exportSelectable=(article)=>translationReady(article)&&sourceText(article).length>=MIN_SELECTABLE_SOURCE_CHARS&&Boolean(articleId(article));
   const publishedAt=(article)=>recordOf(article).publishedAt||article.publishedAt||"";
   const publishedTime=(article)=>{const value=new Date(publishedAt(article)).getTime();return Number.isFinite(value)?value:null;};
   const sourceName=(article)=>article.source?.arabicName||article.sourceArabic||recordOf(article).sourceArabic||article.sourceHost||"출처 미확인";
@@ -128,8 +129,8 @@
       if(time!==null&&startTime!==null&&time<startTime)return false;if(time!==null&&endTime!==null&&time>endTime)return false;
       if(applySummaryFilter&&state.filter==="selected"&&!state.selected.has(key))return false;
       if(applySummaryFilter&&!["all","selected"].includes(state.filter)&&categoryOf(article)!==state.filter)return false;
-      if(sourceFilter==="ready"&&sourceText(article).length<300)return false;
-      if(sourceFilter==="failed"&&sourceText(article).length>=300)return false;
+      if(sourceFilter==="ready"&&sourceText(article).length<MIN_SELECTABLE_SOURCE_CHARS)return false;
+      if(sourceFilter==="failed"&&sourceText(article).length>=MIN_SELECTABLE_SOURCE_CHARS)return false;
       if(translationFilter!=="all"&&translationStatus(article)!==translationFilter)return false;
       if(!importanceMatches(importanceOf(article).stars,importanceFilter))return false;
       if(query){

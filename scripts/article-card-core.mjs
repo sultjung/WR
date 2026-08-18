@@ -103,7 +103,7 @@ export function isRepresentative(article = {}) {
 }
 
 export function hasUsableArabicSource(article = {}) {
-  return sourceTextOf(article).length >= 300;
+  return sourceTextOf(article).length >= 100;
 }
 
 export function factsAreCurrent(article = {}) {
