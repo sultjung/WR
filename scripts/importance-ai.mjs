@@ -72,8 +72,8 @@ function cachedResult(article) {
   const importance = article.importance || {};
   if (Number(importance.scoringVersion || 0) !== IMPORTANCE_SCORING_VERSION) return null;
   if (importance.scoreFingerprint !== importanceFingerprint(article)) return null;
-  if (!Number.isFinite(Number(importance.aiScore))) return null;
-  if (importance.aiModel && !modelCandidates.includes(importance.aiModel)) return null;
+  if (typeof importance.aiScore !== "number" || !Number.isFinite(importance.aiScore)) return null;
+  if (!importance.aiModel || !modelCandidates.includes(importance.aiModel)) return null;
   return normalizeResult({
     score: importance.aiScore,
     reportPriority: importance.aiReportPriority || importance.reportPriority
