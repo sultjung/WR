@@ -25,7 +25,9 @@ function keyOf(article = {}, index = 0) {
 function importanceIsCurrent(article = {}, importance = {}) {
   return Number(importance.scoringVersion || 0) === IMPORTANCE_SCORING_VERSION
     && importance.scoreFingerprint === importanceFingerprint(article)
-    && Number.isFinite(Number(importance.aiScore));
+    && typeof importance.aiScore === "number"
+    && Number.isFinite(importance.aiScore)
+    && Boolean(String(importance.aiModel || "").trim());
 }
 
 if (!CHECKPOINT_FILE) {
@@ -72,7 +74,17 @@ const restored = articles.map((article, index) => {
   }
 
   if (saved.importance && importanceIsCurrent(next, saved.importance)) {
-    next = { ...next, importance: saved.importance };
+    next = {
+      ...next,
+      importance: {
+        ...(next.importance || {}),
+        aiScore: saved.importance.aiScore,
+        aiModel: saved.importance.aiModel,
+        aiReportPriority: saved.importance.aiReportPriority || "REFERENCE",
+        scoreFingerprint: saved.importance.scoreFingerprint,
+        scoringVersion: saved.importance.scoringVersion
+      }
+    };
     stats.importance += 1;
   }
 
