@@ -194,7 +194,7 @@ function scoreArticle(article) {
   }
   let score = Object.values(breakdown).reduce((sum, value) => sum + Number(value || 0), 0);
   if (!articleUrlOf(article)) score -= 10;
-  if (articleBodyOf(article).length < 300) score -= 8;
+  if (articleBodyOf(article).length < 100) score -= 8;
   if (article.eventGroup?.isRepresentative === false) score -= 15;
   score = clamp(score);
   const level = levelOf(score);
