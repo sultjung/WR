@@ -153,6 +153,36 @@ function extractJsonLdNodes(html = "") {
   return nodes;
 }
 
+function meaningfulTitleTokens(value = "") {
+  const stop = new Set(["في", "من", "على", "إلى", "الى", "عن", "مع", "بعد", "قبل", "رغم", "ضد", "هذا", "هذه", "التي", "الذي", "أن", "ان"]);
+  return normalizeArabic(stripTags(value))
+    .replace(/[^\p{L}\p{N}\s]/gu, " ")
+    .split(/\s+/)
+    .filter((token) => token.length >= 3 && !stop.has(token));
+}
+
+function headlineOverlap(left = "", right = "") {
+  const expected = meaningfulTitleTokens(left);
+  if (!expected.length) return 0;
+  const actual = new Set(meaningfulTitleTokens(right));
+  return expected.filter((token) => actual.has(token)).length / expected.length;
+}
+
+function matchingJsonLdArticles(html = "", title = "") {
+  return extractJsonLdNodes(html)
+    .filter((node) => {
+      const type = Array.isArray(node?.["@type"]) ? node["@type"].join(" ") : String(node?.["@type"] || "");
+      return !type || /(?:NewsArticle|Article|ReportageNewsArticle)/i.test(type);
+    })
+    .map((node) => ({
+      node,
+      headline: stripTags(node?.headline || node?.name || ""),
+      overlap: headlineOverlap(title, node?.headline || node?.name || "")
+    }))
+    .filter((item) => item.overlap >= 0.55)
+    .sort((a, b) => b.overlap - a.overlap);
+}
+
 function extractJsonLdCandidates(html = "") {
   const candidates = [];
   for (const node of extractJsonLdNodes(html)) {
@@ -206,6 +236,16 @@ function extractBestText(html = "", title = "", articleUrl = "") {
     if (anadolu) return anadolu;
   }
 
+  // Pages such as aawsat.com embed several complete articles in one HTML
+  // response. Use only JSON-LD whose headline matches the requested article;
+  // otherwise a longer, unrelated sidebar article can win the length ranking.
+  const matchedStructuredText = bestCandidate(
+    matchingJsonLdArticles(html, title)
+      .map(({ node }) => typeof node.articleBody === "string" ? node.articleBody : ""),
+    title
+  );
+  if (matchedStructuredText) return matchedStructuredText;
+
   // Some publishers (notably Shafaq) expose a short keyword string in
   // JSON-LD articleBody while the real article is present in the page body.
   // Rank every structured/body candidate together instead of accepting the
@@ -220,6 +260,25 @@ function extractBestText(html = "", title = "", articleUrl = "") {
     extractMeta(html, "og:description"),
     extractMeta(html, "description")
   ], title);
+}
+
+function extractPublishedAt(html = "", title = "") {
+  for (const { node } of matchingJsonLdArticles(html, title)) {
+    for (const key of ["datePublished", "dateCreated"]) {
+      const date = new Date(node?.[key] || "");
+      if (!Number.isNaN(date.getTime())) return date.toISOString();
+    }
+  }
+  for (const key of ["article:published_time", "datePublished", "date"]) {
+    const date = new Date(extractMeta(html, key));
+    if (!Number.isNaN(date.getTime())) return date.toISOString();
+  }
+  return "";
+}
+
+function isOutsideRetention(value = "") {
+  const time = new Date(value).getTime();
+  return !Number.isNaN(time) && time < Date.now() - RETENTION_DAYS * 86400000;
 }
 
 function extractCanonicalUrl(html = "", fallback = "") {
@@ -297,16 +356,17 @@ function bismayahValidation(text = "") {
     : { ok: false, errorCode: "NON_IRAQ_RELATED", note: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 근거 미확인" };
 }
 
-function politicalValidation(item = {}, text = "") {
+function politicalValidation(item = {}, title = "", body = "") {
+  const text = `${title}\n${body}`;
   const requiredTerms = Array.isArray(item.requiredTerms) ? item.requiredTerms : [];
   const excludedTerms = Array.isArray(item.excludedTerms) ? item.excludedTerms : [];
   const ceremonialTerms = ["تهنئة", "تعزية", "برقية تهنئة", "برقية تعزية", "استقبال المهنئين", "ذكرى تأسيس", "حفل تكريم", "زيارة مجاملة"];
   const iraqAnchors = ["العراق", "العراقي", "بغداد", "الحكومة العراقية", "مجلس الوزراء", "مجلس النواب", "رئيس مجلس الوزراء", "رئيس الوزراء", "الإطار التنسيقي", "اللجنة المالية النيابية", "هيئة النزاهة"];
   const substantiveSignals = ["قرار", "قرارات", "توجيه", "توجيهات", "سياسة", "برنامج حكومي", "جلسة", "اجتماع", "تصويت", "قانون", "مشروع قانون", "استجواب", "إقالة", "إعفاء", "تعيين", "تشكيل الحكومة", "التشكيلة الوزارية", "الموازنة", "تخصيصات", "تمويل", "مكافحة الفساد", "حصر السلاح", "منح الثقة", "إحالة إلى القضاء", "اتفاق", "مذكرة تفاهم", "تنفيذ", "خطة", "إصلاح"];
   if (hasAny(text, [...ceremonialTerms, ...excludedTerms])) return { ok: false, errorCode: "CEREMONIAL_POLITICS", note: "축하·조문·기념식 등 의례성 정치기사" };
-  if (!hasAny(text, iraqAnchors)) return { ok: false, errorCode: "NON_IRAQ_RELATED", note: "이라크 정치 주체 또는 기관 확인 불가" };
-  if (requiredTerms.length && !hasAll(text, requiredTerms)) return { ok: false, errorCode: "KEYWORD_CONTEXT_MISMATCH", note: "검색 키워드의 필수 정치 주체가 본문에서 확인되지 않음" };
-  if (!hasAny(text, substantiveSignals)) return { ok: false, errorCode: "LOW_INFORMATION_POLITICS", note: "정책·결정·회의·법률·인사 등 실질 내용 부족" };
+  if (!hasAny(body, iraqAnchors)) return { ok: false, errorCode: "TITLE_BODY_MISMATCH", note: "제목은 이라크 정치 기사이나 추출 본문에서 이라크 주체가 확인되지 않음" };
+  if (requiredTerms.length && !hasAll(body, requiredTerms)) return { ok: false, errorCode: "TITLE_BODY_MISMATCH", note: "검색 필수 정치 주체가 추출 본문에서 확인되지 않음" };
+  if (!hasAny(body, substantiveSignals)) return { ok: false, errorCode: "LOW_INFORMATION_POLITICS", note: "정책·결정·회의·법률·인사 등 실질 내용 부족" };
   return { ok: true, errorCode: null, note: "이라크 정치권의 실질 정책·결정 기사" };
 }
 
@@ -369,7 +429,7 @@ function securityValidation(item = {}, title = "", body = "", articleUrl = "") {
 function validateCategory(item = {}, title = "", body = "", articleUrl = "") {
   const text = `${title}\n${body}`;
   if (item.category === "bismayah") return bismayahValidation(text);
-  if (item.category === "politics") return politicalValidation(item, text);
+  if (item.category === "politics") return politicalValidation(item, title, body);
   if (item.category === "economy") return economyValidation(item, text);
   if (item.category === "security") return securityValidation(item, title, body, articleUrl);
   return { ok: true, errorCode: null, note: "카테고리 전용 검증 미적용" };
@@ -398,9 +458,26 @@ async function hydrate(item) {
     const articleUrl = normalizeUrl(page.finalUrl || item.articleUrl);
     const originalTitleArabic = extractTitle(page.html, item.originalTitleArabic || "", articleUrl);
     const originalTextArabic = extractBestText(page.html, originalTitleArabic, articleUrl);
+    const pagePublishedAt = extractPublishedAt(page.html, originalTitleArabic);
     const combinedText = `${originalTitleArabic}\n${originalTextArabic}`;
     const ratio = arabicRatio(combinedText);
     const canonicalUrl = extractCanonicalUrl(page.html, articleUrl);
+
+    if (pagePublishedAt && isOutsideRetention(pagePublishedAt)) {
+      return {
+        ...item,
+        articleUrl,
+        canonicalUrl,
+        originalTitleArabic,
+        publishedAt: pagePublishedAt,
+        pagePublishedAt,
+        originalTextArabic: "",
+        contentStatus: "FAILED",
+        errorCode: "STALE_PUBLISHER_DATE",
+        relevanceNote: `원문 게시일(${pagePublishedAt.slice(0, 10)})이 수집 기간을 벗어남`,
+        fetchedAt: new Date().toISOString()
+      };
+    }
 
     if (originalTextArabic.length < MIN_CONTENT_CHARS) {
       return { ...item, articleUrl, canonicalUrl, originalTitleArabic, originalTextArabic: "", contentChars: originalTextArabic.length, arabicRatio: ratio, contentStatus: "FAILED", errorCode: "CONTENT_EXTRACTION_FAILED", fetchedAt: new Date().toISOString() };
@@ -418,6 +495,8 @@ async function hydrate(item) {
       ...item,
       articleUrl,
       canonicalUrl,
+      publishedAt: pagePublishedAt || item.publishedAt,
+      pagePublishedAt: pagePublishedAt || "",
       originalTitleArabic,
       originalTextArabic,
       sourceHost: hostnameOf(articleUrl),
