@@ -64,4 +64,22 @@ const millionHousingFloor = businessFloorFor(millionHousingCabinet);
 assert.equal(millionHousingFloor.rule, "IRAQ_HOUSING_GENERAL");
 assert.ok(millionHousingFloor.score >= 65);
 
-console.log(`[test-category-importance] category=economy, floor=${floorResult.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
+const governmentFormationAndStateArms = {
+  category: "politics",
+  sourceArabic: "النهار",
+  articleUrl: "https://www.annahar.com/arab-world/arabian-levant/338335/example",
+  originalTitleArabic: "رئيس الوزراء العراقي يبحث مع المالكي استكمال تشكيل الحكومة وحصر السلاح بيد الدولة",
+  originalTextArabic: "بحث رئيس الوزراء استكمال تشكيل الكابينة الوزارية ومكافحة الفساد وحصر السلاح بيد الدولة وفرض سيادة القانون."
+};
+const politicsFloor = categoryFloorFor(governmentFormationAndStateArms);
+assert.equal(politicsFloor.rule, "POLITICS_GOVERNMENT_FORMATION_AND_STATE_ARMS");
+assert.equal(politicsFloor.score, 78);
+
+const routinePoliticalMeeting = {
+  category: "politics",
+  originalTitleArabic: "اجتماع سياسي اعتيادي",
+  originalTextArabic: "عقد عدد من أعضاء الحزب اجتماعا اعتياديا وبحثوا شؤونهم الداخلية."
+};
+assert.equal(categoryFloorFor(routinePoliticalMeeting).score, 0);
+
+console.log(`[test-category-importance] economyFloor=${floorResult.score}, politicsFloor=${politicsFloor.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
