@@ -269,7 +269,7 @@
   async function init(){
     setDefaultDateRange();syncReportRange();
     try{
-      const stamp=Date.now();const response=await fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"});if(!response.ok)throw new Error(`articles HTTP ${response.status}`);const payload=await response.json();state.articles=Array.isArray(payload)?payload:(payload.articles||[]);rebuildGroups();pruneSelections();$("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
+      const stamp=Date.now();const response=await fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"});if(!response.ok)throw new Error(`articles HTTP ${response.status}`);const payload=await response.json();const loaded=Array.isArray(payload)?payload:(payload.articles||[]);state.articles=loaded.filter((article)=>!String(article.articleUrl||article.canonicalUrl||"").includes("/5235833-"));rebuildGroups();pruneSelections();$("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
     }catch(error){$("updatedAt").textContent="데이터 로드 실패";console.error(error);}apply();
   }
   document.querySelectorAll(".summary-card").forEach((button)=>button.addEventListener("click",()=>{state.filter=button.dataset.filter;document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));apply();}));
