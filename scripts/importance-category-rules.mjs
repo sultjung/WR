@@ -1,4 +1,4 @@
-export const IMPORTANCE_SCORING_VERSION = 7;
+export const IMPORTANCE_SCORING_VERSION = 8;
 
 export function starsForScore(value) {
   const score = Number(value);
@@ -97,6 +97,36 @@ export function categoryFloorFor(article = {}) {
       rules.push([78, "ECONOMY_NATIONAL_STALLED_PROJECT_OVERSIGHT", "경제/건설 카테고리에서 국가기관이 이라크 지연·중단 사업을 공식 점검하는 핵심 정책 기사임"]);
     } else if (stalledProject && nationalAuthority && formalAction) {
       rules.push([72, "ECONOMY_STALLED_PROJECT_OVERSIGHT", "경제/건설 카테고리에서 권한 있는 국가기관이 지연·중단 사업의 해결 절차에 착수함"]);
+    }
+  }
+
+  if (category === "politics") {
+    const nationalLeadership = hasAny(text, [
+      "رئيس الوزراء", "مجلس الوزراء", "رئاسة الوزراء", "رئيس الجمهورية",
+      "مجلس النواب", "الإطار التنسيقي", "총리", "국무회의", "대통령", "의회"
+    ]);
+    const governmentFormation = hasAny(text, [
+      "تشكيل الحكومة", "استكمال تشكيل الحكومة", "استكمال تشكيل الكابينة الوزارية",
+      "التشكيلة الوزارية", "الحقائب الوزارية", "منح الثقة",
+      "정부 구성", "내각 구성", "조각", "신임 투표"
+    ]);
+    const stateArmsControl = hasAny(text, [
+      "حصر السلاح بيد الدولة", "حصر السلاح", "نزع سلاح الفصائل", "سيادة القانون",
+      "국가의 무기 독점", "무기 회수", "무장 정파 무장해제", "법치 확립"
+    ]);
+    const antiCorruptionAction = hasAny(text, [
+      "مكافحة الفساد", "هيئة النزاهة", "إحالة إلى القضاء", "اعتقال بتهمة الفساد",
+      "부패 척결", "청렴위원회", "사법부 회부", "부패 혐의 체포"
+    ]);
+
+    if (nationalLeadership && governmentFormation && stateArmsControl) {
+      rules.push([78, "POLITICS_GOVERNMENT_FORMATION_AND_STATE_ARMS", "정부 구성과 국가의 무기 독점 문제를 최고위급에서 함께 논의한 핵심 정국 기사임"]);
+    } else if (nationalLeadership && governmentFormation) {
+      rules.push([74, "POLITICS_GOVERNMENT_FORMATION", "총리·의회·주요 정치세력이 정부 및 내각 구성을 다룬 핵심 정국 기사임"]);
+    } else if (nationalLeadership && stateArmsControl) {
+      rules.push([72, "POLITICS_STATE_ARMS_CONTROL", "국가 지도부가 무기 독점·무장세력 통제·법치 확립을 다룬 국가안보 연계 정치 기사임"]);
+    } else if (nationalLeadership && antiCorruptionAction) {
+      rules.push([68, "POLITICS_HIGH_LEVEL_ANTI_CORRUPTION", "국가 지도부 또는 의회가 부패 척결과 공식 사법·행정 조치를 다룬 주요 정치 기사임"]);
     }
   }
 
