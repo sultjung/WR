@@ -82,7 +82,7 @@ const scored = articles.map((article, index) => {
       categoryRelevance,
       businessRelevance: categoryRelevance,
       reasonKo,
-      scoringMethod: "CATEGORY_RULES_STAR_V7",
+      scoringMethod: "CATEGORY_RULES_STAR_V8",
       scoringVersion: IMPORTANCE_SCORING_VERSION,
       scoredAt,
       scoreFingerprint: importanceFingerprint(article),
@@ -119,7 +119,7 @@ await fs.writeFile(file, `${JSON.stringify({
   generatedAt: scoredAt,
   importanceScoring: {
     ...(payload.importanceScoring || {}),
-    method: "CATEGORY_RULES_STAR_V7",
+    method: "CATEGORY_RULES_STAR_V8",
     version: IMPORTANCE_SCORING_VERSION,
     evaluationPrinciple: "CATEGORY_RULES_AND_DIRECT_BUSINESS_IMPACT",
     ratingScale: "0.5_TO_5_STARS",
@@ -128,6 +128,10 @@ await fs.writeFile(file, `${JSON.stringify({
     aiStats: ai.stats,
     scoredCount: scored.length,
     categoryFloors: {
+      politicsGovernmentFormationAndStateArms: 78,
+      politicsGovernmentFormation: 74,
+      politicsStateArmsControl: 72,
+      politicsHighLevelAntiCorruption: 68,
       economyNationalStalledProjectOversight: 78,
       economyStalledProjectOversight: 72
     },
