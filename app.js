@@ -167,7 +167,6 @@
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         ${translationBlock}
         <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${ready?`<span class="badge translation-complete">전문 번역 완료</span>`:legacyReady?`<span class="badge importance-pending">기존 요약 복원</span>`:`<span class="badge importance-pending">전문 번역 대기</span>`}</div>
-        <div class="card-actions">${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">언론사 원문 열기</a>`:`<span class="badge disabled">원문 URL 미확보</span>`}<span class="card-source-note">요약 없이 기사 전문을 충실 번역</span></div>
         ${relatedNewsHtml(article)}
       </article>`;
     }).join("");
