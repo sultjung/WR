@@ -1,4 +1,4 @@
-export const IMPORTANCE_SCORING_VERSION = 8;
+export const IMPORTANCE_SCORING_VERSION = 9;
 
 export function starsForScore(value) {
   const score = Number(value);

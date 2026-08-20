@@ -22,6 +22,11 @@ const STOP_WORDS = new Set([
 ]);
 
 const CANONICAL_ENTITY_ALIASES = new Map([
+  ["PERSON_ALI_FALEH_AL_ZAIDI", [
+    "علي فالح الزيدي",
+    "علي الزيدي",
+    "رئيس الوزراء علي الزيدي"
+  ]],
   ["ORG_NIC", [
     "الهيئة الوطنية للاستثمار",
     "هيئة الاستثمار الوطنية",
