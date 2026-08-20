@@ -161,12 +161,14 @@
       const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),selectable=exportSelectable(article),ready=translationReady(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.stars===null?`<span class="badge importance-pending">별점 평가 대기</span>`:`<span class="badge importance-score">${starRatingHtml(importance.stars)}</span>`;
-      const legacyReady=legacyCardReady(article),legacyText=legacySummary(article);const translationBlock=ready?`<details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:legacyReady&&legacyText?`<details class="full-translation"><summary>전문 펼쳐보기</summary><div class="translation-body">${escapeHtml(legacyText)}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
+      const legacyReady=legacyCardReady(article),legacyText=legacySummary(article),expandable=ready||Boolean(legacyReady&&legacyText);
+      const translationBlock=ready?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:legacyReady&&legacyText?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(legacyText)}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
+      const expandButton=expandable?`<button class="article-expand-button" data-action="toggle-article" type="button" aria-expanded="false">전문 펼쳐보기 <span aria-hidden="true">＋</span></button>`:"";
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":"번역 후 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
+        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${expandButton}${ready?`<span class="badge translation-complete article-status-badge">전문 번역 완료</span>`:legacyReady?`<span class="badge importance-pending article-status-badge">기존 요약 복원</span>`:`<span class="badge importance-pending article-status-badge">전문 번역 대기</span>`}</div>
         ${translationBlock}
-        <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${ready?`<span class="badge translation-complete">전문 번역 완료</span>`:legacyReady?`<span class="badge importance-pending">기존 요약 복원</span>`:`<span class="badge importance-pending">전문 번역 대기</span>`}</div>
         ${relatedNewsHtml(article)}
       </article>`;
     }).join("");
@@ -285,9 +287,23 @@
     if(!button||button.disabled)return;
     const action=button.dataset.action;
     const card=button.closest(".news-card");
+    const syncExpandButton=(open)=>{
+      const expand=card?.querySelector('button[data-action="toggle-article"]');
+      if(!expand)return;
+      expand.setAttribute("aria-expanded",String(open));
+      expand.innerHTML=open?'기사 접기 <span aria-hidden="true">－</span>':'전문 펼쳐보기 <span aria-hidden="true">＋</span>';
+    };
+    if(action==="toggle-article"){
+      const details=card?.querySelector(".full-translation");
+      if(!details)return;
+      details.open=!details.open;
+      syncExpandButton(details.open);
+      return;
+    }
     if(action==="collapse-article"){
       const details=button.closest(".full-translation");
       if(details)details.open=false;
+      syncExpandButton(false);
       card?.scrollIntoView({behavior:"smooth",block:"start"});
       return;
     }
