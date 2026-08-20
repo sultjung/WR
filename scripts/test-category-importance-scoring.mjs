@@ -99,4 +99,13 @@ const routineNicCourtesyMeeting = {
 };
 assert.equal(businessFloorFor(routineNicCourtesyMeeting).score, 0);
 
-console.log(`[test-category-importance] economyFloor=${floorResult.score}, politicsFloor=${politicsFloor.score}, strategicMeetingFloor=${strategicMeetingFloor.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
+const newPmAndNicChairInvestmentMeeting = {
+  category: "bismayah",
+  originalTitleArabic: "علي فالح الزيدي يبحث مع عادل الياسري ملف الاستثمار والإسكان",
+  originalTextArabic: "بحث رئيس الوزراء علي فالح الزيدي مع عادل داخل الياسري سبل تنشيط الفرص الاستثمارية والمشاريع السكنية في العراق."
+};
+const newLeadershipFloor = businessFloorFor(newPmAndNicChairInvestmentMeeting);
+assert.equal(newLeadershipFloor.rule, "NIC_CHAIR_STRATEGIC_LEADER_INVESTMENT_MEETING");
+assert.equal(newLeadershipFloor.score, 88);
+
+console.log(`[test-category-importance] economyFloor=${floorResult.score}, politicsFloor=${politicsFloor.score}, strategicMeetingFloor=${strategicMeetingFloor.score}, newLeadershipFloor=${newLeadershipFloor.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
