@@ -14,8 +14,8 @@ const requested = /^(1|true|yes)$/i.test(process.env.IMPORTANCE_AI_ENABLED || "t
 const required = /^(1|true|yes)$/i.test(process.env.IMPORTANCE_AI_REQUIRED || "false");
 const hasApiKey = Boolean(String(process.env.OPENAI_API_KEY || "").trim());
 const enabled = requested && hasApiKey;
-const primaryModel = String(process.env.IMPORTANCE_MODEL || "gpt-4.1-mini").trim();
-const fallbackModels = String(process.env.IMPORTANCE_MODEL_FALLBACKS || "gpt-4o-mini")
+const primaryModel = String(process.env.IMPORTANCE_MODEL || "gpt-5.6-luna").trim();
+const fallbackModels = String(process.env.IMPORTANCE_MODEL_FALLBACKS || "gpt-4.1-mini,gpt-4o-mini")
   .split(",")
   .map((value) => value.trim())
   .filter(Boolean);
@@ -162,9 +162,11 @@ async function request(items, selectedModel) {
 - 총리·국무회의·의회·부처·사법기관 등 권한 있는 주체의 공식 결정·조치
 - 주간보고서에서의 실제 활용가치
 - 출처와 수치의 구체성
+- 제목과 본문이 짧다는 이유만으로 중요도를 낮추지 말고, 등장인물의 현재·과거 직위, 기관 간 관계, 회동 의제와 사업상 파급력을 함께 판정한다.
+- 단순 키워드 개수가 아니라 '누가 누구와 무엇을 결정·지시·논의했는가'를 중심으로 평가한다.
 
 카테고리 기준:
-- bismayah: 비스마야·شركة هانوا·الهيئة الوطنية للاستثمار·계약·대금·금융·보증·공사재개 영향을 특히 높게 평가한다.
+- bismayah: 비스마야·شركة هانوا·الهيئة الوطنية للاستثمار·계약·대금·금융·보증·공사재개 영향을 특히 높게 평가한다. NIC 의장과 현·전 총리, 주요 정파 지도자, 장관 등 핵심 이해관계자의 투자·주택·국가사업 회동은 비스마야를 직접 언급하지 않아도 80점 이상 검토 대상으로 평가한다. 단순 의전·축하·일상 방문은 제외한다.
 - economy: 이라크 경제·건설·주택·인프라·투자·예산·에너지·국가사업의 중요도를 평가한다.
 - politics: 정부 구성, 총리·의회·정당 권력구도, 법률·인사·부패수사·국정운영 영향을 평가한다.
 - security: 이라크 내 테러·무력사건·치안조치의 위치, 피해, 국가안보 및 현장운영 영향을 평가한다.
