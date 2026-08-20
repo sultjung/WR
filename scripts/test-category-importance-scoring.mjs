@@ -82,4 +82,21 @@ const routinePoliticalMeeting = {
 };
 assert.equal(categoryFloorFor(routinePoliticalMeeting).score, 0);
 
-console.log(`[test-category-importance] economyFloor=${floorResult.score}, politicsFloor=${politicsFloor.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
+const nicChairFormerPmInvestmentMeeting = {
+  category: "bismayah",
+  originalTitleArabic: "السوداني والياسري يبحثان سبل تنشيط الفرص الاستثمارية في البلاد",
+  originalTextArabic: "بحث رئيس ائتلاف الإعمار والتنمية، محمد شياع السوداني، مع رئيس الهيئة الوطنية للاستثمار، عادل الياسري، سبل تنشيط الفرص الاستثمارية في البلاد."
+};
+const strategicMeetingFloor = businessFloorFor(nicChairFormerPmInvestmentMeeting);
+assert.equal(strategicMeetingFloor.rule, "NIC_CHAIR_STRATEGIC_LEADER_INVESTMENT_MEETING");
+assert.equal(strategicMeetingFloor.score, 88);
+assert.equal(starsForScore(strategicMeetingFloor.score), 4.5);
+
+const routineNicCourtesyMeeting = {
+  category: "bismayah",
+  originalTitleArabic: "رئيس الهيئة الوطنية للاستثمار يستقبل وفدا للتهنئة",
+  originalTextArabic: "استقبل رئيس الهيئة الوطنية للاستثمار وفدا قدم له التهاني في مكتبه."
+};
+assert.equal(businessFloorFor(routineNicCourtesyMeeting).score, 0);
+
+console.log(`[test-category-importance] economyFloor=${floorResult.score}, politicsFloor=${politicsFloor.score}, strategicMeetingFloor=${strategicMeetingFloor.score}, localFloor=${localFloor.score}, directBusinessFloor=${businessFloor.score}`);
