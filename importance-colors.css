@@ -5,4 +5,4 @@
 .badge.importance-score.importance-tier-70{background:#f9a768;color:#6f2a00;border-color:#ed8740}
 .badge.importance-score.importance-tier-80{background:#f37321;color:#fff;border-color:#d85f13}
 .badge.importance-score.importance-tier-90{background:#c94f08;color:#fff;border-color:#a83e00;box-shadow:0 0 0 2px rgba(243,115,33,.12)}
-.badges>.badge:nth-child(3):not(.related-count-badge){display:none}
+.badges>.article-status-badge{display:none}

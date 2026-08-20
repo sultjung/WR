@@ -8,6 +8,9 @@
 .translation-preview{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden;white-space:normal;font-size:20px;line-height:1.7;color:#374151;margin:14px 0 12px}
 .translation-pending{margin:14px 0;padding:14px 16px;border-radius:12px;background:#f9fafb;color:#6b7280;border:1px dashed #d1d5db}
 .full-translation{margin:12px 0 14px;border:1px solid #e5e7eb;border-radius:14px;background:#fafafa;overflow:hidden}
+.full-translation.compact-controlled:not([open]){display:none}
+.full-translation.compact-controlled[open]{margin-top:10px}
+.full-translation>.compact-details-summary{display:none}
 .full-translation>summary,.related-news-collapsible>summary,.arabic-source>summary{cursor:pointer;list-style:none;font-weight:700;color:#c65b12;padding:12px 15px;user-select:none}
 .full-translation>summary::-webkit-details-marker,.related-news-collapsible>summary::-webkit-details-marker,.arabic-source>summary::-webkit-details-marker{display:none}
 .full-translation>summary::after,.related-news-collapsible>summary::after,.arabic-source>summary::after{content:"＋";float:right;color:#9ca3af;font-weight:400}
