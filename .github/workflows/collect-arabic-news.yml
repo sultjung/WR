@@ -145,12 +145,12 @@ jobs:
       - name: Evaluate importance within each category with AI
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          IMPORTANCE_AI_ENABLED: "false"
+          IMPORTANCE_AI_ENABLED: "true"
           IMPORTANCE_AI_REQUIRED: "false"
-          IMPORTANCE_MODEL: ${{ vars.IMPORTANCE_MODEL || 'gpt-4.1-mini' }}
-          IMPORTANCE_MODEL_FALLBACKS: "gpt-4o-mini"
+          IMPORTANCE_MODEL: ${{ vars.IMPORTANCE_MODEL || 'gpt-5.6-luna' }}
+          IMPORTANCE_MODEL_FALLBACKS: "gpt-4.1-mini,gpt-4o-mini"
           IMPORTANCE_AI_BATCH_SIZE: "10"
-          IMPORTANCE_AI_MAX_ARTICLES: "0"
+          IMPORTANCE_AI_MAX_ARTICLES: "40"
           IMPORTANCE_AI_TIMEOUT_MS: "60000"
         run: npm run collect:importance-business
 
