@@ -64,7 +64,7 @@
     const map=Object.fromEntries(parts.map((part)=>[part.type,part.value]));
     return `${map.year}-${map.month}-${map.day}`;
   };
-  const defaultDateRange=()=>{const end=new Date();const start=new Date(end);start.setDate(start.getDate()-13);return {start:toInputDate(start),end:toInputDate(end)};};
+  const defaultDateRange=()=>{const end=new Date();const start=new Date(end);start.setDate(start.getDate()-7);return {start:toInputDate(start),end:toInputDate(end)};};
   const reportRangeFor=(value)=>{
     const reportDate=value?new Date(`${value}T00:00:00`):new Date();
     const end=new Date(reportDate);end.setDate(end.getDate()-1);
