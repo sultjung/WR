@@ -1,9 +1,9 @@
 (()=>{
-  const STORAGE_KEY="wr-selected-article-ids-v2";
+  const STORAGE_KEY_PREFIX="wr-selected-article-ids-v3";
   const MAX_EXPORT_ARTICLES=40;
   const CATEGORY_IDS={bismayah:"countBismayah",politics:"countPolitics",economy:"countEconomy",security:"countSecurity",international:"countInternational"};
   const CATEGORY_ORDER={bismayah:0,politics:1,security:2,economy:3,international:4};
-  const state={articles:[],membersByGroup:new Map(),filter:"all",selected:new Set(loadSelectedIds())};
+  const state={articles:[],membersByGroup:new Map(),filter:"all",selected:new Set()};
   const $=(id)=>document.getElementById(id);
   const escapeHtml=(value)=>String(value??"").replace(/[&<>"']/g,(char)=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[char]));
   const escapeXml=(value)=>String(value??"").replace(/[<>&'\"]/g,(char)=>({"<":"&lt;",">":"&gt;","&":"&amp;","'":"&apos;",'"':"&quot;"}[char]));
@@ -71,16 +71,19 @@
     const start=new Date(reportDate);start.setDate(start.getDate()-7);
     return {reportDate:toInputDate(reportDate),start:toInputDate(start),end:toInputDate(end)};
   };
-  const dateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"날짜 미확인":new Intl.DateTimeFormat("ko-KR",{year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(date);};
-  const relatedDateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"":new Intl.DateTimeFormat("ko-KR",{month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}).format(date);};
+  const dateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"날짜 미확인":new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"}).format(date);};
+  const relatedDateLabel=(value)=>{const date=new Date(value);return Number.isNaN(date.getTime())?"":new Intl.DateTimeFormat("ko-KR",{timeZone:"Asia/Seoul",month:"numeric",day:"numeric",hour:"2-digit",minute:"2-digit"}).format(date);};
 
-  function loadSelectedIds(){
+  function selectionStorageKey(reportDate=""){
+    return `${STORAGE_KEY_PREFIX}:${reportDate||$("reportDate")?.value||"undated"}`;
+  }
+  function loadSelectedIds(reportDate=""){
     try{
-      const stored=JSON.parse(localStorage.getItem(STORAGE_KEY)||"[]");
+      const stored=JSON.parse(localStorage.getItem(selectionStorageKey(reportDate))||"[]");
       return Array.isArray(stored)?stored.filter((value)=>typeof value==="string"&&value.trim()):[];
     }catch{return [];}
   }
-  function saveSelectedIds(){localStorage.setItem(STORAGE_KEY,JSON.stringify([...state.selected]));}
+  function saveSelectedIds(){localStorage.setItem(selectionStorageKey(),JSON.stringify([...state.selected]));}
   function setDefaultDateRange(){const range=defaultDateRange();$("startDate").value=range.start;$("endDate").value=range.end;}
   function syncReportRange(value=""){
     const range=reportRangeFor(value||$("reportDate").value);
@@ -120,13 +123,11 @@
   }
   function filteredArticles(applySummaryFilter=true){
     const startValue=$("startDate").value,endValue=$("endDate").value;
-    const startTime=startValue?new Date(`${startValue}T00:00:00`).getTime():null;
-    const endTime=endValue?new Date(`${endValue}T23:59:59.999`).getTime():null;
     const sourceFilter=$("sourceFilter").value,translationFilter=$("translationFilter").value,importanceFilter=$("importanceFilter").value,sortOrder=$("sortOrder").value;
     const query=$("searchInput").value.trim().toLowerCase();
     return representatives().filter((article)=>{
-      const key=articleKey(article),time=publishedTime(article);
-      if(time!==null&&startTime!==null&&time<startTime)return false;if(time!==null&&endTime!==null&&time>endTime)return false;
+      const key=articleKey(article),date=toKstDateKey(publishedAt(article));
+      if(date&&startValue&&date<startValue)return false;if(date&&endValue&&date>endValue)return false;
       if(applySummaryFilter&&state.filter==="selected"&&!state.selected.has(key))return false;
       if(applySummaryFilter&&!["all","selected"].includes(state.filter)&&categoryOf(article)!==state.filter)return false;
       if(sourceFilter==="ready"&&sourceText(article).length<MIN_SELECTABLE_SOURCE_CHARS)return false;
@@ -158,14 +159,14 @@
     if(!items.length){list.className="news-list empty";list.textContent=state.articles.length?"현재 필터에 맞는 기사가 없습니다.":"수집된 기사가 없습니다.";return;}
     list.className="news-list";
     list.innerHTML=items.map((article)=>{
-      const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),selectable=exportSelectable(article),ready=translationReady(article);
+      const key=articleKey(article),selected=state.selected.has(key),url=articleUrl(article),category=categoryOf(article),importance=importanceOf(article),eligible=exportSelectable(article),inReportPeriod=withinReportPeriod(article),selectable=eligible&&inReportPeriod,ready=translationReady(article);
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.stars===null?`<span class="badge importance-pending">별점 평가 대기</span>`:`<span class="badge importance-score">${starRatingHtml(importance.stars)}</span>`;
       const legacyReady=legacyCardReady(article),legacyText=legacySummary(article),expandable=ready||Boolean(legacyReady&&legacyText);
       const translationBlock=ready?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:legacyReady&&legacyText?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(legacyText)}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
       const expandButton=expandable?`<button class="article-expand-button" data-action="toggle-article" type="button" aria-expanded="false">전문 펼쳐보기 <span aria-hidden="true">＋</span></button>`:"";
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
-        <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":"번역 후 선택"}</button></div>
+        <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":eligible&&!inReportPeriod?"대상기간 밖":"번역 후 선택"}</button></div>
         <h3>${url?`<a href="${escapeHtml(url)}" target="_blank" rel="noopener">${escapeHtml(koTitle(article))}</a>`:escapeHtml(koTitle(article))}</h3>
         <div class="badges"><span class="badge ${escapeHtml(categoryBadgeClass(category))}">${escapeHtml(categoryLabel(category))}</span>${scoreBadge}${expandButton}${ready?`<span class="badge translation-complete article-status-badge">전문 번역 완료</span>`:legacyReady?`<span class="badge importance-pending article-status-badge">기존 요약 복원</span>`:`<span class="badge importance-pending article-status-badge">전문 번역 대기</span>`}</div>
         ${translationBlock}
@@ -177,13 +178,17 @@
     state.membersByGroup=new Map();for(const article of state.articles){const groupId=article.eventGroup?.groupId||articleId(article);if(!groupId)continue;if(!state.membersByGroup.has(groupId))state.membersByGroup.set(groupId,[]);state.membersByGroup.get(groupId).push(article);}
   }
   function pruneSelections(){
-    const valid=new Set(representatives().filter(exportSelectable).map(articleKey));let changed=false;for(const key of state.selected){if(!valid.has(key)){state.selected.delete(key);changed=true;}}if(changed)saveSelectedIds();
+    const valid=new Set(representatives().filter((article)=>exportSelectable(article)&&withinReportPeriod(article)).map(articleKey));let changed=false;for(const key of state.selected){if(!valid.has(key)){state.selected.delete(key);changed=true;}}if(changed)saveSelectedIds();
   }
   function setDownloadMessage(message,type=""){
     const node=$("downloadMessage");node.textContent=message;node.className=`report-request-message${type?` ${type}`:""}`;
   }
   function selectedArticles(){
     const byKey=new Map(representatives().map((article)=>[articleKey(article),article]));return [...state.selected].map((key)=>byKey.get(key)).filter(Boolean);
+  }
+  function withinReportPeriod(article){
+    const start=$("reportStartDate").value,end=$("reportEndDate").value,date=toKstDateKey(publishedAt(article));
+    return Boolean(date&&start&&end&&date>=start&&date<=end);
   }
   function validateExportRequest(){
     const reportDate=$("reportDate").value,periodStart=$("reportStartDate").value,periodEnd=$("reportEndDate").value,selected=selectedArticles();
@@ -269,14 +274,14 @@
   }
   function apply(){updateCounts();render();}
   async function init(){
-    setDefaultDateRange();syncReportRange();
+    setDefaultDateRange();syncReportRange();state.selected=new Set(loadSelectedIds($("reportDate").value));
     try{
       const stamp=Date.now();const response=await fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"});if(!response.ok)throw new Error(`articles HTTP ${response.status}`);const payload=await response.json();const loaded=Array.isArray(payload)?payload:(payload.articles||[]);state.articles=loaded.filter((article)=>!String(article.articleUrl||article.canonicalUrl||"").includes("/5235833-"));rebuildGroups();pruneSelections();$("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
     }catch(error){$("updatedAt").textContent="데이터 로드 실패";console.error(error);}apply();
   }
   document.querySelectorAll(".summary-card").forEach((button)=>button.addEventListener("click",()=>{state.filter=button.dataset.filter;document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));apply();}));
   ["startDate","endDate","sortOrder","importanceFilter","sourceFilter","translationFilter"].forEach((id)=>$(id).addEventListener("change",apply));
-  $("reportDate").addEventListener("change",(event)=>{syncReportRange(event.target.value);setDownloadMessage("");});
+  $("reportDate").addEventListener("change",(event)=>{syncReportRange(event.target.value);state.selected=new Set(loadSelectedIds(event.target.value));pruneSelections();setDownloadMessage("");apply();});
   $("reportDate").addEventListener("input",(event)=>{if(event.target.value)syncReportRange(event.target.value);});
   $("searchInput").addEventListener("input",apply);
   $("downloadSelected").addEventListener("click",downloadSelectedArticles);
