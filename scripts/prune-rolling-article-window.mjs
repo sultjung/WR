@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 import fs from "node:fs/promises";
 import path from "node:path";
+import {
+  ARTICLE_ARCHIVE_SCHEMA_VERSION,
+  archiveMonth,
+  compactArchivedArticle,
+  mergeArchiveArticles
+} from "./article-archive-core.mjs";
 
 const ROOT = process.cwd();
 const RETENTION_DAYS = Math.max(1, Number(process.env.ARTICLE_RETENTION_DAYS || 7));
@@ -11,6 +17,7 @@ const DEFAULT_FILES = [
   "data/articles.json"
 ];
 const FILES = process.argv.slice(2).length ? process.argv.slice(2) : DEFAULT_FILES;
+const ARCHIVE_DIR = path.resolve(process.env.ARTICLE_ARCHIVE_DIR || path.join(ROOT, "data", "archive"));
 
 function kstDateKey(value = new Date()) {
   const date = value instanceof Date ? value : new Date(value);
@@ -75,12 +82,50 @@ function updateStageMetadata(payload, articles, generatedAt) {
   return output;
 }
 
+async function archiveRemovedArticles(relativeFile, removedArticles, generatedAt) {
+  if (relativeFile !== "data/articles.json" || removedArticles.length === 0) return 0;
+  const byMonth = new Map();
+  for (const article of removedArticles) {
+    const month = archiveMonth(article);
+    if (!byMonth.has(month)) byMonth.set(month, []);
+    byMonth.get(month).push(compactArchivedArticle(article));
+  }
+
+  await fs.mkdir(ARCHIVE_DIR, { recursive: true });
+  let archived = 0;
+  for (const [month, incoming] of byMonth) {
+    const file = path.join(ARCHIVE_DIR, `articles-${month}.json`);
+    let payload = {};
+    try {
+      payload = JSON.parse(await fs.readFile(file, "utf8"));
+    } catch (error) {
+      if (error?.code !== "ENOENT") throw error;
+    }
+    const existing = Array.isArray(payload?.articles) ? payload.articles : [];
+    const articles = mergeArchiveArticles(existing, incoming);
+    const output = {
+      schemaVersion: ARTICLE_ARCHIVE_SCHEMA_VERSION,
+      month,
+      updatedAt: generatedAt,
+      count: articles.length,
+      articles
+    };
+    const temporary = `${file}.tmp`;
+    await fs.writeFile(temporary, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+    await fs.rename(temporary, file);
+    archived += incoming.length;
+    console.log(`[rolling-archive] ${path.relative(ROOT, file)} existing=${existing.length} incoming=${incoming.length} stored=${articles.length}`);
+  }
+  return archived;
+}
+
 const periodEnd = kstDateKey();
 const periodStart = shiftDateKey(periodEnd, -(RETENTION_DAYS - 1));
 const generatedAt = new Date().toISOString();
 let totalBefore = 0;
 let totalAfter = 0;
 let totalRemoved = 0;
+let totalArchived = 0;
 
 for (const relativeFile of FILES) {
   const file = path.resolve(ROOT, relativeFile);
@@ -106,11 +151,13 @@ for (const relativeFile of FILES) {
 
   const kept = [];
   const removed = [];
+  const removedArticles = [];
   for (const article of sourceArticles) {
     const dateKey = kstDateKey(articleDate(article));
     if (dateKey && dateKey >= periodStart && dateKey <= periodEnd) {
       kept.push(article);
     } else {
+      removedArticles.push(article);
       removed.push({
         id: article.articleId || article.id || "",
         date: dateKey || "INVALID",
@@ -123,6 +170,7 @@ for (const relativeFile of FILES) {
     ? kept
     : updateStageMetadata(payload, kept, generatedAt);
 
+  totalArchived += await archiveRemovedArticles(relativeFile, removedArticles, generatedAt);
   await fs.writeFile(file, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 
   totalBefore += sourceArticles.length;
@@ -132,4 +180,4 @@ for (const relativeFile of FILES) {
   if (removed.length) console.log(`[rolling-prune] ${relativeFile} removed sample=${JSON.stringify(removed.slice(0, 5))}`);
 }
 
-console.log(`[rolling-prune] done retentionDays=${RETENTION_DAYS} KST=${periodStart}..${periodEnd} before=${totalBefore} kept=${totalAfter} removed=${totalRemoved}`);
+console.log(`[rolling-prune] done retentionDays=${RETENTION_DAYS} KST=${periodStart}..${periodEnd} before=${totalBefore} kept=${totalAfter} removed=${totalRemoved} archived=${totalArchived}`);
