@@ -1,0 +1,22 @@
+{
+  "schemaVersion": "1.0",
+  "month": "2026-12",
+  "updatedAt": "2026-08-21T21:46:48.916Z",
+  "count": 1,
+  "articles": [
+    {
+      "articleId": "discovery-q1eD8DvKUQf9cWWEUvIPw3be",
+      "publishedAt": "2026-12-08T00:00:00.000Z",
+      "sourceArabic": "middle-east-online.com",
+      "sourceHost": "middle-east-online.com",
+      "category": "politics",
+      "titleKo": "",
+      "titleArabic": "قاآني للفصائل العراقية: لا تسليم للسلاح ولا صدام مع الدولة",
+      "articleUrl": "https://middle-east-online.com/%D9%82%D8%A7%D8%A2%D9%86%D9%8A-%D9%84%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D9%84%D8%A7-%D8%AA%D8%B3%D9%84%D9%8A%D9%85-%D9%84%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D9%88%D9%84%D8%A7-%D8%B5%D8%AF%D8%A7%D9%85-%D9%85%D8%B9-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
+      "importanceScore": null,
+      "importanceStars": null,
+      "selected": false,
+      "contentHash": ""
+    }
+  ]
+}

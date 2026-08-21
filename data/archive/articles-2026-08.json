@@ -1,9 +1,23 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-08",
-  "updatedAt": "2026-08-21T04:10:43.697Z",
-  "count": 1,
+  "updatedAt": "2026-08-21T21:46:48.916Z",
+  "count": 2,
   "articles": [
+    {
+      "articleId": "discovery-t0gev12cy3C5IbVUx3HES6HK",
+      "publishedAt": "2026-08-07T21:22:48.000Z",
+      "sourceArabic": "الجزيرة نت",
+      "sourceHost": "aljazeera.net",
+      "category": "politics",
+      "titleKo": "사우디아라비아, 이라크 총리에게 재차 방문 초청",
+      "titleArabic": "السعودية تجدد دعوة رئيس الوزراء العراقي لزيارتها",
+      "articleUrl": "https://www.aljazeera.net/news/2026/8/8/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%AA%D8%AC%D8%AF%D8%AF-%D8%AF%D8%B9%D9%88%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%88%D8%A7%D9%84%D9%81%D8%B5%D8%A7%D8%A6%D9%84",
+      "importanceScore": 57,
+      "importanceStars": 3,
+      "selected": false,
+      "contentHash": "76dddf61641ebceb699f457f7ce3f0aff7e71b985231a0d74a71de9ce29f3b7c"
+    },
     {
       "articleId": "priority-seed-DVgopHlyLe5KB2EoIZpQxJaI",
       "publishedAt": "2026-08-05T00:00:00.000Z",
