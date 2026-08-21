@@ -35,10 +35,14 @@
       <button class="summary-card" data-filter="selected"><span>선택 기사</span><strong id="countSelected">0</strong></button>
     </section>
 
-    <section class="report-builder" aria-labelledby="sourceDownloadTitle">
+    <details class="report-builder-shell">
+      <summary class="report-builder-summary">
+        <span class="report-summary-kicker">GPT SOURCE</span>
+        <strong id="sourceDownloadTitle">선택 기사 Word 다운로드</strong>
+        <span class="report-summary-toggle" aria-hidden="true"></span>
+      </summary>
+      <section class="report-builder" aria-labelledby="sourceDownloadTitle">
       <div class="report-builder-copy">
-        <p class="report-kicker">GPT SOURCE</p>
-        <h2 id="sourceDownloadTitle">선택 기사 Word 다운로드</h2>
         <p>보고일 기준 7일의 기사 중 필요한 기사만 선택해 주간상황보고서 GPT에 바로 업로드할 수 있는 Word 자료집으로 내려받습니다. 사이트에서는 최종 보고서를 생성하지 않습니다.</p>
         <div class="download-panel-status">
           <span id="selectedDownloadCount" class="selection-count-pill">0건 선택</span>
@@ -61,7 +65,8 @@
         </div>
       </div>
       <p id="downloadMessage" class="report-request-message" aria-live="polite"></p>
-    </section>
+      </section>
+    </details>
 
     <section class="toolbar" aria-label="기사 필터">
       <label>시작일
