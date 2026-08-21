@@ -155,7 +155,7 @@
     return `<details class="related-news related-news-collapsible"><summary>관련뉴스 ${related.length}건</summary><ul class="related-news-list">${related.map(relatedItemHtml).join("")}</ul></details>`;
   }
   function render(){
-    const items=filteredArticles();$("visibleCount").textContent=`${items.length}개 사건 표시`;const list=$("newsList");
+    const items=filteredArticles();const list=$("newsList");
     if(!items.length){list.className="news-list empty";list.textContent=state.articles.length?"현재 필터에 맞는 기사가 없습니다.":"수집된 기사가 없습니다.";return;}
     list.className="news-list";
     list.innerHTML=items.map((article)=>{
