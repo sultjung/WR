@@ -34,7 +34,8 @@ body{margin:0;background:var(--background);color:var(--ink);font-family:"Noto Sa
 button,input,select{font:inherit}
 button{cursor:pointer}
 .site-header{background:var(--surface);border-bottom:1px solid var(--line)}
-.header-inner{max-width:1440px;margin:0 auto;padding:30px 32px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px;border-top:5px solid var(--orange)}
+.header-inner{position:relative;max-width:1440px;margin:0 auto;padding:30px 32px;display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.header-inner::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#c94f08 0%,#f37321 45%,#ff9a4d 72%,#f37321 100%);box-shadow:0 3px 8px rgba(243,115,33,.18)}
 .eyebrow{margin:0 0 6px;color:var(--orange-dark);font-size:12px;font-weight:800;letter-spacing:.14em}
 h1{margin:0;font-size:32px;letter-spacing:-.04em}
 .subtitle{margin:8px 0 0;color:var(--muted)}
