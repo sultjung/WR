@@ -74,6 +74,15 @@ jobs:
           NEWS_DISCOVERY_DAYS: "14"
         run: npm run collect:priority-discovery
 
+      - name: Discover blocked NIC pages through Google Programmable Search
+        env:
+          GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
+          GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
+          GOOGLE_CSE_DATE_RESTRICT: "d14"
+          GOOGLE_CSE_TIMEOUT_MS: "15000"
+          GOOGLE_CSE_REQUIRED: "false"
+        run: npm run collect:nic-google-cse
+
       - name: Verify recovered and fallback article URLs
         env:
           URL_RESOLVE_TIMEOUT_MS: "15000"
