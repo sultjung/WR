@@ -94,6 +94,18 @@ const BISMAYAH = [
   "bismayah", "bismaya", "bncp"
 ];
 const HANWHA = ["شركة هانوا", "هانوا", "hanwha", "한화"];
+const FORCED_CATEGORY_BY_URL = new Map([
+  ["https://www.noonpost.com/382641/", {
+    category: "international",
+    reason: "개별 검토 결과: 미국·이스라엘·이란 충돌과 중동 질서를 다룬 국제사회 기사"
+  }]
+]);
+
+function hasHanwhaMention(text = "") {
+  const normalized = normalizeArabic(text);
+  return /(?:^|[^\p{L}\p{N}])هانوا(?:$|[^\p{L}\p{N}])/u.test(normalized)
+    || hasAny(text, HANWHA.filter((term) => term !== "هانوا"));
+}
 const NIC = [
   "الهيئة الوطنية للاستثمار", "هيئة الاستثمار الوطنية", "رئيس الهيئة الوطنية للاستثمار",
   "national investment commission", "iraq national investment commission",
@@ -265,6 +277,11 @@ function evaluate(article) {
   const text = `${title}\n${lead}`;
   const current = getCategory(article);
   const keywordId = getKeywordId(article);
+  const forcedCategory = FORCED_CATEGORY_BY_URL.get(getUrl(article));
+
+  if (forcedCategory) {
+    return { action: "keep", ...forcedCategory };
+  }
 
   if (!title || normalizeArabic(title).length < 10) return { action: "exclude", reason: "제목 정보 부족" };
   if (hasAny(title, NOISE)) return { action: "exclude", reason: "스포츠·연예·생활·목록형 기사" };
@@ -276,7 +293,7 @@ function evaluate(article) {
   const nicOfficialSource = article.officialSource === true
     || article.sourceReliability === "OFFICIAL"
     || article.recoveredSourceId === "nic";
-  const hanwhaIraqMatch = hasAny(text, HANWHA) && hasAny(text, IRAQ_CORE);
+  const hanwhaIraqMatch = hasHanwhaMention(text) && hasAny(text, IRAQ_CORE);
 
   if (bismayahMatch || nicMatch || nicOfficialSource || hanwhaIraqMatch) {
     return { action: "keep", category: "bismayah", reason: "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련" };
