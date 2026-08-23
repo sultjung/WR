@@ -347,10 +347,16 @@ const IRAQ_TERMS = [
   "ميسان", "واسط", "بابل", "الديوانية", "المثنى", "دهوك", "كردستان العراق", "iraq", "iraqi"
 ];
 
+function hasHanwhaMention(text = "") {
+  const normalized = normalizeArabic(text);
+  return /(?:^|[^\p{L}\p{N}])هانوا(?:$|[^\p{L}\p{N}])/u.test(normalized)
+    || hasAny(text, HANWHA_TERMS.filter((term) => term !== "هانوا"));
+}
+
 function bismayahValidation(text = "") {
   const directBismayah = containsExactBismayah(text) || hasAny(text, BISMAYAH_TERMS);
   const directNic = hasAny(text, NIC_TERMS) || hasNicAcronym(text);
-  const hanwhaIraq = hasAny(text, HANWHA_TERMS) && hasAny(text, IRAQ_TERMS);
+  const hanwhaIraq = hasHanwhaMention(text) && hasAny(text, IRAQ_TERMS);
   return directBismayah || directNic || hanwhaIraq
     ? { ok: true, errorCode: null, note: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 관련" }
     : { ok: false, errorCode: "NON_IRAQ_RELATED", note: "비스마야·NIC·NIC 의장 또는 한화+이라크 직접 근거 미확인" };
