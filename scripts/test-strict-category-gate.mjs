@@ -16,6 +16,21 @@ const padding = "تفاصيل محلية واقتصادية متكررة ".repea
 
 const articles = [
   {
+    articleId: "noonpost-forced-international",
+    category: "bismayah",
+    contentStatus: "FULL_TEXT",
+    articleUrl: "https://www.noonpost.com/382641/",
+    originalTitleArabic: "المشهد الأخير للهيمنة الأمريكية: صراع إسرائيل وإيران وانهيار النظام القديم",
+    originalTextArabic: "تناول التقرير حرب إيران وإسرائيل وذكر العراق تاريخياً، وقال إن القادة استهانوا بمرونة الخصوم. " + padding
+  },
+  {
+    articleId: "hanwha-standalone-word",
+    category: "international",
+    contentStatus: "FULL_TEXT",
+    originalTitleArabic: "شركة هانوا تبحث أعمالها في العراق",
+    originalTextArabic: "بحثت شركة هانوا مشروعاً في العراق. " + padding
+  },
+  {
     articleId: "nic-official-generic-investment-post",
     category: "economy",
     contentStatus: "FULL_TEXT",
@@ -203,7 +218,9 @@ try {
     "iraq-turkey-diplomatic",
     "iraq-turkey-security",
     "red-sea-oil-price",
-    "gulf-oil-export-routes"
+    "gulf-oil-export-routes",
+    "noonpost-forced-international",
+    "hanwha-standalone-word"
   ]) {
     assert.ok(retained.has(id), `${id} should be retained`);
   }
@@ -228,6 +245,8 @@ try {
   assert.equal(categoryById.get("iraq-turkey-diplomatic"), "politics");
   assert.equal(categoryById.get("iraq-turkey-security"), "security");
   assert.equal(categoryById.get("hormuz-market"), "international");
+  assert.equal(categoryById.get("noonpost-forced-international"), "international");
+  assert.equal(categoryById.get("hanwha-standalone-word"), "bismayah");
   assert.equal(summary.method, "STRICT_CATEGORY_GATE_V5");
   console.log("[test:strict-gate] content-led routing moves protest events to security and preserves unrelated political reporting");
 } finally {
