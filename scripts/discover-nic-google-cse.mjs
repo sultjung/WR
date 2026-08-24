@@ -69,6 +69,7 @@ async function search(query) {
     q: query,
     dateRestrict: DATE_RESTRICT,
     num: "10",
+    lr: "lang_ar",
     gl: "iq",
     safe: "off"
   });
