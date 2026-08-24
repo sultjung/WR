@@ -78,7 +78,7 @@ jobs:
         env:
           GOOGLE_CSE_API_KEY: ${{ secrets.GOOGLE_CSE_API_KEY }}
           GOOGLE_CSE_ID: ${{ secrets.GOOGLE_CSE_ID }}
-          GOOGLE_CSE_DATE_RESTRICT: "m1"
+          GOOGLE_CSE_DATE_RESTRICT: "d14"
           GOOGLE_CSE_TIMEOUT_MS: "15000"
           GOOGLE_CSE_REQUIRED: "false"
         run: npm run collect:nic-google-cse
