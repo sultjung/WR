@@ -17,7 +17,9 @@ const QUERIES = [
   '"مدينة بسماية"',
   '"شركة هانوا"',
   '"عادل الياسري" بسماية',
-  '"السفير الكوري" بسماية'
+  '"السفير الكوري" بسماية',
+  '"إطلاق القروض الفردية" بسماية',
+  '"مصرف الرافدين" بسماية'
 ];
 
 const cleanUrl = (value = "") => {
@@ -67,7 +69,6 @@ async function search(query) {
     q: query,
     dateRestrict: DATE_RESTRICT,
     num: "10",
-    lr: "lang_ar",
     gl: "iq",
     safe: "off"
   });
@@ -102,6 +103,7 @@ for (const query of QUERIES) {
   try {
     const items = await search(query);
     debug.push({ query, ok: true, count: items.length });
+    console.log(`[google-cse] query=${JSON.stringify(query)} results=${items.length}`);
     for (const item of items) {
       const articleUrl = cleanUrl(item.link);
       const title = String(item.title || "").trim();
@@ -151,7 +153,9 @@ for (const query of QUERIES) {
       added += 1;
     }
   } catch (error) {
-    debug.push({ query, ok: false, error: String(error.message || error).slice(0, 300) });
+    const message = String(error.message || error).slice(0, 300);
+    debug.push({ query, ok: false, error: message });
+    console.warn(`[google-cse] query=${JSON.stringify(query)} failed=${message}`);
     if (REQUIRED) throw error;
   }
 }
