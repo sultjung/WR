@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-08",
-  "updatedAt": "2026-08-25T21:49:46.517Z",
+  "updatedAt": "2026-08-26T04:12:43.467Z",
   "count": 51,
   "articles": [
     {
@@ -10,13 +10,13 @@
       "sourceArabic": "الشرق الأوسط",
       "sourceHost": "aawsat.com",
       "category": "politics",
-      "titleKo": "알자이디, 국가의 무기 독점 위한 ‘구속력 있는 법률’ 제정 추진",
+      "titleKo": "",
       "titleArabic": "الزيدي لتشريع «قانون ملزم» لحصر السلاح بيد الدولة",
       "articleUrl": "https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5306177-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%84%D8%AA%D8%B4%D8%B1%D9%8A%D8%B9-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D9%85%D9%84%D8%B2%D9%85-%D9%84%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A8%D9%8A%D8%AF-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
-      "importanceScore": 75,
-      "importanceStars": 4,
+      "importanceScore": null,
+      "importanceStars": null,
       "selected": false,
-      "contentHash": "9545aa3bc556819a04d75d6d58ab324005e7e072eba65d540973b927ccc62ce7"
+      "contentHash": ""
     },
     {
       "articleId": "discovery-QW_JRtYQvYX3z0b_TLLFka23",
