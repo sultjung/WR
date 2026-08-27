@@ -80,8 +80,13 @@ export function looksLikeKoreanTranslation(value = "", options = {}) {
   const maxArabicToHangulRatio = Math.max(0, Number(options.maxArabicToHangulRatio ?? 0.15));
   const hangulCount = (text.match(/\p{Script=Hangul}/gu) || []).length;
   const arabicCount = (text.match(/\p{Script=Arabic}/gu) || []).length;
+  // A Korean translation may naturally contain Latin names and numbers, but it
+  // must never contain a third-language script. This catches occasional model
+  // leakage such as Hindi/Devanagari words embedded in otherwise Korean text.
+  const unexpectedScript = /[\p{Script=Devanagari}\p{Script=Bengali}\p{Script=Thai}\p{Script=Myanmar}\p{Script=Sinhala}\p{Script=Armenian}\p{Script=Georgian}\p{Script=Ethiopic}\p{Script=Hebrew}\p{Script=Cyrillic}]/u;
 
   if (hangulCount < minHangul) return false;
+  if (unexpectedScript.test(text)) return false;
   return arabicCount <= Math.max(4, Math.floor(hangulCount * maxArabicToHangulRatio));
 }
 
