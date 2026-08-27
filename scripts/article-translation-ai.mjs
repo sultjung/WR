@@ -91,6 +91,7 @@ export async function translateArabicArticle(titleArabic, bodyArabic, preferredT
 원문에 없는 정보나 연결 문장을 만들지 않는다.
 아랍어 원문을 그대로 복사해서는 안 되며, titleKo와 fullTextKo는 반드시 한국어 번역문이어야 한다.
 fullTextKo에는 아랍어 문장을 남기지 말고 본문 전체를 끝까지 한국어로 번역한다.
+출력에는 한글·라틴 문자·숫자·일반 문장부호만 사용한다. 힌디어·벵골어 등 제3언어 문자를 절대로 섞지 않는다.
 titleKo에는 자연스러운 한국어 제목만, fullTextKo에는 본문 전체 번역만 넣는다.${termsInstruction(preferredTerms)}`;
 
   const inputText = JSON.stringify({ titleArabic: title, bodyArabic: body });
