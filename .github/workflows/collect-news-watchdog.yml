@@ -1,0 +1,44 @@
+name: Collect News Watchdog
+
+on:
+  schedule:
+    - cron: "20 21 * * *" # 06:20 KST: morning backup check
+    - cron: "30 3 * * *"  # 12:30 KST: midday backup check
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  dispatch-if-stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+      - name: Start a backup collection only when the primary run did not update data
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          active_runs="$(gh run list --workflow collect-arabic-news.yml --status in_progress --limit 1 --json databaseId --jq 'length')"
+          queued_runs="$(gh run list --workflow collect-arabic-news.yml --status queued --limit 1 --json databaseId --jq 'length')"
+          if [ "$active_runs" -gt 0 ] || [ "$queued_runs" -gt 0 ]; then
+            echo "Primary collection is already active or queued; no duplicate backup dispatch."
+            exit 0
+          fi
+          kst_date="$(TZ=Asia/Seoul date +%F)"
+          case "$SCHEDULE" in
+            "20 21 * * *") cutoff="${kst_date}T00:00:00+09:00" ;;
+            "30 3 * * *") cutoff="${kst_date}T12:00:00+09:00" ;;
+            *) cutoff="${kst_date}T00:00:00+09:00" ;;
+          esac
+          generated_at="$(node -e 'const d=require("./data/articles.json"); process.stdout.write(d.generatedAt||"")')"
+          if node -e 'process.exit(new Date(process.argv[1]).getTime() >= new Date(process.argv[2]).getTime() ? 0 : 1)' "$generated_at" "$cutoff"; then
+            echo "Primary collection is already current after $cutoff; no backup dispatch."
+            exit 0
+          fi
+          echo "No current collection after $cutoff; dispatching backup run."
+          gh workflow run collect-arabic-news.yml --ref main
