@@ -1,9 +1,37 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-08",
-  "updatedAt": "2026-08-27T03:57:24.911Z",
-  "count": 73,
+  "updatedAt": "2026-08-27T14:28:45.262Z",
+  "count": 75,
   "articles": [
+    {
+      "articleId": "discovery-eq50k287gmFdGGpgxP1MiQWd",
+      "publishedAt": "2026-08-27T16:27:54.000Z",
+      "sourceArabic": "مصر تايمز",
+      "sourceHost": "masrtimes.com",
+      "category": "politics",
+      "titleKo": "",
+      "titleArabic": "رئيس الوزراء العراقي: الاعتداءات على المؤسسات الأمنية لن تثني الحكومة عن فرض القانون",
+      "articleUrl": "https://www.masrtimes.com/743511",
+      "importanceScore": null,
+      "importanceStars": null,
+      "selected": false,
+      "contentHash": ""
+    },
+    {
+      "articleId": "discovery-c9SIEgYju1CN6LQVMIzE61rI",
+      "publishedAt": "2026-08-27T16:22:00.000Z",
+      "sourceArabic": "جريدة الجريدة الكويتية",
+      "sourceHost": "aljarida.com",
+      "category": "international",
+      "titleKo": "",
+      "titleArabic": "مستشار مجتبى زار بغداد لاحتواء أزمة حصر السلاح",
+      "articleUrl": "https://www.aljarida.com/article/142530",
+      "importanceScore": null,
+      "importanceStars": null,
+      "selected": false,
+      "contentHash": ""
+    },
     {
       "articleId": "discovery-rE_dzadgiBPZlFd4P7VGKV2I",
       "publishedAt": "2026-08-13T14:00:53.000Z",
