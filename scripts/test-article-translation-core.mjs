@@ -48,6 +48,11 @@ assert.equal(
   true,
   "normal Korean translation must pass language quality check"
 );
+assert.equal(
+  looksLikeKoreanTranslation("국가투자위원회는 부패 척결 अभियान을 지속한다고 밝혔다."),
+  false,
+  "Hindi/Devanagari text embedded in Korean output must be rejected"
+);
 
 const badCompleted = {
   ...relatedBismayah,
