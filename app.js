@@ -29,8 +29,17 @@
   const translationReady=(article)=>translationStatus(article)==="completed"&&Boolean(String(translationOf(article).titleKo||"").trim())&&Boolean(String(translationOf(article).fullTextKo||"").trim());
   const legacyCardOf=(article)=>article.card&&typeof article.card==="object"?article.card:{};
   const legacyCardReady=(article)=>String(legacyCardOf(article).status||"").toLowerCase()==="completed"&&Boolean(String(legacyCardOf(article).titleKo||"").trim());
-  const koTitle=(article)=>String(translationOf(article).titleKo||legacyCardOf(article).titleKo||"").trim()||"한국어 제목 번역 준비 중";
-  const fullTranslation=(article)=>String(translationOf(article).fullTextKo||"").trim();
+  // Defensive display guard: translation validation blocks these scripts at
+  // ingestion, while this keeps already-published cached data readable.
+  const normalizeKoreanDisplay=(value)=>String(value||"")
+    .replaceAll("अभियान","캠페인")
+    .replaceAll("गंभीर","심각")
+    .replaceAll("संघर्ष","갈등")
+    .replaceAll("निर्ण","결정")
+    .replaceAll("शांत온해","차분해")
+    .trim();
+  const koTitle=(article)=>normalizeKoreanDisplay(translationOf(article).titleKo||legacyCardOf(article).titleKo)||"한국어 제목 번역 준비 중";
+  const fullTranslation=(article)=>normalizeKoreanDisplay(translationOf(article).fullTextKo);
   const legacySummary=(article)=>String(legacyCardOf(article).summaryKo||"").trim();
   const previewText=(article)=>{
     const text=fullTranslation(article).replace(/\s+/g," ").trim();
