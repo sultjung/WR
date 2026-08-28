@@ -154,6 +154,14 @@ const SECURITY_EVENT_ALIASES = new Map([
   ]]
 ]);
 
+const BAGHDAD_DIALOGUE_EVENT_ALIASES = new Map([
+  ["EVENT_BAGHDAD_DIALOGUE", [
+    "حوار بغداد الثامن",
+    "مؤتمر حوار بغداد الثامن",
+    "حوار بغداد"
+  ]]
+]);
+
 const SECURITY_LOCATION_SIGNALS = new Set([
   "TERM:بغداد",
   "TERM:البصرة",
@@ -283,6 +291,10 @@ function securityEventSignals(text = "") {
   return aliasSignals(text, SECURITY_EVENT_ALIASES);
 }
 
+function baghdadDialogueSignals(text = "") {
+  return aliasSignals(text, BAGHDAD_DIALOGUE_EVENT_ALIASES);
+}
+
 function dateHours(a, b) {
   const A = new Date(a || 0).getTime();
   const B = new Date(b || 0).getTime();
@@ -387,6 +399,22 @@ function highConfidenceSecurityStrikeMatch(a, b, aEntities, bEntities, aNumbers,
   };
 }
 
+function highConfidenceBaghdadDialogueMatch(a, b, aEntities, bEntities, aSignals, bSignals) {
+  if (String(a.category || "").toLowerCase() !== "politics"
+    || String(b.category || "").toLowerCase() !== "politics") return null;
+  if (dateHours(a.publishedAt, b.publishedAt) > 36) return null;
+
+  const sharedEntities = intersection(aEntities, bEntities);
+  if (!sharedEntities.includes("PERSON_ALI_FALEH_AL_ZAIDI")) return null;
+  if (!aSignals.includes("EVENT_BAGHDAD_DIALOGUE") || !bSignals.includes("EVENT_BAGHDAD_DIALOGUE")) return null;
+
+  return {
+    score: 0.94,
+    reason: "SAME_BAGHDAD_DIALOGUE_PM_SESSION",
+    sharedSignals: ["PERSON_ALI_FALEH_AL_ZAIDI", "EVENT_BAGHDAD_DIALOGUE"]
+  };
+}
+
 function eventScore(a, b) {
   if ((a.category || "") !== (b.category || "")) {
     return { score: 0, reason: "CATEGORY_MISMATCH", sharedSignals: [] };
@@ -449,6 +477,18 @@ function eventScore(a, b) {
     bSecuritySignals
   );
   if (securityMatch) return securityMatch;
+
+  const aBaghdadDialogueSignals = baghdadDialogueSignals(aLeadText);
+  const bBaghdadDialogueSignals = baghdadDialogueSignals(bLeadText);
+  const baghdadDialogueMatch = highConfidenceBaghdadDialogueMatch(
+    a,
+    b,
+    aEntities,
+    bEntities,
+    aBaghdadDialogueSignals,
+    bBaghdadDialogueSignals
+  );
+  if (baghdadDialogueMatch) return baghdadDialogueMatch;
 
   const exactish = sameOrContainedTitle(a.originalTitleArabic, b.originalTitleArabic);
   const strongTitle = commonTitleTokens.length >= 3 && titleOverlap >= 0.67;
