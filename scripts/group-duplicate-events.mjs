@@ -415,6 +415,21 @@ function highConfidenceBaghdadDialogueMatch(a, b, aEntities, bEntities, aSignals
   };
 }
 
+function hasAliZaydiInTitle(article = {}) {
+  const title = ` ${canonicalPhrase(article.originalTitleArabic || "")} `;
+  return ["علي فالح الزيدي", "علي الزيدي", "الزيدي"].some((name) => {
+    const alias = canonicalPhrase(name);
+    return alias && title.includes(` ${alias} `);
+  });
+}
+
+function isBaghdadDialoguePolicyArticle(article = {}) {
+  const title = normalizeArabic(article.originalTitleArabic || "");
+  return hasAliZaydiInTitle(article) && [
+    "حوار بغداد", "مؤتمر حوار بغداد", "مليون قطعة ارض", "حصر السلاح", "مكافحه الفساد", "الفساد", "الرواتب"
+  ].some((term) => title.includes(normalizeArabic(term)));
+}
+
 function eventScore(a, b) {
   if ((a.category || "") !== (b.category || "")) {
     return { score: 0, reason: "CATEGORY_MISMATCH", sharedSignals: [] };
@@ -439,6 +454,20 @@ function eventScore(a, b) {
   const bEntities = entitySignals(bLeadText);
   const sharedEntities = intersection(aEntities, bEntities);
   const entityScore = jaccard(aEntities, bEntities);
+
+  // A Baghdad Dialogue page frequently repeats other speakers' remarks in the
+  // body. Do not fold the prime-minister session into a president/minister
+  // article merely because both pages mention the same conference.
+  const aDialogueSignals = baghdadDialogueSignals(aLeadText);
+  const bDialogueSignals = baghdadDialogueSignals(bLeadText);
+  if ((aDialogueSignals.includes("EVENT_BAGHDAD_DIALOGUE") || bDialogueSignals.includes("EVENT_BAGHDAD_DIALOGUE"))
+    && hasAliZaydiInTitle(a) !== hasAliZaydiInTitle(b)) {
+    return { score: 0, reason: "BAGHDAD_DIALOGUE_SPEAKER_MISMATCH", sharedSignals: [] };
+  }
+  if ((isBaghdadDialoguePolicyArticle(a) || isBaghdadDialoguePolicyArticle(b))
+    && isBaghdadDialoguePolicyArticle(a) !== isBaghdadDialoguePolicyArticle(b)) {
+    return { score: 0, reason: "BAGHDAD_DIALOGUE_POLICY_MISMATCH", sharedSignals: [] };
+  }
 
   const aActions = actionSignals(a.originalTitleArabic);
   const bActions = actionSignals(b.originalTitleArabic);
@@ -478,15 +507,13 @@ function eventScore(a, b) {
   );
   if (securityMatch) return securityMatch;
 
-  const aBaghdadDialogueSignals = baghdadDialogueSignals(aLeadText);
-  const bBaghdadDialogueSignals = baghdadDialogueSignals(bLeadText);
   const baghdadDialogueMatch = highConfidenceBaghdadDialogueMatch(
     a,
     b,
     aEntities,
     bEntities,
-    aBaghdadDialogueSignals,
-    bBaghdadDialogueSignals
+    aDialogueSignals,
+    bDialogueSignals
   );
   if (baghdadDialogueMatch) return baghdadDialogueMatch;
 
@@ -536,7 +563,9 @@ function sourceRank(article) {
 
 function representativeScore(article) {
   const translated = article.translation?.titleKo ? 5000 : 0;
-  return sourceRank(article) * 100000
+  const baghdadDialoguePolicyBoost = isBaghdadDialoguePolicyArticle(article) ? 1000000 : 0;
+  return baghdadDialoguePolicyBoost
+    + sourceRank(article) * 100000
     + Number(article.contentChars || 0)
     + tokens(article.originalTitleArabic).length * 100
     + translated;
