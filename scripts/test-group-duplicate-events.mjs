@@ -100,6 +100,30 @@ const articles = [
     originalTitleArabic: "اعتقال 8 مطلوبين في كركوك خلال عملية أمنية",
     originalTextArabic: "أعلنت القوات العراقية اعتقال 8 مطلوبين في كركوك خلال عملية أمنية منفصلة.",
     sourceArabic: "fixture"
+  },
+  {
+    articleId: "hewar-baghdad-dialogue",
+    category: "politics",
+    publishedAt: "2026-08-21T09:00:00.000Z",
+    originalTitleArabic: "رئيس الوزراء علي الزيدي في حوار بغداد الثامن يعلن المضي في مكافحة الفساد وتهيئة مليون قطعة أرض سكنية للمواطنين",
+    originalTextArabic: "أكد رئيس مجلس الوزراء علي فالح الزيدي خلال مؤتمر حوار بغداد الثامن المضي في مكافحة الفساد وتهيئة مليون قطعة أرض سكنية وتأمين الرواتب.",
+    sourceArabic: "المعهد العراقي للحوار"
+  },
+  {
+    articleId: "nina-baghdad-dialogue",
+    category: "politics",
+    publishedAt: "2026-08-21T11:07:00.000Z",
+    originalTitleArabic: "الزيدي في مؤتمر حوار بغداد الثامن: العراق يمر بفترة عصيبة ولدينا أكثر من حل للمشكلات الاقتصادية",
+    originalTextArabic: "قال رئيس الوزراء علي فالح الزيدي خلال حوار بغداد الثامن إن مشروع مليون قطعة أرض سكنية قريب جداً وإن الرواتب مؤمنة.",
+    sourceArabic: "وكالة نينا"
+  },
+  {
+    articleId: "other-pm-event-counterexample",
+    category: "politics",
+    publishedAt: "2026-08-21T10:00:00.000Z",
+    originalTitleArabic: "رئيس الوزراء علي الزيدي يستقبل وفداً اقتصادياً في بغداد",
+    originalTextArabic: "استقبل رئيس مجلس الوزراء علي فالح الزيدي وفداً اقتصادياً لبحث الاستثمارات.",
+    sourceArabic: "fixture"
   }
 ];
 
@@ -165,6 +189,20 @@ try {
   assert.ok(
     !strikeGroup.memberArticleIds.includes("kirkuk-arrest-counterexample"),
     "same-place same-number but different security event must remain separate"
+  );
+
+  const dialogueGroup = result.groups.find((group) =>
+    group.memberArticleIds.includes("hewar-baghdad-dialogue")
+  );
+  assert.ok(dialogueGroup, "expected Baghdad Dialogue prime-minister session group");
+  assert.deepEqual(
+    new Set(dialogueGroup.memberArticleIds),
+    new Set(["hewar-baghdad-dialogue", "nina-baghdad-dialogue"]),
+    "same Baghdad Dialogue prime-minister session must be grouped, without absorbing other events"
+  );
+  assert.ok(
+    result.matches.some((match) => match.reason === "SAME_BAGHDAD_DIALOGUE_PM_SESSION"),
+    "expected a Baghdad Dialogue session match reason"
   );
 
   console.log("[test:events] bilateral and security semantic rewrites grouped; unrelated stories kept separate");
