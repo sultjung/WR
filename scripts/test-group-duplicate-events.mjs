@@ -124,6 +124,14 @@ const articles = [
     originalTitleArabic: "رئيس الوزراء علي الزيدي يستقبل وفداً اقتصادياً في بغداد",
     originalTextArabic: "استقبل رئيس مجلس الوزراء علي فالح الزيدي وفداً اقتصادياً لبحث الاستثمارات.",
     sourceArabic: "fixture"
+  },
+  {
+    articleId: "president-dialogue-counterexample",
+    category: "politics",
+    publishedAt: "2026-08-21T10:30:00.000Z",
+    originalTitleArabic: "الرئيس العراقي: حصر السلاح بيد الدولة قرار وطني",
+    originalTextArabic: "قال رئيس الجمهورية خلال مؤتمر حوار بغداد الثامن إن حصر السلاح قرار وطني، فيما تحدث رئيس الوزراء علي فالح الزيدي في جلسة منفصلة.",
+    sourceArabic: "fixture"
   }
 ];
 
@@ -203,6 +211,10 @@ try {
   assert.ok(
     result.matches.some((match) => match.reason === "SAME_BAGHDAD_DIALOGUE_PM_SESSION"),
     "expected a Baghdad Dialogue session match reason"
+  );
+  assert.ok(
+    !dialogueGroup.memberArticleIds.includes("president-dialogue-counterexample"),
+    "a different Baghdad Dialogue speaker must not hide the prime-minister session as a related article"
   );
 
   console.log("[test:events] bilateral and security semantic rewrites grouped; unrelated stories kept separate");
