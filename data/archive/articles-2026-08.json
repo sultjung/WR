@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-08",
-  "updatedAt": "2026-09-01T23:05:11.866Z",
+  "updatedAt": "2026-09-02T06:56:19.582Z",
   "count": 234,
   "articles": [
     {
@@ -37,14 +37,14 @@
       "publishedAt": "2026-08-19T14:46:52.770Z",
       "sourceArabic": "تسنیم",
       "sourceHost": "tasnimnews.ir",
-      "category": "politics",
-      "titleKo": "갈리바프: 미국은 역내 안보 불안과 교역의 정상적 흐름 방해의 원인",
+      "category": "international",
+      "titleKo": "",
       "titleArabic": "قاليباف: أمريكا سبب انعدام الأمن في المنطقة وتعطيل المسار الطبيعي للتجارة",
       "articleUrl": "https://www.tasnimnews.ir/ar/news/2026/08/19/3675201/%D9%82%D8%A7%D9%84%DB%8C%D8%A8%D8%A7%D9%81-%D8%A3%D9%85%D8%B1%DB%8C%DA%A9%D8%A7-%D8%B3%D8%A8%D8%A8-%D8%A7%D9%86%D8%B9%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D9%81%DB%8C-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%AA%D8%B9%D8%B7%DB%8C%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1-%D8%A7%D9%84%D8%B7%D8%A8%DB%8C%D8%B9%DB%8C-%D9%84%D9%84%D8%AA%D8%AC%D8%A7%D8%B1%D8%A9",
-      "importanceScore": 29,
-      "importanceStars": 1.5,
+      "importanceScore": null,
+      "importanceStars": null,
       "selected": false,
-      "contentHash": "62d5ceed23c98b166b3c406aa34b93597cd6b2bde8b6b6d458fbdb082d5b9bfc"
+      "contentHash": ""
     },
     {
       "articleId": "discovery-nxysrKbGypH0uC1oot-f38xY",
