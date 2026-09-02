@@ -110,6 +110,18 @@ async function verifyPublisherUrl(item, candidateUrl, resolutionMethod) {
 }
 
 async function resolveOne(item) {
+  // Facebook blocks unattended publisher-page fetches.  NIC Facebook matches
+  // are intentionally retained as search-snippet records and never treated as
+  // publisher full text.
+  if (item.facebookSearchSnippetOnly === true && item.articleUrl) {
+    return {
+      ...item,
+      urlStatus: "RESOLVED",
+      urlResolutionMethod: "GOOGLE_SEARCH_NIC_FACEBOOK_SNIPPET",
+      errorCode: null,
+      resolvedAt: new Date().toISOString()
+    };
+  }
   if (item.urlStatus === "RECOVERED" && isLikelyArticleUrl(item.articleUrl)) {
     try {
       return await verifyPublisherUrl(item, item.articleUrl, item.urlRecoveryMethod || "SOURCE_INDEX_TITLE_MATCH");

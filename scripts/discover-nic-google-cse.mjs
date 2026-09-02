@@ -19,8 +19,13 @@ const QUERIES = [
   '"عادل الياسري" بسماية',
   '"السفير الكوري" بسماية',
   '"إطلاق القروض الفردية" بسماية',
-  '"مصرف الرافدين" بسماية'
+  '"مصرف الرافدين" بسماية',
+  'site:facebook.com/profile.php?id=100090604137582',
+  'site:web.facebook.com "100090604137582" "الهيئة الوطنية للاستثمار"'
 ];
+
+const NIC_FACEBOOK_PROFILE_ID = "100090604137582";
+const NIC_FACEBOOK_PROFILE_URL = `https://www.facebook.com/profile.php?id=${NIC_FACEBOOK_PROFILE_ID}`;
 
 const cleanUrl = (value = "") => {
   try {
@@ -50,6 +55,20 @@ const normalize = (value = "") => String(value)
 function isNicUrl(value = "") {
   try {
     return new URL(value).hostname.replace(/^www\./, "").toLowerCase() === "investpromo.gov.iq";
+  } catch {
+    return false;
+  }
+}
+
+function isNicFacebookPostUrl(value = "") {
+  try {
+    const url = new URL(value);
+    const host = url.hostname.replace(/^www\./, "").toLowerCase();
+    if (!/(^|\.)facebook\.com$/i.test(host)) return false;
+    const id = url.searchParams.get("id") || "";
+    const pathname = url.pathname.toLowerCase();
+    return id === NIC_FACEBOOK_PROFILE_ID
+      && (url.searchParams.has("story_fbid") || /\/(?:posts|permalink)\//.test(pathname) || /permalink\.php$/.test(pathname));
   } catch {
     return false;
   }
@@ -108,7 +127,9 @@ for (const query of QUERIES) {
     for (const item of items) {
       const articleUrl = cleanUrl(item.link);
       const title = String(item.title || "").trim();
-      if (!articleUrl || !title || !isNicUrl(articleUrl)) continue;
+      const nicOfficialSite = isNicUrl(articleUrl);
+      const nicFacebookPost = isNicFacebookPostUrl(articleUrl);
+      if (!articleUrl || !title || (!nicOfficialSite && !nicFacebookPost)) continue;
       const duplicate = byUrl.get(articleUrl) ?? byTitle.get(normalize(title));
       if (duplicate !== undefined) {
         articles[duplicate] = {
@@ -121,7 +142,7 @@ for (const query of QUERIES) {
       const candidate = {
         schemaVersion: "1.0",
         articleId: `google-cse-${createHash("sha256").update(articleUrl).digest("base64url").slice(0, 24)}`,
-        keywordId: "bismayah-nic-google-cse-001",
+        keywordId: nicFacebookPost ? "bismayah-nic-facebook-search-001" : "bismayah-nic-google-cse-001",
         category: "bismayah",
         priority: 100,
         queryArabic: query,
@@ -130,8 +151,8 @@ for (const query of QUERIES) {
         excludedTerms: [],
         originalTitleArabic: title,
         descriptionArabic: String(item.snippet || "").trim(),
-        sourceArabic: "الهيئة الوطنية للاستثمار",
-        sourceHomepage: "https://investpromo.gov.iq/ar/",
+        sourceArabic: nicFacebookPost ? "الهيئة الوطنية للاستثمار · Facebook" : "الهيئة الوطنية للاستثمار",
+        sourceHomepage: nicFacebookPost ? NIC_FACEBOOK_PROFILE_URL : "https://investpromo.gov.iq/ar/",
         publishedAt: publishedAt(item),
         discoveryUrl: articleUrl,
         articleUrl,
@@ -140,7 +161,8 @@ for (const query of QUERIES) {
         discoveryStatus: "DISCOVERED",
         urlStatus: "RECOVERED",
         urlRecoveryMethod: "GOOGLE_PROGRAMMABLE_SEARCH",
-        recoveredSourceId: "nic",
+        recoveredSourceId: nicFacebookPost ? "nic-facebook" : "nic",
+        facebookSearchSnippetOnly: nicFacebookPost,
         contentStatus: "PENDING",
         officialSource: true,
         sourceReliability: "OFFICIAL",

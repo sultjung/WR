@@ -47,7 +47,7 @@
     return text.length>360?`${text.slice(0,360).trim()}…`:text;
   };
   const MIN_SELECTABLE_SOURCE_CHARS=100;
-  const exportSelectable=(article)=>translationReady(article)&&sourceText(article).length>=MIN_SELECTABLE_SOURCE_CHARS&&Boolean(articleId(article));
+  const exportSelectable=(article)=>translationReady(article)&&String(article.contentStatus||"").toUpperCase()==="FULL_TEXT"&&sourceText(article).length>=MIN_SELECTABLE_SOURCE_CHARS&&Boolean(articleId(article));
   const publishedAt=(article)=>recordOf(article).publishedAt||article.publishedAt||"";
   const publishedTime=(article)=>{const value=new Date(publishedAt(article)).getTime();return Number.isFinite(value)?value:null;};
   const sourceName=(article)=>article.source?.arabicName||article.sourceArabic||recordOf(article).sourceArabic||article.sourceHost||"출처 미확인";
@@ -151,7 +151,7 @@
       return true;
     }).sort((a,b)=>compareArticles(a,b,sortOrder));
   }
-  function categoryLabel(category){return {bismayah:"비스마야",politics:"정치권 동향",economy:"경제·건설",security:"테러·치안",international:"국제사회"}[category]||"미분류";}
+  function categoryLabel(category){return {bismayah:"비스마야 / NIC",politics:"정치권 동향",economy:"경제·건설",security:"테러·치안",international:"국제사회"}[category]||"미분류";}
   function categoryBadgeClass(category){return ["bismayah","politics","economy","security","international"].includes(category)?`category-${category}`:"category-unknown";}
   function relatedItemHtml(member){
     const url=articleUrl(member),title=escapeHtml(String(member.relatedTitle?.titleKo||sourceTitle(member)||"제목 미확인").trim());
@@ -172,7 +172,9 @@
       const duplicateCount=Math.max(0,membersOf(article).length-1);
       const scoreBadge=importance.stars===null?`<span class="badge importance-pending">별점 평가 대기</span>`:`<span class="badge importance-score">${starRatingHtml(importance.stars)}</span>`;
       const legacyReady=legacyCardReady(article),legacyText=legacySummary(article),expandable=ready||Boolean(legacyReady&&legacyText);
-      const translationBlock=ready?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:legacyReady&&legacyText?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(legacyText)}</div><details class="arabic-source"><summary>아랍어 원문 보기</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
+      const sourceHeading=String(article.contentStatus||"").toUpperCase()==="SEARCH_SNIPPET"?"검색 노출 아랍어 원문": "아랍어 원문 보기";
+      const sourceNote=String(article.contentStatus||"").toUpperCase()==="SEARCH_SNIPPET"?`<p class="translation-pending">Facebook 접근 제한으로 검색에 노출된 원문만 번역했습니다. 보고서 선택 대상에는 포함되지 않습니다.</p>`:"";
+      const translationBlock=ready?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(fullTranslation(article))}</div>${sourceNote}<details class="arabic-source"><summary>${sourceHeading}</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:legacyReady&&legacyText?`<details class="full-translation compact-controlled"><summary class="compact-details-summary">기사 전문</summary><div class="translation-body">${escapeHtml(legacyText)}</div>${sourceNote}<details class="arabic-source"><summary>${sourceHeading}</summary><div lang="ar" dir="rtl">${escapeHtml(sourceText(article))}</div></details><div class="collapse-article-row"><button class="collapse-article-button" data-action="collapse-article" type="button">기사 접기 <span aria-hidden="true">↑</span></button></div></details>`:`<p class="translation-pending">전문 번역 대기 중입니다. 다음 번역 실행에서 처리됩니다.</p>`;
       const expandButton=expandable?`<button class="article-expand-button" data-action="toggle-article" type="button" aria-expanded="false">전문 펼쳐보기 <span aria-hidden="true">＋</span></button>`:"";
       return `<article class="news-card ${selected?"selected":""}" data-key="${escapeHtml(key)}">
         <div class="card-top"><div class="meta"><span>${escapeHtml(sourceName(article))}</span><span>${escapeHtml(dateLabel(publishedAt(article)))}</span>${duplicateCount?`<span>동일 사건 보도 ${duplicateCount+1}건</span>`:""}</div><button class="${selected?"primary":""}" data-action="select" type="button" ${selectable?"":"disabled"}>${selected?"선택됨":selectable?"기사 선택":eligible&&!inReportPeriod?"대상기간 밖":"번역 후 선택"}</button></div>

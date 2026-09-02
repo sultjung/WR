@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "categories": [
-    {"id":"bismayah","labelKo":"비스마야 직접 관련","reportSection":"1. 이라크 국내 상황","priority":100},
+    {"id":"bismayah","labelKo":"비스마야 / NIC 직접 관련","reportSection":"1. 이라크 국내 상황","priority":100},
     {"id":"politics","labelKo":"이라크 정치권 동향","reportSection":"1) 정국 / 치안","priority":90},
     {"id":"economy","labelKo":"경제·건설·투자","reportSection":"2) 경제","priority":85},
     {"id":"security","labelKo":"테러·치안","reportSection":"이라크 주간 테러 상황","priority":95},

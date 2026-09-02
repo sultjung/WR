@@ -5,6 +5,7 @@ const PRIORITY_AGGREGATOR_METHODS = new Set([
   "priority-aggregator-source-link",
   "PRIORITY_AGGREGATOR_FALLBACK"
 ]);
+const NIC_FACEBOOK_PROFILE_ID = "100090604137582";
 
 export function hostnameOf(url = "") {
   try {
@@ -42,10 +43,24 @@ export function isExplicitPriorityAggregatorFallback(article = {}) {
     && priorityMethods(article).some((method) => PRIORITY_AGGREGATOR_METHODS.has(method));
 }
 
+function isExplicitNicFacebookSearchSnippet(article = {}) {
+  if (article.facebookSearchSnippetOnly !== true) return false;
+  try {
+    const url = new URL(article.articleUrl);
+    const host = url.hostname.replace(/^www\./, "").toLowerCase();
+    return /(^|\.)facebook\.com$/i.test(host)
+      && url.searchParams.get("id") === NIC_FACEBOOK_PROFILE_ID
+      && (url.searchParams.has("story_fbid") || /permalink\.php$/.test(url.pathname));
+  } catch {
+    return false;
+  }
+}
+
 export function isForbiddenArticleUrl(article = {}) {
   const host = hostnameOf(article.articleUrl);
   if (!host) return true;
   if (host === PRIORITY_AGGREGATOR_HOST) return !isExplicitPriorityAggregatorFallback(article);
+  if (isExplicitNicFacebookSearchSnippet(article)) return false;
 
   return host === "news.google.com"
     || /(^|\.)google\.[a-z.]+$/i.test(host)

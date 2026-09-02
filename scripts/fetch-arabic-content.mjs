@@ -459,6 +459,30 @@ function sanitizeStoredArticle(item = {}) {
 
 async function hydrate(item) {
   if (item.urlStatus !== "RESOLVED" || !item.articleUrl) return { ...item, contentStatus: "NOT_ATTEMPTED" };
+  if (item.facebookSearchSnippetOnly === true) {
+    const originalTitleArabic = cleanArticleTitle(item.originalTitleArabic || "", item.articleUrl);
+    const originalTextArabic = cleanArticleText(item.descriptionArabic || "", { title: originalTitleArabic });
+    const combined = `${originalTitleArabic}\n${originalTextArabic}`;
+    const categoryResult = validateCategory(item, originalTitleArabic, originalTextArabic, item.articleUrl);
+    if (originalTextArabic.length < MIN_CONTENT_CHARS || arabicRatio(combined) < MIN_ARABIC_RATIO || !categoryResult.ok) {
+      return { ...item, originalTitleArabic, originalTextArabic: "", contentStatus: "FAILED", errorCode: "FACEBOOK_SEARCH_SNIPPET_INSUFFICIENT", fetchedAt: new Date().toISOString() };
+    }
+    return {
+      ...item,
+      originalTitleArabic,
+      originalTextArabic,
+      sourceHost: hostnameOf(item.articleUrl),
+      contentChars: originalTextArabic.length,
+      arabicRatio: arabicRatio(combined),
+      contentStatus: "SEARCH_SNIPPET",
+      errorCode: null,
+      relevanceNote: "NIC 공식 Facebook 게시물의 검색 노출 원문만 확보됨",
+      fetchedAt: new Date().toISOString(),
+      translation: { status: "PENDING", titleKo: "", fullTextKo: "" },
+      analysis: { status: "PENDING", category: item.category, recommendation: "USER_REVIEW_REQUIRED", relevanceScore: null, recommendationReason: "" },
+      selection: { selected: false, reportSection: null, displayOrder: null, userNote: "" }
+    };
+  }
   try {
     const page = await fetchPage(item.articleUrl);
     const articleUrl = normalizeUrl(page.finalUrl || item.articleUrl);
@@ -549,7 +573,7 @@ function articleKey(item) {
 
 const input = JSON.parse(await fs.readFile(INPUT_FILE, "utf8"));
 const hydrated = await mapLimit(input.articles || [], CONCURRENCY, hydrate);
-const successful = hydrated.filter((item) => item.contentStatus === "FULL_TEXT" && item.originalTextArabic);
+const successful = hydrated.filter((item) => ["FULL_TEXT", "SEARCH_SNIPPET"].includes(item.contentStatus) && item.originalTextArabic);
 const previous = await loadPrevious();
 const cutoff = new Date();
 cutoff.setUTCDate(cutoff.getUTCDate() - RETENTION_DAYS);
@@ -580,10 +604,11 @@ const payload = {
   collectionRun: {
     discoveredCount: input.count || (input.articles || []).length,
     resolvedCount: input.resolvedCount || 0,
-    fullTextCount: successful.length,
+    fullTextCount: successful.filter((item) => item.contentStatus === "FULL_TEXT").length,
+    searchSnippetCount: successful.filter((item) => item.contentStatus === "SEARCH_SNIPPET").length,
     failedCount: hydrated.length - successful.length,
     removedStoredCount,
-    failures: hydrated.filter((item) => item.contentStatus !== "FULL_TEXT").reduce((acc, item) => {
+    failures: hydrated.filter((item) => !["FULL_TEXT", "SEARCH_SNIPPET"].includes(item.contentStatus)).reduce((acc, item) => {
       const key = item.errorCode || "UNKNOWN";
       acc[key] = (acc[key] || 0) + 1;
       return acc;

@@ -13,12 +13,18 @@ const input = path.join(temp, "recovered.json");
 const server = http.createServer((request, response) => {
   const query = new URL(request.url, "http://localhost").searchParams.get("q");
   response.setHeader("content-type", "application/json");
-  response.end(JSON.stringify({ items: query === "بسماية" ? [{
+  const items = query === "بسماية" ? [{
     title: "رئيس الهيئة الوطنية للاستثمار يناقش حلول استئناف مشروع بسماية",
     link: "https://investpromo.gov.iq/ar/nic-bismayah-test/",
     snippet: "بحثت الهيئة استئناف العمل مع شركة هانوا",
     pagemap: { metatags: [{ "article:published_time": "2026-08-23T14:00:00+03:00" }] }
-  }] : [] }));
+  }] : query === "site:facebook.com/profile.php?id=100090604137582" ? [{
+    title: "الهيئة الوطنية للاستثمار تبحث خطة استثمارية جديدة",
+    link: "https://www.facebook.com/permalink.php?story_fbid=123456789&id=100090604137582",
+    snippet: "ناقشت الهيئة الوطنية للاستثمار الخطط والمشاريع الاستثمارية الجديدة في العراق",
+    pagemap: { metatags: [{ "article:published_time": "2026-08-24T14:00:00+03:00" }] }
+  }] : [];
+  response.end(JSON.stringify({ items }));
 });
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 try {
@@ -37,11 +43,13 @@ try {
   });
   assert.equal(run.status, 0, run.stderr || run.stdout);
   const output = JSON.parse(await fs.readFile(input, "utf8"));
-  assert.equal(output.articles.length, 1);
+  assert.equal(output.articles.length, 2);
   assert.equal(output.articles[0].category, "bismayah");
-  assert.equal(output.articles[0].officialSource, true);
-  assert.equal(output.articles[0].recoveredSourceId, "nic");
-  assert.equal(output.googleCseDiscovery.added, 1);
+  assert.equal(output.articles.some((article) => article.officialSource && article.recoveredSourceId === "nic"), true);
+  const facebook = output.articles.find((article) => article.recoveredSourceId === "nic-facebook");
+  assert.equal(facebook?.facebookSearchSnippetOnly, true);
+  assert.equal(facebook?.sourceHomepage, "https://www.facebook.com/profile.php?id=100090604137582");
+  assert.equal(output.googleCseDiscovery.added, 2);
   console.log("[test:google-cse] official NIC result is added as a Bismayah priority candidate");
 } finally {
   server.close();
