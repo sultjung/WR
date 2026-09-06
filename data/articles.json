@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-06T07:58:57.325Z",
+  "generatedAt": "2026-09-06T09:34:58.206Z",
   "lookbackDays": 14,
-  "count": 353,
+  "count": 351,
   "categoryCounts": {
     "security": 60,
     "economy": 83,
-    "politics": 185,
+    "politics": 183,
     "bismayah": 9,
     "international": 16
   },
@@ -696,9 +696,9 @@
       "contentCheckedAt": "2026-09-06T07:56:20.945Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1833,9 +1833,9 @@
       "contentCheckedAt": "2026-09-06T07:56:24.600Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -2312,9 +2312,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -7266,9 +7266,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -12099,9 +12099,9 @@
       "contentCheckedAt": "2026-09-06T07:56:36.909Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -16412,7 +16412,7 @@
       "contentCheckedAt": "2026-09-06T07:56:46.316Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "economy",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -16609,9 +16609,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -18588,9 +18588,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -22918,145 +22918,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-DeuO9KqmWxwos6KVHPz8eI1Y",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "إنتاج نفط كردستان العراق يتعافى إلى 230 ألف برميل يوميا",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-08-29T19:59:53.000Z",
-      "descriptionArabic": "إنتاج نفط كردستان العراق يتعافى إلى 230 ألف برميل يوميا الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNeDUxRmVkS1FTWHNVUDAzQjN3NG9kMGtVdWk2Q0N4UEQ1NVJWVC1FbU11NUtuWGpJOVJQeWNQLVpEd014a0N4SHZrcXBKcWR1TkFzcy16U1RrTkFpeGdMOW1ma2Ixc2dvbjZHWElTc1RST0gzTkNrM3RoN1cwS1I4eVNrNzBRb3ZvN2VZeGhPWTk4UjBPV2xnamhpaHBReTZjc3U1dHZaN2hVWTFiZ2FFSVVkVnk2VHdOSVYwUWNLdjY0aVdYeDMwTHFEX2lYdnVCSUdwQktqSVNndGFKc0gxSTEzbHJEd1JfaXhSOE5QUnk1NG5ab3pLVWtaa01NUk9pWEtiY01TN0cteDdUSzhNT3pTVFUwRG9HcTdaa3Q5UlNlRXhUaGhNVG01dUxPWk5ybzlpNUNYem43NVJtbmVMUEd6aUE5NFk5Z1pLS200NmxTX0VlYmfSAdsCQVVfeXFMT1R3eGV3NFVVTTM2Y2xKcnB0d2NUTUZieXhfcEczRnAzYm5TZFJNdklMY1J0VlhQM3VVelhNbTFkQUR4S2w5X092S2IwSDgwWldGOTRZVHY5SVVmYTRUVFRkaTA1UUhhTlB2NUo5RWJ1UVZrQ1lCTE9xbWFnZHpzekwwNXUyTHFPQnJONXBRVTh0RE5yS09XM19GRkNZX1RKWElUeWw0WU9SVlBVV1dFYWw1SkdPcURxMEtIbUVGQW5Yd0xVTVZlYlpZaUlpQTdhVFFjTk01a3dTUlVmVm1QWV81MF9zRjVmOWNWbXRCQlJ4YW9lV1oyRjFEM2paZGdUZ2pyT3U1WEdhRXpXNFd4WVVmS2xFMjU1cHIxLWJ6VzJLS2I2RGJjZGVGdEloSFgtVm9rU211eTdBUVl6c0x2eXJreVM0eGItbUpqQ3RjQndVNl94dXlZUFRaMnM?oc=5",
-      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/29/%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D9%86%D9%81%D8%B7-%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%B9%D8%A7%D9%81%D9%89-%D8%A5%D9%84%D9%89-230",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-06T07:53:43.101Z",
-      "urlRecoveryMethod": "source-listing",
-      "recoveredSourceId": "aljazeera-iraq",
-      "titleSimilarity": 1,
-      "recoveredAt": "2026-09-06T07:53:54.088Z",
-      "urlResolutionMethod": "source-listing",
-      "resolvedAt": "2026-09-06T07:55:17.654Z",
-      "canonicalUrl": "https://www.aljazeera.net/ebusiness/2026/8/29/%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-%d9%86%d9%81%d8%b7-%d9%83%d8%b1%d8%af%d8%b3%d8%aa%d8%a7%d9%86-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82-%d9%8a%d8%aa%d8%b9%d8%a7%d9%81%d9%89-%d8%a5%d9%84%d9%89-230",
-      "pagePublishedAt": "2026-08-29T19:59:53.000Z",
-      "originalTextArabic": "استعاد إقليم كردستان العراق الجزء الأكبر من إنتاجه النفطي بعد الاضطرابات التي تسببت فيها هجمات بطائرات مسيرة خلال حرب إيران ، مع عودة معظم الشركات النفطية إلى العمل.\n\nوقال القائم بأعمال وزير الثروات الطبيعية في الإقليم كمال محمد صالح، اليوم السبت، إن إنتاج النفط ارتفع مجددا إلى ما بين 220 ألفا و230 ألف برميل يوميا، بحسب رويترز.",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 329,
-      "arabicRatio": 0.984,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-06T07:56:49.063Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "44f84eaffadb0710363257d25379e3b7a68941ee259da9c28c02ea28d14a0192",
-        "sourceChars": 329,
-        "translatedChars": 183,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-04T23:08:04.251Z",
-        "titleKo": "이라크 쿠르드 자치지역의 석유 생산량, 하루 23만 배럴로 회복",
-        "fullTextKo": "이라크 쿠르드 자치지역은 이란 전쟁 중 드론 공격으로 발생한 혼란 이후 석유 생산량의 대부분을 회복했으며, 대다수 석유 회사가 업무에 복귀했다.\n\n쿠르드 자치지역 천연자원부 장관 직무대행인 카말 무함마드 살레흐는 오늘 토요일 석유 생산량이 다시 하루 22만 배럴에서 23만 배럴 사이로 증가했다고 밝혔다고 로이터통신이 보도했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 23,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-06T07:57:28.574Z",
-        "breakdown": {
-          "nationalImportance": 12,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "ee7de993e5ba02ecdb36",
-        "ruleScore": 23,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-EBE4W2bYh-FODhKruf",
-        "representativeArticleId": "discovery-DeuO9KqmWxwos6KVHPz8eI1Y",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "44f84eaffadb0710363257d25379e3b7a68941ee259da9c28c02ea28d14a0192",
-      "contentCheckedAt": "2026-09-06T07:56:49.063Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-5uawMP4vUkg38T94Fw4NT0Je",
       "keywordId": "international-us-001",
       "category": "politics",
@@ -23141,9 +23002,9 @@
       "contentCheckedAt": "2026-09-06T07:56:50.223Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -24760,9 +24621,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -31760,9 +31621,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -34328,9 +34189,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -39197,146 +39058,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-b2SwZqGW-DzUOWZ8-VGWN1mZ",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بعد اتفاق مكة.. ما خيارات العراق حال صَعَّدت أمريكا ضد إيران؟",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-08-26T09:27:01.000Z",
-      "descriptionArabic": "بعد اتفاق مكة.. ما خيارات العراق حال صَعَّدت أمريكا ضد إيران؟ عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMivwNBVV95cUxNOERuaGVfN1FwU01fUmszYTBaSUdDdmNmNUpqRm5zOTMxR29IR05hZjBkbHpfaHhsUzROTG1VQXgyQjVHLUc2cElhbnV6dlFpZDRnaHRDSGFQcXN6QlJoaVR5NDR6cEh1ZnU1cXFLWFFrWExWN3o5X2NUcHoxbDV4bkpWV3BNSElPQzVxdzlJNUhCSFBNQmNIVllDUU1yaXVpOGRxU281LUtiNFdsMm9LNlJQNk4tcDc5Rks5cHR6dEo3b1BEVWZtUERpUnZjTVREMzdqQkJ5WldxMW1HU0JKdTMtQV9FZWZoSVJsc2tzSjFLTW5lQ2NKTzFfamVQckFTNWNiLXRGVkw3OTJGZUx3dGJ5ZVR0aEpnSU1mWnFZbmhtVkhlY1E5RTZleHhhejZaa2owOUpDT1VFdGRORVVRVFpfUzRnQ0pNTi1RY2Z6R1otNnFOWXVpdkxjOFNVdnVtU1EyUGUwc29YdEhuOWx4bWl1X0J3SktLV0tHenktQ2k1TnRvU0FXMTRKZHhybHhBWkE4eEtGQ3FhZGZVWmpLODNZT2pVSXlaMGxsQkxaY2lIX3Q0TDM2R1BMQ093c2_SAcMDQVVfeXFMUFdfMjloWFJXT1V5UVJiNXFwcUVKNUlTUkpFclFGVExuZnZJT2hLSUhhU2F6dFF3SHpVNkdQQjNVb1pmZ293MlRnUVFxdW01TW1QVExDRkhJenNaclpncHhfa08zRGJSVWtUeXJwWUdma3VVN0NVQXM5UFBBdmo1X0IxMFNIWTh1NDVIYTVTckFSOXY4Z1VnSGFFcThGZjVYRGtfSHd5RF80X1JvU2JaSnUwbGVnRU8tV0VhWDJCZ3NQcXJvVXBjcjBDUjA0WWZSOVBuWnl0aHk3YlFPUTg4QUdjZnNfTjZGMFBvVDB5TlNrX3VKMnVfUEhDX3h6dG1fb3NTTU9pZEV2QzJ3anFEMkQzbmpwY3lEV1VRZnBwZVc1djdRQ0FZUkxOa0JMb2Joc0oxMFZLN3diWHYxLXN5LTQtQzItcW5WVXFUXzVMbGtmOWhhTXdZUTZyYVBzUS1BVGNadnAwT3FvcDNqQi0ydkRfVGpxMDgyNmdFNW9qcFJkY21fcEx5Q2RlYUJhV3JWNjU2OVRueGlMc1p6TTFZelhmSko0RDRnd1FlbmIzLUdENGhVZERuRi1KcmVaNmJwU0pPTQ?oc=5",
-      "articleUrl": "https://arabi21.com/story/1784351/%D8%A8%D8%B9%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D9%83%D8%A9-%D9%85%D8%A7-%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AD%D8%A7%D9%84-%D8%B5%D8%B9%D8%AF%D8%AA-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%B6%D8%AF-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-06T07:53:42.819Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-06T07:55:57.660Z",
-      "canonicalUrl": "https://arabi21.com/story/1784351/%D8%A8%D8%B9%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%85%D9%83%D8%A9-%D9%85%D8%A7-%D8%AE%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%AD%D8%A7%D9%84-%D8%B5%D8%B9%D8%AF%D8%AA-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D8%B6%D8%AF-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86",
-      "pagePublishedAt": "2026-08-26T09:27:01.000Z",
-      "originalTextArabic": "تضع اتفاقية مكة للدفاع المشترك بين السعودية وتركيا وباكستان، والتي ستُعيد تشكيل الأمن الإقليمي، العراقَ أمام معادلة صعبة، وهي رفض المحاور، وضغوط الجغرافيا....",
-      "sourceHost": "arabi21.com",
-      "contentChars": 158,
-      "arabicRatio": 1.0585,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-06T07:56:54.623Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "d4e0c60c1ebe07b1678bde9d55e3fcbec06a3d4d93989405d97d1da085407bf7",
-        "sourceChars": 158,
-        "translatedChars": 95,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-04T08:04:06.332Z",
-        "titleKo": "메카 협정 이후... 미국이 이란을 상대로 공세를 강화할 경우 이라크의 선택지는 무엇인가?",
-        "fullTextKo": "지역 안보를 재편하게 될 사우디아라비아와 튀르키예, 파키스탄 간 공동방위 협정은 이라크를 어려운 방정식 앞에 세운다. 그것은 진영을 거부하는 입장과 지리적 압박이다...."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 21,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-06T07:57:28.574Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 7,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "5cf7acde59cf145fb6e5",
-        "ruleScore": 21,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-5AQYcF6nqP8eQRgAn7",
-        "representativeArticleId": "discovery-b2SwZqGW-DzUOWZ8-VGWN1mZ",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "d4e0c60c1ebe07b1678bde9d55e3fcbec06a3d4d93989405d97d1da085407bf7",
-      "contentCheckedAt": "2026-09-06T07:56:54.623Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-7AF82TvTQVIEc9OYAqoEqVdO",
       "keywordId": "international-sanctions-001",
       "category": "economy",
@@ -41464,9 +41185,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -47194,9 +46915,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -48720,9 +48441,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -50527,14 +50248,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 384,
-    "retained": 384,
+    "before": 353,
+    "retained": 353,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 331,
+    "groupCount": 329,
     "duplicateGroupCount": 19,
     "duplicateArticleCount": 22,
     "maxHours": 72,
