@@ -56,9 +56,19 @@ function isExplicitNicFacebookSearchSnippet(article = {}) {
   }
 }
 
+// NINA uses a query-string article key; /website/ is its news index.
+export function isNonArticlePublisherUrl(value = "") {
+  try {
+    const url = new URL(value);
+    if (hostnameOf(value) !== "ninanews.com") return false;
+    return !/^\/website\/News\/Details\/?$/i.test(url.pathname)
+      || ![...url.searchParams].some(([key, value]) => /^key$/i.test(key) && /^\d+$/.test(value));
+  } catch { return true; }
+}
+
 export function isForbiddenArticleUrl(article = {}) {
   const host = hostnameOf(article.articleUrl);
-  if (!host) return true;
+  if (!host || isNonArticlePublisherUrl(article.articleUrl)) return true;
   if (host === PRIORITY_AGGREGATOR_HOST) return !isExplicitPriorityAggregatorFallback(article);
   if (isExplicitNicFacebookSearchSnippet(article)) return false;
 

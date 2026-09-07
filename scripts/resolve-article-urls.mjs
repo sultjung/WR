@@ -3,6 +3,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { decodeGoogleNewsUrl } from "./decode-google-news-url.mjs";
 
+import { isNonArticlePublisherUrl } from "./article-url-policy.mjs";
+
 const ROOT = process.cwd();
 const RECOVERED_FILE = path.join(ROOT, "data", "recovered-articles.json");
 const FALLBACK_FILE = path.join(ROOT, "data", "discovered-articles.json");
@@ -37,7 +39,7 @@ function isLikelyArticleUrl(url = "") {
     const parsed = new URL(url);
     const host = hostnameOf(url);
     const p = decodeURIComponent(parsed.pathname || "");
-    if (isBlockedHost(host) || !/^https?:$/.test(parsed.protocol) || !p || p === "/" || p.length < 5) return false;
+    if (isNonArticlePublisherUrl(url) || isBlockedHost(host) || !/^https?:$/.test(parsed.protocol) || !p || p === "/" || p.length < 5) return false;
     if (/\.(?:jpg|jpeg|png|gif|webp|svg|ico|css|js|pdf|zip|mp4|mp3)(?:$|[?#])/i.test(p)) return false;
     if (/\/(?:search|tag|tags|category|categories|section|author|login|privacy|about|contact|feed|rss)(?:\/|$)/i.test(p)) return false;
     if (/\/XML\/|\/namespace|\/schema\b/i.test(p)) return false;
