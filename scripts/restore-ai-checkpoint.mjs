@@ -91,6 +91,15 @@ const restored = articles.map((article, index) => {
   return next;
 });
 
-const output = Array.isArray(payload) ? restored : { ...payload, articles: restored };
+// A checkpoint can come from a previous run that was created before URL
+// recovery finished. Normalize its result before validation so one unstable
+// Google News identity cannot be restored twice into the final feed.
+const uniqueById = new Map();
+for (const article of restored) {
+  const id = article.articleId || article.id;
+  if (id && !uniqueById.has(id)) uniqueById.set(id, article);
+}
+const deduped = [...uniqueById.values()];
+const output = Array.isArray(payload) ? deduped : { ...payload, articles: deduped };
 await fs.writeFile(ARTICLES_FILE, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-console.log(`[ai-checkpoint] restored translations=${stats.translations}, relatedTitles=${stats.relatedTitles}, importance=${stats.importance}`);
+console.log(`[ai-checkpoint] restored translations=${stats.translations}, relatedTitles=${stats.relatedTitles}, importance=${stats.importance}, deduped=${restored.length - deduped.length}`);
