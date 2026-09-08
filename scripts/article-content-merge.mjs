@@ -36,5 +36,21 @@ export function mergeContentArticles(items) {
     for (const key of group.keys) byKey.set(key, group);
     groups.add(group);
   }
-  return [...groups].map((group) => group.article);
+  const merged = [...groups].map((group) => group.article);
+
+  // Defensive final pass: URL recovery may replace a Google News URL while
+  // retaining the same articleId. Keep one record per identity even if an
+  // upstream input unexpectedly contains duplicate identities.
+  const unique = new Map();
+  for (const article of merged) {
+    const id = article.articleId || article.id;
+    if (id && unique.has(id)) {
+      unique.set(id, { ...unique.get(id), ...article, articleId: id });
+    } else if (id) {
+      unique.set(id, article);
+    } else {
+      unique.set(`anonymous-${unique.size}`, article);
+    }
+  }
+  return [...unique.values()];
 }
