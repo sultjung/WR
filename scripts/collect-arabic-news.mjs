@@ -251,7 +251,12 @@ const results = await mapLimit(keywords, CONCURRENCY, async (keyword) => {
 
 const deduped = new Map();
 for (const article of results.flatMap((result) => result.articles)) {
-  const key = article.discoveryUrl || `${article.originalTitleArabic}|${article.sourceArabic}|${article.publishedAt}`;
+  // The same Google News result can occasionally be returned by more than
+  // one query with a different RSS wrapper URL. Prefer the stable articleId
+  // first so that later URL recovery cannot create duplicate records.
+  const key = article.articleId
+    || article.discoveryUrl
+    || `${article.originalTitleArabic}|${article.sourceArabic}|${article.publishedAt}`;
   const previous = deduped.get(key);
   if (!previous || Number(article.priority || 0) > Number(previous.priority || 0)) deduped.set(key, article);
 }
