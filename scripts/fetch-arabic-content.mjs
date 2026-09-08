@@ -5,6 +5,8 @@ import { cleanArticleText } from "./article-text-cleaner.mjs";
 import { extractAnadoluCandidates } from "./article-source-extractors.mjs";
 import { isForbiddenArticleUrl } from "./article-url-policy.mjs";
 
+import { mergeContentArticles } from "./article-content-merge.mjs";
+
 const ROOT = process.cwd();
 const INPUT_FILE = path.join(ROOT, "data", "resolved-articles.json");
 const OUTPUT_FILE = path.join(ROOT, "data", "articles.json");
@@ -459,6 +461,7 @@ function sanitizeStoredArticle(item = {}) {
 
 async function hydrate(item) {
   if (item.urlStatus !== "RESOLVED" || !item.articleUrl) return { ...item, contentStatus: "NOT_ATTEMPTED" };
+  if (isForbiddenArticleUrl(item)) return { ...item, contentStatus: "FAILED", errorCode: "INVALID_ARTICLE_PAGE" };
   if (item.facebookSearchSnippetOnly === true) {
     const originalTitleArabic = cleanArticleTitle(item.originalTitleArabic || "", item.articleUrl);
     const originalTextArabic = cleanArticleText(item.descriptionArabic || "", { title: originalTitleArabic });
@@ -492,6 +495,10 @@ async function hydrate(item) {
     const combinedText = `${originalTitleArabic}\n${originalTextArabic}`;
     const ratio = arabicRatio(combinedText);
     const canonicalUrl = extractCanonicalUrl(page.html, articleUrl);
+    if (isForbiddenArticleUrl({ ...item, articleUrl })
+        || isForbiddenArticleUrl({ ...item, articleUrl: canonicalUrl })) {
+      return { ...item, articleUrl, canonicalUrl, originalTextArabic: "", contentStatus: "FAILED", errorCode: "INVALID_ARTICLE_PAGE" };
+    }
 
     if (pagePublishedAt && isOutsideRetention(pagePublishedAt)) {
       return {
@@ -567,17 +574,13 @@ async function loadPrevious() {
   } catch { return []; }
 }
 
-function articleKey(item) {
-  return item.canonicalUrl || item.articleUrl || item.discoveryUrl || item.articleId;
-}
-
 const input = JSON.parse(await fs.readFile(INPUT_FILE, "utf8"));
 const hydrated = await mapLimit(input.articles || [], CONCURRENCY, hydrate);
 const successful = hydrated.filter((item) => ["FULL_TEXT", "SEARCH_SNIPPET"].includes(item.contentStatus) && item.originalTextArabic);
 const previous = await loadPrevious();
 const cutoff = new Date();
 cutoff.setUTCDate(cutoff.getUTCDate() - RETENTION_DAYS);
-const merged = new Map();
+const retained = [];
 let removedStoredCount = 0;
 for (const rawItem of [...previous, ...successful]) {
   const item = sanitizeStoredArticle(rawItem);
@@ -587,10 +590,9 @@ for (const rawItem of [...previous, ...successful]) {
   }
   const published = new Date(item.publishedAt || 0);
   if (!Number.isNaN(published.getTime()) && published < cutoff) continue;
-  const key = articleKey(item);
-  if (key) merged.set(key, item);
+  retained.push(item);
 }
-const articles = [...merged.values()].sort((a, b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0));
+const articles = mergeContentArticles(retained).sort((a, b) => new Date(b.publishedAt || 0) - new Date(a.publishedAt || 0));
 const categoryCounts = articles.reduce((acc, item) => {
   acc[item.category] = (acc[item.category] || 0) + 1;
   return acc;

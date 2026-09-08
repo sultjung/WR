@@ -71,13 +71,15 @@ const current = Array.isArray(currentPayload) ? currentPayload : (currentPayload
 const previous = Array.isArray(previousPayload) ? previousPayload : (previousPayload.articles || []);
 const previousByKey = new Map(previous.map((item) => [articleKey(item), item]).filter(([key]) => key));
 
+const previousById = new Map(previous.map((item) => [item.articleId || item.id, item]).filter(([id]) => id));
+
 let unchanged = 0;
 let changed = 0;
 let newCount = 0;
 
 const articles = current.map((rawItem) => {
   const item = withoutLegacyCardData(rawItem);
-  const oldRaw = previousByKey.get(articleKey(rawItem));
+  const oldRaw = previousById.get(rawItem.articleId || rawItem.id) || previousByKey.get(articleKey(rawItem));
   const old = oldRaw ? withoutLegacyCardData(oldRaw) : null;
   const newHash = contentHash(rawItem);
 
