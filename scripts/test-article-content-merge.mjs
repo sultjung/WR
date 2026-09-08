@@ -20,6 +20,8 @@ assert.equal(mergeContentArticles([old, sameUrl])[0].articleId, "stable");
 assert.equal(mergeContentArticles([old, sameUrl])[0].translation.status, "PENDING");
 assert.equal(mergeContentArticles([old, { ...fresh, articleId: "separate" }]).length, 2);
 assert.equal(mergeContentArticles([old, { ...fresh, articleId: "separate" }, { ...fresh, canonicalUrl: detail }]).length, 1);
+// Regression: two records with the same stable ID must never survive URL recovery.
+assert.equal(mergeContentArticles([fresh, { ...fresh, articleUrl: "https://publisher.example/article/123" }]).length, 1);
 
 // Reproduce the failed run: a stored detail page and a bad index share an ID.
 // Also reject a fresh detail URL redirecting to an index, and an index canonical.
