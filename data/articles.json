@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-09T05:01:04.400Z",
+  "generatedAt": "2026-09-09T09:58:20.912Z",
   "lookbackDays": 14,
-  "count": 360,
+  "count": 359,
   "categoryCounts": {
     "security": 56,
     "international": 22,
-    "politics": 194,
+    "politics": 193,
     "economy": 77,
     "bismayah": 11
   },
@@ -7015,9 +7015,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -7595,9 +7595,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -7970,9 +7970,9 @@
       "contentCheckedAt": "2026-09-09T04:58:25.025Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8743,9 +8743,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8837,9 +8837,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -9679,9 +9679,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -10697,9 +10697,9 @@
       "contentCheckedAt": "2026-09-09T04:58:27.343Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -12435,9 +12435,9 @@
       "contentCheckedAt": "2026-09-09T04:58:32.552Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -14056,9 +14056,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -21266,9 +21266,9 @@
       "contentCheckedAt": "2026-09-09T04:58:41.219Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -25255,9 +25255,9 @@
       "contentCheckedAt": "2026-09-09T04:58:43.428Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -29761,9 +29761,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -31605,9 +31605,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -35933,149 +35933,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-DeuO9KqmWxwos6KVHPz8eI1Y",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "إنتاج نفط كردستان العراق يتعافى إلى 230 ألف برميل يوميا",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-08-29T19:59:53.000Z",
-      "descriptionArabic": "إنتاج نفط كردستان العراق يتعافى إلى 230 ألف برميل يوميا الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1gJBVV95cUxNeDUxRmVkS1FTWHNVUDAzQjN3NG9kMGtVdWk2Q0N4UEQ1NVJWVC1FbU11NUtuWGpJOVJQeWNQLVpEd014a0N4SHZrcXBKcWR1TkFzcy16U1RrTkFpeGdMOW1ma2Ixc2dvbjZHWElTc1RST0gzTkNrM3RoN1cwS1I4eVNrNzBRb3ZvN2VZeGhPWTk4UjBPV2xnamhpaHBReTZjc3U1dHZaN2hVWTFiZ2FFSVVkVnk2VHdOSVYwUWNLdjY0aVdYeDMwTHFEX2lYdnVCSUdwQktqSVNndGFKc0gxSTEzbHJEd1JfaXhSOE5QUnk1NG5ab3pLVWtaa01NUk9pWEtiY01TN0cteDdUSzhNT3pTVFUwRG9HcTdaa3Q5UlNlRXhUaGhNVG01dUxPWk5ybzlpNUNYem43NVJtbmVMUEd6aUE5NFk5Z1pLS200NmxTX0VlYmfSAdsCQVVfeXFMT1R3eGV3NFVVTTM2Y2xKcnB0d2NUTUZieXhfcEczRnAzYm5TZFJNdklMY1J0VlhQM3VVelhNbTFkQUR4S2w5X092S2IwSDgwWldGOTRZVHY5SVVmYTRUVFRkaTA1UUhhTlB2NUo5RWJ1UVZrQ1lCTE9xbWFnZHpzekwwNXUyTHFPQnJONXBRVTh0RE5yS09XM19GRkNZX1RKWElUeWw0WU9SVlBVV1dFYWw1SkdPcURxMEtIbUVGQW5Yd0xVTVZlYlpZaUlpQTdhVFFjTk01a3dTUlVmVm1QWV81MF9zRjVmOWNWbXRCQlJ4YW9lV1oyRjFEM2paZGdUZ2pyT3U1WEdhRXpXNFd4WVVmS2xFMjU1cHIxLWJ6VzJLS2I2RGJjZGVGdEloSFgtVm9rU211eTdBUVl6c0x2eXJreVM0eGItbUpqQ3RjQndVNl94dXlZUFRaMnM?oc=5",
-      "articleUrl": "https://www.aljazeera.net/ebusiness/2026/8/29/%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D9%86%D9%81%D8%B7-%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%AA%D8%B9%D8%A7%D9%81%D9%89-%D8%A5%D9%84%D9%89-230",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-09T04:55:16.334Z",
-      "urlRecoveryMethod": "source-listing",
-      "recoveredSourceId": "aljazeera-iraq",
-      "titleSimilarity": 1,
-      "recoveredAt": "2026-09-09T04:55:27.142Z",
-      "urlResolutionMethod": "source-listing",
-      "resolvedAt": "2026-09-09T04:57:34.144Z",
-      "canonicalUrl": "https://www.aljazeera.net/ebusiness/2026/8/29/%d8%a5%d9%86%d8%aa%d8%a7%d8%ac-%d9%86%d9%81%d8%b7-%d9%83%d8%b1%d8%af%d8%b3%d8%aa%d8%a7%d9%86-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82-%d9%8a%d8%aa%d8%b9%d8%a7%d9%81%d9%89-%d8%a5%d9%84%d9%89-230",
-      "pagePublishedAt": "2026-08-29T19:59:53.000Z",
-      "originalTextArabic": "استعاد إقليم كردستان العراق الجزء الأكبر من إنتاجه النفطي بعد الاضطرابات التي تسببت فيها هجمات بطائرات مسيرة خلال حرب إيران ، مع عودة معظم الشركات النفطية إلى العمل.\n\nوقال القائم بأعمال وزير الثروات الطبيعية في الإقليم كمال محمد صالح، اليوم السبت، إن إنتاج النفط ارتفع مجددا إلى ما بين 220 ألفا و230 ألف برميل يوميا، بحسب رويترز.\n\nقصص مقترحة\n\nlist 1 of 3 النفط العراقي بين الانفراجة الإيرانية والعقوبات الأمريكية الجديدة\n\nlist 2 of 3 النفط العراقي في قبضة مضيق هرمز.. هل تنجح البدائل في إنقاذ الصادرات؟\n\nlist 3 of 3 العراق يطرح عطاء لخام البصرة للتحميل من خارج هرمز\n\nوكان إنتاج الإقليم قد تراجع بصورة حادة منذ اندلاع الحرب الإقليمية أواخر فبراير/شباط الماضي، مع تعرض منشآت نفطية لهجمات وتعليق شركات دولية عملياتها أو خفض الإنتاج كإجراء احترازي.\n\nومن بين الشركات التي أوقفت أو علقت عملياتها لفترات متفاوتة \"دانة غاز\" و\"غلف كيستون بتروليوم\" و\"بيرل بتروليوم\" و\"شاماران بتروليوم\"، في حين شهد حقلا شيخان وسرسنك تراجعا تجاوز 50% في الإنتاج خلال الأشهر الماضية قبل بدء تعافي العمليات.\n\nصادرات العراق\n\nويأتي تعافي إنتاج كردستان في وقت نجح فيه العراق في رفع صادراته النفطية رغم استمرار القيود على حركة الملاحة عبر مضيق هرمز ، الذي كانت تمر من خلاله معظم صادرات البلاد.\n\nوقال وزير النفط العراقي باسم خضير، الجمعة، إن صادرات البلاد وصلت في أغسطس/آب الجاري إلى نحو مليوني برميل يوميا، وهو أعلى معدل يومي يسجله العراق منذ بداية الأزمة.\n\nوكان العراق ينتج قبل اندلاع الحرب نحو 4 ملايين برميل يوميا، ويصدر قرابة 105 ملايين برميل شهريا، معظمها من موانئ البصرة عبر مضيق هرمز.\n\nوأدى إغلاق المضيق إلى اضطرار بغداد لخفض الإنتاج في عدد من الحقول بعد امتلاء الخزانات، بالتزامن مع البحث عن مسارات بديلة شملت نقل كميات محدودة عبر سوريا بالشاحنات، إلى جانب التصدير عبر خط الأنابيب الواصل إلى ميناء جيهان التركي.\n\nوبلغت الصادرات العراقية خلال يوليو/تموز الماضي نحو 49 مليون برميل، مر أكثر من 30 مليون برميل منها عبر مضيق هرمز، وفقا للسلطات العراقية.\n\nمنافذ بديلة\n\nوتتبنى بغداد إستراتيجية لتعدد منافذ تصدير النفط وتقليل مخاطر الاعتماد الكبير على هرمز، مع الإبقاء على المضيق منفذا رئيسيا للصادرات.\n\nوقال خضير إن ائتلافا يضم شركتي \"شيفرون\" و\"يو سي سي\" القطرية يعتزم تنفيذ خط أنابيب من البصرة إلى فيشخابور، بالتوازي مع خط مخطط له يمتد من حديثة إلى ميناء بانياس السوري.\n\nوتسعى بغداد كذلك إلى زيادة الاعتماد على المسار التركي، بعدما وقعت مع أنقرة في الأول من أغسطس/آب الجاري اتفاقا لتمديد التفاهمات النفطية لمدة عام، يجري خلاله إعداد اتفاقية إطارية طويلة الأجل.\n\nوحسب وزير النفط، تستهدف الخطة ضمان استدامة تصدير خام إقليم كردستان، إلى جانب نقل جزء من نفط حقول جنوب العراق عبر خط الأنابيب إلى تركيا ، وصولا إلى طاقة تصديرية تتجاوز 700 ألف برميل يوميا.",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 2517,
-      "arabicRatio": 0.9893,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-09T04:58:50.425Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ad277a96fe5017e17cc9ba789baee8f2746d0f5a1c936b7ee0bf26e0d62138d9",
-        "sourceChars": 2517,
-        "translatedChars": 1577,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f9bc11650ddbfb357a8c",
-        "preferredTermsApplied": [
-          "호르무즈 해협",
-          "바스라",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-08T22:43:20.537Z",
-        "titleKo": "이라크 쿠르디스탄의 석유 생산량, 하루 23만 배럴로 회복",
-        "fullTextKo": "이라크 쿠르디스탄 자치지역의 석유 생산량이 이란 전쟁 중 드론 공격으로 발생한 혼란 이후 대부분 회복됐으며, 대부분의 석유회사들이 업무에 복귀했다.\n\n쿠르디스탄 자치지역 천연자원부 장관 직무대행인 카말 무함마드 살레흐는 오늘 토요일 석유 생산량이 다시 하루 22만에서 23만 배럴로 증가했다고 밝혔다고 로이터통신이 보도했다.\n\n추천 기사\n\n목록 1 중 3 이란의 돌파구와 새로운 미국 제재 사이에 놓인 이라크 석유\n\n목록 2 중 3 호르무즈 해협의 손아귀에 놓인 이라크 석유, 대체 수단이 수출을 구할 수 있을까?\n\n목록 3 중 3 이라크, 호르무즈 해협 밖에서 선적할 바스라 원유 입찰 공고\n\n쿠르디스탄 자치지역의 생산량은 지난 2월 말 지역 전쟁이 발발한 이후 급격히 감소했다. 석유 시설들이 공격을 받았고, 국제 기업들은 예방 조치로 운영을 중단하거나 생산량을 줄였다.\n\n운영을 일정 기간 중단하거나 일시 중지한 기업 가운데에는 다나 가스, 걸프 키스톤 페트롤리엄, 펄 페트롤리엄, 샤마란 페트롤리엄이 있다. 셰이칸 유전과 사르상크 유전은 운영 회복이 시작되기 전인 지난 몇 달 동안 생산량이 50퍼센트를 넘게 감소했다.\n\n이라크의 수출\n\n쿠르디스탄의 생산 회복은 이라크가 대부분의 수출 물량이 통과하던 호르무즈 해협을 통한 항해에 대한 제약이 계속되는 가운데 석유 수출량을 늘리는 데 성공한 시점에 이뤄졌다.\n\n이라크 석유부 장관 바셈 쿠다이르는 금요일 이달 8월 들어 이라크의 수출량이 하루 약 200만 배럴에 이르렀으며, 이는 위기가 시작된 이후 이라크가 기록한 일일 기준 최고 수준이라고 밝혔다.\n\n전쟁이 발발하기 전 이라크는 하루 약 400만 배럴을 생산했으며, 한 달에 약 1억 500만 배럴을 수출했다. 이 물량의 대부분은 호르무즈 해협을 거쳐 바스라 항구에서 운송됐다.\n\n해협 폐쇄로 저장 탱크가 가득 차면서 바그다드는 여러 유전에서 생산량을 줄여야 했다. 이와 동시에 대체 경로를 모색했으며, 여기에는 트럭을 이용해 시리아를 통과시키는 제한적인 물량 운송과 튀르키예의 제이한 항구로 이어지는 송유관을 통한 수출이 포함됐다.\n\n이라크 당국에 따르면 지난 7월 이라크의 수출량은 약 4,900만 배럴에 달했으며, 이 가운데 3,000만 배럴 이상이 호르무즈 해협을 통과했다.\n\n대체 출구\n\n바그다드는 석유 수출 통로를 다변화하고 호르무즈에 대한 높은 의존으로 인한 위험을 줄이는 전략을 추진하면서도, 해협을 수출의 주요 통로로 유지하고 있다.\n\n쿠다이르 장관은 셰브론과 카타르의 유시시가 참여하는 컨소시엄이 바스라에서 피시카부르까지 이어지는 송유관을 건설할 예정이며, 이와 함께 하디사에서 시리아의 바니야스 항구까지 이어지는 계획된 송유관도 추진된다고 밝혔다.\n\n바그다드는 또한 튀르키예 경로에 대한 의존도를 높이려 하고 있다. 이라크는 이달 8월 1일 앙카라와 석유 관련 합의를 1년 연장하는 협정에 서명했으며, 이 기간 장기적인 기본 협정이 마련될 예정이다.\n\n석유부 장관에 따르면 이 계획은 쿠르디스탄 자치지역 원유 수출의 지속 가능성을 보장하는 한편, 이라크 남부 유전의 석유 일부를 송유관을 통해 튀르키예로 운송해 최종적으로 하루 70만 배럴을 넘는 수출 능력을 확보하는 것을 목표로 한다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 52,
-        "stars": 2.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-09T04:59:27.344Z",
-        "breakdown": {
-          "nationalImportance": 28,
-          "businessImpact": 0,
-          "politicalImpact": 9,
-          "reportValue": 7,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "51918fc3bd3a3ee225a3",
-        "ruleScore": 52,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-EBE4W2bYh-FODhKruf",
-        "representativeArticleId": "discovery-DeuO9KqmWxwos6KVHPz8eI1Y",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "ad277a96fe5017e17cc9ba789baee8f2746d0f5a1c936b7ee0bf26e0d62138d9",
-      "contentCheckedAt": "2026-09-09T04:58:50.425Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-O-XXiuf56wXSdiUbPNE2A6t4",
       "keywordId": "politics-pm-001",
       "category": "politics",
@@ -37781,9 +37638,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -43149,9 +43006,9 @@
       "contentCheckedAt": "2026-09-09T04:58:52.278Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -46869,9 +46726,9 @@
       "contentCheckedAt": "2026-09-09T04:58:53.082Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -47998,9 +47855,9 @@
       "contentCheckedAt": "2026-09-09T04:58:53.451Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -51511,14 +51368,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 390,
-    "retained": 390,
+    "before": 360,
+    "retained": 360,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 338,
+    "groupCount": 337,
     "duplicateGroupCount": 20,
     "duplicateArticleCount": 22,
     "maxHours": 72,
