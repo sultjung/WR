@@ -1,13 +1,13 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-12T08:02:50.539Z",
+  "generatedAt": "2026-09-12T09:29:52.108Z",
   "lookbackDays": 14,
-  "count": 337,
+  "count": 333,
   "categoryCounts": {
     "international": 25,
     "security": 51,
-    "politics": 180,
-    "economy": 72,
+    "politics": 177,
+    "economy": 71,
     "bismayah": 9
   },
   "collectionRun": {
@@ -981,9 +981,9 @@
       "contentCheckedAt": "2026-09-12T07:58:27.925Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -2307,148 +2307,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-5cqBoa1xPsHM6MLXwQ4j6jUc",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بدء انسحاب قوات التحالف الدولي من شمال العراق في مرحلة حاسمة",
-      "sourceArabic": "الوقائع الإخبارية",
-      "sourceHomepage": "https://alwakaai.com",
-      "publishedAt": "2026-09-11T05:35:07.000Z",
-      "descriptionArabic": "بدء انسحاب قوات التحالف الدولي من شمال العراق في مرحلة حاسمة الوقائع الإخبارية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5SaDQ1MFNYZGhuSzhDNGQzcmVwMEZhU20yS01oV28xN0FjMHZPSUpwXzU3bENOdlZSS0RPSGdNSW1jY1pNeFB3LWJwWQ?oc=5",
-      "articleUrl": "https://alwakaai.com/article/747253",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-12T07:55:04.122Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-12T07:55:56.196Z",
-      "canonicalUrl": "https://alwakaai.com/article/747253",
-      "pagePublishedAt": "",
-      "originalTextArabic": "تاريخ النشر : الجمعة - 11-9-2026 - 8:31 AM",
-      "sourceHost": "alwakaai.com",
-      "contentChars": 42,
-      "arabicRatio": 0.8462,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-12T07:58:37.258Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "a6f7dd99cb9af9905da8a6576e249ceb82d5d2f8291c441761bd57ab9b1ec903",
-        "sourceChars": 42,
-        "translatedChars": 35,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "d49c214a065d76ee7a3a",
-        "preferredTermsApplied": [
-          "국제연합군"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-11T08:07:57.833Z",
-        "titleKo": "이라크 북부에서 국제연합군 철수 시작, 결정적 단계에 돌입",
-        "fullTextKo": "게시일: 금요일 - 2026년 9월 11일 - 오전 8시 31분"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 4,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-12T08:00:08.391Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "4e13edf83794d124ccd0",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-muvFPpZhbhwWVg6uUR",
-        "representativeArticleId": "discovery-5cqBoa1xPsHM6MLXwQ4j6jUc",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "a6f7dd99cb9af9905da8a6576e249ceb82d5d2f8291c441761bd57ab9b1ec903",
-      "contentCheckedAt": "2026-09-12T07:58:37.258Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-q6jCqFIPgQuqAZVix1kOuoTv",
       "keywordId": "international-us-001",
       "category": "politics",
@@ -2718,9 +2576,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -2855,9 +2713,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -3416,9 +3274,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -3844,9 +3702,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -6286,149 +6144,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-BT4gpU6IljKIruGoFOIBPqio",
-      "keywordId": "international-gulf-001",
-      "category": "politics",
-      "priority": 93,
-      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "الخليج",
-        "الملاحة",
-        "تصدير النفط",
-        "ناقلات",
-        "توتر إقليمي"
-      ],
-      "excludedTerms": [
-        "سياحة",
-        "طقس"
-      ],
-      "originalTitleArabic": "ترامب يدعم طريق سوريا لتجاوز أزمة هرمز.. هل تصبح دمشق بوابة النفط العراقي إلى أوروبا؟",
-      "sourceArabic": "elmanshar.com",
-      "sourceHomepage": "https://elmanshar.com",
-      "publishedAt": "2026-09-09T16:50:36.000Z",
-      "descriptionArabic": "ترامب يدعم طريق سوريا لتجاوز أزمة هرمز.. هل تصبح دمشق بوابة النفط العراقي إلى أوروبا؟ elmanshar.com",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxNZmM0SWZ0S3JXanNTdFhpUjFNWWQ5c0U2cHppd0Zyekc2OWpFbzU4ODlkQmd0Sk11UE8zR0xVNTJMaDZRdHhjYS1Sdnd0akp4aEQzQ0EzQkROQXluRUc3WjZiaTZxNjdCckdzWVVQTnh6eVRJZXhsWWVjcldsdFpsTEN0enkweFYyeHV2RzQ2d2ZGV094bXM0RFdGN1R3WkU5TDRJOF92OF9nREhtVlBQWWIyOF9xYmQ2Z0xOa3RvbVBpOVZkUXVaR1JvUnh5UjF5QmRRTGl3bXdXb1FLSTRzS05sVXFjRHRCLVdPcjJpVGJUWlU0NGlrRDd3OG4zQmJVZTVKd2tWX29OMjBtTGRTV0JOYXhTZmRtWHh0ai1raUEzOXMzSERLeGJiYW1BU1g4Uk04bjlFMVpTSEo4eUxZSFd6Y3BoOWVvbGZQUm4yWkJqQQ?oc=5",
-      "articleUrl": "https://elmanshar.com/2026/09/09/%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D9%8A%D8%AF%D8%B9%D9%85-%D8%B7%D8%B1%D9%8A%D9%82-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D9%84%D8%AA%D8%AC%D8%A7%D9%88%D8%B2-%D8%A3%D8%B2%D9%85%D8%A9-%D9%87%D8%B1%D9%85%D8%B2/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-12T07:55:04.705Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-12T07:56:21.181Z",
-      "canonicalUrl": "https://elmanshar.com/2026/09/09/%d8%aa%d8%b1%d8%a7%d9%85%d8%a8-%d9%8a%d8%af%d8%b9%d9%85-%d8%b7%d8%b1%d9%8a%d9%82-%d8%b3%d9%88%d8%b1%d9%8a%d8%a7-%d9%84%d8%aa%d8%ac%d8%a7%d9%88%d8%b2-%d8%a3%d8%b2%d9%85%d8%a9-%d9%87%d8%b1%d9%85%d8%b2/",
-      "pagePublishedAt": "",
-      "originalTextArabic": "العراق يقرر إغلاق مؤقت للمنافذ الحدودية بعد هجمات طالت السعودية\n\nسبتمبر 12, 2026",
-      "sourceHost": "elmanshar.com",
-      "contentChars": 80,
-      "arabicRatio": 0.9627,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-12T07:58:46.940Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "00922c65c49d5f72b2889c49caba546075ff1a2781b90aabee05aa26366cc9ac",
-        "sourceChars": 80,
-        "translatedChars": 62,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-12T08:02:50.223Z",
-        "titleKo": "트럼프, 호르무즈 위기 우회를 위한 시리아 경로 지지… 다마스쿠스가 이라크산 석유의 유럽행 관문이 될까?",
-        "fullTextKo": "이라크, 사우디아라비아를 겨냥한 공격 이후 국경 통과 지점을 일시적으로 폐쇄하기로 결정\n\n2026년 9월 12일"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "00922c65c49d5f72b2889c49caba546075ff1a2781b90aabee05aa26366cc9ac",
-      "previousContentHash": "01107e2346ed9ea00fbcb81651a482cf8ff9a7d03a3c5ffdb0161677514e46d0",
-      "contentCheckedAt": "2026-09-12T07:58:46.940Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-7G0LMeZQCL4UQkjWSF",
-        "representativeArticleId": "discovery-BT4gpU6IljKIruGoFOIBPqio",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 8,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-12T08:00:08.391Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 4,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "5cd667e210788744058d",
-        "ruleScore": 8,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-dtMSfvZUZpt5u6FeJXWAp8Jc",
       "keywordId": "international-us-001",
       "category": "politics",
@@ -7854,9 +7569,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8000,148 +7715,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-09T10:55:37.000Z",
-      "descriptionArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1ANBVV95cUxQRG9sV2g2Mkg4bUFvRHkwaVFmNFNxb3h1WWRFWlNlRVZKODh4Y24teU5hR000SjloMkpqeGtDR04tSnpoMzhaMFdHYU00b1lPMWJ3MldqNXR6dGZrNVBDazhPWDhjVDZHY1VnbnlaYVhPS0xZdVZoWVRUanlpUUl0V0pNV09iY0lTZTlteFRqdzdFcGt5dlVYSW9FQy0zdm9zOHQyUFd4cEowQ3FjdGdyRTI1ZmVrd0swWmNNWThIOGFKaVpyeUVBSzJocldFSkRpQW1ONUdrQnBINkdRaFFlTTE2YkhOMk9icE1hS2xkVFhlUER1THdrSjZMdzlnaHYtSkxtV2xqSWYtSlhMT0NLbmtOeUlwektnUlVvMm9wdFNoMXBuTm5DXzRQUGdaZ2dkbnZwTXlad05LRVUzLTFtdTRuRG1vRlJ3aG1Xc0RoeU5YUkR4SzJ0ZVRna21oQUtjQjl1dkNqN0FjcHF6a3laZEpra0RVaXBQOWFqUnFhTFA4ZUZldGlUVnJYSHFpaVd3UVo3UlEtV2hNWGNlZkdraDl1X3E5OXpqRVlRbnRWRS11ZzdKNi1BUTdLbTU5TWQxWU5EcEZPRjZfZFZPSi1vVE5KbWzSAdgDQVVfeXFMTWhCV0JFYlB2Z1IyVWJmR0VicHhSeUlvVXRkOUZkaDREczdNMmp1TmJXTWplQ2s0VlVzSEpJN1FrVlhRU2pKSHpDZmRETHhKTHRGektGSWZ6SGUtMDFtYkJxMXEzTksyRHVjdkVjRXp1QWxhRmw5ajNlNmpiV00xTTJtdXZRQzl0S2M0d21Jcmw4UThQOFcyOHZwR1VvY09OOEl0bk5qTjJLUGFqUlRYOWJJejloVXQyRmdHZElGcFZwSWl1R0h3QUsyOFVVVXRjRC1HWU9aNEhpUXpzWlpsY01NWjZSbjlXTXAzRTdPUk1sc3pmZTNtdTQ0QlBFNEFDRUFyaWRsWDBIOWpWanpRY1VnZnVITFZYSU1yS2F5RmVZRmxNWlhFSE5QTDRES3lMU2ZyQ3daRGVfME5uRE42OXQxOTU4TlJCR09mSnViU3dIWDJvcTNWeG1JUmhwcE5nZWljeC0xVkxtelQ0U0lfNzNYSE4zTlFlay1KMGs4MXAtVFN5ekJvdWx6NUZJNDlQNUxKNnZaY2JrcE1nZnhHNmQwWm5PVThzWGlEXzhjMDNXbVhFaURTYmcyVGlsYmZQbldkQi03eFFCVEZQS01xUG5FSUtlbTNPRw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-12T07:55:04.121Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-12T07:56:31.934Z",
-      "canonicalUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "pagePublishedAt": "2026-09-09T10:55:37.000Z",
-      "originalTextArabic": "مع اقتراب موعد الانسحاب الأمريكي من العراق، تجد بغداد نفسها أمام اختبار صعب يتعلق بقدرتها على حماية أجوائها بقدراتها الذاتية، في وقت تسعى فيه إلى اختصار خطة استكمال..",
-      "sourceHost": "arabi21.com",
-      "contentChars": 166,
-      "arabicRatio": 1.0109,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-12T07:58:50.073Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-        "sourceChars": 166,
-        "translatedChars": 100,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-11T08:07:58.814Z",
-        "titleKo": "미군 철수 시한이 다가오면서 이라크가 맞닥뜨린 어려운 시험",
-        "fullTextKo": "이라크에서 미군이 철수할 시한이 다가오면서 바그다드는 자체 역량으로 영공을 보호할 수 있는 능력과 관련해 어려운 시험에 직면해 있다. 이라크는 완성 계획을 단축하려는 가운데서다.."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-12T08:00:08.391Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "0a8fceed7cd6cbfac019",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-RfZehZVskYNwZduzWD",
-        "representativeArticleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-      "contentCheckedAt": "2026-09-12T07:58:50.073Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -8567,9 +8140,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8708,9 +8281,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8949,9 +8522,9 @@
       "contentCheckedAt": "2026-09-12T07:58:51.538Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8985,155 +8558,6 @@
         "scoringVersion": 9,
         "scoreFingerprint": "9d1aaead4ef4fb188f65",
         "ruleScore": 55,
-        "category": "economy",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-TzPOMOA5OiWRS6pt87yORGhm",
-      "keywordId": "international-hormuz-001",
-      "category": "economy",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "أسواق النفط خلال حرب إيران.. هرمز يغيّر خريطة الإمدادات وأميركا تتصدر الرابحين - الطاقة",
-      "sourceArabic": "attaqa.net",
-      "sourceHomepage": "https://attaqa.net",
-      "publishedAt": "2026-09-08T18:04:34.000Z",
-      "descriptionArabic": "أسواق النفط خلال حرب إيران.. هرمز يغيّر خريطة الإمدادات وأميركا تتصدر الرابحين attaqa.net",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMixgJBVV95cUxNR0NDaWFYc2hfbTh4eWVybG4tT0pQbXhjLXJ0NFZsSV9HQWlFd2RkaGNjdGFuRlFsRTdhODdDemM2WnRhcFo5Y19XQkNpTmtUVGtrTTB6WHJLMi1ZTG1CUldPMlZIWk9tSXdxRTdiNm9SeUlHbzgzMHlZWGtmT0xZMHRjdTBvaVg2Vk13dlg2M3BmVk5YNWIwQ2FiQ3ZSaERQd29xM0VBS0Z0NHhXckhReHowUVZWLTRwY1ZHd1hncXRiay1rd1VLalNXUUlVV25NdG0zR3E0ZnJqbDFsMnhVTDVHZ01VeFozcTZDMG5Nb19QQVVISjMtQ0RKbXd3OGJBa2JUNTFJVFEzN3BHMUhUOW9BRUEzcWpJV0NMeUh1UkUydnB2bWNrZW5oT2xxcGRaTlM5VXdEQkZQNEFqVWdPWVZlX1ViZw?oc=5",
-      "articleUrl": "https://attaqa.net/2026/09/08/%D8%A3%D8%B3%D9%88%D8%A7%D9%82-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%AE%D9%84%D8%A7%D9%84-%D8%AD%D8%B1%D8%A8-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%87%D8%B1%D9%85%D8%B2-%D9%8A%D8%BA%D9%8A%D9%91%D8%B1/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-12T07:55:04.548Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-12T07:56:29.611Z",
-      "canonicalUrl": "https://attaqa.net/2026/09/08/%d8%a3%d8%b3%d9%88%d8%a7%d9%82-%d8%a7%d9%84%d9%86%d9%81%d8%b7-%d8%ae%d9%84%d8%a7%d9%84-%d8%ad%d8%b1%d8%a8-%d8%a5%d9%8a%d8%b1%d8%a7%d9%86-%d9%87%d8%b1%d9%85%d8%b2-%d9%8a%d8%ba%d9%8a%d9%91%d8%b1/",
-      "pagePublishedAt": "2026-09-08T18:04:34.000Z",
-      "originalTextArabic": "ضمن ملف خاص صادر عن وحدة أبحاث الطاقة\n\nوحدة أبحاث الطاقة - رجب عز الدين\n\nاقرأ في هذا المقال\n\nصادرات النفط الخام العالمية المنقولة بحرًا تنخفض 9% منذ الحرب\n\nصادرات الشرق الأوسط تهبط 41% أو ما يعادل 6.8 مليون برميل يوميًا\n\nالعراق والكويت أكبر الخاسرين من اضطراب حركة الملاحة في مضيق هرمز\n\nالولايات المتحدة وروسيا والبرازيل أكبر الرابحين من الحرب الإيرانية\n\nواردات النفط تنخفض في الاقتصادات الآسيوية الكبرى بقيادة الصين\n\nتعرّضت أسواق النفط خلال حرب إيران لواحدة من أسوأ أزمات الإمداد في التاريخ المعاصر، مع إغلاق مضيق هرمز والهبوط الحاد لصادرات أغلب دول المنطقة.\n\nفقد انخفضت صادرات النفط الخام العالمية المنقولة بحرًا بنسبة 9%، أو ما يعادل 3.9 مليون برميل يوميًا خلال الأشهر الـ6 الأولى من الحرب، لتصل إلى 38.22 مليون برميل يوميًا، بحسب ملف أسواق الطاقة خلال حرب إيران الصادر عن وحدة أبحاث الطاقة (مقرّها واشنطن)، ويمكن الاطّلاع عليه كاملًا ( هنا ).\n\nوجاء ذلك مع انخفاض صادرات الشرق الأوسط من الخام المنقول بحرًا بنسبة 41% أو ما يعادل 6.8 مليون برميل يوميًا خلال المدة من مارس/آذار إلى أغسطس/آب 2026.\n\nوتسبّبت الحرب في انخفاض عدد السفن المارة عبر مضيق هرمز إلى 48 سفينة أسبوعيًا (أكثر من نصفها ناقلات نفط وغاز) خلال المدة من 28 فبراير/شباط إلى 30 أغسطس/آب 2026، مقارنة بـ456 سفينة أسبوعيًا قبل الحرب أو خلال أول شهرين من العام.\n\nتحولات أسواق النفط خلال حرب إيران\n\nشهدت أسواق النفط خلال حرب إيران تقلبات سعرية حادة كان أشدها في مارس/آذار 2026، مع إعلان الحرس الثوري الإيراني إغلاق مضيق هرمز وتهديد السفن المارة بالاستهداف المباشر.\n\nفقد حقق مارس/آذار أعلى مكاسب شهرية على الإطلاق، مع ارتفاع سعر خام برنت بنسبة 63% أو ما يعادل 46 دولارًا ليغلق الشهر عند 118.35 دولارًا للبرميل.\n\nورغم ذلك، فقد ظلت الأسعار تتأرجح بين 70 و120 دولارًا خلال أشهر الحرب الممتدة لأسباب عديدة، أبرزها ارتباك السوق في تحليل مآلات المفاوضات والهدنة بين الولايات المتحدة وإيران، وتجدد الحصار الأميركي للمواني الإيرانية، فضلًا عن تراجع الطلب.\n\nوبوجه عام، ارتفع متوسط أسعار النفط بنسبة 25% لخام برنت، و28% لخام غرب تكساس الأميركي، منذ نهاية فبراير/شباط الماضي وحتى نهاية أغسطس/آب 2026.\n\nوتسبّب ارتفاع أسعار النفط الخام والوقود عالميًا في تكبّد الدول المستوردة تكاليف إضافية باهظة لتلبية احتياجاتها المحلية، سواء من الخام أو المنتجات النفطية بلغت نحو 293.6 مليار دولار في 6 أشهر.\n\nويوضح الرسم البياني الآتي -الذي أعدّته وحدة أبحاث الطاقة- الدول الأكثر تضررًا من حرب إيران والتكلفة الإضافية التي تكبّدتها حسب أنواع الوقود:\n\nالخاسرون في أسواق النفط خلال حرب إيران\n\nكانت دول الشرق الأوسط أكبر الخاسرين في أسواق النفط خلال حرب إيران، لكن حجم الخسائر تفاوت من دولة إلى أخرى بحسب قدرتها على التصدير عبر مسارات بديلة.\n\nفقد هبط إجمالي صادرات الشرق الأوسط من النفط الخام المنقول بحرًا إلى 9.9 مليون برميل يوميًا خلال الأشهر الـ6 الأولى للحرب، مقابل 16.7 مليونًا في المدة نفسها من 2025.\n\nوكان العراق الأكثر تضررًا مع انخفاض صادراته بنسبة 76% خلال المدة، لاعتماده على تصدير 90% من شحناته البحرية عبر مضيق هرمز، في حين يصدر الجزء الصغير المتبقي عبر ميناء جيهان التركي.\n\nوجاءت الكويت وقطر بعد العراق من حيث التأثُر بالحرب، إذ انخفضت صادراتهما من النفط الخام بنسبة 65% و64% منذ بداية الحرب، مع عدم امتلاكهما أي مسار للتصدير بخلاف هرمز.\n\nأمّا إيران، فعلى الرغم من أنها نجحت في تعزيز صادراتها خلال الأشهر الأولى من الحرب، فلم تلبث كثيرًا حتى هبطت بشدة بداية من مايو/أيار مع فرض الولايات المتحدة حصارًا على المواني الإيرانية، ما أدى إلى انخفاض متوسط صادراتها بنسبة 37% خلال الأشهر الـ6 الأولى للحرب.\n\nوتمتلك إيران خط أنابيب يُعرف باسم (غوره - جاسك -Goreh Jask) مرفق به محطة تصدير على خليج عُمان، وتبلغ قدرته قرابة 0.3 مليون برميل يوميًا، وافتتح في عام 2021.\n\nواستعملت طهران الخط منذ بدء الحرب بأقل من نصف سعته لتجاوز اضطرابات مضيق هرمز، لكنها توقّفت عن التصدير خلاله منذ بداية سبتمبر/أيلول 2026، مع تشديد الحصار الأميركي على ميناء جاسك.\n\nفي المقابل، كانت السعودية والإمارات وسلطنة عمان أقل الدول الخليجية تضررًا في أسواق النفط خلال حرب إيران، إذ انخفضت صادرات الدول الـ3 بمعدلات أقل من بقية دول المنطقة.\n\nوانخفضت صادرات السعودية بنسبة 33% خلال الأشهر الـ6 الأولى من الحرب، كما تراجعت صادرات الإمارات وسلطنة عمان بنسبة متقاربة تجاوزت 12%، وفق ملف أسواق الطاقة خلال حرب إيران الصادر عن وحدة أبحاث الطاقة.\n\nويستعرض الرسم البياني الآتي -الذي أعدّته وحدة أبحاث الطاقة- تطور صادرات دول الشرق الأوسط خلال الأشهر الـ6 الأولى من حرب إيران مقارنة بالمدة نفسها من 2025:\n\nوكانت الأضرار أقل حدة في السعودية لامتلاكها خط أنابيب ( شرق-غرب ) الذي يمكنها من تصدير النفط عبر ميناء ينبع على البحر الأحمر، بقدرة تصل إلى 7 ملايين برميل يوميًا.\n\nورفعت السعودية صادراتها بالفعل عبر ميناء ينبع من 700 ألف برميل يوميًا في 5 مارس/آذار 2026، إلى 4.1 مليونًا بحلول يوم 20 من الشهر نفسه، قبل أن تتراجع في الأسابيع الأخيرة بسبب هجمات الحوثيين على السفن في مضيق باب المندب.\n\nوينطبق الأمر نفسه على الإمارات لامتلاكها خط أنابيب (حبشان-الفجيرة)، الذي يمكنها من تصدير النفط مباشرة عبر خليج عُمان بطاقة استيعابية تتراوح من 1.5 إلى 1.8 مليون برميل يوميًا.\n\nأمّا سلطنة عمان -بسبب موقعها الجغرافي المميز- فتمتلك مواني نفط مستقلة تقع على بحر العرب مباشرة، ما يجعلها لا تحتاج إلى المرور من مضيق هرمز.\n\nأكبر الرابحين في أسواق النفط خلال حرب إيران\n\nكانت الولايات المتحدة أكبر الرابحين في أسواق النفط خلال حرب إيران، مع نجاحها في زيادة صادراتها، مستفيدة من صدمة المعروض الحادة وارتفاع الأسعار.\n\nفقد ارتفعت صادرات الولايات المتحدة من النفط الخام المنقول بحرًا بأكثر من 23%، ليصل متوسطها إلى 4.46 مليون برميل يوميًا، خلال الأشهر الـ6 الأولى من الحرب، وسجلت مستوى شهريًا غير مسبوق في مايو/أيار المنصرم بلغ 5.64 مليونًا.\n\nإضافة إلى ذلك، فقد استفادت مصافي التكرير الأميركية من تصدير المنتجات النفطية بكميات كبيرة إلى آسيا وأوروبا، خاصة الديزل الذي يشهد نقصًا حادًا في الإمدادات وارتفاعًا في أسعاره.\n\nعلى الجانب الآخر، نجحت روسيا في زيادة صادراتها من النفط الخام المنقول بحرًا بنسبة 12% على أساس سنوي إلى 5.7 مليون برميل يوميًا خلال الأشهر الـ6 الأولى من الحرب، مستفيدة من تخفيف بعض العقوبات الأميركية.\n\nكما استفادت البرازيل من الأزمة عبر زيادة صادراتها بنسبة 23% إلى 2.58 مليون برميل يوميًا خلال المدة، مقارنة بنحو 2.1 مليونًا في المدة نفسها من 2025.\n\nإضافة إلى ذلك، فقد نجحت بعض الدول المصدرة الأخرى في زيادة صادراتها بمعدلات متفاوتة خلال الأزمة، مثل النرويج وليبيا وأنغولا.\n\nانخفاض واردات النفط في الدول الكبرى\n\nانخفضت واردات النفط في الدول الكبرى المستوردة مع ارتفاع أسعاره العالمية، وكانت الصين أكبر الدول التي خفضت وارداتها.\n\nفقد تراجعت واردات الصين من النفط الخام المنقول بحرًا بنسبة 27% إلى 7.54 مليون برميل يوميًا خلال الأشهر الـ6 الأولى من حرب إيران، مقارنة بنحو 10.33 مليونًا خلال المدة نفسها من 2025.\n\nوانخفضت واردات الصين خلال يونيو/حزيران 2026 إلى أقل من 6 ملايين برميل يوميًا، وهو أدنى مستوى خلال 10 سنوات.\n\nويوضح الرسم البياني الآتي -الذي أعدته وحدة أبحاث الطاقة- واردات الصين من النفط الخام المنقول بحرًا خلال (2025-2026):\n\nوعلى الرغم من انخفاض واردات الصين بصورة كبيرة خلال الحرب، فإن السبب الرئيس ليس فقط انخفاض الاستهلاك المحلي، بل توسع بكين في السحب من مخزونات النفط الإستراتيجية لأسباب اقتصادية، بحسب تحليل حديث لمنصة كاربون بريف المتخصصة.\n\nعلى الجانب الآخر، انخفضت واردات الهند بنسبة 2% فقط لتصل إلى 4.76 مليون برميل يوميًا خلال المدة مقارنة بنحو 4.84 مليونًا خلال المدة نفسها من 2025، إذ نجحت في تعويض وارداتها من الشرق الأوسط عبر زيادة الاستيراد من فنزويلا وأميركا.\n\nبينما خفضت كوريا الجنوبية وارداتها بنسبة 10% إلى 2.4 مليون برميل يوميًا خلال المدة، مقارنة بنحو 2.6 مليونًا خلال المدة نفسها من العام الماضي.\n\nكما هبطت واردات اليابان بنسبة 17% على أساس سنوي إلى 1.8 مليون برميل يوميًا خلال الأشهر الـ6 الأولى للحرب.\n\nنرشّح لكم..\n\nمصافي النفط في الدول العربية (ملف خاص)\n\nمستجدات أسواق الغاز المسال (ملف خاص)\n\nالهيدروجين في الدول العربية (ملف خاص)\n\nالمناجم في الدول العربية (ملف خاص)",
-      "sourceHost": "attaqa.net",
-      "contentChars": 7303,
-      "arabicRatio": 0.9857,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-12T07:58:52.015Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "a07e6997ddf344948453530c0e9967942eded9bb0b113763d77a5a00733e6f6c",
-        "sourceChars": 7303,
-        "translatedChars": 3891,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "145d05300d3d9d2955a1",
-        "preferredTermsApplied": [
-          "이란 혁명수비대",
-          "호르무즈 해협"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-12T08:02:40.716Z",
-        "titleKo": "이란 전쟁 중 석유 시장… 호르무즈 해협이 공급 지도를 바꾸고 미국이 최대 수혜국으로 부상",
-        "fullTextKo": "에너지연구부 특별 보고서\n\n에너지연구부 - 라자브 아즈 알딘\n\n이 기사에서 읽을 내용\n\n해상으로 운송되는 세계 원유 수출, 전쟁 이후 9% 감소\n\n중동 수출량, 41% 또는 하루 680만 배럴 감소\n\n호르무즈 해협 항행 차질로 이라크와 쿠웨이트가 가장 큰 피해\n\n미국과 러시아, 브라질이 이란 전쟁의 최대 수혜국\n\n중국을 중심으로 주요 아시아 경제국의 석유 수입 감소\n\n이란 전쟁 중 석유 시장은 호르무즈 해협 폐쇄와 역내 대부분 국가의 수출 급감으로 현대사에서 최악의 공급 위기 중 하나에 직면했다.\n\n에너지연구부가 발간한 이란 전쟁 중 에너지 시장 보고서에 따르면, 전쟁 첫 6개월 동안 해상으로 운송되는 세계 원유 수출은 9%, 하루 390만 배럴 감소해 하루 3,822만 배럴로 줄었다. 에너지연구부는 워싱턴에 본부를 두고 있으며, 보고서 전문은 여기에서 확인할 수 있다.\n\n이는 2026년 3월부터 8월까지 중동의 해상 원유 수출이 41%, 하루 680만 배럴 감소한 가운데 나타났다.\n\n전쟁으로 2026년 2월 28일부터 8월 30일까지 호르무즈 해협을 통과하는 선박 수는 주당 48척으로 줄었다. 이 가운데 절반 이상은 석유 및 가스 운반선이었다. 전쟁 이전 또는 올해 첫 두 달 동안의 주당 456척과 비교되는 수치다.\n\n이란 전쟁 중 석유 시장의 변화\n\n이란 전쟁 중 석유 시장은 급격한 가격 변동을 겪었으며, 가장 심했던 시기는 이란 혁명수비대가 호르무즈 해협 폐쇄를 선언하고 통과 선박을 직접 공격하겠다고 위협한 2026년 3월이었다.\n\n브렌트유 가격은 63%, 46달러 상승해 배럴당 118.35달러로 그달을 마감하면서 사상 최대의 월간 상승폭을 기록했다.\n\n그럼에도 전쟁이 이어진 여러 달 동안 가격은 여러 요인으로 인해 70달러에서 120달러 사이에서 계속 등락했다. 주요 요인은 미국과 이란 간 협상 및 휴전의 향방을 둘러싼 시장의 혼란, 미국의 이란 항구 봉쇄 재개, 그리고 수요 감소였다.\n\n전반적으로 지난해 2월 말부터 2026년 8월 말까지 평균 유가는 브렌트유가 25%, 미국 서부텍사스산 원유가 28% 상승했다.\n\n세계적으로 원유와 연료 가격이 상승하면서 수입국들은 국내 수요를 충족하기 위해 원유와 석유제품을 들여오는 데 추가로 약 2,936억 달러의 막대한 비용을 6개월 동안 부담했다.\n\n다음 그래프는 에너지연구부가 작성한 것으로, 이란 전쟁으로 가장 큰 피해를 본 국가와 연료 종류별 추가 부담 비용을 보여준다.\n\n이란 전쟁 중 석유 시장의 피해국\n\n중동 국가들은 이란 전쟁 중 석유 시장에서 가장 큰 피해를 본 국가들이었지만, 대체 수출 경로를 활용할 수 있는 능력에 따라 국가별 손실 규모는 달랐다.\n\n전쟁 첫 6개월 동안 중동의 해상 원유 총수출은 하루 990만 배럴로 감소했다. 2025년 같은 기간에는 하루 1,670만 배럴이었다.\n\n이라크는 해당 기간 수출량이 76% 감소하면서 가장 큰 피해를 입었다. 이라크는 해상 수송량의 90%를 호르무즈 해협을 통해 수출하고, 남은 소량만 터키의 제이한 항구를 통해 수출하기 때문이다.\n\n쿠웨이트와 카타르는 이란 전쟁의 영향 측면에서 이라크 다음으로 큰 피해를 입었다. 두 나라 모두 호르무즈 해협 외에는 수출 경로를 보유하고 있지 않아 전쟁 시작 이후 원유 수출이 각각 65%와 64% 감소했다.\n\n이란은 전쟁 초기 몇 달 동안 수출을 늘리는 데 성공했지만, 미국이 이란 항구를 봉쇄한 5월 초부터 곧바로 수출이 크게 감소했다. 이에 따라 전쟁 첫 6개월 동안 이란의 평균 수출은 37% 줄었다.\n\n이란은 오만만에 수출 터미널이 연결된 고레 자스크 파이프라인을 보유하고 있다. 이 파이프라인의 수송 능력은 하루 약 30만 배럴이며, 2021년에 개통됐다.\n\n테헤란은 전쟁 발발 이후 호르무즈 해협의 혼란을 피하기 위해 이 파이프라인을 절반에도 못 미치는 용량으로 사용했지만, 2026년 9월 초부터 자스크 항구에 대한 미국의 봉쇄가 강화되면서 이 경로를 통한 수출을 중단했다.\n\n반면 사우디아라비아와 아랍에미리트, 오만은 이란 전쟁 중 석유 시장에서 걸프 국가 가운데 피해가 가장 적었다. 세 나라의 수출 감소율이 역내 다른 국가들보다 낮았기 때문이다.\n\n에너지연구부가 발간한 이란 전쟁 중 에너지 시장 보고서에 따르면, 전쟁 첫 6개월 동안 사우디아라비아의 수출은 33% 감소했고, 아랍에미리트와 오만의 수출은 비슷한 수준으로 12%를 넘는 감소율을 기록했다.\n\n다음 그래프는 에너지연구부가 작성한 것으로, 이란 전쟁 첫 6개월 동안 중동 국가들의 수출 변화를 2025년 같은 기간과 비교해 보여준다.\n\n사우디아라비아의 피해가 상대적으로 덜했던 것은 하루 최대 700만 배럴의 수송 능력을 갖춘 동서 파이프라인을 보유하고 있어 홍해의 얀부 항구를 통해 석유를 수출할 수 있었기 때문이다.\n\n사우디아라비아는 실제로 2026년 3월 5일 얀부 항구를 통한 수출을 하루 70만 배럴에서 같은 달 20일까지 410만 배럴로 늘렸다. 그러나 최근 몇 주 동안 바브엘만데브 해협에서 후티 반군이 선박을 공격하면서 수출은 다시 감소했다.\n\n아랍에미리트에도 같은 상황이 적용된다. 아랍에미리트는 하루 150만에서 180만 배럴의 수송 능력을 가진 합반-푸자이라 파이프라인을 보유하고 있어 오만만을 통해 석유를 직접 수출할 수 있다.\n\n오만은 지리적으로 유리한 위치 덕분에 아라비아해에 바로 접한 독립 석유 항구를 보유하고 있어 호르무즈 해협을 통과할 필요가 없다.\n\n이란 전쟁 중 석유 시장의 최대 수혜국\n\n미국은 공급의 급격한 충격과 가격 상승을 활용해 수출을 늘리는 데 성공하면서 이란 전쟁 중 석유 시장의 최대 수혜국이 됐다.\n\n전쟁 첫 6개월 동안 미국의 해상 원유 수출은 23% 넘게 증가해 하루 평균 446만 배럴에 이르렀으며, 지난 5월에는 월간 기준 사상 최고치인 하루 564만 배럴을 기록했다.\n\n또한 미국 정유사들은 석유제품을 아시아와 유럽에 대량 수출하면서 혜택을 봤다. 특히 공급이 심각하게 부족하고 가격이 상승한 디젤이 그 대상이었다.\n\n한편 러시아는 미국의 일부 제재 완화에 힘입어 전쟁 첫 6개월 동안 해상 원유 수출을 전년 대비 12% 늘려 하루 570만 배럴로 확대하는 데 성공했다.\n\n브라질도 수출을 23% 늘려 해당 기간 하루 258만 배럴로 확대하면서 위기의 혜택을 봤다. 2025년 같은 기간에는 하루 약 210만 배럴이었다.\n\n이 밖에도 노르웨이, 리비아, 앙골라 등 일부 다른 수출국들은 위기 동안 각기 다른 폭으로 수출을 늘리는 데 성공했다.\n\n주요 국가의 석유 수입 감소\n\n세계 유가 상승으로 주요 수입국들의 석유 수입이 감소했으며, 수입을 가장 많이 줄인 국가는 중국이었다.\n\n전쟁 첫 6개월 동안 중국의 해상 원유 수입은 27% 감소해 하루 754만 배럴로 줄었다. 2025년 같은 기간에는 하루 약 1,033만 배럴이었다.\n\n중국의 수입은 2026년 6월 하루 600만 배럴 아래로 떨어져 10년 만의 최저 수준을 기록했다.\n\n다음 그래프는 에너지연구부가 작성한 것으로, 2025년부터 2026년까지 중국의 해상 원유 수입을 보여준다.\n\n전쟁 중 중국의 수입이 크게 감소했지만, 전문 플랫폼 카본 브리프의 최근 분석에 따르면 주된 원인은 국내 소비 감소만이 아니라 경제적 이유로 전략적 석유 비축분을 대규모로 인출한 데 있었다.\n\n반면 인도의 수입은 2%만 감소해 해당 기간 하루 476만 배럴을 기록했다. 2025년 같은 기간에는 하루 약 484만 배럴이었다. 인도는 베네수엘라와 미국으로부터의 수입을 늘려 중동산 수입을 성공적으로 대체했다.\n\n한국은 해당 기간 수입을 10% 줄여 하루 240만 배럴로 낮췄다. 지난해 같은 기간에는 하루 약 260만 배럴이었다.\n\n일본의 수입도 전년 대비 17% 감소해 전쟁 첫 6개월 동안 하루 180만 배럴로 줄었다.\n\n추천 기사\n\n아랍 국가의 정유공장 특별 보고서\n\n액화천연가스 시장 최신 동향 특별 보고서\n\n아랍 국가의 수소 특별 보고서\n\n아랍 국가의 광산 특별 보고서"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "economy",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "a07e6997ddf344948453530c0e9967942eded9bb0b113763d77a5a00733e6f6c",
-      "contentCheckedAt": "2026-09-12T07:58:52.015Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "economy",
-        "reason": "direct-iraq-economic-headline",
-        "scores": {
-          "politics": 1,
-          "economy": 32,
-          "security": 0,
-          "economyHeadline": 2,
-          "securityHeadline": 0,
-          "titleHasIraq": false,
-          "openingHasIraqActor": true
-        },
-        "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-09-12T07:59:30.036Z"
-      },
-      "eventGroup": {
-        "groupId": "event-xnYCTcGx3QWopH4MGB",
-        "representativeArticleId": "discovery-TzPOMOA5OiWRS6pt87yORGhm",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 30,
-        "stars": 1.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-12T08:00:08.391Z",
-        "breakdown": {
-          "constructionInvestment": 0,
-          "nationalImportance": 17,
-          "businessImpact": 0,
-          "executionScale": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "daf5d9346c870a37dc3e",
-        "ruleScore": 30,
         "category": "economy",
         "categoryFloor": 0,
         "categoryFloorRule": "NONE",
@@ -16842,9 +16266,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -17422,9 +16846,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -17797,9 +17221,9 @@
       "contentCheckedAt": "2026-09-12T07:59:01.069Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -18711,9 +18135,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -20573,9 +19997,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -22113,9 +21537,9 @@
       "contentCheckedAt": "2026-09-12T07:59:07.054Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -22549,9 +21973,9 @@
       "contentCheckedAt": "2026-09-12T07:59:07.799Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -31806,9 +31230,9 @@
       "contentCheckedAt": "2026-09-12T07:59:11.836Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -37624,9 +37048,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -42688,9 +42112,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -48181,14 +47605,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 376,
-    "retained": 376,
+    "before": 337,
+    "retained": 337,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 315,
+    "groupCount": 311,
     "duplicateGroupCount": 19,
     "duplicateArticleCount": 22,
     "maxHours": 72,
