@@ -93,6 +93,14 @@ jobs:
           DISCOVERY_CONCURRENCY: "4"
         run: npm run collect:discover
 
+      - name: Collect NIC official posts from WordPress REST API once daily
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '5 21 * * *'
+        env:
+          NIC_LOOKBACK_DAYS: "14"
+          NIC_PER_PAGE: "100"
+          NIC_API_TIMEOUT_MS: "20000"
+        run: npm run collect:nic-rest
+
       - name: Recover publisher URLs from Iraqi source indexes
         env:
           SOURCE_INDEX_TIMEOUT_MS: "15000"
