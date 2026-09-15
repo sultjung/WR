@@ -1,9 +1,23 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-10",
-  "updatedAt": "2026-09-12T07:59:25.523Z",
-  "count": 1,
+  "updatedAt": "2026-09-15T23:04:21.439Z",
+  "count": 2,
   "articles": [
+    {
+      "articleId": "discovery--zxEq6-9o3_o9XR_1D4BfzYW",
+      "publishedAt": "2026-10-09T00:00:00.000Z",
+      "sourceArabic": "middle-east-online.com",
+      "sourceHost": "middle-east-online.com",
+      "category": "politics",
+      "titleKo": "",
+      "titleArabic": "اتفاق '4+4' يختبر تماسك البرلمان الليبي",
+      "articleUrl": "https://www.middle-east-online.com/%D8%A7%D8%AA%D9%81%D8%A7%D9%82-44-%D9%8A%D8%AE%D8%AA%D8%A8%D8%B1-%D8%AA%D9%85%D8%A7%D8%B3%D9%83-%D8%A7%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D9%84%D9%8A%D8%A8%D9%8A",
+      "importanceScore": null,
+      "importanceStars": null,
+      "selected": false,
+      "contentHash": ""
+    },
     {
       "articleId": "discovery-3nQYTZgnZ1uGrolUb6AE2b08",
       "publishedAt": "2026-10-09T00:00:00.000Z",
