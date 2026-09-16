@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-16T08:43:29.874Z",
+  "generatedAt": "2026-09-16T10:09:43.902Z",
   "lookbackDays": 14,
-  "count": 340,
+  "count": 335,
   "categoryCounts": {
-    "security": 63,
-    "politics": 173,
-    "economy": 72,
+    "security": 62,
+    "politics": 170,
+    "economy": 71,
     "bismayah": 7,
     "international": 25
   },
@@ -1457,9 +1457,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -2604,151 +2604,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-K3eLb-eWVasC5VNlf388VHQO",
-      "keywordId": "international-gulf-001",
-      "category": "security",
-      "priority": 93,
-      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "الخليج",
-        "الملاحة",
-        "تصدير النفط",
-        "ناقلات",
-        "توتر إقليمي"
-      ],
-      "excludedTerms": [
-        "سياحة",
-        "طقس"
-      ],
-      "originalTitleArabic": "مباحثات عراقية–فرنسية: اعتماد خارطة طريق للتسليح وتأكيد على أمن الملاحة وحصر السلاح",
-      "sourceArabic": "kurdistan24.net",
-      "sourceHomepage": "https://www.kurdistan24.net",
-      "publishedAt": "2026-09-14T15:52:00.000Z",
-      "descriptionArabic": "مباحثات عراقية–فرنسية: اعتماد خارطة طريق للتسليح وتأكيد على أمن الملاحة وحصر السلاح kurdistan24.net",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1mcVNxVy1mQjhYSGhLWlNUZG5wN1VqVGtwMGpxZEhIczQyR2ZFODJTTW9QajVQd2wyUWUyc1A0b3RPSmJmQjlfbVFCeUE3LXdOaFRkbFp3?oc=5",
-      "articleUrl": "https://www.kurdistan24.net/ar/story/939403",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-16T08:34:42.685Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-16T08:35:12.312Z",
-      "canonicalUrl": "https://www.kurdistan24.net/ar/story/939403",
-      "pagePublishedAt": "",
-      "originalTextArabic": "أربيل (كوردستان 24)- اتفق رئيس الوزراء الاتحادي علي فالح الزيدي والرئيس الفرنسي إيمانويل ماكرون، اليوم الاثنين 14 أيلول/سبتمبر 2026، على اعتماد خارطة طريق استراتيجية لتسليح القوات المسلحة العراقية، وأكدا التزامهما المشترك بأمن الملاحة في مضيق هرمز وخفض حدة التوترات الإقليمية.\n\nوشهدت المباحثات، التي عُقدت في باريس، التوافق على رؤية مشتركة لتعزيز الأمن والاستقرار في الشرق الأوسط استناداً إلى احترام السيادة الوطنية وعدم التدخل في الشؤون الداخلية وحسن الجوار، إلى جانب تأكيد الإسهام الحيوي لـ \"مؤتمر بغداد للتعاون والشراكة\". وأشاد ماكرون بنهج العراق القائم على التوازن الإقليمي وبناء الجسور، وبجهود الحكومة الاتحادية في حصر السلاح بيد الدولة.\n\nوفي ملف التعاون الدفاعي، اتفق الجانبان على تعزيز الشراكة العسكرية من خلال دعم المباحثات بين وزارة الدفاع الاتحادية والشركات الفرنسية لتزويد بغداد بمنظومات مدفعية، وأنظمة دفاع جوي ومراقبة، ووسائل دفاع أثناء التنقل الجوي، ومعدات مكافحة الطائرات المسيّرة (C-UAS). وجدد رئيس الوزراء الاتحادي التزام الحكومة بمواصلة التحقيقات وإحالة المتورطين في استهداف القوات الفرنسية في 11 آذار/مارس الماضي إلى العدالة، مشيراً إلى أن أهمية التعاون الدفاعي مع الشركاء تتصاعد مع قرب انتهاء مهمة التحالف الدولي في 30 أيلول/سبتمبر الجاري.\n\nوعلى الصعيد الداخلي والأمني، شدد الزيدي على أن وضع الأسلحة تحت سيطرة الدولة ليس موجهاً ضد أي طرف، بل يمثل شرطاً جوهرياً لبناء دولة موحدة وإنهاء أي مراكز متنافسة للقوة وصنع القرار، مؤكداً عدم السماح بأن تتحول الأراضي العراقية إلى منطلق لتهديد دول الجوار أو ساحة لتصفية الحسابات. كما اتفق الطرفان على دعم برامج مكافحة الفساد، ورحبا بافتتاح المركز الطبي الفرنسي في قضاء سنجار.\n\nوتطرقت المحادثات إلى ملفات الطاقة والتكامل الاقتصادي؛ حيث حذر رئيس الوزراء الاتحادي من أن أزمة مضيق هرمز أثرت بصورة مباشرة في صادرات النفط العراقية وحركة التجارة وموارد الدولة، مجدداً مع الرئيس الفرنسي التمسك بالأمن البحري وحرية الملاحة. ولفت الزيدي إلى الأهمية الاستراتيجية لـ \"مشروع طريق التنمية\" الذي يمتد لأكثر من 1900 كيلومتر لربط الخليج بأوروبا، بما يعزز موقع العراق كممر رئيسي للتجارة وسلاسل الإمداد العالمية. المصدر: واع\n\nآخر الأخبار\n\nتفاهم بين التسجيل العقاري والزراعة لتسريع تعويض المزارعين وإطفاء الأراضي في أربيل\n\nمجمع المحبة لنزار عبدالواحد... شقق وهمية وأرض تراب وضحاياه في بغداد ينتفضون ضد \"أكبر خديعة سكّانية\"\n\nأتروشي يكشف لـ \"كوردستان 24\" تفاصيل المباحثات مع بغداد\n\nبحضور رسمي وشعبي.. أربيل تحيي يوم الشهيد الكلداني والذكرى الـ57 لمجزرة قرية \"صوريا\"\n\nخمسة قتلى على الاقل باستهداف مسيّرة روسية حافلة في أوكرانيا\n\nمقالة ذات صلة\n\nمجلس النواب الأمريكي يصوت لإنهاء الحرب مع إيران\n\nبتكلفة 4 مليارات دينار.. حكومة إقليم كوردستان تُطلق مشروعاً لتعبيد طرق 6 قرى في قضاء شيخان\n\nمباحثات مصرية سعودية موسعة في القاهرة لتعزيز الشراكة الاستراتيجية\n\nمهند محمود شوقي\n\nكاتب كوردي\n\nصورايا.. ذاكرة المذبحة",
-      "sourceHost": "kurdistan24.net",
-      "contentChars": 2639,
-      "arabicRatio": 1.0027,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-16T08:37:22.886Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "3cbf77af88f5a2de5bc486268a523dee54a6d91463f4a9edc45fbc446c56e060",
-        "sourceChars": 2639,
-        "translatedChars": 1577,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "9c008c37393181a08eb2",
-        "preferredTermsApplied": [
-          "국제연합군",
-          "호르무즈 해협",
-          "바그다드",
-          "아르빌"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-16T08:41:30.065Z",
-        "titleKo": "이라크와 프랑스의 협상: 군비 조달 로드맵 채택 및 항행 안전과 무기 국가 통제 확인",
-        "fullTextKo": "아르빌(쿠르디스탄 24) - 연방 총리 알리 팔레흐 알자이디와 프랑스 대통령 에마뉘엘 마크롱은 오늘 월요일인 2026년 9월 14일, 이라크군의 군비 조달을 위한 전략적 로드맵을 채택하고 호르무즈 해협의 항행 안전과 지역 긴장 완화를 위해 공동으로 약속하는 데 합의했다.\n\n파리에서 열린 협상에서는 국가 주권 존중, 내정 불간섭, 선린 관계를 바탕으로 중동의 안보와 안정을 강화하기 위한 공동 비전에 합의했으며, 이와 함께 \"바그다드 협력 및 동반자 관계 회의\"의 중요한 기여를 확인했다. 마크롱 대통령은 지역적 균형과 가교 구축에 기반한 이라크의 노선과 국가가 무기를 통제하도록 하는 연방정부의 노력을 높이 평가했다.\n\n국방 협력 분야에서 양측은 연방 국방부와 프랑스 기업 간 협상을 지원해 바그다드에 포병 체계, 방공 및 감시 시스템, 항공 이동 중 방어 수단, 무인기 대응 장비를 공급하는 방식으로 군사적 동반자 관계를 강화하기로 합의했다. 연방 총리는 지난 3월 11일 프랑스군을 공격한 사건에 연루된 이들을 계속 조사하고 사법 처리하겠다는 정부의 약속을 재확인했으며, 9월 30일 국제연합군의 임무 종료가 임박한 상황에서 파트너들과의 국방 협력이 갖는 중요성이 커지고 있다고 지적했다.\n\n국내 및 안보 현안과 관련해 알자이디 총리는 무기를 국가의 통제 아래 두는 것은 어느 한쪽을 겨냥한 것이 아니라 통합 국가를 건설하고 경쟁하는 권력 및 의사결정 중심을 모두 종식하기 위한 근본적인 조건이라고 강조했다. 그는 이라크 영토가 주변국을 위협하기 위한 출발점이나 계산을 청산하는 장으로 변하는 것을 허용하지 않겠다고 확인했다. 또한 양측은 부패 척결 프로그램을 지원하기로 합의했으며, 신자르 지역에 프랑스 의료센터가 개소한 것을 환영했다.\n\n협상에서는 에너지와 경제 통합 현안도 다뤄졌다. 연방 총리는 호르무즈 해협 위기가 이라크의 석유 수출과 무역 움직임, 국가 수입에 직접적인 영향을 미쳤다고 경고했으며, 프랑스 대통령과 함께 해상 안보와 항행의 자유를 고수한다는 입장을 재확인했다. 알자이디 총리는 걸프 지역과 유럽을 연결하기 위해 1,900킬로미터 이상 이어지는 \"개발의 길 프로젝트\"의 전략적 중요성을 강조하면서, 이 프로젝트가 세계 무역과 공급망의 주요 통로로서 이라크의 입지를 강화할 것이라고 밝혔다. 출처: 이라크 통신사\n\n최신 뉴스\n\n아르빌에서 농민 보상과 토지 정리를 신속히 진행하기 위한 부동산 등기와 농업 당국 간 합의\n\n나자르 압둘와히드의 알마하바 복합단지... 유령 아파트와 흙땅, 바그다드의 피해자들이 \"최대 규모의 주거 사기\"에 맞서 들고일어나다\n\n아트루시, 쿠르디스탄 24에 바그다드와의 협상 세부 내용 공개\n\n공식 및 시민 대표들이 참석한 가운데... 아르빌, 칼데아 순교자의 날과 \"소리야\" 마을 학살 57주년 기념\n\n러시아 무인기가 우크라이나에서 버스를 공격해 최소 5명 사망\n\n관련 기사\n\n미국 하원, 이란과의 전쟁 종결 표결\n\n40억 디나르의 비용으로... 쿠르디스탄 자치지역 정부, 셰이한 지역 6개 마을 도로 포장 사업 착수\n\n카이로에서 전략적 동반자 관계 강화를 위한 이집트와 사우디아라비아의 확대 협상\n\n무한드 마흐무드 쇼키\n\n쿠르드 작가\n\n소리야... 학살의 기억"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "3cbf77af88f5a2de5bc486268a523dee54a6d91463f4a9edc45fbc446c56e060",
-      "contentCheckedAt": "2026-09-16T08:37:22.886Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-4kWFeZ3008QsEQNW_B",
-        "representativeArticleId": "discovery-K3eLb-eWVasC5VNlf388VHQO",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 55,
-        "stars": 3,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "REFERENCE",
-        "levelKo": "참고",
-        "reportStatus": "OPTIONAL_REVIEW",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-16T08:38:49.265Z",
-        "breakdown": {
-          "incidentDirectness": 8,
-          "location": 25,
-          "incidentScale": 11,
-          "siteSafety": 5,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "316794fcc7a6ed388302",
-        "ruleScore": 55,
-        "category": "security",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -8174,9 +8029,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8895,147 +8750,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-f86gLH8ldZvPZguz8O6qias-",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "العراق ليس إيران",
-      "sourceArabic": "زاد الاردن",
-      "sourceHomepage": "https://www.jordanzad.com",
-      "publishedAt": "2026-09-13T05:34:00.000Z",
-      "descriptionArabic": "العراق ليس إيران زاد الاردن",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tbFEyNEtvdG45SUxINE15WjdXZFdVOGJGLWozZVBhZWtRMlJ5UHNMMVpHWktEN3JnSGJPczVJeHdjUktSdUhaRmQyVkItbjZoTE5PX294SktmOGk4NXZzUzBGZWNSNy1XQ2c?oc=5",
-      "articleUrl": "https://www.jordanzad.com/index.php?page\\=article\\&id\\=759777",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-16T08:34:42.365Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-16T08:35:37.324Z",
-      "canonicalUrl": "https://www.jordanzad.com/index.php?page\\=article\\&id\\=759777",
-      "pagePublishedAt": "",
-      "originalTextArabic": "موقع لكل الأردنيين على اختلاف مشاربهم ومنابتهم يقدم الأخبار المحلية ويتابع الشأن السياسي والاقتصادي ويؤمن بحرية الرأي نبراسًا نهتدي به نحو خدمة إعلامية ذات معنى تعبّر عن اسم زاد الأردن",
-      "sourceHost": "jordanzad.com",
-      "contentChars": 184,
-      "arabicRatio": 1.012,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-16T08:37:31.764Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "5f1b3c73400dc60d164f07be3d0af42834c98168ac5924dc085c91050f9ab0a0",
-        "sourceChars": 184,
-        "translatedChars": 148,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-13T08:24:00.206Z",
-        "titleKo": "이라크는 이란이 아니다",
-        "fullTextKo": "출신과 성향이 서로 다른 모든 요르단인을 위한 사이트로, 국내 소식을 전하고 정치 및 경제 현안을 متابعة하며, 의미 있는 언론 서비스를 제공하기 위해 의견의 자유를 우리가 나아갈 길을 비추는 등불로 삼습니다. 이 서비스는 자드 알우르둔이라는 이름을 대변합니다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-16T08:38:49.265Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "627a0c2717337364173f",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-hy1CYPuQYmW4jy2lLf",
-        "representativeArticleId": "discovery-f86gLH8ldZvPZguz8O6qias-",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "5f1b3c73400dc60d164f07be3d0af42834c98168ac5924dc085c91050f9ab0a0",
-      "contentCheckedAt": "2026-09-16T08:37:31.764Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-UeuwdbUW3Ra9AkVZp1CJU9De",
       "keywordId": "security-isis-001",
       "category": "security",
@@ -9545,9 +9259,9 @@
       "contentCheckedAt": "2026-09-16T08:37:32.897Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -13173,9 +12887,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -13585,9 +13299,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -14539,9 +14253,9 @@
       "contentCheckedAt": "2026-09-16T08:37:41.465Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -17979,9 +17693,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -18676,9 +18390,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -19633,9 +19347,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -20542,151 +20256,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-aS6KjFgduAS9-yxcpWngnmGF",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "العراق: لا سلاح خارج الدولة ولن نسمح باستخدام أراضينا لاستهداف الجوار",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-09-10T12:07:12.000Z",
-      "descriptionArabic": "العراق: لا سلاح خارج الدولة ولن نسمح باستخدام أراضينا لاستهداف الجوار الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNdjFDN2dtc3ZVOEY4OWV0SklUcGI3Y25PNXMyRm9YNGNvc3Q1S3hXWXptNTd3SlBpcnZad2RMRGRLeUg0LTZZaEtzSF9zeHlvZ1pmTVJVZnpPaUpBNG1aUjNKekw3bE00RUtOZ1g2VFJBTEwtM3VWbTdaRDFhODhMQ3AwZDl2TEVXcW9LTm9fRk9SVk80SFRUQThzS2pMSUtLN1gtZTZqTXRxNHY0WHBielNHN3pXSmVqMkswSHZkcUZSaFdJUzBuNDhWZjh1UzNHY1AzMkFib2R4ZmU1VjdWV3ctWFUtVkFDWVUxVjY0YzBlSVQ0b0FDbnhBdGxrb2t2SXpRbF9Lc1V0b2FkcjBWc0pXeE1FMnZxVC03SEM0eEpsbVdvY3ZGYjFqSm55U0ppcUlmcTZUY1lnSXlxQ2s3cTl1RdIByAJBVV95cUxQWk92dVlPMkZ3aU1RRDU0NUpuX3p6U2k5cG1oY2N4bGk4Q3I2VkFQVUFudnFmTHRPZUdGSmttWExtNlYtZjRfOWJvS21XM1h1a1cwREdfTUpRY3JRYTVBZUhybkVOOGhucERFUTlBNXk3MVpXM2lpWmhNVlBlYjNLa1hnTDZwaHAtYW9hbG9scmo1MnVMd2NOTkJKZEEyTVRCUFN6XzFpWEtGMmRDMW5EcFF5VlAybUd5UEhCdWRBa2JIN2dfQk9pdWNkUGM5Y2FudWJpTEVRdFZZSXQzZkZGckRUckF2c1RNN3NtMXc5UDhtTFZ1bGoxQjJnUEVyX01OdTlSOGpmS1FHUGVhQXprQk1uMjlHNFhLUUxEeWszVV9hZHZaTGRjSEtsanFXRlZBcllIam5YNnM5aDNyVW9CMnhHdWRweGtB?oc=5",
-      "articleUrl": "https://www.aljazeera.net/news/2026/9/10/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D8%A7-%D8%B3%D9%84%D8%A7%D8%AD-%D8%AE%D8%A7%D8%B1%D8%AC-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9-%D9%88%D9%84%D9%86-%D9%86%D8%B3%D9%85%D8%AD",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-16T08:34:42.377Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": 0.1381,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-16T08:36:15.179Z",
-      "canonicalUrl": "https://www.aljazeera.net/news/2026/9/10/%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82-%d9%84%d8%a7-%d8%b3%d9%84%d8%a7%d8%ad-%d8%ae%d8%a7%d8%b1%d8%ac-%d8%a7%d9%84%d8%af%d9%88%d9%84%d8%a9-%d9%88%d9%84%d9%86-%d9%86%d8%b3%d9%85%d8%ad",
-      "pagePublishedAt": "2026-09-10T12:07:12.000Z",
-      "originalTextArabic": "أكد المتحدث باسم القائد العام للقوات المسلحة العراقية صباح النعمان أن الحكومة لن تسمح بوجود أي سلاح خارج إطار الدولة، أو باستخدام الأراضي العراقية لاستهداف دول أخرى، مشددا على أن بغداد لن تسمح بأي تهديد يطول دول الجوار.\n\nوقال النعمان، خلال مؤتمر صحفي في بغداد، إن عملية تنظيم السلاح تسير وفق رؤية الحكومة، وإنه لا توجد مهلة محددة متفق عليها مع الفصائل المسلحة لإنجاز هذا الملف.\n\nقصص مقترحة\n\nlist 1 of 2 العراق أمام تحدي 30 سبتمبر.. هل يرحل الأمريكيون ويبقى السلاح؟\n\nlist 2 of 2 الزيدي يدعو إلى نزع فتيل أزمة إيران وأمريكا ويعلن تنويع منافذ النفط العراقي\n\nوأوضح مراسل الجزيرة في بغداد سامر الكبيسي أن الحوار ما زال مفتوحا مع الفصائل بشأن حصر السلاح وتنظيمه.\n\nوقال المتحدث إن منظومات الدفاع الجوي تمثل أولوية أولى لدى القائد العام للقوات المسلحة العراقية.\n\nوأضاف أن العراق تعاقد مع الولايات المتحدة وتركيا وكوريا الجنوبية على منظومات دفاع جوي لحماية أراضيه وأجوائه والمنشآت النفطية، مشيرا إلى أن هذه المنظومات ستصل قريبا.\n\nالعلاقة مع التحالف الدولي\n\nوفي ملف التحالف الدولي، جدد النعمان التأكيد أن انسحاب قواته من القواعد العراقية سيُستكمل بحلول 30 سبتمبر/أيلول.\n\nوأضاف مراسل الجزيرة أن القائد العام للقوات المسلحة شكل لجنة ستبدأ عملها قريبا لتحديد شكل العلاقة بين العراق والتحالف بعد الانسحاب، بما يشمل استمرار تبادل المعلومات الاستخباراتية المتعلقة بمحاربة تنظيم الدولة.",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 1269,
-      "arabicRatio": 0.9908,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-16T08:37:46.258Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "d31adf0115b292c2c34c9a1a64a3e6eaec6cdd504d7bd3e26b537026e81a8ec1",
-        "sourceChars": 1269,
-        "translatedChars": 806,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "db0db1d27f35f8bdde9c",
-        "preferredTermsApplied": [
-          "국제연합군",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-16T08:42:55.979Z",
-        "titleKo": "이라크: 국가 통제 밖의 무기는 없으며 우리 영토가 주변국 공격에 이용되는 것을 허용하지 않을 것",
-        "fullTextKo": "이라크군 총사령관 대변인 사바흐 알누만은 정부가 국가의 통제 범위를 벗어난 어떤 무기의 존재도, 이라크 영토를 다른 국가를 공격하는 데 이용하는 것도 허용하지 않을 것이라고 확인하면서, 바그다드는 주변국에 미치는 어떠한 위협도 허용하지 않을 것이라고 강조했다.\n\n알누만은 바그다드에서 열린 기자회견에서 무기 조직화 작업이 정부의 구상에 따라 진행되고 있으며, 이 사안을 완료하기 위해 무장 세력과 합의한 특정 시한은 없다고 말했다.\n\n추천 기사\n\n목록 1, 2 중 1 이라크, 9월 30일의 도전에 직면하다. 미국인들은 떠나고 무기는 남는가?\n\n목록 1, 2 중 2 알자이디, 이란과 미국의 위기를 완화할 것을 촉구하고 이라크 석유 수출 경로 다변화를 발표하다\n\n알자지라의 바그다드 특파원 사메르 알쿠바이시는 무기를 국가가 독점하고 이를 조직화하는 문제를 놓고 무장 세력과의 대화가 여전히 열려 있다고 설명했다.\n\n대변인은 방공 체계가 이라크군 총사령관에게 최우선 과제라고 말했다.\n\n그는 이라크가 영토와 영공 및 석유 시설을 보호하기 위해 미국, 튀르키예, 한국과 방공 체계 계약을 체결했으며, 이 체계들이 곧 도착할 것이라고 덧붙였다.\n\n국제연합군과의 관계\n\n국제연합군 문제와 관련해 알누만은 국제연합군이 이라크 기지에서 철수하는 작업이 9월 30일까지 완료될 것이라는 점을 재차 확인했다.\n\n알자지라 특파원은 총사령관이 철수 이후 이라크와 국제연합군 간 관계의 형태를 결정하기 위한 위원회를 구성했으며, 이 위원회가 곧 업무를 시작할 것이라고 덧붙였다. 여기에는 이슬람국가 조직과의 싸움과 관련한 정보 교환을 계속하는 방안도 포함된다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "d31adf0115b292c2c34c9a1a64a3e6eaec6cdd504d7bd3e26b537026e81a8ec1",
-      "previousContentHash": "91715b4b5ed78436b7133a44922496450adaa737d04f72d369e5e61b2aebd938",
-      "contentCheckedAt": "2026-09-16T08:37:46.258Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-7xmlH4UNxEkLRvnjAj",
-        "representativeArticleId": "discovery-aS6KjFgduAS9-yxcpWngnmGF",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 20,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-16T08:38:49.265Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 4,
-          "reportValue": 3,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "4e16cc71ff30ab560890",
-        "ruleScore": 20,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -24547,148 +24116,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-09T10:55:37.000Z",
-      "descriptionArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1ANBVV95cUxQRG9sV2g2Mkg4bUFvRHkwaVFmNFNxb3h1WWRFWlNlRVZKODh4Y24teU5hR000SjloMkpqeGtDR04tSnpoMzhaMFdHYU00b1lPMWJ3MldqNXR6dGZrNVBDazhPWDhjVDZHY1VnbnlaYVhPS0xZdVZoWVRUanlpUUl0V0pNV09iY0lTZTlteFRqdzdFcGt5dlVYSW9FQy0zdm9zOHQyUFd4cEowQ3FjdGdyRTI1ZmVrd0swWmNNWThIOGFKaVpyeUVBSzJocldFSkRpQW1ONUdrQnBINkdRaFFlTTE2YkhOMk9icE1hS2xkVFhlUER1THdrSjZMdzlnaHYtSkxtV2xqSWYtSlhMT0NLbmtOeUlwektnUlVvMm9wdFNoMXBuTm5DXzRQUGdaZ2dkbnZwTXlad05LRVUzLTFtdTRuRG1vRlJ3aG1Xc0RoeU5YUkR4SzJ0ZVRna21oQUtjQjl1dkNqN0FjcHF6a3laZEpra0RVaXBQOWFqUnFhTFA4ZUZldGlUVnJYSHFpaVd3UVo3UlEtV2hNWGNlZkdraDl1X3E5OXpqRVlRbnRWRS11ZzdKNi1BUTdLbTU5TWQxWU5EcEZPRjZfZFZPSi1vVE5KbWzSAdgDQVVfeXFMTWhCV0JFYlB2Z1IyVWJmR0VicHhSeUlvVXRkOUZkaDREczdNMmp1TmJXTWplQ2s0VlVzSEpJN1FrVlhRU2pKSHpDZmRETHhKTHRGektGSWZ6SGUtMDFtYkJxMXEzTksyRHVjdkVjRXp1QWxhRmw5ajNlNmpiV00xTTJtdXZRQzl0S2M0d21Jcmw4UThQOFcyOHZwR1VvY09OOEl0bk5qTjJLUGFqUlRYOWJJejloVXQyRmdHZElGcFZwSWl1R0h3QUsyOFVVVXRjRC1HWU9aNEhpUXpzWlpsY01NWjZSbjlXTXAzRTdPUk1sc3pmZTNtdTQ0QlBFNEFDRUFyaWRsWDBIOWpWanpRY1VnZnVITFZYSU1yS2F5RmVZRmxNWlhFSE5QTDRES3lMU2ZyQ3daRGVfME5uRE42OXQxOTU4TlJCR09mSnViU3dIWDJvcTNWeG1JUmhwcE5nZWljeC0xVkxtelQ0U0lfNzNYSE4zTlFlay1KMGs4MXAtVFN5ekJvdWx6NUZJNDlQNUxKNnZaY2JrcE1nZnhHNmQwWm5PVThzWGlEXzhjMDNXbVhFaURTYmcyVGlsYmZQbldkQi03eFFCVEZQS01xUG5FSUtlbTNPRw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-16T08:34:42.376Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-16T08:36:25.295Z",
-      "canonicalUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "pagePublishedAt": "2026-09-09T10:55:37.000Z",
-      "originalTextArabic": "مع اقتراب موعد الانسحاب الأمريكي من العراق، تجد بغداد نفسها أمام اختبار صعب يتعلق بقدرتها على حماية أجوائها بقدراتها الذاتية، في وقت تسعى فيه إلى اختصار خطة استكمال..",
-      "sourceHost": "arabi21.com",
-      "contentChars": 166,
-      "arabicRatio": 1.0109,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-16T08:37:51.280Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-        "sourceChars": 166,
-        "translatedChars": 100,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-11T08:07:58.814Z",
-        "titleKo": "미군 철수 시한이 다가오면서 이라크가 맞닥뜨린 어려운 시험",
-        "fullTextKo": "이라크에서 미군이 철수할 시한이 다가오면서 바그다드는 자체 역량으로 영공을 보호할 수 있는 능력과 관련해 어려운 시험에 직면해 있다. 이라크는 완성 계획을 단축하려는 가운데서다.."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-16T08:38:49.265Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "0a8fceed7cd6cbfac019",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-RfZehZVskYNwZduzWD",
-        "representativeArticleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-      "contentCheckedAt": "2026-09-16T08:37:51.280Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -28704,9 +28131,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -33982,9 +33409,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -34560,9 +33987,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -36793,9 +36220,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -39005,9 +38432,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -40833,9 +40260,9 @@
       "contentCheckedAt": "2026-09-16T08:38:01.237Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -43725,156 +43152,6 @@
         "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-InPOBz7pwWiWPHud4T2_ocXD",
-      "keywordId": "international-hormuz-001",
-      "category": "economy",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "ترامب: سوريا تريد أن تصبح بديلًا لمضيق هرمز و«هذا رائع»",
-      "sourceArabic": "عين ليبيا",
-      "sourceHomepage": "https://www.eanlibya.com",
-      "publishedAt": "2026-09-03T16:16:36.000Z",
-      "descriptionArabic": "ترامب: سوريا تريد أن تصبح بديلًا لمضيق هرمز و«هذا رائع» عين ليبيا",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiyAJBVV95cUxPX01BTFpMTHkwbjl3a21BeXU0ZnBUZy01TG5GNmJuOXdiLVVWUnJaMzdEOS1fWGxHR0FQTC1BcnJmdkhfNWg4d2Z2bFlLdzQ2MERlVmZtUVZ4SmpTNlJ0QXFoY1BLTGkwQ01YN08yYVg1aWl5R3VBT3cwVDN1OVJlR3JrVDJTMU9wN0hTZ21wdVNSUFNXN19KXy1vclBDazFWSl92aXNHRFNIQjRpTG9BVzczSWFzaGdvcmNzUTlacVFoOXB5a29oaEFXcGVCZFJQNl8wam1EOE5ZSnNsNlJVUkVnSElmb01CZlF2cURqS1h0bHhPaXFCdjEyS3J2ZW9SelAxNUktLUtvUE04UE9fazdLMnlDMWRhcm5HTmdGYlU4QUVGV2xsaVB0cm9QdF9nby1ZNV82Q1U0WnJaeW1WdnNuc0NVYkdU?oc=5",
-      "articleUrl": "https://www.eanlibya.com/%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D8%AA%D8%B1%D9%8A%D8%AF-%D8%A3%D9%86-%D8%AA%D8%B5%D8%A8%D8%AD-%D8%A8%D8%AF%D9%8A%D9%84%D9%8B%D8%A7-%D9%84%D9%85%D8%B6%D9%8A%D9%82-%D9%87/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-16T08:34:42.730Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-16T08:37:11.770Z",
-      "canonicalUrl": "https://www.eanlibya.com/%D8%AA%D8%B1%D8%A7%D9%85%D8%A8-%D8%B3%D9%88%D8%B1%D9%8A%D8%A7-%D8%AA%D8%B1%D9%8A%D8%AF-%D8%A3%D9%86-%D8%AA%D8%B5%D8%A8%D8%AD-%D8%A8%D8%AF%D9%8A%D9%84%D9%8B%D8%A7-%D9%84%D9%85%D8%B6%D9%8A%D9%82-%D9%87/",
-      "pagePublishedAt": "2026-09-03T16:16:36.000Z",
-      "originalTextArabic": "أشاد الرئيس الأمريكي دونالد ترامب بالتحركات السورية للاستفادة من اضطراب الملاحة في مضيق هرمز، معتبرًا أن تقديم دمشق نفسها مسارًا بديلًا لنقل النفط والطاقة يمثل «أمرًا رائعًا». وقال ترامب، في منشور عبر منصته «تروث سوشيال» الخميس، إن «سوريا تروّج نفسها بديلاً لمضيق هرمز»، في تعليق على تقرير لصحيفة «واشنطن بوست» تناول مساعي دمشق لاستثمار أزمة الملاحة وطرح أراضيها وموانئها مسارًا بديلًا أمام تجارة الطاقة. وأضاف ترامب في منشور آخر أن الطريق عبر سوريا مفتوح بالفعل، مشيرًا إلى عبور شاحنات ضخمة محملة بالنفط الأراضي السورية باتجاه البحر المتوسط. وتربط هذه التحركات جنوب العراق بالساحل السوري، عبر نقل النفط والوقود بالشاحنات وصولًا إلى ميناء بانياس، بما يوفر للعراق منفذًا باتجاه البحر المتوسط بعيدًا عن مسارات التصدير الجنوبية المرتبطة بالخليج ومضيق هرمز. وبحسب «واشنطن بوست»، بدأت شاحنات نقل النفط بالتحرك بين مصافي جنوب العراق وميناء بانياس السوري، في مسار لجأ إليه مصدرون عراقيون للالتفاف على المضيق بعد اضطراب حركة الشحن فيه. وتمنح الأزمة سوريا فرصة لاستثمار موقعها الجغرافي على البحر المتوسط، إذ تسعى دمشق، في ظل رئيسها الجديد أحمد الشرع، إلى تقديم البلاد كممر بري مستقر نسبيًا لنقل الطاقة والسلع، بما يسمح بتجاوز الاعتماد على مضيق هرمز في بعض مسارات التجارة النفطية. وتأتي هذه التحركات بعد أكثر من 18 شهرًا على سقوط بشار الأسد، وفي وقت تسعى فيه دمشق إلى الاستفادة من رفع العقوبات الدولية وإعادة تنشيط دورها في حركة التجارة والطاقة الإقليمية. ولا يقتصر المسار السوري على الشاحنات، إذ أعلنت إدارة الرئيس الأمريكي دونالد ترامب في يوليو دعمها لمشروع خط أنابيب جديد تقوده شركة «شيفرون»، بطاقة تصل إلى مليوني برميل من النفط الخام يوميًا، لربط البصرة في جنوب العراق بميناء بانياس. ومن شأن خط الأنابيب المقترح أن يسلك مسارًا قريبًا من الطريق الذي تستخدمه الشاحنات حاليًا لنقل زيت الوقود عبر الصحراء بين جنوب العراق وسوريا. وعندما كشف البيت الأبيض عن المشروع بحضور مسؤولين سوريين وعراقيين، قال المبعوث الخاص للرئيس الأمريكي دونالد ترامب، توم براك، في بيان إن خط الأنابيب سيساعد في جعل مضيق هرمز «أمرًا ثانويًا». ويجري كذلك بحث مشاريع لإعادة تأهيل خطوط أنابيب تربط حقول النفط العراقية بالساحل السوري، ومن بينها مشروع خط كركوك–بانياس، بما يفتح المجال أمام تحول المسار السوري إلى طريق رئيسي لتصدير النفط العراقي نحو البحر المتوسط. وتضع هذه المشاريع ميناء بانياس في موقع محوري ضمن محاولات إيجاد طرق بديلة لنقل الطاقة، بالتزامن مع تحرك شاحنات النفط والوقود عبر الأراضي العراقية والسورية باتجاه الموانئ السورية. ويمثل مضيق هرمز أحد أهم ممرات تجارة الطاقة في العالم، ويمر عبره نحو خمس إمدادات النفط العالمية، وفق تقرير «واشنطن بوست»، ما يجعل أي اضطراب في حركة الملاحة داخله دافعًا أمام الدول والشركات للبحث عن مسارات بديلة. وقال ترامب إن مضيق هرمز لم يعد كما كان من قبل، في إشارة إلى التغيرات التي طرأت على طرق نقل الطاقة والتجارة منذ اندلاع أزمة الملاحة في المنطقة وظهور مسارات بديلة عبر سوريا والأردن وغيرها. وتسعى دمشق من خلال هذه التحركات إلى استعادة دور سوريا كممر يربط العراق بالبحر المتوسط، بالتوازي مع طرح مشاريع في النفط والغاز والطرق والسكك الحديدية والموانئ. ويتيح الموقع الجغرافي لسوريا ربط العراق بالساحل المتوسطي، إلى جانب إمكان اتصال طرق التجارة العراقية بتركيا وأوروبا، ما يمنح المسار السوري أهمية تتجاوز نقل النفط بالشاحنات إلى مشاريع بنية تحتية أوسع. ويرى تقرير «واشنطن بوست» أن استمرار اضطراب الملاحة في مضيق هرمز يمنح الدول والموانئ وخطوط الأنابيب الواقعة خارج مسارات الخليج أهمية إضافية في حسابات أمن الطاقة، بينما تطرح سوريا نفسها كإحدى هذه البدائل من خلال ميناء بانياس والممرات البرية ومشاريع الأنابيب.",
-      "sourceHost": "eanlibya.com",
-      "contentChars": 3313,
-      "arabicRatio": 1.0191,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-16T08:38:03.838Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "3d61ed40ddb7b5e2466afdbc91ec6ba0635b58ef99791edcd9ee6741a1d2fb78",
-        "sourceChars": 3313,
-        "translatedChars": 2101,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "53f5fe7031af64a5c39e",
-        "preferredTermsApplied": [
-          "호르무즈 해협",
-          "바스라",
-          "키르쿠크"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-16T08:43:06.816Z",
-        "titleKo": "트럼프: 시리아가 호르무즈 해협의 대안이 되려 하며, 이는 훌륭한 일이다",
-        "fullTextKo": "도널드 트럼프 미국 대통령은 호르무즈 해협의 항해 혼란을 활용하려는 시리아의 움직임을 환영하며, 다마스쿠스가 석유와 에너지 수송을 위한 대체 경로로 자신을 내세우는 것은 훌륭한 일이라고 평가했다. 트럼프 대통령은 목요일 자신의 소셜미디어 플랫폼 트루스 소셜에 올린 글에서 워싱턴포스트의 보도에 논평하며 시리아가 호르무즈 해협의 대안으로 자신을 홍보하고 있다고 말했다. 해당 보도는 항해 위기를 활용하고 자국 영토와 항구를 에너지 교역을 위한 대체 경로로 제시하려는 다마스쿠스의 노력을 다뤘다. 트럼프는 또 다른 게시물에서 시리아를 통과하는 경로가 이미 열려 있다며, 석유를 가득 실은 대형 트럭들이 시리아 영토를 지나 지중해를 향해 이동하고 있다고 지적했다. 이러한 움직임은 트럭을 이용해 석유와 연료를 바니야스항까지 운송함으로써 이라크 남부와 시리아 해안을 연결하며, 이라크에 걸프와 호르무즈 해협에 연계된 남부 수출 경로에서 벗어난 지중해 방향의 출구를 제공한다. 워싱턴포스트에 따르면 석유 운송 트럭들은 이라크 남부의 정유공장들과 시리아의 바니야스항 사이를 이동하기 시작했으며, 이는 해협의 운송 흐름이 혼란을 겪은 뒤 이라크 수출업자들이 해협을 우회하기 위해 택한 경로다. 이번 위기는 시리아가 지중해에 접한 지리적 위치를 활용할 기회를 제공하고 있다. 다마스쿠스는 새 대통령 아흐마드 알샤라의 집권 아래 자국을 에너지와 상품을 운송하는 비교적 안정적인 육상 통로로 제시하려 하고 있으며, 이를 통해 일부 석유 교역 경로에서 호르무즈 해협 의존을 피할 수 있게 된다. 이러한 움직임은 바샤르 알아사드가 축출된 지 18개월이 넘은 뒤에 나왔으며, 다마스쿠스가 국제 제재 해제의 혜택을 얻고 역내 교역과 에너지 흐름에서 자국의 역할을 다시 활성화하려는 시점에 이뤄졌다. 시리아 경로는 트럭에만 국한되지 않는다. 도널드 트럼프 미국 대통령 행정부는 7월 셰브론이 주도하는 신규 송유관 사업을 지원한다고 발표했으며, 이 송유관은 하루 최대 200만 배럴의 원유를 수송해 이라크 남부의 바스라와 바니야스항을 연결하게 된다. 제안된 송유관은 현재 트럭들이 이라크 남부와 시리아 사이의 사막을 가로질러 연료유를 운송하는 경로와 가까운 노선을 지나게 된다. 백악관이 시리아와 이라크 관계자들이 참석한 가운데 이 사업을 공개했을 때, 도널드 트럼프 미국 대통령의 특사 톰 배럭은 성명을 통해 이 송유관이 호르무즈 해협을 부차적인 문제로 만드는 데 도움이 될 것이라고 말했다. 이라크의 유전과 시리아 해안을 연결하는 송유관을 재활성화하는 사업들도 검토되고 있으며, 그중에는 키르쿠크에서 바니야스까지 연결하는 사업도 있다. 이는 시리아 경로가 이라크산 석유를 지중해로 수출하는 주요 통로로 전환될 가능성을 열어준다. 이러한 사업들은 이라크와 시리아 영토를 거쳐 시리아 항구를 향해 이동하는 석유와 연료 운송 트럭의 움직임과 함께, 대체 에너지 수송 경로를 찾으려는 시도에서 바니야스항을 핵심적 위치에 놓고 있다. 호르무즈 해협은 세계 에너지 교역의 가장 중요한 통로 중 하나이며, 워싱턴포스트의 보도에 따르면 세계 석유 공급량의 약 5분의 1이 이곳을 통과한다. 이 때문에 해협 내 항해 흐름의 어떠한 혼란도 각국과 기업이 대체 경로를 찾도록 만드는 요인이 된다. 트럼프는 호르무즈 해협이 더 이상 예전과 같지 않다고 말했으며, 이는 역내 항해 위기가 발생하고 시리아와 요르단 등을 통한 대체 경로가 등장한 이후 에너지와 교역 수송 경로에 나타난 변화를 가리킨다. 다마스쿠스는 이러한 움직임을 통해 이라크와 지중해를 연결하는 통로로서 시리아의 역할을 회복하려 하며, 동시에 석유와 가스, 도로, 철도, 항구 관련 사업들을 제시하고 있다. 시리아의 지리적 위치는 이라크와 지중해 연안을 연결할 수 있게 해줄 뿐 아니라, 이라크의 교역로를 튀르키예와 유럽으로 연결할 가능성도 제공한다. 이는 시리아 경로가 트럭을 이용한 석유 수송을 넘어 더 광범위한 인프라 사업에서도 중요성을 갖게 한다. 워싱턴포스트의 보도는 호르무즈 해협의 항해 혼란이 지속될 경우 걸프 경로 밖에 위치한 국가와 항구, 송유관이 에너지 안보 계산에서 추가적인 중요성을 갖게 된다고 평가했다. 한편 시리아는 바니야스항과 육상 통로, 송유관 사업을 통해 이러한 대안 가운데 하나로 자신을 내세우고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "economy",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "3d61ed40ddb7b5e2466afdbc91ec6ba0635b58ef99791edcd9ee6741a1d2fb78",
-      "contentCheckedAt": "2026-09-16T08:38:03.838Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "economy",
-        "reason": "direct-iraq-economy-dominant",
-        "scores": {
-          "politics": 0,
-          "economy": 25,
-          "security": 2,
-          "economyHeadline": 0,
-          "securityHeadline": 0,
-          "titleHasIraq": false,
-          "openingHasIraqActor": true
-        },
-        "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-09-16T08:38:07.744Z"
-      },
-      "eventGroup": {
-        "groupId": "event-wkf8NKkqxLFidVylxq",
-        "representativeArticleId": "discovery-InPOBz7pwWiWPHud4T2_ocXD",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 27,
-        "stars": 1.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-16T08:38:49.265Z",
-        "breakdown": {
-          "constructionInvestment": 4,
-          "nationalImportance": 17,
-          "businessImpact": 0,
-          "executionScale": 0,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "d0820b4a739d27c9554a",
-        "ruleScore": 27,
-        "category": "economy",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
       }
     },
     {
@@ -48602,14 +47879,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 388,
-    "retained": 388,
+    "before": 340,
+    "retained": 340,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 317,
+    "groupCount": 312,
     "duplicateGroupCount": 19,
     "duplicateArticleCount": 23,
     "maxHours": 72,
