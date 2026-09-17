@@ -4,6 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="이라크·비스마야 사업 관련 아랍어 현지뉴스 자동수집, 한국어 전문번역 및 선별 기사 Word 다운로드">
+  <meta name="theme-color" content="#f37321">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Iraq Weekly Report">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <title>이라크 주간상황보고서 뉴스자료</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./importance-colors.css">
@@ -20,6 +27,7 @@
       <div class="header-status">
         <span class="status-dot" aria-hidden="true"></span>
         <span id="updatedAt">데이터 준비 중</span>
+        <button id="installAppButton" class="install-app-button" type="button" hidden>앱으로 설치</button>
       </div>
     </div>
   </header>
@@ -130,5 +138,28 @@
   <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
   <script src="./app.js"></script>
   <script src="./importance-badge-colors.js"></script>
+  <script>
+    (() => {
+      let deferredInstallPrompt = null;
+      const installButton = document.getElementById("installAppButton");
+      if (!installButton) return;
+      window.addEventListener("beforeinstallprompt", (event) => {
+        event.preventDefault();
+        deferredInstallPrompt = event;
+        installButton.hidden = false;
+      });
+      installButton.addEventListener("click", async () => {
+        if (!deferredInstallPrompt) return;
+        deferredInstallPrompt.prompt();
+        await deferredInstallPrompt.userChoice;
+        deferredInstallPrompt = null;
+        installButton.hidden = true;
+      });
+      window.addEventListener("appinstalled", () => { installButton.hidden = true; });
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => navigator.serviceWorker.register("./sw.js", { scope: "./" }).catch(console.error));
+      }
+    })();
+  </script>
 </body>
 </html>

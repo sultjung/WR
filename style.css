@@ -41,6 +41,8 @@ h1{margin:0;font-size:32px;letter-spacing:-.04em}
 .subtitle{margin:8px 0 0;color:var(--muted)}
 .header-status{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:14px;white-space:nowrap}
 .status-dot{width:9px;height:9px;border-radius:50%;background:var(--orange)}
+.install-app-button{height:32px;border:1px solid #fdba74;border-radius:7px;background:#fff7ed;color:var(--orange-dark);padding:0 11px;font-size:12px;font-weight:900;cursor:pointer;white-space:nowrap}
+.install-app-button:hover{background:#ffedd5}
 .page-shell{max-width:1440px;margin:0 auto;padding:28px 32px 60px}
 .summary-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px}
 .summary-card{appearance:none;text-align:left;border:1px solid var(--line);border-radius:12px;background:var(--surface);padding:17px 18px;min-height:88px;color:var(--ink);transition:border-color .15s,transform .15s,box-shadow .15s}
