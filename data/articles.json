@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-18T04:20:08.814Z",
+  "generatedAt": "2026-09-18T09:57:53.497Z",
   "lookbackDays": 14,
-  "count": 342,
+  "count": 339,
   "categoryCounts": {
-    "politics": 182,
+    "politics": 179,
     "security": 57,
     "economy": 76,
     "bismayah": 8,
@@ -1596,16 +1596,11 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-09-18T04:16:54.344Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -2546,9 +2541,9 @@
       "contentCheckedAt": "2026-09-18T04:16:11.211Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -5103,9 +5098,9 @@
       "contentCheckedAt": "2026-09-18T04:16:15.015Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -5402,9 +5397,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -6316,9 +6311,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8592,9 +8587,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -13315,9 +13310,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -14036,147 +14031,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-f86gLH8ldZvPZguz8O6qias-",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "العراق ليس إيران",
-      "sourceArabic": "زاد الاردن",
-      "sourceHomepage": "https://www.jordanzad.com",
-      "publishedAt": "2026-09-13T05:34:00.000Z",
-      "descriptionArabic": "العراق ليس إيران زاد الاردن",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiakFVX3lxTE4tbFEyNEtvdG45SUxINE15WjdXZFdVOGJGLWozZVBhZWtRMlJ5UHNMMVpHWktEN3JnSGJPczVJeHdjUktSdUhaRmQyVkItbjZoTE5PX294SktmOGk4NXZzUzBGZWNSNy1XQ2c?oc=5",
-      "articleUrl": "https://www.jordanzad.com/index.php?page\\=article\\&id\\=759777",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-18T04:13:19.426Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-18T04:14:32.774Z",
-      "canonicalUrl": "https://www.jordanzad.com/index.php?page\\=article\\&id\\=759777",
-      "pagePublishedAt": "",
-      "originalTextArabic": "موقع لكل الأردنيين على اختلاف مشاربهم ومنابتهم يقدم الأخبار المحلية ويتابع الشأن السياسي والاقتصادي ويؤمن بحرية الرأي نبراسًا نهتدي به نحو خدمة إعلامية ذات معنى تعبّر عن اسم زاد الأردن",
-      "sourceHost": "jordanzad.com",
-      "contentChars": 184,
-      "arabicRatio": 1.012,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-18T04:16:26.475Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "5f1b3c73400dc60d164f07be3d0af42834c98168ac5924dc085c91050f9ab0a0",
-        "sourceChars": 184,
-        "translatedChars": 135,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-17T08:49:24.698Z",
-        "titleKo": "이라크는 이란이 아니다",
-        "fullTextKo": "출신과 성향이 서로 다른 모든 요르단인을 위한 사이트로, 국내 뉴스를 제공하고 정치 및 경제 현안을 추적하며, 의미 있는 언론 서비스를 향해 나아가는 지침으로서 의견의 자유를 신조로 삼고 있습니다. 이는 자드 알우르둔이라는 이름을 표현합니다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-18T04:17:38.871Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "627a0c2717337364173f",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-hy1CYPuQYmW4jy2lLf",
-        "representativeArticleId": "discovery-f86gLH8ldZvPZguz8O6qias-",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "5f1b3c73400dc60d164f07be3d0af42834c98168ac5924dc085c91050f9ab0a0",
-      "contentCheckedAt": "2026-09-18T04:16:26.475Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-UeuwdbUW3Ra9AkVZp1CJU9De",
       "keywordId": "security-isis-001",
       "category": "security",
@@ -14829,9 +14683,9 @@
       "contentCheckedAt": "2026-09-18T04:16:27.950Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -18866,9 +18720,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -20251,9 +20105,9 @@
       "contentCheckedAt": "2026-09-18T04:16:31.701Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -24959,9 +24813,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -27109,149 +26963,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-aS6KjFgduAS9-yxcpWngnmGF",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "العراق: لا سلاح خارج الدولة ولن نسمح باستخدام أراضينا لاستهداف الجوار",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-09-10T12:07:12.000Z",
-      "descriptionArabic": "العراق: لا سلاح خارج الدولة ولن نسمح باستخدام أراضينا لاستهداف الجوار الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwwJBVV95cUxNdjFDN2dtc3ZVOEY4OWV0SklUcGI3Y25PNXMyRm9YNGNvc3Q1S3hXWXptNTd3SlBpcnZad2RMRGRLeUg0LTZZaEtzSF9zeHlvZ1pmTVJVZnpPaUpBNG1aUjNKekw3bE00RUtOZ1g2VFJBTEwtM3VWbTdaRDFhODhMQ3AwZDl2TEVXcW9LTm9fRk9SVk80SFRUQThzS2pMSUtLN1gtZTZqTXRxNHY0WHBielNHN3pXSmVqMkswSHZkcUZSaFdJUzBuNDhWZjh1UzNHY1AzMkFib2R4ZmU1VjdWV3ctWFUtVkFDWVUxVjY0YzBlSVQ0b0FDbnhBdGxrb2t2SXpRbF9Lc1V0b2FkcjBWc0pXeE1FMnZxVC03SEM0eEpsbVdvY3ZGYjFqSm55U0ppcUlmcTZUY1lnSXlxQ2s3cTl1RdIByAJBVV95cUxQWk92dVlPMkZ3aU1RRDU0NUpuX3p6U2k5cG1oY2N4bGk4Q3I2VkFQVUFudnFmTHRPZUdGSmttWExtNlYtZjRfOWJvS21XM1h1a1cwREdfTUpRY3JRYTVBZUhybkVOOGhucERFUTlBNXk3MVpXM2lpWmhNVlBlYjNLa1hnTDZwaHAtYW9hbG9scmo1MnVMd2NOTkJKZEEyTVRCUFN6XzFpWEtGMmRDMW5EcFF5VlAybUd5UEhCdWRBa2JIN2dfQk9pdWNkUGM5Y2FudWJpTEVRdFZZSXQzZkZGckRUckF2c1RNN3NtMXc5UDhtTFZ1bGoxQjJnUEVyX01OdTlSOGpmS1FHUGVhQXprQk1uMjlHNFhLUUxEeWszVV9hZHZaTGRjSEtsanFXRlZBcllIam5YNnM5aDNyVW9CMnhHdWRweGtB?oc=5",
-      "articleUrl": "https://www.aljazeera.net/news/2026/9/10/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D8%A7-%D8%B3%D9%84%D8%A7%D8%AD-%D8%AE%D8%A7%D8%B1%D8%AC-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9-%D9%88%D9%84%D9%86-%D9%86%D8%B3%D9%85%D8%AD",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-18T04:13:19.246Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": 0.1381,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-18T04:15:02.366Z",
-      "canonicalUrl": "https://www.aljazeera.net/news/2026/9/10/%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82-%d9%84%d8%a7-%d8%b3%d9%84%d8%a7%d8%ad-%d8%ae%d8%a7%d8%b1%d8%ac-%d8%a7%d9%84%d8%af%d9%88%d9%84%d8%a9-%d9%88%d9%84%d9%86-%d9%86%d8%b3%d9%85%d8%ad",
-      "pagePublishedAt": "2026-09-10T12:07:12.000Z",
-      "originalTextArabic": "أكد المتحدث باسم القائد العام للقوات المسلحة العراقية صباح النعمان أن الحكومة لن تسمح بوجود أي سلاح خارج إطار الدولة، أو باستخدام الأراضي العراقية لاستهداف دول أخرى، مشددا على أن بغداد لن تسمح بأي تهديد يطول دول الجوار.\n\nوقال النعمان، خلال مؤتمر صحفي في بغداد، إن عملية تنظيم السلاح تسير وفق رؤية الحكومة، وإنه لا توجد مهلة محددة متفق عليها مع الفصائل المسلحة لإنجاز هذا الملف.\n\nقصص مقترحة\n\nlist 1 of 2 ارتفاع الدولار يخنق الأسواق العراقية والمواطن يدفع الثمن\n\nlist 2 of 2 جدول مباريات \"خليجي 27\" لكرة القدم.. المواعيد والقنوات الناقلة\n\nوأوضح مراسل الجزيرة في بغداد سامر الكبيسي أن الحوار ما زال مفتوحا مع الفصائل بشأن حصر السلاح وتنظيمه.\n\nوقال المتحدث إن منظومات الدفاع الجوي تمثل أولوية أولى لدى القائد العام للقوات المسلحة العراقية.\n\nوأضاف أن العراق تعاقد مع الولايات المتحدة وتركيا وكوريا الجنوبية على منظومات دفاع جوي لحماية أراضيه وأجوائه والمنشآت النفطية، مشيرا إلى أن هذه المنظومات ستصل قريبا.\n\nالعلاقة مع التحالف الدولي\n\nوفي ملف التحالف الدولي، جدد النعمان التأكيد أن انسحاب قواته من القواعد العراقية سيُستكمل بحلول 30 سبتمبر/أيلول.\n\nوأضاف مراسل الجزيرة أن القائد العام للقوات المسلحة شكل لجنة ستبدأ عملها قريبا لتحديد شكل العلاقة بين العراق والتحالف بعد الانسحاب، بما يشمل استمرار تبادل المعلومات الاستخباراتية المتعلقة بمحاربة تنظيم الدولة.",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 1251,
-      "arabicRatio": 0.9898,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-18T04:16:34.969Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "27f09d02ff1eaf2062e970d8019a17ee9195aa43f98fe224c6a4b6d0c047beb2",
-        "sourceChars": 1251,
-        "translatedChars": 776,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "db0db1d27f35f8bdde9c",
-        "preferredTermsApplied": [
-          "국제연합군",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-17T23:36:39.285Z",
-        "titleKo": "이라크: 국가 밖의 무기는 허용하지 않으며 우리 영토가 주변국 공격에 사용되는 것도 허용하지 않을 것",
-        "fullTextKo": "이라크군 총사령관 대변인 사바흐 알누만은 정부가 국가의 통제 밖에 있는 어떤 무기도 존재하도록 허용하지 않을 것이며, 이라크 영토가 다른 국가를 공격하는 데 사용되는 것도 허용하지 않을 것이라고 밝혔다. 그는 바그다드가 주변국에 가해지는 어떠한 위협도 허용하지 않을 것이라고 강조했다.\n\n알누만은 바그다드에서 열린 기자회견에서 무기 규제 절차가 정부의 구상에 따라 진행되고 있으며, 이 사안을 마무리하기 위해 무장 세력과 합의한 구체적인 시한은 없다고 말했다.\n\n추천 기사\n\n1 중 1 이라크 시장을 옥죄는 달러화 상승, 대가는 국민이 치른다\n\n2 중 2 축구 걸프컵 27 경기 일정, 경기 시간과 중계 채널\n\n바그다드의 알자지라 특파원 사메르 알쿠바이시는 무기를 국가의 통제 아래 두고 규제하는 문제를 놓고 무장 세력과의 대화가 여전히 열려 있다고 설명했다.\n\n대변인은 방공 체계가 이라크군 총사령관에게 최우선 과제라고 말했다.\n\n그는 이라크가 영토와 영공, 석유 시설을 보호하기 위해 미국, 튀르키예, 한국과 방공 체계 공급 계약을 체결했으며, 이 체계들이 곧 도착할 것이라고 덧붙였다.\n\n국제연합군과의 관계\n\n국제연합군 문제와 관련해 알누만은 국제연합군의 이라크 기지 철수가 9월 30일까지 완료될 것이라는 점을 재차 확인했다.\n\n알자지라 특파원은 총사령관이 철수 이후 이라크와 국제연합군 간 관계의 형태를 정하기 위한 위원회를 구성했으며, 이 위원회가 곧 업무를 시작할 것이라고 덧붙였다. 여기에는 이슬람국가 조직에 맞서 싸우는 것과 관련한 정보 교환을 계속하는 방안도 포함된다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 16,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-18T04:17:38.871Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "0bbe0974419593acb03a",
-        "ruleScore": 16,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-7xmlH4UNxEkLRvnjAj",
-        "representativeArticleId": "discovery-aS6KjFgduAS9-yxcpWngnmGF",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "27f09d02ff1eaf2062e970d8019a17ee9195aa43f98fe224c6a4b6d0c047beb2",
-      "contentCheckedAt": "2026-09-18T04:16:34.969Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -31113,148 +30824,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-09T10:55:37.000Z",
-      "descriptionArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1ANBVV95cUxQRG9sV2g2Mkg4bUFvRHkwaVFmNFNxb3h1WWRFWlNlRVZKODh4Y24teU5hR000SjloMkpqeGtDR04tSnpoMzhaMFdHYU00b1lPMWJ3MldqNXR6dGZrNVBDazhPWDhjVDZHY1VnbnlaYVhPS0xZdVZoWVRUanlpUUl0V0pNV09iY0lTZTlteFRqdzdFcGt5dlVYSW9FQy0zdm9zOHQyUFd4cEowQ3FjdGdyRTI1ZmVrd0swWmNNWThIOGFKaVpyeUVBSzJocldFSkRpQW1ONUdrQnBINkdRaFFlTTE2YkhOMk9icE1hS2xkVFhlUER1THdrSjZMdzlnaHYtSkxtV2xqSWYtSlhMT0NLbmtOeUlwektnUlVvMm9wdFNoMXBuTm5DXzRQUGdaZ2dkbnZwTXlad05LRVUzLTFtdTRuRG1vRlJ3aG1Xc0RoeU5YUkR4SzJ0ZVRna21oQUtjQjl1dkNqN0FjcHF6a3laZEpra0RVaXBQOWFqUnFhTFA4ZUZldGlUVnJYSHFpaVd3UVo3UlEtV2hNWGNlZkdraDl1X3E5OXpqRVlRbnRWRS11ZzdKNi1BUTdLbTU5TWQxWU5EcEZPRjZfZFZPSi1vVE5KbWzSAdgDQVVfeXFMTWhCV0JFYlB2Z1IyVWJmR0VicHhSeUlvVXRkOUZkaDREczdNMmp1TmJXTWplQ2s0VlVzSEpJN1FrVlhRU2pKSHpDZmRETHhKTHRGektGSWZ6SGUtMDFtYkJxMXEzTksyRHVjdkVjRXp1QWxhRmw5ajNlNmpiV00xTTJtdXZRQzl0S2M0d21Jcmw4UThQOFcyOHZwR1VvY09OOEl0bk5qTjJLUGFqUlRYOWJJejloVXQyRmdHZElGcFZwSWl1R0h3QUsyOFVVVXRjRC1HWU9aNEhpUXpzWlpsY01NWjZSbjlXTXAzRTdPUk1sc3pmZTNtdTQ0QlBFNEFDRUFyaWRsWDBIOWpWanpRY1VnZnVITFZYSU1yS2F5RmVZRmxNWlhFSE5QTDRES3lMU2ZyQ3daRGVfME5uRE42OXQxOTU4TlJCR09mSnViU3dIWDJvcTNWeG1JUmhwcE5nZWljeC0xVkxtelQ0U0lfNzNYSE4zTlFlay1KMGs4MXAtVFN5ekJvdWx6NUZJNDlQNUxKNnZaY2JrcE1nZnhHNmQwWm5PVThzWGlEXzhjMDNXbVhFaURTYmcyVGlsYmZQbldkQi03eFFCVEZQS01xUG5FSUtlbTNPRw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-18T04:13:19.245Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-18T04:15:13.112Z",
-      "canonicalUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "pagePublishedAt": "2026-09-09T10:55:37.000Z",
-      "originalTextArabic": "مع اقتراب موعد الانسحاب الأمريكي من العراق، تجد بغداد نفسها أمام اختبار صعب يتعلق بقدرتها على حماية أجوائها بقدراتها الذاتية، في وقت تسعى فيه إلى اختصار خطة استكمال..",
-      "sourceHost": "arabi21.com",
-      "contentChars": 166,
-      "arabicRatio": 1.0109,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-18T04:16:37.979Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-        "sourceChars": 166,
-        "translatedChars": 108,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-17T08:49:24.620Z",
-        "titleKo": "미군 철수 시한이 다가오면서 어려운 시험에 직면한 이라크",
-        "fullTextKo": "이라크에서 미군 철수 시한이 다가오면서 바그다드는 자국의 자체 역량으로 영공을 보호할 수 있는 능력과 관련된 어려운 시험에 직면해 있다. 이와 동시에 바그다드는 완성 계획을 단축하려 하고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-18T04:17:38.871Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "0a8fceed7cd6cbfac019",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-RfZehZVskYNwZduzWD",
-        "representativeArticleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-      "contentCheckedAt": "2026-09-18T04:16:37.979Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -41134,9 +40703,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -41712,9 +41281,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -45010,9 +44579,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -46161,9 +45730,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -46979,9 +46548,9 @@
       "contentCheckedAt": "2026-09-18T04:16:46.332Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -47415,9 +46984,9 @@
       "contentCheckedAt": "2026-09-18T04:16:47.545Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -48937,14 +48506,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 393,
-    "retained": 393,
+    "before": 342,
+    "retained": 342,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 315,
+    "groupCount": 312,
     "duplicateGroupCount": 19,
     "duplicateArticleCount": 27,
     "maxHours": 72,
