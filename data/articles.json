@@ -1,14 +1,14 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-21T09:01:46.984Z",
+  "generatedAt": "2026-09-21T10:56:28.006Z",
   "lookbackDays": 14,
-  "count": 364,
+  "count": 360,
   "categoryCounts": {
     "international": 22,
-    "politics": 193,
+    "politics": 190,
     "economy": 75,
     "bismayah": 10,
-    "security": 64
+    "security": 63
   },
   "collectionRun": {
     "discoveredCount": 449,
@@ -405,9 +405,9 @@
       "contentCheckedAt": "2026-09-21T08:58:16.990Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -833,9 +833,9 @@
       "contentCheckedAt": "2026-09-21T08:58:18.064Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -974,9 +974,9 @@
       "contentCheckedAt": "2026-09-21T08:58:19.885Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1118,9 +1118,9 @@
       "contentCheckedAt": "2026-09-21T08:58:18.397Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1404,9 +1404,9 @@
       "contentCheckedAt": "2026-09-21T08:58:18.787Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1684,9 +1684,9 @@
       "contentCheckedAt": "2026-09-21T08:58:19.360Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1721,151 +1721,6 @@
         "scoreFingerprint": "dda357b00b1a4afe6cdb",
         "ruleScore": 15,
         "category": "economy",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-wJtteOLL3QOALCCGl99O42x3",
-      "keywordId": "international-gulf-001",
-      "category": "politics",
-      "priority": 93,
-      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "الخليج",
-        "الملاحة",
-        "تصدير النفط",
-        "ناقلات",
-        "توتر إقليمي"
-      ],
-      "excludedTerms": [
-        "سياحة",
-        "طقس"
-      ],
-      "originalTitleArabic": "شفق نيوز..فقط 12 سفينة.. تباطؤ حركة عبور هرمز مع استمرار التوترات",
-      "sourceArabic": "شفق نيوز",
-      "sourceHomepage": "https://shafaq.com",
-      "publishedAt": "2026-09-21T04:28:08.000Z",
-      "descriptionArabic": "فقط 12 سفينة.. تباطؤ حركة عبور هرمز مع استمرار التوترات شفق نيوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiygNBVV95cUxPWWg3anB5Y0MxeFZyaEx2MnBMdTllcm9xNllrVU9JSU5pRElpTU15Slh5Z0cxdW5pRzlkdnA2dXV0VEpYZVpuOW5JMTRpM3U2VGN4a0Y2cndGckVkNVBNbjdXSXExRkVXNmw1bVFkMmNndGI2YnF1bTBYVURXeGc3QTZnY0NKU1ItSDk2RkJZblFJZHdKTS00X1A0YU5hdmZNUDdIVm9va3hRdjh2ZmZBU0RxTklJVE56dFlsdzBsNG0yckl3Vkt0WXJrSDFDenhvRG9aMXBuV2YtTWRweGxpTEVIZDl2QTkzVF9ZMHRubzY3TGpkeHBQek1tTkdQOXQxb2tSLWlNOGJTRzVER19acm4zeUhuRUlXSkR2ekR5ZnpUeTlranl5YWVZLWZDUFJCSFRSQTNVU3lyRWxzSmExVUt5NHZ0TDYxbl9OM3BMLUw2RkR6cEhOTUY5aTI3NnJQY3V6cEstZHFzSVRnTENER0xTeklKZENiX3MxLUU5cUlhRjlPb0VXNWVmeGY5MFhtUFRaek42YjhLVlJpc25DeTdlYkNSdzNLbUZPUlJjWFFHendkWnBsMmhkNXJia0gwOHFhOTBwYVVpZw?oc=5",
-      "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D9%81%D9%82%D8%B7-12-%D8%B3%D9%81%D9%8A%D9%86%D8%A9-%D8%AA%D8%A8%D8%A7%D8%B7-%D8%AD%D8%B1%D9%83%D8%A9-%D8%B9%D8%A8%D9%88%D8%B1-%D9%87%D8%B1%D9%85%D8%B2-%D9%85%D8%B9-%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%88%D8%AA%D8%B1%D8%A7%D8%AA",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-21T08:55:37.420Z",
-      "urlRecoveryMethod": "source-sitemap",
-      "recoveredSourceId": "shafaq",
-      "titleSimilarity": 1,
-      "recoveredAt": "2026-09-21T08:55:48.115Z",
-      "urlResolutionMethod": "source-sitemap",
-      "resolvedAt": "2026-09-21T08:55:53.463Z",
-      "canonicalUrl": "https://shafaq.com/ar/%D8%A7%D9%82%D8%AA%D8%B5%D9%80%D8%A7%D8%AF/%D9%81%D9%82%D8%B7-12-%D8%B3%D9%81%D9%8A%D9%86%D8%A9-%D8%AA%D8%A8%D8%A7%D8%B7-%D8%AD%D8%B1%D9%83%D8%A9-%D8%B9%D8%A8%D9%88%D8%B1-%D9%87%D8%B1%D9%85%D8%B2-%D9%85%D8%B9-%D8%A7%D8%B3%D8%AA%D9%85%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%88%D8%AA%D8%B1%D8%A7%D8%AA",
-      "pagePublishedAt": "2026-09-21T04:28:08.000Z",
-      "originalTextArabic": "رئيس إقليم كوردستان: لا قوة خارج مظلة البيشمركة بعد الآن\n\nمسرور بارزاني: توحيد البيشمركة يوم تاريخي لكوردستان\n\nخلال تموز.. تراجع إجمالي الودائع والائتمان النقدي في المصارف العراقية\n\nبإشراف نيجيرفان بارزاني.. انطلاق مراسم إعلان توحيد قوات البيشمركة\n\nفقط 12 سفينة.. تباطؤ حركة عبور هرمز مع استمرار التوترات\n\nشفق نيوز- الخليج\n\nأظهرت بيانات شحن، يوم الاثنين، أن 12 سفينة سلع أولية عبرت مضيق هرمز مطلع الأسبوع، منخفضة من 35 سفينة مطلع الأسبوع السابق، في ظل استمرار التوتر في الخليج مع بقاء الوضع بين أميركا وإيران في حالة جمود.\n\nوتضاءلت حركة الملاحة المرئية عبر المضيق، الذي كان ممراً لخُمس إمدادات العالم من النفط والغاز الطبيعي المسال قبل الحرب، إلى مستويات محدودة للغاية، لكن منتجين من الشرق الأوسط يواصلون تصدير النفط على ناقلات تعبر وهي تغلق أجهزة الإرسال والاستقبال.\n\nوأظهرت بيانات أولية من شركة \"كبلر\" للتحليلات أن 4 سفن يمكن تتبعها، منها ناقلتان تحملان منتجات نفطية مكررة وناقلتان فارغتان للسلع السائبة والغاز، غادرت المضيق يوم الأحد، بينما دخلت ناقلتا نفط صغيرتان الخليج.\n\nوأظهرت البيانات أن 5 سفن غادرت الخليج، يوم السبت، محملة بمنتجات زراعية وغاز بترول مسال وأسمدة، بينما دخلت ناقلة غاز عملاقة فارغة، وفق \"رويترز\".\n\nوقبل بدء الحرب الأميركية الإسرائيلية مع إيران في 28 فبراير شباط، كان المضيق تمر منه عادة نحو 125 سفينة تجارية كبيرة يوميا، تشمل ناقلات النفط وناقلات الغاز وسفن البضائع السائبة وسفن الحاويات.",
-      "sourceHost": "shafaq.com",
-      "contentChars": 1312,
-      "arabicRatio": 1.0027,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-21T08:58:18.633Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ef7e7e9083de39d51589870af6ba618f94f075dc724a54081a6e4df484776479",
-        "sourceChars": 1312,
-        "translatedChars": 781,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "61b14a7a4a343ab33be8",
-        "preferredTermsApplied": [
-          "페쉬메르가",
-          "호르무즈 해협"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-21T09:01:31.612Z",
-        "titleKo": "샤فق뉴스… 단 12척… 긴장 지속 속 호르무즈 해협 통과 운항 둔화",
-        "fullTextKo": "쿠르드ستان 지역 대통령: 이제 페쉬메르가의 지휘 체계 밖에는 어떤 병력도 없다\n\n마스루르 바르자니: 페쉬메르가 통합은 쿠르드ستان의 역사적인 날\n\n7월 중… 이라크 은행들의 총예금과 현금 신용 감소\n\n네치르반 바르자니의 감독 아래… 페쉬메르가 통합 선포식 시작\n\n단 12척… 긴장 지속 속 호르무즈 해협 통과 운항 둔화\n\n샤파크뉴스 - 걸프\n\n월요일 발표된 선박 운항 자료에 따르면, 주 초 호르무즈 해협을 통과한 원자재 운반 선박은 12척으로, 전주 초의 35척에서 감소했다. 걸프 지역의 긴장이 계속되는 가운데 미국과 이란 간 상황이 교착 상태에 머물러 있는 데 따른 것이다.\n\n전쟁 전 세계 석유와 액화천연가스 공급량의 5분의 1이 통과하던 이 해협을 통과하는 가시적인 선박 운항은 매우 제한적인 수준으로 줄어들었다. 그러나 중동의 생산업체들은 송수신 장치를 끈 채 항해하는 유조선을 통해 계속 석유를 수출하고 있다.\n\n분석업체 켑러의 초기 자료에 따르면, 일요일에는 추적이 가능한 선박 4척이 해협을 떠났다. 이 가운데 2척은 정제 석유 제품을 운반하는 선박이었고, 2척은 벌크 화물과 가스를 운반할 빈 선박이었다. 한편 소형 유조선 2척은 걸프 해역에 들어왔다.\n\n로이터에 따르면, 자료상 토요일에는 농산물과 액화석유가스, 비료를 실은 선박 5척이 걸프 해역을 떠났고, 빈 대형 가스 운반선 1척이 들어왔다.\n\n2월 28일 미국과 이스라엘의 대이란 전쟁이 시작되기 전에는 유조선과 가스 운반선, 벌크선, 컨테이너선을 포함해 통상 하루 약 125척의 대형 상선이 이 해협을 통과했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "ef7e7e9083de39d51589870af6ba618f94f075dc724a54081a6e4df484776479",
-      "contentCheckedAt": "2026-09-21T08:58:18.633Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-JPfkVea5P6-veNyzST",
-        "representativeArticleId": "discovery-wJtteOLL3QOALCCGl99O42x3",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 16,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-21T09:00:03.141Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "5ff52163412816b66419",
-        "ruleScore": 16,
-        "category": "politics",
         "categoryFloor": 0,
         "categoryFloorRule": "NONE",
         "categoryFloorReasonKo": "",
@@ -3161,9 +3016,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -4155,9 +4010,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -5536,9 +5391,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -6383,9 +6238,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8584,152 +8439,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-WNOc6SEiproP9cLu66yaqHfp",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "مسؤول أمريكي يؤكد اكتمال الانسحاب من العراق نهاية الشهر",
-      "sourceArabic": "kalimaiq.com",
-      "sourceHomepage": "https://kalimaiq.com",
-      "publishedAt": "2026-09-18T15:54:57.000Z",
-      "descriptionArabic": "مسؤول أمريكي يؤكد اكتمال الانسحاب من العراق نهاية الشهر kalimaiq.com",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE14cHliak9TbXdUWDdoZnY1OFo0TkRINVNlSmppWlJsNXRnZUNJV0JYY2JGOUsxb2RXQWx3Vl93Qmo5amhCSXJKWXBQWUp2NW9t?oc=5",
-      "articleUrl": "https://kalimaiq.com/news/details/70366",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-21T08:55:37.036Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-21T08:56:37.030Z",
-      "canonicalUrl": "https://kalimaiq.com/news/details/70366",
-      "pagePublishedAt": "",
-      "originalTextArabic": "كلمة.. موقع إخباري تحليلي، أنشئ من قبل مجموعة من الناشطين والصحفيين.\n\nمثقفون وصحفيون ما تزال قلوبهم وعقولهم مشغولةٌ بهموم وطن أولى الحضارات ومهد النبوءات... العراق.",
-      "sourceHost": "kalimaiq.com",
-      "contentChars": 164,
-      "arabicRatio": 1.0148,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-21T08:58:40.375Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "639368c180b18a5c3e42848ae31201c6dd8ae8a3df8f714ecf7c331dbec5abe1",
-        "sourceChars": 164,
-        "translatedChars": 101,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-18T23:18:34.724Z",
-        "titleKo": "미국 관리, 이달 말 이라크 철수 완료 확인",
-        "fullTextKo": "칼리마... 활동가와 기자들로 구성된 단체가 만든 분석 뉴스 사이트입니다.\n\n최초 문명과 예언의 요람인 조국 이라크의 걱정으로 여전히 마음과 생각이 사로잡혀 있는 지식인들과 기자들."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "titleCorrection": {
-        "previousTitleArabic": "البحث",
-        "correctedTitleArabic": "مسؤول أمريكي يؤكد اكتمال الانسحاب من العراق نهاية الشهر",
-        "method": "OG_TITLE",
-        "correctedAt": "2026-09-21T08:59:18.596Z"
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-21T09:00:03.141Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "7d1b789c3e4c71fb8e59",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-e9zyc05ZddgbMfZheC",
-        "representativeArticleId": "discovery-WNOc6SEiproP9cLu66yaqHfp",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "639368c180b18a5c3e42848ae31201c6dd8ae8a3df8f714ecf7c331dbec5abe1",
-      "contentCheckedAt": "2026-09-21T08:58:40.375Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -12826,9 +12535,9 @@
       "contentCheckedAt": "2026-09-21T08:58:48.443Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -16294,9 +16003,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -18878,152 +18587,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-EBnfrQTYSSqszYvSGpky7qbm",
-      "keywordId": "international-hormuz-001",
-      "category": "security",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "مباحثات عراقية–فرنسية: اعتماد خارطة طريق للتسليح وتأكيد على أمن الملاحة وحصر السلاح",
-      "sourceArabic": "Kurdistan24",
-      "sourceHomepage": "https://www.kurdistan24.net",
-      "publishedAt": "2026-09-14T15:52:00.000Z",
-      "descriptionArabic": "مباحثات عراقية–فرنسية: اعتماد خارطة طريق للتسليح وتأكيد على أمن الملاحة وحصر السلاح Kurdistan24",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMilgVBVV95cUxNSGdrZC01U2NqV2JTZ19aOWJzY2l5N2M3cnkxMzNKcmNHLVpSM001b194OGNnTjFTaVc3ZV9TWmJpQkQxOGJvV093ejI3RE1EdWdYZ1ZCZGlzdXA5LTdlME16amxkTk5uNDh1bmJSYVdnY3Q2ZW1kdFBneGF6a3czQ1ZFY1JpU3IyVG9zaUZVQ0Rqc2ZvZ0Nac0tVWUNWQ19Rd1RrRlpSc0libGdWLVNpSWVfSzdiTzBvazJYR3ZJS1l4bXhBc1duU3FNanNpSTZnRkE2ellSLWdYN3BtOWw5aDlsVWg5dHpycWpfSUd1VWl1MXpNMUZxeFoyWnNqTlEwa1VULVJ4OUFScXE0VDctekNIS1l1M1NNcnZJTWtRSEZ1amtqdU44ZnVZUmYySERGNVJMTnZhQlRZRUwwSkM3YTdaYnp3cFA0VUdLSkotd0VaYlloTEJ1cVowM083Y2VRZXZjYmxYbTJ2WWplZGVEMHRNY0JYMXNHOHN3M3NWN1JkdXFIaEFycjI3eVR4QkRWN0lJTWdlWnlzT2x6YjEtaElZeFRaZXhXWk9lZGU5RlZOOVRnVnZnRUZWNm04OGFsaFp0UDZFX0x4YzBlS1lPR3ZSLUNKMzlHV0kwcVkzNTd4NTJrdUpOVHgtcGFzb2IweVpWZWFRYUdPblJWT3FGclJLcUF4RUhwQU4wMjlFRDVGRGZ6REoydE4tU1hWRGJkY1lkNDNmT3B0LURwbUFLamc1cFJ5QnV3Sk9lTnVVVGl5dklsMGpxd245N3EwaG9xbllEM184X2lCOTZXM2N0OUF2R2xfTFFYMWo2enN3Q1ZlTG5UMUt2cllyUmxiQlQwbGt1UmJrRzZJUHR5eDc3c1ZvSWtxdw?oc=5",
-      "articleUrl": "https://www.kurdistan24.net/ar/story/939403/%D9%85%D8%A8%D8%A7%D8%AD%D8%AB%D8%A7%D8%AA-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9%D9%81%D8%B1%D9%86%D8%B3%D9%8A%D8%A9-%D8%A7%D8%B9%D8%AA%D9%85%D8%A7%D8%AF-%D8%AE%D8%A7%D8%B1%D8%B7%D8%A9-%D8%B7%D8%B1%D9%8A%D9%82-%D9%84%D9%84%D8%AA%D8%B3%D9%84%D9%8A%D8%AD-%D9%88%D8%AA%D8%A3%D9%83%D9%8A%D8%AF-%D8%B9%D9%84%D9%89-%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%88%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-21T08:55:37.426Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-21T08:57:10.173Z",
-      "canonicalUrl": "https://www.kurdistan24.net/ar/story/939403",
-      "pagePublishedAt": "",
-      "originalTextArabic": "أربيل (كوردستان 24)- اتفق رئيس الوزراء الاتحادي علي فالح الزيدي والرئيس الفرنسي إيمانويل ماكرون، اليوم الاثنين 14 أيلول/سبتمبر 2026، على اعتماد خارطة طريق استراتيجية لتسليح القوات المسلحة العراقية، وأكدا التزامهما المشترك بأمن الملاحة في مضيق هرمز وخفض حدة التوترات الإقليمية.\n\nوشهدت المباحثات، التي عُقدت في باريس، التوافق على رؤية مشتركة لتعزيز الأمن والاستقرار في الشرق الأوسط استناداً إلى احترام السيادة الوطنية وعدم التدخل في الشؤون الداخلية وحسن الجوار، إلى جانب تأكيد الإسهام الحيوي لـ \"مؤتمر بغداد للتعاون والشراكة\". وأشاد ماكرون بنهج العراق القائم على التوازن الإقليمي وبناء الجسور، وبجهود الحكومة الاتحادية في حصر السلاح بيد الدولة.\n\nوفي ملف التعاون الدفاعي، اتفق الجانبان على تعزيز الشراكة العسكرية من خلال دعم المباحثات بين وزارة الدفاع الاتحادية والشركات الفرنسية لتزويد بغداد بمنظومات مدفعية، وأنظمة دفاع جوي ومراقبة، ووسائل دفاع أثناء التنقل الجوي، ومعدات مكافحة الطائرات المسيّرة (C-UAS). وجدد رئيس الوزراء الاتحادي التزام الحكومة بمواصلة التحقيقات وإحالة المتورطين في استهداف القوات الفرنسية في 11 آذار/مارس الماضي إلى العدالة، مشيراً إلى أن أهمية التعاون الدفاعي مع الشركاء تتصاعد مع قرب انتهاء مهمة التحالف الدولي في 30 أيلول/سبتمبر الجاري.\n\nوعلى الصعيد الداخلي والأمني، شدد الزيدي على أن وضع الأسلحة تحت سيطرة الدولة ليس موجهاً ضد أي طرف، بل يمثل شرطاً جوهرياً لبناء دولة موحدة وإنهاء أي مراكز متنافسة للقوة وصنع القرار، مؤكداً عدم السماح بأن تتحول الأراضي العراقية إلى منطلق لتهديد دول الجوار أو ساحة لتصفية الحسابات. كما اتفق الطرفان على دعم برامج مكافحة الفساد، ورحبا بافتتاح المركز الطبي الفرنسي في قضاء سنجار.\n\nوتطرقت المحادثات إلى ملفات الطاقة والتكامل الاقتصادي؛ حيث حذر رئيس الوزراء الاتحادي من أن أزمة مضيق هرمز أثرت بصورة مباشرة في صادرات النفط العراقية وحركة التجارة وموارد الدولة، مجدداً مع الرئيس الفرنسي التمسك بالأمن البحري وحرية الملاحة. ولفت الزيدي إلى الأهمية الاستراتيجية لـ \"مشروع طريق التنمية\" الذي يمتد لأكثر من 1900 كيلومتر لربط الخليج بأوروبا، بما يعزز موقع العراق كممر رئيسي للتجارة وسلاسل الإمداد العالمية. المصدر: واع\n\nآخر الأخبار\n\nمسرور بارزاني يعزّي محمد بن راشد وشعب الإمارات بوفاة الشيخ أحمد بن راشد آل مكتوم\n\nنيجيرفان بارزاني: رؤية الرئيس بارزاني كانت الحجر الأساس لإصلاح وتوحيد البيشمركة\n\nرئيس حكومة إقليم كوردستان يعلن رسمياً اكتمال توحيد قوات البيشمركة\n\nشورش إسماعيل: توحيد قوات البيشمركة يمثل إنجازاً كبيراً\n\nانطلاق مراسم التوحيد الكامل لقوات البيشمركة في أربيل\n\nمقالة ذات صلة\n\nمحكمة السليمانية تؤجل محاكمة لاهور شيخ جنكي وموقوفي \"لاله زار\" إلى مطلع الشهر المقبل\n\nترامب يلتقي ماكرون الإثنين في نيويورك\n\nمجلس النواب العراقي يتجه لاستجواب وزير النفط إثر تفاقم أزمة الوقود في البلاد\n\nصلاح بكر\n\nكاتب\n\nالدوائر الانتخابية في العراق... قراءة دستورية",
-      "sourceHost": "kurdistan24.net",
-      "contentChars": 2598,
-      "arabicRatio": 1.0055,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-21T08:58:55.514Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ff84bcc45cbb936b6900e50138ce4248bf2978d4978c3163cfffc7ad07134e2e",
-        "sourceChars": 2598,
-        "translatedChars": 1487,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f199eaa8a3be358ddf0e",
-        "preferredTermsApplied": [
-          "국제연합군",
-          "페쉬메르가",
-          "술라이마니야",
-          "호르무즈 해협",
-          "바그다드",
-          "아르빌"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-21T09:00:55.825Z",
-        "titleKo": "이라크와 프랑스의 협상: 무장 장비 조달 로드맵 채택과 항행 안전 및 무기 국가 독점 재확인",
-        "fullTextKo": "아르빌 쿠르디스탄 24 - 연방 총리 알리 팔레흐 알자이디와 프랑스 대통령 에마뉘엘 마크롱은 오늘 월요일인 2026년 9월 14일, 이라크군 무장 장비 조달을 위한 전략적 로드맵을 채택하기로 합의하고, 호르무즈 해협의 항행 안전과 역내 긴장 완화에 대한 공동의 약속을 확인했다.\n\n파리에서 열린 협상에서는 국가 주권 존중, 내정 불간섭, 선린 관계를 토대로 중동의 안보와 안정을 강화하기 위한 공동 비전에 합의했으며, 바그다드 협력 및 동반자 관계 회의의 핵심적 기여도 재확인했다. 마크롱 대통령은 역내 균형과 가교 구축에 기반한 이라크의 접근 방식과, 국가가 무기를 독점하도록 하기 위한 연방정부의 노력을 높이 평가했다.\n\n국방 협력과 관련해 양측은 연방 국방부와 프랑스 기업 간 협상을 지원해 바그다드에 포병 체계, 방공 및 감시 체계, 공중 이동 중 방어 수단, 무인항공기 대응 장비를 공급하는 방식으로 군사적 동반자 관계를 강화하기로 합의했다. 연방 총리는 지난 3월 11일 프랑스군을 겨냥한 공격에 연루된 이들을 계속 수사하고 사법 처리하겠다는 정부의 약속을 재확인했다. 그러면서 국제연합군의 임무가 오는 9월 30일 종료되는 시점이 다가오면서 동반국들과의 국방 협력이 중요성이 커지고 있다고 밝혔다.\n\n국내 및 안보 분야에서 알자이디 총리는 무기를 국가의 통제 아래 두는 것은 어느 한쪽을 겨냥한 것이 아니라 통합 국가를 건설하고 경쟁하는 여러 권력 및 의사결정 중심을 종식하기 위한 본질적 조건이라고 강조했다. 또한 이라크 영토가 인접국을 위협하기 위한 출발점이나 보복을 위한 장으로 변하는 것을 허용하지 않겠다고 확인했다. 양측은 부패 척결 프로그램을 지원하기로 합의했으며, 신자르 지역에 프랑스 의료센터가 개원한 것을 환영했다.\n\n협상에서는 에너지와 경제 통합 현안도 다뤄졌다. 연방 총리는 호르무즈 해협 위기가 이라크의 석유 수출과 무역 흐름, 국가 수입에 직접적인 영향을 미쳤다고 경고했으며, 프랑스 대통령과 함께 해상 안전과 항행의 자유를 고수한다는 입장을 재확인했다. 알자이디 총리는 걸프와 유럽을 연결하기 위해 1900킬로미터 이상 이어지는 개발 도로 프로젝트의 전략적 중요성을 강조했다. 이는 세계 무역과 공급망의 주요 통로로서 이라크의 입지를 강화할 것이다. 출처: 와아\n\n최신 뉴스\n\n마스루르 바르자니, 셰이크 아흐마드 빈 라시드 알막툼의 사망에 대해 무함마드 빈 라시드와 아랍에미리트 국민에게 조의\n\n네치르반 바르자니: 바르자니 대통령의 비전은 페쉬메르가를 개혁하고 통합하기 위한 초석이었다\n\n쿠르디스탄 지역정부 수반, 페쉬메르가 통합 완료를 공식 발표\n\n쇼레시 이스마일: 페쉬메르가 통합은 큰 성과\n\n아르빌에서 페쉬메르가 완전 통합 기념식 시작\n\n관련 기사\n\n술라이마니야 법원, 라후르 셰이크 잔키와 라라자르 구금자들의 재판을 다음 달 초로 연기\n\n트럼프, 월요일 뉴욕에서 마크롱과 회동\n\n이라크 의회, 국내 연료 위기 악화에 따라 석유부 장관을 소환 조사할 전망\n\n살라흐 바크르\n\n기자\n\n이라크의 선거구... 헌법적 고찰"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": "",
-        "resetReason": "SOURCE_CONTENT_CHANGED"
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "ff84bcc45cbb936b6900e50138ce4248bf2978d4978c3163cfffc7ad07134e2e",
-      "previousContentHash": "2c43e64bcf85317be967ae4f985a3c10513e7a43fe38595c6dbc9ef992932aef",
-      "contentCheckedAt": "2026-09-21T08:58:55.514Z",
-      "contentChanged": true,
-      "processingReused": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-Lur0hmbDAXfZWviA_m",
-        "representativeArticleId": "discovery-EBnfrQTYSSqszYvSGpky7qbm",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 49,
-        "stars": 2.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-21T09:00:03.141Z",
-        "breakdown": {
-          "incidentDirectness": 8,
-          "location": 25,
-          "incidentScale": 3,
-          "siteSafety": 5,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "da9530a6091e6fe10260",
-        "ruleScore": 49,
-        "category": "security",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-DvZdn_HuyfgxaGhz7RXXmb0L",
       "keywordId": "security-ied-001",
       "category": "security",
@@ -19678,9 +19241,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -25119,9 +24682,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -37244,9 +36807,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -37949,9 +37512,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -44100,148 +43663,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-09T10:55:37.000Z",
-      "descriptionArabic": "اختبار صعب يواجه العراق مع اقتراب موعد الانسحاب الأمريكي عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1ANBVV95cUxQRG9sV2g2Mkg4bUFvRHkwaVFmNFNxb3h1WWRFWlNlRVZKODh4Y24teU5hR000SjloMkpqeGtDR04tSnpoMzhaMFdHYU00b1lPMWJ3MldqNXR6dGZrNVBDazhPWDhjVDZHY1VnbnlaYVhPS0xZdVZoWVRUanlpUUl0V0pNV09iY0lTZTlteFRqdzdFcGt5dlVYSW9FQy0zdm9zOHQyUFd4cEowQ3FjdGdyRTI1ZmVrd0swWmNNWThIOGFKaVpyeUVBSzJocldFSkRpQW1ONUdrQnBINkdRaFFlTTE2YkhOMk9icE1hS2xkVFhlUER1THdrSjZMdzlnaHYtSkxtV2xqSWYtSlhMT0NLbmtOeUlwektnUlVvMm9wdFNoMXBuTm5DXzRQUGdaZ2dkbnZwTXlad05LRVUzLTFtdTRuRG1vRlJ3aG1Xc0RoeU5YUkR4SzJ0ZVRna21oQUtjQjl1dkNqN0FjcHF6a3laZEpra0RVaXBQOWFqUnFhTFA4ZUZldGlUVnJYSHFpaVd3UVo3UlEtV2hNWGNlZkdraDl1X3E5OXpqRVlRbnRWRS11ZzdKNi1BUTdLbTU5TWQxWU5EcEZPRjZfZFZPSi1vVE5KbWzSAdgDQVVfeXFMTWhCV0JFYlB2Z1IyVWJmR0VicHhSeUlvVXRkOUZkaDREczdNMmp1TmJXTWplQ2s0VlVzSEpJN1FrVlhRU2pKSHpDZmRETHhKTHRGektGSWZ6SGUtMDFtYkJxMXEzTksyRHVjdkVjRXp1QWxhRmw5ajNlNmpiV00xTTJtdXZRQzl0S2M0d21Jcmw4UThQOFcyOHZwR1VvY09OOEl0bk5qTjJLUGFqUlRYOWJJejloVXQyRmdHZElGcFZwSWl1R0h3QUsyOFVVVXRjRC1HWU9aNEhpUXpzWlpsY01NWjZSbjlXTXAzRTdPUk1sc3pmZTNtdTQ0QlBFNEFDRUFyaWRsWDBIOWpWanpRY1VnZnVITFZYSU1yS2F5RmVZRmxNWlhFSE5QTDRES3lMU2ZyQ3daRGVfME5uRE42OXQxOTU4TlJCR09mSnViU3dIWDJvcTNWeG1JUmhwcE5nZWljeC0xVkxtelQ0U0lfNzNYSE4zTlFlay1KMGs4MXAtVFN5ekJvdWx6NUZJNDlQNUxKNnZaY2JrcE1nZnhHNmQwWm5PVThzWGlEXzhjMDNXbVhFaURTYmcyVGlsYmZQbldkQi03eFFCVEZQS01xUG5FSUtlbTNPRw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-21T08:55:37.035Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-21T08:57:59.982Z",
-      "canonicalUrl": "https://arabi21.com/story/1787574/%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%B5%D8%B9%D8%A8-%D9%8A%D9%88%D8%A7%D8%AC%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%85%D8%B9-%D8%A7%D9%82%D8%AA%D8%B1%D8%A7%D8%A8-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A",
-      "pagePublishedAt": "2026-09-09T10:55:37.000Z",
-      "originalTextArabic": "مع اقتراب موعد الانسحاب الأمريكي من العراق، تجد بغداد نفسها أمام اختبار صعب يتعلق بقدرتها على حماية أجوائها بقدراتها الذاتية، في وقت تسعى فيه إلى اختصار خطة استكمال..",
-      "sourceHost": "arabi21.com",
-      "contentChars": 166,
-      "arabicRatio": 1.0109,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-21T08:59:13.246Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-        "sourceChars": 166,
-        "translatedChars": 108,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-17T08:49:24.620Z",
-        "titleKo": "미군 철수 시한이 다가오면서 어려운 시험에 직면한 이라크",
-        "fullTextKo": "이라크에서 미군 철수 시한이 다가오면서 바그다드는 자국의 자체 역량으로 영공을 보호할 수 있는 능력과 관련된 어려운 시험에 직면해 있다. 이와 동시에 바그다드는 완성 계획을 단축하려 하고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-21T09:00:03.141Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "0a8fceed7cd6cbfac019",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-RfZehZVskYNwZduzWD",
-        "representativeArticleId": "discovery-9qNqlEJ-stUI1F5Q9NHodolt",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "ca91fd9bc37d5542ad732f69fd0624c0e64a21c1f89a124dae1e5c76f6949753",
-      "contentCheckedAt": "2026-09-21T08:59:13.246Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -52030,14 +51451,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 400,
-    "retained": 400,
+    "before": 364,
+    "retained": 364,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 334,
+    "groupCount": 330,
     "duplicateGroupCount": 20,
     "duplicateArticleCount": 30,
     "maxHours": 72,
