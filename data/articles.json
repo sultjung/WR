@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-23T08:41:18.145Z",
+  "generatedAt": "2026-09-23T10:12:04.631Z",
   "lookbackDays": 14,
-  "count": 367,
+  "count": 365,
   "categoryCounts": {
     "economy": 72,
-    "politics": 198,
+    "politics": 196,
     "bismayah": 11,
     "security": 66,
     "international": 20
@@ -1437,9 +1437,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -1727,9 +1727,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -3302,9 +3302,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -4314,9 +4314,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -6902,146 +6902,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-kPTlxR25n1yZ5P2XGwHnLe7-",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "مقتدى الصدر يعلق على قرب انسحاب القوات الأمريكية.. مما حذر؟",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-21T11:46:41.000Z",
-      "descriptionArabic": "مقتدى الصدر يعلق على قرب انسحاب القوات الأمريكية.. مما حذر؟ عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMizgNBVV95cUxQNlB4c3BSaEE0eFZPN25CcG56U1d4c3poT1hDeUpZa2E2WGRQMEpGZTY5amtZSGhUX0pQOWNoLTRvTHh6SlYya2QzLUdDZm43Q3lOWjBrRGUxVFVHbUYzZi1lM1oyN1pxS2pzc0p5Wk9DVENGOHJHNVhENUxLWUQ5MW4yclBOeE9hd1UyQU1HdnpsYzhwQWR6MkZyTFRycTlZOFN4eTk4VHhIQUVERTNYYmthcmJMamJzbUQtaEtNdUJvWkJ2Zzh3LWF2MVZxZlk0dHF2UGc5YlRvOGVid3BYUnpXWFg1LWJ2S2NocUVVQ1NHcEltXzEweVFpc0I1WkdPT2djS3kzaWZPODJQeGlDY0JQWHI2amxkVDV3ZUxSdXJzelJCaTV4SWw1ZC1sZlEyeElHZWkyNnVRM05Qc2haRi1vUHpXenY0TGh6NHNYM0R6NEFHNHpIVVNnbEt0SXRDRjlKQmZVS3plSUVxV0w1WEU2dURTUGNidXRLMF9fdTFEWlU3aFRUMUtTNmoxVFVTT3B3M3NDWG9JUm5aTVItTVB0cnZuRV9hTXN5UnNGR2RDWHdhbmlOSUVza0NDTUZPNm1mQU5SeFEyRC1EN0HSAdIDQVVfeXFMT084dTdrRVBKSmZKZmxYUDg4cUhDQVNQRE5LSWpzVWJzTDRvY2g0MVhKcVNNTlZTUzU1c1FLWGpoMDVxMzNaUDhaZkxGUE9ELUtGY2dqanM2QkJGaEtSWDRwalBLeHpKS3RHbGxZTGhZbmVYVW5yaWJNd1Y5YjJIZ2M4ZkNONWduOERZeGNOcGFpclQ5eVhvRGNaaFJpanNNQjNlNzU1eHI3T0RYdGVvWjRLVFVKU3VTTHFmeDM5M0c1X2RsWWxBSU16VXNtcVp3Uk15STMtQThQRWNxTGxHSEpmYl85ZTJEOERZc3dZeFdFSWV1Y0I1MWlrZmotaEtqRGRLczBETW9uWGhQVmZraXBRY2JpbWxFbGptOVFhR0RBRGFZUVJGbFdHZlNpdnh5eWw0Q3oxZE14TXY1alo3NFA1SmpybVlhX0FIZHBQMmJUcWl4M2x1bWI3U3U5ZnI4VkhnLTE3all5d3oyc3ZtLTdHeTFKTTdhU19FU1dqcDdVM1RKTE05aTQ1RF80cmFkT0xkakdxamRTUnpYZkdvcnloc0dwNFlFRThBSU1wUEFhczlVVTVXUF9wTV9zTE9YbU56dVZDeFBBaDBvWFlUa0h0dw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1790222/%D9%85%D9%82%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%B5%D8%AF%D8%B1-%D9%8A%D8%B9%D9%84%D9%82-%D8%B9%D9%84%D9%89-%D9%82%D8%B1%D8%A8-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%85%D8%A7-%D8%AD%D8%B0%D8%B1",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-23T08:34:35.459Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-23T08:35:36.962Z",
-      "canonicalUrl": "https://arabi21.com/story/1790222/%D9%85%D9%82%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%B5%D8%AF%D8%B1-%D9%8A%D8%B9%D9%84%D9%82-%D8%B9%D9%84%D9%89-%D9%82%D8%B1%D8%A8-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%85%D8%A7-%D8%AD%D8%B0%D8%B1",
-      "pagePublishedAt": "2026-09-21T11:46:41.000Z",
-      "originalTextArabic": "اقترب العراق من موعد انتهاء المهمة العسكرية للتحالف الدولي، فيما دعا مقتدى الصدر إلى التعامل مع المرحلة المقبلة باعتبارها شأنًا عراقيًا خالصًا...",
-      "sourceHost": "arabi21.com",
-      "contentChars": 145,
-      "arabicRatio": 1.0305,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-23T08:37:51.690Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "f8819983d8167389539f6c5b73b1b9011cd1dee9223e6cf1616809364cd296ca",
-        "sourceChars": 145,
-        "translatedChars": 82,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-22T00:06:48.581Z",
-        "titleKo": "무크타다 알사드르, 미군 철수 임박에 대해 언급… 무엇을 경고했나?",
-        "fullTextKo": "이라크가 국제연합군의 군사 임무 종료 시점에 가까워진 가운데, 무크타다 알사드르는 앞으로의 국면을 순전히 이라크의 사안으로 다룰 것을 촉구했다..."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-23T08:39:17.049Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "2d71189ac483082c12e7",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-SmFcXkGW7dxEq6rbDf",
-        "representativeArticleId": "discovery-kPTlxR25n1yZ5P2XGwHnLe7-",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "f8819983d8167389539f6c5b73b1b9011cd1dee9223e6cf1616809364cd296ca",
-      "contentCheckedAt": "2026-09-23T08:37:51.690Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-hwya8aD19JYAWlwNNpdQ2R6i",
       "keywordId": "security-assassination-001",
       "category": "security",
@@ -7884,7 +7744,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -7978,9 +7838,9 @@
       "contentCheckedAt": "2026-09-23T08:37:51.285Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8031,143 +7891,6 @@
         "aiReportPriority": null,
         "aiReasonKo": "",
         "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-PvDJHnzftsA1CLw6vmnr-amI",
-      "keywordId": "international-syria-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "الحدود العراقية السورية داعش تسلل",
-      "requiredTerms": [
-        "الحدود العراقية السورية"
-      ],
-      "optionalTerms": [
-        "داعش",
-        "تسلل",
-        "قوات الحدود",
-        "مخيم الهول"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "صحيفة تكشف تحرّكات \"داعشية\" قرب الحدود العراقية - السورية",
-      "sourceArabic": "Alsumaria",
-      "sourceHomepage": "https://www.alsumaria.tv",
-      "publishedAt": "2026-09-21T09:28:30.000Z",
-      "descriptionArabic": "صحيفة تكشف تحرّكات \"داعشية\" قرب الحدود العراقية السورية |... Alsumaria",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMizgRBVV95cUxOQmNNOW1nTnlKc0JJWHpMWFFDYnBDYVhsRWtYSlo0bXFZRzF4cUVpclAzcmRvNVhSbUtfVTYyaWdRUklneTgtMXBQbjRVOHktN3p3QVdXS1I0LTZ6QVVsU2RORzRmUTdhWVhjWnhtWm5mVnJwWFh5bkZhME5FN2FOakJXQzdnV3M3TmZFRmJZbU9kTkREdHJIa0R2MHFvX3lMQ0JHdEtvb1d0Z0lBcUtYOUFBeV94NEVya2FkZVg3bDI0UHJEa3NXU21zS2VhbHZZQ2I2dmxOaUJQZ3Z3RGE0TnlOTmFiOWZ6SlhVcEVZSHlRUzVsZjZQM3oyQXJubGJTMGJWek1zWkRHMXFuelNldll1aUY3N2pQamhraUFHMnZYSDB3cmlGOFFVanhzbldTbHhtNF9QSmtLemU1YmRjOUp1UGVJaWNPSEw3T3FndmFSOUdQRVp6Z1hrYkQzeUFRRFptbGpGbm80dkhYNGdSUkhRUVRtcUhmWDhjamhocl95bFA4LVZpRllEaE81NTRCTmIyalk1cFljcXJFcGJ0T1dmbmdLOTl4QmR6U1VGUmwtVUpaVWFZRmxPaV92MGE0dlNiN3NHSmk3TUtvV250QnBlN21yUU9kbG9DYkVjS25vQlIyTThyTDRqRzRNRWNVT01LQW14TnVoMjRXYXhwazlpODBTcXU4QXM1dlpPaEc3MzFkamZVVzhnZGRTbUZPQjJ5LW9keEY2MEpQNy1ZUEVFeXJiZExVMHVacGN4eFBHQXloclhHLXdmY0F3QQ?oc=5",
-      "articleUrl": "https://www.alsumaria.tv/news/security/576594/%D8%B5%D8%AD%D9%8A%D9%81%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%AA%D8%AD%D8%B1%D9%91%D9%83%D8%A7%D8%AA-quot%D8%AF%D8%A7%D8%B9%D8%B4%D9%8A%D8%A9quot-%D9%82%D8%B1%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A%D8%A9?src%5C=rss%5C",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-23T08:34:35.708Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": 0.1051,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-23T08:35:31.045Z",
-      "canonicalUrl": "https://www.alsumaria.tv/news/security/576594/%D8%B5%D8%AD%D9%8A%D9%81%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%AA%D8%AD%D8%B1%D9%91%D9%83%D8%A7%D8%AA-%D8%AF%D8%A7%D8%B9%D8%B4%D9%8A%D8%A9-%D9%82%D8%B1%D8%A8-%D8%A7%D9%84%D8%AD%D8%AF%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D8%B1%D9%8A%D8%A9",
-      "pagePublishedAt": "2026-09-21T09:28:30.000Z",
-      "originalTextArabic": "السومرية نيوز – أمن كشفت صحيفة الاخبار اللبنانية، اليوم الاثنين، عن توفر معلومات لدى الأجهزة المختصّة العراقية، تشير إلى تحرّكات لخلايا مرتبطة بالتنظيم قرب الحدود العراقية - السورية، مع استمرار محاولات التسلّل ونقل الأفراد بين جانبَي الحدود، الأمر الذي يدفع القوات العراقية إلى رفع مستوى المراقبة والتمشيط في المناطق الرخوة.",
-      "sourceHost": "alsumaria.tv",
-      "contentChars": 324,
-      "arabicRatio": 1.0325,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-23T08:37:51.722Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "3eac943bf00b73cbf15475683b38b9c39ec76db79f456d0e080006c08c757141",
-        "sourceChars": 324,
-        "translatedChars": 185,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-22T00:06:49.189Z",
-        "titleKo": "신문, 이라크 시리아 국경 인근에서 이슬람국가 조직의 움직임 폭로",
-        "fullTextKo": "알수마리아 뉴스 - 안보\n레바논의 알아크바르 신문은 오늘 월요일, 이라크의 관계 기관들이 이라크 시리아 국경 인근에서 해당 조직과 연계된 세포들의 움직임을 보여주는 정보를 확보하고 있다고 폭로했다. 국경 양측 간 침투 시도와 인원 이동이 계속되고 있으며, 이로 인해 이라크군은 취약 지역에서 감시와 수색 활동의 수준을 높이고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-23T08:39:17.049Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "08882c41dc4409bdb947",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-S-lpIXZtn3WPJ531Bs",
-        "representativeArticleId": "discovery-PvDJHnzftsA1CLw6vmnr-amI",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "3eac943bf00b73cbf15475683b38b9c39ec76db79f456d0e080006c08c757141",
-      "contentCheckedAt": "2026-09-23T08:37:51.722Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -8447,9 +8170,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -8984,9 +8707,9 @@
       "contentCheckedAt": "2026-09-23T08:37:53.143Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -9267,9 +8990,9 @@
       "contentCheckedAt": "2026-09-23T08:37:53.599Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -9411,9 +9134,9 @@
       "contentCheckedAt": "2026-09-23T08:37:53.281Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -10994,9 +10717,9 @@
       "contentCheckedAt": "2026-09-23T08:37:56.009Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -12035,9 +11758,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -12840,9 +12563,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -13176,9 +12899,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -14553,9 +14276,9 @@
       "contentCheckedAt": "2026-09-23T08:38:02.522Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -25588,9 +25311,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -26594,9 +26317,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -36146,9 +35869,9 @@
       "contentCheckedAt": "2026-09-23T08:38:22.278Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -50706,9 +50429,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -52453,14 +52176,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 400,
-    "retained": 400,
+    "before": 367,
+    "retained": 367,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 338,
+    "groupCount": 336,
     "duplicateGroupCount": 20,
     "duplicateArticleCount": 29,
     "maxHours": 72,
