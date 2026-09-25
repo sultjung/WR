@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-09-25T08:57:18.183Z",
+  "generatedAt": "2026-09-25T10:22:48.855Z",
   "lookbackDays": 14,
-  "count": 376,
+  "count": 372,
   "categoryCounts": {
-    "politics": 202,
+    "politics": 198,
     "security": 69,
     "international": 23,
     "economy": 68,
@@ -36,153 +36,6 @@
     "prioritySeedFallbacksSkippedExisting": 0
   },
   "articles": [
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-Wu6qpCTOiGE_gM4QOBRK1oIs",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "انسحاب أمريكا من مطار بغداد يمهد لإنهاء مهمة التحالف",
-      "sourceArabic": "Attasiaa",
-      "sourceHomepage": "https://attasiaa.com",
-      "publishedAt": "2026-09-24T23:04:58.000Z",
-      "descriptionArabic": "انسحاب أمريكا من مطار بغداد يمهد لإنهاء مهمة التحالف الدولي Attasiaa",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOUzBObktXWnFISGpNSEMzRHYwSnZEQlZTWUhMbkRrUS12ZUlZMldMRGFuc1cyMU1aaHJ2dVZJS3JvUzZxRjJocEE3OS1HQVNJQWNNclJfVHRQTWZhTWNJWEcwSF92Q0JaX2lXRXB3OEpiZlEtV2JpN3JWWHJIanZ5c2FVcDQtZVM5YVhmZFlkU2tKbUFsWG40OFgtRWk4Q3lJX2Z2WWRkYi1XVkgyUGRlWkRoc0dlQ1JuM3RTMF9VYTl0N2poNFBvMWc0bHQyWEJMX1J0c0F2ZEF0MEdzOGhKQ3lsaURkM0VqNTdyaEpBYXkxMEVROWdN?oc=5",
-      "articleUrl": "https://attasiaa.com/%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D8%A7-%D9%85%D9%86-%D9%85%D8%B7%D8%A7%D8%B1-%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-25T08:48:45.031Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-25T08:49:02.682Z",
-      "canonicalUrl": "https://attasiaa.com/%d8%a7%d9%86%d8%b3%d8%ad%d8%a7%d8%a8-%d8%a3%d9%85%d8%b1%d9%8a%d9%83%d8%a7-%d9%85%d9%86-%d9%85%d8%b7%d8%a7%d8%b1-%d8%a8%d8%ba%d8%af%d8%a7%d8%af/",
-      "pagePublishedAt": "2026-09-24T23:04:58.000Z",
-      "originalTextArabic": "«جبروت» تنقل الحرب السيبرانية ضد المغرب إلى مرحلة أكثر تعقيداً تستهدف الثقة في المؤسسات\n\n31/08/2026",
-      "sourceHost": "attasiaa.com",
-      "contentChars": 99,
-      "arabicRatio": 0.9195,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-25T08:51:14.176Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "a070dbc16c544d349cd238fc2db11cf8e3ccf4fa5918fae56367483d29101227",
-        "sourceChars": 99,
-        "translatedChars": 70,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-25T08:57:15.990Z",
-        "titleKo": "미국의 바그다드 공항 철수가 국제연합 임무 종료의 길을 열다",
-        "fullTextKo": "‘지바루트’, 모로코를 상대로 한 사이버 전쟁을 더욱 복잡한 단계로 전환하며 기관에 대한 신뢰를 겨냥\n\n2026년 8월 31일"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "titleCorrection": {
-        "previousTitleArabic": "الرئيسية",
-        "correctedTitleArabic": "انسحاب أمريكا من مطار بغداد يمهد لإنهاء مهمة التحالف",
-        "method": "JSON_LD_HEADLINE",
-        "correctedAt": "2026-09-25T08:52:03.115Z"
-      },
-      "contentHash": "a070dbc16c544d349cd238fc2db11cf8e3ccf4fa5918fae56367483d29101227",
-      "contentCheckedAt": "2026-09-25T08:51:14.176Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-tg3ZTAB3CwXRcWH0zW",
-        "representativeArticleId": "discovery-Wu6qpCTOiGE_gM4QOBRK1oIs",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 4,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-25T08:52:51.961Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "eed84641293171c98f7c",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
     {
       "schemaVersion": "1.0",
       "articleId": "discovery-L3vnlFGCVjfuHaJdHpFNj_nt",
@@ -318,9 +171,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -457,7 +310,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "economy",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -1264,9 +1117,9 @@
       "contentCheckedAt": "2026-09-25T08:51:16.426Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1688,9 +1541,9 @@
       "contentCheckedAt": "2026-09-25T08:51:18.348Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -2452,9 +2305,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -2690,9 +2543,9 @@
       "contentCheckedAt": "2026-09-25T08:51:20.645Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -5034,9 +4887,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -5465,9 +5318,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -7723,152 +7576,11 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-3h5nx7Wny0lTveK9bjBeuY9q",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "الزيدي من واشنطن: خطة نزع السلاح ستُنفذ على مراحل",
-      "sourceArabic": "القدس العربي",
-      "sourceHomepage": "https://www.alquds.co.uk",
-      "publishedAt": "2026-09-22T15:48:30.000Z",
-      "descriptionArabic": "الزيدي من واشنطن: خطة نزع السلاح ستُنفذ على مراحل القدس العربي",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMixwJBVV95cUxPOXdzQ2Q4VzBmSFZqckd5ZUVROFdZTlpqekhzWHUzNHdESG1NVEJnMlN4STRkME9ZQXJtWE81U2J3TmdmdFcwNE1qRzVVMjEzWV9tdUNYeGwtYnduS2Y1bUdIMkdfOUhIM2xmOWpybXlWMzlQbk9qTGxhWUlET2twN2E4Z2I3SkpQVXM4TjlQSVVkaGNrSThqWm5GbThIcHBhTG5BOHl4cWFwakVUeUU2N2dJLWFsbGEzeTJUYnRXcEF0SXV2c2NsZEozc2RhbS1fV2VZTVdPMzFEY2xLWVdON3E5dzF6LTFBa0hJS29xYy1EcXNoRUNwbUxjNVBTNlFLMEFRNWZXdG80T2FlMFRST3QzRWVMeEc5NnJkWF80Z1ZDMWx6TkZxNFBwT1NRQWItalk0NE5udFhHelV0TWplWnR0UGxJdGs?oc=5",
-      "articleUrl": "https://www.alquds.co.uk/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%85%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AE%D8%B7%D8%A9-%D9%86%D8%B2%D8%B9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%B3%D8%AA%D9%8F%D9%86%D9%81%D8%B0/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-25T08:48:45.031Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-25T08:49:31.159Z",
-      "canonicalUrl": "https://www.alquds.co.uk/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%85%D9%86-%D9%88%D8%A7%D8%B4%D9%86%D8%B7%D9%86-%D8%AE%D8%B7%D8%A9-%D9%86%D8%B2%D8%B9-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%B3%D8%AA%D9%8F%D9%86%D9%81%D8%B0/",
-      "pagePublishedAt": "2026-09-22T15:48:30.000Z",
-      "originalTextArabic": "بغداد ـ “القدس العربي”: أبدت الفصائل المسلحة المنضوية في ائتلاف “المقاومة الإسلامية” مرونة في موقفها إزاء ملف حصر سلاحها ورهنه بيد المؤسسات الحكومية العراقية، مؤكدة أن الشروع بعملية “تنظيم” هذا السلاح مرهون بانسحاب جميع القوات الأجنبية من الأراضي العراقية، وأن هدفها هو “حماية العراق وسيادته”، في وقتٍ يخوض فيه رئيس الحكومة، علي الزيدي، مفاوضات مع [&hellip;]",
-      "sourceHost": "alquds.co.uk",
-      "contentChars": 358,
-      "arabicRatio": 1.0031,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-25T08:51:25.968Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "3e2c24af19b31684ab8c0681b22391098ada6793aef03fcd433389457e98c94f",
-        "sourceChars": 358,
-        "translatedChars": 249,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-25T08:57:05.611Z",
-        "titleKo": "알자이디, 워싱턴에서 밝혀 \"무장 해제 계획은 단계적으로 시행될 것\"",
-        "fullTextKo": "바그다드 - 알쿠드스 알아라비: ‘이슬람 저항’ 연합에 소속된 무장 세력들은 자신들의 무기를 제한해 이라크 정부 기관의 관리 아래 두는 문제와 관련해 입장을 유연하게 보였다. 이들은 이 무기를 ‘정비’하는 절차에 착수하는 것은 이라크 영토에서 모든 외국군이 철수하는 것을 전제로 한다고 확인하면서, 자신들의 목표는 ‘이라크와 이라크의 주권을 보호하는 것’이라고 밝혔다. 한편 알리 알자이디 정부 수반은 [&hellip;]와 협상을 진행하고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "3e2c24af19b31684ab8c0681b22391098ada6793aef03fcd433389457e98c94f",
-      "contentCheckedAt": "2026-09-25T08:51:25.968Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-zLztsqNtlEUCdU-ZiH",
-        "representativeArticleId": "discovery-3h5nx7Wny0lTveK9bjBeuY9q",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-25T08:52:51.961Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "295fd38f153fb94786fc",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
       }
     },
     {
@@ -8297,9 +8009,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -9720,9 +9432,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -12000,153 +11712,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-selabc7fkTC_1sibOkcGxB52",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "شفق نيوز..الأمين العام السابق للبيشمركة يكشف تفاصيل جديدة عن انسحاب قوات التحالف من العراق",
-      "sourceArabic": "شفق نيوز",
-      "sourceHomepage": "https://shafaq.com",
-      "publishedAt": "2026-09-21T20:55:57.000Z",
-      "descriptionArabic": "الأمين العام السابق للبيشمركة يكشف تفاصيل جديدة عن انسحاب قوات التحالف من العراق شفق نيوز",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMizAVBVV95cUxOOGNCcWlTZFZrNTNheEFDVFRuY1E5UlRkQmNiczV2eGRfSHd6TDllb2pDLTBwQllGckkyamFuVExyYlVZNERnWEdyWlh6S201VjF4T2hOQlFwOEd3cUYzd3JmcDViTWpDdUVLM3BZSWtwQjRjNWhNLWpxS3dPZThWX1BfVnpxRXFhRkhVZkpIU1dOdVE4ZFRjNnFNd0RVVS1nTDJGdVlCUlBnaEZzRC14MHR1WnVSblFQenVkczRnMUpTNUZUbWN1UzhLTm1ncEhfM1VSeDVFXzNDNUpsNWFFbWluWWlqSUwxd2hYMmJIWXdSNk1zbnBNNm0xNVdNSVVOMXJva0lRVjdiaWhvRFN5bVVQZVVZZEMyYzFvYU9KR0E2RjAwenNQVXlYbG03TlAyd2VIZ1dycWNLazE3MGlXQjVNWjNWU2tERzdIQVl3SWtjVEp3WjVaWHpMczRmQWRxVGlGSnAzWVNVZ0otOUJHNmh6NEpURUxvRjY4bUxlLTQ3ZFR4cm5QbWw1ZEJpLU85TnpTajZ4anE3TkE3TUVaSG1ZTGhWdFMxWk8zcG9vcExnNjVadHdIN2U3UkRDNnZJYVR2c0FyU0V3bnNNWmtYMklsdlZXYjZyYUxwUklWeDZrTFFKal94a19QeVVHMlhJVlNvTUZWMEpPY1ZSOGsyb0puMkRseDVWTFJBNy13Nk9IWFhOSy0ycFlmbVFqdExxeGFIZ2JqandFLUNSM2lEeG41MGRsbEhaM0Q4T3ZxcjI2TWZ6WGxCZVIzdnpxVXgwb2xGSl8wbkl0clA3NDJVYWJ1Q3N1M05fZk9vS3dLRlUtRV9kRW5KNjdPbGlRa2hna3V0ZG9KV2pJcjVlYWdERTZlVU04S0hpb0llOTkxeV9tSzRxemY0TENpa18tSjZ3NDFqblFhbm5nbHM4bHdYcm1zV1ZPaHdOVEZMNw?oc=5",
-      "articleUrl": "https://shafaq.com/ar/%D9%83%D9%88%D8%B1%D8%AF%D8%B3%D9%80%D9%80%D8%AA%D8%A7%D9%86%D9%8A%D8%A7%D8%AA/%D8%A7%D9%84-%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B4%D9%85%D8%B1%D9%83%D8%A9-%D9%8A%D9%83%D8%B4%D9%81-%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%B9%D9%86-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-25T08:48:45.031Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": 0.0858,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-25T08:49:42.238Z",
-      "canonicalUrl": "https://shafaq.com/ar/%D9%83%D9%88%D8%B1%D8%AF%D8%B3%D9%80%D9%80%D8%AA%D8%A7%D9%86%D9%8A%D8%A7%D8%AA/%D8%A7%D9%84-%D9%85%D9%8A%D9%86-%D8%A7%D9%84%D8%B9%D8%A7%D9%85-%D8%A7%D9%84%D8%B3%D8%A7%D8%A8%D9%82-%D9%84%D9%84%D8%A8%D9%8A%D8%B4%D9%85%D8%B1%D9%83%D8%A9-%D9%8A%D9%83%D8%B4%D9%81-%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D8%B9%D9%86-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "pagePublishedAt": "2026-09-21T20:55:57.000Z",
-      "originalTextArabic": "\"دكة عشائرية\" تودي بحياة أديب وشاعر في ميسان\n\nمعرض \"هنَّ في معرضهِنَّ\".. 18 فنانة بابلية يقدمن 60 عملاً تشكيلياً في الحلة (صور)\n\nأمام التحدي السكاني.. العراق بحاجة إلى مليون فرصة عمل جديدة سنوياً\n\nالعراق يستورد أول شحنة بنزين عبر ميناء بانياس السوري\n\nالأمين العام السابق للبيشمركة يكشف تفاصيل جديدة عن انسحاب قوات التحالف من العراق\n\nشفق نيوز- السليمانية\n\nكشف الأمين العام السابق لوزارة البيشمركة، والخبير الأمني، جبار ياور، مساء اليوم الاثنين، أن أواخر الشهر الجاري سيشهد انسحاباً تاماً لقوات التحالف الدولي، بما فيها الأميركية، من الأراضي العراقية، مشيراً إلى أن تنفيذ عملية الانسحاب بدأت على مرحلتين منذ أيلول/ سبتمبر 2025.\n\nوقال ياور، لوكالة شفق نيوز، إن المرحلة الأولى شملت انسحاب القوات متعددة الجنسيات وقوات التحالف، وفي مقدمتها القوات الأميركية، من مناطق وسط وجنوب العراق، فيما تقرر أن تستكمل عملية الانسحاب من المناطق المتبقية بحلول الثلاثين من أيلول/ سبتمبر 2026.\n\nوأوضح أن عدم تنفيذ الانسحاب بصورة كاملة خلال المرحلة الأولى جاء بطلب من التحالف الدولي للإبقاء على جزء من قواته بهدف دعم العمليات المرتبطة بسوريا، لافتاً إلى أن الأوضاع السورية آنذاك والمخاوف من تحركات التنظيمات الإرهابية باتجاه المنطقة دفعت التحالف إلى الاحتفاظ بقوات قادرة على التدخل ومواجهة أي تهديد محتمل.\n\nوأضاف أن سقوط نظام بشار الأسد والتغيير الذي طرأ على السلطة في سوريا أديا إلى تبدل المعادلة الأمنية، موضحاً أن القيادة الجديدة في دمشق تحظى بعلاقات وتحالفات مع الولايات المتحدة وعدداً من الدول الغربية، الأمر الذي قلل، وفق رؤية واشنطن والتحالف الدولي، المخاوف المتعلقة بالحدود والمنافذ والتحركات الإرهابية.\n\nوتابع ياور أن هذه المتغيرات جعلت التحالف الدولي لا يرى ضرورة لاستمرار وجود قواته في إقليم كوردستان لأغراض مرتبطة بحماية سوريا أو مواجهة الأخطار التي كانت تهددها خلال المرحلة السابقة.\n\nوجود ما بعد الانسحاب\n\nبشأن شكل الوجود الأجنبي بعد انتهاء مهمة التحالف، أوضح ياور أن الاتفاق يتعلق بانسحاب القوات العسكرية، لكنه لا يعني إنهاء وجود المستشارين العسكريين، مبيناً أن هؤلاء سيواصلون عملهم ضمن الأطر الدبلوماسية في السفارات والقنصليات.\n\nوأشار إلى إمكانية وجود مستشار أو أكثر في السفارة الأميركية في بغداد والقنصلية الأميركية في أربيل، وكذلك مستشارين عسكريين تابعين لدول أخرى شاركت في التحالف، مثل فرنسا وألمانيا، يعملون ضمن سفارات وقنصليات بلدانهم.\n\nوأكد ياور أن انتهاء الوجود العسكري للتحالف لا يعني تخلي الولايات المتحدة عن العراق أو إقليم كوردستان، مشيراً إلى أن واشنطن تمتلك مصالح استراتيجية واسعة في الشرق الأوسط وقواعد ومصالح في عدد من دول المنطقة، ولذلك سيستمر حضورها وتأثيرها، لكن ليس بالضرورة بصيغة الانتشار العسكري الحالية.\n\nالصراع مع الصين وروسيا\n\nورأى ياور أن أحد الأسباب الرئيسية لاستمرار الاهتمام الأميركي بالشرق الأوسط يتعلق بملف النفط والطاقة، معتبراً أن واشنطن تسعى إلى الحفاظ على نفوذها في مصادر الطاقة ومساراتها، وفي الوقت نفسه الحد من وصولها إلى منافسيها الدوليين، وفي مقدمتهم الصين.\n\nوقال إن الولايات المتحدة تسعى، وفق قراءته، إلى تقليل تدفق النفط والطاقة من العراق والسعودية وإيران وقطر باتجاه الصين، في إطار التنافس الاستراتيجي المتصاعد بين القوتين.\n\nوأضاف أن أهمية الشرق الأوسط بالنسبة إلى الولايات المتحدة ترتبط، من وجهة نظره، بمحورين رئيسيين، أولهما الصراع والتنافس المستمر مع روسيا، والثاني محاولة الحد من إمدادات الطاقة المتجهة نحو الصين، وهو ما يجعل المنطقة تحتفظ بأهميتها الاستراتيجية بالنسبة إلى واشنطن حتى بعد إنهاء مهمة قوات التحالف في العراق.\n\nحصر السلاح بيد الدولة\n\nوفي ملف حصر السلاح، قال ياور إن حكومة رئيس الوزراء علي فالح الزيدي حصلت على موافقة قوى الإطار التنسيقي وائتلاف إدارة الدولة، فضلاً عن موافقة مجلس النواب على البرنامج الحكومي الذي تضمن حصر السلاح بيد الدولة وسحبه من الفصائل الموجودة خارج إطار المؤسسات الرسمية، إلى جانب مكافحة الفساد.\n\nوأضاف أن الزيدي بدأ منذ توليه السلطة العمل على هذين المحورين، مشيراً إلى أن سرايا السلام سلمت سلاحها إلى الدولة وأصبحت تعمل ضمن المنظومة العسكرية الرسمية، وكذلك القوات التابعة لعصائب أهل الحق.\n\nوأشار إلى أن ذلك جاء بالتوازي مع إجراءات في ملف مكافحة الفساد شملت، توقيف عدد من وكلاء الوزراء والنواب واسترداد مبالغ مالية إلى خزينة الدولة.\n\nوبين أن ما تبقى عدد محدود من الفصائل التي لم تسلم سلاحها حتى الآن، لكنها دخلت في مفاوضات مع الحكومة، معرباً عن اعتقاده بأن تلك الفصائل ستتوصل إلى اتفاق مع الدولة يقضي بتسليم أسلحتها والانضواء ضمن منظومة الدفاع الاتحادية.\n\nولفت ياور إلى أن هذه الفصائل لن تستطيع الاستمرار في حالة الصراع مع حكومة الزيدي لفترة طويلة.\n\nجهات دعم الزيدي\n\nوعن قدرة الزيدي على تنفيذ مشروع نزع سلاح الفصائل، قال ياور إن رئيس الوزراء يحظى بدعم جماهيري وسياسي من الإطار التنسيقي وائتلاف إدارة الدولة، إلى جانب دعم رئيس إقليم كوردستان نيجيرفان بارزاني، وحكومة الإقليم، والرئيس مسعود بارزاني، ورئيس الاتحاد الوطني الكوردستاني بافل طالباني، والقوى السياسية الكوردية.\n\nوأشار إلى أن الزيدي يحظى كذلك، بدعم دولي من القوى الكبرى في خطواته المتعلقة بحصر السلاح، معتبراً أن استثمار هذا الغطاء الداخلي والدولي من شأنه مساعدته على تنفيذ برنامجه الحكومي بصورة أسرع وبأقل كلفة.\n\nوحذر ياور من أن استمرار بعض الفصائل المسلحة في تهديد المصالح الأميركية في المنطقة قد يقود إلى رد أميركي قوي، مستذكراً الهجمات السابقة التي استهدفت مواقع وقواعد أميركية في العراق وإقليم كوردستان، وما أعقبها من ضربات أميركية استهدفت مواقع ومصالح تابعة لتلك الفصائل.\n\nوقال إن الولايات المتحدة سبق أن ردت بقوة على تلك الهجمات، واستهدفت مواقع للفصائل من نينوى وصولاً إلى البصرة، ما تسبب بخسائر في الأفراد والأسلحة والمعدات.\n\nونبه إلى أن استمرار تأثير أي فصيل مسلح على المصالح الأميركية سيبقي احتمالات الرد قائمة، بالتزامن مع مساعي الحكومة العراقية لإنهاء ملف السلاح خارج مؤسسات الدولة وإدماج القوى المسلحة ضمن المنظومة الأمنية والدفاعية الرسمية.\n\nوكان رئيس كتلة الإعمار والتنمية النيابية، بهاء الأعرجي، قد كشف يوم أمس الأحد، أن قوات أميركية ستبقى في العراق لحماية السفارة الأميركية والبعثات الدبلوماسية والمصالح الأميركية، مشيراً إلى أن ذلك يختلف عن وجود التحالف الدولي.\n\nوقال الأعرجي، لوكالة شفق نيوز، إن العراق اتفق مع الولايات المتحدة على أن يكون 30 أيلول/ سبتمبر موعداً لانسحاب قوات التحالف الدولي، لكن البعض، لا يميز بين وجود التحالف الدولي بقيادة الولايات المتحدة وانسحابه، وبين الوجود الأميركي المخصص لحماية السفارة والبعثات الدبلوماسية والمصالح الأميركية.\n\nوأوضح أن هناك فرقاً بين وجود التحالف الدولي بقيادة الأميركيين وانسحابهم، وبين وجود الأميركي لحماية البعثات الدبلوماسية في العراق.\n\nويوم 30 أيلول/ سبتمبر 2026، هو موعد إنهاء الوجود العسكري للتحالف الدولي في العراق، وهو ما تستخدمه بعض الفصائل أساساً لربط مستقبل سلاحها بانسحاب القوات الأجنبية.\n\nويعد ملف الفصائل المسلحة من أكثر الملفات حساسية أمام الحكومة العراقية، مع اقتراب موعد 30 أيلول/ سبتمبر الذي حددته القوى السياسية الرئيسية سقفاً لحصر السلاح بيد المؤسسات الرسمية، قبل أن تتراجع وتؤكد أن لا موعد محدداً لحصر السلاح على لسان المستشار الأمني، قاسم الأعرجي.",
-      "sourceHost": "shafaq.com",
-      "contentChars": 6367,
-      "arabicRatio": 1.0153,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-25T08:51:30.616Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "a1385619f64a6a2e2af8d832bc44018ff6f99b029f8fddae7c4f939e2d875c3f",
-        "sourceChars": 6367,
-        "translatedChars": 3610,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "593b943d604795769bad",
-        "preferredTermsApplied": [
-          "국제연합군",
-          "술라이마니야",
-          "페쉬메르가",
-          "바스라",
-          "바그다드",
-          "아르빌",
-          "힐라"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-25T08:55:16.237Z",
-        "titleKo": "샤파크 뉴스, 전 페쉬메르가 사무총장 이라크 내 국제연합군 철수 관련 새로운 세부 내용 공개",
-        "fullTextKo": "미산에서 부족 보복 행위로 문인 겸 시인 사망\n\n힐라에서 열린 여성 작가들의 전시회, 바빌주 출신 여성 작가 18명이 조형 작품 60점 선보여 사진\n\n인구 문제에 직면한 이라크, 매년 새로운 일자리 100만 개 필요\n\n이라크, 시리아 바니야스항을 통해 첫 휘발유 선적분 수입\n\n전 페쉬메르가 사무총장, 이라크에서 국제연합군 철수 관련 새로운 세부 내용 공개\n\n샤파크 뉴스, 술라이마니야\n\n전 페쉬메르가부 사무총장이자 안보 전문가인 자바르 야와르는 오늘 월요일 저녁, 이달 말 미국을 포함한 국제연합군이 이라크 영토에서 완전히 철수할 것이라고 밝혔다. 그는 철수 작전이 2025년 9월부터 두 단계에 걸쳐 시작됐다고 설명했다.\n\n야와르는 샤파크 뉴스에 1단계에는 다국적군과 국제연합군, 특히 미군이 이라크 중부와 남부 지역에서 철수하는 것이 포함됐으며, 남은 지역에서의 철수 작전은 2026년 9월 30일까지 완료하기로 결정됐다고 말했다.\n\n그는 1단계에서 철수가 완전히 이행되지 않은 것은 시리아와 관련된 작전을 지원하기 위해 일부 병력을 남겨 달라는 국제연합군의 요청 때문이었다고 설명했다. 당시 시리아의 상황과 테러 조직들이 이 지역을 향해 움직일 가능성에 대한 우려로 인해 국제연합군은 개입하고 발생 가능한 위협에 대응할 수 있는 병력을 유지하기로 했다고 덧붙였다.\n\n그는 바샤르 알아사드 정권의 붕괴와 시리아의 권력 변화로 안보 구도가 바뀌었다고 덧붙였다. 다마스쿠스의 새 지도부가 미국 및 여러 서방 국가와 관계와 동맹을 맺고 있어, 워싱턴과 국제연합군의 판단에 따르면 국경과 통로, 테러 조직의 움직임에 관한 우려가 줄어들었다는 것이다.\n\n야와르는 이러한 변화로 인해 국제연합군은 시리아 보호나 이전 단계에서 시리아를 위협했던 위험에 대응하기 위한 목적의 쿠르디스탄 지역 주둔을 계속할 필요가 없다고 보게 됐다고 말했다.\n\n철수 이후의 주둔 형태\n\n국제연합군 임무 종료 후 외국의 주둔 형태와 관련해 야와르는 이번 합의가 군 병력 철수에 관한 것이며 군사 고문단의 주둔 종료를 의미하는 것은 아니라고 설명했다. 이들은 대사관과 영사관에서 외교적 틀 안에서 업무를 계속하게 된다는 것이다.\n\n그는 바그다드의 미국 대사관과 아르빌의 미국 영사관에 한 명 이상의 고문이 주재할 가능성이 있으며, 프랑스와 독일 등 국제연합군에 참여했던 다른 국가의 군사 고문들도 자국 대사관과 영사관에서 근무할 수 있다고 지적했다.\n\n야와르는 국제연합군의 군사적 주둔 종료가 미국이 이라크나 쿠르디스탄 지역을 포기한다는 의미는 아니라고 강조했다. 워싱턴은 중동에서 광범위한 전략적 이해관계와 역내 여러 국가의 기지 및 이해관계를 보유하고 있기 때문에 미국의 존재와 영향력은 계속되겠지만, 반드시 현재와 같은 군사 배치 형태는 아닐 것이라고 말했다.\n\n중국 및 러시아와의 갈등\n\n야와르는 미국이 중동에 계속 관심을 두는 주요 이유 가운데 하나가 석유와 에너지 문제라고 봤다. 워싱턴은 에너지원과 에너지 운송로에서 영향력을 유지하는 동시에, 국제적 경쟁자들, 특히 중국이 에너지에 접근하는 것을 제한하려 한다는 것이다.\n\n그는 자신의 분석에 따르면 미국은 두 강대국 간 전략적 경쟁이 고조되는 가운데 이라크와 사우디아라비아, 이란, 카타르에서 중국으로 향하는 석유와 에너지의 흐름을 줄이려 한다고 말했다.\n\n그는 미국에 중동이 중요한 이유는 자신의 관점에서 두 가지 주요 축과 관련된다고 덧붙였다. 첫째는 러시아와의 지속적인 갈등과 경쟁이고, 둘째는 중국으로 향하는 에너지 공급을 제한하려는 시도다. 이 때문에 이라크에서 국제연합군의 임무가 종료된 뒤에도 이 지역은 워싱턴에 전략적 중요성을 유지하게 된다고 설명했다.\n\n무기 국가 독점\n\n무기 국가 독점 문제와 관련해 야와르는 알리 팔레흐 알자이디 총리 정부가 조정기구와 국가운영연합의 세력들로부터 승인을 받았으며, 국가기관의 틀 밖에 있는 세력들로부터 무기를 회수해 국가가 무기를 독점하도록 하는 내용과 부패 척결을 포함한 정부 프로그램에 대해 하원 승인도 받았다고 말했다.\n\n그는 알자이디가 집권한 이후 이 두 축을 중심으로 업무를 시작했다며, 평화여단이 무기를 국가에 넘기고 공식 군사 체계 안에서 활동하게 됐고, 아사이브 아흘 알하크에 소속된 병력도 마찬가지라고 설명했다.\n\n그는 이와 동시에 부패 척결 분야에서도 조치가 시행됐으며, 여기에는 여러 차관과 의원의 체포 및 국가 재정으로의 자금 회수가 포함됐다고 지적했다.\n\n그는 아직 무기를 넘기지 않은 세력은 소수만 남아 있지만 이들이 정부와 협상에 들어갔다고 밝혔다. 그러면서 이 세력들이 무기를 넘기고 연방 방위 체계에 편입하기로 국가와 합의에 도달할 것으로 본다고 말했다.\n\n야와르는 이 세력들이 알자이디 정부와의 충돌 상태를 장기간 지속할 수는 없을 것이라고 지적했다.\n\n알자이디를 지원하는 세력\n\n알자이디가 세력들의 무장 해제 계획을 실행할 수 있는 역량과 관련해 야와르는 총리가 조정기구와 국가운영연합으로부터 대중적·정치적 지지를 받고 있으며, 쿠르디스탄 지역 대통령 네치르반 바르자니와 지역 정부, 마수드 바르자니 대통령, 쿠르디스탄애국동맹의 바펠 탈라바니 의장, 쿠르드 정치 세력의 지지도 받고 있다고 말했다.\n\n그는 알자이디가 무기 국가 독점과 관련한 조치에서 강대국들로부터 국제적 지지도 받고 있다고 지적했다. 이러한 국내외 지지 기반을 활용하면 정부 프로그램을 더 빠르고 적은 비용으로 시행하는 데 도움이 될 것이라고 봤다.\n\n야와르는 일부 무장 세력이 역내 미국의 이해관계를 계속 위협할 경우 강력한 미국의 대응으로 이어질 수 있다고 경고했다. 그는 과거 이라크와 쿠르디스탄 지역의 미국 시설과 기지를 겨냥한 공격과, 그에 뒤이어 해당 세력의 시설과 이해관계를 겨냥한 미국의 공습이 있었던 일을 상기시켰다.\n\n그는 미국이 과거 그러한 공격에 강력히 대응했으며, 니나와에서 바스라에 이르기까지 세력들의 시설을 타격해 인력과 무기, 장비에 손실을 입혔다고 말했다.\n\n그는 어떤 무장 세력이 미국의 이해관계에 계속 영향을 미치면 대응 가능성은 여전히 존재할 것이라고 경고했다. 이는 이라크 정부가 국가기관 밖의 무기 문제를 끝내고 무장 세력을 공식 안보 및 방위 체계에 편입하려는 노력과 동시에 진행되고 있다.\n\n국회 재건개발 블록 의장인 바하 알아라지는 어제 일요일, 미국 대사관과 외교 공관 및 미국의 이해관계를 보호하기 위해 미군이 이라크에 남을 것이라고 밝혔다. 그는 이것이 국제연합군의 주둔과는 다르다고 설명했다.\n\n알아라지는 샤파크 뉴스에 이라크가 미국과 국제연합군 철수 시점을 9월 30일로 정하기로 합의했지만, 일부 사람들은 미국이 이끄는 국제연합군의 주둔과 철수와 대사관 및 외교 공관, 미국의 이해관계를 보호하기 위한 미국의 주둔을 구분하지 못한다고 말했다.\n\n그는 미국이 이끄는 국제연합군의 주둔 및 철수와 이라크의 외교 공관을 보호하기 위한 미국의 주둔 사이에는 차이가 있다고 설명했다.\n\n2026년 9월 30일은 이라크에서 국제연합군의 군사적 주둔을 종료하는 시점이다. 일부 세력은 이를 외국군 철수와 자신들의 무장 세력의 미래를 연결하는 근거로 삼고 있다.\n\n무장 세력 문제는 이라크 정부가 직면한 가장 민감한 사안 가운데 하나다. 주요 정치 세력들이 국가기관의 무기 독점 시한으로 정한 9월 30일이 다가오는 가운데, 안보보좌관 카심 알아라지는 무기 독점에 정해진 시한은 없다고 확인하며 기존 입장에서 물러섰다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "a1385619f64a6a2e2af8d832bc44018ff6f99b029f8fddae7c4f939e2d875c3f",
-      "contentCheckedAt": "2026-09-25T08:51:30.616Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-O119uPnezznZFpR8Dc",
-        "representativeArticleId": "discovery-selabc7fkTC_1sibOkcGxB52",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 72,
-        "stars": 3.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "NOTABLE",
-        "levelKo": "주목",
-        "reportStatus": "REVIEW",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-25T08:52:51.961Z",
-        "breakdown": {
-          "nationalImportance": 40,
-          "businessImpact": 0,
-          "politicalImpact": 9,
-          "reportValue": 10,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REVIEW",
-        "categoryRelevance": "HIGH",
-        "businessRelevance": "HIGH",
-        "reasonKo": "국가 지도부가 무기 독점·무장세력 통제·법치 확립을 다룬 국가안보 연계 정치 기사임",
-        "scoringVersion": 9,
-        "scoreFingerprint": "49b715ea3726cf74cd07",
-        "ruleScore": 67,
-        "category": "politics",
-        "categoryFloor": 72,
-        "categoryFloorRule": "POLITICS_STATE_ARMS_CONTROL",
-        "categoryFloorReasonKo": "국가 지도부가 무기 독점·무장세력 통제·법치 확립을 다룬 국가안보 연계 정치 기사임",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 72,
-        "floorRule": "POLITICS_STATE_ARMS_CONTROL",
-        "floorReasonKo": "국가 지도부가 무기 독점·무장세력 통제·법치 확립을 다룬 국가안보 연계 정치 기사임",
-        "aiScore": 76,
-        "aiWeight": 0.4,
-        "ruleWeight": 0.6,
-        "aiModel": "gpt-5.6-luna",
-        "aiReportPriority": "REVIEW",
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-VKMq-RkUcaJIDXlGPKOffuAk",
       "keywordId": "politics-pm-003",
       "category": "politics",
@@ -14018,146 +13583,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-kPTlxR25n1yZ5P2XGwHnLe7-",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "مقتدى الصدر يعلق على قرب انسحاب القوات الأمريكية.. مما حذر؟",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-21T11:46:41.000Z",
-      "descriptionArabic": "مقتدى الصدر يعلق على قرب انسحاب القوات الأمريكية.. مما حذر؟ عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMizgNBVV95cUxQNlB4c3BSaEE0eFZPN25CcG56U1d4c3poT1hDeUpZa2E2WGRQMEpGZTY5amtZSGhUX0pQOWNoLTRvTHh6SlYya2QzLUdDZm43Q3lOWjBrRGUxVFVHbUYzZi1lM1oyN1pxS2pzc0p5Wk9DVENGOHJHNVhENUxLWUQ5MW4yclBOeE9hd1UyQU1HdnpsYzhwQWR6MkZyTFRycTlZOFN4eTk4VHhIQUVERTNYYmthcmJMamJzbUQtaEtNdUJvWkJ2Zzh3LWF2MVZxZlk0dHF2UGc5YlRvOGVid3BYUnpXWFg1LWJ2S2NocUVVQ1NHcEltXzEweVFpc0I1WkdPT2djS3kzaWZPODJQeGlDY0JQWHI2amxkVDV3ZUxSdXJzelJCaTV4SWw1ZC1sZlEyeElHZWkyNnVRM05Qc2haRi1vUHpXenY0TGh6NHNYM0R6NEFHNHpIVVNnbEt0SXRDRjlKQmZVS3plSUVxV0w1WEU2dURTUGNidXRLMF9fdTFEWlU3aFRUMUtTNmoxVFVTT3B3M3NDWG9JUm5aTVItTVB0cnZuRV9hTXN5UnNGR2RDWHdhbmlOSUVza0NDTUZPNm1mQU5SeFEyRC1EN0HSAdIDQVVfeXFMT084dTdrRVBKSmZKZmxYUDg4cUhDQVNQRE5LSWpzVWJzTDRvY2g0MVhKcVNNTlZTUzU1c1FLWGpoMDVxMzNaUDhaZkxGUE9ELUtGY2dqanM2QkJGaEtSWDRwalBLeHpKS3RHbGxZTGhZbmVYVW5yaWJNd1Y5YjJIZ2M4ZkNONWduOERZeGNOcGFpclQ5eVhvRGNaaFJpanNNQjNlNzU1eHI3T0RYdGVvWjRLVFVKU3VTTHFmeDM5M0c1X2RsWWxBSU16VXNtcVp3Uk15STMtQThQRWNxTGxHSEpmYl85ZTJEOERZc3dZeFdFSWV1Y0I1MWlrZmotaEtqRGRLczBETW9uWGhQVmZraXBRY2JpbWxFbGptOVFhR0RBRGFZUVJGbFdHZlNpdnh5eWw0Q3oxZE14TXY1alo3NFA1SmpybVlhX0FIZHBQMmJUcWl4M2x1bWI3U3U5ZnI4VkhnLTE3all5d3oyc3ZtLTdHeTFKTTdhU19FU1dqcDdVM1RKTE05aTQ1RF80cmFkT0xkakdxamRTUnpYZkdvcnloc0dwNFlFRThBSU1wUEFhczlVVTVXUF9wTV9zTE9YbU56dVZDeFBBaDBvWFlUa0h0dw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1790222/%D9%85%D9%82%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%B5%D8%AF%D8%B1-%D9%8A%D8%B9%D9%84%D9%82-%D8%B9%D9%84%D9%89-%D9%82%D8%B1%D8%A8-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%85%D8%A7-%D8%AD%D8%B0%D8%B1",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-09-25T08:48:45.030Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-09-25T08:49:50.771Z",
-      "canonicalUrl": "https://arabi21.com/story/1790222/%D9%85%D9%82%D8%AA%D8%AF%D9%89-%D8%A7%D9%84%D8%B5%D8%AF%D8%B1-%D9%8A%D8%B9%D9%84%D9%82-%D8%B9%D9%84%D9%89-%D9%82%D8%B1%D8%A8-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%85%D8%A7-%D8%AD%D8%B0%D8%B1",
-      "pagePublishedAt": "2026-09-21T11:46:41.000Z",
-      "originalTextArabic": "اقترب العراق من موعد انتهاء المهمة العسكرية للتحالف الدولي، فيما دعا مقتدى الصدر إلى التعامل مع المرحلة المقبلة باعتبارها شأنًا عراقيًا خالصًا...",
-      "sourceHost": "arabi21.com",
-      "contentChars": 145,
-      "arabicRatio": 1.0305,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-09-25T08:51:34.506Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "f8819983d8167389539f6c5b73b1b9011cd1dee9223e6cf1616809364cd296ca",
-        "sourceChars": 145,
-        "translatedChars": 82,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-09-22T00:06:48.581Z",
-        "titleKo": "무크타다 알사드르, 미군 철수 임박에 대해 언급… 무엇을 경고했나?",
-        "fullTextKo": "이라크가 국제연합군의 군사 임무 종료 시점에 가까워진 가운데, 무크타다 알사드르는 앞으로의 국면을 순전히 이라크의 사안으로 다룰 것을 촉구했다..."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-09-25T08:52:51.961Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "2d71189ac483082c12e7",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-SmFcXkGW7dxEq6rbDf",
-        "representativeArticleId": "discovery-kPTlxR25n1yZ5P2XGwHnLe7-",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "f8819983d8167389539f6c5b73b1b9011cd1dee9223e6cf1616809364cd296ca",
-      "contentCheckedAt": "2026-09-25T08:51:34.506Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-hwya8aD19JYAWlwNNpdQ2R6i",
       "keywordId": "security-assassination-001",
       "category": "security",
@@ -15000,7 +14425,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -15094,9 +14519,9 @@
       "contentCheckedAt": "2026-09-25T08:51:33.659Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -15569,9 +14994,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -16249,9 +15674,9 @@
       "contentCheckedAt": "2026-09-25T08:51:35.234Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -16535,9 +15960,9 @@
       "contentCheckedAt": "2026-09-25T08:51:35.839Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -16679,9 +16104,9 @@
       "contentCheckedAt": "2026-09-25T08:51:35.659Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -20295,9 +19720,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -21436,9 +20861,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -22816,9 +22241,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -29805,16 +29230,11 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-09-25T08:52:05.993Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-pKNR976wT7ycSQ407_",
@@ -32426,9 +31846,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -34548,9 +33968,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -44699,9 +44119,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -45687,9 +45107,9 @@
       "contentCheckedAt": "2026-09-25T08:52:00.373Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -53784,14 +53204,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 410,
-    "retained": 410,
+    "before": 376,
+    "retained": 376,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 351,
+    "groupCount": 347,
     "duplicateGroupCount": 20,
     "duplicateArticleCount": 25,
     "maxHours": 72,
