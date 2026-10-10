@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-10T09:57:17.433Z",
+  "generatedAt": "2026-10-10T11:18:36.443Z",
   "lookbackDays": 14,
-  "count": 521,
+  "count": 517,
   "categoryCounts": {
     "economy": 80,
     "bismayah": 16,
-    "politics": 265,
+    "politics": 261,
     "security": 143,
     "international": 17
   },
@@ -407,7 +407,7 @@
       "contentCheckedAt": "2026-10-10T09:53:07.258Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "bismayah",
         "to": "bismayah",
         "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
@@ -12896,147 +12896,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-4emLoTZxdfeYa91UBR1Nvj4D",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "إيران في العراق: أبعد من الفصائل المسلحة!",
-      "sourceArabic": "وكالة عمون الاخبارية",
-      "sourceHomepage": "https://www.ammonnews.net",
-      "publishedAt": "2026-10-06T16:36:16.000Z",
-      "descriptionArabic": "إيران في العراق: أبعد من الفصائل المسلحة! وكالة عمون الاخبارية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5aVDhxNG1LUUVkMXkzT2FLemNDN1pHSTFVODJBR3VqNi1WaHNsLWljNmhLUVNWWHFQX1pNdjBidDRKbFIzV2hkOHQzQ3FRV2tDSVV3?oc=5",
-      "articleUrl": "https://www.ammonnews.net/article/1034775",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-10T09:49:22.601Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-10T09:50:32.498Z",
-      "canonicalUrl": "https://www.ammonnews.net/article/1034775",
-      "pagePublishedAt": "2026-10-06T16:36:16.000Z",
-      "originalTextArabic": "يختزل النقاش العام النفوذ الإيراني في العراق في «المليشيات الولائية»، أي الفصائل المسلحة التي تدين بالولاء العقائدي والسياسي لطهران، ولا شك أن التر...",
-      "sourceHost": "ammonnews.net",
-      "contentChars": 150,
-      "arabicRatio": 1.013,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-10T09:53:23.656Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "9b18e666beaddf8eb9136fe15f495537af5a0e01fd9726db622620bdb890d363",
-        "sourceChars": 150,
-        "translatedChars": 95,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-07T00:42:34.522Z",
-        "titleKo": "이라크 내 이란: 무장 세력을 넘어선다!",
-        "fullTextKo": "이라크에서의 이란 영향력에 관한 공개 논의는 이를 ‘윌라야파 민병대’, 즉 테헤란에 이념적·정치적 충성을 바치는 무장 세력으로 축소해 설명한다. 의심할 여지 없이 이..."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-10T09:55:28.297Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "e7b0f0c007114351f2bf",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-P_S8sanCI_X2h5uU02",
-        "representativeArticleId": "discovery-4emLoTZxdfeYa91UBR1Nvj4D",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "9b18e666beaddf8eb9136fe15f495537af5a0e01fd9726db622620bdb890d363",
-      "contentCheckedAt": "2026-10-10T09:53:23.656Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-FcxnZQJB91yX_vSI5kwtCiBB",
       "keywordId": "politics-pm-004",
       "category": "politics",
@@ -22301,9 +22160,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -22518,9 +22377,9 @@
       "contentCheckedAt": "2026-10-10T09:53:37.539Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -23422,145 +23281,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-c5WNM2l0ZWqJOZDSRsNMnh1z",
-      "keywordId": "international-syria-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "الحدود العراقية السورية داعش تسلل",
-      "requiredTerms": [
-        "الحدود العراقية السورية"
-      ],
-      "optionalTerms": [
-        "داعش",
-        "تسلل",
-        "قوات الحدود",
-        "مخيم الهول"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "ما بعد انسحاب التحالف الدولي من العراق",
-      "sourceArabic": "وكالة عمون الاخبارية",
-      "sourceHomepage": "https://www.ammonnews.net",
-      "publishedAt": "2026-10-04T21:55:04.000Z",
-      "descriptionArabic": "ما بعد انسحاب التحالف الدولي من العراق وكالة عمون الاخبارية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBhZVZGQldHeXZDaWRIMVpwMi1LQ2xUTEVrSVRoLXQwQklJZ0tIaThLQ2FKZmdxVGhWMWtnS0ZpUWc2c0I0NW5jS3NsXzcwQUx5VXJv?oc=5",
-      "articleUrl": "https://www.ammonnews.net/article/1034262",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-10T09:49:22.710Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-10T09:51:09.516Z",
-      "canonicalUrl": "https://www.ammonnews.net/article/1034262",
-      "pagePublishedAt": "2026-10-04T21:55:04.000Z",
-      "originalTextArabic": "احتمالات عودة داعش وتوازنات النفوذ الإقليمي وتداعياتها على الأردن وسوريا والسعوديةيمثل انتهاء المهمة العسكرية للتحالف الدولي في العراق تحولاً استرا...",
-      "sourceHost": "ammonnews.net",
-      "contentChars": 150,
-      "arabicRatio": 1.0063,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-10T09:53:41.352Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "c5365e4844efdea4edb367945087a9c09d25ca3767a25ae3d2b1e88152360b3c",
-        "sourceChars": 150,
-        "translatedChars": 38,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "d49c214a065d76ee7a3a",
-        "preferredTermsApplied": [
-          "국제연합군"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-05T00:04:06.192Z",
-        "titleKo": "이라크에서 국제연합군 철수 이후",
-        "fullTextKo": "이라크에서 국제연합군의 군사 임무 종료는 중대한 전환을 의미한다..."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-10T09:55:28.297Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "62f3e6e44936c378455f",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-sPg-GneOHBykVZu8Z7",
-        "representativeArticleId": "discovery-c5WNM2l0ZWqJOZDSRsNMnh1z",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "c5365e4844efdea4edb367945087a9c09d25ca3767a25ae3d2b1e88152360b3c",
-      "contentCheckedAt": "2026-10-10T09:53:41.352Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -30495,9 +30215,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -30914,9 +30634,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -33729,9 +33449,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -34512,9 +34232,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -37327,9 +37047,9 @@
       "contentCheckedAt": "2026-10-10T09:53:51.848Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -40580,153 +40300,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-tZk8FV1fkUqEm_k2jCuZdugU",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "العراق يطوي صفحة التحالف الدولي و\"لا سلاح خارج القانون\"",
-      "sourceArabic": "الجزيرة نت",
-      "sourceHomepage": "https://www.aljazeera.net",
-      "publishedAt": "2026-10-01T07:00:00.000Z",
-      "descriptionArabic": "العراق يطوي صفحة التحالف الدولي و\"لا سلاح خارج القانون\" الجزيرة نت",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMizwJBVV95cUxNaklybl9aS2ZpeGhYWlJKR0JzdEtJYThGMnh0N3I4MVgxQVF3Yk9HZ1kzU1pOeDl1bDBYR01jUlNMY1Z6akVvcDRxWWhoMk44TkpTU2d4enlETldCMzhWNXVDb1lQbWRFYU5YblJVem51NVFFcDBvSWdGNVpWSkpOb3hoZWZtY1J5VGgwRldXYXBZcUd3UHRjV0pycmwtNnhHbVRyeTlqczIwWkRiTUV6X0h5dkRGZjdtQVNPdlg2c28yUmp4X1daLXoxcjlqRFlaYUpodHlHbVlUTmlicHh3SXpEeTJMVTVPTTV5V3oyT184eWlZREkyd0dkUXU4YkQ2WnYwdFlMYnlwMWI3eWlzNzBOblFhNlNJM0VPUmtHY0VKTUg1QVltamNtcTRieURmajhITGNZaEtZNHZwVXNhbmFLQmllTWlHRFk1Sjh5SdIB1AJBVV95cUxOalJ0SU5nU3JYV2UxMDlINGxEdks2NmllV1RMSVJVNlYyYzB4aGJ4S0JNR08yS2daMW5Sdk80djlTdTVBVVRMLTI3ZnVkTkthQmJUa2R3SW5DcFNwQ21OVnpDXzBrM09JMHJJV0RzYm52S2tneV95ZXk4R0p0SnBkTHhRdVA2SUN4QXRRdkVQTmZXRkIxY3I1Uy1DbVFHZXV1WkZGWnd1djRESFBPZ3NzZTMzVzZrWUVfdGEzcmRKQ3BfcjRmTGxUb3ZHM3ZmYVlLQmV6WEpQQURLcXhzOHRBTTFQTm5xOTNrb0pIMk1iY0FzUmN6b3pPN0FJSWhRMENNNHZYUVZWbW5zVXNKSWhtVGc1QmhYWUVxVFZENjFlX1RFTHpTeWtJX3JqOXJSNWpxWnVrVjFwTUlRZE5aYmFIUG5VakliQUtwZERFYzk4NWxXVTlz?oc=5",
-      "articleUrl": "https://www.aljazeera.net/politics/2026/10/1/%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D8%B7%D9%88%D9%8A-%D8%B5%D9%81%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%88%D9%84%D8%A7",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-10T09:49:22.576Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": 0.1417,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-10T09:51:44.568Z",
-      "canonicalUrl": "https://www.aljazeera.net/politics/2026/10/1/%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82-%d9%8a%d8%b7%d9%88%d9%8a-%d8%b5%d9%81%d8%ad%d8%a9-%d8%a7%d9%84%d8%aa%d8%ad%d8%a7%d9%84%d9%81-%d8%a7%d9%84%d8%af%d9%88%d9%84%d9%8a-%d9%88%d9%84%d8%a7",
-      "pagePublishedAt": "",
-      "originalTextArabic": "يمثل الإعلان الرسمي عن انتهاء مهمة التحالف الدولي في العراق محطة مفصلية في تاريخ البلاد، بعد 12 عاما من الوجود العسكري الأجنبي الذي بدأ لمحاربة تنظيم الدولة الإسلامية ، وانتهى بحضور سياسي وعسكري عراقي ودولي في مقر قيادة العمليات المشتركة بالمنطقة الخضراء في بغداد.\n\nووفقا لتقرير أعده مراسل الجزيرة عبد الفتاح فايد، فقد شهدت مراسم الانسحاب كلمات رسمية أكدت انتهاء المهمة، وانتقال العلاقة الأمنية بين جيش التحالف والعراق إلى أطر جديدة ثنائية، حيث أكد رئيس الوزراء العراقي علي الزيدي انتهاء مهمة التحالف الدولي رسميا مؤكدا \"عدم السماح بوجود سلاح خارج مظلة القانون\"، فيما أكد قائد قوات التحالف الأميرال ليام هولين أن الولايات المتحدة والتحالف يفيان بوعودهما، وأن الدعم للعراق سيستمر في مجالات أخرى.\n\nقصص مقترحة\n\nlist 1 of 2 بعد خفض الدينار العراقي.. مخاوف الغلاء تخيم على الأسواق\n\nlist 2 of 2 العراق يرفع سعر الدولار الرسمي إلى 1520 دينارا\n\nويشير التقرير إلى أن الاحتفال الرسمي انتهى، لكن الاحتفالات الشعبية انطلقت في عدة مدن عراقية، وسط توقعات باستمرارها لعدة أيام، فيما أقرت الحكومة عطلة رسمية، وشاركت قوى سياسية وأمنية -بينها الحشد الشعبي وفصائل مسلحة- في هذه الاحتفالات.\n\nوفي سياق متصل، يلفت التقرير إلى أن الفصائل المسلحة أصدرت بيانا -بتوقيع \"المقاومة الإسلامية\"- اعتبرت فيه أن هذا \"الجلاء والانسحاب الصاغر\" لم يكن ليحدث دون ضربات \"مجاهديها\" ومسيّراتها وصواريخها.\n\nومن جهة أخرى، يوضح التقرير أن آخر عمليات الانسحاب كانت من مركز الدعم اللوجستي في مطار بغداد، وسبقها الانسحاب من إقليم كردستان بعد تطمينات من الحكومة الاتحادية بضمان أمن الإقليم.\n\nدعم قوات البشمركة\n\nوكان إخلاء قاعدة عين الأسد في محافظة الأنبار من أكبر مراحل الانسحاب وأكثرها تأثيرا، كما يوضح التقرير. إذ كانت القاعدة الأكبر والأكثر فاعلية في العمليات ضد تنظيم الدولة، كما شمل الانسحاب قواعد أخرى في مختلف أنحاء العراق.\n\nوعلى صعيد متصل، يؤكد صباح النعمان -الناطق باسم القائد العام للجيش العراقي- أن القوات الأمنية الاتحادية تقدم كل الدعم لقوات البشمركة المدربة في إقليم كردستان والتي تُعتبر جزءا من القوات المسلحة العراقية، كما شكلت الحكومة قيادة قوات البادية لمنع استغلال الصحراء من قِبل الخارجين عن القانون.\n\nوأعلن البنتاغون -أمس الأربعاء- أن الولايات المتحدة وشركاءها في التحالف اختتموا رسميا عملية \"العزم الصلب\" في العراق، وقال إن الانسحاب المنظم لقوات ومعدات التحالف من قاعدة أربيل الجوية يمثل ختام المهمة العسكرية.\n\nوأضاف أن الولايات المتحدة ستواصل تقديم تدريب موجَّه ودعم مخابراتي لشركائها العراقيين، متوقعا أن تقود قوات الأمن العراقية الجهود المستمرة \"لتأمين الدولة وكبح فلول تنظيم الدولة\".",
-      "sourceHost": "aljazeera.net",
-      "contentChars": 2362,
-      "arabicRatio": 1.0015,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-10T09:53:57.113Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "03744184f9f91250238dc844d002f36759dbef1f78e7eb9ec76d27e20e747fc1",
-        "sourceChars": 2362,
-        "translatedChars": 1425,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "a40849328b63aab43d07",
-        "preferredTermsApplied": [
-          "합동작전사령부",
-          "그린존",
-          "아인 알아사드 공군기지",
-          "국제연합군",
-          "바그다드",
-          "아르빌"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-10T00:47:45.293Z",
-        "titleKo": "이라크, 국제연합군의 장을 닫다… \"법 밖의 무기는 없다\"",
-        "fullTextKo": "이라크에서 국제연합군의 임무가 종료됐다는 공식 발표는 국가 역사에서 중대한 이정표가 됐다. 이슬람국가 조직과 싸우기 위해 시작된 외국군의 12년간 주둔이 끝나면서, 바그다드 그린존의 합동작전사령부 본부에는 이라크와 국제사회의 정치·군사 관계자들이 참석했다.\n\n알자지라 기자 압둘 파타흐 파예드가 작성한 보고서에 따르면, 철수식에서는 임무 종료를 확인하는 공식 발언들이 나왔고, 연합군과 이라크군 간 안보 관계는 새로운 양자 틀로 전환됐다. 이라크 총리 알리 알자이디는 국제연합군의 임무가 공식적으로 종료됐다고 확인하면서 \"법의 보호막 밖에 무기가 존재하는 것을 허용하지 않겠다\"고 밝혔고, 연합군 사령관 리엄 홀린 제독은 미국과 연합군이 약속을 지키고 있으며 이라크에 대한 지원은 다른 분야에서 계속될 것이라고 밝혔다.\n\n추천 기사\n\n목록 1 중 2 이라크 디나르 가치 절하 이후… 시장에 드리운 물가 상승 우려\n\n목록 2 중 2 이라크, 공식 달러 환율을 1,520디나르로 인상\n\n보고서는 공식 행사가 끝났지만 여러 이라크 도시에서 민간인들의 축하 행사가 시작됐으며, 며칠 동안 계속될 것으로 예상된다고 전했다. 정부는 공식 휴일을 선포했고, 정치·안보 세력 가운데 민병대와 무장 파벌을 포함한 세력들이 이 축하 행사에 참여했다.\n\n이와 관련해 보고서는 무장 파벌들이 이슬람 저항이라는 서명을 단 성명을 발표해, 이 같은 철수와 굴욕적인 철수는 그들의 무자헤딘과 무인기, 미사일의 공격 없이는 일어날 수 없었을 것이라고 주장했다고 전했다.\n\n한편 보고서는 마지막 철수 작전이 바그다드 공항의 군수지원센터에서 이뤄졌으며, 이에 앞서 연방정부가 쿠르드 지역의 안보를 보장하겠다는 확약을 한 뒤 쿠르드 지역에서 철수가 진행됐다고 설명했다.\n\n페슈메르가 지원\n\n보고서가 설명하듯 안바르주 아인 알아사드 공군기지의 철수는 철수 과정에서 가장 규모가 크고 영향이 큰 단계 중 하나였다. 이 기지는 이슬람국가 조직에 대한 작전에서 가장 규모가 크고 가장 효과적인 기지였으며, 철수에는 이라크 전역의 다른 기지들도 포함됐다.\n\n이와 관련해 이라크군 총사령관 대변인 사바흐 알 누만은 연방 보안군이 쿠르드 지역에서 훈련받은 페슈메르가군에 모든 지원을 제공하고 있다고 밝혔다. 페슈메르가군은 이라크군의 일부로 간주된다. 또한 정부는 법을 어기는 자들이 사막을 이용하는 것을 막기 위해 사막지역군 사령부를 창설했다.\n\n미 국방부는 어제 수요일 미국과 국제연합군 파트너들이 이라크에서 강고한 결의 작전을 공식적으로 마무리했다고 발표했다. 또한 아르빌 공군기지에서 연합군 병력과 장비가 질서 있게 철수한 것은 군사 임무의 마무리를 의미한다고 밝혔다.\n\n미국은 이라크 파트너들에게 맞춤형 훈련과 정보 지원을 계속 제공할 것이라고 덧붙였다. 그리고 이라크 보안군이 국가를 지키고 이슬람국가 조직의 잔존 세력을 억제하기 위한 지속적인 노력을 이끌 것으로 예상한다고 밝혔다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 57,
-        "stars": 3,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "REFERENCE",
-        "levelKo": "참고",
-        "reportStatus": "OPTIONAL_REVIEW",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-10T09:55:28.297Z",
-        "breakdown": {
-          "nationalImportance": 34,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 10,
-          "sourceReliability": 8
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "7d81eadfb972b62cd654",
-        "ruleScore": 57,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-aTInGVbYRREwfvPE2N",
-        "representativeArticleId": "discovery-tZk8FV1fkUqEm_k2jCuZdugU",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "03744184f9f91250238dc844d002f36759dbef1f78e7eb9ec76d27e20e747fc1",
-      "contentCheckedAt": "2026-10-10T09:53:57.113Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-AUnvR2kLyQ7jn-S9XH-hkzk6",
       "keywordId": "politics-pm-004",
       "category": "politics",
@@ -43428,9 +43001,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -43708,9 +43281,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -44144,9 +43717,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -44858,160 +44431,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-c9QX4juwN0POag7IkfYBxRfB",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "كيف يؤثر انسحاب القوات الأمريكية من العراق على حلفاء إيران وتنظيم الدولة؟",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-09-30T13:06:17.000Z",
-      "descriptionArabic": "كيف يؤثر انسحاب القوات الأمريكية من العراق على حلفاء إيران وتنظيم الدولة؟ عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwARBVV95cUxPYU9UUU5sZnlFUGNEWkttWnFCLWtrZTNNOXExdW15OTZtOHkwcVZUYWMzbmZ5LUhsVEJYdDFWNjFSbEdGb3ZOY2dkckN4cWNEVjJVcVRGcGhTeFBxUXd0aV8tbkFCaEJwMlJOWVJBZWdYNnl3R0RybkVZdjhnYU0yN3dsOXJCZ3M3T19oaE1WRFRRMmFLdXZxT3ZyMkd5ZzRYTkFzdm4zbnZlZXlDYl9IcDNud2ZFYnExLVlpOWVCT0twWlpjNEQtdkpOVllzYkJnUEVaeXlJRE41Wk9mQWJNb1FUYVdEdGJqNWh4b2JZRUxKT1E5VnZwREJrc1VSbjJDZWtra0NhY3RpN0hkZHRUT1piZENaejFtRjVOLUpvcWtZWWowZWZaX1U3UFhYOTBHSVFzc0k2Y0VKdHRkRU9nRkJQMGg3cHkwMDlKQ0Jxay0tMkFPb3BOY2Fsb2NTNF9GSGNWUTdPM1VKNzIydUxTLTNQYnZZZ3o1QUNGUEpYSm5QUy1hc1FEWGY0cHVub2FtcjdUWDVQYXlUOFl1RXlOR2NmOWo4eXBpNnI1XzBVaEx4T3hPZ0l0S1doLVQwNmJ2eXZvc1JqVGY5bDB5VE5MWHhqMm93ZnJSbERFNGZ5ejJzVHlHd3AwakRJOWk2RjRuRXBNYjdyZVF3dzVGbVU1QmQxSXRvZjFZM2FFX21aUURJQi1zaGJKLW5kVEV6RElCaHY0QjlXWGpZYU54b1NQWEl4UzY3bFVGNVdtcnQ3Z2rSAcQEQVVfeXFMUEkxZDgwOC1fbnBkQ1pkT25vV3UySmRPeDZMeE9VbTlFbHQ0dHJoUXBMM3RzZjc4Q0wtZEZKMlRKbjZWVmdDVGFqekxycnNpNTlzTVVFNC1FYnR1cTVqV0VkRXVDT0tmeGRwTHFLQi01cWtTdXFEWVJwV1U5S1daQ3licFUxbWdrdmlqUVJscVJYZ21BZTRfekZtUkFDbHA0Vkk3X3RmQXl0YVdZczZtLVFKVDJEdllJcFdZSWUyNW9hQkhRYkZzeWo4ekJQcmNMcV9sUGlsVVVYQXZ0UllsaWU2QUQ0aHFoVUY1SVZldVZDSWo4VEhrN2JyT2twellsUEV5bGVlLWl4R29FTHprLURBcHlWZ3lFN3VTSlg3b1c1UGZiUkt1MmpybUZuSVplZjF2bXVWeEVJdWtOc2Q2QTZ1RlBrajlhZEUyck5QN1B0SGVVdnFXTGpsZDI3U1V5UXpVYTcwRWNhQ1J4TWQ1YmhpeldmVHF3eE11U19nU25CT2UtbmYwbnBaLVVubU5SSzZOeDAxdHUxVDl0dS10OWVJSmdOekRwbzE1WTZaMzVfeVFfcHVEYVZVZ1lVOE1nRnZIaWRKaElRVUt2eEN6cDVxOTNMRUpXYmtwaDg5eFM4MWlCMEo0MHJYWmVtZkdtQlBQUjFuY3RSRjU1MGtRaTdZc2gzREdTdll4eUpMZ1hrWG9FMFVUbWU1cjJYajhmQkxvX2ZLUnVDS0VZQjJzazlGLTJGQ09rNXVkd3VtMjBuLXNtLQ?oc=5",
-      "articleUrl": "https://arabi21.com/story/1792397/%D9%83%D9%8A%D9%81-%D9%8A%D8%A4%D8%AB%D8%B1-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D8%AD%D9%84%D9%81%D8%A7%D8%A1-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-10T09:49:22.601Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-10T09:52:14.599Z",
-      "canonicalUrl": "https://arabi21.com/story/1792397/%D9%83%D9%8A%D9%81-%D9%8A%D8%A4%D8%AB%D8%B1-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%B9%D9%84%D9%89-%D8%AD%D9%84%D9%81%D8%A7%D8%A1-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D9%88%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A9",
-      "pagePublishedAt": "2026-09-30T13:06:17.000Z",
-      "originalTextArabic": "تغادر القوات الأمريكية الأربعاء قواعدها المتبقية في العراق، مما يثير مخاوف من أن يترك انسحابها فراغا أمنيا، ويزيد من جرأة الفصائل المسلحة الشيعية المدعومة من إيران، ويمنح تنظيم الدولة فرصة لإعادة تنظيم صفوفه.",
-      "sourceHost": "arabi21.com",
-      "contentChars": 208,
-      "arabicRatio": 1.0172,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-10T09:54:03.493Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "3255bb10176ce4772cc45d0bb69bbe8707a62410be585d14a1b52988de99c366",
-        "sourceChars": 208,
-        "translatedChars": 126,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-05T10:36:24.057Z",
-        "titleKo": "미군의 이라크 철수가 이란의 동맹 세력과 이슬람국가에 어떤 영향을 미치는가?",
-        "fullTextKo": "미군은 수요일 이라크에 남아 있는 기지에서 철수한다. 이에 따라 미군의 철수가 안보 공백을 남기고 이란의 지원을 받는 시아파 무장 세력의 대담성을 키우며 이슬람국가에 전열을 재정비할 기회를 줄 수 있다는 우려가 제기되고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "relatedTitle": {
-        "status": "COMPLETED",
-        "pipelineVersion": "RELATED_TITLE_V1",
-        "method": "ARABIC_HEADLINE_TO_KOREAN_RELATED_TITLE",
-        "sourceTitleHash": "b6585c1eb83f7baddea46c4b941f609ece3a13d1470893be77d927c03a835161",
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "generatedAt": "2026-10-04T09:56:04.972Z",
-        "titleKo": "미군의 이라크 철수가 이란의 동맹 세력과 이슬람국가에 미치는 영향은?"
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-10T09:55:28.297Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "250aa512afdd04248862",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-jWZSnVnE1J6sZ6cuda",
-        "representativeArticleId": "discovery-c9QX4juwN0POag7IkfYBxRfB",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "3255bb10176ce4772cc45d0bb69bbe8707a62410be585d14a1b52988de99c366",
-      "contentCheckedAt": "2026-10-10T09:54:03.493Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -51850,9 +51269,9 @@
       "contentCheckedAt": "2026-10-10T09:54:05.337Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -63714,9 +63133,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -72430,9 +71849,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -74625,14 +74044,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 548,
-    "retained": 547,
-    "excluded": 1,
+    "before": 521,
+    "retained": 521,
+    "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 457,
+    "groupCount": 453,
     "duplicateGroupCount": 41,
     "duplicateArticleCount": 64,
     "maxHours": 72,
