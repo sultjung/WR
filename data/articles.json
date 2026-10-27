@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-27T09:06:24.943Z",
+  "generatedAt": "2026-10-27T10:46:07.459Z",
   "lookbackDays": 14,
-  "count": 393,
+  "count": 390,
   "categoryCounts": {
     "bismayah": 11,
-    "politics": 218,
+    "politics": 215,
     "economy": 73,
     "security": 83,
     "international": 8
@@ -1253,9 +1253,9 @@
       "contentCheckedAt": "2026-10-27T09:02:05.840Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1393,9 +1393,9 @@
       "contentCheckedAt": "2026-10-27T09:02:05.252Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -4080,9 +4080,9 @@
       "contentCheckedAt": "2026-10-27T09:02:11.998Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -10276,147 +10276,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery--Hzu5ojOkqxhJ6NLgX2pjU8O",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "حروب الشرق الأوسط.. صراع النفوذ ومصالح السلطات على حساب الشعوب",
-      "sourceArabic": "ANHA",
-      "sourceHomepage": "https://hawarnews.com",
-      "publishedAt": "2026-10-23T02:00:00.000Z",
-      "descriptionArabic": "حروب الشرق الأوسط.. صراع النفوذ ومصالح السلطات على حساب الشعوب ANHA",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0wcVZLeGJNT2xtVUlBLXJjVy11TWZJWHRGQVZuM3A3WjZmUExCM3JhbUVIbThKTHAxbWdoQUl3RTNOa2o3QUE?oc=5",
-      "articleUrl": "https://hawarnews.com/ar/148267",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-27T08:58:17.786Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-27T08:59:19.366Z",
-      "canonicalUrl": "https://hawarnews.com/ar/148267",
-      "pagePublishedAt": "2026-10-23T02:00:00.000Z",
-      "originalTextArabic": "يشهد الشرق الأوسط حروباً متشابكة تتداخل فيها مصالح القوى الدولية والإقليمية مع صراعات السلطة والنفوذ داخل الدول، من غزة إلى إيران واليمن والعراق وسوريا. وبينما تتنافس الأطراف على الأمن والسيطرة والموارد، تتحمل الشعوب الكلفة الأكبر من القتل والنزوح والفقر وتدمير مقومات الحياة.",
-      "sourceHost": "hawarnews.com",
-      "contentChars": 276,
-      "arabicRatio": 1.0107,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-27T09:02:22.206Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "cbd5969c3febb56c07d9b93339c645919b3100180cf25fffd0ff5846e586e07a",
-        "sourceChars": 276,
-        "translatedChars": 173,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-23T08:38:06.498Z",
-        "titleKo": "중동의 전쟁들... 국민을 희생시킨 영향력 다툼과 권력자들의 이해관계",
-        "fullTextKo": "중동에서는 국제 세력과 역내 세력의 이해관계가 각국 내부의 권력 및 영향력 다툼과 얽힌 복잡한 전쟁들이 벌어지고 있다. 가자에서 이란, 예멘, 이라크, 시리아에 이르기까지다. 당사자들이 안보와 지배권, 자원을 놓고 경쟁하는 동안, 국민들은 살해와 피란, 빈곤, 생활 기반의 파괴로 가장 큰 대가를 치르고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-27T09:03:58.472Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "3730a2e85a837c6369ad",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-o7_ODiFehcFcpiMaXG",
-        "representativeArticleId": "discovery--Hzu5ojOkqxhJ6NLgX2pjU8O",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "cbd5969c3febb56c07d9b93339c645919b3100180cf25fffd0ff5846e586e07a",
-      "contentCheckedAt": "2026-10-27T09:02:22.206Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-AGnl3rDo5-8u3WZSckgFGiEg",
       "keywordId": "security-shooting-001",
       "category": "security",
@@ -12279,9 +12138,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -13087,9 +12946,9 @@
       "contentCheckedAt": "2026-10-27T09:02:28.936Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -14090,9 +13949,9 @@
       "contentCheckedAt": "2026-10-27T09:02:28.995Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -14811,7 +14670,7 @@
       "contentCheckedAt": "2026-10-27T09:02:30.734Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -16809,16 +16668,11 @@
       "contentCheckedAt": "2026-10-27T09:02:31.471Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-10-27T09:03:00.428Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-oTqJ3sGVvgfp0dn0Nw",
@@ -20724,143 +20578,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-wf2LTxc8ZRdAP2uXCB-0x_Rx",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "قفزة نوعية في صادرات نفط العراق نحو الاسواق العالمية",
-      "sourceArabic": "الوقائع الإخبارية",
-      "sourceHomepage": "https://alwakaai.com",
-      "publishedAt": "2026-10-19T22:35:46.000Z",
-      "descriptionArabic": "قفزة نوعية في صادرات نفط العراق نحو الاسواق العالمية الوقائع الإخبارية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE5yTWUtX1M2SEEyZkVpQXJ4SkZNeWlETDk0SHA2dGNhck4yM2RoVm9DSlI3M0owUEFZdTNReXo2Q241RU1IdUpKYVdNaw?oc=5",
-      "articleUrl": "https://alwakaai.com/article/758009",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-27T08:58:18.150Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-27T09:00:02.371Z",
-      "canonicalUrl": "https://alwakaai.com/article/758009",
-      "pagePublishedAt": "",
-      "originalTextArabic": "تاريخ النشر : الثلاثاء - 20-10-2026 - 1:31 AM",
-      "sourceHost": "alwakaai.com",
-      "contentChars": 45,
-      "arabicRatio": 0.8267,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-27T09:02:34.612Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "6b20d6b77490bc35b306b42495d0608fab2abc3b2a6155abfc5bedfad9116650",
-        "sourceChars": 45,
-        "translatedChars": 36,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-20T00:19:36.979Z",
-        "titleKo": "이라크 석유 수출, 세계 시장을 향해 질적 도약",
-        "fullTextKo": "게시일: 화요일 - 2026년 10월 20일 - 오전 1시 31분"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 4,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-27T09:03:58.472Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "0fdc46099c726a985d78",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-5MsqjGTNR3fA8CABzH",
-        "representativeArticleId": "discovery-wf2LTxc8ZRdAP2uXCB-0x_Rx",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "6b20d6b77490bc35b306b42495d0608fab2abc3b2a6155abfc5bedfad9116650",
-      "contentCheckedAt": "2026-10-27T09:02:34.612Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-s4ok0Tqh_s-kePiXiOKOW96b",
       "keywordId": "international-hormuz-001",
       "category": "economy",
@@ -22161,145 +21878,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-biuT3ZPeSbRVF8Sl1ajhCPk6",
-      "keywordId": "international-hormuz-001",
-      "category": "politics",
-      "priority": 97,
-      "queryArabic": "مضيق هرمز العراق صادرات النفط الملاحة",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "مضيق هرمز",
-        "صادرات النفط",
-        "الملاحة",
-        "ناقلات النفط"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "شريان نفطي جديد يربط العراق بالاردن لتجاوز تحديات مضيق هرمز",
-      "sourceArabic": "الوقائع الإخبارية",
-      "sourceHomepage": "https://alwakaai.com",
-      "publishedAt": "2026-10-19T17:40:44.000Z",
-      "descriptionArabic": "شريان نفطي جديد يربط العراق بالاردن لتجاوز تحديات مضيق هرمز الوقائع الإخبارية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9TNC1LTjc5UG9mSUI0T3Y0eGJqX2hsOXN0OVJRUEdZUnZqR1JxT2lOVktFa1hJOUlUNlZpZWlvSVl6bGxNYk55bF9GWQ?oc=5",
-      "articleUrl": "https://alwakaai.com/article/757950",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-27T08:58:18.150Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-27T09:00:06.555Z",
-      "canonicalUrl": "https://alwakaai.com/article/757950",
-      "pagePublishedAt": "",
-      "originalTextArabic": "تاريخ النشر : الإثنين - 19-10-2026 - 8:31 PM",
-      "sourceHost": "alwakaai.com",
-      "contentChars": 44,
-      "arabicRatio": 0.8375,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-27T09:02:35.998Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "e59786512d00cb0a988e80a38bcb3ab72641aacb5b31a6e808c07ab54ab562e7",
-        "sourceChars": 44,
-        "translatedChars": 36,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "b77d77e633c838039b20",
-        "preferredTermsApplied": [
-          "호르무즈 해협"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-26T09:00:44.667Z",
-        "titleKo": "호르무즈 해협의 난관을 우회하기 위해 이라크와 요르단을 연결하는 새로운 석유 수송로",
-        "fullTextKo": "게시일: 월요일 - 2026년 10월 19일 - 오후 8시 31분"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 4,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-27T09:03:58.472Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "3d75e63edfb52e63ded0",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-stuwDYLgZOoWyGHo4P",
-        "representativeArticleId": "discovery-biuT3ZPeSbRVF8Sl1ajhCPk6",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "e59786512d00cb0a988e80a38bcb3ab72641aacb5b31a6e808c07ab54ab562e7",
-      "contentCheckedAt": "2026-10-27T09:02:35.998Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-ADTCJvA0pXj3nV7OrKu5uhQh",
       "keywordId": "international-us-001",
       "category": "politics",
@@ -22992,9 +22570,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -23519,16 +23097,11 @@
       "contentCheckedAt": "2026-10-27T09:02:37.988Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-10-27T09:03:00.432Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event--dvSdeplWM1oFRlzzK",
@@ -24533,9 +24106,9 @@
       "contentCheckedAt": "2026-10-27T09:02:39.069Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -25719,9 +25292,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -30566,9 +30139,9 @@
       "contentCheckedAt": "2026-10-27T09:02:43.971Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -30852,9 +30425,9 @@
       "contentCheckedAt": "2026-10-27T09:02:44.033Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -35488,9 +35061,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -36473,9 +36046,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -36571,9 +36144,9 @@
       "contentCheckedAt": "2026-10-27T09:02:46.328Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -40001,9 +39574,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -48872,9 +48445,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -51553,9 +51126,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -56149,14 +55722,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 433,
-    "retained": 431,
-    "excluded": 2,
+    "before": 393,
+    "retained": 393,
+    "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 348,
+    "groupCount": 345,
     "duplicateGroupCount": 21,
     "duplicateArticleCount": 45,
     "maxHours": 72,
