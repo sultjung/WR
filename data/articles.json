@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-10-29T10:02:23.436Z",
+  "generatedAt": "2026-10-29T11:39:36.050Z",
   "lookbackDays": 14,
-  "count": 352,
+  "count": 348,
   "categoryCounts": {
-    "politics": 207,
+    "politics": 203,
     "economy": 71,
     "bismayah": 13,
     "security": 50,
@@ -447,9 +447,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -1038,7 +1038,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "economy",
+        "from": "bismayah",
         "to": "bismayah",
         "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
@@ -1129,9 +1129,9 @@
       "contentCheckedAt": "2026-10-29T09:59:21.795Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1277,9 +1277,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1904,142 +1904,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-j5mWWDR38mQzeFDL0MjTGC0B",
-      "keywordId": "international-sanctions-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "عقوبات أميركية العراق مصارف تحويلات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "عقوبات أميركية",
-        "مصارف عراقية",
-        "تحويلات الدولار",
-        "الخزانة الأميركية"
-      ],
-      "excludedTerms": [],
-      "originalTitleArabic": "وزير الصحة يستقبل السفير العراقي لبحث التعاون الصحي والدعم المقدم للبنان",
-      "sourceArabic": "Daily Beirut",
-      "sourceHomepage": "https://dailybeirut.com",
-      "publishedAt": "2026-10-28T13:30:40.045Z",
-      "descriptionArabic": "وزير الصحة يستقبل السفير العراقي لدعم لبنان · دايلي بيروت Daily Beirut",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi5ARBVV95cUxQVzFzR3NXTkhzTV9tYllQTVB1OExaenpLa3VMQmFLbGZOWUpNSTN5M3UyTUhnMW16YklsWG5pQ0tRa0htODZ4V1Uwc1Z0QjdfZk1zeEc2b3J1VWJzcHY3ZFp5RXhULXZJUWpaS3c0ajd2RTV1UVFHQnd4cFdOSm9tTlBEN2JGNTQzUmMwWW5VZ0laOVMzbUNOYzRwYndTWVBjdGtzR0xrQTRFclRCVG1rTHFIU3k2c1pyd0NjbF9DYmhBRy1ldFVWS0ZPQ1lPb0t0RTJOV0M5czJ4N3JjSWVxdDlYb09XZ0dIYkp3cWo3QUVfTGZiVGNORC1zMEZDazZKcEZvRWhZOXhyaXRmZTVhUUNxSUs0VTNETTNpMU5YVnppb2xkaTZScnBvUW1EX093ZjBoejNNNkFrNlQtUjFfZU1mcXFNN2ZoTFBpb2VIZkNKNVlSelBiTUthMjd1YWtrYWNoQVNUWGZwdTgzX0RseGUzS0lnVGFuV1RNTFFSYWdrVEY3U3o2enN0WGNVOThnRnhwb2JRUzBEaC1acFpxN3RvUHhCcHJoX0hSZ0ZUVm9fWVVJYUg0eDdXSmJNMmdHem5ERnF3TDlIS2x2a3lkZkJqVHN1ZUk5aEZtdnBCREZfVGZ2UzdJUmY4LU9kVVpnVVRVN05VMndETDZIenhoTzkxNWpxUll3NUZYV1UwWExZaUF0VGMwUEhrdGt1YzBaeU0yeFpMbXp5dXlwNU5iWkNQNE5jejVsYlNKbXc5UF9hdUtiQ1ZfdWpmX1NYR2YzQTF1c21WRmdZcTJMbmV0eERhZzY?oc=5",
-      "articleUrl": "https://dailybeirut.com/%D9%84%D8%A8%D9%86%D8%A7%D9%86/%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%B5%D8%AD%D8%A9-%D9%8A%D8%B3%D8%AA%D9%82%D8%A8%D9%84-%D8%A7%D9%84%D8%B3%D9%81%D9%8A%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%84%D8%A8%D8%AD%D8%AB-%D8%A7%D9%84%D8%AA%D8%B9%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%B5%D8%AD%D9%8A-%D9%88%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D9%85%D9%82%D8%AF%D9%85-%D9%84%D9%84%D8%A8%D9%86%D8%A7%D9%86/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-29T09:56:54.387Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-29T09:57:15.849Z",
-      "canonicalUrl": "https://dailybeirut.com/%d9%84%d8%a8%d9%86%d8%a7%d9%86/%d9%88%d8%b2%d9%8a%d8%b1-%d8%a7%d9%84%d8%b5%d8%ad%d8%a9-%d9%8a%d8%b3%d8%aa%d9%82%d8%a8%d9%84-%d8%a7%d9%84%d8%b3%d9%81%d9%8a%d8%b1-%d8%a7%d9%84%d8%b9%d8%b1%d8%a7%d9%82%d9%8a-%d9%84%d8%a8%d8%ad%d8%ab-%d8%a7%d9%84%d8%aa%d8%b9%d8%a7%d9%88%d9%86-%d8%a7%d9%84%d8%b5%d8%ad%d9%8a-%d9%88%d8%a7%d9%84%d8%af%d8%b9%d9%85-%d8%a7%d9%84%d9%85%d9%82%d8%af%d9%85-%d9%84%d9%84%d8%a8%d9%86%d8%a7%d9%86/",
-      "pagePublishedAt": "2026-10-28T13:30:40.045Z",
-      "originalTextArabic": "استقبل وزير الصحة العامة ركان ناصر الدين في مكتبه في الوزارة السفير العراقي في لبنان محمد رضا الحسيني مع وفد، وتم التداول في مواضيع ذات اهتمام مشترك ومشاريع التعاون الثنائي في المجال الصحي.\n\nوشكر الوزير ناصر الدين السفير العراقي على ما قدّمه ويقدمه العراق في سبيل دعم لبنان.",
-      "sourceHost": "dailybeirut.com",
-      "contentChars": 274,
-      "arabicRatio": 1.007,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-29T09:59:22.397Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "249a44d4633ce1413b708c671dbaf2e06de96b4cea4e799a1258fde2fccbd470",
-        "sourceChars": 274,
-        "translatedChars": 178,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-29T10:02:09.476Z",
-        "titleKo": "보건부 장관, 보건 협력 및 레바논에 대한 지원 논의 위해 이라크 대사 접견",
-        "fullTextKo": "보건부 장관 라칸 나세르 앗딘은 부처 집무실에서 레바논 주재 이라크 대사 무함마드 리다 알후사이니와 대표단을 접견했으며, 공동 관심 사안과 보건 분야의 양국 협력 사업에 대해 의견을 나눴다.\n\n나세르 앗딘 장관은 레바논을 지원하기 위해 이라크가 제공했고 현재도 제공하고 있는 지원에 대해 이라크 대사에게 감사를 표했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "249a44d4633ce1413b708c671dbaf2e06de96b4cea4e799a1258fde2fccbd470",
-      "contentCheckedAt": "2026-10-29T09:59:22.397Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-kcFjPjbx8VML4n8ruZ",
-        "representativeArticleId": "discovery-j5mWWDR38mQzeFDL0MjTGC0B",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 19,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-29T10:01:00.190Z",
-        "breakdown": {
-          "nationalImportance": 12,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "8cb3186d6fbce2fe4265",
-        "ruleScore": 19,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -10010,9 +9874,9 @@
       "contentCheckedAt": "2026-10-29T09:59:36.002Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -10909,147 +10773,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-5EMDnfYlA7xVy40zZMASLEY5",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "وَقْفَةٌ عِنْدَ مَوْقِف تونس من غزو العراق للكويت، في كتاب \"السفير محمد جنيفان: مسار وتحديات ومواقف\"",
-      "sourceArabic": "Leaders.com.tn",
-      "sourceHomepage": "https://ar.leaders.com.tn",
-      "publishedAt": "2026-10-25T16:22:41.000Z",
-      "descriptionArabic": "وَقْفَةٌ عِنْدَ مَوْقِف تونس من غزو العراق للكويت، في كتاب \"السفير محمد جنيفان: مسار وتحديات ومواقف\" Leaders.com.tn",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMipwVBVV95cUxQNUpaa3ptNkZUSWNMR1l5WWVEdF96ODZqbThCUlMyYzV2UnMtWXlPU3ZvLWNMMUFrVDkwdVN2empOdjJEYTRsYl8zYmN0eEROREF0UDlRR3RiLUdMZGxvclRhQl9SYjh1LVBBc0p5MHpEMDlhbzIzdFZLZEZ1UlZkaXB0dnNXVUFOMXBobFZoVWZhVDZDclVEcHpqbEtrQW4wckp5RUgwWHV6eXhmbUczRWMweW0ySWxvSzdsMjlwUFhBRjJGSWU1ZmdvRzgxaFRodFE3dzF6dVNjenZCRVRXMmdMU0VGMDA5RE5seW84M3RQSXlDR3lmbjhCWURLVGV4S3ZUbGtMY3NPZnhKTjJtUnFZZlF6SXRkZC1VYTlQZl90UlREc1IxZDJHUERwbHdfaEtfVTBhZUJtb1RPeXQ3Sm1JUW5SVTU5MTI3M3d4VWczNVZoYUQ2OTBwRGlrclNoYjBVQjZVY3NjY0hSRVFNX3I2NVA0VjR2eFc3cklVQ1VOQnZtbTlIdmFNMmw3elNLd1NwZ3RtRlI1S2xHRllVb3lRZ0J1aWdzT0N1OUZ5VnZfYWN1X0NGTUFRREVMN1g0WG5uMG4zYmJKSXh3NE5BeEdaOWJIcVhjcl9LMnFURXlmNzJXa0xHT3dURWJTQkg3d0lHcDhkTWp6ZU5VQjdLOEZRTWQ3WkxyQWVtdzdyOEpxOVEwN3liZkhvcXZvekkwa2o2bmpFMDFaMzY3Z0tlZ21xZmV6Nmdoc1Z2X1MzZlYxaC1pUzJienZuUHdpdWNldUJxTGh1dnhFckFVdndUQWFPcERMUWpwWlBEeGM2VUYyOHRtdzVpeGJVcks0N0xKWjV3aWFGeHdITkFCbEtMak1nd3VMVjVfM1k2YUFKc2NqR09BRDBj?oc=5",
-      "articleUrl": "https://ar.leaders.com.tn/article/7740-%D9%88-%D9%82-%D9%81-%D8%A9-%D8%B9-%D9%86-%D8%AF-%D9%85-%D9%88-%D9%82-%D9%81-%D8%AA%D9%88%D9%86%D8%B3-%D9%85%D9%86-%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D9%81%D9%8A-%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D8%B3%D9%81%D9%8A%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D8%AC%D9%86%D9%8A%D9%81%D8%A7%D9%86-%D9%85%D8%B3%D8%A7%D8%B1-%D9%88%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D9%88%D8%A7%D9%82%D9%81",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-29T09:56:53.914Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-29T09:57:50.626Z",
-      "canonicalUrl": "https://ar.leaders.com.tn/article/7740-%D9%88-%D9%82-%D9%81-%D8%A9-%D8%B9-%D9%86-%D8%AF-%D9%85-%D9%88-%D9%82-%D9%81-%D8%AA%D9%88%D9%86%D8%B3-%D9%85%D9%86-%D8%BA%D8%B2%D9%88-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%84%D9%84%D9%83%D9%88%D9%8A%D8%AA-%D9%81%D9%8A-%D9%83%D8%AA%D8%A7%D8%A8-%D8%A7%D9%84%D8%B3%D9%81%D9%8A%D8%B1-%D9%85%D8%AD%D9%85%D8%AF-%D8%AC%D9%86%D9%8A%D9%81%D8%A7%D9%86-%D9%85%D8%B3%D8%A7%D8%B1-%D9%88%D8%AA%D8%AD%D8%AF%D9%8A%D8%A7%D8%AA-%D9%88%D9%85%D9%88%D8%A7%D9%82%D9%81",
-      "pagePublishedAt": "",
-      "originalTextArabic": "وهذا ما يلمسه من يقرأ كتاب \"السفير محمد جنيفان: مسار وتحدّيات ومواقف\" الذي أتحفتنا به \" الجمعية التونسية لقدماء السفراء والقناصل العامين\" في مفتتح موسم لقاءاتها الجديد، بعد أن تعاونت، طيلة الصائفة الماضية، مع \" مؤسسة ليدر ز \"، على نشره .\n\nفللجمعية وللمؤسسة جزيل الشكر وجميل الثناء على ما بذلتاه من جهود من أجل المساهمة في الحفاظ على الذاكرة الوطنية في الحقل الدبلوماسي . وإنّني لأجد نفسي في غنى عن الإطناب في الحديث عن خصال السفير محمد جنيفان الإنسانية والمِهَنِيَّةِ، وعن خصائص طريقته الطريفة الظريفة في التواصل والتفاعل مع مختلف مخاطَبِيهِ، ففي المقدّمة التي وضعها وزير الشؤون الخارجية والهجرة والتونسيين بالخارج محمد علي النفطي للكتاب، وفي المداخلات التي ساهم بها خلال جلسات التسجيل، وكذلك في الشهادات التي جاءت على لسان العديد ممّن عملوا معه، وخاصة منهم السفير الهادئ بن نصر رئيس \"الجمعية التونسية لقدماء السفراء والقناصل العامين\"، وفي الكلمتين اللتين اختتم بهما كل من السفير المكي العلوي والسفير عبد الوهّاب الجمل الجلسات، ما يوفيه حقَّهُ المُستَحَقَّ عن جدارةٍ، من الإطراء.\n\nبَيْدَ أنَّني في المقابل أريد أن أؤكد أنني أقبلت على قراءة الكتاب باهتمام بالغ، وتتبعت، عن كثب وبدقة، مختلف المراحل التي استغرقتها رحلته الدبلوماسية الطويلة التي قادته إلى كل من بغداد كقائم بالأعمال، ثم بيروت كسفير، ثم طرابلس كمندوب عام، ثم الرياض كسفير ومندوب دائم لدى منظمة المؤتمر الإسلامي، فالمنامة فدمشق كسفير وفي آخر المطاف، القاهرة كسفير وكممثل لتونس لدى جامعة الدول العربية.\n\nولأنّني حريصٌ على أن أترك لمن لم يقرأ الكتاب مُتعةَ اكتشاف محتواه الثري، فإنّني لن أستعرض ما جاء فيه من معلومات ومن مواقف وآراء، لكنني، مع ذلك، سأسمح لنفسي بوَقْفَةٍ عند رأي استرعى انتباهي بصفة خاصة، لأن السفير محمد جنيفان ألحّ عليه سواء في حديثه خلال جلسات التسجيل، أو في المحاضرة التي ألقاها حول \"سياسة تونس الخارجية: الثوابت والمتغيرات\" بمناسبة الاحتفال بستينية وزارة الشؤون الخارجية، والتي حرص على أن تكون مسك ختام الكتاب...\n\nهذا الرأيُ يتعلق بموقف تونس من غزو العراق للكويت في 02 أوت 1990، فلقد اعتبر السفير محمد جنيفان هذا الموقف ثالثَ ثلاثةِ مواقف يرى أن بلادنا جنحت فيها عن ثوابتها ، ويتعلق الموقف الأول بمعركة بنزرت التي يقول إنّ بعض الباحثين والمحللين من السياسيين والعسكريين في الخارج وفي بعض الأوساط التونسية رأوا فيها \"جنوحا غير مبرَّر عن ثابتة مركزية في سياسة بلادنا الخارجية، وهي الالتزام بتغليب منطق الحوار والتفاوض والوسائل السلمية على الخلافات والمنازعات\" (ص 331)، أما الموقف الثاني فهو يتعلق بإمضاء الرئيس الحبيب بورقيبة يوم 12 جانفي 1974 وثيقة جربة الوحدوية مع العقيد معمّر القذّافي، وقد وصف هذا الإمضاء بالعملية المُحَيِّرَةِ وتساءل عنها، دون قدرة على الجواب، قائلا: \"أهي جنوح أم شبه جنوح؟ أم هي حادثة تستعصي على التوصيف والتصنيف؟ (ص 335)...\n\nولدى تطرّقه إلى موقف تونس من غزو العراق للكويت في المحاضرة، يؤكد السفير محمد جنيفان أنّ: \"من أبرز حوادث الجنوح عن الثوابت المعلنة في سياسة بلادنا الخارجية، تلك التي حاد فيها الموقف التونسي عن نصرة قضايا الحق والعدل في عهد الرئيس الثاني للجمهورية ، ففي 2 أوت 1990 غزت قوات العراق بأمر من الرئيس صدام حسين دولة الكويت الشقيقة العربية وأنهى من جانبه وجودها الدولي وألحقها بالعراق ولاية من ولاياته. فكان رد أغلب دول العالم وخاصة العربية والإسلامية التنديد بما اعتبرته عدوانا وانتهاكا للمواثيق الدولية ودعت الطرف المعتدي الى سحب قواته من الكويت وانهاء عدوانه وأعربت عن عزمها العمل على رد العدوان ومساعدة الكويت على استرجاع سيادتها\" (ص 335/336).\n\nثم يلاحظ أنّه \"لم يشذّ عن هذه المواقف إلا دول محدودة كانت من بينها الجمهورية التونسية التي جاء أولُ بيان أصدرته وزارة الخارجية، تبيانًا لموقف بلادنا من الغزو، معبّرًا عن القلق البالغ من التدهور العسكري في النزاع العراقي الكويتي، وأن ما يهمها هو المحافظة على التضامن والوحدة العربيين، واقتناعها أن الجامعة العربية تبقى الإطار الملائم لتسوية الأزمة في سبيل السلمية\" (ص 336).\n\nوقد أوضح في جلسات التسجيل التي توسّع خلالها في الحديث عن حيثيات الموقف التونسي أن الموقف الذي عبّر عنه بيان وزارة الشؤون الخارجية جاء مخالفا للموقف الذي كان وزير الشؤون الخارجية آنَئِذٍ إسماعيل خليل اقترح على رئاسة الجمهورية إصداره، وهو موقف صاغه بالتشاور مع أعضاء الوفد التونسي الذي كان يستعد للمشاركة في مؤتمر وزراء خارجية منظمة المؤتمر الإسلامي بالقاهرة والذي كان السفير محمد جنيفان أحدهم باعتباره سفير تونس بالرياض ومندوبها الدائم لدى المنظمة.\n\nيقول في هذا الصدد: \"سافرت إلى القاهرة يوم 29 جويلية 1990، وانضممت إلى الوفد التونسي بقيادة وزير الخارجية إسماعيل خليل. وبينما كنّا في غمرة النقاش وترتيب الأولويات والجدل الدائم بين أعضاء المؤتمر من كبار الموظفين والوزراء، أفَقْنَا فجرَ يوم 2 أوت 1990 على هول أنباء مُعْلِنَةٍ أن العراق غزا دولة الكويت واحتلها لتصبح إحدى محافظاته\" (ص 200).\n\nويضيف قائلا: \"اجتمع الوفد التونسي، صباح ذلك اليوم بالفندق الذي كنا نقيم فيه، وأشرَكَنَا وزير خارجيتنا في تحرير مشروع للموقف التونسي تجاه هذا الحدث الجلل. الفكرة الرئيسية للموقف كانت، بتوجيه من الوزير، واتفاق آراء الحاضرين، إدانة الغزو والدعوة الى انسحاب القوة الغازية، ودعم حرية الكويت وسيادتها\"، ثم يذكر أنه تدخل في النقاش، فيقول: \"خلال مناقشتي بعض الكلمات المتعلقة بالإدانة، أبديت رأيا يدعو إلى ضرورة التخفيف من حدّة صيغة الإدانة لضمان التأثير الأدبي على العراق وتسهيل انسحاب جيشه فقال لي الوزير: \"هل أصبحت بسرعة كأنك مباشر لمهمة سفيرنا في بغداد؟\" (ص 201).\n\nومع ذلك، فإن الوزير إسماعيل خليل \"لمّا أبرق مشروع الموقف كما حررناه تلقى من الرئيس بن علي مكالمة مُؤَنِّبَةٍ، ولمّا عاد الى تونس وجد الموقف التونسي الذي اختاره بن علي مناقضا للمشروع الذي رآه الوزير مناسبا لتونس في هذه الأزمة\" (ص 201).\n\nوعن هذا الموقف وتداعياته يقول السفير محمد جنيفان إنّه \"بالنسبة لتونس التي اختار رئيسها موقفا مُجَارِيًا للموقف الشعبي في بلاده أعفي وزير الخارجية إسماعيل خليل صاحب الرأي الداعي الى الوقوف ضد عدوان صدام، وعيّن مكانه الحبيب بولعراس وبدأت الدبلوماسية التونسية تخوض حربها الناعمة في مواجهة أغلبية عربية ودولية داعمة لتدخل عسكري دولي ضد العراق، بينما تعلن تونس أن حل الأزمة ينبغي أن يكون داخل المجموعة العربية\" (ص 202).\n\nوفي معرض تفسيره لأسباب هذا الموقف الذي يقول إن كثيرين استغربوه والذي جعل الرئيس بن علي يقاطع القمة العربية الطارئة التي انعقدت بالقاهرة في 10 أوت 1990، لاتخاذ موقف عربي مشترك، يسوق السفير محمد جنيفان ثلاثة أسباب يرى أنها تكمن وراء اتخاذه وهذه الأسباب هي التالية:\n\n&bull; السبب الأول هو أنه جاء نتيجة \"خطأ في قراءة المتغيِّر الإقليمي في المشرق العربي\"، &bull; والسبب الثاني أنه ناجم عن \"العلاقات المتينة وذات البعد الاستراتيجي بين الرئيسين (بن علي وصدام) تمخّضت عنها زيارة قام بها الرئيس التونسي لبغداد بُعَيْد انتهاء الحرب العراقية الإيرانية\". &bull; أما السبب الثالث فهو يتمثل في \"تأثُّرِه بحاسّة الرئيس الأمنية في قراءة المشهد الشعبي وردود فعله في العالم العربي عامة وفي تونس خاصة، وربما كان يسعى لاستباق رد فعل الطبقات الشعبية وخاصة التيارات الإسلامية التي انحازت بأغلب قادتها الى جانب القيادة العراقية\" (ص 336).\n\nويستخلص السفير محمد جنيفان من كل ما تقدم أنه \"ومهما كان سبب الموقف الرسمي التونسي فلا مناص من اعتباره انتهاكا واضحا لثابتة الوقوف إلى جانب القضايا العادلة ونصرتها\" (ص 337)...\n\nوهذا الحكم الجازم الحاسم على الموقف التونسي قد يكون، ولو جزئيا، راجعا إلى وجود السفير محمد جنيفان في المملكة العربية السعودية إبان اندلاع أزمة غزو الكويت، وإلى الحرج الذي ربما كان يشعر به عند القيام ببعض المهام التي كلّف بها، أو الاتصالات التي كان يجريها لا سيما وأن دولا عربية عديدة وخاصة في منطقة الخليج \"اعتبرت الموقف التونسي خروجا عما عرفت به البلاد من واقعية وعقلانية واعتدال وكانت الكويت والسعودية أساسا أكثر المتعجّبين الشاعرين بالمرارة من الموقف التونسي\" (ص 202).\n\nوكنماذج من هذه المهام والاتصالات \"المحرجة\" يمكن أن نذكر حسب ما أدلى به خلال جلسات التسجيل:\n\n&bull; المقابلة التي أجراها مع الأمير سعود الفيصل وزير الخارجية السعودي في جدة، بدعوة من الأمير الذي أبلغه خلالها \"أن خادم الحرمين الشريفين الملك فهد يرغب في أن توجه تونس قوات عسكرية للمشاركة الى جانب القوات العربية الأخرى في الدفاع عن أنفسهم من الخطر المهدد\"، وقد تأكد له من خلال المحادثة \"أن السعودية ترحب بالمشاركة التونسية ولو بعدد قليل من الجنود، ويكفيها فقط أن تُعَدَّ تونس من بين المشاركين في الحرب إلى جانبها\"، وهو كما يستخلص \"موقف فيه كثير من الدهاء\" (ص 203). &bull; حضوره المقابلة التي أجراها مبعوث شخصي من طرف الرئيس بن علي (لم يذكر اسمه) مع الملك فهد وذلك لتسليمه \"رسالة تتضمن مبادرة تونسية وكان الهدف منها إنهاء النزاع بصورة سلمية في وقت كانت الحرب تبدو حتمية\" وقد رأى خلال هذه المقابلة \"كيف يستطيع البلد فعلا أن يظهر غير ما يبطن من موقف\" (ص 203). &bull; تكليفه، وهو في غمرة الاستعداد لمغادرة المملكة العربية السعودية، بمهمة وصفها بأنها \"من أخطر المهام على نفسه، وهي تتمثل في تمرير أفكار موجَّهَة الى أمير الكويت اللاجئ في السعودية\". وقد قام بهذه المهمة في 31 أكتوبر 1990 حين تمكّن من الالتقاء بوزير الخارجية الكويتي آنئذ الشيخ صباح الأحمد الجابر المرابط بجوار أمير بلاده في مدينة الطائف بالسعودية\"... وقد سمع خلال هذا اللقاء \"عتابا مرّا\" من الكويت على تونس \"مبعثه الاخوة والاعتقاد بأنها تكون دائما مع الحق وخاصة إذا كان البلد المظلوم شقيقا يحبها وتحبه\" فخرج منه كما يقول \"مقتنعا بكل ما قاله، ولكنّي لم أبد له أي شيء مما كنت مقتنعا به ولا خالفته فيما قال. ودعته وأنا موقن أنه سيعود منتصرا من الدعم الدولي الذي استطاعت بلاده أن تحشده بمساعدة السعودية بالذات\" (ص204/205)...\n\nوخلاصة القول هي أن السفير محمد جنيفان الذي كان قبل اندلاع الأزمة يستعد للانتقال من الرياض إلى بغداد، لكنّه خُيِّرَ بعد \"عاصفة الصحراء\" بين العودة إلى تونس أو الانتقال إلى المنامة، يرى بل ربما يعتقد أنه \"ورغم ما حف بالحرب التي شنت على العراق من عوامل أثارت بعض التعاطف مع صدام، فقد أثبتت تطورات القضية صواب الموقف الذي دعت اليه برقية إسماعيل خليل الذي غادر بسببه وزارة الخارجية. وانخرطت تونس فيما بعد، حين تبين لقيادتها خطأ تقديرها للموقف في عمل شاق حاولت به تفادي النتائج الوخيمة لمراهنتها على الحصان الخاسر\" (ص 205/206)...\n\nوالرأي عندي، وقد عشت من جانبي أطوار الأزمة وواكبتها عن كثب حيث كنت في ديوان وزير الشؤون الخارجية، أن هذه الرؤية تحتاج إلى المراجعة أو على الأقل إلى شيء من التنسيب، ذلك أننا حين نعود إلى الكتاب الذي أصدرته الوزارة الأولى (كتابة الدولة للإعلام)، بعد أن وضعت الحرب الأولى التي شنتها الولايات المتحدة وحليفاتها الغربية والعربية على العراق أوزارها، تحت عنوان \"تونس وأزمة الخليج: مواقف ووثائق\" نقرأ في التمهيد أن \"الهاجس الأول والأخير المحدِّد لمرتكزات الموقف التونسي وجوهره هو تجنب الخطر الداهم، ألا وهو خطر الحرب والدمار، خطر التشتت العربي وفقدان إمكانيات التنمية، خطر اضمحلال القيم والمبادئ الدولية، وانتشار قانون الغاب من أية جهة كانت وفي أي مكان من العالم، وبكلمة واحدة تغلّب منطق القوة على قوة المنطق\" (ص 8).\n\nويضيف التمهيد أن \"كل هذه المخاطر كانت تدركها تونس إدراكا تاما ونبّهت إليها بكل مسؤولية وروح قومية عالية رائدها في ذلك صيانة المبادئ التي تقوم عليها العلاقات العربية والدولية المهدَّدَة في الصميم، في صورة عدم الإسراع بتطويق الأحداث ومعالجة الأزمة قبل استفحالها\" (ص 8).\n\nوتفصّل المذكّرة التي تلت التمهيد مباشرة، والتي جاءت تحت عنوان \"مذكرة عن موقف تونس المبدئي من قضية الخليج وتجلياته في التعامل معها\" المبادئ التي قام عليها الموقف التونسي من هذه القضية، فتذكر أن هذه المبادئ تمثلت فيما يلي:\n\n&bull; التمسك بالشرعية الدولية وفق ما ينصّ عليه ميثاق الأمم المتحدة وميثاق جامعة الدول العربية. &bull; المطالبة بانسحاب القوات العراقية من الأراضي الكويتية. &bull; نبذ استعمال القوة والدعوة الى اعتماد الحوار والتفاوض كأسلوب لإيجاد حل للنزاع. &bull; التأكيد على ضرورة حصر حلّ الخلاف في إطار عربي\" (ص 13).\n\nوفي خصوص المبدإِ الأخير وتحت عنوان \"حصر حل الأزمة في الإطار العربي\" تشير المذكرة إلى أن تونس رفضت حضور القمة العربية المنعقدة بالقاهرة في 10 أوت 1990 \"حتى لا تشترك في إضفاء الشرعية على التدخل العسكري الأجنبي في البلاد العربية وبالتالي تدويل القضية وتعقيدها\" (ص 16).\n\nثم إن تونس العربية المسلمة، كما جاء في بعض النصوص التي تضمنها الكتاب \"لا تقبل إعطاء شرعية وهمية للتدخل الأجنبي في قضايا الأمّة مهما بلغت من حدّة، لأنها تعتقد أن ذلك لا يخدم المصالح العربية ولا السلم والأمن في المنطقة، بل يزيدها تعقيدا بتدويل القضية ودفع الأطراف الأساسية فيها الى مزيد الإصرار والتشدد\" (ص 36).\n\nوالى ذلك فإنّ ما آل اليه الوضع في منطقة الخليج وانعكاساته على الساحة العربية يحمل على التساؤل بمرارة \"عن جدية التعلل بالشرعية الدولية لإنزال القوات الأجنبية في الأرض العربية\"... خاصة وأننا \"خبرنا هذه الشرعية من خلال المحنة الفلسطينية المزمنة، واحتلال الأراضي العربية، واجتياح لبنان، وقمع الانتفاضة رغم القرارات الأممية العديدة\"... كما إن الأحداث بينت \"أنّ الشرعية وما تستند إليه من مبادئ لا تساوي شيئا أمام المصالح الحيوية للدول القوية، بل تتكيف حسب هذه المصالح وحسب العلاقة بالجهات المطلوب إدانتها\" (ص 36).\n\nوالمتأمّل، ولو قليلا، فيما آلت إليه أوضاع الأمة العربية، وخاصة الأوضاع في الشرق الأوسط والخليج، هذه الأيام، لا مَهْرَبَ له، إن كان يتمتع بحد أدنى من الموضوعية، من أن يُقِرَّ، ولو في قرارة نفسه، بأن تعاقب الأحداث، وتتالي النكبات التي حلّت بالعرب على امتداد ما يناهز العقود لأربعة الماضية، أثبتا صواب الموقف الذي اتخذته تونس من خطإ، بل من خطيئة إعطاء الضوء الأخضر للتدخل الأجنبي في المنطقة العربية الذي تحوّل مع مرور السنين، إلى تغلغل حقيقي، وفي بعض الأحيان إلى احتلال فعلي كما وقع للعراق على يد الولايات المتحدة، وكما يقع لسوريا ولبنان الآن على يد إسرائيل المُتَغَوِّلَة التي تعمل، بدعم مطلق من واشنطن، على الهيمنة على الشرق الأوسط...\n\nوالمؤلم والمخيف في آن واحد هو أن حالة الانحدار والتهالك التي ما فتئت المنطقة تعاني منها لا تلوح في الأفق أية بوارق أمل في الخروج منها بل إنها مرشحة للتفاقم أكثر فأكثر في ظل حرب الإبادة التي تواصل إسرائيل شنها على قطاع غزة منذ أكثر من ثلاث سنوات، وفي ظل تكثيف الاستيطان في الضفة الغربية لجعل قيام الدولة الفلسطينية أمرا مستحيلا، ونتيجة الحرب التي تستعد إسرائيل والولايات المتحدة الأمريكية لشن شوطها الثالث على إيران، بعد أن كانتا شنّتا عليها شوطها الأول في جوان 2025، وشوطها الثاني في فيفري 2026.\n\nوجملة هذه التطورات وما يرافقها من تعقيدات يرشّح المنطقة للدخول في حقبة عاصفة جديدة من التقلبات والاضطرابات والصراعات والتوترات والفوضى ستتمكن إسرائيل والولايات المتحدة خلالها من إحكام التحكم في أعناق العرب وأرزاقهم لسنوات، بل ربما لعقود قادمة عديدة...\n\nمحمد إبراهيم الحصايري\n\nالسفير محمّد جنيفان، مسار وتحدّيات ومواقف إصدار الجمعية التونسية لقدماء السفراء والقناصل العامين دار ليدرز، 2026، 338 صفحة، 45 د متوفر بالمكتبات وعلى المنصة الالكترونية www.leadersbooks.com.tn (التوصيل مجاني)\n\nقراءة المزيد\n\n&bull; في حوار شيق، تقديم كتاب مذكرات السفير محمد جنيفان (ألبوم صور)\n\n&bull; صدر حديثا: \"السفير محمّد جنيفان، مسار وتحدّيات ومواقف\"",
-      "sourceHost": "ar.leaders.com.tn",
-      "contentChars": 13471,
-      "arabicRatio": 1.0096,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-29T09:59:37.276Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "5d0d750c826834751fa14911cd8a06271a9038bec0f8869540e756096aa2664d",
-        "sourceChars": 13471,
-        "translatedChars": 2889,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "c7d94f81275b30604b61",
-        "preferredTermsApplied": [
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-29T10:01:52.241Z",
-        "titleKo": "이라크의 쿠웨이트 침공에 대한 튀니지의 입장을 돌아보며, 『대사 모하메드 제니판: 여정과 도전, 입장』에서",
-        "fullTextKo": "이는 새 만남의 시즌을 시작하며 튀니지 전직 대사 및 총영사 협회가 우리에게 선사한 『대사 모하메드 제니판: 여정과 도전, 입장』을 읽는 사람이 느끼는 점이다. 이 협회는 지난 여름 내내 리더스 재단과 협력해 이 책을 출간했다.\n\n외교 분야에서 국가의 기억을 보존하는 데 기여하기 위해 기울인 두 기관의 노력에 대해 협회와 재단에 진심으로 감사하고 깊은 찬사를 보낸다. 대사 모하메드 제니판의 인간적, 직업적 자질과 다양한 상대방과 소통하고 교류하는 그의 독특하고 유쾌한 방식에 대해 장황하게 말할 필요는 없다고 생각한다. 외교·이민·재외 튀니지인 장관 모하메드 알리 엘네프티가 책에 붙인 서문과 기록 세션에서 그가 기여한 발언들, 그와 함께 일했던 많은 이들이 전한 증언, 특히 튀니지 전직 대사 및 총영사 협회 회장인 하디 벤 나스르 대사의 증언, 그리고 각 세션을 마무리하며 마키 알라위 대사와 압둘와하브 엘잠말 대사가 한 두 차례의 발언에 그의 마땅한 공로를 충분히 치하하는 내용이 담겨 있기 때문이다.\n\n그러나 한편으로 나는 이 책을 매우 큰 관심을 가지고 읽었으며, 그가 대리대사로 바그다드에 이어 대사로 베이루트, 총대표로 트리폴리, 대사이자 이슬람회의기구 상주대표로 리야드, 그리고 대사로 마나마와 다마스쿠스를 거쳐, 마지막에는 대사이자 아랍연맹 주재 튀니지 대표로 카이로에 이르렀던 긴 외교 여정의 여러 단계를 가까이에서 정확하게 따라갔다는 점을 강조하고 싶다.\n\n책을 읽지 않은 사람들에게 풍부한 내용의 발견이라는 즐거움을 남겨주고 싶기에, 그 안에 담긴 정보와 입장, 견해를 모두 소개하지는 않겠다. 하지만 그럼에도 특별히 내 주의를 끈 한 가지 견해를 잠시 살펴보고자 한다. 대사 모하메드 제니판이 기록 세션에서 한 발언과 외교부 창설 60주년 기념행사에서 발표한 『튀니지 외교정책: 변하지 않는 원칙과 변화』라는 강연에서 이를 거듭 강조했기 때문이다. 그는 이 강연을 책의 마무리로 삼고자 했다.\n\n이 견해는 1990년 8월 2일 이라크의 쿠웨이트 침공에 대한 튀니지의 입장과 관련된다. 대사 모하메드 제니판은 이 입장을 우리나라가 원칙에서 벗어난 세 가지 입장 가운데 세 번째로 보았다. 첫 번째 입장은 비제르트 전투와 관련된다. 그는 해외의 일부 연구자와 분석가들, 정치인과 군인들, 그리고 튀니지의 일부 사회가 이 전투를 『우리 외교정책의 핵심 원칙, 즉 분쟁과 갈등에서 대화와 협상의 논리 및 평화적 수단을 우선시한다는 원칙에서 정당화될 수 없이 벗어난 것』으로 보았다고 말한다. 331쪽. 두 번째 입장은 하비브 부르기바 대통령이 1974년 1월 12일 무아마르 카다피 대령과 제르바 통합 문서에 서명한 일과 관련된다. 그는 이 서명을 당혹스러운 행위라고 묘사하고 의문을 제기하면서도 답하지 못한 채 이렇게 말했다. 『이것은 일탈인가, 아니면 거의 일탈에 가까운 것인가? 아니면 규정하고 분류하기 어려운 사건인가?』 335쪽.\n\n대사 모하메드 제니판은 강연에서 이라크의 쿠웨이트 침공에 대한 튀니지의 입장을 다루며 다음과 같이 강조한다. 『우리 외교정책에서 천명된 원칙에서 벗어난 가장 두드러진 사건 가운데 하나는 제2공화국 대통령 재임기에 튀니지의 입장이 정의와 공정의 대의를 지지하는 태도에서 이탈한 사건이다. 1990년 8월 2일 이라크군은 사담 후세인 대통령의 명령에 따라 아랍 형제국인 쿠웨이트를 침공하고 점령했으며, 쿠웨이트의 국제적 지위를 종식시키고 이라크의 한 주로 편입했다. 이에 세계 대부분의 나라, 특히 아랍 및 이슬람 국가들은 이를 침략이자 국제 협약 위반으로 규탄했다. 이들은 침략 당사자에게 쿠웨이트에서 군대를 철수하고 침략을 끝내라고 촉구했으며, 침략을 격퇴하고 쿠웨이트가 주권을 회복하도록 돕겠다는 의지를 밝혔다.』 335쪽과 336쪽.\n\n이어 그는 이렇게 지적한다. 『이러한 입장에서 벗어난 국가는 극소수였으며, 그 가운데 튀니지 공화국이 있었다. 외교부가 침공에 대한 우리나라의 입장을 밝히기 위해 처음 발표한 성명은 이라크와 쿠웨이트 사이의 분쟁에서 군사적 악화에 대해 깊은 우려를 표명하고, 튀니지가 중요하게 여기는 것은 아랍의 연대와 단결을 유지하는 것이라고 밝혔다. 또한 아랍연맹이 평화적 해결을 위한 위기 해결의 적절한 틀로 남아 있다는 확신을 표명했다.』 336쪽.\n\n그는 기록 세션에서 튀니지의 입장이 나온 경위를 상세히 설명하면서, 외교부 성명이 밝힌 입장은 당시 외교부 장관 이스마일 칼릴이 대통령실에 발표하자고 제안했던 입장과 달랐다고 설명했다. 당시 장관은 카이로에서 열릴 이슬람회의기구 외교장관 회의에 참석할 준비를 하던 튀니지 대표단 구성원들과 협의해 그 입장을 작성했으며, 대사 모하메드 제니판도 리야드 주재 튀니지 대사이자 이 기구의 상주대표 자격으로 대표단의 일원이었다.\n\n그는 이와 관련해 이렇게 말한다. 『1990년 7월 29일 카이로로 가서 이스마일 칼릴 외교장관이 이끄는 튀니지 대표단에 합류했다. 회의의 고위 관료들과 장관들 사이에서 토론과 우선순위 조정, 끊임없는 논쟁이 한창이던 중, 우리는 1990년 8월 2일 새벽 이라크가 쿠웨이트를 침공하고 점령해 쿠웨이트가 이라크의 한 주가 되었다는 끔찍한 소식을 알리는 발표를 접하며 잠에서 깨어났다.』 200쪽.\n\n그는 이어 이렇게 말한다. 『그날 아침 튀니지 대표단은 우리가 묵고 있던 호텔에서 회의를 열었고, 우리 외교장관은 이 중대한 사건에 대한 튀니지의 입장 초안을 작성하는 데 우리를 참여시켰다. 장관의 지시와 참석자들의 의견 일치에 따른 입장의 주요 내용은 침공을 규탄하고 침략군의 철수를 촉구하며 쿠웨이트의 자유와 주권을 지지하는 것이었다.』 이어 그는 논의에 개입한 일을 언급하며 이렇게 말한다. 『규탄과 관련된 몇몇 표현을 논의하던 중, 이라크에 대한 도덕적 영향력을 확보하고 이라크군의 철수를 쉽게 하기 위해 규탄 문구의 강도를 낮출 필요가 있다는 의견을 냈다. 그러자 장관은 나에게 말했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "5d0d750c826834751fa14911cd8a06271a9038bec0f8869540e756096aa2664d",
-      "contentCheckedAt": "2026-10-29T09:59:37.276Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-2tBLd43shkO5R6qeO6",
-        "representativeArticleId": "discovery-5EMDnfYlA7xVy40zZMASLEY5",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 59,
-        "stars": 3,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "REFERENCE",
-        "levelKo": "참고",
-        "reportStatus": "OPTIONAL_REVIEW",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-29T10:01:00.190Z",
-        "breakdown": {
-          "nationalImportance": 34,
-          "businessImpact": 0,
-          "politicalImpact": 9,
-          "reportValue": 10,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "6884e4f22c13e97e5b39",
-        "ruleScore": 59,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-XtNhdzopIDHDITMZSnxf9pyU",
       "keywordId": "politics-parliament-002",
       "category": "politics",
@@ -11420,9 +11143,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -15038,9 +14761,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -18600,147 +18323,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery--Hzu5ojOkqxhJ6NLgX2pjU8O",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "حروب الشرق الأوسط.. صراع النفوذ ومصالح السلطات على حساب الشعوب",
-      "sourceArabic": "ANHA",
-      "sourceHomepage": "https://hawarnews.com",
-      "publishedAt": "2026-10-23T02:00:00.000Z",
-      "descriptionArabic": "حروب الشرق الأوسط.. صراع النفوذ ومصالح السلطات على حساب الشعوب ANHA",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0wcVZLeGJNT2xtVUlBLXJjVy11TWZJWHRGQVZuM3A3WjZmUExCM3JhbUVIbThKTHAxbWdoQUl3RTNOa2o3QUE?oc=5",
-      "articleUrl": "https://hawarnews.com/ar/148267",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-29T09:56:53.925Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-29T09:58:15.527Z",
-      "canonicalUrl": "https://hawarnews.com/ar/148267",
-      "pagePublishedAt": "2026-10-23T02:00:00.000Z",
-      "originalTextArabic": "يشهد الشرق الأوسط حروباً متشابكة تتداخل فيها مصالح القوى الدولية والإقليمية مع صراعات السلطة والنفوذ داخل الدول، من غزة إلى إيران واليمن والعراق وسوريا. وبينما تتنافس الأطراف على الأمن والسيطرة والموارد، تتحمل الشعوب الكلفة الأكبر من القتل والنزوح والفقر وتدمير مقومات الحياة.",
-      "sourceHost": "hawarnews.com",
-      "contentChars": 276,
-      "arabicRatio": 1.0107,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-29T09:59:46.913Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "cbd5969c3febb56c07d9b93339c645919b3100180cf25fffd0ff5846e586e07a",
-        "sourceChars": 276,
-        "translatedChars": 173,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-23T08:38:06.498Z",
-        "titleKo": "중동의 전쟁들... 국민을 희생시킨 영향력 다툼과 권력자들의 이해관계",
-        "fullTextKo": "중동에서는 국제 세력과 역내 세력의 이해관계가 각국 내부의 권력 및 영향력 다툼과 얽힌 복잡한 전쟁들이 벌어지고 있다. 가자에서 이란, 예멘, 이라크, 시리아에 이르기까지다. 당사자들이 안보와 지배권, 자원을 놓고 경쟁하는 동안, 국민들은 살해와 피란, 빈곤, 생활 기반의 파괴로 가장 큰 대가를 치르고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-29T10:01:00.190Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "3730a2e85a837c6369ad",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-o7_ODiFehcFcpiMaXG",
-        "representativeArticleId": "discovery--Hzu5ojOkqxhJ6NLgX2pjU8O",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "cbd5969c3febb56c07d9b93339c645919b3100180cf25fffd0ff5846e586e07a",
-      "contentCheckedAt": "2026-10-29T09:59:46.913Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-AGnl3rDo5-8u3WZSckgFGiEg",
       "keywordId": "security-shooting-001",
       "category": "security",
@@ -20599,9 +20181,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -24994,16 +24576,11 @@
       "contentCheckedAt": "2026-10-29T09:59:50.846Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-10-29T10:00:11.689Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-oTqJ3sGVvgfp0dn0Nw",
@@ -30351,149 +29928,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-biuT3ZPeSbRVF8Sl1ajhCPk6",
-      "keywordId": "international-gulf-001",
-      "category": "politics",
-      "priority": 93,
-      "queryArabic": "الخليج العراق الملاحة تصدير النفط توتر",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "الخليج",
-        "الملاحة",
-        "تصدير النفط",
-        "ناقلات",
-        "توتر إقليمي"
-      ],
-      "excludedTerms": [
-        "سياحة",
-        "طقس"
-      ],
-      "originalTitleArabic": "شريان نفطي جديد يربط العراق بالاردن لتجاوز تحديات مضيق هرمز",
-      "sourceArabic": "الوقائع الإخبارية",
-      "sourceHomepage": "https://alwakaai.com",
-      "publishedAt": "2026-10-19T17:40:44.000Z",
-      "descriptionArabic": "شريان نفطي جديد يربط العراق بالاردن لتجاوز تحديات مضيق هرمز الوقائع الإخبارية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE9TNC1LTjc5UG9mSUI0T3Y0eGJqX2hsOXN0OVJRUEdZUnZqR1JxT2lOVktFa1hJOUlUNlZpZWlvSVl6bGxNYk55bF9GWQ?oc=5",
-      "articleUrl": "https://alwakaai.com/article/757950",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-10-29T09:56:54.232Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-10-29T09:58:36.842Z",
-      "canonicalUrl": "https://alwakaai.com/article/757950",
-      "pagePublishedAt": "",
-      "originalTextArabic": "تاريخ النشر : الإثنين - 19-10-2026 - 8:31 PM",
-      "sourceHost": "alwakaai.com",
-      "contentChars": 44,
-      "arabicRatio": 0.8375,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-10-29T09:59:53.190Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "e59786512d00cb0a988e80a38bcb3ab72641aacb5b31a6e808c07ab54ab562e7",
-        "sourceChars": 44,
-        "translatedChars": 32,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "b77d77e633c838039b20",
-        "preferredTermsApplied": [
-          "호르무즈 해협"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-10-28T09:47:55.602Z",
-        "titleKo": "호르무즈 해협의 난관을 우회하기 위해 이라크와 요르단을 연결하는 새로운 석유 수송로",
-        "fullTextKo": "게시일: 2026년 10월 19일 월요일 오후 8시 31분"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 4,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-10-29T10:01:00.190Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "3d75e63edfb52e63ded0",
-        "ruleScore": 4,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-stuwDYLgZOoWyGHo4P",
-        "representativeArticleId": "discovery-biuT3ZPeSbRVF8Sl1ajhCPk6",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "e59786512d00cb0a988e80a38bcb3ab72641aacb5b31a6e808c07ab54ab562e7",
-      "contentCheckedAt": "2026-10-29T09:59:53.190Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-ADTCJvA0pXj3nV7OrKu5uhQh",
       "keywordId": "international-us-001",
       "category": "politics",
@@ -33441,16 +32875,11 @@
       "contentCheckedAt": "2026-10-29T09:59:56.616Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-10-29T10:00:11.696Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-h0HjVCGOHSgS3LE_6R",
@@ -34064,9 +33493,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -37190,9 +36619,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -39482,9 +38911,9 @@
       "contentCheckedAt": "2026-10-29T09:59:58.003Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -40621,7 +40050,7 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "economy",
+        "from": "bismayah",
         "to": "bismayah",
         "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
@@ -41238,9 +40667,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -41836,9 +41265,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -45621,9 +45050,9 @@
       "contentCheckedAt": "2026-10-29T09:59:59.933Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -50359,14 +49788,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 394,
-    "retained": 393,
-    "excluded": 1,
+    "before": 352,
+    "retained": 352,
+    "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 319,
+    "groupCount": 315,
     "duplicateGroupCount": 23,
     "duplicateArticleCount": 33,
     "maxHours": 72,
