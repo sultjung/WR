@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-05T07:05:37.522Z",
+  "generatedAt": "2026-11-05T13:23:48.999Z",
   "lookbackDays": 14,
   "count": 294,
   "categoryCounts": {
@@ -42024,8 +42024,8 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 296,
-    "retained": 296,
+    "before": 294,
+    "retained": 294,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
