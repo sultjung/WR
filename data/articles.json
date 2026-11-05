@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-04T23:06:39.973Z",
+  "generatedAt": "2026-11-05T07:05:37.522Z",
   "lookbackDays": 14,
-  "count": 296,
+  "count": 294,
   "categoryCounts": {
     "economy": 48,
-    "politics": 169,
+    "politics": 167,
     "security": 59,
     "bismayah": 13,
     "international": 7
@@ -550,9 +550,9 @@
       "contentCheckedAt": "2026-11-04T23:02:39.660Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -835,16 +835,11 @@
       "contentCheckedAt": "2026-11-04T23:02:41.599Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-11-04T23:03:23.403Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-3eu8j6AoZFexLLs744",
@@ -2161,9 +2156,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -3344,148 +3339,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-jgY4_FlQzDo4TVVgevg0z26b",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "حزب العمال الكردستاني يُخلي مواقعه في جبل كاراجوك شمال العراق",
-      "sourceArabic": "نيو ترك بوست",
-      "sourceHomepage": "https://newturkpost.com",
-      "publishedAt": "2026-11-03T16:10:05.000Z",
-      "descriptionArabic": "حزب العمال الكردستاني يُخلي مواقعه في جبل كاراجوك شمال العراق نيو ترك بوست",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi8ANBVV95cUxQZUZLTXVxQmZ1UWxhTXVldFJIT0U5eEZpMGN6SjlEWV91dVdsb0wzOGJPSEVaaE5jRlZvdEkwWThvdHV3Q3dPcWlwWVZTbVZidVRONWNuVnhHdXFfYjItdmNwcEx0SFFHU2ZkR2s3S0VtQW96T1N6UEpPOFZyVDBuSGE4QUVZbkdyRHVva2l4d2NlYm0xTWwyVEdIRFZmbFlDSmZQWkJYZGdYT3JIT1M3R0dOcEF2Wm9HYlg4N29HVlA4dnFub3hfSWdkUVQxRExlSm5vWEZEeGV6Ti1rODRrbXpISzNtVy1vcDFQdFJaYnZhVWIxTFpMRUE2dW82bkdlY0tXSXhqdUNkWmM3ZzFaRGx5RlpQLV90SkRSSGdJNmdLclBZVGNqMmJySXY3Q1RKWUdYQ0V6UmtYR3diOHNKMEVFeXNWU0p0WDBhQXJxblQyTUVYNExOd1JBQVRCUEIwQmxlYWFSOUhLdXZQSGVhSVJXVGt0cG9YQlp3Ynp0cnNfV0RvcE05b2hiX0dpODQyVDVxRUdPd3hFNWlCeng0aDdTMUpzTm9iZUFBeDNZWG9icXBZcGh0TWVBZzY0NVpHWWgtOWVxbVlDeFRmRW40SnVMVkRaa0ZGaVpzY2F0WjFyZ0tYa0xqX0I0bEs5U1Rj?oc=5",
-      "articleUrl": "https://newturkpost.com/news/132350-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D9%83%D8%B1%D8%AF%D8%B3%D8%AA%D8%A7%D9%86%D9%8A-%D9%8A%D8%AE%D9%84%D9%8A-%D9%85%D9%88%D8%A7%D9%82%D8%B9%D9%87-%D9%81%D9%8A-%D8%AC%D8%A8%D9%84-%D9%83%D8%A7%D8%B1%D8%A7%D8%AC%D9%88%D9%83-%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-04T22:59:54.260Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-04T23:00:31.208Z",
-      "canonicalUrl": "https://newturkpost.com/",
-      "pagePublishedAt": "",
-      "originalTextArabic": "التاريخ: 03/11/2026 08:10:05 ص\n\nتقرير: حزب العمال الكردستاني يُخلي مواقعه في جبل كاراجوك شمال العراق\n\nأفادت صحيفة «صباح» التركية بأن تنظيم حزب العمال الكردستاني (PKK) أخلى كامل مواقعه في محيط مخيم مخمور وعلى سفوح جبل كاراجوك، وذلك في تقرير نُشر مساء الاثنين 2 تشرين الثاني/نوفمبر 2026.\n\nتفاصيل الانسحاب\n\nوذكر التقرير أنه لم يعد في المنطقة أي عناصر تابعون للتنظيم، وأن النقاط التي أُخليت انتقلت إلى قوات البيشمركة والجيش العراقي. كما أُفيد بأن مخيم مخمور بات تحت سيطرة الشرطة الاتحادية العراقية.\n\nوبحسب التقرير، أخلى الحزب 10 نقاط عسكرية على سفوح جبل كاراجوك، سُلّمت خمس منها إلى الجيش العراقي، والخمس الأخرى إلى قوات البيشمركة.\n\nاتفاق بين الجيش العراقي والبيشمركة\n\nوأشار التقرير إلى التوصل إلى اتفاق بين الجيش العراقي وقوات البيشمركة عقب انسحاب التنظيم من المنطقة، لتنظيم تسلّم المواقع التي أُخليت.\n\nإجراءات أمنية عند المدخل\n\nوأوضح التقرير أن مدخل المخيم يضم نقطتي تفتيش تابعتين للشرطة الاتحادية، وأن الإجراءات الأمنية المتخذة حدّت بشكل ملحوظ من حركة التنقل داخل المخيم.\n\nخلفية المخيم\n\nأُنشئ مخيم مخمور عام 1998 لإيواء سكان القرى الحدودية العراقية القريبة من تركيا. وقد طالبت أنقرة بإغلاقه، معتبرةً أن المقيمين فيه يُستخدمون من قِبل حزب العمال الكردستاني، الذي تصنّفه تركيا والولايات المتحدة والاتحاد الأوروبي تنظيماً إرهابياً.\n\nأهمية الخبر\n\nيكتسب الخبر أهميته من كونه يتعلق بتغيير الترتيبات الأمنية في منطقة حدودية شهدت لسنوات نشاطاً مسلحاً للتنظيم، ويأتي في سياق ترتيبات أمنية بين القوى المحلية في شمال العراق. ولم يرد في التقرير المصدر تعليق رسمي من الأطراف المعنية.",
-      "sourceHost": "newturkpost.com",
-      "contentChars": 1469,
-      "arabicRatio": 1.0008,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-04T23:02:47.476Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "70a609577a1dccd7f2aa089ff011161cdc297fa716ae27d007801ce8d95afbb9",
-        "sourceChars": 1469,
-        "translatedChars": 852,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "60d13b499fad5ba1d31a",
-        "preferredTermsApplied": [
-          "연방경찰",
-          "페쉬메르가"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-04T11:02:55.602Z",
-        "titleKo": "쿠르드 노동자당, 이라크 북부 카라주크산 거점 철수",
-        "fullTextKo": "날짜: 2026년 11월 3일 오전 8시 10분 5초\n\n보도: 쿠르드 노동자당, 이라크 북부 카라주크산 거점 철수\n\n터키 일간지 사바흐는 2026년 11월 2일 월요일 저녁 보도한 기사에서 쿠르드 노동자당 조직이 막무르 난민캠프 주변과 카라주크산 산기슭에 있던 모든 거점에서 철수했다고 전했다.\n\n철수 세부 내용\n\n보도에 따르면 현재 이 지역에는 해당 조직 소속 대원이 더 이상 없으며, 철수한 초소들은 페쉬메르가와 이라크군에 인계됐다. 또한 막무르 난민캠프는 이라크 연방경찰의 통제 아래 놓이게 된 것으로 전해졌다.\n\n보도에 따르면 이 당은 카라주크산 산기슭에 있던 군사 초소 10곳을 철수했으며, 이 가운데 5곳은 이라크군에, 나머지 5곳은 페쉬메르가에 인계됐다.\n\n이라크군과 페쉬메르가 간 합의\n\n보도는 해당 조직이 이 지역에서 철수한 뒤 이라크군과 페쉬메르가 사이에 철수한 거점의 인계를 관리하기 위한 합의가 도출됐다고 전했다.\n\n입구의 보안 조치\n\n보도는 캠프 입구에 연방경찰 소속 검문소 2곳이 있으며, 취해진 보안 조치로 캠프 내부의 이동이 눈에 띄게 제한됐다고 설명했다.\n\n캠프의 배경\n\n막무르 난민캠프는 터키와 가까운 이라크 국경 마을 주민들을 수용하기 위해 1998년에 설립됐다. 앙카라는 이곳 거주민들이 터키와 미국, 유럽연합이 테러 조직으로 분류한 쿠르드 노동자당에 의해 이용되고 있다고 보고 캠프 폐쇄를 요구해 왔다.\n\n이 소식의 중요성\n\n이 소식은 수년간 해당 조직의 무장 활동이 이어진 국경 지역의 안보 배치가 변경되는 것과 관련이 있다는 점에서 중요성을 지니며, 이라크 북부의 현지 세력 간 안보 조정의 맥락에서 나온 것이다. 해당 출처의 보도에는 관련 당사자들의 공식 논평이 포함되지 않았다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "70a609577a1dccd7f2aa089ff011161cdc297fa716ae27d007801ce8d95afbb9",
-      "contentCheckedAt": "2026-11-04T23:02:47.476Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-Oil4FmGPGkCouM4k3Q",
-        "representativeArticleId": "discovery-jgY4_FlQzDo4TVVgevg0z26b",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 23,
-        "stars": 1,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-04T23:03:56.134Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "4f61509dd64983e63997",
-        "ruleScore": 23,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -9985,9 +9838,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -19708,9 +19561,9 @@
       "contentCheckedAt": "2026-11-04T23:03:02.858Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -36555,9 +36408,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -40878,146 +40731,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery--Hzu5ojOkqxhJ6NLgX2pjU8O",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "حروب الشرق الأوسط.. صراع النفوذ ومصالح السلطات على حساب الشعوب",
-      "sourceArabic": "ANHA",
-      "sourceHomepage": "https://hawarnews.com",
-      "publishedAt": "2026-10-23T02:00:00.000Z",
-      "descriptionArabic": "حروب الشرق الأوسط.. صراع النفوذ ومصالح السلطات على حساب الشعوب ANHA",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE0wcVZLeGJNT2xtVUlBLXJjVy11TWZJWHRGQVZuM3A3WjZmUExCM3JhbUVIbThKTHAxbWdoQUl3RTNOa2o3QUE?oc=5",
-      "articleUrl": "https://hawarnews.com/ar/148267",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-04T22:59:54.331Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-04T23:02:18.578Z",
-      "canonicalUrl": "https://hawarnews.com/ar/148267",
-      "pagePublishedAt": "2026-10-23T02:00:00.000Z",
-      "originalTextArabic": "يشهد الشرق الأوسط حروباً متشابكة تتداخل فيها مصالح القوى الدولية والإقليمية مع صراعات السلطة والنفوذ داخل الدول، من غزة إلى إيران واليمن والعراق وسوريا. وبينما تتنافس الأطراف على الأمن والسيطرة والموارد، تتحمل الشعوب الكلفة الأكبر من القتل والنزوح والفقر وتدمير مقومات الحياة.",
-      "sourceHost": "hawarnews.com",
-      "contentChars": 276,
-      "arabicRatio": 1.0107,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-04T23:03:18.021Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "cbd5969c3febb56c07d9b93339c645919b3100180cf25fffd0ff5846e586e07a",
-        "sourceChars": 276,
-        "translatedChars": 170,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-04T01:23:20.155Z",
-        "titleKo": "중동의 전쟁들... 국민을 희생시킨 영향력 다툼과 권력 당국의 이해관계",
-        "fullTextKo": "중동에서는 국제적·지역적 세력의 이해관계가 국가 내부의 권력 및 영향력 다툼과 뒤얽힌 복잡한 전쟁들이 벌어지고 있다. 가자에서 이란, 예멘, 이라크, 시리아에 이르기까지다. 당사자들이 안보와 지배, 자원을 놓고 경쟁하는 동안 국민들은 살해와 피란, 빈곤, 삶의 기반 파괴라는 가장 큰 대가를 치르고 있다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "cbd5969c3febb56c07d9b93339c645919b3100180cf25fffd0ff5846e586e07a",
-      "contentCheckedAt": "2026-11-04T23:03:18.021Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-o7_ODiFehcFcpiMaXG",
-        "representativeArticleId": "discovery--Hzu5ojOkqxhJ6NLgX2pjU8O",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-04T23:03:56.134Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "3730a2e85a837c6369ad",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-s8qHSOnasPddVVvXGYR3bqhy",
       "keywordId": "economy-housing-002",
       "category": "bismayah",
@@ -42311,14 +42024,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 323,
-    "retained": 323,
+    "before": 296,
+    "retained": 296,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 275,
+    "groupCount": 273,
     "duplicateGroupCount": 14,
     "duplicateArticleCount": 21,
     "maxHours": 72,
