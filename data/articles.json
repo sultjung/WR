@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-07T10:12:52.879Z",
+  "generatedAt": "2026-11-07T11:51:19.245Z",
   "lookbackDays": 14,
-  "count": 314,
+  "count": 313,
   "categoryCounts": {
     "security": 66,
     "international": 8,
-    "politics": 170,
+    "politics": 169,
     "bismayah": 19,
     "economy": 51
   },
@@ -692,9 +692,9 @@
       "contentCheckedAt": "2026-11-07T10:08:31.380Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -4748,9 +4748,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -9606,9 +9606,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -14204,9 +14204,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -17852,9 +17852,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -40671,146 +40671,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-Y2OO2BUzvT9lMxW022YWFUMU",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "باحث إسرائيلي: الانسحاب الأمريكي من العراق يمنح إيران السيطرة",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-10-25T19:32:19.000Z",
-      "descriptionArabic": "باحث إسرائيلي: الانسحاب الأمريكي من العراق يمنح إيران السيطرة عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi9ANBVV95cUxPbHNpaHp2UlJULTRpUjh5RV9iS0ItZ294TUxuZHNJZVNNNmNZZ0FBWTJhLVBtdTlUdWFUVXlOWDFxbG5lN2NNRG03bV82T2tHZUFDWDRIcWlPWHJOOFNhdHpJRWZzZ1hTXzFTbVU2amNuZlR2WW9GT0JYRWhiV2FxVlZqT0VyQU1adk1VVFNIUFRQZzhZbjJlUTJPVTJ2ZXlzRFNtVmdEQnhpeUtnZml1ejM4NTFjcUNRZ00tWnBHUjVYaEt3NFBMQ0FXUDNvV3pVODd5ZnVaR0hlU1N4TmpneGFxeWlLYnZZSFcxVUpGNlhJbThvWDRrQzBrRjVMazNXRzZGSE1fUDZhNjFha2tEOTlGRVRfdkc4dUFzVkVJeE9KRGtqcUk3MXJjNERmdGN4OG43MHkxcnAwMUFsVGZSTmJrd3BXendIOU5hd2VrNTBfODhRYktmd3NLR0h0TW1YS0lISV9oRkhMUmxQRHA0SVM0a0plS1pyNkFacktON2w3YVRiMzNYVU1tb19fdUpVSEJsckktRExqd2stMDhYLXF3SmstX0wxZlBrMTM3ekRSMWJOcXhFaDdKRGt5ZXd3RGxSZzBxME11X3BCT2pXcVN5LVFzaHVVdVFJd21QRmdMbXNEMzBCVnRYeVRCTXMxZFpZedIB-ANBVV95cUxQV0FnLXp1SUVHWnVBR3dFSWJXSGdHVG9oOU90bTUxNFVhZ0JKTW1DLVRSaFFacGhZRE5RWVkwRnJBMGY0THNtSVFxcFg3clphT3o3Skh2TW5Za3k0d1JOQS00QWlHN1BTZDBxbXRidHNDYVo1c0NXblV1d1p6ejV3Ym83VGRUVFR6VExYeF9kWU1ReWtLcnhpS2RBenJfb3ZsN0JSai1IZGJRR1pjb0tGTjFPcjM1VGpjWm51OXUtWTlackhXYi03SmZpN2dpMEdsVUtRdWRBenRCUVpWdFl2ZGw4RnpObkZ3Wm42OEJiSlg3VjZTa0RDNGp6T3ZVUGNKQVFDU2ZfeDhIc3FRbmhmRkVpZDBkZ3Ixc3l5MFhZMmFjS211TklmSDRrelZaeHBvd2o5T0NpLUNCRVp1WjFCalhEc05UVnNyc2VrZGFtVno1TnRCQVJBSGFtY2ZpRThmNk9ELUJ5R2FxQTN5N185U1RJTmNWQS1mVXUxY081V01oaXJNUGhvc095ejMyVURPWkpjZHA4NDdtT2xjeklNanhmYW92SFJsTnJvZFhuOV9wdEw2QVcwZDNSc1czRF80cXlPdjYyQXliSVF5ODcxRkVXbFV1SU5IS0Jlbi10SHItNFZYQ05hR3UtT2Nfc19aMV9yN25mcGw?oc=5",
-      "articleUrl": "https://arabi21.com/story/1798399/%D8%A8%D8%A7%D8%AD%D8%AB-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%85%D9%86%D8%AD-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-07T10:05:25.797Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-07T10:08:14.908Z",
-      "canonicalUrl": "https://arabi21.com/story/1798399/%D8%A8%D8%A7%D8%AD%D8%AB-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%A7%D9%84%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D8%A3%D9%85%D8%B1%D9%8A%D9%83%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%8A%D9%85%D9%86%D8%AD-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9",
-      "pagePublishedAt": "2026-10-25T19:32:19.000Z",
-      "originalTextArabic": "يحذر البروفيسور إيال زيسر عبر صحيفة \"إسرائيل اليوم\" من تداعيات اكتمال الانسحاب العسكري الأمريكي من العراق، مؤكدا أن الخطوة تمنح إيران فرصة تعزيز نفوذها وتشكيل أخطبوط صاروخي يهدد تل أبيب..",
-      "sourceHost": "arabi21.com",
-      "contentChars": 187,
-      "arabicRatio": 1.0049,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-07T10:09:37.697Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "0de7a0b96e26e5497b066ede8723d3dc0e8a1c200e802e2c3f80419524f09d05",
-        "sourceChars": 187,
-        "translatedChars": 113,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-06T01:37:19.296Z",
-        "titleKo": "이스라엘 연구자: 미국의 이라크 철수가 이란에 지배권을 안겨줘",
-        "fullTextKo": "에얄 지세르 교수는 이스라엘 하욤을 통해 미국의 이라크 군사 철수가 완료될 경우의 여파를 경고하면서, 이 조치가 이란에 영향력을 강화하고 텔아비브를 위협하는 미사일망을 구축할 기회를 제공한다고 강조했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-07T10:10:07.729Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "94a2d446dda528f0899e",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-OjmYNHM_S10QDaxsgb",
-        "representativeArticleId": "discovery-Y2OO2BUzvT9lMxW022YWFUMU",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "0de7a0b96e26e5497b066ede8723d3dc0e8a1c200e802e2c3f80419524f09d05",
-      "contentCheckedAt": "2026-11-07T10:09:37.697Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-TzuPb0TZta0Ru31zGED-erMB",
       "keywordId": "international-hormuz-001",
       "category": "economy",
@@ -40892,9 +40752,9 @@
       "contentCheckedAt": "2026-11-07T10:09:37.119Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -41457,9 +41317,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -44941,14 +44801,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 347,
-    "retained": 347,
+    "before": 314,
+    "retained": 314,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 288,
+    "groupCount": 287,
     "duplicateGroupCount": 16,
     "duplicateArticleCount": 26,
     "maxHours": 72,
