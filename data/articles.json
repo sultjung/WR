@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-09T11:36:46.199Z",
+  "generatedAt": "2026-11-09T14:10:14.479Z",
   "lookbackDays": 14,
   "count": 335,
   "categoryCounts": {
@@ -684,9 +684,9 @@
       "contentCheckedAt": "2026-11-09T11:32:22.449Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -827,9 +827,9 @@
       "contentCheckedAt": "2026-11-09T11:32:22.656Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1961,9 +1961,9 @@
       "contentCheckedAt": "2026-11-09T11:32:23.908Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -5429,9 +5429,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -6375,9 +6375,9 @@
       "contentCheckedAt": "2026-11-09T11:32:34.980Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8999,9 +8999,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -13288,9 +13288,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -17308,9 +17308,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -18293,9 +18293,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -24679,9 +24679,9 @@
       "contentCheckedAt": "2026-11-09T11:32:53.500Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -25828,9 +25828,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -26963,9 +26963,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -37646,9 +37646,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -43083,9 +43083,9 @@
       "contentCheckedAt": "2026-11-09T11:33:09.508Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -47919,8 +47919,8 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 369,
-    "retained": 369,
+    "before": 335,
+    "retained": 335,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
