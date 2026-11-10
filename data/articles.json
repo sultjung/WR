@@ -1,11 +1,11 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-10T03:31:32.971Z",
+  "generatedAt": "2026-11-10T13:40:24.096Z",
   "lookbackDays": 14,
-  "count": 326,
+  "count": 325,
   "categoryCounts": {
     "economy": 67,
-    "politics": 175,
+    "politics": 174,
     "security": 62,
     "bismayah": 17,
     "international": 5
@@ -120,9 +120,9 @@
       "contentCheckedAt": "2026-11-10T03:26:26.147Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -682,9 +682,9 @@
       "contentCheckedAt": "2026-11-10T03:26:25.855Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1955,9 +1955,9 @@
       "contentCheckedAt": "2026-11-10T03:26:28.553Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -2233,9 +2233,9 @@
       "contentCheckedAt": "2026-11-10T03:26:28.667Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -2517,9 +2517,9 @@
       "contentCheckedAt": "2026-11-10T03:26:29.590Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -2663,9 +2663,9 @@
       "contentCheckedAt": "2026-11-10T03:26:30.135Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8676,9 +8676,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -9053,9 +9053,9 @@
       "contentCheckedAt": "2026-11-10T03:26:40.039Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -9192,9 +9192,9 @@
       "contentCheckedAt": "2026-11-10T03:26:40.648Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -16676,9 +16676,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "security",
         "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
+        "reason": "이라크 내 테러·치안·바그다드 시위 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -21681,9 +21681,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -26937,9 +26937,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -29217,9 +29217,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -35396,146 +35396,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-o_NGTSNIcVWYgENWiBTW9Zha",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "العراق.. أحكام قضائية بحق فرنسيي داعش | غرفة الأخبار سكاي نيوز عربية",
-      "sourceArabic": "سكاي نيوز عربية",
-      "sourceHomepage": "https://www.skynewsarabia.com",
-      "publishedAt": "2026-10-30T10:27:56.000Z",
-      "descriptionArabic": "العراق.. أحكام قضائية بحق فرنسيي داعش سكاي نيوز عربية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi3AJBVV95cUxQVjZDOGRUTEFETGZ4ZXg0S0lOdmNYemVSa3lVRUtHYWkyVFUxMjYxN1RCdDc0cVozSHhzY25OaFFDMXpuVll5djJmUmtpM0dYWndFRnVaSFlZdU54aEF2NWhGV3JUMlpuY0hLdzlwQWNlcWZaSEdfcVh3a1NjSHFQSWRoV04zLS1JVVFEYi16Z3RFVVUyeTNjR3FfS2ZYdDJSdU9MaHl4ZF8ybDg5ZEpQQXR4QnduLVowZVFJb29hRVNES1J4bkNCOWszYlBycmxUdlk5cklKUnpES1lQMUJXV1lsLS1UT3BWeDA5bkVwaC1Cd09aS3lNUFNaSC0wTWc1LXNBcURmUmxFbUVLS2ZKb1QyRzI4OC1PS1ozVlJ3a3FCRkhBTTBlbmRTTVBSbVotajZuX0U1RjVmeHBpdXp4Q3dXRUJsZ1JOeXZEVXNKYnJZamxmWXJiQVVMY0M?oc=5",
-      "articleUrl": "https://www.skynewsarabia.com/program/newsroom/1901542-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%82%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D8%AD%D9%82-%D9%81%D8%B1%D9%86%D8%B3%D9%8A%D9%8A-%D8%AF%D8%A7%D8%B9%D8%B4",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-10T03:23:26.964Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-10T03:25:19.256Z",
-      "canonicalUrl": "https://www.skynewsarabia.com/program/newsroom/1901542-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A3%D8%AD%D9%83%D8%A7%D9%85-%D9%82%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9-%D8%A8%D8%AD%D9%82-%D9%81%D8%B1%D9%86%D8%B3%D9%8A%D9%8A-%D8%AF%D8%A7%D8%B9%D8%B4",
-      "pagePublishedAt": "",
-      "originalTextArabic": "في أول محاكمات من نوعها لعناصر داعش المنقولين من سوريا إلى العراق، أصدر القضاء العراقي أحكاما بالسجن المؤبد على 3 ​فرنسيين بعد إدانتهم بالانتماء لتنظيم داعش.",
-      "sourceHost": "skynewsarabia.com",
-      "contentChars": 157,
-      "arabicRatio": 1,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-10T03:27:02.022Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "864a09570a37530eea02944caf66ef8abfa0a3b823c8c94cde3f87b4ed6f5c41",
-        "sourceChars": 157,
-        "translatedChars": 100,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-10T03:31:22.246Z",
-        "titleKo": "이라크… داعش 프랑스인 대원들에게 내려진 사법 판결 | 스카이뉴스 아라비아 뉴스룸",
-        "fullTextKo": "시리아에서 이라크로 이송된 داعش 대원들을 대상으로 한 첫 유형의 재판에서, 이라크 사법부는 داعش 조직에 가입한 혐의로 유죄 판결을 받은 프랑스인 3명에게 종신형을 선고했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "864a09570a37530eea02944caf66ef8abfa0a3b823c8c94cde3f87b4ed6f5c41",
-      "contentCheckedAt": "2026-11-10T03:27:02.022Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-IxGL1brzIOd11beO4x",
-        "representativeArticleId": "discovery-o_NGTSNIcVWYgENWiBTW9Zha",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-10T03:27:49.589Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "8471124de5bf99deccb0",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -46558,14 +46418,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 357,
-    "retained": 357,
+    "before": 326,
+    "retained": 326,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 306,
+    "groupCount": 305,
     "duplicateGroupCount": 16,
     "duplicateArticleCount": 20,
     "maxHours": 72,
