@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-13T11:04:01.203Z",
+  "generatedAt": "2026-11-13T13:19:17.003Z",
   "lookbackDays": 14,
-  "count": 356,
+  "count": 354,
   "categoryCounts": {
-    "politics": 178,
+    "politics": 176,
     "security": 83,
     "economy": 70,
     "bismayah": 18,
@@ -124,9 +124,9 @@
       "contentCheckedAt": "2026-11-13T10:58:59.860Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -3023,9 +3023,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -4732,9 +4732,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -6434,9 +6434,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -6531,9 +6531,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8718,149 +8718,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-oISIhbwa-A0OKk0cjsj5Hw_q",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بغداد وأنقرة تتفقان على موعد انسحاب القوات التركية من قاعدة شمالي العراق",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-11-11T05:12:52.000Z",
-      "descriptionArabic": "بغداد وأنقرة تتفقان على موعد انسحاب القوات التركية من قاعدة شمالي العراق عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMixARBVV95cUxOa0RiUHNnVEhzMElrM3p2clctZTA0dy1MckNNcjhBTXZaa1ByRFpUa05MdS00NFVCdUFLeldBcldPekRPeFBrMm1sT0VacVhNU29lR3FDVVluai1rejJlbzdraEZUenphSmdsT0dvMy03TEUtUUw1RHRVRVVyVzQ2b0NZc2FKZ1cxMWU1akZSLVMxV1VrWTIxQUIwb0xReHNZVHlGZ3JiSkJDMFN2cGpQOEtrNTlQSHhrWEFCTWxMOTA1VHNDRGJSUkpDNFIyeXlQUmFPUVoyamJ1S1NTN3JkSkV0cC1YREVlN3lVSEVpOWM0QWJ6bkdEYmItOHJvYnNZajBiRzVLX3JWcGV5X3FmdTRCNHdPSTFsNmFhUG9Rc2RtRGRvYWFNOFczUlBFVDFSRkd5cnpTM1F3LVlsUENXVVFSYUpJaHRGdmhlQVlNWllXekFFZmdFbGZLbFI3ckJHX1dBQ2lzUU5IcW1STkZXN29FS2R1aVpTRHd5dXB5MXlvTUJYMnZlMnc3NjB3TDhlTXFIU1VzRFhGZDR6MGt4cEYtY201QUxGUTJuQmhkZ3FJWGNjYndZVTZRWnpaeHczeG1fdGhIQ2JVNEtmVWs0emk3UXlQTGtJLThMNmdaN2R5NTZwNV9WOXZnZXlQSUwyVWI0TXFjWWNFRVBydWNyRnc3X2I4ai1tQmNOZjFfWWNrdEV0WXVUcjNySHNiYUNDQ1AwSURPdTBHSm12TWxMMGFTZ2dZRmZ6ME5Hc0JsTW5acTFv?oc=5",
-      "articleUrl": "https://arabi21.com/story/1802272/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%AA%D9%81%D9%82%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D9%82%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-13T10:57:10.184Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-13T10:57:54.100Z",
-      "canonicalUrl": "https://arabi21.com/story/1802272/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%AA%D9%81%D9%82%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D9%82%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "pagePublishedAt": "2026-11-11T05:12:52.000Z",
-      "originalTextArabic": "في عام 2015، أنشأت تركيا معسكراً في منطقة زليكان قرب بعشيقة بمحافظة نينوى، بالتنسيق مع حكومة إقليم كردستان، لتدريب قوات البيشمركة في إطار الحرب على تنظيم داعش.",
-      "sourceHost": "arabi21.com",
-      "contentChars": 159,
-      "arabicRatio": 1,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-13T10:59:14.478Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "e51fe6bd94aa9cf29cca13053e3c19228d85a111740372d56d7adea4ffb1ddc3",
-        "sourceChars": 159,
-        "translatedChars": 90,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f5b3dbd74c37140e848b",
-        "preferredTermsApplied": [
-          "페쉬메르가",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-13T01:51:23.962Z",
-        "titleKo": "바그다드와 앙카라, 이라크 북부 기지에서 터키군 철수 일정 합의",
-        "fullTextKo": "2015년 터키는 쿠르드 자치지역 정부와 협조해, 다에시와의 전쟁의 일환으로 페쉬메르가를 훈련시키기 위해 니네베주 바시카 인근 질리칸 지역에 군사 캠프를 세웠다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-13T11:00:23.220Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "338952f758ed26992380",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-14RSJYR2m_a7uPq4va",
-        "representativeArticleId": "discovery-oISIhbwa-A0OKk0cjsj5Hw_q",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "e51fe6bd94aa9cf29cca13053e3c19228d85a111740372d56d7adea4ffb1ddc3",
-      "contentCheckedAt": "2026-11-13T10:59:14.478Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -14373,9 +14230,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -24191,9 +24048,9 @@
       "contentCheckedAt": "2026-11-13T10:59:24.472Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -24617,9 +24474,9 @@
       "contentCheckedAt": "2026-11-13T10:59:24.510Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -24756,9 +24613,9 @@
       "contentCheckedAt": "2026-11-13T10:59:25.082Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -25901,9 +25758,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -45063,9 +44920,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -47668,150 +47525,6 @@
         "ruleWeight": 1,
         "aiModel": null,
         "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-f9b5-R1Mx2_ggOvn2QkKNrtV",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "صفقات بأربع دول.. هل ينجح العراق في تحصين أجوائه؟",
-      "sourceArabic": "جريدة المدى",
-      "sourceHomepage": "https://almadapaper.net",
-      "publishedAt": "2026-11-01T13:25:28.000Z",
-      "descriptionArabic": "صفقات بأربع دول.. هل ينجح العراق في تحصين أجوائه؟ جريدة المدى",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE1HU1hCX0dCSFJKS01rOVp3OHQwSzN4VlRFS1FKbmYyTFdPUEt5RzFjazhYclB0RzdfUjVUVTRLaVVTRlBZMGc?oc=5",
-      "articleUrl": "https://almadapaper.net/459283/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-13T10:57:10.184Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-13T10:58:51.432Z",
-      "canonicalUrl": "https://almadapaper.net/459283/",
-      "pagePublishedAt": "2026-11-01T13:25:28.000Z",
-      "originalTextArabic": "متابعة/المدى\n\nيسعى العراق إلى إعادة بناء منظومة دفاع جوي متعددة الطبقات، عبر عقود وتفاهمات مع كوريا الجنوبية وتركيا والولايات المتحدة وفرنسا، في محاولة لسد الثغرات التي ظهرت بوضوح مع تكرار اختراق الأجواء العراقية والهجمات بالطائرات المسيّرة والصواريخ، فضلاً عن سحب قوات التحالف الدولي منظوماتها الدفاعية قبل إنهاء مهمتها في البلاد.\n\nوكشف تقرير موسع لمجلة «فوربس» الأميركية، تابعته (المدى)، أن بغداد تتجه إلى تنويع مصادر منظومات الدفاع الجوي، على غرار سياستها السابقة في تسليح القوات البرية والجوية، بدلاً من الاعتماد على دولة واحدة في بناء قدراتها العسكرية.\n\nويأتي هذا التحرك في وقت لا تزال فيه القدرات العراقية الحالية محدودة، إذ تعتمد على منظومات «بانتسير–أس1» الروسية وأنظمة «أفنجر» الأميركية قصيرة المدى، المزودة بصواريخ «ستينغر»، وهي منظومات لم تتمكن من منع الهجمات بالطائرات المسيّرة أو ردع الانتهاكات المتكررة للمجال الجوي خلال المواجهات الإقليمية الأخيرة.\n\nونقل التقرير عن المتحدث باسم القائد العام للقوات المسلحة صباح النعمان قوله إن العراق تعاقد مع الولايات المتحدة وتركيا وكوريا الجنوبية، وإن أول منظومة دفاع جوي يُتوقع وصولها خلال الأشهر القليلة المقبلة.\n\nوكان النعمان قد أكد أن الحكومة اختصرت خطة تطوير الدفاع الجوي من ست سنوات إلى ثلاث، مع الإبقاء على أهدافها ومعاييرها، لتشمل حماية جميع الأراضي العراقية، بما فيها إقليم كردستان، وإنشاء قدرة وطنية تتيح السيطرة على المجال الجوي والتعامل مع التهديدات المختلفة. tollbit.forbes.com\n\nويرى تقرير «فوربس» أن الحاجة إلى هذه المنظومات أصبحت أكثر إلحاحاً بعد انسحاب قوات التحالف وسحب أنظمة الدفاع التي كانت ترافقها، ومن بينها منظومة «باتريوت» التي أسهمت في حماية أربيل خلال المواجهات الإقليمية الأخيرة.\n\nوأدى سحب هذه الأنظمة إلى ترك فجوة في الحماية الجوية، ولا سيما في إقليم كردستان الذي تعرض خلال السنوات الماضية لسلسلة هجمات بالصواريخ والطائرات المسيّرة. وتقول وزارة الدفاع إن خطة تطوير الدفاعات تشمل الإقليم، في وقت تتحدث فيه التصريحات الحكومية عن تقليص الجدول الزمني لتطوير المنظومة العراقية إلى ثلاث سنوات بدلاً من ست.\n\nتمثل صفقة منظومة «تشونغونغ–2»، المعروفة أيضاً باسم «أم–سام 2»، الركيزة الأساسية في مشروع الدفاع الجوي العراقي، بعدما تعاقدت بغداد مع شركة «أل آي جي نكس ون» الكورية الجنوبية للحصول على ثماني بطاريات متوسطة المدى.\n\nوتبلغ قيمة العقد نحو 2.8 مليار دولار، وقد أُعلن عنه في أيلول 2024، ليصبح العراق رابع دولة تشغل المنظومة بعد كوريا الجنوبية والإمارات والسعودية. وتتمتع «أم–سام 2» بقدرة على اعتراض الطائرات والصواريخ، بما فيها الصواريخ الباليستية في مراحل محددة من مسارها، وهو ما يمنح العراق قدرة لا توفرها منظوماته الحالية.\n\nوبحسب «فوربس»، فضّل العراق المنظومة الكورية على نظام «سامب/تي» الفرنسي بسبب جدول التسليم الذي عرضته سيول، إلا أن تنفيذ الصفقة واجه نقاشات مرتبطة بتمويل الدفعات المالية.\n\nوفي آب الماضي، عقدت وزارتا المالية والدفاع اجتماعاً مع الجانب الكوري لاستكمال آليات التمويل والدفع والإجراءات القانونية الخاصة بالعقد، وسط تأكيدات بالمضي في تنفيذه.\n\nومع ذلك، توجد تباينات بشأن موعد وصول البطاريات الكورية. ففي حين تتحدث التصريحات العراقية عن وصول أول منظومة دفاعية خلال أشهر، نقلت مجلة «جينز» عن ممثل لشركة «هانوا إيروسبيس» أن أول نظام كوري مخصص للعراق متوقع تسليمه في أواخر عام 2028، مع عدم حسم الجدول النهائي بصورة كاملة. janes.com\n\nويشير هذا الاختلاف إلى أن المنظومة المتوقع وصولها خلال الأشهر المقبلة قد تكون تركية أو أميركية، وليست بالضرورة إحدى بطاريات «أم–سام 2»، ما لم يجرِ تقديم موعد التسليم الكوري ضمن المفاوضات الجارية.\n\nولا تقتصر الصفقة الكورية على تسليم منصات إطلاق وصواريخ، بل تشمل رادارات وأنظمة قيادة وسيطرة وتدريب كوادر عراقية فنية وقتالية لتشغيل البطاريات وصيانتها، بما يسمح بتشغيلها بطواقم عراقية.\n\nمنظومات تركية لمواجهة المسيّرات\n\nبالتوازي مع الصفقة الكورية، يعمل العراق على استكمال شراء 20 منظومة دفاع جوي من تركيا، تركز بصورة رئيسة على مواجهة الطائرات المسيّرة والتهديدات القريبة من المنشآت الحيوية.\n\nوكان معاون رئيس أركان الجيش للعمليات سعد حربية قد أعلن توقيع عقد مع شركات تركية حكومية، مع استمرار العمل على استكمال التفاصيل المالية، موضحاً أن بغداد اختارت الأنظمة التركية بسبب قدرتها على مواجهة المسيّرات وكلفتها الأقل نسبياً، فضلاً عن قرب تركيا جغرافياً من العراق. The National\n\nورجح تقرير «فوربس» أن يكون نظام «كوركوت» جزءاً من المشتريات التركية، لكنه لم يقدم تأكيداً رسمياً عراقياً أو تركياً بأن العقد يقتصر على هذا النوع.\n\nويعمل «كوركوت» بمدافع مضادة للطائرات وذخائر ذكية مصممة للتعامل مع الأهداف الجوية القريبة، خصوصاً الطائرات المسيّرة الصغيرة، ما يجعله مناسباً لحماية القواعد العسكرية وحقول النفط والمطارات ومراكز القيادة.\n\nوفي حال الجمع بين «أم–سام 2» الكوري و«كوركوت» التركي، يمكن للعراق إنشاء دفاع متعدد الطبقات، تتولى فيه المنظومة الكورية التعامل مع الأهداف على المديات والارتفاعات المتوسطة والصواريخ، بينما توفر الأنظمة التركية حماية قريبة ضد المسيّرات والذخائر الجوالة.\n\nغموض الصفقة الأميركية\n\nورغم تأكيد الحكومة وجود تعاقد مع الولايات المتحدة، لا تزال طبيعة الأنظمة الأميركية المتفق عليها غير معلنة، سواء من حيث نوعها أو أعدادها أو مواعيد تسليمها.\n\nوكان العراق قد سعى خلال العقد الماضي إلى امتلاك منظومات «هوك–21» متوسطة المدى، لكنه حصل في النهاية على أنظمة «أفنجر» القصيرة فقط.\n\nويرجح تقرير «فوربس» إمكان عودة بغداد إلى منظومات متوسطة المدى قادرة على العمل إلى جانب البطاريات الكورية، لكنه شدد على أن نوع السلاح الأميركي لا يزال غير واضح، ما يجعل الحديث عن «هوك» أو غيره في نطاق الاحتمال وليس العقد المؤكد.\n\nوتحتاج المنظومة العراقية الجديدة إلى شبكة متكاملة من رادارات الإنذار المبكر بعيدة المدى ومراكز القيادة والسيطرة والاتصالات، لأن امتلاك الصواريخ والمدافع وحده لا يكفي لتأمين المجال الجوي إذا لم ترتبط هذه الأسلحة بمنظومة رصد وتبادل معلومات موحدة.\n\nتفاهمات فرنسية لا تزال أولية\n\nأما المسار الفرنسي، فلا يزال في مرحلة التفاهمات وخطابات النوايا، ولم يتحول، وفق المعلومات المعلنة، إلى عقد نهائي لتسليم منظومات دفاع جوي متوسطة أو بعيدة المدى.\n\nوخلال زيارة رئيس الوزراء علي الزيدي إلى باريس في أيلول الماضي، وقّعت وزارة الدفاع العراقية خطاب نوايا مع شركة «هارماتان أي آي» الفرنسية بشأن أنظمة دفاع جوي مستقلة، إلى جانب الاتفاق على خريطة طريق للمشتريات العسكرية المستقبلية من الشركات الفرنسية.\n\nكما شملت المباحثات أنظمة مكافحة الطائرات المسيّرة والدفاع الجوي والمراقبة والمدفعية والحركة الجوية، فضلاً عن استمرار التعاون العسكري بين البلدين بعد انتهاء مهمة التحالف الدولي.\n\nويعني ذلك أن ما جرى مع الجانب الفرنسي يمثل إطاراً للتفاوض والتعاون المستقبلي، وليس صفقة مكتملة مماثلة للعقد الكوري.\n\nويعكس توزيع المشتريات بين أربع دول محاولة عراقية للحصول على منظومات متخصصة في اعتراض تهديدات مختلفة، وتجنب الارتهان لمصدر تسليح واحد. لكنه يضع في الوقت نفسه تحدياً أمام القيادة العسكرية يتعلق بدمج أنظمة كورية وتركية وأميركية وفرنسية وروسية ضمن شبكة قيادة وسيطرة واحدة.\n\nوتحتاج هذه الأنظمة إلى بروتوكولات اتصال متوافقة، وتدريب متنوع، وخطوط منفصلة للصيانة وقطع الغيار والذخائر، ما قد يرفع كلفة التشغيل ويعقّد عملية الإدارة إذا لم تُبنَ منظومة وطنية موحدة لربط الرادارات ووسائل الاعتراض.\n\nويخلص تقرير «فوربس» إلى أن مشروع الدفاع الجوي يعيد إنتاج سياسة العراق القديمة في تنويع مصادر التسليح، كما حصل عندما جمع بين طائرات «ميراج» الفرنسية و«ميغ» السوفيتية، ثم بين مقاتلات «أف–16» الأميركية ومشروعات محتملة لشراء «رافال» الفرنسية أو «جي أف–17» الصينية الباكستانية.\n\nغير أن الاختبار الأساسي لن يكون في عدد الصفقات أو تنوع الدول الموردة، بل في قدرة العراق على دمج المنظومات الجديدة ضمن شبكة دفاعية واحدة، وتوفير التمويل المستمر والتدريب والصيانة، بما يحول المشتريات المتفرقة إلى مظلة جوية فعلية قادرة على حماية المدن والمنشآت الحيوية وفرض السيادة على المجال الجوي.\n\nيحدث الآن\n\nصور: اللجنة العليا تباشر التحقيق بملف تهريب المشتقات النفطية في جرف الصخر\n\nبسبب مخاوف أمنية.. نقل ودية أستراليا والأردن من عمّان إلى الدوحة\n\nالحرس الثوري يعلن إصابة ناقلة غاز بانفجار واشتعال النيران فيها بمضيق هرمز\n\nالتعليم تدعو طلبة الجامعات الأهلية إلى تثبيت خيارات القبول قبل الأحد\n\nبالوثيقة.. اللجنة العليا للتحقيق في معلومات تهريب المشتقات النفطية بجرف النصر\n\nملحق عراقيون",
-      "sourceHost": "almadapaper.net",
-      "contentChars": 7460,
-      "arabicRatio": 1.0083,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-13T10:59:32.745Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "2fb54fc286cbb6559350711ac270f1412ccfbc7983fd5a19893cc441031adc4d",
-        "sourceChars": 7460,
-        "translatedChars": 4176,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "9c008c37393181a08eb2",
-        "preferredTermsApplied": [
-          "국제연합군",
-          "호르무즈 해협",
-          "바그다드",
-          "아르빌"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-13T11:00:50.648Z",
-        "titleKo": "네 나라와의 계약들… 이라크는 영공 방호에 성공할 수 있을까?",
-        "fullTextKo": "취재/알마다\n\n이라크는 한국, 튀르키예, 미국, 프랑스와의 계약과 양해를 통해 다층 방공 체계를 재건하려 하고 있다. 이는 이라크 영공 침범과 무인기 및 미사일 공격이 반복되면서 명확히 드러난 공백을 메우려는 시도이며, 국제연합군이 이라크 내 임무를 종료하기 전에 방공 체계를 철수한 것도 그 배경이다.\n\n알마다가 확인한 미국 잡지 포브스의 심층 보도에 따르면, 바그다드는 지상군과 공군 무장에 적용했던 기존 정책처럼 방공 체계의 공급원을 다변화하는 방향으로 나아가고 있다. 군사력을 구축할 때 한 국가에 의존하는 대신 여러 국가에 의존하려는 것이다.\n\n이는 현재 이라크의 능력이 여전히 제한적인 시점에 추진되고 있다. 이라크는 러시아제 판치르 에스 원 체계와 스팅어 미사일을 탑재한 미국제 단거리 어벤저 체계에 의존하고 있지만, 이들 체계는 최근 역내 충돌 과정에서 무인기 공격을 막거나 반복되는 영공 침범을 억제하지 못했다.\n\n보도는 이라크군 총사령관 대변인 사바흐 알누만의 말을 인용해 이라크가 미국, 튀르키예, 한국과 계약을 체결했으며, 첫 방공 체계가 앞으로 수개월 안에 도착할 것으로 예상된다고 전했다.\n\n알누만은 정부가 방공 개발 계획을 6년에서 3년으로 단축했으며, 목표와 기준은 유지했다고 밝힌 바 있다. 이 계획에는 쿠르디스탄 지역을 포함한 이라크 전역을 보호하고, 영공을 통제하며 다양한 위협에 대응할 수 있는 국가 역량을 구축하는 내용이 포함된다. 톨비트 포브스 닷컴\n\n포브스는 국제연합군이 철수하고 함께 운용하던 방공 체계를 철수한 뒤 이러한 체계의 필요성이 더욱 절실해졌다고 본다. 그 가운데에는 최근 역내 충돌 당시 아르빌을 보호하는 데 기여한 패트리엇 체계도 있었다.\n\n이들 체계가 철수하면서 특히 쿠르디스탄 지역의 방공에 공백이 생겼다. 쿠르디스탄 지역은 지난 수년간 미사일과 무인기 공격을 잇달아 받았다. 국방부는 방공 개발 계획에 이 지역도 포함된다고 밝혔으며, 정부 관계자들은 이라크 방공 체계 개발 일정을 6년에서 3년으로 줄였다고 설명하고 있다.\n\n청궁 이호 체계는 엠샘 이로도 알려져 있으며, 이라크 방공 사업의 핵심 축이다. 바그다드는 한국의 엘아이지 넥스원과 중거리 포대 8기를 도입하는 계약을 체결했다.\n\n계약 규모는 약 28억 달러이며, 2024년 9월 발표됐다. 이에 따라 이라크는 한국, 아랍에미리트, 사우디아라비아에 이어 이 체계를 운용하는 네 번째 국가가 된다. 엠샘 이호는 항공기와 미사일을 요격할 수 있고, 탄도미사일도 비행 궤도의 특정 단계에서 요격할 수 있다. 이는 현재 이라크가 보유한 체계에는 없는 능력이다.\n\n포브스에 따르면 이라크는 서울이 제시한 납품 일정 때문에 프랑스의 삼프티 체계보다 한국 체계를 선호했다. 그러나 계약 이행은 대금 지급 재원과 관련한 논의에 직면했다.\n\n지난 8월 재무부와 국방부는 한국 측과 회의를 열어 계약과 관련된 자금 조달 및 지급 방식, 법적 절차를 마무리했다. 회의에서는 계약을 계속 이행하겠다는 입장도 재확인됐다.\n\n그럼에도 한국 포대의 도착 시점을 둘러싸고는 차이가 있다. 이라크 측 발표는 첫 방공 체계가 수개월 안에 도착할 것이라고 말하고 있지만, 잡지 제인스는 한화에어로스페이스 관계자의 말을 인용해 이라크에 배정된 첫 한국 체계가 2028년 말 인도될 것으로 예상된다고 전했다. 최종 일정은 아직 완전히 확정되지 않았다. 제인스 닷컴\n\n이러한 차이는 수개월 안에 도착할 것으로 예상되는 체계가 반드시 엠샘 이호 포대 중 하나가 아니라 튀르키예산 또는 미국산일 수 있음을 의미한다. 현재 진행 중인 협상에서 한국 측 납품 일정이 앞당겨지지 않는다면 그렇다.\n\n한국과의 계약은 발사대와 미사일 인도에만 국한되지 않는다. 레이더와 지휘통제 체계, 포대 운용 및 정비를 위한 이라크 기술 및 전투 인력 교육도 포함한다. 이를 통해 이라크 인력으로 포대를 운용할 수 있게 된다.\n\n무인기 대응을 위한 튀르키예 체계\n\n한국과의 계약과 병행해 이라크는 튀르키예로부터 방공 체계 20기를 구매하는 절차도 마무리하고 있다. 이 체계는 주로 무인기와 핵심 시설에 근접한 위협에 대응하는 데 초점을 둔다.\n\n육군 작전참모차장 사드 하르비야는 튀르키예 국영 기업들과 계약을 체결했으며 재정 세부 사항을 마무리하는 작업이 계속되고 있다고 밝힌 바 있다. 그는 바그다드가 무인기 대응 능력과 상대적으로 낮은 비용, 그리고 튀르키예가 지리적으로 이라크와 가깝다는 점 때문에 튀르키예 체계를 선택했다고 설명했다. 더 내셔널\n\n포브스는 코르쿠트 체계가 튀르키예산 구매 목록에 포함될 가능성이 있다고 추정했지만, 계약이 이 종류로만 한정된다는 이라크 또는 튀르키예의 공식 확인은 제시하지 않았다.\n\n코르쿠트는 대공포와 근거리 공중 표적, 특히 소형 무인기에 대응하도록 설계된 스마트 탄약을 운용한다. 이 때문에 군사기지, 유전, 공항, 지휘소를 보호하는 데 적합하다.\n\n한국의 엠샘 이호와 튀르키예의 코르쿠트를 결합할 경우, 이라크는 다층 방공 체계를 구축할 수 있다. 한국 체계는 중거리와 중고도 표적 및 미사일을 담당하고, 튀르키예 체계는 무인기와 배회탄에 대한 근거리 방어를 제공하게 된다.\n\n미국 계약의 불투명성\n\n정부가 미국과 계약을 체결했다고 확인했지만, 합의된 미국산 체계의 성격은 여전히 공개되지 않았다. 종류와 수량, 인도 시점 모두 알려지지 않았다.\n\n이라크는 지난 10년 동안 중거리 호크 이십일 체계를 확보하려 했지만, 결국 단거리 어벤저 체계만 받았다.\n\n포브스는 바그다드가 한국 포대와 함께 운용할 수 있는 중거리 체계로 돌아갈 가능성이 있다고 추정했다. 그러나 미국산 무기의 종류는 여전히 불분명하다고 강조했다. 따라서 호크나 다른 체계에 대한 언급은 확정된 계약이 아니라 가능성의 범위에 머문다.\n\n이라크의 새로운 방공 체계에는 장거리 조기경보 레이더와 지휘통제 센터, 통신으로 구성된 통합망이 필요하다. 미사일과 대포를 보유하는 것만으로는 충분하지 않기 때문이다. 이 무기들이 통합된 감시 및 정보 교환 체계에 연결되지 않으면 영공을 지킬 수 없다.\n\n아직 초기 단계인 프랑스와의 양해\n\n프랑스와의 협력은 아직 양해와 의향서 단계에 있으며, 공개된 정보에 따르면 중거리 또는 장거리 방공 체계를 인도하는 최종 계약으로 전환되지 않았다.\n\n지난 9월 알리 알자이디 총리가 파리를 방문했을 당시 이라크 국방부는 프랑스의 하르마탄 에이아이사와 독립형 방공 체계에 관한 의향서를 체결했다. 양측은 프랑스 기업으로부터 향후 군사 장비를 구매하기 위한 로드맵에도 합의했다.\n\n논의에는 무인기 대응 체계, 방공, 감시, 포병, 항공 교통 체계가 포함됐다. 국제연합군의 이라크 내 임무가 끝난 뒤에도 양국 간 군사 협력을 계속하는 방안도 포함됐다.\n\n이는 프랑스 측과 진행된 일이 한국 계약과 같은 완결된 계약이 아니라 향후 협상과 협력을 위한 틀이라는 의미다.\n\n네 나라로 구매를 분산한 것은 서로 다른 위협을 요격할 수 있는 특화 체계를 확보하고 단일 무장 공급원에 종속되는 것을 피하려는 이라크의 시도를 보여준다. 그러나 동시에 한국, 튀르키예, 미국, 프랑스, 러시아 체계를 하나의 지휘통제망 안에 통합해야 한다는 과제를 군 지도부에 안긴다.\n\n이들 체계에는 호환되는 통신 프로토콜, 다양한 교육, 별도의 정비 및 부품과 탄약 공급망이 필요하다. 레이더와 요격 수단을 연결하는 통합된 국가 체계를 구축하지 못하면 운용 비용이 높아지고 관리 과정도 복잡해질 수 있다.\n\n포브스는 방공 사업이 이라크의 기존 무장 공급원 다변화 정책을 재현한다고 결론 내렸다. 과거 프랑스제 미라주와 소련제 미그를 함께 운용했고, 이후 미국제 에프 십육 전투기와 프랑스제 라팔 또는 중국과 파키스탄이 공동 개발한 제이에프 십칠 도입 가능성을 함께 검토했던 것과 같은 방식이다.\n\n그러나 진정한 시험은 계약 건수나 공급 국가의 다양성이 아니라, 이라크가 새로운 체계를 하나의 방어망으로 통합하고 지속적인 재원과 교육, 정비를 제공할 수 있는지에 달려 있다. 이를 통해 분산된 구매를 도시와 핵심 시설을 보호하고 영공에 대한 주권을 행사할 수 있는 실질적인 방공망으로 전환해야 한다.\n\n지금 일어나는 일\n\n사진: 최고위원회, 자르프 알사크르 석유 파생제품 밀수 사건 수사 착수\n\n안보 우려로 호주와 요르단의 친선경기, 암만에서 도하로 이동\n\n혁명수비대, 호르무즈 해협에서 가스 운반선이 폭발해 불이 났고 피해를 입었다고 발표\n\n교육부, 사립대 학생들에게 일요일 전 입학 선택 사항 확정 촉구\n\n문서 공개: 자르프 알나스르 석유 파생제품 밀수 정보 수사 최고위원회\n\n이라크인 부록"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "2fb54fc286cbb6559350711ac270f1412ccfbc7983fd5a19893cc441031adc4d",
-      "contentCheckedAt": "2026-11-13T10:59:32.745Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-K3a3_ux66o6gwy3_YN",
-        "representativeArticleId": "discovery-f9b5-R1Mx2_ggOvn2QkKNrtV",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 95,
-        "stars": 5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "URGENT",
-        "levelKo": "최우선",
-        "reportStatus": "IMMEDIATE_REVIEW",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-13T11:00:23.220Z",
-        "breakdown": {
-          "nationalImportance": 34,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 10,
-          "sourceReliability": 6
-        },
-        "reportPriority": "MUST_INCLUDE",
-        "categoryRelevance": "DIRECT",
-        "businessRelevance": "DIRECT",
-        "reasonKo": "비스마야 사업의 계약·대금·금융·보증 또는 사업 재개에 직접 관련됨",
-        "scoringVersion": 9,
-        "scoreFingerprint": "c2551e865fbd88ad656f",
-        "ruleScore": 55,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 95,
-        "businessFloorRule": "BISMAYAH_CONTRACT_PAYMENT_EXECUTION",
-        "businessFloorReasonKo": "비스마야 사업의 계약·대금·금융·보증 또는 사업 재개에 직접 관련됨",
-        "floorScore": 95,
-        "floorRule": "BISMAYAH_CONTRACT_PAYMENT_EXECUTION",
-        "floorReasonKo": "비스마야 사업의 계약·대금·금융·보증 또는 사업 재개에 직접 관련됨",
-        "aiScore": 72,
-        "aiWeight": 0.4,
-        "ruleWeight": 0.6,
-        "aiModel": "gpt-5.6-luna",
-        "aiReportPriority": "REVIEW",
         "aiReasonKo": "",
         "aiBreakdown": null
       }
@@ -50847,14 +50560,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 393,
-    "retained": 393,
+    "before": 356,
+    "retained": 356,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 335,
+    "groupCount": 333,
     "duplicateGroupCount": 15,
     "duplicateArticleCount": 21,
     "maxHours": 72,
