@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-12",
-  "updatedAt": "2026-11-13T10:59:34.750Z",
-  "count": 5,
+  "updatedAt": "2026-11-14T01:26:49.014Z",
+  "count": 6,
   "articles": [
     {
       "articleId": "discovery-9sPN_StEx3OZuy884IDIJfxe",
@@ -13,6 +13,20 @@
       "titleKo": "",
       "titleArabic": "6 سنوات سجن لمسؤول عراقي في وزارة الصناعة",
       "articleUrl": "https://www.sarayanews.com/article/1120619/6-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-%D8%B3%D8%AC%D9%86-%D9%84%D9%85%D8%B3%D8%A4%D9%88%D9%84-%D8%B9%D8%B1%D8%A7%D9%82%D9%8A-%D9%81%D9%8A-%D9%88%D8%B2%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B5%D9%86%D8%A7%D8%B9%D8%A9",
+      "importanceScore": null,
+      "importanceStars": null,
+      "selected": false,
+      "contentHash": ""
+    },
+    {
+      "articleId": "discovery-MTGe6AmDmlrZW51s8VNYdK1f",
+      "publishedAt": "2026-12-11T00:00:00.000Z",
+      "sourceArabic": "ميدل ايست اونلاين",
+      "sourceHost": "middle-east-online.com",
+      "category": "politics",
+      "titleKo": "",
+      "titleArabic": "الزيدي يحاور قادة الحشد لاحتواء تمرد حزب الله",
+      "articleUrl": "https://www.middle-east-online.com/%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D9%8A%D8%AD%D8%A7%D9%88%D8%B1-%D9%82%D8%A7%D8%AF%D8%A9-%D8%A7%D9%84%D8%AD%D8%B4%D8%AF-%D9%84%D8%A7%D8%AD%D8%AA%D9%88%D8%A7%D8%A1-%D8%AA%D9%85%D8%B1%D8%AF-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87",
       "importanceScore": null,
       "importanceStars": null,
       "selected": false,
