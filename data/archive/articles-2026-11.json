@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-11",
-  "updatedAt": "2026-10-24T08:10:13.335Z",
-  "count": 5,
+  "updatedAt": "2026-11-15T00:59:07.082Z",
+  "count": 11,
   "articles": [
     {
       "articleId": "discovery-Gt_W66btdD0ke2K62FYb_9OD",
@@ -73,6 +73,90 @@
       "importanceStars": null,
       "selected": false,
       "contentHash": ""
+    },
+    {
+      "articleId": "discovery-nmIcJm9j2Rs2hRByaqzibwum",
+      "publishedAt": "2026-11-01T12:30:59.000Z",
+      "sourceArabic": "موقع كلمة الإخباري",
+      "sourceHost": "kalimaiq.com",
+      "category": "economy",
+      "titleKo": "은행협회: 이라크 중앙은행, 이라크 밖 달러 송금 요청 모두 충족",
+      "titleArabic": "رابطة المصارف: البنك المركزي يلبي جميع طلبات تحويل الدولار خارج العراق",
+      "articleUrl": "https://kalimaiq.com/news/details/72738",
+      "importanceScore": 23,
+      "importanceStars": 1,
+      "selected": false,
+      "contentHash": "5f69ba5cf22f984d2378cc0600d6accfe21a279fd4944427caaff0276c80fbab"
+    },
+    {
+      "articleId": "discovery-CyLZ-TJHo5GJ-NzOCR_wo7VY",
+      "publishedAt": "2026-11-01T12:00:27.000Z",
+      "sourceArabic": "شفق نيوز",
+      "sourceHost": "shafaq.com",
+      "category": "politics",
+      "titleKo": "샤파크 뉴스… 자이디의 역내 순방과 무기 독점 논의… 조정기구 내일 월요일 회의 예정",
+      "titleArabic": "شفق نيوز..يتناول جولة الزيدي الإقليمية وحصر السلاح.. اجتماع مرتقب للإطار التنسيقي غداً الاثنين",
+      "articleUrl": "https://shafaq.com/ar/%D8%B3%DB%8C%D8%A7%D8%B3%D8%A9/%D9%8A%D8%AA%D9%86%D8%A7%D9%88%D9%84-%D8%AC%D9%88%D9%84%D8%A9-%D8%A7%D9%84%D8%B2%D9%8A%D8%AF%D9%8A-%D8%A7%D9%84-%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9-%D9%88%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D9%85%D8%B1%D8%AA%D9%82%D8%A8-%D9%84%D9%84-%D8%B7%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D8%B3%D9%8A%D9%82%D9%8A-%D8%BA%D8%AF%D8%A7-%D8%A7%D9%84%D8%A7%D8%AB%D9%86%D9%8A%D9%86",
+      "importanceScore": 72,
+      "importanceStars": 3.5,
+      "selected": false,
+      "contentHash": "bb415a81166618ac5f5d4c4dd9fd48f3fba88a80df08eac8ccc2a19a95f4fd08"
+    },
+    {
+      "articleId": "discovery-LTXurMQF0PvaNKFFuTNoqcTx",
+      "publishedAt": "2026-11-01T09:06:49.000Z",
+      "sourceArabic": "شفق نيوز",
+      "sourceHost": "shafaq.com",
+      "category": "security",
+      "titleKo": "샤파크 뉴스… 수웨이다에서 داعش와 연계된 것으로 추정되는 수상한 움직임에 경계 태세 강화",
+      "titleArabic": "شفق نيوز..تحركات مشبوهة يُعتقد بارتباطها بداعش ترفع الاستنفار في السويداء",
+      "articleUrl": "https://shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%AA%D8%AD%D8%B1%D9%83%D8%A7%D8%AA-%D9%85%D8%B4%D8%A8%D9%88%D9%87%D8%A9-%D9%8A-%D8%B9%D8%AA%D9%82%D8%AF-%D8%A8%D8%A7%D8%B1%D8%AA%D8%A8%D8%A7%D8%B7%D9%87%D8%A7-%D8%A8%D8%AF%D8%A7%D8%B9%D8%B4-%D8%AA%D8%B1%D9%81%D8%B9-%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%86%D9%81%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D9%88%D9%8A%D8%AF%D8%A7",
+      "importanceScore": 28,
+      "importanceStars": 1.5,
+      "selected": false,
+      "contentHash": "c326806a2f0554695b2b8016ada086fbd13bfb9bcfffbb671036974f45d136d9"
+    },
+    {
+      "articleId": "discovery-3tcNtUIXMaD7EUZLzN1t_1LS",
+      "publishedAt": "2026-11-01T09:01:51.000Z",
+      "sourceArabic": "شفق نيوز",
+      "sourceHost": "shafaq.com",
+      "category": "security",
+      "titleKo": "샤파크 뉴스… 드론과 폭발물 사용 계획… 카르발라 아르바인 순례를 노리려던 داعش 조직원에게 무기징역",
+      "titleArabic": "شفق نيوز..خطط لاستخدام المسيرات والعبوات.. المؤبد لداعشي أراد استهداف زيارة الأربعين بكربلاء",
+      "articleUrl": "https://shafaq.com/ar/%D8%A3%D9%85%D9%80%D9%86/%D8%AE%D8%B7%D8%B7-%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D9%85%D8%B3%D9%8A%D8%B1%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%B9%D8%A8%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%85-%D8%A8%D8%AF-%D9%84%D8%AF%D8%A7%D8%B9%D8%B4%D9%8A-%D8%B1%D8%A7%D8%AF-%D8%A7%D8%B3%D8%AA%D9%87%D8%AF%D8%A7%D9%81-%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84-%D8%B1%D8%A8%D8%B9%D9%8A%D9%86-%D8%A8%D9%83%D8%B1%D8%A8%D9%84%D8%A7",
+      "importanceScore": 49,
+      "importanceStars": 2.5,
+      "selected": false,
+      "contentHash": "94fcd06f22d387c18dadceacfe49d4b8457acf915f072a71e6499625e5736f83"
+    },
+    {
+      "articleId": "discovery-Op35kLTAlbuWHtum_9dU1GbH",
+      "publishedAt": "2026-11-01T07:45:37.000Z",
+      "sourceArabic": "شفق نيوز",
+      "sourceHost": "shafaq.com",
+      "category": "security",
+      "titleKo": "샤파크 뉴스… 트럼프, 5천만 달러 때문에 이라크계 변호사에게 등을 돌려",
+      "titleArabic": "شفق نيوز..ترمب ينقلب على محاميته العراقية بسبب 50 مليون دولار",
+      "articleUrl": "https://www.shafaq.com/ar/%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D9%88%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%AA%D8%B1%D9%85%D8%A8-%D9%8A%D9%86%D9%82%D9%84%D8%A8-%D8%B9%D9%84%D9%89-%D9%85%D8%AD%D8%A7%D9%85%D9%8A%D8%AA%D9%87-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9-%D8%A8%D8%B3%D8%A8%D8%A8-50-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%AF%D9%88%D9%84%D8%A7%D8%B1",
+      "importanceScore": 39,
+      "importanceStars": 2,
+      "selected": false,
+      "contentHash": "f13f2c2b3fc505186a054a72b45f26a1dbe9aa4c61e0e8292438d20fec4cc8c8"
+    },
+    {
+      "articleId": "discovery-nrmWbdU51Z__Fmg4RVxvSt2Y",
+      "publishedAt": "2026-11-01T06:01:46.000Z",
+      "sourceArabic": "شبكة اخبار الناصرية",
+      "sourceHost": "nasiriyah.org",
+      "category": "economy",
+      "titleKo": "디카르 투자청, 확대 회의에서 주거단지 문제에 대한 즉각적인 해결책 마련",
+      "titleArabic": "هيئة استثمار ذي قار تضع معالجات فورية لمشاكل المجمعات السكنية في اجتماع موسع",
+      "articleUrl": "https://nasiriyah.org/ar/post/84492/%D9%87%D9%8A%D8%A6%D8%A9-%D8%A7%D8%B3%D8%AA%D8%AB%D9%85%D8%A7%D8%B1-%D8%B0%D9%8A-%D9%82%D8%A7%D8%B1-%D8%AA%D8%B6%D8%B9-%D9%85%D8%B9%D8%A7%D9%84%D8%AC%D8%A7%D8%AA-%D9%81%D9%88%D8%B1%D9%8A%D8%A9-%D9%84/",
+      "importanceScore": 23,
+      "importanceStars": 1,
+      "selected": false,
+      "contentHash": "5a1ed3adaa3c842783b7ca4f028f0700097dd9da18f6ee97c57519e683560875"
     }
   ]
 }
