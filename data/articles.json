@@ -1,10 +1,10 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-16T11:22:46.364Z",
+  "generatedAt": "2026-11-16T13:53:44.975Z",
   "lookbackDays": 14,
-  "count": 379,
+  "count": 377,
   "categoryCounts": {
-    "politics": 191,
+    "politics": 189,
     "security": 86,
     "economy": 74,
     "bismayah": 19,
@@ -156,146 +156,6 @@
         "scoringVersion": 9,
         "scoreFingerprint": "fce69df351d42d3e13df",
         "ruleScore": 55,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-AeI2XVJEEs_LfxpX7WS-i4-H",
-      "keywordId": "international-iran-001",
-      "category": "politics",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "العراق.. وثائق سرية تكشف سرقات نفطية | غرفة الأخبار سكاي نيوز عربية",
-      "sourceArabic": "سكاي نيوز عربية",
-      "sourceHomepage": "https://www.skynewsarabia.com",
-      "publishedAt": "2026-11-16T08:20:21.000Z",
-      "descriptionArabic": "العراق.. وثائق سرية تكشف سرقات نفطية سكاي نيوز عربية",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMi1AJBVV95cUxQXzZ3VmQtNERyeDhfbUptb0pnS3pQSENpUENNbHBaZEdlOGhMUk9PQWtBSFM5SkhZV0plb3k4dXo4YnZoaEtpZUc4T1hwMlpYOHlCOW1hMU03MFprOGRYbS1Bc3NnQnhlNTktZmhZbmx5NUpCeGEwRmRhdzlIT3FJMUpIckN4WkpoWmxOQ2ZqcVFwNkYzeHF4Q254WklsZEIyYTNSWGg4LVRfWlc4QWxCVDEzRVJTZzVKWDlXQVNZVllSTWdsbXJmLTBlX3N3MTRONEZOcy01MFU3RHAxWFNENnBldXNzMlV1QzdyYzFFSmNEMEtqX1RzSW5rcnhPQlplYVhPS2RMYWwwY0F3MUZLcVNqRnhDWnRaY29IQ0pvRkY4NWtEekZQQ05COWlYcjgxeG1YdHZWZVViZVVweVlmUzJzaDB0azA3SzdCSGtTejNiRHdk?oc=5",
-      "articleUrl": "https://www.skynewsarabia.com/program/newsroom/1903769-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%AB%D8%A7%D8%A6%D9%82-%D8%B3%D8%B1%D9%8A%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%B3%D8%B1%D9%82%D8%A7%D8%AA-%D9%86%D9%81%D8%B7%D9%8A%D8%A9",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-16T11:14:39.893Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-16T11:14:51.449Z",
-      "canonicalUrl": "https://www.skynewsarabia.com/program/newsroom/1903769-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D9%88%D8%AB%D8%A7%D8%A6%D9%82-%D8%B3%D8%B1%D9%8A%D8%A9-%D8%AA%D9%83%D8%B4%D9%81-%D8%B3%D8%B1%D9%82%D8%A7%D8%AA-%D9%86%D9%81%D8%B7%D9%8A%D8%A9",
-      "pagePublishedAt": "",
-      "originalTextArabic": "وثائق استخبارية عراقية مصنفة بدرجة سري للغاية، حصلت عليها سكاي نيوز عربية، تكشف عن عمليات لتهريب النفط في منطقة جرف الصخر بمحافظة بابل. ومصدر لسكاي نيوز عربية يؤكد ارتباط عمليات تهريب النفط هذه بكتائب حزب الله.",
-      "sourceHost": "skynewsarabia.com",
-      "contentChars": 210,
-      "arabicRatio": 1.0089,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-16T11:17:12.622Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "86a641fcf79f78e7eac3acf2609acf6d49b07493cfa691c331658a4e4e9dd020",
-        "sourceChars": 210,
-        "translatedChars": 128,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-16T11:22:36.040Z",
-        "titleKo": "이라크… 비밀 문서가 폭로한 석유 절도 | 스카이뉴스 아라비아 뉴스룸",
-        "fullTextKo": "스카이뉴스 아라비아가 입수한 이라크 정보기관의 일급비밀 문서가 바빌주 자르프 알사크르 지역에서 석유를 밀수하는 행위를 폭로했다. 스카이뉴스 아라비아의 한 소식통은 이러한 석유 밀수 행위가 헤즈볼라 여단과 연계되어 있다고 확인했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "86a641fcf79f78e7eac3acf2609acf6d49b07493cfa691c331658a4e4e9dd020",
-      "contentCheckedAt": "2026-11-16T11:17:12.622Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-63k9pZY5w4yNCjJHim",
-        "representativeArticleId": "discovery-AeI2XVJEEs_LfxpX7WS-i4-H",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-16T11:18:32.457Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "87db3cd4e3034a6daac6",
-        "ruleScore": 12,
         "category": "politics",
         "categoryFloor": 0,
         "categoryFloorRule": "NONE",
@@ -824,9 +684,9 @@
       "contentCheckedAt": "2026-11-16T11:17:15.032Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1389,9 +1249,9 @@
       "contentCheckedAt": "2026-11-16T11:17:15.753Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -1959,9 +1819,9 @@
       "contentCheckedAt": "2026-11-16T11:17:15.468Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -3826,9 +3686,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -4110,9 +3970,9 @@
       "contentCheckedAt": "2026-11-16T11:17:17.285Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -5109,9 +4969,9 @@
       "contentCheckedAt": "2026-11-16T11:17:20.995Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -7661,9 +7521,9 @@
       "contentCheckedAt": "2026-11-16T11:17:25.997Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -8147,9 +8007,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -13533,9 +13393,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -13921,7 +13781,7 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -19931,149 +19791,6 @@
         "aiReportPriority": "REVIEW",
         "aiReasonKo": "",
         "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-oISIhbwa-A0OKk0cjsj5Hw_q",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بغداد وأنقرة تتفقان على موعد انسحاب القوات التركية من قاعدة شمالي العراق",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-11-11T05:12:52.000Z",
-      "descriptionArabic": "بغداد وأنقرة تتفقان على موعد انسحاب القوات التركية من قاعدة شمالي العراق عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMixARBVV95cUxOa0RiUHNnVEhzMElrM3p2clctZTA0dy1MckNNcjhBTXZaa1ByRFpUa05MdS00NFVCdUFLeldBcldPekRPeFBrMm1sT0VacVhNU29lR3FDVVluai1rejJlbzdraEZUenphSmdsT0dvMy03TEUtUUw1RHRVRVVyVzQ2b0NZc2FKZ1cxMWU1akZSLVMxV1VrWTIxQUIwb0xReHNZVHlGZ3JiSkJDMFN2cGpQOEtrNTlQSHhrWEFCTWxMOTA1VHNDRGJSUkpDNFIyeXlQUmFPUVoyamJ1S1NTN3JkSkV0cC1YREVlN3lVSEVpOWM0QWJ6bkdEYmItOHJvYnNZajBiRzVLX3JWcGV5X3FmdTRCNHdPSTFsNmFhUG9Rc2RtRGRvYWFNOFczUlBFVDFSRkd5cnpTM1F3LVlsUENXVVFSYUpJaHRGdmhlQVlNWllXekFFZmdFbGZLbFI3ckJHX1dBQ2lzUU5IcW1STkZXN29FS2R1aVpTRHd5dXB5MXlvTUJYMnZlMnc3NjB3TDhlTXFIU1VzRFhGZDR6MGt4cEYtY201QUxGUTJuQmhkZ3FJWGNjYndZVTZRWnpaeHczeG1fdGhIQ2JVNEtmVWs0emk3UXlQTGtJLThMNmdaN2R5NTZwNV9WOXZnZXlQSUwyVWI0TXFjWWNFRVBydWNyRnc3X2I4ai1tQmNOZjFfWWNrdEV0WXVUcjNySHNiYUNDQ1AwSURPdTBHSm12TWxMMGFTZ2dZRmZ6ME5Hc0JsTW5acTFv?oc=5",
-      "articleUrl": "https://arabi21.com/story/1802272/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%AA%D9%81%D9%82%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D9%82%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-16T11:14:39.962Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-16T11:16:01.699Z",
-      "canonicalUrl": "https://arabi21.com/story/1802272/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%AA%D9%81%D9%82%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D9%82%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "pagePublishedAt": "2026-11-11T05:12:52.000Z",
-      "originalTextArabic": "في عام 2015، أنشأت تركيا معسكراً في منطقة زليكان قرب بعشيقة بمحافظة نينوى، بالتنسيق مع حكومة إقليم كردستان، لتدريب قوات البيشمركة في إطار الحرب على تنظيم داعش.",
-      "sourceHost": "arabi21.com",
-      "contentChars": 159,
-      "arabicRatio": 1,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-16T11:17:33.274Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "e51fe6bd94aa9cf29cca13053e3c19228d85a111740372d56d7adea4ffb1ddc3",
-        "sourceChars": 159,
-        "translatedChars": 99,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f5b3dbd74c37140e848b",
-        "preferredTermsApplied": [
-          "페쉬메르가",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-16T01:02:28.412Z",
-        "titleKo": "바그다드와 앙카라, 이라크 북부 기지에서 터키군 철수 일정 합의",
-        "fullTextKo": "2015년 터키는 쿠르디스탄 지역정부와의 협의 아래, 이슬람국가 조직과의 전쟁의 일환으로 페쉬메르가 병력을 훈련하기 위해 니네베주 바시카 인근 질리칸 지역에 군사 캠프를 세웠다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-16T11:18:32.457Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "338952f758ed26992380",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-14RSJYR2m_a7uPq4va",
-        "representativeArticleId": "discovery-oISIhbwa-A0OKk0cjsj5Hw_q",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "e51fe6bd94aa9cf29cca13053e3c19228d85a111740372d56d7adea4ffb1ddc3",
-      "contentCheckedAt": "2026-11-16T11:17:33.274Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -36272,9 +35989,9 @@
       "contentCheckedAt": "2026-11-16T11:17:40.206Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -36703,9 +36420,9 @@
       "contentCheckedAt": "2026-11-16T11:17:41.145Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -50536,7 +50253,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "politics",
+        "from": "bismayah",
         "to": "bismayah",
         "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
@@ -54130,14 +53847,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 404,
-    "retained": 404,
+    "before": 379,
+    "retained": 379,
     "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 350,
+    "groupCount": 348,
     "duplicateGroupCount": 18,
     "duplicateArticleCount": 29,
     "maxHours": 72,
