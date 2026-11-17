@@ -1,8 +1,8 @@
 {
   "schemaVersion": "1.0",
   "month": "2026-11",
-  "updatedAt": "2026-11-16T23:29:32.872Z",
-  "count": 73,
+  "updatedAt": "2026-11-17T11:53:31.571Z",
+  "count": 74,
   "articles": [
     {
       "articleId": "discovery-Gt_W66btdD0ke2K62FYb_9OD",
@@ -69,6 +69,20 @@
       "titleKo": "",
       "titleArabic": "اجتماع خليجي إيراني مرتقب لعقد اتفاق بشأن الملاحة في هرمز",
       "articleUrl": "https://www.middle-east-online.com/%D8%A7%D8%AC%D8%AA%D9%85%D8%A7%D8%B9-%D8%AE%D9%84%D9%8A%D8%AC%D9%8A-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86%D9%8A-%D9%85%D8%B1%D8%AA%D9%82%D8%A8-%D9%84%D8%B9%D9%82%D8%AF-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A7%D9%84%D9%85%D9%84%D8%A7%D8%AD%D8%A9-%D9%81%D9%8A-%D9%87%D8%B1%D9%85%D8%B2",
+      "importanceScore": null,
+      "importanceStars": null,
+      "selected": false,
+      "contentHash": ""
+    },
+    {
+      "articleId": "discovery-DlGVLust_4mNYWfAB_DVmU6E",
+      "publishedAt": "2026-11-03T13:38:59.000Z",
+      "sourceArabic": "اندبندنت عربية",
+      "sourceHost": "independentarabia.com",
+      "category": "politics",
+      "titleKo": "",
+      "titleArabic": "اتفاق حصر السلاح في العراق أمام اختبار التنفيذ",
+      "articleUrl": "https://www.independentarabia.com/node/661969/%D8%B3%D9%8A%D8%A7%D8%B3%D8%A9/%D8%AA%D9%82%D8%A7%D8%B1%D9%8A%D8%B1/%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D8%AD%D8%B5%D8%B1-%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D8%AD-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0",
       "importanceScore": null,
       "importanceStars": null,
       "selected": false,
