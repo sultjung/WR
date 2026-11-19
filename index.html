@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="이라크·비스마야 사업 관련 아랍어 현지뉴스 자동수집, 한국어 전문번역 및 선별 기사 Word 다운로드">
-  <meta name="theme-color" content="#f37321">
+  <meta name="theme-color" content="#142439">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -12,7 +12,7 @@
   <link rel="manifest" href="./manifest.webmanifest">
   <link rel="apple-touch-icon" href="./icons/icon-192.png">
   <title>이라크 주간상황보고서 뉴스자료</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./style.css?v=20261119">
   <link rel="stylesheet" href="./importance-colors.css">
   <link rel="stylesheet" href="./reader-mode.css">
 </head>
@@ -22,7 +22,7 @@
       <div>
         <p class="eyebrow">Iraq Weekly Report</p>
         <h1>이라크 주간 종합상황보고 뉴스자료</h1>
-        <p class="subtitle">비스마야 사업 관련 현지뉴스 자동수집 · 번역 · 분석 · 보고서용 기사 선별 목적</p>
+        <p class="subtitle">이라크 현지뉴스 한국어 전문 번역과 보고서용 기사 선별</p>
       </div>
       <div class="header-status">
         <span class="status-dot" aria-hidden="true"></span>
@@ -45,13 +45,12 @@
 
     <details class="report-builder-shell">
       <summary class="report-builder-summary">
-        <span class="report-summary-kicker">GPT SOURCE</span>
         <strong id="sourceDownloadTitle">선택 기사 Word 다운로드</strong>
         <span class="report-summary-toggle" aria-hidden="true"></span>
       </summary>
       <section class="report-builder" aria-labelledby="sourceDownloadTitle">
       <div class="report-builder-copy">
-        <p>보고일 기준 7일의 기사 중 필요한 기사만 선택해 주간상황보고서 GPT에 바로 업로드할 수 있는 Word 자료집으로 내려받습니다. 사이트에서는 최종 보고서를 생성하지 않습니다.</p>
+        <p>보고일 이전 7일간의 기사 중 필요한 기사를 골라 Word 자료집으로 내보냅니다.</p>
         <div class="download-panel-status">
           <span id="selectedDownloadCount" class="selection-count-pill">0건 선택</span>
           <span class="download-note">Word에는 한국어 전문번역과 아랍어 원문을 함께 저장합니다.</span>
@@ -135,8 +134,7 @@
 
   <script src="./importance-fallback.js"></script>
   <script src="./translation-pipeline-guard.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
-  <script src="./app.js"></script>
+  <script src="./app.js?v=20261119"></script>
   <script src="./importance-badge-colors.js"></script>
   <script>
     (() => {
