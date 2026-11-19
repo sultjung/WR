@@ -32,7 +32,7 @@ jobs:
           kst_date="$(TZ=Asia/Seoul date +%F)"
           case "$SCHEDULE" in
             "20 21 * * *") cutoff="${kst_date}T00:00:00+09:00" ;;
-            "30 3 * * *") cutoff="${kst_date}T12:00:00+09:00" ;;
+            "30 3 * * *") cutoff="${kst_date}T11:40:00+09:00" ;;
             *) cutoff="${kst_date}T00:00:00+09:00" ;;
           esac
           generated_at="$(node -e 'const d=require("./data/articles.json"); process.stdout.write(d.generatedAt||"")')"
