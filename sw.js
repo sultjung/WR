@@ -4,7 +4,7 @@ const RUNTIME_CACHE = `${VERSION}-runtime`;
 const SHELL_ASSETS = [
   "./", "./index.html", "./style.css?v=20261119-restored", "./importance-colors.css", "./reader-mode.css",
   "./importance-fallback.js", "./importance-badge-colors.js", "./translation-pipeline-guard.js",
-  "./app.js?v=20261119", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"
+  "./app.js?v=20261119-newest", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"
 ];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(SHELL_CACHE).then((cache) => cache.addAll(SHELL_ASSETS)).then(() => self.skipWaiting()));
