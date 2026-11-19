@@ -1,10 +1,10 @@
-const VERSION = "wr-pwa-v1";
+const VERSION = "wr-pwa-v2";
 const SHELL_CACHE = `${VERSION}-shell`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const SHELL_ASSETS = [
-  "./", "./index.html", "./style.css", "./importance-colors.css", "./reader-mode.css",
+  "./", "./index.html", "./style.css?v=20261119", "./importance-colors.css", "./reader-mode.css",
   "./importance-fallback.js", "./importance-badge-colors.js", "./translation-pipeline-guard.js",
-  "./app.js", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png", "./data/articles.json"
+  "./app.js?v=20261119", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"
 ];
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(SHELL_CACHE).then((cache) => cache.addAll(SHELL_ASSETS)).then(() => self.skipWaiting()));
@@ -18,9 +18,9 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin === self.location.origin && url.pathname.endsWith("/data/articles.json")) {
     event.respondWith(fetch(request).then((response) => {
-      if (response.ok) caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, response.clone()));
+      if (response.ok) caches.open(RUNTIME_CACHE).then((cache) => cache.put("./data/articles.json", response.clone()));
       return response;
-    }).catch(() => caches.match(request).then((cached) => cached || caches.match("./data/articles.json"))));
+    }).catch(() => caches.match("./data/articles.json")));
     return;
   }
   if (request.mode === "navigate") {
