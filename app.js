@@ -264,9 +264,26 @@
     });
     return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"><w:body>${body.join("")}<w:sectPr><w:pgSz w:w="11906" w:h="16838"/><w:pgMar w:top="1134" w:right="1134" w:bottom="1134" w:left="1134"/></w:sectPr></w:body></w:document>`;
   }
+  let wordLibraryPromise;
+  function loadWordLibrary(){
+    if(window.JSZip)return Promise.resolve(window.JSZip);
+    if(!wordLibraryPromise){
+      wordLibraryPromise=new Promise((resolve,reject)=>{
+        const script=document.createElement("script");
+        script.src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js";
+        script.onload=()=>window.JSZip?resolve(window.JSZip):reject(new Error("JSZip unavailable"));
+        script.onerror=()=>reject(new Error("JSZip load failed"));
+        document.head.appendChild(script);
+      }).catch(()=>{
+        wordLibraryPromise=undefined;
+        throw new Error("Word 생성 모듈을 불러오지 못했습니다. 연결을 확인한 뒤 다시 시도해 주세요.");
+      });
+    }
+    return wordLibraryPromise;
+  }
   async function buildDocx(payload){
-    if(typeof JSZip==="undefined")throw new Error("Word 생성 모듈을 불러오지 못했습니다. 페이지를 새로고침한 뒤 다시 시도해 주세요.");
-    const zip=new JSZip();
+    const Zip=await loadWordLibrary();
+    const zip=new Zip();
     zip.file("[Content_Types].xml",`<?xml version="1.0" encoding="UTF-8"?><Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types"><Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/><Default Extension="xml" ContentType="application/xml"/><Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/><Override PartName="/word/styles.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml"/><Override PartName="/docProps/core.xml" ContentType="application/vnd.openxmlformats-package.core-properties+xml"/><Override PartName="/docProps/app.xml" ContentType="application/vnd.openxmlformats-officedocument.extended-properties+xml"/></Types>`);
     zip.folder("_rels").file(".rels",`<?xml version="1.0" encoding="UTF-8"?><Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/><Relationship Id="rId2" Type="http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties" Target="docProps/core.xml"/><Relationship Id="rId3" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties" Target="docProps/app.xml"/></Relationships>`);
     zip.folder("word").file("document.xml",documentXml(payload));
@@ -287,7 +304,7 @@
   async function init(){
     setDefaultDateRange();syncReportRange();state.selected=new Set(loadSelectedIds($("reportDate").value));
     try{
-      const stamp=Date.now();const response=await fetch(`./data/articles.json?v=${stamp}`,{cache:"no-store"});if(!response.ok)throw new Error(`articles HTTP ${response.status}`);const payload=await response.json();const loaded=Array.isArray(payload)?payload:(payload.articles||[]);state.articles=loaded.filter((article)=>!String(article.articleUrl||article.canonicalUrl||"").includes("/5235833-"));rebuildGroups();pruneSelections();$("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
+      const response=await fetch("./data/articles.json",{cache:"no-store"});if(!response.ok)throw new Error(`articles HTTP ${response.status}`);const payload=await response.json();const loaded=Array.isArray(payload)?payload:(payload.articles||[]);state.articles=loaded.filter((article)=>!String(article.articleUrl||article.canonicalUrl||"").includes("/5235833-"));rebuildGroups();pruneSelections();$("updatedAt").textContent=payload.generatedAt?`최종 업데이트 ${dateLabel(payload.generatedAt)}`:"초기 구조 준비 완료";
     }catch(error){$("updatedAt").textContent="데이터 로드 실패";console.error(error);}apply();
   }
   document.querySelectorAll(".summary-card").forEach((button)=>button.addEventListener("click",()=>{state.filter=button.dataset.filter;document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item===button));apply();}));
