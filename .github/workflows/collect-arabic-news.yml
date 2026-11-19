@@ -82,6 +82,8 @@ jobs:
         run: npm run validate:frontend
 
       - name: Test relevance, category routing, grouping, importance, and translation terms
+        # Push and PR validation already runs the full suite for code changes.
+        if: github.event_name == 'workflow_dispatch'
         run: npm test
 
       - name: Discover broad Arabic news candidates with Google News
