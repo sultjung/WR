@@ -314,7 +314,7 @@
   $("searchInput").addEventListener("input",apply);
   $("downloadSelected").addEventListener("click",downloadSelectedArticles);
   $("clearSelected").addEventListener("click",()=>{state.selected.clear();saveSelectedIds();setDownloadMessage("");apply();});
-  $("resetFilters").addEventListener("click",()=>{setDefaultDateRange();$("sortOrder").value="importance-desc";$("importanceFilter").value="all";$("sourceFilter").value="all";$("translationFilter").value="all";$("searchInput").value="";state.filter="all";document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item.dataset.filter==="all"));apply();});
+  $("resetFilters").addEventListener("click",()=>{setDefaultDateRange();$("sortOrder").value="newest";$("importanceFilter").value="all";$("sourceFilter").value="all";$("translationFilter").value="all";$("searchInput").value="";state.filter="all";document.querySelectorAll(".summary-card").forEach((item)=>item.classList.toggle("active",item.dataset.filter==="all"));apply();});
   document.addEventListener("click",(event)=>{
     const button=event.target.closest("button[data-action]");
     if(!button||button.disabled)return;
