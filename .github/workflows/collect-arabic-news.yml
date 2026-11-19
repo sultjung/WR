@@ -3,8 +3,8 @@ name: Collect Arabic News
 on:
   workflow_dispatch:
   schedule:
-    - cron: "5 21 * * *"  # 06:05 KST primary
-    - cron: "15 3 * * *"  # 12:15 KST primary
+    - cron: "37 20 * * *"  # 05:37 KST start for 06:05 publication target
+    - cron: "47 2 * * *"  # 11:47 KST start for 12:15 publication target
 
 permissions:
   contents: write
@@ -34,8 +34,8 @@ jobs:
           fi
           kst_date="$(TZ=Asia/Seoul date +%F)"
           case "$SCHEDULE" in
-            "5 21 * * *") cutoff="${kst_date}T00:00:00+09:00" ;;
-            "15 3 * * *") cutoff="${kst_date}T12:00:00+09:00" ;;
+            "37 20 * * *") cutoff="${kst_date}T00:00:00+09:00" ;;
+            "47 2 * * *") cutoff="${kst_date}T11:40:00+09:00" ;;
             *) cutoff="${kst_date}T00:00:00+09:00" ;;
           esac
           generated_at="$(node -e 'const d=require("./data/articles.json"); process.stdout.write(d.generatedAt||"")')"
@@ -94,7 +94,7 @@ jobs:
         run: npm run collect:discover
 
       - name: Collect NIC official posts from WordPress REST API once daily
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '5 21 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '37 20 * * *'
         env:
           NIC_LOOKBACK_DAYS: "14"
           NIC_PER_PAGE: "100"
