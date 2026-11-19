@@ -17,10 +17,21 @@ self.addEventListener("fetch", (event) => {
   if (request.method !== "GET") return;
   const url = new URL(request.url);
   if (url.origin === self.location.origin && url.pathname.endsWith("/data/articles.json")) {
-    event.respondWith(fetch(request).then((response) => {
-      if (response.ok) caches.open(RUNTIME_CACHE).then((cache) => cache.put("./data/articles.json", response.clone()));
-      return response;
-    }).catch(() => caches.match("./data/articles.json")));
+    const network = fetch(request).then((response) => ({
+      response,
+      snapshot: response.ok ? response.clone() : null
+    }));
+    event.waitUntil(network.then(async ({ snapshot }) => {
+      if (snapshot) {
+        const cache = await caches.open(RUNTIME_CACHE);
+        await cache.put("./data/articles.json", snapshot);
+      }
+    }).catch(() => {}));
+    event.respondWith(network.then(({ response }) => response).catch(async (error) => {
+      const cached = await caches.match("./data/articles.json");
+      if (cached) return cached;
+      throw error;
+    }));
     return;
   }
   if (request.mode === "navigate") {
