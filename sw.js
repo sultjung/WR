@@ -2,7 +2,7 @@ const VERSION = "wr-pwa-v2";
 const SHELL_CACHE = `${VERSION}-shell`;
 const RUNTIME_CACHE = `${VERSION}-runtime`;
 const SHELL_ASSETS = [
-  "./", "./index.html", "./style.css?v=20261119", "./importance-colors.css", "./reader-mode.css",
+  "./", "./index.html", "./style.css?v=20261119-restored", "./importance-colors.css", "./reader-mode.css",
   "./importance-fallback.js", "./importance-badge-colors.js", "./translation-pipeline-guard.js",
   "./app.js?v=20261119", "./manifest.webmanifest", "./icons/icon-192.png", "./icons/icon-512.png"
 ];
