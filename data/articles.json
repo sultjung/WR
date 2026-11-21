@@ -1,12 +1,12 @@
 {
   "schemaVersion": "1.0",
-  "generatedAt": "2026-11-21T10:21:45.706Z",
+  "generatedAt": "2026-11-21T13:38:48.309Z",
   "lookbackDays": 14,
-  "count": 421,
+  "count": 417,
   "categoryCounts": {
-    "politics": 210,
+    "politics": 207,
     "economy": 99,
-    "security": 87,
+    "security": 86,
     "international": 9,
     "bismayah": 16
   },
@@ -262,9 +262,9 @@
       "contentCheckedAt": "2026-11-21T10:16:38.186Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -689,7 +689,7 @@
       "contentCheckedAt": "2026-11-21T10:16:39.079Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "security",
         "to": "security",
         "reason": "기사 제목·도입부가 시위·집회·농성·파업을 핵심 사건으로 다룸",
         "locked": true,
@@ -1317,146 +1317,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-loJqcJnWxJHEQlrcjkOOtTar",
-      "keywordId": "international-iran-001",
-      "category": "security",
-      "priority": 95,
-      "queryArabic": "إيران العراق عقوبات نفوذ أمن",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "إيران",
-        "عقوبات",
-        "الفصائل",
-        "النفوذ الإيراني",
-        "الحدود"
-      ],
-      "excludedTerms": [
-        "مباراة",
-        "مسلسل"
-      ],
-      "originalTitleArabic": "بعد 12 عامًا من سيطرة كتائب حزب الله.. اتفاق أمني ينظم دخول القوات العراقية إلى جرف الصخر",
-      "sourceArabic": "المنشر الإخباري",
-      "sourceHomepage": "https://elmanshar.com",
-      "publishedAt": "2026-11-20T08:34:53.000Z",
-      "descriptionArabic": "بعد 12 عامًا من سيطرة كتائب حزب الله.. اتفاق أمني ينظم دخول القوات العراقية إلى جرف الصخر المنشر الإخباري",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMizwJBVV95cUxPNnExN1Q1el9pOThEZ2F0TnllZ2JSR0RENmo5RnhpWXBNYzBFU1F3bUZRd3phMFNEa2MzMTc5LXh6S1JyU045Y0VWMjRNVkVpR2RDbzlIVHdUYzNWRG9OSDFMX19wSkhrRXV4R0NES3hxOTBHY0h0RVI2dzJRSUJRZ0xMbmF0aFdOX2g1TVFVbUFWckd0aGNRRUpjZUNIbjJqQm1NR0M5V0tpOHZtLUVDUGlDQi15ektpNlY4MzFMcUZjR25fX0dfRnR4UFBsUTczNW9iMDM2N3pzT2wyTFZnbk93aHBRbnY5UW1lbGN1TnNpSnAyNUJOT0htVmlwd3lxRzdmVjJyWE44eUVfWjUtZWtiNGxmUFByQVR3WnlzM0EzX3FpSllSTGJKTW5fNk1jRXhNU3hTS1Q5Yjk0QVNqRUFLeWotdlgyVFNub09rdw?oc=5",
-      "articleUrl": "https://elmanshar.com/2026/11/20/%D8%A8%D8%B9%D8%AF-12-%D8%B9%D8%A7%D9%85%D9%8B%D8%A7-%D9%85%D9%86-%D8%B3%D9%8A%D8%B7%D8%B1%D8%A9-%D9%83%D8%AA%D8%A7%D8%A6%D8%A8-%D8%AD%D8%B2%D8%A8-%D8%A7%D9%84%D9%84%D9%87-%D8%A7%D8%AA%D9%81%D8%A7/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-21T10:13:38.423Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-21T10:14:10.503Z",
-      "canonicalUrl": "https://elmanshar.com/2026/11/20/%d8%a8%d8%b9%d8%af-12-%d8%b9%d8%a7%d9%85%d9%8b%d8%a7-%d9%85%d9%86-%d8%b3%d9%8a%d8%b7%d8%b1%d8%a9-%d9%83%d8%aa%d8%a7%d8%a6%d8%a8-%d8%ad%d8%b2%d8%a8-%d8%a7%d9%84%d9%84%d9%87-%d8%a7%d8%aa%d9%81%d8%a7/",
-      "pagePublishedAt": "",
-      "originalTextArabic": "استهداف ناقلتين بمقذوفين مجهولين قبالة سواحل عُمان\n\nاستهداف ناقلتين بمقذوفين مجهولين قبالة سواحل عُمان أعلنت هيئة عمليات...",
-      "sourceHost": "elmanshar.com",
-      "contentChars": 123,
-      "arabicRatio": 1.0058,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-21T10:16:43.407Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "695b0389a2a5c05f2cc43b786b8bbd05278cc6acb75d38aff65110035e6a7d82",
-        "sourceChars": 123,
-        "translatedChars": 90,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "",
-        "preferredTermsApplied": [],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-21T10:21:11.102Z",
-        "titleKo": "카타이브 헤즈볼라 장악 12년 만에…이라크군의 주르프 알사크르 진입을 규정하는 안보 협정",
-        "fullTextKo": "오만 해안 앞바다에서 정체불명의 발사체 두 발에 유조선 두 척 피격\n\n오만 해안 앞바다에서 정체불명의 발사체 두 발에 유조선 두 척 피격\n작전당국은 발표했다..."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "security",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "695b0389a2a5c05f2cc43b786b8bbd05278cc6acb75d38aff65110035e6a7d82",
-      "contentCheckedAt": "2026-11-21T10:16:43.407Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "security",
-        "reason": "이라크 직접 연관 양자 안보·군사·국경·테러 대응",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-vWhhYCqVCQF0lG568x",
-        "representativeArticleId": "discovery-loJqcJnWxJHEQlrcjkOOtTar",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 30,
-        "stars": 1.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-21T10:18:20.816Z",
-        "breakdown": {
-          "incidentDirectness": 8,
-          "location": 15,
-          "incidentScale": 3,
-          "siteSafety": 0,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "85e8af11cc3eb14ce7a7",
-        "ruleScore": 30,
-        "category": "security",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-5XQon9mm2M6OCY-tWup14xws",
       "keywordId": "politics-pm-003",
       "category": "politics",
@@ -1876,9 +1736,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -3081,9 +2941,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -6073,9 +5933,9 @@
       "contentCheckedAt": "2026-11-21T10:16:46.725Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -6547,7 +6407,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "economy",
+        "from": "bismayah",
         "to": "bismayah",
         "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
@@ -9123,16 +8983,11 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-11-21T10:17:20.953Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       }
     },
     {
@@ -11834,9 +11689,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -12682,158 +12537,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-WmjzidT2M-A40GAR0ohUtS-a",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "إيران تقول إن مقترحها لإعادة فتح مضيق هرمز يحظى بدعم دول إقليمية",
-      "sourceArabic": "MnAmerica",
-      "sourceHomepage": "https://mnamerica.com",
-      "publishedAt": "2026-11-17T10:11:49.000Z",
-      "descriptionArabic": "إيران تقول إن مقترحها لإعادة فتح مضيق هرمز يحظى بدعم دول إقليمية MnAmerica",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBlVktDbFR0UzdyYmU4MEtqVXppcS1rcnl0Qk5kd0lZbjJZZ3YwdHEtRkttS1NoUnFFdDlhRHkydFVWWmI3UDI5d3Rn?oc=5",
-      "articleUrl": "https://mnamerica.com/news-116056/",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-21T10:13:38.434Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-21T10:14:45.120Z",
-      "canonicalUrl": "https://mnamerica.com/news-116056/",
-      "pagePublishedAt": "2026-11-17T10:11:49.000Z",
-      "originalTextArabic": "قال وزير الخارجية الإيراني عباس عراقجي إن بلدانا إقليمية تدعم مقترح طهران لإعادة فتح مضيق هرمز خلال يومين في إطار السعي لإنهاء الحرب مع الولايات المتحدة، وذلك في تصريحات أدلى بها الاثنين خلال زيارته باكستان التي تساهم في الوساطة بين الطرفين.\n\nومنذ بداية الحرب الأميركية الإسرائيلية عليها في أواخر شباط/فبراير، أحكمت إيران إغلاق هذا الممر البحري الحيوي لإمدادات الطاقة العالمية.\n\nووصل عراقجي إلى باكستان مساء الأحد للمشاركة في اجتماع منظمة التعاون الاقتصادي، وهو تجمّع لدول من آسيا الوسطى وجنوب آسيا والشرق الأوسط.\n\nوقال عراقجي للصحافيين في إسلام آباد “رحب الاجتماع بالمقترح. ومن خلال دعمه الخطة التي اقترحتها إيران، أعرب عن الأمل في أن تؤدي هذه الخطة خلال يومين إلى وقف نهائي وشامل لإطلاق النار”.\n\nوشارك في الاجتماع مسؤولون من باكستان وتركيا وأذربيجان وكازاخستان وإيران وقيرغيزستان وطاجيكستان وتركمانستان وأوزبكستان. ولم يحضر ممثلو أفغانستان، وهي أيضا عضو في المنظمة.\n\nبغداد تمهل كتائب حزب الله للانسحاب قبل دخول قواتها معقلها في وسط العراق\n\nواندلعت الحرب في 28 شباط/فبراير إثر ضربات نفذتها الولايات المتحدة وإسرائيل. وردّت إيران بضربات استهدفت حلفاء واشنطن في الخليج.\n\nوتسببت الحرب وتداعياتها في ارتفاع حاد في أسعار الطاقة العالمية.\n\nوتراجعت حدة الأعمال الحربية في الأشهر الماضية عقب توصل واشنطن وطهران إلى اتفاق لوقف إطلاق النار في نيسان/أبريل بوساطة قادتها باكستان وقطر. ورغم انهيار مذكرة تفاهم وقّعها الطرفان المتحاربان في حزيران/يونيو، وتبادلهما الضربات من حين لآخر، الا أنهما لم يستأنفا الأعمال القتالية بشكل واسع النطاق.\n\nوحذّرت إسرائيل والولايات المتحدة في الآونة الأخيرة من شنّ ضربات جديدة على إيران التي توعدت برد واسع النطاق. وفي الموازاة، كثّفت الأطراف الوسيطة جهودها الدبلوماسية لتجنب جولة جديدة من التصعيد، من دون تحقيق اختراق.\n\nوبعد أن عرضت في البداية إعادة فتح مضيق هرمز خلال أسبوع، أعلنت إيران أنها مستعدة للقيام بذلك ضمن مهلة يومين إذا قبلت واشنطن بشروطها.\n\nوتطالب الجمهورية الإسلامية بأن تفي واشنطن بشروط عدة منها الإفراج عن الأصول الإيرانية المجمدة في الخارج، ورفع العقوبات، وإنهاء الحصار البحري الأميركي المفروض على الموانئ الإيرانية ردا على قيودها في هرمز.\n\nالسابق بوست\n\nبغداد تمهل كتائب حزب الله للانسحاب قبل دخول قواتها معقلها في وسط العراق\n\nالقادم بوست\n\nفي منطقة لا تهدأ.. لماذا يصبح خفض التصعيد انتصارا سياسيا؟ بقلم :شحاته زكريا\n\nترامب يحذر من أسلحة كيميائية وبيولوجية إيرانية ضد الداخل الأميركي\n\nالبنتاغون يكشف تكلفة الحرب على إيران\n\nبعد خسارة الجمهوريين… إيلون ماسك يشعر بـ«الحماقة الشديدة» حيال إنفاقه الانتخابي\n\nواشنطن وكراكاس تتفقان على التعاون العسكري بعد أقل من عام على إطاحة مادورو\n\nترامب يحذر من أسلحة كيميائية وبيولوجية إيرانية ضد الداخل الأميركي\n\nالبنتاغون يكشف تكلفة الحرب على إيران\n\nبعد خسارة الجمهوريين… إيلون ماسك يشعر بـ«الحماقة الشديدة» حيال&hellip;\n\nواشنطن وكراكاس تتفقان على التعاون العسكري بعد أقل من عام على إطاحة&hellip;\n\nالسيسي يستقبل الدبيبة.. تفاهمات لتعزيز التعاون وتسهيل&hellip;\n\nالصومال تطرد السفير الإماراتي\n\nهجوم بالذكاء الاصطناعي يستهدف المفوضية الأوروبية.. مخاوف&hellip;",
-      "sourceHost": "mnamerica.com",
-      "contentChars": 2828,
-      "arabicRatio": 0.997,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-21T10:16:51.148Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "f610ff34186cd47d86022a43ae7bbb552577adc934cb237764ea18b2ae417a69",
-        "sourceChars": 2828,
-        "translatedChars": 1621,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "3c654dc134c98a54ac02",
-        "preferredTermsApplied": [
-          "호르무즈 해협",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-21T10:21:08.985Z",
-        "titleKo": "이란, 호르무즈 해협 재개방 제안이 역내 국가들의 지지를 받고 있다고 밝혀",
-        "fullTextKo": "이란 외무장관 압바스 아락치 장관은 미국과의 전쟁을 끝내기 위한 노력의 일환으로 테헤란이 호르무즈 해협을 이틀 안에 재개방하자는 제안에 역내 국가들이 지지를 보내고 있다고 말했다. 그는 양측 간 중재에 기여하고 있는 파키스탄을 방문하던 중 월요일 이같이 밝혔다.\n\n2월 말 이란에 대한 미국과 이스라엘의 전쟁이 시작된 이후, 이란은 세계 에너지 공급에 중요한 이 해상 통로를 사실상 폐쇄했다.\n\n아락치 장관은 중앙아시아와 남아시아, 중동 국가들의 모임인 경제협력기구 회의에 참석하기 위해 일요일 저녁 파키스탄에 도착했다.\n\n아락치 장관은 이슬라마바드에서 기자들에게 “회의는 이 제안을 환영했다. 이란이 제안한 계획을 지지함으로써, 이 계획이 이틀 안에 최종적이고 포괄적인 휴전을 이끌어내기를 바란다는 뜻을 밝혔다”고 말했다.\n\n회의에는 파키스탄, 튀르키예, 아제르바이잔, 카자흐스탄, 이란, 키르기스스탄, 타지키스탄, 투르크메니스탄, 우즈베키스탄의 관계자들이 참석했다. 역시 이 기구의 회원국인 아프가니스탄 대표들은 참석하지 않았다.\n\n바그다드, 중부 이라크의 거점에 군을 진입시키기 전 헤즈볼라 여단에 철수 시한 통보\n\n전쟁은 2월 28일 미국과 이스라엘이 단행한 공습으로 발발했다. 이란은 걸프 지역의 미국 동맹국들을 겨냥한 공습으로 대응했다.\n\n전쟁과 그 여파로 세계 에너지 가격은 급격히 상승했다.\n\n파키스탄과 카타르가 주도한 중재를 통해 4월 워싱턴과 테헤란이 휴전 합의에 도달한 뒤, 최근 몇 달 동안 전쟁 행위의 강도는 약해졌다. 양측이 6월에 서명한 양해각서가 무산되고 간헐적으로 공습을 주고받았음에도, 양측은 대규모 전투를 재개하지 않았다.\n\n이스라엘과 미국은 최근 이란에 대한 새로운 공습을 경고했으며, 이란은 대규모 보복을 약속했다. 이와 동시에 중재국들은 새로운 긴장 고조 국면을 피하기 위해 외교적 노력을 강화했지만, 돌파구를 마련하지는 못했다.\n\n이란은 처음에는 일주일 안에 호르무즈 해협을 재개방하겠다고 제안한 뒤, 워싱턴이 자국의 조건을 받아들인다면 이틀 안에 이를 시행할 준비가 돼 있다고 밝혔다.\n\n이란 이슬람공화국은 해외에 동결된 이란 자산의 해제, 제재 해제, 그리고 호르무즈 해협에서 이란이 취한 제한에 대응해 미국이 이란 항구에 부과한 해상 봉쇄의 종료 등을 포함한 여러 조건을 워싱턴이 이행할 것을 요구하고 있다.\n\n이전 게시물\n\n바그다드, 중부 이라크의 거점에 군을 진입시키기 전 헤즈볼라 여단에 철수 시한 통보\n\n다음 게시물\n\n잠들지 않는 지역에서… 왜 긴장 완화가 정치적 승리가 되는가? 셰하타 자카리아 기고\n\n트럼프, 미국 본토를 겨냥한 이란의 화학무기와 생물무기 사용을 경고\n\n국방부, 이란 전쟁 비용 공개\n\n공화당의 패배 이후… 일론 머스크, 선거자금 지출에 대해 ‘극도의 어리석음’을 느껴\n\n워싱턴과 카라카스, 마두로 축출 1년도 안 돼 군사 협력에 합의\n\n트럼프, 미국 본토를 겨냥한 이란의 화학무기와 생물무기 사용을 경고\n\n국방부, 이란 전쟁 비용 공개\n\n공화당의 패배 이후… 일론 머스크, 선거자금 지출에 대해 ‘극도의 어리석음’을 느껴…\n\n워싱턴과 카라카스, 마두로 축출 1년도 안 돼…\n\n엘시시, 데베이바 접견… 협력 강화와 원활한…을 위한 합의\n\n소말리아, 아랍에미리트 대사 추방\n\n인공지능 공격, 유럽연합 집행위원회 겨냥… 우려…"
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "f610ff34186cd47d86022a43ae7bbb552577adc934cb237764ea18b2ae417a69",
-      "contentCheckedAt": "2026-11-21T10:16:51.148Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "direct-iraq-government-or-diplomatic-affairs",
-        "scores": {
-          "politics": 8,
-          "economy": 10,
-          "security": 2,
-          "economyHeadline": 0,
-          "securityHeadline": 0,
-          "titleHasIraq": false,
-          "openingHasIraqActor": true
-        },
-        "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-11-21T10:17:20.958Z"
-      },
-      "eventGroup": {
-        "groupId": "event-nFQIuMLEnzBGye24eo",
-        "representativeArticleId": "discovery-WmjzidT2M-A40GAR0ohUtS-a",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 46,
-        "stars": 2.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "GENERAL",
-        "levelKo": "일반",
-        "reportStatus": "REFERENCE_ONLY",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-21T10:18:20.816Z",
-        "breakdown": {
-          "nationalImportance": 28,
-          "businessImpact": 0,
-          "politicalImpact": 5,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "97111cf6c86f85312383",
-        "ruleScore": 46,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -16587,9 +16290,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -16730,9 +16433,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -18871,9 +18574,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -19398,9 +19101,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -20962,9 +20665,9 @@
       "contentCheckedAt": "2026-11-21T10:16:55.314Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -24876,9 +24579,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -24970,9 +24673,9 @@
       "contentCheckedAt": "2026-11-21T10:16:56.797Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -26882,9 +26585,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -29429,9 +29132,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -31104,9 +30807,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -33533,7 +33236,7 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "economy",
+        "from": "bismayah",
         "to": "bismayah",
         "reason": "비스마야·NIC 공식 출처·NIC 의장 또는 한화+이라크 직접 관련",
         "locked": true,
@@ -33925,8 +33628,8 @@
       },
       "eventGroup": {
         "groupId": "event-AMV9vH0WagUe4DiM65",
-        "representativeArticleId": "discovery-JtZ2ynE8TGtb8bcDF6caKD7o",
-        "isRepresentative": false,
+        "representativeArticleId": "discovery-rwZl_whH7mMVW7Bcj6VDN4wd",
+        "isRepresentative": true,
         "memberCount": 2,
         "duplicateCount": 1
       },
@@ -34506,9 +34209,9 @@
       "contentChanged": true,
       "processingReused": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "politics",
         "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
+        "reason": "이라크 정치·정부·의회 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -35828,9 +35531,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -35964,8 +35667,8 @@
       },
       "eventGroup": {
         "groupId": "event-AMV9vH0WagUe4DiM65",
-        "representativeArticleId": "discovery-JtZ2ynE8TGtb8bcDF6caKD7o",
-        "isRepresentative": true,
+        "representativeArticleId": "discovery-rwZl_whH7mMVW7Bcj6VDN4wd",
+        "isRepresentative": false,
         "memberCount": 2,
         "duplicateCount": 1
       },
@@ -38069,16 +37772,11 @@
       "contentCheckedAt": "2026-11-21T10:17:07.497Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "politics",
+        "from": "economy",
         "to": "economy",
-        "reason": "iraq-government-housing-policy",
-        "scores": {
-          "economyHeadline": 1,
-          "governmentHousing": true
-        },
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
-        "method": "DIRECT_IRAQ_INTERNATIONAL_ROUTER_V1",
-        "routedAt": "2026-11-21T10:17:20.969Z"
+        "method": "STRICT_CATEGORY_GATE_V5"
       },
       "eventGroup": {
         "groupId": "event-yVF5fjoCMSjkHQBESb",
@@ -40119,9 +39817,9 @@
       "contentChanged": false,
       "processingReused": true,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       }
@@ -42984,149 +42682,6 @@
     },
     {
       "schemaVersion": "1.0",
-      "articleId": "discovery-9pp65-sF1Xol86acP0MlOji-",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "بغداد وأنقرة تتفقان على موعد انسحاب القوات التركية من قاعدة شمالي العراق",
-      "sourceArabic": "عربي21",
-      "sourceHomepage": "https://arabi21.com",
-      "publishedAt": "2026-11-11T05:12:52.000Z",
-      "descriptionArabic": "بغداد وأنقرة تتفقان على موعد انسحاب القوات التركية من قاعدة شمالي العراق عربي21",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiwARBVV95cUxNRG5aUS1wVFJPaEsxeFRnMHN2UFV2bXQ2NlJjY1ZTcGpockdmTmJGN2JjU3lMdG13SnVRdW1DNHNWdFpNSVZNeGQyMFdOQWhFWEpMaFJjOVNIRXQtdWJNa2lTMGZaY1cxbGJSZXNGNFNXWXBIc1AtZmp4UVVTRHBUc2t2WDI3RjVDbjRsVW1NNXlDWWNuNDZ4bFFnMFQwdE11NW1JMWVwLXo2cXU5NDkyT3lKWmZyZEdKSjBOR2UwSHBNdGxhNXZSaFR2cXBmLUVwWUFabVVsWUwyY3MzZExlZXBzT0JLeFFaTWMwMGN1cUNsRmo0enZBTzJESTRjRXdlM0YxbVdrV3EwWnNCYVBLeXJuSlFCY0lyRXh2YmdFSHZFeUpRU1E3UlN6QTJGNVpKUHR0QWxPU01YNzY2aWw3SV9sc00zYXRZb0xUcXJlMDNBX05DWFYzd25odUlVbDFwSW5UN180WWY0cEl4LTFHS2xVSjZCNHpEZW1pYk5DS19hOWpiQWdvODJuQ3ktY3laUDdIQm9GODlDQTZzdkpILURvWEpQZ2N1QzFibUd2OEcyMHlUVVNwTVJOaUVXeFFMMFBGOW1PQmdPLTVaaFJ2U004RlJGM3BEdXdJa3RVN2g1OWtiVC1ZaU9zRXV3QkNtUm9qR3RIRHk4QlBxZEdyZXJ2b0tTLTlheUtKS0VzUnM2YklETDd5cFNqYUZuWjRiY09aME0wbzlXYnNDaGRvTEowd01WbWVjUkVUNUFNcng?oc=5",
-      "articleUrl": "https://arabi21.com/story/1802272/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%AA%D9%81%D9%82%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D9%82%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-21T10:13:38.435Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-21T10:15:57.862Z",
-      "canonicalUrl": "https://arabi21.com/story/1802272/%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF-%D9%88%D8%A3%D9%86%D9%82%D8%B1%D8%A9-%D8%AA%D8%AA%D9%81%D9%82%D8%A7%D9%86-%D8%B9%D9%84%D9%89-%D9%85%D9%88%D8%B9%D8%AF-%D8%A7%D9%86%D8%B3%D8%AD%D8%A7%D8%A8-%D8%A7%D9%84%D9%82%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D8%B1%D9%83%D9%8A%D8%A9-%D9%85%D9%86-%D9%82%D8%A7%D8%B9%D8%AF%D8%A9-%D8%B4%D9%85%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82",
-      "pagePublishedAt": "2026-11-11T05:12:52.000Z",
-      "originalTextArabic": "في عام 2015، أنشأت تركيا معسكراً في منطقة زليكان قرب بعشيقة بمحافظة نينوى، بالتنسيق مع حكومة إقليم كردستان، لتدريب قوات البيشمركة في إطار الحرب على تنظيم داعش.",
-      "sourceHost": "arabi21.com",
-      "contentChars": 159,
-      "arabicRatio": 1,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-21T10:17:07.705Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "e51fe6bd94aa9cf29cca13053e3c19228d85a111740372d56d7adea4ffb1ddc3",
-        "sourceChars": 159,
-        "translatedChars": 100,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "f5b3dbd74c37140e848b",
-        "preferredTermsApplied": [
-          "페쉬메르가",
-          "바그다드"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-16T23:33:59.489Z",
-        "titleKo": "바그다드와 앙카라, 이라크 북부 기지에서 터키군 철수 일정 합의",
-        "fullTextKo": "2015년 터키는 쿠르드 자치지역 정부와의 협의에 따라, 이슬람국가 조직과의 전쟁의 일환으로 페쉬메르가를 훈련시키기 위해 니네베주 바시카 인근 질리칸 지역에 군사 캠프를 설치했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "importance": {
-        "score": 12,
-        "stars": 0.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-21T10:18:20.816Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 0,
-          "reportValue": 3,
-          "sourceReliability": 4
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "338952f758ed26992380",
-        "ruleScore": 12,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      },
-      "eventGroup": {
-        "groupId": "event-Py5fJqc5TAHGcqRlMM",
-        "representativeArticleId": "discovery-9pp65-sF1Xol86acP0MlOji-",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "contentHash": "e51fe6bd94aa9cf29cca13053e3c19228d85a111740372d56d7adea4ffb1ddc3",
-      "contentCheckedAt": "2026-11-21T10:17:07.705Z",
-      "contentChanged": false,
-      "processingReused": true,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      }
-    },
-    {
-      "schemaVersion": "1.0",
       "articleId": "discovery-uvnGw4kV9Qde_-Q39JwDyLsd",
       "keywordId": "security-protest-001",
       "category": "security",
@@ -44814,151 +44369,6 @@
         "aiBreakdown": null
       },
       "processingReused": true
-    },
-    {
-      "schemaVersion": "1.0",
-      "articleId": "discovery-TNjuhyoftWlfOksya8X2R15G",
-      "keywordId": "international-us-001",
-      "category": "politics",
-      "priority": 96,
-      "queryArabic": "(الولايات المتحدة OR واشنطن) العراق انسحاب القوات",
-      "requiredTerms": [
-        "العراق"
-      ],
-      "optionalTerms": [
-        "انسحاب القوات",
-        "القوات الأميركية",
-        "التحالف الدولي",
-        "قاعدة عسكرية"
-      ],
-      "excludedTerms": [
-        "رياضة",
-        "فن"
-      ],
-      "originalTitleArabic": "“خلافات الحزبين” تهدد وحدة كردستان العراق",
-      "sourceArabic": "الحرة",
-      "sourceHomepage": "https://alhurra.com",
-      "publishedAt": "2026-11-10T21:36:52.000Z",
-      "descriptionArabic": "\"خلافات الحزبين\" تهدد وحدة كردستان العراق الحرة",
-      "discoveryUrl": "https://news.google.com/rss/articles/CBMiPkFVX3lxTE1JS2M2QU52anJIQlpuYUd2SWNYdDMxemdEYS1aVkY3SlJOdEhhc3BpVE5MamxDWHo5WDNqWFln?oc=5",
-      "articleUrl": "https://alhurra.com/53719",
-      "discoveryMethod": "google-news-rss",
-      "language": "ar",
-      "discoveryStatus": "DISCOVERED",
-      "urlStatus": "RESOLVED",
-      "contentStatus": "FULL_TEXT",
-      "officialSource": false,
-      "sourceReliability": "PUBLISHER",
-      "errorCode": null,
-      "discoveredAt": "2026-11-21T10:13:38.435Z",
-      "urlRecoveryMethod": null,
-      "titleSimilarity": null,
-      "urlResolutionMethod": "GOOGLE_NEWS_BATCHEXECUTE",
-      "resolvedAt": "2026-11-21T10:16:07.555Z",
-      "canonicalUrl": "https://alhurra.com/53719",
-      "pagePublishedAt": "2026-11-10T21:36:52.000Z",
-      "originalTextArabic": "الخطوة تثير مخاوف من اتساع الانقسام بين أربيل والسليمانية، وعودة تجربة الإدارتين المنفصلتين التي شهدها الإقليم في تسعينيات القرن الماضي.\n\nدخل الخلاف بين الحزبين الكرديين الرئيسيين في إقليم كردستان العراق مرحلة جديدة، مع شروع ممثلي الاتحاد الوطني الكردستاني في حكومة الإقليم في الامتناع عن ممارسة مهامهم في أربيل، بعد إعلان الحزب الانسحاب من الحكومة.\n\nوتثير الخطوة مخاوف من اتساع الانقسام بين أربيل والسليمانية، وعودة تجربة الإدارتين المنفصلتين التي شهدها الإقليم في تسعينيات القرن الماضي.\n\nويأتي التصعيد في ظل تعثر المفاوضات بين الحزب الديمقراطي الكردستاني والاتحاد الوطني، منذ انتخابات أكتوبر 2024، بشأن توزيع المناصب الرئيسية وتشكيل الحكومة العاشرة، وسط تباين في المواقف بشأن إدارة المرحلة المقبلة، ودور القوى الإقليمية في الأزمة.\n\nولا تقتصر تداعيات الخلاف على تأخير تشكيل الحكومة، إذ باتت تمتد إلى شرعية المؤسسات السياسية والإدارية في الإقليم، مع تلويح الاتحاد الوطني بإنشاء مؤسسات موازية في مناطق نفوذه.\n\nويشهد الإقليم، المتمتّع بالحكم الذاتي، تنافسا على السلطة منذ عقود بين حزبين وعائلتين: الحزب الديمقراطي الكردستاني (أسرة بارزاني)، والاتحاد الوطني الكردستاني (أسرة طالباني).\n\nوقال القيادي في الاتحاد الوطني الكردستاني غياث سورجي لـ”الحرة” إن الفريق الوزاري لحزبه في حكومة الإقليم بدأ، الأحد، مقاطعة الدوام، عقب إعلان رئيس الحزب بافل طالباني، في الخامس من نوفمبر الجاري، الانسحاب من حكومة إقليم كردستان.\n\nوأوضح أن ممثلي حزبه، من الوزراء وصولا إلى المديرين العامين في الوزارات والهيئات والمديريات العامة في أربيل بدأوا مقاطعة الدوام، مبينا أن المقاطعة لا تشمل محافظتي السليمانية وحلبجة الخاضعتين لسيطرة الحزب.\n\nوأعلن طالباني، في بيان متلفز في الخامس من نوفمبر، رفض حزبه انعقاد جلسة برلمان الإقليم والانسحاب من الحكومة، ملوحاً بتسمية وتعيين مناصب مماثلة في السليمانية، إذا مضى الحزب الديمقراطي في تشكيل الحكومة وتعيين المؤسسات الأخرى من دون التوصل إلى اتفاق مع الاتحاد الوطني.\n\nوجاء موقف طالباني بعدما دفع الحزب الديمقراطي الكردستاني باتجاه استئناف عمل برلمان الإقليم، وانتخاب هيئة رئاسة جديدة، وإنهاء حالة الشلل التشريعي التي استمرت قرابة عامين، والبدء بالإجراءات المتعلقة بتشكيل الحكومة الجديدة.\n\nوعقد البرلمان، الأربعاء، الماضي أول جلسة له، بحضور 52 نائبا من أصل 100 نائب، اختاروا مرشحة كتلة الحزب الديمقراطي فالا فريد ابراهيم رئيسة للبرلمان. وقاطعت كتلة الاتحاد الوطني الكردستاني (23 نائبا) الجلسة، إلى جانب كتلة الجيل الجديد (15 نائبا)، وكتل أخرى أصغر.\n\nويؤكد سورجي أن قرار حزبه الانسحاب من حكومة الإقليم ليس نهائياً، بل يتوقف على الخطوات التي سيتخذها الحزب الديمقراطي خلال الأيام المقبلة.\n\nويقول: “إذا أوقف الديمقراطي خطوات تشكيل الحكومة فسيكون للاتحاد موقف آخر، لكن إذا مضى بتعيين رئيس الإقليم وتشكيل الحكومة والمؤسسات الأخرى دون الرجوع إلى الاتحاد الوطني، حينها سيتخذ الاتحاد خطوات مماثلة في السليمانية”.\n\nويرى سورجي أن استمرار الأوضاع الحالية ينذر بانقسام الإقليم إلى إدارتين، معتبراً ذلك نهاية لكيان وتجربة إقليم كردستان وعودة إلى نقطة الصفر.\n\nويعيد التصعيد الحالي إلى الواجهة تجربة الانقسام الإداري التي عاشها إقليم كردستان في تسعينيات القرن الماضي، عندما اندلعت حرب أهلية بين الحزبين الرئيسيين بعد خلافات على السلطة والنفوذ.\n\nفبعد أن شكّل الحزبان جبهة موحدة ضد نظام صدام حسين عقب حرب الخليج عام 1991، وانطلاق تجربة الحكم الذاتي في ظل منطقة الحظر الجوي التي فرضتها الولايات المتحدة، تفجرت الخلافات بينهما وتحولت إلى مواجهات مسلحة استمرت حتى عام 1998، عندما توصلا إلى اتفاق رعته واشنطن.\n\nورغم انتهاء المواجهات العسكرية، ظل الإقليم منقسماً بين إدارتين في أربيل والسليمانية حتى يناير 2006، عندما وقع الجانبان اتفاقاً لتوحيد الإدارتين وتشكيل حكومة موحدة لإقليم كردستان.\n\nلكن على الأرض لم يفض هذا الاتفاق إلى قيادة موحدة في الإقليم، حيث ظل الانقسام قائما على أساس منطقتين جغرافيتين تخضع كل منهما لسيطرة أحد الحزبين، الحزب الديمقراطي الكردستاني يتولى زمام الأمور في محافظتي أربيل ودهوك، بينما يهيمن الاتحاد الوطني الكردستاني على محافظتي السليمانية وحلبجة.\n\nويرى القيادي في الحزب الديمقراطي الكردستاني دجوار فائق أن قرار الاتحاد الوطني بالانسحاب غير نهائي، ولا يزال يتيح المجال للمفاوضات والمناقشة، معتبرا أن هذه الخطوة لا تخدم الاتحاد الوطني أو حكومة الإقليم، بل تزيد تعقيد الأزمة.\n\nويقول فائق لـ”الحرة”: “قانونياً، إذا كانوا ينوون عدم المشاركة في الحكومة المقبلة، فباستطاعتهم حضور جلسات البرلمان واتخاذ جانب المعارضة.. هذا أفضل من الانسحاب غير القانوني، فالمشاكل لا تحل بفرض المصالح الحزبية”.\n\nويشير إلى أن الحزب الديمقراطي، بوصفه صاحب الكتلة الأكبر في البرلمان، انتظر أكثر من عامين من المفاوضات والمناقشات لتفعيل البرلمان وتشكيل الحكومة، لكنها لم تسفر عن اتفاق.\n\nويستبعد تقسيم إقليم كردستان، معتبراً ذلك غير ممكن وغير دستوري ولا يسهم في حل المشكلات، مضيفاً أن بغداد لا تدعم هذا التوجه، لكنه يشير في الوقت نفسه إلى وجود أطراف خارجية في المنطقة، وأخرى داخل العراق، لا تؤيد الفيدرالية، وتحاول فرض المركزية على الإقليم وتقليص صلاحياته، على حد تعبيره.\n\nويعترف الدستور العراقي ، في المادة 117 أولاً، بإقليم كردستان وسلطاته القائمة بوصفه إقليماً اتحادياً. وتمنح المادة 119 كل محافظة أو أكثر حق تكوين إقليم جديد، بناءً على طلب بالاستفتاء يقدمه ثلث أعضاء مجالس المحافظات المعنية، أو عُشر الناخبين في كل منها. لكن الدستور لا ينص صراحة على آلية لانفصال جزء من إقليم اتحادي قائم وتشكيل إقليم جديد.\n\nويرى الباحث السياسي غازي حسن أن أي انقسام سياسي في الإقليم يمثل “انتحاراً” للأحزاب الكردية.\n\nويقول لـ”الحرة” إن تدهور الأوضاع في الإقليم قد يفاقم اضطرابات المنطقة، في ظل الحرب وحالة عدم الاستقرار.\n\nمن جهته، يؤكد أستاذ العلوم السياسية في الجامعة المستنصرية ببغداد عصام الفيلي أن الولايات المتحدة تكاد تكون الراعي الرئيسي للاستقرار ومحاولات تقريب وجهات النظر بين الحزبين منذ عام 2003.\n\nويعتقد الفيلي في حديثه لـ”الحرة” أنه ربما كان لإيران دوراً في التطورات الحالية، عازياً ذلك إلى خلافات تاريخية بينها وبين الحزب الديمقراطي الكردستاني، تعود إلى تسعينيات القرن الماضي، عندما استعان الحزب بقوات الجيش العراقي لإجهاض تحرك عسكري قادته قوات الاتحاد الوطني، بمساعدة إيرانية، للسيطرة على أربيل ومناطق أخرى.\n\nلكن سورجي ينفي وجود أي دور خارجي سواء من جانب إيران أو أي دولة إقليمية أخرى وراء قرار حزبه الانسحاب، أو تأخر تشكيل حكومة الإقليم على مدى العامين الماضيين.\n\nويقول في المقابل إن أدوار الدول الإقليمية كانت إيجابية، وإنها حاولت تقريب وجهات النظر بين الحزبين وحثهما على تشكيل الحكومة وتفعيل البرلمان.\n\nويسعى الاتحاد الوطني الكردستاني، الذي حل ثانياً في انتخابات أكتوبر 2024 بحصوله على 23 مقعداً، إلى الحصول على رئاسة الإقليم أو رئاسة الحكومة ووزارة الداخلية، وهي مناصب يهيمن عليها الحزب الديمقراطي الكردستاني في الحكومة الحالية، ويرفض التنازل عنها استناداً إلى نتائج الانتخابات، التي منحت حزبه 39 مقعداً.\n\nوفي أحدث تحرك لاحتواء الأزمة، دعا الزعيم الكردي مسعود بارزاني، الاثنين، الاتحاد الوطني إلى الجلوس مع الحزب الديمقراطي على طاولة الحوار لمعالجة الخلافات ووضع حد للأزمة السياسية.\n\nوقال بارزاني في رسالة إن مصلحة شعب كردستان يجب أن تتقدم على المصالح والأهداف الأخرى، داعياً بقية الأطراف السياسية في الإقليم إلى المشاركة في العملية السياسية والعمل على تشكيل حكومة موسعة ووطنية تلبي مطالب السكان.",
-      "sourceHost": "alhurra.com",
-      "contentChars": 6588,
-      "arabicRatio": 1.0119,
-      "relevanceNote": "카테고리 전용 검증 미적용",
-      "fetchedAt": "2026-11-21T10:17:09.884Z",
-      "translation": {
-        "status": "COMPLETED",
-        "translationStatus": "COMPLETED",
-        "pipelineVersion": "FULL_TRANSLATION_V1",
-        "method": "ARABIC_TITLE_AND_FULL_TEXT_TO_KOREAN",
-        "sourceContentHash": "c0354bcb8d62f030810b6829d64d3dc070ba749a4982f24231bf56821e90250d",
-        "sourceChars": 6588,
-        "translatedChars": 3890,
-        "fullTranslationGenerated": true,
-        "glossaryVersion": "2026-08-04.1",
-        "glossaryHash": "9af558a5c71f91db253a",
-        "preferredTermsSignature": "af05fb977285ab636f99",
-        "preferredTermsApplied": [
-          "술라이마니야",
-          "바그다드",
-          "아르빌",
-          "할라브자",
-          "두호크"
-        ],
-        "model": "gpt-5.6-luna",
-        "chunkCount": 1,
-        "generatedAt": "2026-11-21T10:21:29.507Z",
-        "titleKo": "‘두 정당 간 갈등’ 이라크 쿠르디스탄의 통합 위협",
-        "fullTextKo": "이번 조치는 아르빌과 술라이마니야 간 분열이 확대되고, 지난 세기 1990년대 이 지역에서 나타났던 분리 행정 체제가 돌아올 수 있다는 우려를 불러일으키고 있다.\n\n이라크 쿠르디스탄 지역의 주요 두 쿠르드 정당 간 갈등이 새로운 국면에 들어섰다. 쿠르드 애국동맹 소속 지역정부 대표들이 정당의 정부 탈퇴 선언 이후 아르빌에서 직무 수행을 거부하기 시작했기 때문이다.\n\n이번 조치는 아르빌과 술라이마니야 간 분열이 확대되고, 지난 세기 1990년대 이 지역에서 나타났던 분리 행정 체제가 돌아올 수 있다는 우려를 불러일으키고 있다.\n\n이번 긴장은 2024년 10월 선거 이후 쿠르드민주당과 쿠르드 애국동맹 간 협상이 주요 직책 배분과 제10기 정부 구성 문제를 놓고 교착 상태에 빠진 가운데 고조되고 있다. 여기에는 향후 국면의 운영과 이번 위기에서 역내 세력의 역할을 둘러싼 입장 차이도 작용하고 있다.\n\n이번 갈등의 여파는 정부 구성 지연에만 그치지 않는다. 쿠르드 애국동맹이 자신의 영향권 지역에 병행 기관을 설립하겠다고 시사하면서, 이제 지역 내 정치 및 행정 기관의 정당성 문제로까지 확대되고 있다.\n\n자치권을 누리는 이 지역에서는 수십 년 동안 한 정당과 한 가문씩으로 구성된 두 세력, 즉 쿠르드민주당 바르자니 가문과 쿠르드 애국동맹 탈라바니 가문이 권력을 놓고 경쟁해 왔다.\n\n쿠르드 애국동맹의 지도부 인사 기야스 수르지는 자유방송에 쿠르드 애국동맹 소속 지역정부 장관단이 이달 5일 쿠르드스탄 지역정부 탈퇴를 선언한 당 대표 바펠 탈라바니의 발표에 따라 일요일부터 출근을 거부하기 시작했다고 말했다.\n\n그는 장관부터 아르빌의 각 부처와 기관, 총국의 국장에 이르기까지 자당 소속 대표들이 출근 거부를 시작했다고 설명하면서, 이번 거부는 쿠르드 애국동맹의 지배를 받는 술라이마니야주와 할라브자주에는 해당하지 않는다고 밝혔다.\n\n탈라바니는 11월 5일 방송 성명을 통해 지역 의회 회의 개최를 거부하고 정부에서 탈퇴한다고 발표했다. 또한 쿠르드민주당이 쿠르드 애국동맹과 합의하지 않은 채 정부 구성과 다른 기관의 임명을 추진할 경우 술라이마니야에 유사한 직책을 지명하고 임명하겠다고 경고했다.\n\n탈라바니의 입장은 쿠르드민주당이 지역 의회의 업무 재개와 새 의장단 선출, 약 2년간 이어진 입법 마비 상태의 종식, 새 정부 구성 관련 절차의 시작을 추진한 뒤 나왔다.\n\n의회는 지난 수요일 전체 의원 100명 가운데 52명이 참석한 가운데 첫 회의를 열었고, 쿠르드민주당 블록 후보인 팔라 파리드 이브라힘을 의장으로 선출했다. 쿠르드 애국동맹 블록 23명은 신세대 블록 15명 및 다른 소수 블록들과 함께 회의를 보이콧했다.\n\n수르지는 자당의 지역정부 탈퇴 결정이 최종적인 것은 아니며, 향후 며칠 동안 쿠르드민주당이 취할 조치에 달려 있다고 강조했다.\n\n그는 말했다. “민주당이 정부 구성 절차를 중단한다면 쿠르드 애국동맹은 다른 입장을 취할 것이다. 그러나 민주당이 쿠르드 애국동맹과 상의하지 않고 지역 대통령을 임명하고 정부와 다른 기관을 구성하는 절차를 진행한다면, 그때 쿠르드 애국동맹은 술라이마니야에서 이에 상응하는 조치를 취할 것이다.”\n\n수르지는 현재 상황이 계속되면 지역이 두 개의 행정부로 분열될 수 있다고 보며, 이는 쿠르드스탄이라는 실체와 경험의 종말이자 원점으로의 회귀가 될 것이라고 말했다.\n\n현재의 긴장은 1990년대 쿠르드스탄 지역이 겪었던 행정 분열 경험을 다시 수면 위로 끌어올리고 있다. 당시에는 권력과 영향력을 둘러싼 갈등 끝에 주요 두 정당 사이에 내전이 발발했다.\n\n두 정당은 1991년 걸프전 이후 사담 후세인 정권에 맞서 공동 전선을 구축했고, 미국이 설정한 비행금지구역 아래에서 자치 통치 실험이 시작됐다. 그러나 두 정당 사이의 갈등이 폭발해 무력 충돌로 번졌고, 1998년 미국의 중재로 합의에 이르기까지 이어졌다.\n\n군사적 충돌이 끝난 뒤에도 이 지역은 2006년 1월까지 아르빌과 술라이마니야의 두 행정부로 나뉘어 있었다. 당시 양측은 두 행정부를 통합하고 쿠르드스탄 지역의 단일 정부를 구성하기로 합의했다.\n\n그러나 실제로 이 합의는 지역 내 통합된 지도부로 이어지지 않았다. 분열은 여전히 두 개의 지리적 구역을 기반으로 유지됐고, 각 구역은 두 정당 중 한 곳의 통제를 받았다. 쿠르드민주당은 아르빌주와 두호크주의 업무를 장악했고, 쿠르드 애국동맹은 술라이마니야주와 할라브자주를 지배했다.\n\n쿠르드민주당 지도부 인사 즈와르 파이크는 쿠르드 애국동맹의 탈퇴 결정이 최종적인 것이 아니며 여전히 협상과 논의를 위한 여지가 있다고 말했다. 그는 이번 조치가 쿠르드 애국동맹이나 지역정부에 도움이 되지 않고 오히려 위기를 더욱 복잡하게 만든다고 평가했다.\n\n파이크는 자유방송에 이렇게 말했다. “법적으로 그들이 차기 정부에 참여하지 않을 생각이라면 의회 회의에 참석해 야당의 편에 설 수 있다. 이는 불법적인 탈퇴보다 낫다. 당파적 이익을 강요해서는 문제를 해결할 수 없다.”\n\n그는 의회에서 가장 큰 블록을 가진 쿠르드민주당이 의회를 활성화하고 정부를 구성하기 위해 2년 넘게 협상과 논의를 기다렸지만, 합의에 이르지 못했다고 지적했다.\n\n그는 쿠르드스탄 지역의 분할은 불가능하고 헌법에도 맞지 않으며 문제 해결에 기여하지 않는다며 분할 가능성을 배제했다. 또한 바그다드가 이러한 방향을 지지하지 않는다고 덧붙였다. 다만 그는 동시에 역내에 연방제를 지지하지 않는 외부 세력과 이라크 내부 세력이 존재하며, 이들이 지역에 중앙집권제를 강요하고 권한을 축소하려 한다고 말했다.\n\n이라크 헌법은 제117조 1항에서 쿠르드스탄 지역과 그 기존 당국을 연방 지역으로 인정한다. 제119조는 하나 이상의 주가 해당 지역의 3분의 1 지방의회 의원 또는 각 주 유권자 10분의 1이 제출하는 주민투표 요구에 따라 새로운 지역을 구성할 권리를 부여한다. 그러나 헌법은 기존 연방 지역의 일부를 분리해 새로운 지역을 구성하는 절차를 명시적으로 규정하지 않고 있다.\n\n정치 연구자 가지 하산은 지역 내 어떤 정치적 분열도 쿠르드 정당들에 ‘자살행위’가 될 것이라고 말했다.\n\n그는 자유방송에 지역 상황의 악화가 전쟁과 불안정이 이어지는 가운데 지역의 혼란을 더욱 키울 수 있다고 말했다.\n\n한편 바그다드의 무스탄시리야대학교 정치학 교수 이삼 알파일리는 2003년 이후 미국이 두 정당 간 안정과 입장 조율 시도의 주요 후원자에 가깝다고 강조했다.\n\n알파일리는 자유방송과의 인터뷰에서 현재의 상황 전개에 이란이 역할을 했을 가능성이 있다고 보았다. 그는 그 근거로 이란과 쿠르드민주당 사이의 역사적 갈등을 들었다. 이 갈등은 1990년대까지 거슬러 올라가는데, 당시 쿠르드민주당은 이란의 지원을 받은 쿠르드 애국동맹군이 아르빌과 다른 지역을 장악하기 위해 벌인 군사 행동을 좌절시키기 위해 이라크군을 동원했다.\n\n그러나 수르지는 자당의 탈퇴 결정이나 지난 2년 동안 지역정부 구성이 지연된 데 이란이나 다른 역내 국가 등 외부 세력의 역할은 없었다고 부인했다.\n\n그는 오히려 역내 국가들의 역할이 긍정적이었으며, 두 정당의 입장을 조율하고 정부 구성과 의회 활성화를 촉구하려 했다고 말했다.\n\n2024년 10월 선거에서 23석을 얻어 2위를 차지한 쿠르드 애국동맹은 지역 대통령직 또는 정부 수반직과 내무부 장관직을 얻으려 하고 있다. 이 직책들은 현 정부에서 쿠르드민주당이 장악하고 있으며, 쿠르드민주당은 자당에 39석을 안긴 선거 결과를 근거로 이를 양보하지 않으려 하고 있다.\n\n위기를 수습하기 위한 가장 최근의 움직임으로, 쿠르드 지도자 마수드 바르자니는 월요일 쿠르드 애국동맹에 쿠르드민주당과 대화 테이블에 앉아 이견을 해결하고 정치적 위기에 종지부를 찍자고 촉구했다.\n\n바르자니는 서한에서 쿠르드 민족의 이익이 다른 이해와 목표보다 앞서야 한다고 말하며, 지역의 나머지 정치 세력에도 정치 과정에 참여하고 주민들의 요구를 충족하는 포괄적이고 국민적인 정부를 구성하기 위해 노력할 것을 촉구했다."
-      },
-      "analysis": {
-        "status": "PENDING",
-        "category": "politics",
-        "recommendation": "USER_REVIEW_REQUIRED",
-        "relevanceScore": null,
-        "recommendationReason": ""
-      },
-      "selection": {
-        "selected": false,
-        "reportSection": null,
-        "displayOrder": null,
-        "userNote": ""
-      },
-      "contentHash": "c0354bcb8d62f030810b6829d64d3dc070ba749a4982f24231bf56821e90250d",
-      "contentCheckedAt": "2026-11-21T10:17:09.884Z",
-      "contentChanged": false,
-      "categoryRouting": {
-        "from": "international",
-        "to": "politics",
-        "reason": "이라크가 직접 주체인 외교·정부·전략적 협력",
-        "locked": true,
-        "method": "STRICT_CATEGORY_GATE_V5"
-      },
-      "eventGroup": {
-        "groupId": "event-oMPXHmcIDULKN_0VEY",
-        "representativeArticleId": "discovery-TNjuhyoftWlfOksya8X2R15G",
-        "isRepresentative": true,
-        "memberCount": 1,
-        "duplicateCount": 0
-      },
-      "importance": {
-        "score": 31,
-        "stars": 1.5,
-        "ratingScale": "0.5_TO_5_STARS",
-        "level": "LOW",
-        "levelKo": "낮음",
-        "reportStatus": "EXCLUDE",
-        "scoringMethod": "CATEGORY_RULES_STAR_V8",
-        "scoredAt": "2026-11-21T10:18:20.816Z",
-        "breakdown": {
-          "nationalImportance": 5,
-          "businessImpact": 0,
-          "politicalImpact": 13,
-          "reportValue": 7,
-          "sourceReliability": 6
-        },
-        "reportPriority": "REFERENCE",
-        "categoryRelevance": "LOW",
-        "businessRelevance": "LOW",
-        "reasonKo": "해당 카테고리의 핵심성·규모·기관 권한·보고서 활용가치를 종합 평가함",
-        "scoringVersion": 9,
-        "scoreFingerprint": "5d679630b7e59a5b4351",
-        "ruleScore": 31,
-        "category": "politics",
-        "categoryFloor": 0,
-        "categoryFloorRule": "NONE",
-        "categoryFloorReasonKo": "",
-        "businessFloor": 0,
-        "businessFloorRule": "NONE",
-        "businessFloorReasonKo": "",
-        "floorScore": 0,
-        "floorRule": "NONE",
-        "floorReasonKo": "",
-        "aiScore": null,
-        "aiWeight": 0,
-        "ruleWeight": 1,
-        "aiModel": null,
-        "aiReportPriority": null,
-        "aiReasonKo": "",
-        "aiBreakdown": null
-      }
     },
     {
       "schemaVersion": "1.0",
@@ -51616,9 +51026,9 @@
       "contentCheckedAt": "2026-11-21T10:17:11.146Z",
       "contentChanged": false,
       "categoryRouting": {
-        "from": "international",
+        "from": "economy",
         "to": "economy",
-        "reason": "이라크 직접 연관 양자 경제·투자·무역·에너지·교통 협력",
+        "reason": "이라크 경제·건설·투자 직접 관련",
         "locked": true,
         "method": "STRICT_CATEGORY_GATE_V5"
       },
@@ -60152,14 +59562,14 @@
   },
   "iraqScopeGate": {
     "method": "EXACT_ARABIC_TOKEN_SCOPE_V3",
-    "before": 453,
-    "retained": 452,
-    "excluded": 1,
+    "before": 421,
+    "retained": 421,
+    "excluded": 0,
     "leadChars": 2200,
     "primaryForeignLeadChars": 900
   },
   "eventGrouping": {
-    "groupCount": 375,
+    "groupCount": 371,
     "duplicateGroupCount": 34,
     "duplicateArticleCount": 46,
     "maxHours": 72,
